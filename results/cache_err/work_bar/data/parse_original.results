@@ -1,0 +1,94 @@
+---------------------
+WITHOUT PREPROCESSING
+---------------------
+
+------------
+Size Summary
+------------
+
+State variables (#20)
+	(1-bit)	11
+	(2-bit)	2
+	(3-bit)	7
+
+Inputs (#6)
+	(1-bit)	5
+	(5-bit)	1
+
+Constants (#25)
+	(1-bit)	2
+	(2-bit)	4
+	(3-bit)	8
+	(4-bit)	9
+	(5-bit)	2
+
+---------------
+State Variables
+---------------
+_s19_id54                       (1-bit)
+_s18_$formal$./cache_err.sv:2909$282_CHECK    (1-bit)
+_s17_$formal$./cache_err.sv:2917$284_CHECK    (1-bit)
+_s16_$formal$./cache_err.sv:2909$282_EN    (1-bit)
+_s15_$formal$./cache_err.sv:2913$283_CHECK    (1-bit)
+_s14_home_sharer_list_reg_1     (1-bit)
+_s13_home_sharer_list_reg_0     (1-bit)
+_s12_home_invalidate_list_reg_1    (1-bit)
+_s11_home_invalidate_list_reg_0    (1-bit)
+_s10_home_exclusive_granted_reg    (1-bit)
+_s8_home_current_client_reg     (1-bit)
+_s1_cache_reg_1                 (2-bit)
+_s0_cache_reg_0                 (2-bit)
+_s9_home_current_command_reg    (3-bit)
+_s7_channel3_reg_1              (3-bit)
+_s6_channel3_reg_0              (3-bit)
+_s5_channel2_4_reg_1            (3-bit)
+_s4_channel2_4_reg_0            (3-bit)
+_s3_channel1_reg_1              (3-bit)
+_s2_channel1_reg_0              (3-bit)
+
+------
+Inputs
+------
+_i5_id2051                      (1-bit)
+_i4_id2048                      (1-bit)
+_i3_id2038                      (1-bit)
+_i2_reset                       (1-bit)
+_i0_clock                       (1-bit)
+_i1_io_en_a                     (5-bit)
+
+---------
+Constants
+---------
+1'd1
+1'd0
+2'd1
+2'd0
+2'd3
+2'd2
+3'd7
+3'd2
+3'd3
+3'd6
+3'd5
+3'd4
+3'd0
+3'd1
+4'd15
+4'd14
+4'd13
+4'd12
+4'd11
+4'd10
+4'd9
+4'd8
+4'd0
+5'd17
+5'd16
+
+-----------------------------
+Uninterpreted Functions (UFs)
+-----------------------------
+ReductionOr_1_2	#2
+ReductionOr_1_3	#8
+ReductionOr_1_5	#1
+

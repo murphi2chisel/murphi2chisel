@@ -1,0 +1,108 @@
+(benchmark) bar
+
+(#2)		!(((_s20_Sta_reg_HomeProc_CacheState$next == 2'd2) && (_i1_io_en_a == 9'd15) && !(ReductionOr_1_2(_s20_Sta_reg_HomeProc_CacheState)) && (_s20_Sta_reg_HomeProc_CacheState$next == w$323)))
+	(id)	57049
+	(#UF )	3
+	(#UFt)	1
+	      	ReductionOr_1_2	#3
+	(#K  )	295
+	(#reg)	28
+	(#inp)	2
+	(#ite)	437
+	(#CF )	839
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((_s35_Sta_reg_Proc_0_CacheState$next == 2'd2) && (_s58_Sta_reg_UniMsg_0_Cmd == 3'd3) && (_i1_io_en_a == 9'd248) && (_s35_Sta_reg_Proc_0_CacheState$next == w$2179)))
+	(id)	58081
+	(#UF )	5
+	(#UFt)	1
+	      	ReductionOr_1_2	#5
+	(#K  )	286
+	(#reg)	18
+	(#inp)	2
+	(#ite)	305
+	(#CF )	622
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#4)		!(((_s39_Sta_reg_Proc_1_CacheState$next == 2'd2) && (_s62_Sta_reg_UniMsg_1_Cmd == 3'd3) && (_i1_io_en_a == 9'd249) && (_s39_Sta_reg_Proc_1_CacheState$next == w$2239)))
+	(id)	58132
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	285
+	(#reg)	18
+	(#inp)	2
+	(#ite)	304
+	(#CF )	620
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#5)		!(((_s43_Sta_reg_Proc_2_CacheState$next == 2'd2) && (_s66_Sta_reg_UniMsg_2_Cmd == 3'd3) && (_i1_io_en_a == 9'd250) && (_s43_Sta_reg_Proc_2_CacheState$next == w$2298)))
+	(id)	58193
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	284
+	(#reg)	18
+	(#inp)	2
+	(#ite)	303
+	(#CF )	618
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#6)		!(((_s47_Sta_reg_Proc_3_CacheState$next == 2'd2) && (_s70_Sta_reg_UniMsg_3_Cmd == 3'd3) && (_i1_io_en_a == 9'd251) && (_s47_Sta_reg_Proc_3_CacheState$next == w$2356)))
+	(id)	58266
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	284
+	(#reg)	18
+	(#inp)	2
+	(#ite)	302
+	(#CF )	616
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#7)		!(((_s20_Sta_reg_HomeProc_CacheState$next == 2'd2) && (_s24_Sta_reg_HomeUniMsg_Cmd == 3'd3) && (_i1_io_en_a == 9'd247) && (_s20_Sta_reg_HomeProc_CacheState$next == w$323)))
+	(id)	60256
+	(#UF )	3
+	(#UFt)	1
+	      	ReductionOr_1_2	#3
+	(#K  )	295
+	(#reg)	28
+	(#inp)	2
+	(#ite)	437
+	(#CF )	838
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+
+(local equalities) #0
+
+(learned predicates) #0
+
+(learned constants)  #0
+
+(learned signals)    #0
+
+(learned UFs)        #0
+
+(#sim. iterations) 0
+(#ref. iterations) 6
+(#refs) 6
+(#assump. lemmas)  2
+(#lemmas)          8

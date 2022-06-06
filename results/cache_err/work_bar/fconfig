@@ -1,5 +1,5 @@
 design_file
-examples/btor2/cache_err2.sv
+./cache_err.btor
 top_module
 main
 clock_sig
@@ -43,4 +43,4 @@ False
 bmc_max_bound
 1000
 frontend
-yosys
+btor2

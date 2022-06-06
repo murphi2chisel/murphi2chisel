@@ -1,0 +1,126 @@
+(benchmark) bar
+
+(#2)		!(((_s22_Sta_reg_HomeProc_CacheState$next == 2'd2) && (_i1_io_en_a == 9'd18) && !(ReductionOr_1_2(_s22_Sta_reg_HomeProc_CacheState)) && (_s22_Sta_reg_HomeProc_CacheState$next == w$437)))
+	(id)	89823
+	(#UF )	3
+	(#UFt)	2
+	      	ReductionOr_1_2	#2
+	      	ReductionOr_1_3	#1
+	(#K  )	402
+	(#reg)	32
+	(#inp)	2
+	(#ite)	599
+	(#CF )	1142
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((_s50_Sta_reg_Proc_3_CacheState$next == 2'd2) && (_s78_Sta_reg_UniMsg_3_Cmd == 3'd3) && (_i1_io_en_a == 9'd345) && (_s50_Sta_reg_Proc_3_CacheState$next == w$3970)))
+	(id)	91251
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	390
+	(#reg)	21
+	(#inp)	2
+	(#ite)	413
+	(#CF )	840
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#4)		!(((_s38_Sta_reg_Proc_0_CacheState$next == 2'd2) && (_s66_Sta_reg_UniMsg_0_Cmd == 3'd3) && (_i1_io_en_a == 9'd342) && (_s38_Sta_reg_Proc_0_CacheState$next == w$3742)))
+	(id)	91311
+	(#UF )	6
+	(#UFt)	2
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_3	#5
+	(#K  )	393
+	(#reg)	21
+	(#inp)	2
+	(#ite)	416
+	(#CF )	846
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#5)		!(((_s42_Sta_reg_Proc_1_CacheState$next == 2'd2) && (_s70_Sta_reg_UniMsg_1_Cmd == 3'd3) && (_i1_io_en_a == 9'd343) && (_s42_Sta_reg_Proc_1_CacheState$next == w$3819)))
+	(id)	91369
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	392
+	(#reg)	21
+	(#inp)	2
+	(#ite)	415
+	(#CF )	844
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#6)		!(((_s46_Sta_reg_Proc_2_CacheState$next == 2'd2) && (_s74_Sta_reg_UniMsg_2_Cmd == 3'd3) && (_i1_io_en_a == 9'd344) && (_s46_Sta_reg_Proc_2_CacheState$next == w$3895)))
+	(id)	91418
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	391
+	(#reg)	21
+	(#inp)	2
+	(#ite)	414
+	(#CF )	842
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#7)		!(((_s54_Sta_reg_Proc_4_CacheState$next == 2'd2) && (_s82_Sta_reg_UniMsg_4_Cmd == 3'd3) && (_i1_io_en_a == 9'd346) && (_s54_Sta_reg_Proc_4_CacheState$next == w$4044)))
+	(id)	91473
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	389
+	(#reg)	21
+	(#inp)	2
+	(#ite)	412
+	(#CF )	838
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#8)		!(((_s22_Sta_reg_HomeProc_CacheState$next == 2'd2) && (_s26_Sta_reg_HomeUniMsg_Cmd == 3'd3) && (_i1_io_en_a == 9'd341) && (_s22_Sta_reg_HomeProc_CacheState$next == w$437)))
+	(id)	94011
+	(#UF )	3
+	(#UFt)	2
+	      	ReductionOr_1_2	#2
+	      	ReductionOr_1_3	#1
+	(#K  )	402
+	(#reg)	32
+	(#inp)	2
+	(#ite)	599
+	(#CF )	1141
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+
+(local equalities) #0
+
+(learned predicates) #0
+
+(learned constants)  #0
+
+(learned signals)    #0
+
+(learned UFs)        #0
+
+(#sim. iterations) 0
+(#ref. iterations) 7
+(#refs) 7
+(#assump. lemmas)  2
+(#lemmas)          9

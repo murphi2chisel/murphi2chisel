@@ -1,0 +1,91 @@
+------------
+Size Summary
+------------
+
+State variables (#8)
+	(1-bit)	6
+	(2-bit)	2
+
+Inputs (#5)
+	(1-bit)	4
+	(3-bit)	1
+
+Constants (#13)
+	(1-bit)	2
+	(2-bit)	4
+	(3-bit)	7
+
+---------------
+State Variables
+---------------
+_s6_$formal$./mutual.sv:374$43_CHECK    (1-bit)
+_s5_$formal$./mutual.sv:382$45_CHECK    (1-bit)
+_s3_$formal$./mutual.sv:378$44_CHECK    (1-bit)
+_s2_x_reg                       (1-bit)
+_s7_id29                        (1-bit)
+_s4_$formal$./mutual.sv:374$43_EN    (1-bit)
+_s1_n_reg_1                     (2-bit)
+_s0_n_reg_0                     (2-bit)
+
+------
+Inputs
+------
+_i5_id289                       (1-bit)
+_i4_id286                       (1-bit)
+_i3_id277                       (1-bit)
+_i2_reset                       (1-bit)
+_i1_io_en_a                     (3-bit)
+
+---------
+Constants
+---------
+1'd1
+1'd0
+2'd1
+2'd2
+2'd3
+2'd0
+3'd1
+3'd2
+3'd3
+3'd4
+3'd5
+3'd6
+3'd7
+
+-----------------------------
+Uninterpreted Functions (UFs)
+-----------------------------
+ReductionOr_1_2	#2
+ReductionOr_1_3	#1
+
+------------------
+Initial Conditions
+------------------
+
+	!_s4_$formal$./mutual.sv:374$43_EN
+	_s7_id29
+
+
+
+-----------------
+Dependency List
+-----------------
+
+Depth: 0
+	(1-bit) #4	n0	u0	c0	e0	property	<= _s4_$formal$./mutual.sv:374$43_EN, _s3_$formal$./mutual.sv:378$44_CHECK, _s5_$formal$./mutual.sv:382$45_CHECK, _s6_$formal$./mutual.sv:374$43_CHECK, 
+
+Depth: 1
+	(1-bit) #0	n1	u0	c0	e0	_s6_$formal$./mutual.sv:374$43_CHECK$next	<= 
+	(1-bit) #2	n1	u0	c0	e0	_s5_$formal$./mutual.sv:382$45_CHECK$next	<= _s0_n_reg_0, _s1_n_reg_1, 
+	(1-bit) #2	n1	u0	c0	e0	_s3_$formal$./mutual.sv:378$44_CHECK$next	<= _s0_n_reg_0, _s1_n_reg_1, 
+	(1-bit) #0	n0	u0	c0	e0	_s4_$formal$./mutual.sv:374$43_EN$next	<= 
+
+Depth: 2
+	(2-bit) #2	n8	u1	c0	e0	_s1_n_reg_1$next	<= _s2_x_reg, 
+	(2-bit) #2	n11	u2	c0	e0	_s0_n_reg_0$next	<= _s2_x_reg, 
+
+Depth: 3
+	(1-bit) #3	n10	u0	c0	e0	_s2_x_reg$next	<= 
+
+-----------------

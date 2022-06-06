@@ -1,0 +1,63 @@
+---------------------
+WITHOUT PREPROCESSING
+---------------------
+
+------------
+Size Summary
+------------
+
+State variables (#8)
+	(1-bit)	6
+	(2-bit)	2
+
+Inputs (#6)
+	(1-bit)	5
+	(3-bit)	1
+
+Constants (#10)
+	(1-bit)	2
+	(2-bit)	4
+	(3-bit)	4
+
+---------------
+State Variables
+---------------
+_s7_id29                        (1-bit)
+_s6_$formal$./mutual.sv:374$43_CHECK    (1-bit)
+_s5_$formal$./mutual.sv:382$45_CHECK    (1-bit)
+_s4_$formal$./mutual.sv:374$43_EN    (1-bit)
+_s3_$formal$./mutual.sv:378$44_CHECK    (1-bit)
+_s2_x_reg                       (1-bit)
+_s1_n_reg_1                     (2-bit)
+_s0_n_reg_0                     (2-bit)
+
+------
+Inputs
+------
+_i5_id289                       (1-bit)
+_i4_id286                       (1-bit)
+_i3_id277                       (1-bit)
+_i2_reset                       (1-bit)
+_i0_clock                       (1-bit)
+_i1_io_en_a                     (3-bit)
+
+---------
+Constants
+---------
+1'd1
+1'd0
+2'd3
+2'd2
+2'd0
+2'd1
+3'd7
+3'd6
+3'd5
+3'd4
+
+-----------------------------
+Uninterpreted Functions (UFs)
+-----------------------------
+ReductionOr_1_2	#2
+ReductionOr_1_3	#1
+

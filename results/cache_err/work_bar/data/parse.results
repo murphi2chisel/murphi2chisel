@@ -1,0 +1,138 @@
+------------
+Size Summary
+------------
+
+State variables (#20)
+	(1-bit)	11
+	(2-bit)	2
+	(3-bit)	7
+
+Inputs (#5)
+	(1-bit)	4
+	(5-bit)	1
+
+Constants (#29)
+	(1-bit)	2
+	(2-bit)	3
+	(3-bit)	7
+	(5-bit)	17
+
+---------------
+State Variables
+---------------
+_s18_$formal$./cache_err.sv:2909$282_CHECK    (1-bit)
+_s17_$formal$./cache_err.sv:2917$284_CHECK    (1-bit)
+_s15_$formal$./cache_err.sv:2913$283_CHECK    (1-bit)
+_s12_home_invalidate_list_reg_1    (1-bit)
+_s11_home_invalidate_list_reg_0    (1-bit)
+_s10_home_exclusive_granted_reg    (1-bit)
+_s8_home_current_client_reg     (1-bit)
+_s13_home_sharer_list_reg_0     (1-bit)
+_s14_home_sharer_list_reg_1     (1-bit)
+_s19_id54                       (1-bit)
+_s16_$formal$./cache_err.sv:2909$282_EN    (1-bit)
+_s1_cache_reg_1                 (2-bit)
+_s0_cache_reg_0                 (2-bit)
+_s3_channel1_reg_1              (3-bit)
+_s9_home_current_command_reg    (3-bit)
+_s2_channel1_reg_0              (3-bit)
+_s7_channel3_reg_1              (3-bit)
+_s5_channel2_4_reg_1            (3-bit)
+_s6_channel3_reg_0              (3-bit)
+_s4_channel2_4_reg_0            (3-bit)
+
+------
+Inputs
+------
+_i5_id2051                      (1-bit)
+_i4_id2048                      (1-bit)
+_i3_id2038                      (1-bit)
+_i2_reset                       (1-bit)
+_i1_io_en_a                     (5-bit)
+
+---------
+Constants
+---------
+1'd1
+1'd0
+2'd1
+2'd2
+2'd0
+3'd4
+3'd1
+3'd2
+3'd0
+3'd3
+3'd5
+3'd6
+5'd1
+5'd2
+5'd3
+5'd4
+5'd5
+5'd6
+5'd7
+5'd8
+5'd9
+5'd10
+5'd11
+5'd12
+5'd13
+5'd14
+5'd15
+5'd16
+5'd17
+
+-----------------------------
+Uninterpreted Functions (UFs)
+-----------------------------
+ReductionOr_1_2	#2
+ReductionOr_1_3	#8
+ReductionOr_1_5	#1
+
+------------------
+Initial Conditions
+------------------
+
+	!_s16_$formal$./cache_err.sv:2909$282_EN
+	_s19_id54
+
+
+
+-----------------
+Dependency List
+-----------------
+
+Depth: 0
+	(1-bit) #4	n0	u0	c0	e0	property	<= _s16_$formal$./cache_err.sv:2909$282_EN, _s15_$formal$./cache_err.sv:2913$283_CHECK, _s17_$formal$./cache_err.sv:2917$284_CHECK, _s18_$formal$./cache_err.sv:2909$282_CHECK, 
+
+Depth: 1
+	(1-bit) #0	n1	u0	c0	e0	_s18_$formal$./cache_err.sv:2909$282_CHECK$next	<= 
+	(1-bit) #2	n1	u1	c0	e0	_s17_$formal$./cache_err.sv:2917$284_CHECK$next	<= _s0_cache_reg_0, _s1_cache_reg_1, 
+	(1-bit) #2	n1	u1	c0	e0	_s15_$formal$./cache_err.sv:2913$283_CHECK$next	<= _s0_cache_reg_0, _s1_cache_reg_1, 
+	(1-bit) #0	n0	u0	c0	e0	_s16_$formal$./cache_err.sv:2909$282_EN$next	<= 
+
+Depth: 2
+	(2-bit) #3	n11	u1	c0	e0	_s1_cache_reg_1$next	<= _s5_channel2_4_reg_1, _s7_channel3_reg_1, 
+	(2-bit) #3	n19	u1	c0	e0	_s0_cache_reg_0$next	<= _s4_channel2_4_reg_0, _s6_channel3_reg_0, 
+
+Depth: 3
+	(3-bit) #3	n9	u2	c0	e0	_s7_channel3_reg_1$next	<= _s9_home_current_command_reg, 
+	(3-bit) #9	n14	u3	c0	e0	_s5_channel2_4_reg_1$next	<= _s9_home_current_command_reg, _s14_home_sharer_list_reg_1, _s13_home_sharer_list_reg_0, _s8_home_current_client_reg, _s10_home_exclusive_granted_reg, _s12_home_invalidate_list_reg_1, 
+	(3-bit) #3	n17	u2	c0	e0	_s6_channel3_reg_0$next	<= _s9_home_current_command_reg, 
+	(3-bit) #9	n22	u3	c0	e0	_s4_channel2_4_reg_0$next	<= _s9_home_current_command_reg, _s14_home_sharer_list_reg_1, _s13_home_sharer_list_reg_0, _s8_home_current_client_reg, _s10_home_exclusive_granted_reg, _s11_home_invalidate_list_reg_0, 
+
+Depth: 4
+	(1-bit) #7	n19	u4	c0	e0	_s12_home_invalidate_list_reg_1$next	<= _s2_channel1_reg_0, _s3_channel1_reg_1, 
+	(1-bit) #7	n19	u4	c0	e0	_s11_home_invalidate_list_reg_0$next	<= _s2_channel1_reg_0, _s3_channel1_reg_1, 
+	(1-bit) #4	n16	u1	c0	e0	_s10_home_exclusive_granted_reg$next	<= 
+	(1-bit) #4	n17	u3	c0	e0	_s8_home_current_client_reg$next	<= _s2_channel1_reg_0, _s3_channel1_reg_1, 
+	(1-bit) #8	n18	u2	c0	e0	_s13_home_sharer_list_reg_0$next	<= 
+	(1-bit) #8	n10	u2	c0	e0	_s14_home_sharer_list_reg_1$next	<= 
+	(3-bit) #9	n20	u4	c0	e0	_s9_home_current_command_reg$next	<= _s2_channel1_reg_0, _s3_channel1_reg_1, 
+
+Depth: 5
+	(3-bit) #3	n14	u3	c0	e0	_s3_channel1_reg_1$next	<= 
+	(3-bit) #3	n21	u4	c0	e0	_s2_channel1_reg_0$next	<= 
+
+-----------------

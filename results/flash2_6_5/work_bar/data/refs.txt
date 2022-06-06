@@ -1,0 +1,78 @@
+(benchmark) bar
+
+(#2)		!(((_s16_Sta_reg_HomeProc_CacheState$next == 2'd2) && (_i1_io_en_a == 7'd9) && !(ReductionOr_1_2(_s16_Sta_reg_HomeProc_CacheState)) && (_s16_Sta_reg_HomeProc_CacheState$next == w$146)))
+	(id)	16905
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_2	#2
+	(#K  )	126
+	(#reg)	20
+	(#inp)	2
+	(#ite)	185
+	(#CF )	363
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((_s33_Sta_reg_Proc_1_CacheState$next == 2'd2) && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd3) && (_i1_io_en_a == 7'd103) && (_s33_Sta_reg_Proc_1_CacheState$next == w$528)))
+	(id)	17302
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	119
+	(#reg)	12
+	(#inp)	2
+	(#ite)	130
+	(#CF )	266
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#4)		!(((_s29_Sta_reg_Proc_0_CacheState$next == 2'd2) && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd3) && (_i1_io_en_a == 7'd102) && (_s29_Sta_reg_Proc_0_CacheState$next == w$496)))
+	(id)	17428
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	120
+	(#reg)	12
+	(#inp)	2
+	(#ite)	131
+	(#CF )	270
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#5)		!(((_s16_Sta_reg_HomeProc_CacheState$next == 2'd2) && (_s20_Sta_reg_HomeUniMsg_Cmd == 3'd3) && (_i1_io_en_a == 7'd101) && (_s16_Sta_reg_HomeProc_CacheState$next == w$146)))
+	(id)	18618
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_2	#2
+	(#K  )	126
+	(#reg)	20
+	(#inp)	2
+	(#ite)	185
+	(#CF )	362
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+
+(local equalities) #0
+
+(learned predicates) #0
+
+(learned constants)  #0
+
+(learned signals)    #0
+
+(learned UFs)        #0
+
+(#sim. iterations) 0
+(#ref. iterations) 4
+(#refs) 4
+(#assump. lemmas)  2
+(#lemmas)          6

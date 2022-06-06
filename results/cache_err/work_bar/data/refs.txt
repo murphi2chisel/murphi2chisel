@@ -1,2 +1,70 @@
 (benchmark) bar
 
+(#2)		!((((_s1_cache_reg_1 == 2'd0) || (_s1_cache_reg_1 != 2'd0)) && (_s1_cache_reg_1 == 2'd0) && ((_i1_io_en_a == 5'd7) || (_i1_io_en_a != 5'd7)) && b$1817 && ReductionOr_1_2(_s1_cache_reg_1$next) && (_s1_cache_reg_1$next == _s1_cache_reg_1$next_rhs)))
+	(id)	1461
+	(#UF )	2
+	(#UFt)	2
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_3	#1
+	(#K  )	12
+	(#reg)	4
+	(#inp)	2
+	(#ite)	12
+	(#CF )	31
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((_s0_cache_reg_0 == 2'd0) && ReductionOr_1_2(_s0_cache_reg_0)))
+	(id)	1688
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#4)		!(((_s0_cache_reg_0$next == 2'd0) && ReductionOr_1_2(_s0_cache_reg_0$next)))
+	(id)	1690
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+
+(local equalities) #0
+
+(learned predicates) #2
+            (_i1_io_en_a == 5'd7)
+            (_s1_cache_reg_1 == 2'd0)
+
+(learned constants)  #2
+            2'd0
+            5'd7
+
+(learned signals)    #2
+            _i1_io_en_a
+            _s1_cache_reg_1
+
+(learned UFs)        #0
+
+(#sim. iterations) 2
+(#ref. iterations) 2
+(#refs) 3
+(#assump. lemmas)  2
+(#lemmas)          5
