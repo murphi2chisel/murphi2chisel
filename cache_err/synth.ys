@@ -1,9 +1,0 @@
-
-    read -formal ./cache_err.sv;
-    prep -top cache_err;
-    flatten;
-    memory -nomap;
-    hierarchy -check;
-    setundef -undriven -expose;
-    write_btor cache_err.btor2;
-    
