@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 76 products, 16 sources, 4 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/chiselsby/Formal.scala, ${BASE}/src/main/scala/InOut.scala, ${BASE}/src/main/scala/Memory.scala, ${BASE}/src/main/scala/LVTMpMemory.scala, ${BASE}/src/main/scala/Counter.scala, ${BASE}/src/main/scala/Test.scala, ${BASE}/src/main/scala/FIFOs.scala, ${BASE}/src/main/scala/chiselsby/AnyConst.scala, ${BASE}/src/main/scala/chiselsby/Check.scala, ${BASE}/src/main/scala/gencache_err.scala, ${BASE}/src/main/scala/cache_err.scala, ${BASE}/src/main/scala/Assertions.scala, ${BASE}/src/main/scala/chiselsby/ResetCounter.scala, ${BASE}/src/main/scala/chiselsby/Delay.scala, ${BASE}/src/main/scala/chiselsby/InitialReg.scala, ${BASE}/src/main/scala/MpMemorySpec.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m

@@ -1,0 +1,17 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/protocolVerify/ChiselFV/src/main/scala/chiselsby/Check.scala:74:71: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method getLines,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val output = io.Source.fromInputStream(sbyProcess.getInputStream).getLines.mkString("\n")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/protocolVerify/ChiselFV/src/main/scala/chiselsby/Check.scala:75:70: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method getLines,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val error = io.Source.fromInputStream(sbyProcess.getErrorStream).getLines.mkString("\n")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/protocolVerify/ChiselFV/src/main/scala/LVTMpMemory.scala:21:48: method copyArrayToImmutableIndexedSeq in class LowPriorityImplicits2 is deprecated (since 2.13.0): Implicit conversions from Array to immutable.IndexedSeq are implemented by copying; Use the more efficient non-copying ArraySeq.unsafeWrapArray or an explicit toIndexedSeq call[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val lvtReg = RegInit(VecInit(lvtInitArray.map(_.U(math.ceil(math.log(m) / math.log(2)).toInt.W))))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/protocolVerify/ChiselFV/src/main/scala/MpMemorySpec.scala:23:45: method copyArrayToImmutableIndexedSeq in class LowPriorityImplicits2 is deprecated (since 2.13.0): Implicit conversions from Array to immutable.IndexedSeq are implemented by copying; Use the more efficient non-copying ArraySeq.unsafeWrapArray or an explicit toIndexedSeq call[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val memReg = RegInit(VecInit(initArray.map(_.U(width.W))))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mfour warnings found[0m
