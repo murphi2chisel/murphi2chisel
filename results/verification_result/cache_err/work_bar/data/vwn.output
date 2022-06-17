@@ -1,7 +1,7 @@
-./cache_err.btor  ./
+../out3/cache_err2.btor2  ../out3/
 Using Btor2Parser
-	(reading btor2 file cache_err_6_6/work_bar/bar.btor2)
-	(finished parsing btor2 file cache_err_6_6/work_bar/bar.btor2)
+	(reading btor2 file ../out32/log/work_bar/bar.btor2)
+	(finished parsing btor2 file ../out32/log/work_bar/bar.btor2)
 	(starting interpreting btor2 model)
 	(finished interpreting btor2 model)
 	(parsed system with ? state variables)

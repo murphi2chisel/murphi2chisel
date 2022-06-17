@@ -1,5 +1,5 @@
 design_file
-./cache_err.btor
+../out3/cache_err2.btor2
 top_module
 main
 clock_sig
@@ -31,7 +31,7 @@ jg_preprocess
 print_smt2_design
 False
 print_witness
-False
+True
 print_dot
 0000000
 verbosity
