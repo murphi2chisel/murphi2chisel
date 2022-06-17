@@ -79,27 +79,26 @@ class mutual(clientNUMS:Int) extends Module{
     val x_out = Output(Bool()) 
   })
   
+  // register init in Chisel format
   val n_init = Wire(Vec(clientNUMS,UInt(2.W)))
   val n_reg = RegInit(n_init)
   io.n_out:=n_reg
   val x_init = Wire(Bool())
   val x_reg = RegInit(x_init)
   io.x_out:=x_reg
-  
   for( i <- 0 until clientNUMS){
     n_init(i) := e_I
   }
   x_init := true.B
-  
+  // control the choice and execution of rule modules
   var rules = ArrayBuffer[rule]()
-  var index = 0
   for(i <- 0 until clientNUMS) {
     rules += Module(new rule_Try(i, clientNUMS))
     rules += Module(new rule_Crit(i, clientNUMS))
     rules += Module(new rule_Exit(i, clientNUMS))
     rules += Module(new rule_Idle(i, clientNUMS))
   }
-  
+  var index = 0
   for(i <- 0 until 4*clientNUMS+0) {
     rules(i).io.n_in := n_reg
     rules(i).io.x_in := x_reg
@@ -110,6 +109,7 @@ class mutual(clientNUMS:Int) extends Module{
     }
     index = index +1 
   }
+  // assertion in Chisel format
   for (i <- 0 until clientNUMS){
     for (j <- 0 until clientNUMS){
       assert((!((i.U =/= j.U))||((!((n_reg(i) === e_C))||((n_reg(j) =/= e_C))))))
