@@ -1,0 +1,10 @@
+
+        read_aiger -formal protocol.sv
+        prep -top system
+        flatten
+        memory -nordff
+
+        techmap
+        abc -fast -g AND
+        write_aiger -zinit  protocol.aig
+        

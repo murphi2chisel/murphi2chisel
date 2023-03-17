@@ -1,0 +1,698 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.15+38 (git sha1 66914b6eb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: protocol.sv
+Parsing SystemVerilog input from `protocol.sv' to AST representation.
+Storing AST representation for module `$abstract\Try'.
+Storing AST representation for module `$abstract\Try_1'.
+Storing AST representation for module `$abstract\Crit'.
+Storing AST representation for module `$abstract\Crit_1'.
+Storing AST representation for module `$abstract\Exit'.
+Storing AST representation for module `$abstract\Exit_1'.
+Storing AST representation for module `$abstract\Idle'.
+Storing AST representation for module `$abstract\Idle_1'.
+Storing AST representation for module `$abstract\system'.
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\system'.
+Generating RTLIL representation for module `\system'.
+
+2.2.1. Analyzing design hierarchy..
+Top module:  \system
+
+2.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\Idle_1'.
+Generating RTLIL representation for module `\Idle_1'.
+
+2.2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\Idle'.
+Generating RTLIL representation for module `\Idle'.
+
+2.2.4. Executing AST frontend in derive mode using pre-parsed AST for module `\Exit_1'.
+Generating RTLIL representation for module `\Exit_1'.
+
+2.2.5. Executing AST frontend in derive mode using pre-parsed AST for module `\Exit'.
+Generating RTLIL representation for module `\Exit'.
+
+2.2.6. Executing AST frontend in derive mode using pre-parsed AST for module `\Crit_1'.
+Generating RTLIL representation for module `\Crit_1'.
+
+2.2.7. Executing AST frontend in derive mode using pre-parsed AST for module `\Crit'.
+Generating RTLIL representation for module `\Crit'.
+
+2.2.8. Executing AST frontend in derive mode using pre-parsed AST for module `\Try_1'.
+Generating RTLIL representation for module `\Try_1'.
+
+2.2.9. Executing AST frontend in derive mode using pre-parsed AST for module `\Try'.
+Generating RTLIL representation for module `\Try'.
+
+2.2.10. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Idle_1
+Used module:     \Idle
+Used module:     \Exit_1
+Used module:     \Exit
+Used module:     \Crit_1
+Used module:     \Crit
+Used module:     \Try_1
+Used module:     \Try
+
+2.2.11. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Idle_1
+Used module:     \Idle
+Used module:     \Exit_1
+Used module:     \Exit
+Used module:     \Crit_1
+Used module:     \Crit
+Used module:     \Try_1
+Used module:     \Try
+Removing unused module `$abstract\system'.
+Removing unused module `$abstract\Idle_1'.
+Removing unused module `$abstract\Idle'.
+Removing unused module `$abstract\Exit_1'.
+Removing unused module `$abstract\Exit'.
+Removing unused module `$abstract\Crit_1'.
+Removing unused module `$abstract\Crit'.
+Removing unused module `$abstract\Try_1'.
+Removing unused module `$abstract\Try'.
+Removed 9 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+2.3. Executing PROC pass (convert processes to netlists).
+
+2.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 12 switch rules as full_case in process $proc$protocol.sv:395$43 in module system.
+Removed a total of 0 dead cases.
+
+2.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 3 redundant assignments.
+Promoted 4 assignments to connections.
+
+2.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\system.$proc$protocol.sv:0$61'.
+  Set init value: $formal$protocol.sv:457$3_EN = 1'0
+
+2.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\system.$proc$protocol.sv:0$61'.
+Creating decoders for process `\system.$proc$protocol.sv:0$57'.
+Creating decoders for process `\system.$proc$protocol.sv:455$45'.
+     1/2: $0$formal$protocol.sv:457$3_EN[0:0]$47
+     2/2: $0$formal$protocol.sv:457$3_CHECK[0:0]$46
+Creating decoders for process `\system.$proc$protocol.sv:395$43'.
+     1/3: $0\n_reg_2[1:0]
+     2/3: $0\n_reg_1[1:0]
+     3/3: $0\n_reg_0[1:0]
+
+2.3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\system.$formal$protocol.sv:451$1_CHECK' from process `\system.$proc$protocol.sv:0$57'.
+No latch inferred for signal `\system.$formal$protocol.sv:451$1_EN' from process `\system.$proc$protocol.sv:0$57'.
+
+2.3.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\system.$formal$protocol.sv:457$3_CHECK' using process `\system.$proc$protocol.sv:455$45'.
+  created $dff cell `$procdff$143' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:457$3_EN' using process `\system.$proc$protocol.sv:455$45'.
+  created $dff cell `$procdff$144' with positive edge clock.
+Creating register for signal `\system.\n_reg_0' using process `\system.$proc$protocol.sv:395$43'.
+  created $dff cell `$procdff$145' with positive edge clock.
+Creating register for signal `\system.\n_reg_1' using process `\system.$proc$protocol.sv:395$43'.
+  created $dff cell `$procdff$146' with positive edge clock.
+Creating register for signal `\system.\n_reg_2' using process `\system.$proc$protocol.sv:395$43'.
+  created $dff cell `$procdff$147' with positive edge clock.
+Creating register for signal `\system.\x_reg' using process `\system.$proc$protocol.sv:395$43'.
+  created $dff cell `$procdff$148' with positive edge clock.
+
+2.3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `system.$proc$protocol.sv:0$61'.
+Removing empty process `system.$proc$protocol.sv:0$57'.
+Found and cleaned up 1 empty switch in `\system.$proc$protocol.sv:455$45'.
+Removing empty process `system.$proc$protocol.sv:455$45'.
+Found and cleaned up 12 empty switches in `\system.$proc$protocol.sv:395$43'.
+Removing empty process `system.$proc$protocol.sv:395$43'.
+Cleaned up 13 empty switches.
+
+2.3.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Try.
+<suppressed ~1 debug messages>
+Optimizing module Try_1.
+<suppressed ~1 debug messages>
+Optimizing module Crit.
+Optimizing module Crit_1.
+Optimizing module Exit.
+Optimizing module Exit_1.
+Optimizing module Idle.
+Optimizing module Idle_1.
+Optimizing module system.
+<suppressed ~5 debug messages>
+
+2.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Try.
+Optimizing module Try_1.
+Optimizing module Crit.
+Optimizing module Crit_1.
+Optimizing module Exit.
+Optimizing module Exit_1.
+Optimizing module Idle.
+Optimizing module Idle_1.
+Optimizing module system.
+
+2.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Try..
+Finding unused cells or wires in module \Try_1..
+Finding unused cells or wires in module \Crit..
+Finding unused cells or wires in module \Crit_1..
+Finding unused cells or wires in module \Exit..
+Finding unused cells or wires in module \Exit_1..
+Finding unused cells or wires in module \Idle..
+Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \system..
+Removed 1 unused cells and 90 unused wires.
+<suppressed ~10 debug messages>
+
+2.6. Executing CHECK pass (checking for obvious problems).
+Checking module Crit...
+Checking module Crit_1...
+Checking module Exit...
+Checking module Exit_1...
+Checking module Idle...
+Checking module Idle_1...
+Checking module Try...
+Checking module Try_1...
+Checking module system...
+Found and reported 0 problems.
+
+2.7. Executing OPT pass (performing simple optimizations).
+
+2.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Crit.
+Optimizing module Crit_1.
+Optimizing module Exit.
+Optimizing module Exit_1.
+Optimizing module Idle.
+Optimizing module Idle_1.
+Optimizing module Try.
+Optimizing module Try_1.
+Optimizing module system.
+
+2.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Crit'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\Crit_1'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\Exit'.
+Finding identical cells in module `\Exit_1'.
+Finding identical cells in module `\Idle'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\Idle_1'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\Try'.
+Finding identical cells in module `\Try_1'.
+Finding identical cells in module `\system'.
+<suppressed ~24 debug messages>
+Removed a total of 14 cells.
+
+2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \Crit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Crit_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Exit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Exit_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Idle..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Idle_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Try..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Try_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~18 debug messages>
+
+2.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \Crit.
+  Optimizing cells in module \Crit_1.
+  Optimizing cells in module \Exit.
+  Optimizing cells in module \Exit_1.
+  Optimizing cells in module \Idle.
+  Optimizing cells in module \Idle_1.
+  Optimizing cells in module \Try.
+  Optimizing cells in module \Try_1.
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+2.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Crit'.
+Finding identical cells in module `\Crit_1'.
+Finding identical cells in module `\Exit'.
+Finding identical cells in module `\Exit_1'.
+Finding identical cells in module `\Idle'.
+Finding identical cells in module `\Idle_1'.
+Finding identical cells in module `\Try'.
+Finding identical cells in module `\Try_1'.
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+2.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Crit..
+Finding unused cells or wires in module \Crit_1..
+Finding unused cells or wires in module \Exit..
+Finding unused cells or wires in module \Exit_1..
+Finding unused cells or wires in module \Idle..
+Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Try..
+Finding unused cells or wires in module \Try_1..
+Finding unused cells or wires in module \system..
+Removed 0 unused cells and 6 unused wires.
+<suppressed ~4 debug messages>
+
+2.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Crit.
+Optimizing module Crit_1.
+Optimizing module Exit.
+Optimizing module Exit_1.
+Optimizing module Idle.
+Optimizing module Idle_1.
+Optimizing module Try.
+Optimizing module Try_1.
+Optimizing module system.
+
+2.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \Crit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Crit_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Exit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Exit_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Idle..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Idle_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Try..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Try_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~18 debug messages>
+
+2.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \Crit.
+  Optimizing cells in module \Crit_1.
+  Optimizing cells in module \Exit.
+  Optimizing cells in module \Exit_1.
+  Optimizing cells in module \Idle.
+  Optimizing cells in module \Idle_1.
+  Optimizing cells in module \Try.
+  Optimizing cells in module \Try_1.
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+2.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Crit'.
+Finding identical cells in module `\Crit_1'.
+Finding identical cells in module `\Exit'.
+Finding identical cells in module `\Exit_1'.
+Finding identical cells in module `\Idle'.
+Finding identical cells in module `\Idle_1'.
+Finding identical cells in module `\Try'.
+Finding identical cells in module `\Try_1'.
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+2.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Crit..
+Finding unused cells or wires in module \Crit_1..
+Finding unused cells or wires in module \Exit..
+Finding unused cells or wires in module \Exit_1..
+Finding unused cells or wires in module \Idle..
+Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Try..
+Finding unused cells or wires in module \Try_1..
+Finding unused cells or wires in module \system..
+
+2.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Crit.
+Optimizing module Crit_1.
+Optimizing module Exit.
+Optimizing module Exit_1.
+Optimizing module Idle.
+Optimizing module Idle_1.
+Optimizing module Try.
+Optimizing module Try_1.
+Optimizing module system.
+
+2.7.14. Finished OPT passes. (There is nothing left to do.)
+
+2.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from port B of cell Crit.$eq$protocol.sv:46$89 ($eq).
+Removed top 1 bits (of 2) from port B of cell Crit_1.$eq$protocol.sv:64$81 ($eq).
+Removed top 2 bits (of 3) from port B of cell system.$eq$protocol.sv:237$9 ($eq).
+Removed top 1 bits (of 3) from port B of cell system.$eq$protocol.sv:242$14 ($eq).
+Removed top 1 bits (of 3) from port B of cell system.$eq$protocol.sv:247$19 ($eq).
+Removed top 1 bits (of 2) from port B of cell system.$eq$protocol.sv:458$49 ($eq).
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Crit..
+Finding unused cells or wires in module \Crit_1..
+Finding unused cells or wires in module \Exit..
+Finding unused cells or wires in module \Exit_1..
+Finding unused cells or wires in module \Idle..
+Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Try..
+Finding unused cells or wires in module \Try_1..
+Finding unused cells or wires in module \system..
+
+2.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Crit.
+Optimizing module Crit_1.
+Optimizing module Exit.
+Optimizing module Exit_1.
+Optimizing module Idle.
+Optimizing module Idle_1.
+Optimizing module Try.
+Optimizing module Try_1.
+Optimizing module system.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Crit'.
+Finding identical cells in module `\Crit_1'.
+Finding identical cells in module `\Exit'.
+Finding identical cells in module `\Exit_1'.
+Finding identical cells in module `\Idle'.
+Finding identical cells in module `\Idle_1'.
+Finding identical cells in module `\Try'.
+Finding identical cells in module `\Try_1'.
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+2.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Crit..
+Finding unused cells or wires in module \Crit_1..
+Finding unused cells or wires in module \Exit..
+Finding unused cells or wires in module \Exit_1..
+Finding unused cells or wires in module \Idle..
+Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Try..
+Finding unused cells or wires in module \Try_1..
+Finding unused cells or wires in module \system..
+
+2.11.4. Finished fast OPT passes.
+
+2.12. Printing statistics.
+
+=== Crit ===
+
+   Number of wires:                 13
+   Number of wire bits:             20
+   Number of public wires:          11
+   Number of public wire bits:      18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            1
+     $eq                             1
+     $mux                            4
+
+=== Crit_1 ===
+
+   Number of wires:                 13
+   Number of wire bits:             20
+   Number of public wires:          11
+   Number of public wire bits:      18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            1
+     $eq                             1
+     $mux                            4
+
+=== Exit ===
+
+   Number of wires:                 11
+   Number of wire bits:             18
+   Number of public wires:          10
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $eq                             1
+     $mux                            2
+
+=== Exit_1 ===
+
+   Number of wires:                 11
+   Number of wire bits:             18
+   Number of public wires:          10
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $eq                             1
+     $mux                            2
+
+=== Idle ===
+
+   Number of wires:                 12
+   Number of wire bits:             19
+   Number of public wires:          11
+   Number of public wire bits:      18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            3
+     $or                             1
+
+=== Idle_1 ===
+
+   Number of wires:                 12
+   Number of wire bits:             19
+   Number of public wires:          11
+   Number of public wire bits:      18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            3
+     $or                             1
+
+=== Try ===
+
+   Number of wires:                 11
+   Number of wire bits:             18
+   Number of public wires:          10
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $logic_not                      1
+     $mux                            2
+
+=== Try_1 ===
+
+   Number of wires:                 11
+   Number of wire bits:             18
+   Number of public wires:          10
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $logic_not                      1
+     $mux                            2
+
+=== system ===
+
+   Number of wires:                138
+   Number of wire bits:            221
+   Number of public wires:         114
+   Number of public wire bits:     185
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 69
+     $and                            2
+     $assert                         1
+     $assume                         1
+     $dff                            6
+     $eq                             9
+     $initstate                      1
+     $logic_not                      1
+     $mux                           37
+     $not                            2
+     $or                             1
+     Crit                            1
+     Crit_1                          1
+     Exit                            1
+     Exit_1                          1
+     Idle                            1
+     Idle_1                          1
+     Try                             1
+     Try_1                           1
+
+=== design hierarchy ===
+
+   system                            1
+     Crit                            1
+     Crit_1                          1
+     Exit                            1
+     Exit_1                          1
+     Idle                            1
+     Idle_1                          1
+     Try                             1
+     Try_1                           1
+
+   Number of wires:                232
+   Number of wire bits:            371
+   Number of public wires:         198
+   Number of public wire bits:     325
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 95
+     $and                            4
+     $assert                         1
+     $assume                         1
+     $dff                            6
+     $eq                            15
+     $initstate                      1
+     $logic_not                      3
+     $mux                           59
+     $not                            2
+     $or                             3
+
+2.13. Executing CHECK pass (checking for obvious problems).
+Checking module Crit...
+Checking module Crit_1...
+Checking module Exit...
+Checking module Exit_1...
+Checking module Idle...
+Checking module Idle_1...
+Checking module Try...
+Checking module Try_1...
+Checking module system...
+Found and reported 0 problems.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Try
+Used module:     \Try_1
+Used module:     \Crit
+Used module:     \Crit_1
+Used module:     \Exit
+Used module:     \Exit_1
+Used module:     \Idle
+Used module:     \Idle_1
+
+3.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Try
+Used module:     \Try_1
+Used module:     \Crit
+Used module:     \Crit_1
+Used module:     \Exit
+Used module:     \Exit_1
+Used module:     \Idle
+Used module:     \Idle_1
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4. Executing JSON backend.
+
+5. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: 272142c7e6, CPU: user 0.08s system 0.00s, MEM: 11.41 MB peak
+Yosys 0.15+38 (git sha1 66914b6eb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 20% 4x opt_merge (0 sec), 19% 6x opt_expr (0 sec), ...

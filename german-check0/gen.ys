@@ -1,0 +1,9 @@
+
+        read -formal ./protocol.sv;
+        prep -top system;
+        flatten;
+        memory -nomap;
+        hierarchy -check;
+        setundef -undriven -expose;
+        write_btor protocol.btor2;
+        

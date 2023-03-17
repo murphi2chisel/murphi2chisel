@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2023-03-13T17:20:29" hostname="VM-16-10-ubuntu" package="v0" id="0" name="default" tests="1" errors="0" failures="0" time="2" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="default" time="2">
+</testcase>
+<system-out>SBY 17:20:26 [v0] Removing directory '/home/ubuntu/murphi2chisel/equivalence_check/german/v0'.
+SBY 17:20:26 [v0] Copy '/home/ubuntu/murphi2chisel/equivalence_check/german/protocol.sv' to '/home/ubuntu/murphi2chisel/equivalence_check/german/v0/src/protocol.sv'.
+SBY 17:20:26 [v0] engine_0: abc pdr
+SBY 17:20:26 [v0] base: starting process &quot;cd v0/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 17:20:27 [v0] base: finished (returncode=0)
+SBY 17:20:27 [v0] aig: starting process &quot;cd v0/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY 17:20:29 [v0] aig: finished (returncode=0)
+SBY 17:20:29 [v0] engine_0: starting process &quot;cd v0; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr; write_cex -a engine_0/trace.aiw'&quot;
+SBY 17:20:29 [v0] engine_0: ABC command line: &quot;read_aiger model/design_aiger.aig; fold; strash; pdr; write_cex -a engine_0/trace.aiw&quot;.
+SBY 17:20:29 [v0] engine_0: Warning: The last output is interpreted as a constraint.
+SBY 17:20:29 [v0] engine_0: Invariant F[3] : 4 clauses with 7 flops (out of 56) (cex = 0, ave = 32.62)
+SBY 17:20:29 [v0] engine_0: Verification of invariant with 4 clauses was successful.  Time =     0.00 sec
+SBY 17:20:29 [v0] engine_0: Property proved.  Time =     0.03 sec
+SBY 17:20:29 [v0] engine_0: Counter-example is not available.
+SBY 17:20:29 [v0] engine_0: finished (returncode=0)
+SBY 17:20:29 [v0] engine_0: Status returned by engine: PASS
+SBY 17:20:29 [v0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY 17:20:29 [v0] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY 17:20:29 [v0] summary: engine_0 (abc pdr) returned PASS
+SBY 17:20:29 [v0] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

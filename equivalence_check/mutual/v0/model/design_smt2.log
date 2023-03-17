@@ -1,0 +1,368 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.15+38 (git sha1 66914b6eb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+3. Executing ASYNC2SYNC pass.
+
+4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Finding unused cells or wires in module \Try_1..
+Finding unused cells or wires in module \Try..
+Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Idle..
+Finding unused cells or wires in module \Exit_1..
+Finding unused cells or wires in module \Exit..
+Finding unused cells or wires in module \Crit_1..
+Finding unused cells or wires in module \Crit..
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Crit.
+Optimizing module Crit_1.
+Optimizing module Exit.
+Optimizing module Exit_1.
+Optimizing module Idle.
+Optimizing module Idle_1.
+Optimizing module Try.
+Optimizing module Try_1.
+Optimizing module system.
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Crit'.
+Finding identical cells in module `\Crit_1'.
+Finding identical cells in module `\Exit'.
+Finding identical cells in module `\Exit_1'.
+Finding identical cells in module `\Idle'.
+Finding identical cells in module `\Idle_1'.
+Finding identical cells in module `\Try'.
+Finding identical cells in module `\Try_1'.
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+6.3. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$146 ($dff) from module system (D = $procmux$113_Y, Q = \n_reg_2, rval = 2'00).
+Adding EN signal on $auto$ff.cc:262:slice$150 ($sdff) from module system (D = $procmux$113_Y, Q = \n_reg_2).
+Adding SRST signal on $procdff$145 ($dff) from module system (D = $procmux$125_Y, Q = \n_reg_1, rval = 2'00).
+Adding EN signal on $auto$ff.cc:262:slice$154 ($sdff) from module system (D = $procmux$125_Y, Q = \n_reg_1).
+Adding SRST signal on $procdff$144 ($dff) from module system (D = $procmux$137_Y, Q = \n_reg_0, rval = 2'00).
+Adding EN signal on $auto$ff.cc:262:slice$158 ($sdff) from module system (D = $procmux$137_Y, Q = \n_reg_0).
+
+6.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Crit..
+Finding unused cells or wires in module \Crit_1..
+Finding unused cells or wires in module \Exit..
+Finding unused cells or wires in module \Exit_1..
+Finding unused cells or wires in module \Idle..
+Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Try..
+Finding unused cells or wires in module \Try_1..
+Finding unused cells or wires in module \system..
+Removed 3 unused cells and 3 unused wires.
+<suppressed ~4 debug messages>
+
+6.5. Rerunning OPT passes. (Removed registers in this run.)
+
+6.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Crit.
+Optimizing module Crit_1.
+Optimizing module Exit.
+Optimizing module Exit_1.
+Optimizing module Idle.
+Optimizing module Idle_1.
+Optimizing module Try.
+Optimizing module Try_1.
+Optimizing module system.
+<suppressed ~3 debug messages>
+
+6.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Crit'.
+Finding identical cells in module `\Crit_1'.
+Finding identical cells in module `\Exit'.
+Finding identical cells in module `\Exit_1'.
+Finding identical cells in module `\Idle'.
+Finding identical cells in module `\Idle_1'.
+Finding identical cells in module `\Try'.
+Finding identical cells in module `\Try_1'.
+Finding identical cells in module `\system'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+6.8. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Crit..
+Finding unused cells or wires in module \Crit_1..
+Finding unused cells or wires in module \Exit..
+Finding unused cells or wires in module \Exit_1..
+Finding unused cells or wires in module \Idle..
+Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Try..
+Finding unused cells or wires in module \Try_1..
+Finding unused cells or wires in module \system..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+6.10. Finished fast OPT passes.
+
+7. Executing CHECK pass (checking for obvious problems).
+Checking module Crit...
+Checking module Crit_1...
+Checking module Exit...
+Checking module Exit_1...
+Checking module Idle...
+Checking module Idle_1...
+Checking module Try...
+Checking module Try_1...
+Checking module system...
+Found and reported 0 problems.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+8.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Try
+Used module:     \Try_1
+Used module:     \Crit
+Used module:     \Crit_1
+Used module:     \Exit
+Used module:     \Exit_1
+Used module:     \Idle
+Used module:     \Idle_1
+
+8.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Try
+Used module:     \Try_1
+Used module:     \Crit
+Used module:     \Crit_1
+Used module:     \Exit
+Used module:     \Exit_1
+Used module:     \Idle
+Used module:     \Idle_1
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+9. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+10. Printing statistics.
+
+=== Crit ===
+
+   Number of wires:                 13
+   Number of wire bits:             20
+   Number of public wires:          11
+   Number of public wire bits:      18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            1
+     $eq                             1
+     $mux                            4
+
+=== Crit_1 ===
+
+   Number of wires:                 13
+   Number of wire bits:             20
+   Number of public wires:          11
+   Number of public wire bits:      18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            1
+     $eq                             1
+     $mux                            4
+
+=== Exit ===
+
+   Number of wires:                 11
+   Number of wire bits:             18
+   Number of public wires:          10
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $eq                             1
+     $mux                            2
+
+=== Exit_1 ===
+
+   Number of wires:                 11
+   Number of wire bits:             18
+   Number of public wires:          10
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $eq                             1
+     $mux                            2
+
+=== Idle ===
+
+   Number of wires:                 12
+   Number of wire bits:             19
+   Number of public wires:          11
+   Number of public wire bits:      18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            3
+     $or                             1
+
+=== Idle_1 ===
+
+   Number of wires:                 12
+   Number of wire bits:             19
+   Number of public wires:          11
+   Number of public wire bits:      18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            3
+     $or                             1
+
+=== Try ===
+
+   Number of wires:                 11
+   Number of wire bits:             18
+   Number of public wires:          10
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $logic_not                      1
+     $mux                            2
+
+=== Try_1 ===
+
+   Number of wires:                 11
+   Number of wire bits:             18
+   Number of public wires:          10
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $logic_not                      1
+     $mux                            2
+
+=== system ===
+
+   Number of wires:                142
+   Number of wire bits:            228
+   Number of public wires:         114
+   Number of public wire bits:     185
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 73
+     $and                            2
+     $anyseq                         1
+     $assert                         1
+     $assume                         1
+     $dff                            6
+     $eq                             7
+     $initstate                      1
+     $logic_not                      3
+     $mux                           40
+     $not                            1
+     $or                             1
+     $reduce_bool                    1
+     Crit                            1
+     Crit_1                          1
+     Exit                            1
+     Exit_1                          1
+     Idle                            1
+     Idle_1                          1
+     Try                             1
+     Try_1                           1
+
+=== design hierarchy ===
+
+   system                            1
+     Crit                            1
+     Crit_1                          1
+     Exit                            1
+     Exit_1                          1
+     Idle                            1
+     Idle_1                          1
+     Try                             1
+     Try_1                           1
+
+   Number of wires:                236
+   Number of wire bits:            378
+   Number of public wires:         198
+   Number of public wire bits:     325
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 99
+     $and                            4
+     $anyseq                         1
+     $assert                         1
+     $assume                         1
+     $dff                            6
+     $eq                            13
+     $initstate                      1
+     $logic_not                      5
+     $mux                           62
+     $not                            1
+     $or                             3
+     $reduce_bool                    1
+
+11. Executing SMT2 backend.
+
+11.1. Executing BMUXMAP pass.
+
+11.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module Exit.
+Creating SMT-LIBv2 representation of module Crit.
+Creating SMT-LIBv2 representation of module Crit_1.
+Creating SMT-LIBv2 representation of module Exit_1.
+Creating SMT-LIBv2 representation of module Idle.
+Creating SMT-LIBv2 representation of module Idle_1.
+Creating SMT-LIBv2 representation of module Try.
+Creating SMT-LIBv2 representation of module Try_1.
+Creating SMT-LIBv2 representation of module system.
+
+End of script. Logfile hash: 06c4c4bf81, CPU: user 0.05s system 0.01s, MEM: 11.05 MB peak
+Yosys 0.15+38 (git sha1 66914b6eb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 19% 2x opt_dff (0 sec), 19% 2x write_smt2 (0 sec), ...

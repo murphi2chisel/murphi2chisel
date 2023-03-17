@@ -1,0 +1,120 @@
+<Program> ::= { <decl> }	-- Constant, type, and variable declarations
+	      { <procdecl> }	-- Procedure and function declarations (不支持)
+	      { <rules> }	-- rules, startstates, and invariants
+
+//////
+decl（声明）
+//////
+<decl> ::=	const { <constdecl> ; }
+		 |	type { <typedecl> ; }
+		 |	var { <vardecl> ; }
+
+<constdecl> ::=	<ID> : <expr>
+
+<typedecl> ::=	<ID> : <typeExpr>
+
+<typeExpr> ::=	<ID>		-- a previously defined type.
+<typeExpr> ::=	<expr> .. <expr>	-- Integer subrange.
+<typeExpr> ::=	enum \{ <ID> {, <ID> } \} -- enumeration.
+<typeExpr> ::=	record { <vardecl> } end
+<typeExpr> ::=	array \[ <typeExpr> \] of <typeExpr>
+
+<vardecl>  ::=	<ID> { , <ID> } : <typeExpr>
+
+//////
+expression（表达式）
+/////
+<designator> :=	<ID> { . <ID> | \[ <expr> \] } --record/array
+<expr> :=  \( expr \)
+	 | <designator>
+	 | <integer-constant>
+	 | forall <quantifier>
+	   do <expr> endforall		-- universal quantification.
+	 | exists <quantifier>
+	   do <expr> endexists		-- existential quantification.
+	 | <expr> + <expr>
+	 | <expr> - <expr>
+	 | <expr> * <expr>		-- multiplication.
+	 | <expr> / <expr>		-- integer division.
+	 | ! <expr>			-- logical negation.
+	 | <expr> | <expr>		-- logical disjunction.
+	 | <expr> & <expr>		-- logical conjunction.
+	 | <expr> -> <expr>		-- logical implication.
+	 | <expr> < <expr>
+	 | <expr> <= <expr>
+	 | <expr> > <expr>
+	 | <expr> >= <expr>
+	 | <expr> = <expr>
+	 | <expr> != <expr>
+	 | <expr> ? <expr> : <expr>	-- C-style conditional expression.
+
+<quantifier> ::= <ID> : <typeExpr>
+		       | <ID> := <expr> to <expr> [ by <expr> ]
+
+The priority of operators is as follows, with lowest-priority
+operators first and operators on the same line having equal priority:
+
+		?:
+		->
+		|
+ 		&
+		!
+		< <= = != >= >  (只要等于 和 不等于)
+		+ -            （不支持）
+		* / %          （不支持）
+
+  a) '+', '-', '*', '/', '%', '<', '<=', '>=', and '>' are only
+     defined on integer operands.
+  b) '=' and '!=' are only defined on simple operands.
+  c) '!', '&', '!', and '->' are only defined on boolean operands.
+  d) For the '?:' operator, the test must be a boolean expression, and
+     the two alternatives must be of compatible type.
+  e) '+', '-', '*', '/', and '*' return an integer, the rest return
+      booleans, except for '?:'.
+
+
+//////
+语句
+/////
+<stmts> ::= <stmt> {; [<stmt>] }
+
+<stmt> ::= <assignment>         /* assignment */
+         | <ifstmt>		/* if statement */
+     | <forstmt>		/* for statement */
+     | <whilestmt>		/* while statement */
+
+<assignment> ::= <designator> := <expression>
+<ifstmt> ::= if <expr> then [ <stmts> ]
+            { elsif <expr> then [ <stmts> ] }
+        [ else [ <stmts> ] ]
+         endif
+<forstmt> ::= for <quantifier> do [stmts] endfor
+<whilestmt> ::= while <expr> do [stmts] end
+
+
+//////
+RULES, STARTSTATES, AND INVARIANTS
+//////
+
+<rules> ::= <rule> {; <rule> } [;]
+
+<rule> ::= <simplerule>
+         | <startstate>
+     | <invariant>
+     | <ruleset>
+
+<simplerule> ::= rule [<string>]
+           [ <expr> ==> ]
+           [ { <decl> } begin ]     （一般应该不会在这里声明decl）
+           [ stmts ]
+         end
+
+<startstate> ::= startstate [ <string> ]
+               [ { <decl> } begin ]
+           [ <stmts> ]
+         end
+
+<invariant> ::= invariant [ <string> ] <expr>
+
+<ruleset> ::= ruleset <quantifier>
+          {; <quantifier> } do [<rules>] end

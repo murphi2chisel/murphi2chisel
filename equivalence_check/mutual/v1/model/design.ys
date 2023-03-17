@@ -1,0 +1,7 @@
+# running in v1/src/
+    read -sv protocol.sv
+    prep -top system
+
+hierarchy -simcheck
+write_json ../model/design.json
+write_rtlil ../model/design.il

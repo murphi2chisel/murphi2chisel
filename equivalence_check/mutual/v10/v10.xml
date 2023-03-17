@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2023-03-13T16:51:36" hostname="VM-16-10-ubuntu" package="v10" id="0" name="default" tests="1" errors="0" failures="0" time="0" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+</testcase>
+<testcase classname="default" name="Property ASSERT in system at protocol.sv:457.22-458.61" time="0" type="ASSERT" location="protocol.sv:457.22-458.61" id="$assert$protocol.sv:457$55">
+</testcase>
+<system-out>SBY 16:51:35 [v10] Removing directory '/home/ubuntu/murphi2chisel/equivalence_check/mutual/v10'.
+SBY 16:51:35 [v10] Copy '/home/ubuntu/murphi2chisel/equivalence_check/mutual/protocol.sv' to '/home/ubuntu/murphi2chisel/equivalence_check/mutual/v10/src/protocol.sv'.
+SBY 16:51:35 [v10] engine_0: smtbmc
+SBY 16:51:35 [v10] base: starting process &quot;cd v10/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 16:51:35 [v10] base: finished (returncode=0)
+SBY 16:51:35 [v10] smt2: starting process &quot;cd v10/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 16:51:35 [v10] smt2: finished (returncode=0)
+SBY 16:51:35 [v10] engine_0: starting process &quot;cd v10; yosys-smtbmc --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 16:51:35 [v10] engine_0: ##   0:00:00  Solver: yices
+SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 16:51:36 [v10] engine_0: ##   0:00:00  Status: passed
+SBY 16:51:36 [v10] engine_0: finished (returncode=0)
+SBY 16:51:36 [v10] engine_0: Status returned by engine: pass
+SBY 16:51:36 [v10] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 16:51:36 [v10] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 16:51:36 [v10] summary: engine_0 (smtbmc) returned pass
+SBY 16:51:36 [v10] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

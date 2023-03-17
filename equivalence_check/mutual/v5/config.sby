@@ -1,0 +1,16 @@
+
+    [options]
+    mode bmc
+    depth 10
+
+    [engines]
+    smtbmc
+
+    [script]
+    read -sv protocol.sv 
+    prep -top system
+
+    [files]
+    protocol.sv
+
+    

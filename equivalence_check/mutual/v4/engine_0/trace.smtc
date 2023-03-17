@@ -1,0 +1,42 @@
+initial
+assume (= [$formal$protocol.sv:457$3_CHECK] false)
+assume (= [$formal$protocol.sv:457$3_EN] false)
+assume (= [n_reg_0] #b00)
+assume (= [n_reg_1] #b00)
+assume (= [n_reg_2] #b00)
+assume (= [x_reg] false)
+
+state 0
+assume (= [clock] false)
+assume (= [io_en_a] #b000)
+assume (= [reset] true)
+
+state 1
+assume (= [clock] false)
+assume (= [io_en_a] #b001)
+assume (= [reset] false)
+
+state 2
+assume (= [clock] false)
+assume (= [io_en_a] #b000)
+assume (= [reset] false)
+
+state 3
+assume (= [clock] false)
+assume (= [io_en_a] #b010)
+assume (= [reset] false)
+
+state 4
+assume (= [clock] false)
+assume (= [io_en_a] #b100)
+assume (= [reset] false)
+
+state 5
+assume (= [clock] false)
+assume (= [io_en_a] #b000)
+assume (= [reset] false)
+
+state 6
+assume (= [clock] false)
+assume (= [io_en_a] #b000)
+assume (= [reset] false)

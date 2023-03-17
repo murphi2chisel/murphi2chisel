@@ -1,0 +1,4 @@
+ABC command line: "r protocol.aig; fold; strash; pdr".
+
+Warning: The last output is interpreted as a constraint.
+Output 0 of miter "protocol" was asserted in frame 2.  Time =     0.03 sec

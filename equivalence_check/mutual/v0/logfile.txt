@@ -1,0 +1,28 @@
+SBY 16:47:00 [v0] Removing directory '/home/ubuntu/murphi2chisel/equivalence_check/mutual/v0'.
+SBY 16:47:00 [v0] Copy '/home/ubuntu/murphi2chisel/equivalence_check/mutual/protocol.sv' to '/home/ubuntu/murphi2chisel/equivalence_check/mutual/v0/src/protocol.sv'.
+SBY 16:47:00 [v0] engine_0: smtbmc
+SBY 16:47:00 [v0] base: starting process "cd v0/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 16:47:00 [v0] base: finished (returncode=0)
+SBY 16:47:00 [v0] smt2: starting process "cd v0/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 16:47:00 [v0] smt2: finished (returncode=0)
+SBY 16:47:00 [v0] engine_0: starting process "cd v0; yosys-smtbmc --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  Solver: yices
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  BMC failed!
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  Assert failed in system: protocol.sv:457.22-458.61 ($assert$protocol.sv:457$55)
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 16:47:01 [v0] engine_0: ##   0:00:00  Status: failed
+SBY 16:47:01 [v0] engine_0: finished (returncode=1)
+SBY 16:47:01 [v0] engine_0: Status returned by engine: FAIL
+SBY 16:47:01 [v0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 16:47:01 [v0] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 16:47:01 [v0] summary: engine_0 (smtbmc) returned FAIL
+SBY 16:47:01 [v0] summary: counterexample trace: v0/engine_0/trace.vcd
+SBY 16:47:01 [v0] DONE (FAIL, rc=2)
