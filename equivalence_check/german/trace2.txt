@@ -1,0 +1,67 @@
+This program should be regarded as a DEBUGGING aid, not as a 
+certifier of correctness.
+Call with the -l flag or read the license file for terms
+and conditions of use.
+Run this program with "-h" for the list of options.
+
+Bugs, questions, and comments should be directed to
+"melatti@di.uniroma1.it".
+
+CMurphi compiler last modified date: Mar 12 2023
+Include files last modified date:    Jul 23 2021
+==========================================================================
+
+==========================================================================
+Caching Murphi Release 5.5.0
+Finite-state Concurrent System Verifier.
+
+Caching Murphi Release 5.5.0 is based on various versions of Murphi.
+Caching Murphi Release 5.5.0 :
+Copyright (C) 2009-2012 by Sapienza University of Rome.
+Murphi release 3.1 :
+Copyright (C) 1992 - 1999 by the Board of Trustees of
+Leland Stanford Junior University.
+
+==========================================================================
+
+Protocol: protocol-check2
+
+Algorithm:
+	Verification by depth first search.
+	with symmetry algorithm 3 -- Heuristic Small Memory Normalization
+	with permutation trial limit 10.
+
+Memory usage:
+
+	* The size of each state is 200 bits (rounded up to 32 bytes).
+	* The memory allocated for the hash table and state queue is
+	  330 Mbytes.
+	  With states hash-compressed to 40 bits, the maximum size of
+	  the state space is 56952593 states.
+	   * Use option "-k" or "-m" to increase this, if necessary.
+	* Capacity in queue for depth-first search: 5695259 states.
+	   * Change the constant gPercentActiveStates in mu_prolog.inc
+	     to increase this, if necessary.
+
+Warning: No trace will not be printed in the case of protocol errors!
+         Check the options if you want to have error traces.
+
+Progress Report:
+
+	1000 states explored in 0.10s, with 1993 rules fired and 402 states in the queue.
+	2000 states explored in 0.10s, with 4400 rules fired and 649 states in the queue.
+	3000 states explored in 0.10s, with 7057 rules fired and 790 states in the queue.
+	4000 states explored in 0.10s, with 8969 rules fired and 1247 states in the queue.
+
+==========================================================================
+
+Result:
+
+	The undefined value at Chan1[1].Data is referenced
+	in invariant:
+	reachableStateN
+
+State Space Explored:
+
+	4131 states, 9173 rules fired in 0.10s.
+

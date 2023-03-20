@@ -54,3 +54,23 @@ State {'n[1]': 'C', 'n[2]': 'C', 'x': 'false'} is checked unreachable both in Mu
 Murphi log can be found in trace12.txt and Chisel log can be found in dir v12
 State {'n[1]': 'E', 'n[2]': 'E', 'x': 'false'} is checked unreachable both in Murphi and Chisel
 Murphi log can be found in trace13.txt and Chisel log can be found in dir v13
+State {'n[1]': 'I', 'n[2]': 'I', 'x': 'true'} is checked reachable both in Murphi and Chisel
+Murphi log can be found in trace0.txt and Chisel log can be found in dir v0
+State {'n[1]': 'T', 'n[2]': 'I', 'x': 'true'} is checked reachable both in Murphi and Chisel
+Murphi log can be found in trace1.txt and Chisel log can be found in dir v1
+State {'n[1]': 'C', 'n[2]': 'I', 'x': 'false'} is checked reachable both in Murphi and Chisel
+Murphi log can be found in trace2.txt and Chisel log can be found in dir v2
+State {'n[1]': 'E', 'n[2]': 'I', 'x': 'false'} is checked reachable both in Murphi and Chisel
+Murphi log can be found in trace3.txt and Chisel log can be found in dir v3
+State {'n[1]': 'E', 'n[2]': 'T', 'x': 'false'} is checked reachable both in Murphi and Chisel
+Murphi log can be found in trace4.txt and Chisel log can be found in dir v4
+State {'n[1]': 'I', 'n[2]': 'T', 'x': 'true'} is checked reachable both in Murphi and Chisel
+Murphi log can be found in trace5.txt and Chisel log can be found in dir v5
+State {'n[1]': 'I', 'n[2]': 'C', 'x': 'false'} is checked reachable both in Murphi and Chisel
+Murphi log can be found in trace6.txt and Chisel log can be found in dir v6
+State {'n[1]': 'I', 'n[2]': 'E', 'x': 'false'} is checked reachable both in Murphi and Chisel
+Murphi log can be found in trace7.txt and Chisel log can be found in dir v7
+State {'n[1]': 'T', 'n[2]': 'E', 'x': 'false'} is checked reachable both in Murphi and Chisel
+Murphi log can be found in trace8.txt and Chisel log can be found in dir v8
+State {'n[1]': 'T', 'n[2]': 'C', 'x': 'false'} is checked reachable both in Murphi and Chisel
+Murphi log can be found in trace9.txt and Chisel log can be found in dir v9

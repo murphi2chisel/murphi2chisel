@@ -1,0 +1,651 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \SendReqE_1
+Used module:     \SendReqE
+Used module:     \SendReqS_1
+Used module:     \SendReqS
+Used module:     \Store_3
+Used module:     \Store_2
+Used module:     \Store_1
+Used module:     \RecvInvAck_1
+Used module:     \RecvInvAck
+Used module:     \SendInvAck_1
+Used module:     \SendInvAck
+Used module:     \RecvGntE_1
+Used module:     \RecvGntE
+Used module:     \RecvGntS_1
+Used module:     \RecvGntS
+Used module:     \Store
+Used module:     \SendGntE_1
+Used module:     \SendGntE
+Used module:     \SendGntS_1
+Used module:     \SendGntS
+Used module:     \SendInv_1
+Used module:     \SendInv
+Used module:     \RecvReqE_1
+Used module:     \RecvReqE
+Used module:     \RecvReqS_1
+Used module:     \RecvReqS
+Used module:     \Init_1
+Used module:     \Init
+
+2.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \SendReqE_1
+Used module:     \SendReqE
+Used module:     \SendReqS_1
+Used module:     \SendReqS
+Used module:     \Store_3
+Used module:     \Store_2
+Used module:     \Store_1
+Used module:     \RecvInvAck_1
+Used module:     \RecvInvAck
+Used module:     \SendInvAck_1
+Used module:     \SendInvAck
+Used module:     \RecvGntE_1
+Used module:     \RecvGntE
+Used module:     \RecvGntS_1
+Used module:     \RecvGntS
+Used module:     \Store
+Used module:     \SendGntE_1
+Used module:     \SendGntE
+Used module:     \SendGntS_1
+Used module:     \SendGntS
+Used module:     \SendInv_1
+Used module:     \SendInv
+Used module:     \RecvReqE_1
+Used module:     \RecvReqE
+Used module:     \RecvReqS_1
+Used module:     \RecvReqS
+Used module:     \Init_1
+Used module:     \Init
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== system ===
+
+   Number of wires:               3123
+   Number of wire bits:           6395
+   Number of public wires:        2932
+   Number of public wire bits:    6052
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1128
+     $and                           24
+     $anyinit                       36
+     $anyseq                         1
+     $assert                         1
+     $assume                         2
+     $eq                            41
+     $ff                             1
+     $initstate                      1
+     $logic_not                      7
+     $mux                          982
+     $not                            4
+     Init                            1
+     Init_1                          1
+     RecvGntE                        1
+     RecvGntE_1                      1
+     RecvGntS                        1
+     RecvGntS_1                      1
+     RecvInvAck                      1
+     RecvInvAck_1                    1
+     RecvReqE                        1
+     RecvReqE_1                      1
+     RecvReqS                        1
+     RecvReqS_1                      1
+     SendGntE                        1
+     SendGntE_1                      1
+     SendGntS                        1
+     SendGntS_1                      1
+     SendInv                         1
+     SendInvAck                      1
+     SendInvAck_1                    1
+     SendInv_1                       1
+     SendReqE                        1
+     SendReqE_1                      1
+     SendReqS                        1
+     SendReqS_1                      1
+     Store                           1
+     Store_1                         1
+     Store_2                         1
+     Store_3                         1
+
+=== Store_3 ===
+
+   Number of wires:                 74
+   Number of wire bits:            152
+   Number of public wires:          73
+   Number of public wire bits:     151
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_2 ===
+
+   Number of wires:                 74
+   Number of wire bits:            152
+   Number of public wires:          73
+   Number of public wire bits:     151
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_1 ===
+
+   Number of wires:                 74
+   Number of wire bits:            152
+   Number of public wires:          73
+   Number of public wire bits:     151
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store ===
+
+   Number of wires:                 74
+   Number of wire bits:            152
+   Number of public wires:          73
+   Number of public wire bits:     151
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== SendReqS_1 ===
+
+   Number of wires:                 75
+   Number of wire bits:            153
+   Number of public wires:          72
+   Number of public wire bits:     150
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== SendReqS ===
+
+   Number of wires:                 75
+   Number of wire bits:            153
+   Number of public wires:          72
+   Number of public wire bits:     150
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== SendReqE_1 ===
+
+   Number of wires:                 77
+   Number of wire bits:            155
+   Number of public wires:          72
+   Number of public wire bits:     150
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== SendReqE ===
+
+   Number of wires:                 77
+   Number of wire bits:            155
+   Number of public wires:          72
+   Number of public wire bits:     150
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== SendInv_1 ===
+
+   Number of wires:                 80
+   Number of wire bits:            158
+   Number of public wires:          73
+   Number of public wire bits:     151
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== SendInvAck_1 ===
+
+   Number of wires:                 80
+   Number of wire bits:            163
+   Number of public wires:          76
+   Number of public wire bits:     159
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             2
+     $logic_not                      1
+     $mux                            9
+
+=== SendInvAck ===
+
+   Number of wires:                 80
+   Number of wire bits:            163
+   Number of public wires:          76
+   Number of public wire bits:     159
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             2
+     $logic_not                      1
+     $mux                            9
+
+=== SendInv ===
+
+   Number of wires:                 80
+   Number of wire bits:            158
+   Number of public wires:          73
+   Number of public wire bits:     151
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== SendGntS_1 ===
+
+   Number of wires:                 82
+   Number of wire bits:            163
+   Number of public wires:          75
+   Number of public wire bits:     156
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            7
+     $not                            1
+     $or                             1
+
+=== SendGntS ===
+
+   Number of wires:                 82
+   Number of wire bits:            163
+   Number of public wires:          75
+   Number of public wire bits:     156
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            7
+     $not                            1
+     $or                             1
+
+=== SendGntE_1 ===
+
+   Number of wires:                 87
+   Number of wire bits:            168
+   Number of public wires:          79
+   Number of public wire bits:     160
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $and                            5
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $not                            3
+     $or                             2
+
+=== SendGntE ===
+
+   Number of wires:                 87
+   Number of wire bits:            168
+   Number of public wires:          79
+   Number of public wire bits:     160
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $and                            5
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $not                            3
+     $or                             2
+
+=== RecvReqS_1 ===
+
+   Number of wires:                 79
+   Number of wire bits:            160
+   Number of public wires:          76
+   Number of public wire bits:     157
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                           10
+
+=== RecvReqS ===
+
+   Number of wires:                 79
+   Number of wire bits:            160
+   Number of public wires:          76
+   Number of public wire bits:     157
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                           10
+
+=== RecvReqE_1 ===
+
+   Number of wires:                 79
+   Number of wire bits:            160
+   Number of public wires:          76
+   Number of public wire bits:     157
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                           10
+
+=== RecvReqE ===
+
+   Number of wires:                 79
+   Number of wire bits:            160
+   Number of public wires:          76
+   Number of public wire bits:     157
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                           10
+
+=== RecvInvAck_1 ===
+
+   Number of wires:                 80
+   Number of wire bits:            160
+   Number of public wires:          77
+   Number of public wire bits:     157
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $and                            1
+     $eq                             1
+     $mux                            9
+     $reduce_bool                    1
+
+=== RecvInvAck ===
+
+   Number of wires:                 80
+   Number of wire bits:            160
+   Number of public wires:          77
+   Number of public wire bits:     157
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $and                            1
+     $eq                             1
+     $mux                            9
+     $reduce_bool                    1
+
+=== RecvGntS_1 ===
+
+   Number of wires:                 75
+   Number of wire bits:            155
+   Number of public wires:          74
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== RecvGntS ===
+
+   Number of wires:                 75
+   Number of wire bits:            155
+   Number of public wires:          74
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== RecvGntE_1 ===
+
+   Number of wires:                 75
+   Number of wire bits:            155
+   Number of public wires:          74
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== RecvGntE ===
+
+   Number of wires:                 75
+   Number of wire bits:            155
+   Number of public wires:          74
+   Number of public wire bits:     154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== Init_1 ===
+
+   Number of wires:                 71
+   Number of wire bits:            147
+   Number of public wires:          71
+   Number of public wire bits:     147
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     $mux                           16
+
+=== Init ===
+
+   Number of wires:                 71
+   Number of wire bits:            147
+   Number of public wires:          71
+   Number of public wire bits:     147
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     $mux                           16
+
+=== design hierarchy ===
+
+   system                            1
+     Init                            1
+     Init_1                          1
+     RecvGntE                        1
+     RecvGntE_1                      1
+     RecvGntS                        1
+     RecvGntS_1                      1
+     RecvInvAck                      1
+     RecvInvAck_1                    1
+     RecvReqE                        1
+     RecvReqE_1                      1
+     RecvReqS                        1
+     RecvReqS_1                      1
+     SendGntE                        1
+     SendGntE_1                      1
+     SendGntS                        1
+     SendGntS_1                      1
+     SendInv                         1
+     SendInvAck                      1
+     SendInvAck_1                    1
+     SendInv_1                       1
+     SendReqE                        1
+     SendReqE_1                      1
+     SendReqS                        1
+     SendReqS_1                      1
+     Store                           1
+     Store_1                         1
+     Store_2                         1
+     Store_3                         1
+
+   Number of wires:               5299
+   Number of wire bits:          10797
+   Number of public wires:        5014
+   Number of public wire bits:   10360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1400
+     $and                           58
+     $anyinit                       36
+     $anyseq                         1
+     $assert                         1
+     $assume                         2
+     $eq                            73
+     $ff                             1
+     $initstate                      1
+     $logic_not                     27
+     $mux                         1176
+     $not                           12
+     $or                            10
+     $reduce_bool                    2
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module Init.
+Creating SMT-LIBv2 representation of module Init_1.
+Creating SMT-LIBv2 representation of module RecvGntE.
+Creating SMT-LIBv2 representation of module RecvGntE_1.
+Creating SMT-LIBv2 representation of module RecvGntS.
+Creating SMT-LIBv2 representation of module RecvGntS_1.
+Creating SMT-LIBv2 representation of module RecvInvAck.
+Creating SMT-LIBv2 representation of module RecvInvAck_1.
+Creating SMT-LIBv2 representation of module RecvReqE.
+Creating SMT-LIBv2 representation of module RecvReqE_1.
+Creating SMT-LIBv2 representation of module RecvReqS.
+Creating SMT-LIBv2 representation of module RecvReqS_1.
+Creating SMT-LIBv2 representation of module SendGntE.
+Creating SMT-LIBv2 representation of module SendGntE_1.
+Creating SMT-LIBv2 representation of module SendGntS.
+Creating SMT-LIBv2 representation of module SendGntS_1.
+Creating SMT-LIBv2 representation of module SendInv.
+Creating SMT-LIBv2 representation of module SendInvAck.
+Creating SMT-LIBv2 representation of module SendInvAck_1.
+Creating SMT-LIBv2 representation of module SendInv_1.
+Creating SMT-LIBv2 representation of module SendReqE.
+Creating SMT-LIBv2 representation of module SendReqE_1.
+Creating SMT-LIBv2 representation of module SendReqS.
+Creating SMT-LIBv2 representation of module SendReqS_1.
+Creating SMT-LIBv2 representation of module Store.
+Creating SMT-LIBv2 representation of module Store_1.
+Creating SMT-LIBv2 representation of module Store_2.
+Creating SMT-LIBv2 representation of module Store_3.
+Creating SMT-LIBv2 representation of module system.
+
+End of script. Logfile hash: 99f77c77b4, CPU: user 0.06s system 0.00s, MEM: 20.30 MB peak
+Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 69% 2x write_smt2 (0 sec), 25% 2x read_ilang (0 sec), ...

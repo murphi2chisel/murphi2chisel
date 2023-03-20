@@ -1,0 +1,43 @@
+SBY 12:09:49 [v13] Removing directory '/home/czh/murphi2chisel/equivalence_check/german/v13'.
+SBY 12:09:49 [v13] Copy '/home/czh/murphi2chisel/equivalence_check/german/protocol.sv' to '/home/czh/murphi2chisel/equivalence_check/german/v13/src/protocol.sv'.
+SBY 12:09:49 [v13] engine_0: abc pdr
+SBY 12:09:49 [v13] base: starting process "cd v13/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 12:09:49 [v13] base: finished (returncode=0)
+SBY 12:09:49 [v13] prep: starting process "cd v13/model; yosys -ql design_prep.log design_prep.ys"
+SBY 12:09:50 [v13] prep: finished (returncode=0)
+SBY 12:09:50 [v13] aig: starting process "cd v13/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY 12:09:50 [v13] aig: finished (returncode=0)
+SBY 12:09:50 [v13] engine_0: starting process "cd v13; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw'"
+SBY 12:09:50 [v13] engine_0: ABC command line: "read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw".
+SBY 12:09:50 [v13] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 12:09:50 [v13] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+SBY 12:09:50 [v13] engine_0: Frame Clauses                                                     Max Queue Flops Cex      Time
+SBY 12:09:50 [v13] engine_0: 1 : 0 1                                                                 1     2      0.00 sec
+SBY 12:09:50 [v13] engine_0: 2 : 0 2 3                                                               2     7      0.00 sec
+SBY 12:09:50 [v13] engine_0: 3 : 0 2 1 2                                                             0     7      0.01 sec
+SBY 12:09:50 [v13] engine_0: 4 : 0 2 1 2 3                                                           2    11      0.01 sec
+SBY 12:09:50 [v13] engine_0: 5 : 0 2 1 1 1 2                                                         0    11      0.01 sec
+SBY 12:09:50 [v13] engine_0: 6 : 0 2 1 1 1 1 3                                                       2    13      0.02 sec
+SBY 12:09:50 [v13] engine_0: 7 : 0 2 1 1 1 0 0 3                                                     0    13      0.02 sec
+SBY 12:09:50 [v13] engine_0: Invariant F[5] : 3 clauses with 12 flops (out of 56) (cex = 0, ave = 22.62)
+SBY 12:09:50 [v13] engine_0: Verification of invariant with 3 clauses was successful.  Time =     0.00 sec
+SBY 12:09:50 [v13] engine_0: Block =    5  Oblig =    13  Clause =    10  Call =   157 (sat=45.2%)  Cex =   0  Start =   0
+SBY 12:09:50 [v13] engine_0: SAT solving =     0.01 sec ( 40.77 %)
+SBY 12:09:50 [v13] engine_0: unsat     =     0.00 sec ( 19.78 %)
+SBY 12:09:50 [v13] engine_0: sat       =     0.00 sec ( 20.99 %)
+SBY 12:09:50 [v13] engine_0: Generalize  =     0.01 sec ( 36.25 %)
+SBY 12:09:50 [v13] engine_0: Push clause =     0.00 sec (  9.82 %)
+SBY 12:09:50 [v13] engine_0: Ternary sim =     0.00 sec (  0.54 %)
+SBY 12:09:50 [v13] engine_0: Containment =     0.00 sec (  0.01 %)
+SBY 12:09:50 [v13] engine_0: CNF compute =     0.00 sec (  6.81 %)
+SBY 12:09:50 [v13] engine_0: Refinement  =     0.00 sec (  0.00 %)
+SBY 12:09:50 [v13] engine_0: TOTAL       =     0.02 sec (100.00 %)
+SBY 12:09:50 [v13] engine_0: Property proved.  Time =     0.02 sec
+SBY 12:09:50 [v13] engine_0: Counter-example is not available.
+SBY 12:09:50 [v13] engine_0: finished (returncode=0)
+SBY 12:09:50 [v13] engine_0: Status returned by engine: PASS
+SBY 12:09:50 [v13] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 12:09:50 [v13] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 12:09:50 [v13] summary: engine_0 (abc pdr) returned PASS
+SBY 12:09:50 [v13] summary: engine_0 did not produce any traces
+SBY 12:09:50 [v13] DONE (PASS, rc=0)

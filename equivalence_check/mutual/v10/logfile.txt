@@ -1,36 +1,32 @@
-SBY 16:51:35 [v10] Removing directory '/home/ubuntu/murphi2chisel/equivalence_check/mutual/v10'.
-SBY 16:51:35 [v10] Copy '/home/ubuntu/murphi2chisel/equivalence_check/mutual/protocol.sv' to '/home/ubuntu/murphi2chisel/equivalence_check/mutual/v10/src/protocol.sv'.
-SBY 16:51:35 [v10] engine_0: smtbmc
-SBY 16:51:35 [v10] base: starting process "cd v10/src; yosys -ql ../model/design.log ../model/design.ys"
-SBY 16:51:35 [v10] base: finished (returncode=0)
-SBY 16:51:35 [v10] smt2: starting process "cd v10/model; yosys -ql design_smt2.log design_smt2.ys"
-SBY 16:51:35 [v10] smt2: finished (returncode=0)
-SBY 16:51:35 [v10] engine_0: starting process "cd v10; yosys-smtbmc --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
-SBY 16:51:35 [v10] engine_0: ##   0:00:00  Solver: yices
-SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assumptions in step 0..
-SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assertions in step 0..
-SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assumptions in step 1..
-SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assertions in step 1..
-SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assumptions in step 2..
-SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assertions in step 2..
-SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assumptions in step 3..
-SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assertions in step 3..
-SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assumptions in step 4..
-SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assertions in step 4..
-SBY 16:51:35 [v10] engine_0: ##   0:00:00  Checking assumptions in step 5..
-SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assertions in step 5..
-SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assumptions in step 6..
-SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assertions in step 6..
-SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assumptions in step 7..
-SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assertions in step 7..
-SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assumptions in step 8..
-SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assertions in step 8..
-SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assumptions in step 9..
-SBY 16:51:36 [v10] engine_0: ##   0:00:00  Checking assertions in step 9..
-SBY 16:51:36 [v10] engine_0: ##   0:00:00  Status: passed
-SBY 16:51:36 [v10] engine_0: finished (returncode=0)
-SBY 16:51:36 [v10] engine_0: Status returned by engine: pass
-SBY 16:51:36 [v10] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 16:51:36 [v10] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 16:51:36 [v10] summary: engine_0 (smtbmc) returned pass
-SBY 16:51:36 [v10] DONE (PASS, rc=0)
+SBY 11:57:24 [v10] Removing directory '/home/czh/murphi2chisel/equivalence_check/mutual/v10'.
+SBY 11:57:24 [v10] Copy '/home/czh/murphi2chisel/equivalence_check/mutual/protocol.sv' to '/home/czh/murphi2chisel/equivalence_check/mutual/v10/src/protocol.sv'.
+SBY 11:57:24 [v10] engine_0: smtbmc
+SBY 11:57:24 [v10] base: starting process "cd v10/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 11:57:24 [v10] base: finished (returncode=0)
+SBY 11:57:24 [v10] prep: starting process "cd v10/model; yosys -ql design_prep.log design_prep.ys"
+SBY 11:57:24 [v10] prep: finished (returncode=0)
+SBY 11:57:24 [v10] smt2: starting process "cd v10/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 11:57:24 [v10] smt2: finished (returncode=0)
+SBY 11:57:24 [v10] engine_0: starting process "cd v10; yosys-smtbmc --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Solver: yices
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  BMC failed!
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Assert failed in system: protocol.sv:506.22-507.61 ($assert$protocol.sv:506$53)
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 11:57:24 [v10] engine_0: ##   0:00:00  Status: failed
+SBY 11:57:24 [v10] engine_0: finished (returncode=1)
+SBY 11:57:24 [v10] engine_0: Status returned by engine: FAIL
+SBY 11:57:24 [v10] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 11:57:24 [v10] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 11:57:24 [v10] summary: engine_0 (smtbmc) returned FAIL
+SBY 11:57:24 [v10] summary: counterexample trace: v10/engine_0/trace.vcd
+SBY 11:57:24 [v10] summary:   failed assertion system.$assert$protocol.sv:506$53 at protocol.sv:506.22-507.61 in step 2
+SBY 11:57:24 [v10] DONE (FAIL, rc=2)

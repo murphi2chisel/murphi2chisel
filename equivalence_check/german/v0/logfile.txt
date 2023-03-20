@@ -1,20 +1,56 @@
-SBY 17:20:26 [v0] Removing directory '/home/ubuntu/murphi2chisel/equivalence_check/german/v0'.
-SBY 17:20:26 [v0] Copy '/home/ubuntu/murphi2chisel/equivalence_check/german/protocol.sv' to '/home/ubuntu/murphi2chisel/equivalence_check/german/v0/src/protocol.sv'.
-SBY 17:20:26 [v0] engine_0: abc pdr
-SBY 17:20:26 [v0] base: starting process "cd v0/src; yosys -ql ../model/design.log ../model/design.ys"
-SBY 17:20:27 [v0] base: finished (returncode=0)
-SBY 17:20:27 [v0] aig: starting process "cd v0/model; yosys -ql design_aiger.log design_aiger.ys"
-SBY 17:20:29 [v0] aig: finished (returncode=0)
-SBY 17:20:29 [v0] engine_0: starting process "cd v0; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr; write_cex -a engine_0/trace.aiw'"
-SBY 17:20:29 [v0] engine_0: ABC command line: "read_aiger model/design_aiger.aig; fold; strash; pdr; write_cex -a engine_0/trace.aiw".
-SBY 17:20:29 [v0] engine_0: Warning: The last output is interpreted as a constraint.
-SBY 17:20:29 [v0] engine_0: Invariant F[3] : 4 clauses with 7 flops (out of 56) (cex = 0, ave = 32.62)
-SBY 17:20:29 [v0] engine_0: Verification of invariant with 4 clauses was successful.  Time =     0.00 sec
-SBY 17:20:29 [v0] engine_0: Property proved.  Time =     0.03 sec
-SBY 17:20:29 [v0] engine_0: Counter-example is not available.
-SBY 17:20:29 [v0] engine_0: finished (returncode=0)
-SBY 17:20:29 [v0] engine_0: Status returned by engine: PASS
-SBY 17:20:29 [v0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
-SBY 17:20:29 [v0] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:02 (2)
-SBY 17:20:29 [v0] summary: engine_0 (abc pdr) returned PASS
-SBY 17:20:29 [v0] DONE (PASS, rc=0)
+SBY 11:48:29 [v0] Removing directory '/home/czh/murphi2chisel/equivalence_check/german/v0'.
+SBY 11:48:29 [v0] Copy '/home/czh/murphi2chisel/equivalence_check/german/protocol.sv' to '/home/czh/murphi2chisel/equivalence_check/german/v0/src/protocol.sv'.
+SBY 11:48:29 [v0] engine_0: abc pdr
+SBY 11:48:29 [v0] base: starting process "cd v0/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 11:48:29 [v0] base: finished (returncode=0)
+SBY 11:48:29 [v0] prep: starting process "cd v0/model; yosys -ql design_prep.log design_prep.ys"
+SBY 11:48:29 [v0] prep: finished (returncode=0)
+SBY 11:48:29 [v0] aig: starting process "cd v0/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY 11:48:30 [v0] aig: finished (returncode=0)
+SBY 11:48:30 [v0] engine_0: starting process "cd v0; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw'"
+SBY 11:48:30 [v0] engine_0: ABC command line: "read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw".
+SBY 11:48:30 [v0] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 11:48:30 [v0] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+SBY 11:48:30 [v0] engine_0: Frame Clauses                                                     Max Queue Flops Cex      Time
+SBY 11:48:30 [v0] engine_0: 1 : 0 1                                                                 1     2      0.00 sec
+SBY 11:48:30 [v0] engine_0: 2 : 0 1 0                                                               3     2      0.00 sec
+SBY 11:48:30 [v0] engine_0: Block =    2  Oblig =     6  Clause =     1  Call =     9 (sat=66.7%)  Cex =   0  Start =   0
+SBY 11:48:30 [v0] engine_0: SAT solving =     0.00 sec (  1.50 %)
+SBY 11:48:30 [v0] engine_0: unsat     =     0.00 sec (  0.06 %)
+SBY 11:48:30 [v0] engine_0: sat       =     0.00 sec (  1.45 %)
+SBY 11:48:30 [v0] engine_0: Generalize  =     0.00 sec (  5.87 %)
+SBY 11:48:30 [v0] engine_0: Push clause =     0.00 sec (  0.10 %)
+SBY 11:48:30 [v0] engine_0: Ternary sim =     0.00 sec (  1.46 %)
+SBY 11:48:30 [v0] engine_0: Containment =     0.00 sec (  0.00 %)
+SBY 11:48:30 [v0] engine_0: CNF compute =     0.00 sec (  3.28 %)
+SBY 11:48:30 [v0] engine_0: Refinement  =     0.00 sec (  0.28 %)
+SBY 11:48:30 [v0] engine_0: TOTAL       =     0.01 sec (100.00 %)
+SBY 11:48:30 [v0] engine_0: Output 0 of miter "model/design_aiger" was asserted in frame 2.  Time =     0.01 sec
+SBY 11:48:30 [v0] engine_0: finished (returncode=0)
+SBY 11:48:30 [v0] engine_0: Status returned by engine: FAIL
+SBY 11:48:30 [v0] smt2: starting process "cd v0/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 11:48:30 [v0] engine_0: Engine did not produce a counter example.
+SBY 11:48:30 [v0] engine_0: starting process "cd v0; yosys-witness aiw2yw engine_0/trace.aiw model/design_aiger.ywa engine_0/trace_aiw.yw"
+SBY 11:48:30 [v0] engine_0: Converting AIGER witness trace 'engine_0/trace.aiw' to Yosys witness trace 'engine_0/trace_aiw.yw'...
+SBY 11:48:30 [v0] engine_0: Using Yosys witness AIGER map file 'model/design_aiger.ywa'
+SBY 11:48:30 [v0] engine_0: Converted 3 time steps.
+SBY 11:48:30 [v0] engine_0: finished (returncode=0)
+SBY 11:48:30 [v0] smt2: finished (returncode=0)
+SBY 11:48:30 [v0] engine_0: starting process "cd v0; yosys-smtbmc -s yices --noprogress --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc --yw engine_0/trace_aiw.yw model/design_smt2.smt2"
+SBY 11:48:30 [v0] engine_0: ##   0:00:00  Solver: yices
+SBY 11:48:30 [v0] engine_0: ##   0:00:00  Skipping step 0..
+SBY 11:48:30 [v0] engine_0: ##   0:00:00  Skipping step 1..
+SBY 11:48:30 [v0] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 11:48:30 [v0] engine_0: ##   0:00:00  BMC failed!
+SBY 11:48:30 [v0] engine_0: ##   0:00:00  Assert failed in system: protocol.sv:9643.22-9646.34 ($assert$protocol.sv:9643$953)
+SBY 11:48:30 [v0] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 11:48:30 [v0] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 11:48:30 [v0] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 11:48:30 [v0] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 11:48:30 [v0] engine_0: ##   0:00:00  Status: FAILED
+SBY 11:48:30 [v0] engine_0: finished (returncode=1)
+SBY 11:48:30 [v0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 11:48:30 [v0] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 11:48:30 [v0] summary: engine_0 (abc pdr) returned FAIL
+SBY 11:48:30 [v0] summary: counterexample trace: v0/engine_0/trace.vcd
+SBY 11:48:30 [v0] DONE (FAIL, rc=2)

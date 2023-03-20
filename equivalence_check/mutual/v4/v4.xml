@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<testsuite timestamp="2023-03-13T16:48:51" hostname="VM-16-10-ubuntu" package="v4" id="0" name="default" tests="1" errors="0" failures="2" time="0" skipped="0">
+<testsuite timestamp="2023-03-20T11:56:39" hostname="DESKTOP-DVFFB09" package="v4" id="0" name="default" tests="1" errors="0" failures="2" time="0" skipped="0">
 <properties>
 <property name="os" value="Linux"/>
 <property name="expect" value="PASS"/>
 <property name="status" value="FAIL"/>
 </properties>
 <testcase classname="default" name="build execution" time="0">
+<failure type="FAIL" message="Task returned status FAIL." />
+</testcase>
+<testcase classname="default" name="Property ASSERT in system at protocol.sv:506.22-507.62" time="0" type="ASSERT" location="protocol.sv:506.22-507.62" id="$assert$protocol.sv:506$54" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in system at protocol.sv:506.22-507.62 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<system-out>SBY 11:56:39 [v4] Removing directory '/home/czh/murphi2chisel/equivalence_check/mutual/v4'.
+SBY 11:56:39 [v4] Copy '/home/czh/murphi2chisel/equivalence_check/mutual/protocol.sv' to '/home/czh/murphi2chisel/equivalence_check/mutual/v4/src/protocol.sv'.
+SBY 11:56:39 [v4] engine_0: smtbmc
+SBY 11:56:39 [v4] base: starting process &quot;cd v4/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 11:56:39 [v4] base: finished (returncode=0)
+SBY 11:56:39 [v4] prep: starting process &quot;cd v4/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 11:56:39 [v4] prep: finished (returncode=0)
+SBY 11:56:39 [v4] smt2: starting process &quot;cd v4/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 11:56:39 [v4] smt2: finished (returncode=0)
+SBY 11:56:39 [v4] engine_0: starting process &quot;cd v4; yosys-smtbmc --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Solver: yices
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  BMC failed!
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Assert failed in system: protocol.sv:506.22-507.62 ($assert$protocol.sv:506$54)
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 11:56:39 [v4] engine_0: ##   0:00:00  Status: failed
+SBY 11:56:39 [v4] engine_0: finished (returncode=1)
+SBY 11:56:39 [v4] engine_0: Status returned by engine: FAIL
+SBY 11:56:39 [v4] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 11:56:39 [v4] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 11:56:39 [v4] summary: engine_0 (smtbmc) returned FAIL
+SBY 11:56:39 [v4] summary: counterexample trace: v4/engine_0/trace.vcd
+SBY 11:56:39 [v4] summary:   failed assertion system.$assert$protocol.sv:506$54 at protocol.sv:506.22-507.62 in step 2
+SBY 11:56:39 [v4] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

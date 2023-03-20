@@ -5,7 +5,7 @@ import CACHE_STATE._
 import MSG_CMD._
 class system(NODE_NUM:Int,DATA_NUM:Int) extends Module{
 val io = IO(new Bundle {
-val en_a = Input(UInt(log2Ceil((NODE_NUM-1+1)*(DATA_NUM-1+1)*1+(NODE_NUM-1+1)*11+0).W))
+val en_a = Input(UInt(log2Ceil((NODE_NUM-1+1)*(DATA_NUM-1+1)*1+(NODE_NUM-1+1)*11+0+(DATA_NUM-1+1)).W))
 val Cache_out = Output(Vec(NODE_NUM+1,new CACHE(NODE_NUM,DATA_NUM)))
 val Chan1_out = Output(Vec(NODE_NUM+1,new MSG(NODE_NUM,DATA_NUM)))
 val Chan2_out = Output(Vec(NODE_NUM+1,new MSG(NODE_NUM,DATA_NUM)))
@@ -19,57 +19,30 @@ val MemData_out = Output(UInt(log2Ceil((DATA_NUM+1)).W))
 val AuxData_out = Output(UInt(log2Ceil((DATA_NUM+1)).W))
 })
 var rules = ArrayBuffer[node]()
-val Cache_init = Wire(Vec(NODE_NUM+1,new CACHE(NODE_NUM,DATA_NUM)))
-val Cache_reg = RegInit(Cache_init)
+val Cache_reg = Reg(Vec(NODE_NUM+1,new CACHE(NODE_NUM,DATA_NUM)))
 io.Cache_out:=Cache_reg
-val Chan1_init = Wire(Vec(NODE_NUM+1,new MSG(NODE_NUM,DATA_NUM)))
-val Chan1_reg = RegInit(Chan1_init)
+val Chan1_reg = Reg(Vec(NODE_NUM+1,new MSG(NODE_NUM,DATA_NUM)))
 io.Chan1_out:=Chan1_reg
-val Chan2_init = Wire(Vec(NODE_NUM+1,new MSG(NODE_NUM,DATA_NUM)))
-val Chan2_reg = RegInit(Chan2_init)
+val Chan2_reg = Reg(Vec(NODE_NUM+1,new MSG(NODE_NUM,DATA_NUM)))
 io.Chan2_out:=Chan2_reg
-val Chan3_init = Wire(Vec(NODE_NUM+1,new MSG(NODE_NUM,DATA_NUM)))
-val Chan3_reg = RegInit(Chan3_init)
+val Chan3_reg = Reg(Vec(NODE_NUM+1,new MSG(NODE_NUM,DATA_NUM)))
 io.Chan3_out:=Chan3_reg
-val InvSet_init = Wire(Vec(NODE_NUM+1,Bool()))
-val InvSet_reg = RegInit(InvSet_init)
+val InvSet_reg = Reg(Vec(NODE_NUM+1,Bool()))
 io.InvSet_out:=InvSet_reg
-val ShrSet_init = Wire(Vec(NODE_NUM+1,Bool()))
-val ShrSet_reg = RegInit(ShrSet_init)
+val ShrSet_reg = Reg(Vec(NODE_NUM+1,Bool()))
 io.ShrSet_out:=ShrSet_reg
-val ExGntd_init = Wire(Bool())
-val ExGntd_reg = RegInit(ExGntd_init)
+val ExGntd_reg = Reg(Bool())
 io.ExGntd_out:=ExGntd_reg
-val CurCmd_init = Wire(MSG_CMD())
-val CurCmd_reg = RegInit(CurCmd_init)
+val CurCmd_reg = Reg(MSG_CMD())
 io.CurCmd_out:=CurCmd_reg
-val CurPtr_init = Wire(UInt(log2Ceil((NODE_NUM+1)).W))
-val CurPtr_reg = RegInit(CurPtr_init)
+val CurPtr_reg = Reg(UInt(log2Ceil((NODE_NUM+1)).W))
 io.CurPtr_out:=CurPtr_reg
-val MemData_init = Wire(UInt(log2Ceil((DATA_NUM+1)).W))
-val MemData_reg = RegInit(MemData_init)
+val MemData_reg = Reg(UInt(log2Ceil((DATA_NUM+1)).W))
 io.MemData_out:=MemData_reg
-val AuxData_init = Wire(UInt(log2Ceil((DATA_NUM+1)).W))
-val AuxData_reg = RegInit(AuxData_init)
+val AuxData_reg = Reg(UInt(log2Ceil((DATA_NUM+1)).W))
 io.AuxData_out:=AuxData_reg
 for(d <- 1 until (DATA_NUM+1)){
-for(i <- 0 until (NODE_NUM+1)){
-Chan1_init(i).Cmd := Empty
-Chan2_init(i).Cmd := Empty
-Chan3_init(i).Cmd := Empty
-Chan1_init(i).Data := 1.U
-Chan2_init(i).Data := 1.U
-Chan3_init(i).Data := 1.U
-Cache_init(i).State := I
-InvSet_init(i) := false.B
-ShrSet_init(i) := false.B
-Cache_init(i).Data := 1.U
-}
-ExGntd_init := false.B
-CurCmd_init := Empty
-MemData_init := d.U
-AuxData_init := d.U
-CurPtr_init := 1.U
+rules += Module(new Init(NODE_NUM,DATA_NUM,d))
 }
 for(i <- 1 until (NODE_NUM+1)){
 for(d <- 1 until (DATA_NUM+1)){
@@ -109,7 +82,7 @@ rules += Module(new SendInvAck(NODE_NUM,DATA_NUM,i))
 for(i <- 1 until (NODE_NUM+1)){
 rules += Module(new RecvInvAck(NODE_NUM,DATA_NUM,i))
 }
-for(i <- 0 until (NODE_NUM-1+1)*(DATA_NUM-1+1)*1+(NODE_NUM-1+1)*11+0) {
+for(i <- 0 until (NODE_NUM-1+1)*(DATA_NUM-1+1)*1+(NODE_NUM-1+1)*11+0+(DATA_NUM-1+1)) {
 rules(i).io.Cache_in := Cache_reg
 rules(i).io.Chan1_in := Chan1_reg
 rules(i).io.Chan2_in := Chan2_reg
@@ -137,12 +110,13 @@ AuxData_reg := rules(i).io.AuxData_out
 }
 }
 
-def bool2boolean( e: Bool): Boolean = {
-    if(e==true.B){
-      return true
-    }else{
-      return false
+  def forall(left: Int, right: Int, f: Int => Bool): Bool = {
+    val v = Wire(Vec(right - left + 1, Bool()))
+    v(0) := f(left)
+    for (i <- left until right) {
+      v(i - left + 1) := v(i - left) & f(i + 1)
     }
-}
-assert((!((Cache_reg(1).State===E)&&((Cache_reg(1).Data===1.U)&&((Cache_reg(2).State===I)&&((Cache_reg(2).Data===1.U)&&((Chan1_reg(1).Cmd===ReqS)&&((Chan1_reg(1).Data===1.U)&&((Chan1_reg(2).Cmd===ReqE)&&((Chan1_reg(2).Data===1.U)&&((Chan2_reg(1).Cmd===Empty)&&((Chan2_reg(1).Data===2.U)&&((Chan2_reg(2).Cmd===Empty)&&((Chan2_reg(2).Data===2.U)&&((Chan3_reg(1).Cmd===Empty)&&((Chan3_reg(1).Data===2.U)&&((Chan3_reg(2).Cmd===Empty)&&((Chan3_reg(2).Data===1.U)&&((InvSet_reg(1)===true.B)&&((InvSet_reg(2)===false.B)&&((ShrSet_reg(1)===true.B)&&((ShrSet_reg(2)===false.B)&&((ExGntd_reg===true.B)&&((CurCmd_reg===ReqE)&&((CurPtr_reg===1.U)&&((MemData_reg===2.U)&&(AuxData_reg===1.U)))))))))))))))))))))))))))
+    return v(right - left)
+  }
+assert((!((Cache_reg(1).State===E)&&((Cache_reg(1).Data===1.U)&&((Cache_reg(2).State===S)&&((Cache_reg(2).Data===1.U)&&((Chan1_reg(1).Cmd===ReqS)&&((Chan1_reg(1).Data===1.U)&&((Chan1_reg(2).Cmd===ReqE)&&((Chan1_reg(2).Data===1.U)&&((Chan2_reg(1).Cmd===Empty)&&((Chan2_reg(1).Data===2.U)&&((Chan2_reg(2).Cmd===Empty)&&((Chan2_reg(2).Data===2.U)&&((Chan3_reg(1).Cmd===Empty)&&((Chan3_reg(1).Data===2.U)&&((Chan3_reg(2).Cmd===Empty)&&((Chan3_reg(2).Data===1.U)&&((InvSet_reg(1)===true.B)&&((InvSet_reg(2)===false.B)&&((ShrSet_reg(1)===true.B)&&((ShrSet_reg(2)===false.B)&&((ExGntd_reg===true.B)&&((CurCmd_reg===ReqE)&&((CurPtr_reg===1.U)&&((MemData_reg===2.U)&&(AuxData_reg===1.U)))))))))))))))))))))))))))
 }

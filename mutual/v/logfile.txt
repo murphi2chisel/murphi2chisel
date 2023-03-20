@@ -1,0 +1,39 @@
+SBY 21:17:29 [v] Removing directory '/home/czh/murphi2chisel/mutual/v'.
+SBY 21:17:29 [v] Copy '/home/czh/murphi2chisel/mutual/protocol.sv' to '/home/czh/murphi2chisel/mutual/v/src/protocol.sv'.
+SBY 21:17:29 [v] engine_0: smtbmc
+SBY 21:17:29 [v] base: starting process "cd v/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 21:17:29 [v] base: finished (returncode=0)
+SBY 21:17:29 [v] prep: starting process "cd v/model; yosys -ql design_prep.log design_prep.ys"
+SBY 21:17:29 [v] prep: finished (returncode=0)
+SBY 21:17:29 [v] smt2: starting process "cd v/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 21:17:29 [v] smt2: finished (returncode=0)
+SBY 21:17:29 [v] engine_0: starting process "cd v; yosys-smtbmc --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Solver: yices
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 21:17:29 [v] engine_0: ##   0:00:00  Status: passed
+SBY 21:17:29 [v] engine_0: finished (returncode=0)
+SBY 21:17:29 [v] engine_0: Status returned by engine: pass
+SBY 21:17:29 [v] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 21:17:29 [v] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 21:17:29 [v] summary: engine_0 (smtbmc) returned pass
+SBY 21:17:29 [v] summary: engine_0 did not produce any traces
+SBY 21:17:29 [v] DONE (PASS, rc=0)

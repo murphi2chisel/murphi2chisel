@@ -8,12 +8,12 @@ module testbench(input clock, output reg genclock);
 `endif
   reg genclock = 1;
   reg [31:0] cycle = 0;
-  wire [0:0] PI_clock = clock;
   reg [0:0] PI_reset;
-  reg [2:0] PI_io_en_a;
+  wire [0:0] PI_clock = clock;
+  reg [3:0] PI_io_en_a;
   system UUT (
-    .clock(PI_clock),
     .reset(PI_reset),
+    .clock(PI_clock),
     .io_en_a(PI_io_en_a)
   );
 `ifndef VERILATOR
@@ -33,37 +33,31 @@ module testbench(input clock, output reg genclock);
 `ifndef VERILATOR
     #1;
 `endif
-    // UUT.$formal$protocol.\sv:457$3_CHECK  = 1'b0;
-    // UUT.$formal$protocol.\sv:457$3_EN  = 1'b0;
+    // UUT.$formal$protocol.\sv:506$3_EN  = 1'b0;
+    UUT._witness_.anyinit_procdff_155 = 1'b0;
     UUT.n_reg_0 = 2'b00;
-    UUT.n_reg_1 = 2'b00;
-    UUT.n_reg_2 = 2'b00;
+    UUT.n_reg_1 = 2'b11;
+    UUT.n_reg_2 = 2'b01;
     UUT.x_reg = 1'b0;
 
     // state 0
     PI_reset = 1'b1;
-    PI_io_en_a = 3'b000;
+    PI_io_en_a = 4'b0111;
   end
   always @(posedge clock) begin
     // state 1
     if (cycle == 0) begin
       PI_reset <= 1'b0;
-      PI_io_en_a <= 3'b001;
+      PI_io_en_a <= 4'b0000;
     end
 
     // state 2
     if (cycle == 1) begin
       PI_reset <= 1'b0;
-      PI_io_en_a <= 3'b000;
+      PI_io_en_a <= 4'b0000;
     end
 
-    // state 3
-    if (cycle == 2) begin
-      PI_reset <= 1'b0;
-      PI_io_en_a <= 3'b000;
-    end
-
-    genclock <= cycle < 3;
+    genclock <= cycle < 2;
     cycle <= cycle + 1;
   end
 endmodule

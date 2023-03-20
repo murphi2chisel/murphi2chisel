@@ -1,6 +1,0 @@
-ABC command line: "r protocol.aig; fold; strash; pdr".
-
-Warning: The last output is interpreted as a constraint.
-Invariant F[7] : 121 clauses with 53 flops (out of 109) (cex = 0, ave = 16.01)
-Verification of invariant with 121 clauses was successful.  Time =     0.21 sec
-Property proved.  Time =     9.25 sec

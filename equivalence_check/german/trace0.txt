@@ -46,30 +46,20 @@ Memory usage:
 Warning: No trace will not be printed in the case of protocol errors!
          Check the options if you want to have error traces.
 
-Progress Report:
-
-	1000 states explored in 0.34s, with 2030 rules fired and 387 states in the queue.
-	2000 states explored in 0.34s, with 4431 rules fired and 634 states in the queue.
-	3000 states explored in 0.34s, with 7061 rules fired and 788 states in the queue.
-	4000 states explored in 0.35s, with 8975 rules fired and 1244 states in the queue.
-	5000 states explored in 0.35s, with 10835 rules fired and 1801 states in the queue.
-	6000 states explored in 0.35s, with 12741 rules fired and 2223 states in the queue.
-	7000 states explored in 0.35s, with 15037 rules fired and 2466 states in the queue.
-	8000 states explored in 0.35s, with 17551 rules fired and 2621 states in the queue.
-	9000 states explored in 0.35s, with 20112 rules fired and 2741 states in the queue.
-	10000 states explored in 0.36s, with 22790 rules fired and 2835 states in the queue.
-	11000 states explored in 0.36s, with 25623 rules fired and 2807 states in the queue.
-	12000 states explored in 0.36s, with 28519 rules fired and 2802 states in the queue.
-	13000 states explored in 0.36s, with 31530 rules fired and 2747 states in the queue.
-	14000 states explored in 0.37s, with 34135 rules fired and 2798 states in the queue.
-
 ==========================================================================
 
 Result:
 
-	Invariant "reachableStateN" failed.
+	The undefined value at Cache[2].Data is referenced
+	in invariant:
+	reachableStateN
 
 State Space Explored:
 
-	14282 states, 35125 rules fired in 0.37s.
+	5 states, 4 rules fired in 0.10s.
 
+Analysis of State Space:
+
+	There are rules that are never fired.
+	If you are running with symmetry, this may be why.  Otherwise,
+	please run this program with "-pr" for the rules information.

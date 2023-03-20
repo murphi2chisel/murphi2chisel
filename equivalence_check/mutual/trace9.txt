@@ -54,5 +54,5 @@ Result:
 
 State Space Explored:
 
-	10 states, 12 rules fired in 0.34s.
+	10 states, 12 rules fired in 0.10s.
 

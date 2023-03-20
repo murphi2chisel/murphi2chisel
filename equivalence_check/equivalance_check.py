@@ -3,23 +3,11 @@ import sys
 sys.path.append("../src")
 from load import *
 
-cmurphi_path = '/home/ubuntu/murphi2chisel/src/external/cmurphi'
-protocol_dir = '/home/ubuntu/murphi2chisel/equivalence_check/mutual'
+cmurphi_path = '/home/czh/murphi2chisel/src/external/cmurphi'
+protocol_dir = '/home/czh/murphi2chisel/equivalence_check/mutual'
 constlist = [2]
 
 def reachablestateset():
-    # reachable_state_set = [
-    #     {
-    #         "n[1]": "I",
-    #         "n[2]": "I",
-    #         "x":"true"
-    #     },
-    #     {
-    #         "n[1]": "T",
-    #         "n[2]": "I",
-    #         "x":"true"
-    #     }
-    # ]
     reachable_state_set = []
     with open("%s/reachablestate.txt" % protocol_dir,'r') as f:
         reachable_state = {}
@@ -32,9 +20,6 @@ def reachablestateset():
                 reachable_state[l[0]]=l[1]
             else:
                 reachable_state_set.append(reachable_state)
-            
-    print(len(reachable_state_set))
-    print((reachable_state_set))
     return reachable_state_set
 
 def unreachablestateset():
@@ -50,8 +35,6 @@ def unreachablestateset():
                 unreachable_state[l[0]]=l[1]
             else:
                 unreachable_state_set.append(unreachable_state)
-            
-    print(len(unreachable_state_set))
     return unreachable_state_set
 
 
@@ -61,15 +44,10 @@ def log(protocol_dir:str, s:str):
         f.write(s)
     
 def checkreachablestateset():
-    os.system("export PATH=/home/ubuntu/oss-cad-suite/bin:$PATH")
-    
     reachable_state_set = reachablestateset()
-    # sys.path.append("../equivalence_check/mutual")
     os.chdir(protocol_dir)
     for i in range(len(reachable_state_set)):
         reachable_state = reachable_state_set[i]
-
-        
         # murphi
         f1 = open('protocol.m','r')
         f2 = open('protocol-check%d.m' % i ,'w')
@@ -146,7 +124,7 @@ def checkreachablestateset():
             if "initial begin" in line:
                 sv += """
                 initial begin
-                    assume(reset==1);
+                    assume(reset==1&&io_en_a==0);
                 end\n
                 """
         f2.write(sv)
@@ -276,7 +254,7 @@ def checkunreachablestateset():
             if "initial begin" in line:
                 sv += """
                 initial begin
-                    assume(reset==1);
+                    assume(reset==1&&io_en_a==0);
                 end\n
                 """
         f2.write(sv)

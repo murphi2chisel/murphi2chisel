@@ -4,7 +4,7 @@ from transform import *
 class murphi_parser(object):
     def __init__(self, dir, srcfile):
         self.parser = Lark(grammar, start="program", parser="lalr", transformer=MurphiTransformer())
-        self.dir = "../"+dir
+        self.dir = dir
         self.srcfile = srcfile
 
     def parse(self):

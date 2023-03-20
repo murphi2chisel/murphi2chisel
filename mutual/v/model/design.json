@@ -1,0 +1,3905 @@
+{
+  "$schema": "https://raw.githubusercontent.com/YosysHQ/yosys/master/misc/jny.schema.json",
+  "generator": "Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)",
+  "version": "0.0.1",
+  "invocation": "write_jny -no-connections ../model/design.json ",
+  "features": ["attributes", "properties"],
+  "modules": [
+      {
+        "name": "Crit",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:93$215",
+                  "attributes": {
+                    "src": "protocol.sv:93.23-93.69"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:94$218",
+                  "attributes": {
+                    "src": "protocol.sv:94.18-94.62"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:96$219",
+                  "attributes": {
+                    "src": "protocol.sv:96.23-96.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:99$220",
+                  "attributes": {
+                    "src": "protocol.sv:99.21-99.47"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:93$213",
+                  "attributes": {
+                    "src": "protocol.sv:93.23-93.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$and$protocol.sv:94$217",
+                  "attributes": {
+                    "src": "protocol.sv:94.18-94.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Crit",
+            "src": "protocol.sv:80.1-100.10"
+        }
+      },
+      {
+        "name": "Crit_1",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:114$207",
+                  "attributes": {
+                    "src": "protocol.sv:114.23-114.69"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:115$210",
+                  "attributes": {
+                    "src": "protocol.sv:115.18-115.62"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:118$211",
+                  "attributes": {
+                    "src": "protocol.sv:118.23-118.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:120$212",
+                  "attributes": {
+                    "src": "protocol.sv:120.21-120.47"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:114$205",
+                  "attributes": {
+                    "src": "protocol.sv:114.23-114.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$and$protocol.sv:115$209",
+                  "attributes": {
+                    "src": "protocol.sv:115.18-115.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Crit_1",
+            "src": "protocol.sv:101.1-121.10"
+        }
+      },
+      {
+        "name": "Crit_2",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:135$199",
+                  "attributes": {
+                    "src": "protocol.sv:135.23-135.69"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:136$202",
+                  "attributes": {
+                    "src": "protocol.sv:136.18-136.62"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:140$203",
+                  "attributes": {
+                    "src": "protocol.sv:140.23-140.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:141$204",
+                  "attributes": {
+                    "src": "protocol.sv:141.21-141.47"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:135$197",
+                  "attributes": {
+                    "src": "protocol.sv:135.23-135.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$and$protocol.sv:136$201",
+                  "attributes": {
+                    "src": "protocol.sv:136.18-136.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Crit_2",
+            "src": "protocol.sv:122.1-142.10"
+        }
+      },
+      {
+        "name": "Exit",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:156$195",
+                  "attributes": {
+                    "src": "protocol.sv:156.23-156.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:158$196",
+                  "attributes": {
+                    "src": "protocol.sv:158.23-158.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:156$194",
+                  "attributes": {
+                    "src": "protocol.sv:156.23-156.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Exit",
+            "src": "protocol.sv:143.1-162.10"
+        }
+      },
+      {
+        "name": "Exit_1",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:176$192",
+                  "attributes": {
+                    "src": "protocol.sv:176.23-176.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:179$193",
+                  "attributes": {
+                    "src": "protocol.sv:179.23-179.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:176$191",
+                  "attributes": {
+                    "src": "protocol.sv:176.23-176.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Exit_1",
+            "src": "protocol.sv:163.1-182.10"
+        }
+      },
+      {
+        "name": "Exit_2",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:196$189",
+                  "attributes": {
+                    "src": "protocol.sv:196.23-196.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:200$190",
+                  "attributes": {
+                    "src": "protocol.sv:200.23-200.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:196$188",
+                  "attributes": {
+                    "src": "protocol.sv:196.23-196.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Exit_2",
+            "src": "protocol.sv:183.1-202.10"
+        }
+      },
+      {
+        "name": "Idle",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:216$183",
+                  "attributes": {
+                    "src": "protocol.sv:216.23-216.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:219$186",
+                  "attributes": {
+                    "src": "protocol.sv:219.23-219.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:222$187",
+                  "attributes": {
+                    "src": "protocol.sv:222.21-222.47"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$or$protocol.sv:217$185",
+                  "attributes": {
+                    "src": "protocol.sv:217.18-217.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:216$182",
+                  "attributes": {
+                    "src": "protocol.sv:216.23-216.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Idle",
+            "src": "protocol.sv:203.1-223.10"
+        }
+      },
+      {
+        "name": "Idle_1",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:237$177",
+                  "attributes": {
+                    "src": "protocol.sv:237.23-237.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:241$180",
+                  "attributes": {
+                    "src": "protocol.sv:241.23-241.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:243$181",
+                  "attributes": {
+                    "src": "protocol.sv:243.21-243.47"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$or$protocol.sv:238$179",
+                  "attributes": {
+                    "src": "protocol.sv:238.18-238.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:237$176",
+                  "attributes": {
+                    "src": "protocol.sv:237.23-237.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Idle_1",
+            "src": "protocol.sv:224.1-244.10"
+        }
+      },
+      {
+        "name": "Idle_2",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:258$171",
+                  "attributes": {
+                    "src": "protocol.sv:258.23-258.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:263$174",
+                  "attributes": {
+                    "src": "protocol.sv:263.23-263.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:264$175",
+                  "attributes": {
+                    "src": "protocol.sv:264.21-264.47"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$or$protocol.sv:259$173",
+                  "attributes": {
+                    "src": "protocol.sv:259.18-259.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:258$170",
+                  "attributes": {
+                    "src": "protocol.sv:258.23-258.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Idle_2",
+            "src": "protocol.sv:245.1-265.10"
+        }
+      },
+      {
+        "name": "Init",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:15$230",
+                  "attributes": {
+                    "src": "protocol.sv:15.23-15.49"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:16$231",
+                  "attributes": {
+                    "src": "protocol.sv:16.23-16.49"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:17$232",
+                  "attributes": {
+                    "src": "protocol.sv:17.23-17.49"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$or$protocol.sv:18$233",
+                  "attributes": {
+                    "src": "protocol.sv:18.21-18.38"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Init",
+            "src": "protocol.sv:1.1-19.10"
+        }
+      },
+      {
+        "name": "Try",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:33$228",
+                  "attributes": {
+                    "src": "protocol.sv:33.23-33.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:35$229",
+                  "attributes": {
+                    "src": "protocol.sv:35.23-35.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:33$227",
+                  "attributes": {
+                    "src": "protocol.sv:33.23-33.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Try",
+            "src": "protocol.sv:20.1-39.10"
+        }
+      },
+      {
+        "name": "Try_1",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:53$225",
+                  "attributes": {
+                    "src": "protocol.sv:53.23-53.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:56$226",
+                  "attributes": {
+                    "src": "protocol.sv:56.23-56.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:53$224",
+                  "attributes": {
+                    "src": "protocol.sv:53.23-53.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Try_1",
+            "src": "protocol.sv:40.1-59.10"
+        }
+      },
+      {
+        "name": "Try_2",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ternary$protocol.sv:73$222",
+                  "attributes": {
+                    "src": "protocol.sv:73.23-73.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:77$223",
+                  "attributes": {
+                    "src": "protocol.sv:77.23-77.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:73$221",
+                  "attributes": {
+                    "src": "protocol.sv:73.23-73.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\Try_2",
+            "src": "protocol.sv:60.1-79.10"
+        }
+      },
+      {
+        "name": "system",
+        "cell_sorts": [
+          {
+            "type": "Exit_2",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_9",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:606.10-618.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "Exit_1",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_8",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:593.10-605.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "Exit",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_7",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:580.8-592.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "Crit_1",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_5",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:554.10-566.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "Idle_2",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_12",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:645.10-657.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "Idle_1",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_11",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:632.10-644.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "Idle",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_10",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:619.8-631.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$assert",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$assert$protocol.sv:824$137",
+                  "attributes": {
+                    "src": "protocol.sv:824.22-825.19"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$assert$protocol.sv:828$138",
+                  "attributes": {
+                    "src": "protocol.sv:828.22-829.51"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$assert$protocol.sv:832$139",
+                  "attributes": {
+                    "src": "protocol.sv:832.22-833.51"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$assert$protocol.sv:836$140",
+                  "attributes": {
+                    "src": "protocol.sv:836.22-837.51"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$assert$protocol.sv:840$141",
+                  "attributes": {
+                    "src": "protocol.sv:840.22-841.19"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$assert$protocol.sv:844$142",
+                  "attributes": {
+                    "src": "protocol.sv:844.22-845.51"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$assert$protocol.sv:848$143",
+                  "attributes": {
+                    "src": "protocol.sv:848.22-849.51"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$assert$protocol.sv:852$144",
+                  "attributes": {
+                    "src": "protocol.sv:852.22-853.51"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$assert$protocol.sv:856$145",
+                  "attributes": {
+                    "src": "protocol.sv:856.22-857.19"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$assume",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$assume$protocol.sv:818$136",
+                  "attributes": {
+                    "src": "protocol.sv:818.30-819.51"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:437$18",
+                  "attributes": {
+                    "src": "protocol.sv:437.16-437.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:443$24",
+                  "attributes": {
+                    "src": "protocol.sv:443.16-443.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:449$30",
+                  "attributes": {
+                    "src": "protocol.sv:449.16-449.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:455$36",
+                  "attributes": {
+                    "src": "protocol.sv:455.16-455.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:461$42",
+                  "attributes": {
+                    "src": "protocol.sv:461.17-461.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:467$48",
+                  "attributes": {
+                    "src": "protocol.sv:467.17-467.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:473$54",
+                  "attributes": {
+                    "src": "protocol.sv:473.17-473.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:479$60",
+                  "attributes": {
+                    "src": "protocol.sv:479.17-479.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:485$66",
+                  "attributes": {
+                    "src": "protocol.sv:485.17-485.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:486$67",
+                  "attributes": {
+                    "src": "protocol.sv:486.17-486.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:487$68",
+                  "attributes": {
+                    "src": "protocol.sv:487.17-487.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:488$69",
+                  "attributes": {
+                    "src": "protocol.sv:488.17-488.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:829$105",
+                  "attributes": {
+                    "src": "protocol.sv:829.16-829.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:837$115",
+                  "attributes": {
+                    "src": "protocol.sv:837.16-837.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$protocol.sv:849$126",
+                  "attributes": {
+                    "src": "protocol.sv:849.16-849.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$or$protocol.sv:829$108",
+                  "attributes": {
+                    "src": "protocol.sv:829.14-829.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$or$protocol.sv:833$113",
+                  "attributes": {
+                    "src": "protocol.sv:833.14-833.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$or$protocol.sv:837$118",
+                  "attributes": {
+                    "src": "protocol.sv:837.14-837.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$or$protocol.sv:845$124",
+                  "attributes": {
+                    "src": "protocol.sv:845.14-845.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$or$protocol.sv:849$129",
+                  "attributes": {
+                    "src": "protocol.sv:849.14-849.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$or$protocol.sv:853$134",
+                  "attributes": {
+                    "src": "protocol.sv:853.14-853.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "Try_1",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_2",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:515.9-527.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$protocol.sv:431$12",
+                  "attributes": {
+                    "src": "protocol.sv:431.14-431.29"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "Crit_2",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_6",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:567.10-579.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$initstate",
+            "ports": [
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$initstate$2",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:0.0-0.0"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$330",
+                  "attributes": {
+                    "src": "protocol.sv:822.19-859.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$331",
+                  "attributes": {
+                    "src": "protocol.sv:822.19-859.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$332",
+                  "attributes": {
+                    "src": "protocol.sv:822.19-859.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$334",
+                  "attributes": {
+                    "src": "protocol.sv:822.19-859.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$336",
+                  "attributes": {
+                    "src": "protocol.sv:822.19-859.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$338",
+                  "attributes": {
+                    "src": "protocol.sv:822.19-859.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$340",
+                  "attributes": {
+                    "src": "protocol.sv:822.19-859.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$342",
+                  "attributes": {
+                    "src": "protocol.sv:822.19-859.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$344",
+                  "attributes": {
+                    "src": "protocol.sv:822.19-859.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$346",
+                  "attributes": {
+                    "src": "protocol.sv:822.19-859.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$348",
+                  "attributes": {
+                    "src": "protocol.sv:741.3-797.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$349",
+                  "attributes": {
+                    "src": "protocol.sv:741.3-797.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$350",
+                  "attributes": {
+                    "src": "protocol.sv:741.3-797.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$351",
+                  "attributes": {
+                    "src": "protocol.sv:741.3-797.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$352",
+                  "attributes": {
+                    "src": "protocol.sv:741.3-797.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_and$protocol.sv:819$151",
+                  "attributes": {
+                    "src": "protocol.sv:819.28-819.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "Try_2",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_3",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:528.9-540.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$not$protocol.sv:829$106",
+                  "attributes": {
+                    "src": "protocol.sv:829.14-829.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$not$protocol.sv:837$116",
+                  "attributes": {
+                    "src": "protocol.sv:837.14-837.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$not$protocol.sv:849$127",
+                  "attributes": {
+                    "src": "protocol.sv:849.14-849.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$ne",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ne$protocol.sv:829$107",
+                  "attributes": {
+                    "src": "protocol.sv:829.35-829.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ne$protocol.sv:833$112",
+                  "attributes": {
+                    "src": "protocol.sv:833.35-833.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ne$protocol.sv:837$117",
+                  "attributes": {
+                    "src": "protocol.sv:837.35-837.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$234",
+                  "attributes": {
+                    "src": "protocol.sv:824.9-824.15|protocol.sv:824.5-826.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$236",
+                  "attributes": {
+                    "src": "protocol.sv:824.9-824.15|protocol.sv:824.5-826.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$240",
+                  "attributes": {
+                    "src": "protocol.sv:828.9-828.15|protocol.sv:828.5-830.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$244",
+                  "attributes": {
+                    "src": "protocol.sv:832.9-832.15|protocol.sv:832.5-834.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$248",
+                  "attributes": {
+                    "src": "protocol.sv:836.9-836.15|protocol.sv:836.5-838.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$256",
+                  "attributes": {
+                    "src": "protocol.sv:844.9-844.15|protocol.sv:844.5-846.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$260",
+                  "attributes": {
+                    "src": "protocol.sv:848.9-848.15|protocol.sv:848.5-850.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$264",
+                  "attributes": {
+                    "src": "protocol.sv:852.9-852.15|protocol.sv:852.5-854.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$271",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:792.18-792.23|protocol.sv:792.14-796.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$274",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:790.18-790.23|protocol.sv:790.14-796.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$277",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:788.18-788.23|protocol.sv:788.14-796.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$280",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:786.9-786.14|protocol.sv:786.5-796.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$283",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:781.18-781.23|protocol.sv:781.14-785.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$286",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:779.18-779.23|protocol.sv:779.14-785.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$289",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:777.18-777.23|protocol.sv:777.14-785.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$292",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:775.9-775.14|protocol.sv:775.5-785.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$295",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:770.18-770.23|protocol.sv:770.14-774.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$298",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:768.18-768.23|protocol.sv:768.14-774.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$301",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:766.18-766.23|protocol.sv:766.14-774.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$304",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:764.9-764.14|protocol.sv:764.5-774.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$307",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:759.18-759.23|protocol.sv:759.14-763.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$310",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:757.18-757.23|protocol.sv:757.14-763.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$313",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:755.18-755.23|protocol.sv:755.14-763.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$316",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:753.9-753.14|protocol.sv:753.5-763.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$319",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:748.18-748.23|protocol.sv:748.14-752.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$322",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:746.18-746.23|protocol.sv:746.14-752.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$325",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:744.18-744.23|protocol.sv:744.14-752.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$328",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "protocol.sv:742.9-742.14|protocol.sv:742.5-752.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:432$13",
+                  "attributes": {
+                    "src": "protocol.sv:432.23-432.56"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:433$14",
+                  "attributes": {
+                    "src": "protocol.sv:433.23-433.56"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:434$15",
+                  "attributes": {
+                    "src": "protocol.sv:434.23-434.56"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:435$16",
+                  "attributes": {
+                    "src": "protocol.sv:435.23-435.56"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:436$17",
+                  "attributes": {
+                    "src": "protocol.sv:436.18-436.47"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:438$19",
+                  "attributes": {
+                    "src": "protocol.sv:438.23-438.57"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:439$20",
+                  "attributes": {
+                    "src": "protocol.sv:439.23-439.57"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:440$21",
+                  "attributes": {
+                    "src": "protocol.sv:440.23-440.57"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:441$22",
+                  "attributes": {
+                    "src": "protocol.sv:441.23-441.57"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:442$23",
+                  "attributes": {
+                    "src": "protocol.sv:442.18-442.50"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:444$25",
+                  "attributes": {
+                    "src": "protocol.sv:444.24-444.58"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:445$26",
+                  "attributes": {
+                    "src": "protocol.sv:445.24-445.58"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:446$27",
+                  "attributes": {
+                    "src": "protocol.sv:446.24-446.58"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:447$28",
+                  "attributes": {
+                    "src": "protocol.sv:447.24-447.58"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:448$29",
+                  "attributes": {
+                    "src": "protocol.sv:448.19-448.51"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:450$31",
+                  "attributes": {
+                    "src": "protocol.sv:450.24-450.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:451$32",
+                  "attributes": {
+                    "src": "protocol.sv:451.24-451.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:452$33",
+                  "attributes": {
+                    "src": "protocol.sv:452.24-452.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:453$34",
+                  "attributes": {
+                    "src": "protocol.sv:453.24-453.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:454$35",
+                  "attributes": {
+                    "src": "protocol.sv:454.19-454.52"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:456$37",
+                  "attributes": {
+                    "src": "protocol.sv:456.24-456.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:457$38",
+                  "attributes": {
+                    "src": "protocol.sv:457.24-457.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:458$39",
+                  "attributes": {
+                    "src": "protocol.sv:458.24-458.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:459$40",
+                  "attributes": {
+                    "src": "protocol.sv:459.24-459.59"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:460$41",
+                  "attributes": {
+                    "src": "protocol.sv:460.19-460.52"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:462$43",
+                  "attributes": {
+                    "src": "protocol.sv:462.24-462.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:463$44",
+                  "attributes": {
+                    "src": "protocol.sv:463.24-463.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:464$45",
+                  "attributes": {
+                    "src": "protocol.sv:464.24-464.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:465$46",
+                  "attributes": {
+                    "src": "protocol.sv:465.24-465.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:466$47",
+                  "attributes": {
+                    "src": "protocol.sv:466.19-466.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:468$49",
+                  "attributes": {
+                    "src": "protocol.sv:468.24-468.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:469$50",
+                  "attributes": {
+                    "src": "protocol.sv:469.24-469.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:470$51",
+                  "attributes": {
+                    "src": "protocol.sv:470.24-470.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:471$52",
+                  "attributes": {
+                    "src": "protocol.sv:471.24-471.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:472$53",
+                  "attributes": {
+                    "src": "protocol.sv:472.19-472.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:474$55",
+                  "attributes": {
+                    "src": "protocol.sv:474.24-474.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:475$56",
+                  "attributes": {
+                    "src": "protocol.sv:475.24-475.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:476$57",
+                  "attributes": {
+                    "src": "protocol.sv:476.24-476.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:477$58",
+                  "attributes": {
+                    "src": "protocol.sv:477.24-477.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:478$59",
+                  "attributes": {
+                    "src": "protocol.sv:478.19-478.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:480$61",
+                  "attributes": {
+                    "src": "protocol.sv:480.24-480.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:481$62",
+                  "attributes": {
+                    "src": "protocol.sv:481.24-481.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:482$63",
+                  "attributes": {
+                    "src": "protocol.sv:482.24-482.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:483$64",
+                  "attributes": {
+                    "src": "protocol.sv:483.24-483.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$ternary$protocol.sv:484$65",
+                  "attributes": {
+                    "src": "protocol.sv:484.19-484.53"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "Init",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_0",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:489.8-501.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "Crit",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_4",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:541.8-553.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "Try",
+            "ports": [
+                {
+                  "name": "io_en_r",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_n_in_0",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_1",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_2",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_in_3",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_0",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_1",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_2",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_n_out_3",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "io_x_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_x_out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "rules_1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "protocol.sv:502.7-514.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "hdlname": "\\system",
+            "top": "00000000000000000000000000000001",
+            "src": "protocol.sv:266.1-860.10"
+        }
+      }
+  ]
+}

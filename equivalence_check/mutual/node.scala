@@ -10,13 +10,14 @@ val x_in = Input(Bool())
 val x_out = Output(Bool())
 })
 
-def bool2boolean( e: Bool): Boolean = {
-    if(e==true.B){
-      return true
-    }else{
-      return false
+  def forall(left: Int, right: Int, f: Int => Bool): Bool = {
+    val v = Wire(Vec(right - left + 1, Bool()))
+    v(0) := f(left)
+    for (i <- left until right) {
+      v(i - left + 1) := v(i - left) & f(i + 1)
     }
-}
+    return v(right - left)
+  }
 io.n_out:=io.n_in
 io.x_out:=io.x_in
 }

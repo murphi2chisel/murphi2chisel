@@ -19,13 +19,14 @@
  |                                                                            |
  \----------------------------------------------------------------------------/
 
- Yosys 0.15+38 (git sha1 66914b6eb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+ Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
 
 
 -- Executing script file `../model/design.ys' --
 
 1. Executing Verilog-2005 frontend: protocol.sv
 Parsing SystemVerilog input from `protocol.sv' to AST representation.
+Storing AST representation for module `$abstract\Init'.
 Storing AST representation for module `$abstract\Try'.
 Storing AST representation for module `$abstract\Try_1'.
 Storing AST representation for module `$abstract\Crit'.
@@ -71,16 +72,8 @@ Generating RTLIL representation for module `\Try_1'.
 2.2.9. Executing AST frontend in derive mode using pre-parsed AST for module `\Try'.
 Generating RTLIL representation for module `\Try'.
 
-2.2.10. Analyzing design hierarchy..
-Top module:  \system
-Used module:     \Idle_1
-Used module:     \Idle
-Used module:     \Exit_1
-Used module:     \Exit
-Used module:     \Crit_1
-Used module:     \Crit
-Used module:     \Try_1
-Used module:     \Try
+2.2.10. Executing AST frontend in derive mode using pre-parsed AST for module `\Init'.
+Generating RTLIL representation for module `\Init'.
 
 2.2.11. Analyzing design hierarchy..
 Top module:  \system
@@ -92,6 +85,19 @@ Used module:     \Crit_1
 Used module:     \Crit
 Used module:     \Try_1
 Used module:     \Try
+Used module:     \Init
+
+2.2.12. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Idle_1
+Used module:     \Idle
+Used module:     \Exit_1
+Used module:     \Exit
+Used module:     \Crit_1
+Used module:     \Crit
+Used module:     \Try_1
+Used module:     \Try
+Used module:     \Init
 Removing unused module `$abstract\system'.
 Removing unused module `$abstract\Idle_1'.
 Removing unused module `$abstract\Idle'.
@@ -101,7 +107,8 @@ Removing unused module `$abstract\Crit_1'.
 Removing unused module `$abstract\Crit'.
 Removing unused module `$abstract\Try_1'.
 Removing unused module `$abstract\Try'.
-Removed 9 unused modules.
+Removing unused module `$abstract\Init'.
+Removed 10 unused modules.
 Module system directly or indirectly contains formal properties -> setting "keep" attribute.
 
 2.3. Executing PROC pass (convert processes to netlists).
@@ -110,60 +117,66 @@ Module system directly or indirectly contains formal properties -> setting "keep
 Cleaned up 0 empty switches.
 
 2.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 12 switch rules as full_case in process $proc$protocol.sv:395$43 in module system.
+Marked 16 switch rules as full_case in process $proc$protocol.sv:434$42 in module system.
 Removed a total of 0 dead cases.
 
 2.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
-Removed 3 redundant assignments.
-Promoted 4 assignments to connections.
+Removed 4 redundant assignments.
+Promoted 3 assignments to connections.
 
 2.3.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\system.$proc$protocol.sv:0$61'.
-  Set init value: $formal$protocol.sv:457$3_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$59'.
+  Set init value: $formal$protocol.sv:506$3_EN = 1'0
 
 2.3.5. Executing PROC_ARST pass (detect async resets in processes).
 
-2.3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\system.$proc$protocol.sv:0$61'.
-Creating decoders for process `\system.$proc$protocol.sv:0$57'.
-Creating decoders for process `\system.$proc$protocol.sv:455$45'.
-     1/2: $0$formal$protocol.sv:457$3_EN[0:0]$47
-     2/2: $0$formal$protocol.sv:457$3_CHECK[0:0]$46
-Creating decoders for process `\system.$proc$protocol.sv:395$43'.
-     1/3: $0\n_reg_2[1:0]
-     2/3: $0\n_reg_1[1:0]
-     3/3: $0\n_reg_0[1:0]
+2.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~17 debug messages>
 
-2.3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\system.$formal$protocol.sv:451$1_CHECK' from process `\system.$proc$protocol.sv:0$57'.
-No latch inferred for signal `\system.$formal$protocol.sv:451$1_EN' from process `\system.$proc$protocol.sv:0$57'.
+2.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\system.$proc$protocol.sv:0$59'.
+Creating decoders for process `\system.$proc$protocol.sv:0$55'.
+Creating decoders for process `\system.$proc$protocol.sv:504$43'.
+     1/2: $0$formal$protocol.sv:506$3_EN[0:0]$45
+     2/2: $0$formal$protocol.sv:506$3_CHECK[0:0]$44
+Creating decoders for process `\system.$proc$protocol.sv:434$42'.
+     1/4: $0\x_reg[0:0]
+     2/4: $0\n_reg_2[1:0]
+     3/4: $0\n_reg_1[1:0]
+     4/4: $0\n_reg_0[1:0]
 
-2.3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\system.$formal$protocol.sv:457$3_CHECK' using process `\system.$proc$protocol.sv:455$45'.
-  created $dff cell `$procdff$143' with positive edge clock.
-Creating register for signal `\system.$formal$protocol.sv:457$3_EN' using process `\system.$proc$protocol.sv:455$45'.
-  created $dff cell `$procdff$144' with positive edge clock.
-Creating register for signal `\system.\n_reg_0' using process `\system.$proc$protocol.sv:395$43'.
-  created $dff cell `$procdff$145' with positive edge clock.
-Creating register for signal `\system.\n_reg_1' using process `\system.$proc$protocol.sv:395$43'.
-  created $dff cell `$procdff$146' with positive edge clock.
-Creating register for signal `\system.\n_reg_2' using process `\system.$proc$protocol.sv:395$43'.
-  created $dff cell `$procdff$147' with positive edge clock.
-Creating register for signal `\system.\x_reg' using process `\system.$proc$protocol.sv:395$43'.
-  created $dff cell `$procdff$148' with positive edge clock.
+2.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\system.$formal$protocol.sv:500$1_CHECK' from process `\system.$proc$protocol.sv:0$55'.
+No latch inferred for signal `\system.$formal$protocol.sv:500$1_EN' from process `\system.$proc$protocol.sv:0$55'.
 
-2.3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+2.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\system.$formal$protocol.sv:506$3_CHECK' using process `\system.$proc$protocol.sv:504$43'.
+  created $dff cell `$procdff$156' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:506$3_EN' using process `\system.$proc$protocol.sv:504$43'.
+  created $dff cell `$procdff$157' with positive edge clock.
+Creating register for signal `\system.\n_reg_0' using process `\system.$proc$protocol.sv:434$42'.
+  created $dff cell `$procdff$158' with positive edge clock.
+Creating register for signal `\system.\n_reg_1' using process `\system.$proc$protocol.sv:434$42'.
+  created $dff cell `$procdff$159' with positive edge clock.
+Creating register for signal `\system.\n_reg_2' using process `\system.$proc$protocol.sv:434$42'.
+  created $dff cell `$procdff$160' with positive edge clock.
+Creating register for signal `\system.\x_reg' using process `\system.$proc$protocol.sv:434$42'.
+  created $dff cell `$procdff$161' with positive edge clock.
 
-2.3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `system.$proc$protocol.sv:0$61'.
-Removing empty process `system.$proc$protocol.sv:0$57'.
-Found and cleaned up 1 empty switch in `\system.$proc$protocol.sv:455$45'.
-Removing empty process `system.$proc$protocol.sv:455$45'.
-Found and cleaned up 12 empty switches in `\system.$proc$protocol.sv:395$43'.
-Removing empty process `system.$proc$protocol.sv:395$43'.
-Cleaned up 13 empty switches.
+2.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
-2.3.11. Executing OPT_EXPR pass (perform const folding).
+2.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `system.$proc$protocol.sv:0$59'.
+Removing empty process `system.$proc$protocol.sv:0$55'.
+Found and cleaned up 1 empty switch in `\system.$proc$protocol.sv:504$43'.
+Removing empty process `system.$proc$protocol.sv:504$43'.
+Found and cleaned up 16 empty switches in `\system.$proc$protocol.sv:434$42'.
+Removing empty process `system.$proc$protocol.sv:434$42'.
+Cleaned up 17 empty switches.
+
+2.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
 Optimizing module Try.
 <suppressed ~1 debug messages>
 Optimizing module Try_1.
@@ -178,6 +191,7 @@ Optimizing module system.
 <suppressed ~5 debug messages>
 
 2.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
 Optimizing module Try.
 Optimizing module Try_1.
 Optimizing module Crit.
@@ -189,6 +203,7 @@ Optimizing module Idle_1.
 Optimizing module system.
 
 2.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
 Finding unused cells or wires in module \Try..
 Finding unused cells or wires in module \Try_1..
 Finding unused cells or wires in module \Crit..
@@ -198,8 +213,8 @@ Finding unused cells or wires in module \Exit_1..
 Finding unused cells or wires in module \Idle..
 Finding unused cells or wires in module \Idle_1..
 Finding unused cells or wires in module \system..
-Removed 1 unused cells and 90 unused wires.
-<suppressed ~10 debug messages>
+Removed 1 unused cells and 96 unused wires.
+<suppressed ~11 debug messages>
 
 2.6. Executing CHECK pass (checking for obvious problems).
 Checking module Crit...
@@ -208,6 +223,7 @@ Checking module Exit...
 Checking module Exit_1...
 Checking module Idle...
 Checking module Idle_1...
+Checking module Init...
 Checking module Try...
 Checking module Try_1...
 Checking module system...
@@ -222,6 +238,7 @@ Optimizing module Exit.
 Optimizing module Exit_1.
 Optimizing module Idle.
 Optimizing module Idle_1.
+Optimizing module Init.
 Optimizing module Try.
 Optimizing module Try_1.
 Optimizing module system.
@@ -237,11 +254,12 @@ Finding identical cells in module `\Idle'.
 <suppressed ~3 debug messages>
 Finding identical cells in module `\Idle_1'.
 <suppressed ~3 debug messages>
+Finding identical cells in module `\Init'.
 Finding identical cells in module `\Try'.
 Finding identical cells in module `\Try_1'.
 Finding identical cells in module `\system'.
-<suppressed ~24 debug messages>
-Removed a total of 14 cells.
+<suppressed ~27 debug messages>
+Removed a total of 15 cells.
 
 2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \Crit..
@@ -268,6 +286,10 @@ Running muxtree optimizer on module \Idle_1..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
+Running muxtree optimizer on module \Init..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
 Running muxtree optimizer on module \Try..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -281,7 +303,7 @@ Running muxtree optimizer on module \system..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~18 debug messages>
+<suppressed ~20 debug messages>
 
 2.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \Crit.
@@ -290,6 +312,7 @@ Removed 0 multiplexer ports.
   Optimizing cells in module \Exit_1.
   Optimizing cells in module \Idle.
   Optimizing cells in module \Idle_1.
+  Optimizing cells in module \Init.
   Optimizing cells in module \Try.
   Optimizing cells in module \Try_1.
   Optimizing cells in module \system.
@@ -302,6 +325,7 @@ Finding identical cells in module `\Exit'.
 Finding identical cells in module `\Exit_1'.
 Finding identical cells in module `\Idle'.
 Finding identical cells in module `\Idle_1'.
+Finding identical cells in module `\Init'.
 Finding identical cells in module `\Try'.
 Finding identical cells in module `\Try_1'.
 Finding identical cells in module `\system'.
@@ -314,6 +338,7 @@ Finding unused cells or wires in module \Exit..
 Finding unused cells or wires in module \Exit_1..
 Finding unused cells or wires in module \Idle..
 Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Init..
 Finding unused cells or wires in module \Try..
 Finding unused cells or wires in module \Try_1..
 Finding unused cells or wires in module \system..
@@ -327,6 +352,7 @@ Optimizing module Exit.
 Optimizing module Exit_1.
 Optimizing module Idle.
 Optimizing module Idle_1.
+Optimizing module Init.
 Optimizing module Try.
 Optimizing module Try_1.
 Optimizing module system.
@@ -358,6 +384,10 @@ Running muxtree optimizer on module \Idle_1..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
+Running muxtree optimizer on module \Init..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
 Running muxtree optimizer on module \Try..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -371,7 +401,7 @@ Running muxtree optimizer on module \system..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~18 debug messages>
+<suppressed ~20 debug messages>
 
 2.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \Crit.
@@ -380,6 +410,7 @@ Removed 0 multiplexer ports.
   Optimizing cells in module \Exit_1.
   Optimizing cells in module \Idle.
   Optimizing cells in module \Idle_1.
+  Optimizing cells in module \Init.
   Optimizing cells in module \Try.
   Optimizing cells in module \Try_1.
   Optimizing cells in module \system.
@@ -392,6 +423,7 @@ Finding identical cells in module `\Exit'.
 Finding identical cells in module `\Exit_1'.
 Finding identical cells in module `\Idle'.
 Finding identical cells in module `\Idle_1'.
+Finding identical cells in module `\Init'.
 Finding identical cells in module `\Try'.
 Finding identical cells in module `\Try_1'.
 Finding identical cells in module `\system'.
@@ -404,6 +436,7 @@ Finding unused cells or wires in module \Exit..
 Finding unused cells or wires in module \Exit_1..
 Finding unused cells or wires in module \Idle..
 Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Init..
 Finding unused cells or wires in module \Try..
 Finding unused cells or wires in module \Try_1..
 Finding unused cells or wires in module \system..
@@ -415,6 +448,7 @@ Optimizing module Exit.
 Optimizing module Exit_1.
 Optimizing module Idle.
 Optimizing module Idle_1.
+Optimizing module Init.
 Optimizing module Try.
 Optimizing module Try_1.
 Optimizing module system.
@@ -422,12 +456,16 @@ Optimizing module system.
 2.7.14. Finished OPT passes. (There is nothing left to do.)
 
 2.8. Executing WREDUCE pass (reducing word size of cells).
-Removed top 1 bits (of 2) from port B of cell Crit.$eq$protocol.sv:46$89 ($eq).
-Removed top 1 bits (of 2) from port B of cell Crit_1.$eq$protocol.sv:64$81 ($eq).
-Removed top 2 bits (of 3) from port B of cell system.$eq$protocol.sv:237$9 ($eq).
-Removed top 1 bits (of 3) from port B of cell system.$eq$protocol.sv:242$14 ($eq).
-Removed top 1 bits (of 3) from port B of cell system.$eq$protocol.sv:247$19 ($eq).
-Removed top 1 bits (of 2) from port B of cell system.$eq$protocol.sv:458$50 ($eq).
+Removed top 1 bits (of 2) from port B of cell Crit.$eq$protocol.sv:62$87 ($eq).
+Removed top 1 bits (of 2) from port B of cell Crit_1.$eq$protocol.sv:80$79 ($eq).
+Removed top 3 bits (of 4) from port B of cell system.$eq$protocol.sv:262$9 ($eq).
+Removed top 2 bits (of 4) from port B of cell system.$eq$protocol.sv:267$14 ($eq).
+Removed top 2 bits (of 4) from port B of cell system.$eq$protocol.sv:272$19 ($eq).
+Removed top 1 bits (of 4) from port B of cell system.$eq$protocol.sv:277$24 ($eq).
+Removed top 1 bits (of 4) from port B of cell system.$eq$protocol.sv:282$29 ($eq).
+Removed top 1 bits (of 4) from port B of cell system.$eq$protocol.sv:283$30 ($eq).
+Removed top 1 bits (of 4) from port B of cell system.$eq$protocol.sv:284$31 ($eq).
+Removed top 1 bits (of 2) from port B of cell system.$eq$protocol.sv:507$48 ($eq).
 
 2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \Crit..
@@ -436,6 +474,7 @@ Finding unused cells or wires in module \Exit..
 Finding unused cells or wires in module \Exit_1..
 Finding unused cells or wires in module \Idle..
 Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Init..
 Finding unused cells or wires in module \Try..
 Finding unused cells or wires in module \Try_1..
 Finding unused cells or wires in module \system..
@@ -451,6 +490,7 @@ Optimizing module Exit.
 Optimizing module Exit_1.
 Optimizing module Idle.
 Optimizing module Idle_1.
+Optimizing module Init.
 Optimizing module Try.
 Optimizing module Try_1.
 Optimizing module system.
@@ -462,6 +502,7 @@ Finding identical cells in module `\Exit'.
 Finding identical cells in module `\Exit_1'.
 Finding identical cells in module `\Idle'.
 Finding identical cells in module `\Idle_1'.
+Finding identical cells in module `\Init'.
 Finding identical cells in module `\Try'.
 Finding identical cells in module `\Try_1'.
 Finding identical cells in module `\system'.
@@ -474,6 +515,7 @@ Finding unused cells or wires in module \Exit..
 Finding unused cells or wires in module \Exit_1..
 Finding unused cells or wires in module \Idle..
 Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Init..
 Finding unused cells or wires in module \Try..
 Finding unused cells or wires in module \Try_1..
 Finding unused cells or wires in module \system..
@@ -564,6 +606,19 @@ Finding unused cells or wires in module \system..
      $mux                            3
      $or                             1
 
+=== Init ===
+
+   Number of wires:                  9
+   Number of wire bits:             15
+   Number of public wires:           9
+   Number of public wire bits:      15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            2
+     $or                             1
+
 === Try ===
 
    Number of wires:                 11
@@ -592,30 +647,30 @@ Finding unused cells or wires in module \system..
 
 === system ===
 
-   Number of wires:                138
-   Number of wire bits:            221
-   Number of public wires:         114
-   Number of public wire bits:     185
+   Number of wires:                148
+   Number of wire bits:            238
+   Number of public wires:         121
+   Number of public wire bits:     199
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 69
+   Number of cells:                 71
      $and                            2
      $assert                         1
      $assume                         1
      $dff                            6
-     $eq                             9
+     $eq                            10
      $initstate                      1
      $logic_not                      1
-     $mux                           37
+     $mux                           38
      $not                            2
-     $or                             1
      Crit                            1
      Crit_1                          1
      Exit                            1
      Exit_1                          1
      Idle                            1
      Idle_1                          1
+     Init                            1
      Try                             1
      Try_1                           1
 
@@ -628,25 +683,26 @@ Finding unused cells or wires in module \system..
      Exit_1                          1
      Idle                            1
      Idle_1                          1
+     Init                            1
      Try                             1
      Try_1                           1
 
-   Number of wires:                232
-   Number of wire bits:            371
-   Number of public wires:         198
-   Number of public wire bits:     325
+   Number of wires:                251
+   Number of wire bits:            403
+   Number of public wires:         214
+   Number of public wire bits:     354
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 95
+   Number of cells:                 99
      $and                            4
      $assert                         1
      $assume                         1
      $dff                            6
-     $eq                            15
+     $eq                            16
      $initstate                      1
      $logic_not                      3
-     $mux                           59
+     $mux                           62
      $not                            2
      $or                             3
 
@@ -657,6 +713,7 @@ Checking module Exit...
 Checking module Exit_1...
 Checking module Idle...
 Checking module Idle_1...
+Checking module Init...
 Checking module Try...
 Checking module Try_1...
 Checking module system...
@@ -666,6 +723,7 @@ Found and reported 0 problems.
 
 3.1. Analyzing design hierarchy..
 Top module:  \system
+Used module:     \Init
 Used module:     \Try
 Used module:     \Try_1
 Used module:     \Crit
@@ -677,6 +735,7 @@ Used module:     \Idle_1
 
 3.2. Analyzing design hierarchy..
 Top module:  \system
+Used module:     \Init
 Used module:     \Try
 Used module:     \Try_1
 Used module:     \Crit
@@ -688,11 +747,11 @@ Used module:     \Idle_1
 Removed 0 unused modules.
 Module system directly or indirectly contains formal properties -> setting "keep" attribute.
 
-4. Executing JSON backend.
+4. Executing jny backend.
 
 5. Executing RTLIL backend.
 Output filename: ../model/design.il
 
-End of script. Logfile hash: 299afaad3f, CPU: user 0.07s system 0.01s, MEM: 11.55 MB peak
-Yosys 0.15+38 (git sha1 66914b6eb, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 21% 4x opt_merge (0 sec), 19% 6x opt_expr (0 sec), ...
+End of script. Logfile hash: 7c2da14c4c, CPU: user 0.04s system 0.00s, MEM: 11.13 MB peak
+Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 22% 4x opt_merge (0 sec), 19% 6x opt_expr (0 sec), ...

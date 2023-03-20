@@ -5,3 +5,4 @@ from stmt import *
 from rule import *
 from error import *
 from parse import *
+from util import *

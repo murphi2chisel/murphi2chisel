@@ -1,0 +1,50 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/czh/murphi2chisel/src/external/chisel-template/target/scala-2.13/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvReqS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendInvAck.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvInvAck.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Store.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendInv.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendGntE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendReqS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendReqE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendGntS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	system$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvGntS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvGntE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvReqE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	system.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Init.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvReqS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendInvAck.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvInvAck.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Store.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendInv.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendGntE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendReqS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendReqE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendGntS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	system$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvGntS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvGntE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvReqE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	system.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Init.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvReqS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendInvAck.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvInvAck.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Store.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendInv.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendGntE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendReqS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendReqE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SendGntS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	system$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvGntS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvGntE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RecvReqE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	system.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Init.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /home/czh/murphi2chisel/src/external/chisel-template/target/scala-2.13/classes.bak[0m

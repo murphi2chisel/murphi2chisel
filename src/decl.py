@@ -415,9 +415,8 @@ class vardecl(decl):
         return "val %s_out = Output(%s)" % (self.name, self.typ.generate_code())
 
     def generate_reg_init(self):
-        return "val %s_init = Wire(%s)\n" \
-               "val %s_reg = RegInit(%s_init)\n" \
-               "io.%s_out:=%s_reg\n" % (self.name, self.typ.generate_code(), self.name, self.name, self.name, self.name)
+        return "val %s_reg = Reg(%s)\n" \
+               "io.%s_out:=%s_reg\n" % (self.name, self.typ.generate_code(), self.name, self.name)
 
 
 class recordtypedecl(typedecl):

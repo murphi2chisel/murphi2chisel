@@ -3,8 +3,8 @@ import sys
 sys.path.append("../src")
 from load import *
 
-cmurphi_path = '/home/ubuntu/murphi2chisel/src/external/cmurphi'
-protocol_dir = '/home/ubuntu/murphi2chisel/equivalence_check/german'
+cmurphi_path = '/home/czh/murphi2chisel/src/external/cmurphi'
+protocol_dir = '/home/czh/murphi2chisel/equivalence_check/german'
 constlist = [2,2]
 
 def reachablestateset():
@@ -34,7 +34,7 @@ def reachablestateset():
                 reachable_state_set.append(reachable_state)
             
     print(len(reachable_state_set))
-    print((reachable_state_set))
+    # print((reachable_state_set))
     return reachable_state_set
 
 def unreachablestateset():
@@ -146,7 +146,7 @@ def checkreachablestateset():
             if "initial begin" in line:
                 sv += """
                 initial begin
-                    assume(reset==1);
+                    assume(reset==1&&io_en_a==0);
                 end\n
                 """
         f2.write(sv)
@@ -177,14 +177,14 @@ def checkreachablestateset():
         flag_murphi = False
         with open('trace%d.txt' % i, 'r') as f:
             for line in f.readlines():
-                if "failed" in line:
+                if "failed" in line or "referenced" in line:
                     flag_murphi = True 
         flag_chisel = os.path.exists("./v%d/FAIL" % i)
         if flag_murphi and flag_chisel:
             s = "State %s is checked reachable both in Murphi and Chisel\nMurphi log can be found in trace%d.txt and Chisel log can be found in dir v%d\n" % (str(reachable_state),i,i)
             log(protocol_dir,s) 
         else:
-            print("check failed")
+            print("check failed ")
             exit(1)
 
 def checkunreachablestateset():
@@ -275,7 +275,7 @@ def checkunreachablestateset():
             if "initial begin" in line:
                 sv += """
                 initial begin
-                    assume(reset==1);
+                    assume(reset==1&&io_en_a==0);
                 end\n
                 """
         f2.write(sv)

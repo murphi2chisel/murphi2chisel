@@ -2418,20 +2418,15 @@ for(int mu_i = 1; mu_i <= 2; mu_i++) {
 mu_Chan1[mu_i].mu_Cmd = mu_Empty;
 mu_Chan2[mu_i].mu_Cmd = mu_Empty;
 mu_Chan3[mu_i].mu_Cmd = mu_Empty;
-mu_Chan1[mu_i].mu_Data = 1;
-mu_Chan2[mu_i].mu_Data = 1;
-mu_Chan3[mu_i].mu_Data = 1;
 mu_Cache[mu_i].mu_State = mu_I;
 mu_InvSet[mu_i] = mu_false;
 mu_ShrSet[mu_i] = mu_false;
-mu_Cache[mu_i].mu_Data = 1;
 };
 };
 mu_ExGntd = mu_false;
 mu_CurCmd = mu_Empty;
 mu_MemData = mu_d;
 mu_AuxData = mu_d;
-mu_CurPtr = 1;
   };
 
 };

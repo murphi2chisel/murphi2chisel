@@ -29,13 +29,14 @@ val AuxData_in = Input(UInt(log2Ceil((DATA_NUM+1)).W))
 val AuxData_out = Output(UInt(log2Ceil((DATA_NUM+1)).W))
 })
 
-def bool2boolean( e: Bool): Boolean = {
-    if(e==true.B){
-      return true
-    }else{
-      return false
+  def forall(left: Int, right: Int, f: Int => Bool): Bool = {
+    val v = Wire(Vec(right - left + 1, Bool()))
+    v(0) := f(left)
+    for (i <- left until right) {
+      v(i - left + 1) := v(i - left) & f(i + 1)
     }
-}
+    return v(right - left)
+  }
 io.Cache_out:=io.Cache_in
 io.Chan1_out:=io.Chan1_in
 io.Chan2_out:=io.Chan2_in

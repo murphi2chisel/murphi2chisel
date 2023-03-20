@@ -196,7 +196,7 @@ class quantexpr(expr):
             typ = para[1]
             left, right = typ.get_subrange_left_right()
             if self.op == op_class.Forall:
-                return "List.range(%s, %s).forall(%s => bool2boolean(%s)).B" % (left, right, i, self.left.generate_in())
+                return "forall(%s,%s,%s=>%s)" % (left, right, i, self.left.generate_in())
             else:
                 return "List.range(%s, %s).exists(%s => bool2boolean(%s)).B" % (left, right, i, self.left.generate_in())
         elif len(self.parameter) == 2:
@@ -222,7 +222,7 @@ class quantexpr(expr):
             typ = para[1]
             left, right = typ.get_subrange_left_right()
             if self.op == op_class.Forall:
-                return "List.range(%s, %s).forall(%s => bool2boolean(%s)).B" % (left, right, i, self.left.generate_io_in())
+                return "forall(%s,%s,%s=>%s)" % (left, right, i, self.left.generate_io_in())
             else:
                 return "List.range(%s, %s).exists(%s => bool2boolean(%s)).B" % (left, right, i, self.left.generate_io_in())
         elif len(self.parameter) == 2:

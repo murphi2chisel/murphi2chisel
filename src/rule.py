@@ -86,23 +86,6 @@ class simplerule(rule):
         const_paras = []
         for x in constmap.values():
             const_paras.append("%s:Int" % x.name)
-        # if self.vars is not None:
-        #     for v in self.vars:
-        #         v = v[0]
-        #         name = v.name
-        #         localvarmap[name] = v.typ
-        #         if isinstance(v.typ, subrangetypedecl):
-        #             res += "var %s:Int = 0\n" % name
-        #         else:
-        #             #   predefined type
-        #             type = typemap[v.typ.typename]
-        #             if isinstance(type, subrangetypedecl):
-        #                 res += "var %s:Int = 0\n" % name
-        #             else:
-        #                 # record
-        #                 res += "var %s = Wire(new %s(%s))\n" % (name,
-        #                                                   v.typ.typename, ','.join(const_paras))
-
         for stmt in self.body:
             res += "%s\n" % stmt.generate_simplerule()
         res += "}\n}\n}\n"
@@ -187,7 +170,76 @@ class startstate(rule):
             res += "}\n"
         return res
 
+    def generate_startstate(self):
+        class_paras = []
+        for x in constmap.values():
+            class_paras.append("%s:Int" % x.name)
+        if self.enclosures is not None:
+            # the rule is enclosed by paras
+            for x in self.enclosures:
+                class_paras.append("%s:Int" % x[0])
+        node_paras = []
+        for x in constmap.values():
+            node_paras.append("%s" % x.name)
 
+        res = ""
+        res += "class %s(%s) extends node(%s){\nwhen(io.en_r){\n" % (
+            self.name, ','.join(class_paras), ','.join(node_paras))
+
+        # local var
+        const_paras = []
+        for x in constmap.values():
+            const_paras.append("%s:Int" % x.name)
+        if self.vars is not None:
+            for v in self.vars:
+                v = v[0]
+                name = v.name
+                localvarmap[name] = v.typ
+                if isinstance(v.typ, subrangetypedecl):
+                    res += "var %s:Int = 0\n" % name
+                else:
+                    #   predefined type
+                    type = typemap[v.typ.typename]
+                    if isinstance(type, subrangetypedecl):
+                        res += "var %s:Int = 0\n" % name
+                    else:
+                        # record
+                        res += "var %s = Wire(new %s(%s))\n" % (name,
+                                                                v.typ.typename, ','.join(const_paras))
+                        if name == "msg":
+                            res += "msg.opcode := ProbeBlock\n" \
+                                   "msg.para := toB\n"
+        # local var
+        const_paras = []
+        for x in constmap.values():
+            const_paras.append("%s:Int" % x.name)
+        for stmt in self.body:
+            res += "%s\n" % stmt.generate_simplerule()
+        res += "}\n}\n"
+        return res
+
+    def generate_instance(self):
+        res = ""
+        class_paras = []
+        for x in constmap.values():
+            class_paras.append("%s" % x.name)
+        if self.enclosures is not None:
+            # the rule is enclosed by paras
+            for x in self.enclosures:
+                class_paras.append("%s" % x[0])
+
+        e_paras = []
+        if self.enclosures is not None:
+            # the rule is enclosed by paras
+            for x in self.enclosures:
+                e_paras.append("%s <- %s" % (x[0], x[1].generate_forindex()))
+        for i in e_paras:
+            res += "for(%s){\n" % i
+        res += "rules += Module(new %s(%s))\n" % (self.name,
+                                                  ','.join(class_paras))
+        for i in e_paras:
+            res += "}\n"
+        return res
 class invariant(rule):
     """invariant
 
@@ -244,7 +296,7 @@ class program(object):
 
     def get_num_of_rule(self):
         # input: rules in prog
-        # return : the number of all the closures
+        # return : the number of all the closures of simple rules
         res = 0
         m = {}
         for rule in self.rules:
@@ -265,6 +317,15 @@ class program(object):
             res2.append("%s*%d" % (x,m[x]))
         return "%s+%d" % ('+'.join(res2),res)
 
+    def get_num_of_startstate(self):
+        for rule in self.rules:
+            if isinstance(rule, startstate):
+                if rule.enclosures is None:
+                    return str(1)
+                else:
+                    enclosure = rule.enclosures[0]
+                    return enclosure[1].get_size_of_subrange()
+
     def generate_router(self):
         # generate router
         res = "import chisel3._\n" \
@@ -275,6 +336,8 @@ class program(object):
         for rule in self.rules:
             if isinstance(rule, simplerule):
                 res += rule.generate_code()
+            elif isinstance(rule,startstate):
+                res+=rule.generate_startstate()
         return res
 
     def generate_node(self):
@@ -292,13 +355,14 @@ class program(object):
             res += "%s\n" % d.generate_io()
         res += "})\n"
         res += """
-def bool2boolean( e: Bool): Boolean = {
-    if(e==true.B){
-      return true
-    }else{
-      return false
+  def forall(left: Int, right: Int, f: Int => Bool): Bool = {
+    val v = Wire(Vec(right - left + 1, Bool()))
+    v(0) := f(left)
+    for (i <- left until right) {
+      v(i - left + 1) := v(i - left) & f(i + 1)
     }
-}
+    return v(right - left)
+  }
 """
         for d in varmap.values():
             res += "io.%s_out:=io.%s_in\n" % (d.generate_code(),
@@ -334,7 +398,7 @@ def bool2boolean( e: Bool): Boolean = {
 
         # generate io
         res += "val io = IO(new Bundle {\n"
-        res += "val en_a = Input(UInt(log2Ceil(%s).W))\n" % self.get_num_of_rule()
+        res += "val en_a = Input(UInt(log2Ceil(%s+%s).W))\n" % (self.get_num_of_rule(),self.get_num_of_startstate())
         for d in varmap.values():
             res += "%s\n" % d.generate_io_out()
         res += "})\n"
@@ -343,15 +407,15 @@ def bool2boolean( e: Bool): Boolean = {
         res += "var rules = ArrayBuffer[node]()\n"
         for d in varmap.values():
             res += "%s" % d.generate_reg_init()
-        for rule in self.rules:
-            if isinstance(rule, startstate):
-                res += rule.generate_code()
+
 
         # generate rule instance
         for rule in self.rules:
             if isinstance(rule, simplerule):
                 res += rule.generate_instance()
-        res += "for(i <- 0 until %s) {\n" % self.get_num_of_rule()
+            elif isinstance(rule, startstate):
+                res += rule.generate_instance()
+        res += "for(i <- 0 until %s+%s) {\n" % (self.get_num_of_rule(),self.get_num_of_startstate())
         for v in varmap.values():
             res += "rules(i).io.%s_in := %s_reg\n" % (v.name, v.name)
         res += "rules(i).io.en_r:=(io.en_a=== i.U)\n"
@@ -363,13 +427,14 @@ def bool2boolean( e: Bool): Boolean = {
 
         # generate assertion
         res += """
-def bool2boolean( e: Bool): Boolean = {
-    if(e==true.B){
-      return true
-    }else{
-      return false
+  def forall(left: Int, right: Int, f: Int => Bool): Bool = {
+    val v = Wire(Vec(right - left + 1, Bool()))
+    v(0) := f(left)
+    for (i <- left until right) {
+      v(i - left + 1) := v(i - left) & f(i + 1)
     }
-}
+    return v(right - left)
+  }
 """
         for rule in self.rules:
             if isinstance(rule, invariant):

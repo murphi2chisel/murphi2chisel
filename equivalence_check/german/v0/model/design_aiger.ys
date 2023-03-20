@@ -1,14 +1,7 @@
 # running in v0/model/
-read_ilang design.il
-memory_map
-async2sync
-chformal -assume -early
-chformal -live -fair -cover -remove
-opt_clean
-setundef -anyseq
-opt -keepdc -fast
-check
+read_ilang design_prep.il
 hierarchy -simcheck
+formalff -assume
 flatten
 setundef -undriven -anyseq
 setattr -unset keep
@@ -16,8 +9,11 @@ delete -output
 opt -full
 techmap
 opt -fast
+memory_map -formal
+formalff -clk2ff -ff2anyinit
+simplemap
 dffunmap
 abc -g AND -fast
 opt_clean
 stat
-write_aiger -I -B -zinit -map design_aiger.aim design_aiger.aig
+write_aiger -I -B -zinit -no-startoffset -map design_aiger.aim -ywmap design_aiger.ywa design_aiger.aig

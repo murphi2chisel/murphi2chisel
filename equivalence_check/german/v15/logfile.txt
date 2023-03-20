@@ -1,0 +1,45 @@
+SBY 12:10:12 [v15] Removing directory '/home/czh/murphi2chisel/equivalence_check/german/v15'.
+SBY 12:10:12 [v15] Copy '/home/czh/murphi2chisel/equivalence_check/german/protocol.sv' to '/home/czh/murphi2chisel/equivalence_check/german/v15/src/protocol.sv'.
+SBY 12:10:12 [v15] engine_0: abc pdr
+SBY 12:10:12 [v15] base: starting process "cd v15/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 12:10:12 [v15] base: finished (returncode=0)
+SBY 12:10:12 [v15] prep: starting process "cd v15/model; yosys -ql design_prep.log design_prep.ys"
+SBY 12:10:12 [v15] prep: finished (returncode=0)
+SBY 12:10:12 [v15] aig: starting process "cd v15/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY 12:10:13 [v15] aig: finished (returncode=0)
+SBY 12:10:13 [v15] engine_0: starting process "cd v15; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw'"
+SBY 12:10:13 [v15] engine_0: ABC command line: "read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw".
+SBY 12:10:13 [v15] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 12:10:13 [v15] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+SBY 12:10:13 [v15] engine_0: Frame Clauses                                                     Max Queue Flops Cex      Time
+SBY 12:10:13 [v15] engine_0: 1 : 0 1                                                                 1     2      0.00 sec
+SBY 12:10:13 [v15] engine_0: 2 : 0 2 3                                                               2    10      0.01 sec
+SBY 12:10:13 [v15] engine_0: 3 : 0 2 1 2                                                             0    10      0.01 sec
+SBY 12:10:13 [v15] engine_0: 4 : 0 8 6 9 8                                                           9    24      0.03 sec
+SBY 12:10:13 [v15] engine_0: 5 : 0 8 5 8 6 2                                                         0    24      0.03 sec
+SBY 12:10:13 [v15] engine_0: 6 : 0 8 5 9 9 11 7                                                     11    26      0.06 sec
+SBY 12:10:13 [v15] engine_0: 7 : 0 8 5 9 9 8 5 2                                                     0    26      0.06 sec
+SBY 12:10:13 [v15] engine_0: 8 : 0 8 5 11 18 23 20 10 19                                            14    35      0.21 sec
+SBY 12:10:13 [v15] engine_0: 9 : 0 8 5 10 16 14 8 3 0 19                                             0    35      0.22 sec
+SBY 12:10:13 [v15] engine_0: Invariant F[8] : 19 clauses with 25 flops (out of 56) (cex = 0, ave = 43.83)
+SBY 12:10:13 [v15] engine_0: Verification of invariant with 19 clauses was successful.  Time =     0.01 sec
+SBY 12:10:13 [v15] engine_0: Block =    6  Oblig =   222  Clause =   119  Call =  2496 (sat=48.7%)  Cex =   0  Start =   5
+SBY 12:10:13 [v15] engine_0: SAT solving =     0.19 sec ( 79.74 %)
+SBY 12:10:13 [v15] engine_0: unsat     =     0.06 sec ( 25.34 %)
+SBY 12:10:13 [v15] engine_0: sat       =     0.13 sec ( 54.40 %)
+SBY 12:10:13 [v15] engine_0: Generalize  =     0.16 sec ( 66.69 %)
+SBY 12:10:13 [v15] engine_0: Push clause =     0.03 sec ( 13.04 %)
+SBY 12:10:13 [v15] engine_0: Ternary sim =     0.01 sec (  3.43 %)
+SBY 12:10:13 [v15] engine_0: Containment =     0.00 sec (  0.03 %)
+SBY 12:10:13 [v15] engine_0: CNF compute =     0.01 sec (  2.46 %)
+SBY 12:10:13 [v15] engine_0: Refinement  =     0.00 sec (  0.00 %)
+SBY 12:10:13 [v15] engine_0: TOTAL       =     0.23 sec (100.00 %)
+SBY 12:10:13 [v15] engine_0: Property proved.  Time =     0.24 sec
+SBY 12:10:13 [v15] engine_0: Counter-example is not available.
+SBY 12:10:13 [v15] engine_0: finished (returncode=0)
+SBY 12:10:13 [v15] engine_0: Status returned by engine: PASS
+SBY 12:10:13 [v15] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 12:10:13 [v15] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 12:10:13 [v15] summary: engine_0 (abc pdr) returned PASS
+SBY 12:10:13 [v15] summary: engine_0 did not produce any traces
+SBY 12:10:13 [v15] DONE (PASS, rc=0)

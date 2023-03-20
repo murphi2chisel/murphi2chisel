@@ -33,11 +33,9 @@ var
 ruleset d : DATA do startstate "Init"                       -- 对 DATA 进行枚举，即假定要传的数据为1、2
   for i : NODE do
     Chan1[i].Cmd := Empty; Chan2[i].Cmd := Empty; Chan3[i].Cmd := Empty;
-    Chan1[i].Data := 1;  Chan2[i].Data := 1; Chan3[i].Data := 1;
     Cache[i].State := I; InvSet[i] := false; ShrSet[i] := false;
-    Cache[i].Data := 1;
   end;
-  ExGntd := false; CurCmd := Empty; MemData := d; AuxData := d; CurPtr := 1;
+  ExGntd := false; CurCmd := Empty; MemData := d; AuxData := d;
 endstartstate; endruleset;
 
 
@@ -127,4 +125,3 @@ ruleset i : NODE do rule "RecvInvAck"
   if (ExGntd = true)
   then ExGntd := false; MemData := Chan3[i].Data; end;
 endrule; endruleset;
-

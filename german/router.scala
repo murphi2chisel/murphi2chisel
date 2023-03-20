@@ -2,6 +2,23 @@ import chisel3._
 import chisel3.util._
 import CACHE_STATE._
 import MSG_CMD._
+class Init(NODE_NUM:Int,DATA_NUM:Int,d:Int) extends node(NODE_NUM,DATA_NUM){
+when(io.en_r){
+for(i <- 1 until (NODE_NUM+1)){
+io.Chan1_out(i).Cmd := Empty
+io.Chan2_out(i).Cmd := Empty
+io.Chan3_out(i).Cmd := Empty
+io.Cache_out(i).State := I
+io.InvSet_out(i) := false.B
+io.ShrSet_out(i) := false.B
+}
+
+io.ExGntd_out := false.B
+io.CurCmd_out := Empty
+io.MemData_out := d.U
+io.AuxData_out := d.U
+}
+}
 class Store(NODE_NUM:Int,DATA_NUM:Int,i:Int,d:Int) extends node(NODE_NUM,DATA_NUM){
 when(io.en_r){
 when((io.Cache_in(i).State===E)){
@@ -70,7 +87,7 @@ io.CurCmd_out := Empty
 }
 class SendGntE(NODE_NUM:Int,DATA_NUM:Int,i:Int) extends node(NODE_NUM,DATA_NUM){
 when(io.en_r){
-when(((io.CurCmd_in===ReqE)&&((io.CurPtr_in===i.U)&&((io.Chan2_in(i).Cmd===Empty)&&((io.ExGntd_in===false.B)&&List.range(1, NODE_NUM).forall(j => bool2boolean((io.ShrSet_in(j)===false.B))).B))))){
+when(((io.CurCmd_in===ReqE)&&((io.CurPtr_in===i.U)&&((io.Chan2_in(i).Cmd===Empty)&&((io.ExGntd_in===false.B)&&forall(1,NODE_NUM,j=>(io.ShrSet_in(j)===false.B))))))){
 io.Chan2_out(i).Cmd := GntE
 io.Chan2_out(i).Data := io.MemData_in
 io.ShrSet_out(i) := true.B

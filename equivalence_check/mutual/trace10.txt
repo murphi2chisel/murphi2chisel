@@ -54,7 +54,7 @@ Status:
 
 State Space Explored:
 
-	12 states, 20 rules fired in 0.34s.
+	12 states, 20 rules fired in 0.12s.
 
 Omission Probabilities (caused by Hash Compaction):
 
