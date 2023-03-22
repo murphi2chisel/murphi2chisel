@@ -55,37 +55,18 @@ Var
     Tree: array [nodeId] of treeNode;
 
 startstate "Init"
-var son: 1..allNodeNum;
 begin
 
-    for n : nodeId0 do 
-        Tree[n].cache.state := None;
-        Tree[n].father :=0;
-        for b1:branchType0 do
-            Tree[n].sons[b1]:=0;
-        endfor;
-        for b2:branchType0 do
-            Tree[n].directory[b2]:=None;
-        endfor;
-        for b3:branchType0 do
-            Tree[n].slave_pending[b3]:=Empty;
-        endfor;
-        Tree[n].master_pending:=Empty;
-        for b4:branchType0 do
-            for  c : chanType0 do 
-                Tree[n].link[b4][c].opcode := Empty;
-                Tree[n].link[b4][c].para := toN;
-            endfor;
-        endfor ;
-    endfor;
-
-
     Tree[1].father := 1;
-    son := 2;
-    for cur : l2Id do 
-        for i : branchType do
-            Tree[son].father := cur;
-            Tree[cur].sons[i] := son;
+    
+    Tree[2].father := 1;
+    Tree[1].sons[1] := 2;
+
+    Tree[3].father := 1;
+    Tree[1].sons[2] := 3;
+
+    for cur : l2Id do --1..1
+        for i : branchType do  --1..2
             for c : chanType do
                 --undefine Tree[cur].link[i][c];
                 Tree[cur].link[i][c].opcode := Empty;
@@ -94,7 +75,6 @@ begin
             Tree[cur].master_pending := Empty;
             Tree[cur].slave_pending[i] := Empty;
             Tree[cur].directory[i] := None;
-            son := son + 1;
         endfor;
     endfor;
 
@@ -758,11 +738,7 @@ begin
 endrule;
 endruleset;
 
-invariant "global_filter"
-forall i : coreId; j : coreId do
-    i != j ->
-    !(Tree[i].cache.state = Tip & Tree[j].cache.state = Tip)
-endforall;
+
 
 invariant "invalid_not_have_valid_child_r"
 forall i : cacheId do

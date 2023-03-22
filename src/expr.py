@@ -224,7 +224,7 @@ class quantexpr(expr):
             if self.op == op_class.Forall:
                 return "forall(%s,%s,%s=>%s)" % (left, right, i, self.left.generate_io_in())
             else:
-                return "List.range(%s, %s).exists(%s => bool2boolean(%s)).B" % (left, right, i, self.left.generate_io_in())
+                return "exists(%s,%s,%s=>%s)" % (left, right, i, self.left.generate_io_in())
         elif len(self.parameter) == 2:
             para = self.parameter[0]
             i = para[0]
@@ -248,9 +248,9 @@ class quantexpr(expr):
             typ = para[1]
             left, right = typ.get_subrange_left_right()
             if self.op == op_class.Forall:
-                return "List.range(%s, %s).forall(%s => bool2boolean(%s)).B" % (left, right, i, self.left.generate_reg())
+                return "forall(%s,%s,%s=>%s)" % (left, right, i, self.left.generate_reg())
             else:
-                return "List.range(%s, %s).exists(%s => bool2boolean(%s)).B" % (left, right, i, self.left.generate_reg())
+                return "exists(%s,%s,%s=>%s)" % (left, right, i, self.left.generate_reg())
         elif len(self.parameter) == 2:
             para = self.parameter[0]
             i = para[0]
@@ -277,7 +277,7 @@ class addexpr(binaryexpr):
         return "(%s%s%s)" % (self.left.generate_in(), op2str(self.op), self.right.generate_in())
     
     def generate_io_in(self):
-        return "(%s%s%s)" % (self.left.generate_io_in(), op2str(self.op), self.right.generate_io_in())
+        return "(%s%s%s)" % ( str(self.left)+".U" if isinstance(self.left,int) else self.left.generate_io_in(), op2str(self.op), str(self.right)+".U" if isinstance(self.right,int) else self.right.generate_io_in())
 
     def generate_reg(self):
         return "(%s%s%s)" % (self.left.generate_reg(), op2str(self.op), self.right.generate_reg())

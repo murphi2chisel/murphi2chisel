@@ -1,7 +1,19 @@
 from load import *
 import os
+import psutil
 
 # transform of if else body lalr generate
+
+from threading import Timer
+
+def printmem():
+    print(psutil.virtual_memory())
+
+class RepeatingTimer(Timer): 
+   def run(self):
+       while not self.finished.is_set():
+           self.function(*self.args, **self.kwargs)
+           self.finished.wait(self.interval)
 
 
 def init_ifstmt(args):
@@ -53,11 +65,10 @@ def gen_system_script(para: str):
 def sby_script():
     return """
     [options]
-    mode bmc
-    depth 10
+    mode prove
 
     [engines]
-    smtbmc
+    abc pdr
 
     [script]
     read -sv protocol.sv 

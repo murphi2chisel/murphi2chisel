@@ -34,7 +34,7 @@ class simplerule(rule):
     def __init__(self, name: str, condition: expr, body, enclosures, vars):
         super().__init__()
         self.vars = vars  # optional local var
-        self.name = name  # rule name
+        self.name = name.replace(" ","")  # rule name
         self.condition = condition  # condition for execution - guard
         self.body = body  # the statement code - action
         # the format of enclosures is list( {name, typedecl} )
@@ -67,12 +67,12 @@ class simplerule(rule):
                 name = v.name
                 localvarmap[name] = v.typ
                 if isinstance(v.typ, subrangetypedecl):
-                    res += "var %s:Int = 0\n" % name
+                    res += "var %s = Wire(UInt())\n" % name
                 else:
                     #   predefined type
                     type = typemap[v.typ.typename]
                     if isinstance(type, subrangetypedecl):
-                        res += "var %s:Int = 0\n" % name
+                        res += "var %s = Wire(UInt())\n" % name
                     else:
                         # record
                         res += "var %s = Wire(new %s(%s))\n" % (name,
@@ -126,7 +126,7 @@ class startstate(rule):
     def __init__(self, name: str, body: stmt, enclosures, vars):
         super().__init__()
         self.vars = vars
-        self.name = name
+        self.name = name.replace(" ","")
         self.body = body
         # the format of enclosures is list( {name, typedecl} )
         # enclosing ruleset params (if no ruleset , it should be None)
@@ -145,12 +145,12 @@ class startstate(rule):
                 name = v.name
                 localvarmap[name] = v.typ
                 if isinstance(v.typ, subrangetypedecl):
-                    res += "var %s:Int = 0\n" % name
+                    res += "var %s = Wire(UInt())\n" % name
                 else:
                     #   predefined type
                     type = typemap[v.typ.typename]
                     if isinstance(type, subrangetypedecl):
-                        res += "var %s:Int = 0\n" % name
+                        res += "var %s = Wire(UInt())\n" % name
                     else:
                         # record
                         res += "var %s = new %s(%s)\n" % (name,
@@ -196,12 +196,12 @@ class startstate(rule):
                 name = v.name
                 localvarmap[name] = v.typ
                 if isinstance(v.typ, subrangetypedecl):
-                    res += "var %s:Int = 0\n" % name
+                    res += "var %s = Wire(UInt())\n" % name
                 else:
                     #   predefined type
                     type = typemap[v.typ.typename]
                     if isinstance(type, subrangetypedecl):
-                        res += "var %s:Int = 0\n" % name
+                        res += "var %s = Wire(UInt())\n" % name
                     else:
                         # record
                         res += "var %s = Wire(new %s(%s))\n" % (name,
@@ -249,7 +249,7 @@ class invariant(rule):
 
     def __init__(self, name: str, body: expr, enclosures):
         super().__init__()
-        self.name = name
+        self.name = name.replace(" ","")
         self.body = body
         # the format of enclosures is list( {name, typedecl} )
         # enclosing ruleset params (if no ruleset , it should be None)
@@ -323,8 +323,10 @@ class program(object):
                 if rule.enclosures is None:
                     return str(1)
                 else:
-                    enclosure = rule.enclosures[0]
-                    return enclosure[1].get_size_of_subrange()
+                    t = []
+                    for enclosure in rule.enclosures:
+                        t.append(enclosure[1].get_size_of_subrange())
+                    return '*'.join(t)
 
     def generate_router(self):
         # generate router
@@ -360,6 +362,15 @@ class program(object):
     v(0) := f(left)
     for (i <- left until right) {
       v(i - left + 1) := v(i - left) & f(i + 1)
+    }
+    return v(right - left)
+  }
+
+  def exists(left: Int, right: Int, f: Int => Bool): Bool = {
+    val v = Wire(Vec(right - left + 1, Bool()))
+    v(0) := f(left)
+    for (i <- left until right) {
+      v(i - left + 1) := v(i - left) | f(i + 1)
     }
     return v(right - left)
   }
@@ -432,6 +443,14 @@ class program(object):
     v(0) := f(left)
     for (i <- left until right) {
       v(i - left + 1) := v(i - left) & f(i + 1)
+    }
+    return v(right - left)
+  }
+  def exists(left: Int, right: Int, f: Int => Bool): Bool = {
+    val v = Wire(Vec(right - left + 1, Bool()))
+    v(0) := f(left)
+    for (i <- left until right) {
+      v(i - left + 1) := v(i - left) | f(i + 1)
     }
     return v(right - left)
   }

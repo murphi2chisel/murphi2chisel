@@ -1,0 +1,71 @@
+SBY 18:39:04 [v0] Removing directory '/home/czh/murphi2chisel/equivalence_check/tilelink/v0'.
+SBY 18:39:04 [v0] Copy '/home/czh/murphi2chisel/equivalence_check/tilelink/protocol.sv' to '/home/czh/murphi2chisel/equivalence_check/tilelink/v0/src/protocol.sv'.
+SBY 18:39:04 [v0] engine_0: abc pdr
+SBY 18:39:04 [v0] base: starting process "cd v0/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 18:39:20 [v0] base: finished (returncode=0)
+SBY 18:39:20 [v0] prep: starting process "cd v0/model; yosys -ql design_prep.log design_prep.ys"
+SBY 18:39:27 [v0] prep: finished (returncode=0)
+SBY 18:39:27 [v0] aig: starting process "cd v0/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY 18:39:38 [v0] aig: finished (returncode=0)
+SBY 18:39:38 [v0] engine_0: starting process "cd v0; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw'"
+SBY 18:39:38 [v0] engine_0: ABC command line: "read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw".
+SBY 18:39:38 [v0] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 18:39:38 [v0] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+SBY 18:39:38 [v0] engine_0: Frame Clauses                                                     Max Queue Flops Cex      Time
+SBY 18:39:38 [v0] engine_0: 1 : 0 1                                                                 1     2      0.04 sec
+SBY 18:39:38 [v0] engine_0: 2 : 0 2 3                                                               2     6      0.05 sec
+SBY 18:39:38 [v0] engine_0: 3 : 0 2 1 2                                                             0     6      0.05 sec
+SBY 18:39:38 [v0] engine_0: 4 : 0 7 9 16 13                                                        12    31      0.43 sec
+SBY 18:39:38 [v0] engine_0: 5 : 0 7 9 14 9 4                                                        0    31      0.46 sec
+SBY 18:39:42 [v0] engine_0: 6 : 0 15 47 89 94 69 52                                                58    62      4.12 sec
+SBY 18:39:42 [v0] engine_0: 7 : 0 12 24 32 27 30 18 19                                              0    62      4.32 sec
+SBY 18:39:42 [v0] engine_0: 8 : 0 12 24 32 26 29 19 3 19                                            4    62      4.50 sec
+SBY 18:39:42 [v0] engine_0: 9 : 0 12 24 32 26 29 18 2 1 18                                          0    62      4.63 sec
+SBY 18:39:47 [v0] engine_0: 10 : 0 13 27 36 30 48 61 73 74 43 22                                    70    64      9.12 sec
+SBY 18:39:47 [v0] engine_0: Block =    7  Oblig =  1371  Clause =   638  Call = 13191 (sat=40.6%)  Cex =   0  Start =  38
+SBY 18:39:47 [v0] engine_0: SAT solving =     7.99 sec ( 87.52 %)
+SBY 18:39:47 [v0] engine_0: unsat     =     3.72 sec ( 40.70 %)
+SBY 18:39:47 [v0] engine_0: sat       =     4.28 sec ( 46.82 %)
+SBY 18:39:47 [v0] engine_0: Generalize  =     6.94 sec ( 76.02 %)
+SBY 18:39:47 [v0] engine_0: Push clause =     0.68 sec (  7.49 %)
+SBY 18:39:47 [v0] engine_0: Ternary sim =     0.41 sec (  4.54 %)
+SBY 18:39:47 [v0] engine_0: Containment =     0.00 sec (  0.05 %)
+SBY 18:39:47 [v0] engine_0: CNF compute =     0.13 sec (  1.44 %)
+SBY 18:39:47 [v0] engine_0: Refinement  =     0.00 sec (  0.04 %)
+SBY 18:39:47 [v0] engine_0: TOTAL       =     9.13 sec (100.00 %)
+SBY 18:39:47 [v0] engine_0: Output 0 of miter "model/design_aiger" was asserted in frame 18.  Time =     9.14 sec
+SBY 18:39:47 [v0] engine_0: finished (returncode=0)
+SBY 18:39:47 [v0] engine_0: Status returned by engine: FAIL
+SBY 18:39:47 [v0] smt2: starting process "cd v0/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 18:39:47 [v0] engine_0: Engine did not produce a counter example.
+SBY 18:39:47 [v0] engine_0: starting process "cd v0; yosys-witness aiw2yw engine_0/trace.aiw model/design_aiger.ywa engine_0/trace_aiw.yw"
+SBY 18:39:47 [v0] engine_0: Converting AIGER witness trace 'engine_0/trace.aiw' to Yosys witness trace 'engine_0/trace_aiw.yw'...
+SBY 18:39:47 [v0] engine_0: Using Yosys witness AIGER map file 'model/design_aiger.ywa'
+SBY 18:39:47 [v0] engine_0: Converted 19 time steps.
+SBY 18:39:47 [v0] engine_0: finished (returncode=0)
+SBY 18:39:49 [v0] smt2: finished (returncode=0)
+SBY 18:39:49 [v0] engine_0: starting process "cd v0; yosys-smtbmc -s yices --noprogress --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc --yw engine_0/trace_aiw.yw model/design_smt2.smt2"
+SBY 18:39:49 [v0] engine_0: ##   0:00:00  Solver: yices
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 0..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 1..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 2..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 3..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 4..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 5..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 6..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 7..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 8..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 9..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 10..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 11..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 12..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 13..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 14..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 15..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 16..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Skipping step 17..
+SBY 18:39:55 [v0] engine_0: ##   0:00:05  Checking assertions in step 18..
+SBY 18:39:57 [v0] engine_0: ##   0:00:07  BMC failed!
+SBY 18:39:57 [v0] engine_0: ##   0:00:07  Assert failed in system: protocol.sv:242793.22-242795.48 ($assert$protocol.sv:242793$27440)
+SBY 18:39:57 [v0] engine_0: ##   0:00:07  Writing trace to VCD file: engine_0/trace.vcd
+SBY 18:40:38 [v0] engine_0: terminating process

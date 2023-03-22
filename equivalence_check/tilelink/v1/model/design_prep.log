@@ -1,0 +1,234 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module system.
+Found 0 SCCs in module sharerinvalidatescache_1.
+Found 0 SCCs in module sharerinvalidatescache.
+Found 0 SCCs in module homesendsreplytoclient_shared.
+Found 0 SCCs in module homesendsreplytoclient_exclusive.
+Found 0 SCCs in module homesendsinvalidatemessage_1.
+Found 0 SCCs in module homesendsinvalidatemessage.
+Found 0 SCCs in module homereceivesinvalidateacknowledgement_1.
+Found 0 SCCs in module homereceivesinvalidateacknowledgement.
+Found 0 SCCs in module homepicksnewrequest_1.
+Found 0 SCCs in module homepicksnewrequest.
+Found 0 SCCs in module clientrequestssharedaccess_1.
+Found 0 SCCs in module clientrequestssharedaccess.
+Found 0 SCCs in module clientrequestsexclusiveaccess_1.
+Found 0 SCCs in module clientrequestsexclusiveaccess.
+Found 0 SCCs in module clientreceivessharedgrant_1.
+Found 0 SCCs in module clientreceivessharedgrant.
+Found 0 SCCs in module clientreceivedexclusivegrant_1.
+Found 0 SCCs in module clientreceivedexclusivegrant.
+Found 0 SCCs in module Init.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Finding unused cells or wires in module \sharerinvalidatescache_1..
+Finding unused cells or wires in module \sharerinvalidatescache..
+Finding unused cells or wires in module \homesendsreplytoclient_shared..
+Finding unused cells or wires in module \homesendsreplytoclient_exclusive..
+Finding unused cells or wires in module \homesendsinvalidatemessage_1..
+Finding unused cells or wires in module \homesendsinvalidatemessage..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement_1..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement..
+Finding unused cells or wires in module \homepicksnewrequest_1..
+Finding unused cells or wires in module \homepicksnewrequest..
+Finding unused cells or wires in module \clientrequestssharedaccess_1..
+Finding unused cells or wires in module \clientrequestssharedaccess..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess_1..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess..
+Finding unused cells or wires in module \clientreceivessharedgrant_1..
+Finding unused cells or wires in module \clientreceivessharedgrant..
+Finding unused cells or wires in module \clientreceivedexclusivegrant_1..
+Finding unused cells or wires in module \clientreceivedexclusivegrant..
+Finding unused cells or wires in module \Init..
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \clientreceivedexclusivegrant..
+Finding unused cells or wires in module \clientreceivedexclusivegrant_1..
+Finding unused cells or wires in module \clientreceivessharedgrant..
+Finding unused cells or wires in module \clientreceivessharedgrant_1..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess_1..
+Finding unused cells or wires in module \clientrequestssharedaccess..
+Finding unused cells or wires in module \clientrequestssharedaccess_1..
+Finding unused cells or wires in module \homepicksnewrequest..
+Finding unused cells or wires in module \homepicksnewrequest_1..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement_1..
+Finding unused cells or wires in module \homesendsinvalidatemessage..
+Finding unused cells or wires in module \homesendsinvalidatemessage_1..
+Finding unused cells or wires in module \homesendsreplytoclient_exclusive..
+Finding unused cells or wires in module \homesendsreplytoclient_shared..
+Finding unused cells or wires in module \sharerinvalidatescache..
+Finding unused cells or wires in module \sharerinvalidatescache_1..
+Finding unused cells or wires in module \system..
+Removed 1 unused cells and 1 unused wires.
+<suppressed ~2 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module Init...
+Checking module clientreceivedexclusivegrant...
+Checking module clientreceivedexclusivegrant_1...
+Checking module clientreceivessharedgrant...
+Checking module clientreceivessharedgrant_1...
+Checking module clientrequestsexclusiveaccess...
+Checking module clientrequestsexclusiveaccess_1...
+Checking module clientrequestssharedaccess...
+Checking module clientrequestssharedaccess_1...
+Checking module homepicksnewrequest...
+Checking module homepicksnewrequest_1...
+Checking module homereceivesinvalidateacknowledgement...
+Checking module homereceivesinvalidateacknowledgement_1...
+Checking module homesendsinvalidatemessage...
+Checking module homesendsinvalidatemessage_1...
+Checking module homesendsreplytoclient_exclusive...
+Checking module homesendsreplytoclient_shared...
+Checking module sharerinvalidatescache...
+Checking module sharerinvalidatescache_1...
+Checking module system...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
+Optimizing module clientreceivedexclusivegrant.
+Optimizing module clientreceivedexclusivegrant_1.
+Optimizing module clientreceivessharedgrant.
+Optimizing module clientreceivessharedgrant_1.
+Optimizing module clientrequestsexclusiveaccess.
+Optimizing module clientrequestsexclusiveaccess_1.
+Optimizing module clientrequestssharedaccess.
+Optimizing module clientrequestssharedaccess_1.
+Optimizing module homepicksnewrequest.
+Optimizing module homepicksnewrequest_1.
+Optimizing module homereceivesinvalidateacknowledgement.
+Optimizing module homereceivesinvalidateacknowledgement_1.
+Optimizing module homesendsinvalidatemessage.
+Optimizing module homesendsinvalidatemessage_1.
+Optimizing module homesendsreplytoclient_exclusive.
+Optimizing module homesendsreplytoclient_shared.
+Optimizing module sharerinvalidatescache.
+Optimizing module sharerinvalidatescache_1.
+Optimizing module system.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Init'.
+Finding identical cells in module `\clientreceivedexclusivegrant'.
+Finding identical cells in module `\clientreceivedexclusivegrant_1'.
+Finding identical cells in module `\clientreceivessharedgrant'.
+Finding identical cells in module `\clientreceivessharedgrant_1'.
+Finding identical cells in module `\clientrequestsexclusiveaccess'.
+Finding identical cells in module `\clientrequestsexclusiveaccess_1'.
+Finding identical cells in module `\clientrequestssharedaccess'.
+Finding identical cells in module `\clientrequestssharedaccess_1'.
+Finding identical cells in module `\homepicksnewrequest'.
+Finding identical cells in module `\homepicksnewrequest_1'.
+Finding identical cells in module `\homereceivesinvalidateacknowledgement'.
+Finding identical cells in module `\homereceivesinvalidateacknowledgement_1'.
+Finding identical cells in module `\homesendsinvalidatemessage'.
+Finding identical cells in module `\homesendsinvalidatemessage_1'.
+Finding identical cells in module `\homesendsreplytoclient_exclusive'.
+Finding identical cells in module `\homesendsreplytoclient_shared'.
+Finding identical cells in module `\sharerinvalidatescache'.
+Finding identical cells in module `\sharerinvalidatescache_1'.
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \clientreceivedexclusivegrant..
+Finding unused cells or wires in module \clientreceivedexclusivegrant_1..
+Finding unused cells or wires in module \clientreceivessharedgrant..
+Finding unused cells or wires in module \clientreceivessharedgrant_1..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess_1..
+Finding unused cells or wires in module \clientrequestssharedaccess..
+Finding unused cells or wires in module \clientrequestssharedaccess_1..
+Finding unused cells or wires in module \homepicksnewrequest..
+Finding unused cells or wires in module \homepicksnewrequest_1..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement_1..
+Finding unused cells or wires in module \homesendsinvalidatemessage..
+Finding unused cells or wires in module \homesendsinvalidatemessage_1..
+Finding unused cells or wires in module \homesendsreplytoclient_exclusive..
+Finding unused cells or wires in module \homesendsreplytoclient_shared..
+Finding unused cells or wires in module \sharerinvalidatescache..
+Finding unused cells or wires in module \sharerinvalidatescache_1..
+Finding unused cells or wires in module \system..
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \clientreceivedexclusivegrant..
+Finding unused cells or wires in module \clientreceivedexclusivegrant_1..
+Finding unused cells or wires in module \clientreceivessharedgrant..
+Finding unused cells or wires in module \clientreceivessharedgrant_1..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess_1..
+Finding unused cells or wires in module \clientrequestssharedaccess..
+Finding unused cells or wires in module \clientrequestssharedaccess_1..
+Finding unused cells or wires in module \homepicksnewrequest..
+Finding unused cells or wires in module \homepicksnewrequest_1..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement_1..
+Finding unused cells or wires in module \homesendsinvalidatemessage..
+Finding unused cells or wires in module \homesendsinvalidatemessage_1..
+Finding unused cells or wires in module \homesendsreplytoclient_exclusive..
+Finding unused cells or wires in module \homesendsreplytoclient_shared..
+Finding unused cells or wires in module \sharerinvalidatescache..
+Finding unused cells or wires in module \sharerinvalidatescache_1..
+Finding unused cells or wires in module \system..
+Removed 0 unused cells and 7 unused wires.
+<suppressed ~1 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: 4a94155ea6, CPU: user 0.08s system 0.01s, MEM: 16.22 MB peak
+Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 29% 4x opt_clean (0 sec), 13% 1x check (0 sec), ...

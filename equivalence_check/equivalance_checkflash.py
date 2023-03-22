@@ -226,6 +226,7 @@ def checkunreachablestateset():
         status = os.system('g++ -o protocol.o protocol-check%i.cpp -I %s/include' % (i,cmurphi_path))
         if status:
             print('g++ failed to compile')
+            log(protocol_dir,"check failed un")
             exit(1)
         # -ta all the states
         os.system("./protocol.o -k322583 -vdfs >./trace%d.txt" % i)
@@ -314,6 +315,7 @@ def checkunreachablestateset():
             log(protocol_dir,s) 
         else:
             print("check failed")
+            log(protocol_dir,"check failed un")
             exit(1)
      
 

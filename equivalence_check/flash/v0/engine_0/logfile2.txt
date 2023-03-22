@@ -1,0 +1,49 @@
+##   0:00:00  Solver: yices
+##   0:00:01  Skipping step 0..
+##   0:00:01  Skipping step 1..
+##   0:00:01  Skipping step 2..
+##   0:00:01  Skipping step 3..
+##   0:00:01  Skipping step 4..
+##   0:00:01  Skipping step 5..
+##   0:00:01  Skipping step 6..
+##   0:00:01  Skipping step 7..
+##   0:00:01  Skipping step 8..
+##   0:00:01  Skipping step 9..
+##   0:00:01  Skipping step 10..
+##   0:00:01  Skipping step 11..
+##   0:00:01  Skipping step 12..
+##   0:00:01  Skipping step 13..
+##   0:00:01  Skipping step 14..
+##   0:00:01  Skipping step 15..
+##   0:00:01  Skipping step 16..
+##   0:00:01  Skipping step 17..
+##   0:00:01  Skipping step 18..
+##   0:00:01  Skipping step 19..
+##   0:00:01  Skipping step 20..
+##   0:00:01  Skipping step 21..
+##   0:00:01  Skipping step 22..
+##   0:00:01  Skipping step 23..
+##   0:00:01  Skipping step 24..
+##   0:00:01  Skipping step 25..
+##   0:00:01  Skipping step 26..
+##   0:00:01  Skipping step 27..
+##   0:00:01  Skipping step 28..
+##   0:00:01  Skipping step 29..
+##   0:00:01  Skipping step 30..
+##   0:00:01  Skipping step 31..
+##   0:00:01  Skipping step 32..
+##   0:00:01  Skipping step 33..
+##   0:00:01  Skipping step 34..
+##   0:00:01  Skipping step 35..
+##   0:00:01  Skipping step 36..
+##   0:00:01  Skipping step 37..
+##   0:00:01  Skipping step 38..
+##   0:00:01  Skipping step 39..
+##   0:00:01  Skipping step 40..
+##   0:00:01  Skipping step 41..
+##   0:00:01  Skipping step 42..
+##   0:00:01  Skipping step 43..
+##   0:00:01  Checking assertions in step 44..
+##   0:00:04  BMC failed!
+##   0:00:04  Assert failed in system: protocol.sv:82711.22-82715.16 ($assert$protocol.sv:82711$8725)
+##   0:00:04  Writing trace to VCD file: engine_0/trace.vcd

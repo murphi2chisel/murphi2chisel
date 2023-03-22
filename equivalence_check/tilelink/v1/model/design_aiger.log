@@ -1,0 +1,367 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_aiger.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \homereceivesinvalidateacknowledgement
+Used module:     \homesendsinvalidatemessage_1
+Used module:     \homesendsinvalidatemessage
+Used module:     \homepicksnewrequest_1
+Used module:     \homepicksnewrequest
+Used module:     \clientrequestsexclusiveaccess_1
+Used module:     \clientrequestsexclusiveaccess
+Used module:     \clientrequestssharedaccess_1
+Used module:     \homesendsreplytoclient_exclusive
+Used module:     \homesendsreplytoclient_shared
+Used module:     \clientreceivedexclusivegrant_1
+Used module:     \clientreceivedexclusivegrant
+Used module:     \clientreceivessharedgrant_1
+Used module:     \clientreceivessharedgrant
+Used module:     \sharerinvalidatescache_1
+Used module:     \sharerinvalidatescache
+Used module:     \homereceivesinvalidateacknowledgement_1
+Used module:     \clientrequestssharedaccess
+Used module:     \Init
+
+2.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \homereceivesinvalidateacknowledgement
+Used module:     \homesendsinvalidatemessage_1
+Used module:     \homesendsinvalidatemessage
+Used module:     \homepicksnewrequest_1
+Used module:     \homepicksnewrequest
+Used module:     \clientrequestsexclusiveaccess_1
+Used module:     \clientrequestsexclusiveaccess
+Used module:     \clientrequestssharedaccess_1
+Used module:     \homesendsreplytoclient_exclusive
+Used module:     \homesendsreplytoclient_shared
+Used module:     \clientreceivedexclusivegrant_1
+Used module:     \clientreceivedexclusivegrant
+Used module:     \clientreceivessharedgrant_1
+Used module:     \clientreceivessharedgrant
+Used module:     \sharerinvalidatescache_1
+Used module:     \sharerinvalidatescache
+Used module:     \homereceivesinvalidateacknowledgement_1
+Used module:     \clientrequestssharedaccess
+Used module:     \Init
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing FLATTEN pass (flatten design).
+Deleting now unused module sharerinvalidatescache_1.
+Deleting now unused module sharerinvalidatescache.
+Deleting now unused module homesendsreplytoclient_shared.
+Deleting now unused module homesendsreplytoclient_exclusive.
+Deleting now unused module homesendsinvalidatemessage_1.
+Deleting now unused module homesendsinvalidatemessage.
+Deleting now unused module homereceivesinvalidateacknowledgement_1.
+Deleting now unused module homereceivesinvalidateacknowledgement.
+Deleting now unused module homepicksnewrequest_1.
+Deleting now unused module homepicksnewrequest.
+Deleting now unused module clientrequestssharedaccess_1.
+Deleting now unused module clientrequestssharedaccess.
+Deleting now unused module clientrequestsexclusiveaccess_1.
+Deleting now unused module clientrequestsexclusiveaccess.
+Deleting now unused module clientreceivessharedgrant_1.
+Deleting now unused module clientreceivessharedgrant.
+Deleting now unused module clientreceivedexclusivegrant_1.
+Deleting now unused module clientreceivedexclusivegrant.
+Deleting now unused module Init.
+<suppressed ~19 debug messages>
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~116 debug messages>
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~60 debug messages>
+Removed a total of 20 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:1118$538.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:1035$543.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:1050$544.
+    dead port 2/2 on $mux $flatten\rules_13.$ternary$protocol.sv:965$549.
+    dead port 2/2 on $mux $flatten\rules_13.$ternary$protocol.sv:980$550.
+    dead port 2/2 on $mux $flatten\rules_12.$ternary$protocol.sv:897$563.
+    dead port 2/2 on $mux $flatten\rules_12.$ternary$protocol.sv:900$564.
+    dead port 2/2 on $mux $flatten\rules_12.$ternary$protocol.sv:912$565.
+    dead port 2/2 on $mux $flatten\rules_11.$ternary$protocol.sv:826$578.
+    dead port 2/2 on $mux $flatten\rules_11.$ternary$protocol.sv:829$579.
+    dead port 2/2 on $mux $flatten\rules_11.$ternary$protocol.sv:841$580.
+    dead port 2/2 on $mux $flatten\rules_10.$ternary$protocol.sv:760$593.
+    dead port 2/2 on $mux $flatten\rules_10.$ternary$protocol.sv:763$594.
+    dead port 2/2 on $mux $flatten\rules_10.$ternary$protocol.sv:767$595.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:115$720.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:48$722.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:50$723.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:51$724.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:53$725.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:54$726.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:56$727.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:57$728.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:59$729.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:60$730.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:61$731.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:62$732.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:65$733.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:66$734.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:47$721.
+    dead port 2/2 on $mux $flatten\rules_4.$ternary$protocol.sv:322$703.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:1346$456.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:1345$455.
+    dead port 2/2 on $mux $flatten\rules_7.$ternary$protocol.sv:554$646.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:412$696.
+    dead port 2/2 on $mux $flatten\rules_7.$ternary$protocol.sv:545$645.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:411$695.
+    dead port 2/2 on $mux $flatten\rules_9.$ternary$protocol.sv:697$610.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:409$694.
+    dead port 2/2 on $mux $flatten\rules_9.$ternary$protocol.sv:692$609.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:408$693.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:184$715.
+    dead port 2/2 on $mux $flatten\rules_9.$ternary$protocol.sv:689$608.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:1188$532.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:396$692.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:1260$520.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:1261$521.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:1262$522.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:1266$523.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:487$671.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:252$710.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:1267$524.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:486$670.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:1358$461.
+    dead port 2/2 on $mux $flatten\rules_8.$ternary$protocol.sv:626$628.
+    dead port 2/2 on $mux $flatten\rules_8.$ternary$protocol.sv:617$627.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:1353$460.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:1352$459.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:1351$458.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:1347$457.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:1103$537.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:1268$525.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:1273$526.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:484$669.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:483$668.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:472$667.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:1173$531.
+Removed 66 multiplexer ports.
+<suppressed ~22 debug messages>
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~9 debug messages>
+Removed a total of 3 cells.
+
+6.6. Executing OPT_SHARE pass.
+
+6.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 10 unused cells and 46 unused wires.
+<suppressed ~17 debug messages>
+
+6.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~11 debug messages>
+
+6.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+6.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+6.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+6.14. Executing OPT_SHARE pass.
+
+6.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+
+6.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+
+6.18. Finished OPT passes. (There is nothing left to do.)
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /home/czh/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/czh/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $ff.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $reduce_bool.
+No more expansions possible.
+<suppressed ~501 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~782 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~246 debug messages>
+Removed a total of 82 cells.
+
+8.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 25 unused cells and 142 unused wires.
+<suppressed ~26 debug messages>
+
+8.5. Finished fast OPT passes.
+
+9. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+10. Executing FORMALFF pass.
+
+11. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+12. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+13. Executing ABC pass (technology mapping using ABC).
+
+13.1. Extracting gate netlist of module `\system' to `<abc-temp-dir>/input.blif'..
+Extracted 903 gates and 950 wires to a netlist network with 45 inputs and 41 outputs.
+
+13.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 5 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+13.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:     2079
+ABC RESULTS:               NOT cells:     1962
+ABC RESULTS:        internal signals:      864
+ABC RESULTS:           input signals:       45
+ABC RESULTS:          output signals:       41
+Removing temp directory.
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 0 unused cells and 669 unused wires.
+<suppressed ~388 debug messages>
+
+15. Printing statistics.
+
+=== system ===
+
+   Number of wires:               5722
+   Number of wire bits:           7599
+   Number of public wires:        1698
+   Number of public wire bits:    3556
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               4072
+     $_AND_                       2079
+     $_FF_                           1
+     $_NOT_                       1962
+     $anyinit                       20
+     $anyseq                         3
+     $assert                         4
+     $assume                         2
+     $initstate                      1
+
+16. Executing AIGER backend.
+
+End of script. Logfile hash: 4cff0c5284, CPU: user 0.14s system 0.00s, MEM: 23.11 MB peak
+Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 36% 1x abc (0 sec), 20% 4x opt_clean (0 sec), ...

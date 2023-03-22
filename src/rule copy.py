@@ -66,12 +66,12 @@ class simplerule(rule):
                 name = v.name
                 localvarmap[name] = v.typ
                 if isinstance(v.typ,subrangetypedecl):
-                    res += "var %s:Int = 0\n" % name
+                    res += "var %s = Wire(UInt())\n" % name
                 else:
                     #   predefined type
                     type = typemap[v.typ.typename]
                     if isinstance(type,subrangetypedecl):
-                        res += "var %s:Int = 0\n" % name
+                        res += "var %s = Wire(UInt())\n" % name
                     else:
                         # record
                         res += "var %s = new %s(%s)\n" % (name,v.typ.typename,','.join(const_paras))
@@ -134,12 +134,12 @@ class startstate(rule):
                 name = v.name
                 localvarmap[name] = v.typ
                 if isinstance(v.typ,subrangetypedecl):
-                    res += "var %s:Int = 0\n" % name
+                    res += "var %s = Wire(UInt())\n" % name
                 else:
                     #   predefined type
                     type = typemap[v.typ.typename]
                     if isinstance(type,subrangetypedecl):
-                        res += "var %s:Int = 0\n" % name
+                        res += "var %s = Wire(UInt())\n" % name
                     else:
                         # record
                         res += "var %s = new %s(%s)\n" % (name,v.typ.typename,','.join(constmap))

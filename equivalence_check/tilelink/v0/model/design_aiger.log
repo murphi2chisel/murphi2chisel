@@ -1,0 +1,1207 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_aiger.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Ln_receive_ProbeAck_1_2
+Used module:     \Ln_receive_ProbeAck_1
+Used module:     \Ln_receive_AcquireBlock_8_3
+Used module:     \Ln_receive_AcquireBlock_8_2
+Used module:     \Ln_receive_AcquireBlock_8_1
+Used module:     \Ln_receive_AcquireBlock_8
+Used module:     \Ln_receive_AcquireBlock_7_3
+Used module:     \Ln_receive_AcquireBlock_7_2
+Used module:     \Ln_receive_AcquireBlock_7_1
+Used module:     \send_AcquireBlock_toT
+Used module:     \Ln_receive_AcquireBlock_7
+Used module:     \Ln_receive_AcquireBlock_6_3
+Used module:     \Ln_receive_AcquireBlock_6_2
+Used module:     \Ln_receive_AcquireBlock_6_1
+Used module:     \Ln_receive_AcquireBlock_6
+Used module:     \Ln_receive_AcquireBlock_3_3
+Used module:     \Ln_receive_AcquireBlock_3_2
+Used module:     \Ln_receive_AcquireBlock_3_1
+Used module:     \Ln_receive_AcquireBlock_3
+Used module:     \Ln_receive_AcquireBlock_2_3
+Used module:     \send_AcquirePerm_toT_3
+Used module:     \Ln_receive_AcquireBlock_2_2
+Used module:     \Ln_receive_AcquireBlock_2_1
+Used module:     \Ln_receive_AcquireBlock_2
+Used module:     \Ln_receive_AcquirePerm_6_3
+Used module:     \Ln_receive_AcquirePerm_6_2
+Used module:     \Ln_receive_AcquirePerm_6_1
+Used module:     \Ln_receive_AcquirePerm_6
+Used module:     \Ln_receive_AcquirePerm_3_3
+Used module:     \Ln_receive_AcquirePerm_3_2
+Used module:     \Ln_receive_AcquirePerm_3_1
+Used module:     \send_AcquirePerm_toT_2
+Used module:     \Ln_receive_AcquirePerm_3
+Used module:     \Ln_receive_AcquirePerm_2_3
+Used module:     \Ln_receive_AcquirePerm_2_2
+Used module:     \Ln_receive_AcquirePerm_2_1
+Used module:     \Ln_receive_AcquirePerm_2
+Used module:     \Ln_receive_AcquirePerm_1_3
+Used module:     \Ln_receive_AcquirePerm_1_2
+Used module:     \Ln_receive_AcquirePerm_1_1
+Used module:     \Ln_receive_AcquirePerm_1
+Used module:     \receive_ReleaseAck_3
+Used module:     \send_AcquirePerm_toT_1
+Used module:     \receive_ReleaseAck_2
+Used module:     \receive_ReleaseAck_1
+Used module:     \receive_ReleaseAck
+Used module:     \respond_ProbeBlock_toB_2_3
+Used module:     \respond_ProbeBlock_toB_2_2
+Used module:     \respond_ProbeBlock_toB_2_1
+Used module:     \respond_ProbeBlock_toB_2
+Used module:     \respond_ProbeBlock_toB_1_3
+Used module:     \respond_ProbeBlock_toB_1_2
+Used module:     \respond_ProbeBlock_toB_1_1
+Used module:     \send_AcquirePerm_toT
+Used module:     \respond_ProbeBlock_toB_1
+Used module:     \respond_ProbeBlock_TtoN_2_3
+Used module:     \respond_ProbeBlock_TtoN_2_2
+Used module:     \respond_ProbeBlock_TtoN_2_1
+Used module:     \respond_ProbeBlock_TtoN_2
+Used module:     \respond_ProbeBlock_TtoN_1_3
+Used module:     \respond_ProbeBlock_TtoN_1_2
+Used module:     \respond_ProbeBlock_TtoN_1_1
+Used module:     \respond_ProbeBlock_TtoN_1
+Used module:     \respond_ProbePerm_BtoN_3
+Used module:     \send_AcquireBlock_toB_3
+Used module:     \respond_ProbePerm_BtoN_2
+Used module:     \respond_ProbePerm_BtoN_1
+Used module:     \respond_ProbePerm_BtoN
+Used module:     \respond_Probe_NtoN_3
+Used module:     \respond_Probe_NtoN_2
+Used module:     \respond_Probe_NtoN_1
+Used module:     \respond_Probe_NtoN
+Used module:     \respond_GrantData_toT_3
+Used module:     \respond_GrantData_toT_2
+Used module:     \respond_GrantData_toT_1
+Used module:     \send_AcquireBlock_toB_2
+Used module:     \respond_GrantData_toT
+Used module:     \respond_GrantData_toB_3
+Used module:     \respond_GrantData_toB_2
+Used module:     \respond_GrantData_toB_1
+Used module:     \respond_GrantData_toB
+Used module:     \respond_Grant_toT_3
+Used module:     \respond_Grant_toT_2
+Used module:     \respond_Grant_toT_1
+Used module:     \respond_Grant_toT
+Used module:     \send_Release_TtoN_1_3
+Used module:     \send_AcquireBlock_toB_1
+Used module:     \send_Release_TtoN_1_2
+Used module:     \send_Release_TtoN_1_1
+Used module:     \send_Release_TtoN_1
+Used module:     \send_Release_BtoN_3
+Used module:     \send_Release_BtoN_2
+Used module:     \L3_receive_AcquireBlock_1
+Used module:     \L3_receive_AcquireBlock
+Used module:     \L3_receive_AcquirePerm_1
+Used module:     \L3_receive_AcquirePerm
+Used module:     \L3_send_release_2
+Used module:     \send_Release_BtoN_1
+Used module:     \Ln_send_Release_5_1
+Used module:     \Ln_send_Release_5
+Used module:     \Ln_send_Release_4_1
+Used module:     \Ln_send_Release_4
+Used module:     \send_Release_BtoN
+Used module:     \Ln_receive_GrantAck_2
+Used module:     \Ln_receive_GrantAck
+Used module:     \Ln_receive_Release_2_2
+Used module:     \Ln_receive_Release_2
+Used module:     \Ln_receive_Release_1_2
+Used module:     \send_AcquireBlock_toT_3
+Used module:     \Ln_receive_Release_1
+Used module:     \Ln_receive_ProbeAckData_2_2
+Used module:     \Ln_receive_ProbeAckData_2
+Used module:     \Ln_receive_ProbeAckData_1_2
+Used module:     \Ln_receive_ProbeAckData_1
+Used module:     \send_AcquireBlock_toT_2
+Used module:     \Ln_receive_ProbeAck_3_2
+Used module:     \Ln_receive_ProbeAck_3
+Used module:     \Ln_receive_ProbeAck_2_2
+Used module:     \Ln_receive_ProbeAck_2
+Used module:     \send_AcquireBlock_toT_1
+Used module:     \send_AcquireBlock_toB
+Used module:     \Init
+
+2.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Ln_receive_ProbeAck_1_2
+Used module:     \Ln_receive_ProbeAck_1
+Used module:     \Ln_receive_AcquireBlock_8_3
+Used module:     \Ln_receive_AcquireBlock_8_2
+Used module:     \Ln_receive_AcquireBlock_8_1
+Used module:     \Ln_receive_AcquireBlock_8
+Used module:     \Ln_receive_AcquireBlock_7_3
+Used module:     \Ln_receive_AcquireBlock_7_2
+Used module:     \Ln_receive_AcquireBlock_7_1
+Used module:     \send_AcquireBlock_toT
+Used module:     \Ln_receive_AcquireBlock_7
+Used module:     \Ln_receive_AcquireBlock_6_3
+Used module:     \Ln_receive_AcquireBlock_6_2
+Used module:     \Ln_receive_AcquireBlock_6_1
+Used module:     \Ln_receive_AcquireBlock_6
+Used module:     \Ln_receive_AcquireBlock_3_3
+Used module:     \Ln_receive_AcquireBlock_3_2
+Used module:     \Ln_receive_AcquireBlock_3_1
+Used module:     \Ln_receive_AcquireBlock_3
+Used module:     \Ln_receive_AcquireBlock_2_3
+Used module:     \send_AcquirePerm_toT_3
+Used module:     \Ln_receive_AcquireBlock_2_2
+Used module:     \Ln_receive_AcquireBlock_2_1
+Used module:     \Ln_receive_AcquireBlock_2
+Used module:     \Ln_receive_AcquirePerm_6_3
+Used module:     \Ln_receive_AcquirePerm_6_2
+Used module:     \Ln_receive_AcquirePerm_6_1
+Used module:     \Ln_receive_AcquirePerm_6
+Used module:     \Ln_receive_AcquirePerm_3_3
+Used module:     \Ln_receive_AcquirePerm_3_2
+Used module:     \Ln_receive_AcquirePerm_3_1
+Used module:     \send_AcquirePerm_toT_2
+Used module:     \Ln_receive_AcquirePerm_3
+Used module:     \Ln_receive_AcquirePerm_2_3
+Used module:     \Ln_receive_AcquirePerm_2_2
+Used module:     \Ln_receive_AcquirePerm_2_1
+Used module:     \Ln_receive_AcquirePerm_2
+Used module:     \Ln_receive_AcquirePerm_1_3
+Used module:     \Ln_receive_AcquirePerm_1_2
+Used module:     \Ln_receive_AcquirePerm_1_1
+Used module:     \Ln_receive_AcquirePerm_1
+Used module:     \receive_ReleaseAck_3
+Used module:     \send_AcquirePerm_toT_1
+Used module:     \receive_ReleaseAck_2
+Used module:     \receive_ReleaseAck_1
+Used module:     \receive_ReleaseAck
+Used module:     \respond_ProbeBlock_toB_2_3
+Used module:     \respond_ProbeBlock_toB_2_2
+Used module:     \respond_ProbeBlock_toB_2_1
+Used module:     \respond_ProbeBlock_toB_2
+Used module:     \respond_ProbeBlock_toB_1_3
+Used module:     \respond_ProbeBlock_toB_1_2
+Used module:     \respond_ProbeBlock_toB_1_1
+Used module:     \send_AcquirePerm_toT
+Used module:     \respond_ProbeBlock_toB_1
+Used module:     \respond_ProbeBlock_TtoN_2_3
+Used module:     \respond_ProbeBlock_TtoN_2_2
+Used module:     \respond_ProbeBlock_TtoN_2_1
+Used module:     \respond_ProbeBlock_TtoN_2
+Used module:     \respond_ProbeBlock_TtoN_1_3
+Used module:     \respond_ProbeBlock_TtoN_1_2
+Used module:     \respond_ProbeBlock_TtoN_1_1
+Used module:     \respond_ProbeBlock_TtoN_1
+Used module:     \respond_ProbePerm_BtoN_3
+Used module:     \send_AcquireBlock_toB_3
+Used module:     \respond_ProbePerm_BtoN_2
+Used module:     \respond_ProbePerm_BtoN_1
+Used module:     \respond_ProbePerm_BtoN
+Used module:     \respond_Probe_NtoN_3
+Used module:     \respond_Probe_NtoN_2
+Used module:     \respond_Probe_NtoN_1
+Used module:     \respond_Probe_NtoN
+Used module:     \respond_GrantData_toT_3
+Used module:     \respond_GrantData_toT_2
+Used module:     \respond_GrantData_toT_1
+Used module:     \send_AcquireBlock_toB_2
+Used module:     \respond_GrantData_toT
+Used module:     \respond_GrantData_toB_3
+Used module:     \respond_GrantData_toB_2
+Used module:     \respond_GrantData_toB_1
+Used module:     \respond_GrantData_toB
+Used module:     \respond_Grant_toT_3
+Used module:     \respond_Grant_toT_2
+Used module:     \respond_Grant_toT_1
+Used module:     \respond_Grant_toT
+Used module:     \send_Release_TtoN_1_3
+Used module:     \send_AcquireBlock_toB_1
+Used module:     \send_Release_TtoN_1_2
+Used module:     \send_Release_TtoN_1_1
+Used module:     \send_Release_TtoN_1
+Used module:     \send_Release_BtoN_3
+Used module:     \send_Release_BtoN_2
+Used module:     \L3_receive_AcquireBlock_1
+Used module:     \L3_receive_AcquireBlock
+Used module:     \L3_receive_AcquirePerm_1
+Used module:     \L3_receive_AcquirePerm
+Used module:     \L3_send_release_2
+Used module:     \send_Release_BtoN_1
+Used module:     \Ln_send_Release_5_1
+Used module:     \Ln_send_Release_5
+Used module:     \Ln_send_Release_4_1
+Used module:     \Ln_send_Release_4
+Used module:     \send_Release_BtoN
+Used module:     \Ln_receive_GrantAck_2
+Used module:     \Ln_receive_GrantAck
+Used module:     \Ln_receive_Release_2_2
+Used module:     \Ln_receive_Release_2
+Used module:     \Ln_receive_Release_1_2
+Used module:     \send_AcquireBlock_toT_3
+Used module:     \Ln_receive_Release_1
+Used module:     \Ln_receive_ProbeAckData_2_2
+Used module:     \Ln_receive_ProbeAckData_2
+Used module:     \Ln_receive_ProbeAckData_1_2
+Used module:     \Ln_receive_ProbeAckData_1
+Used module:     \send_AcquireBlock_toT_2
+Used module:     \Ln_receive_ProbeAck_3_2
+Used module:     \Ln_receive_ProbeAck_3
+Used module:     \Ln_receive_ProbeAck_2_2
+Used module:     \Ln_receive_ProbeAck_2
+Used module:     \send_AcquireBlock_toT_1
+Used module:     \send_AcquireBlock_toB
+Used module:     \Init
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing FLATTEN pass (flatten design).
+Deleting now unused module send_Release_TtoN_1_3.
+Deleting now unused module send_Release_TtoN_1_2.
+Deleting now unused module send_Release_TtoN_1_1.
+Deleting now unused module send_Release_TtoN_1.
+Deleting now unused module send_Release_BtoN_3.
+Deleting now unused module send_Release_BtoN_2.
+Deleting now unused module send_Release_BtoN_1.
+Deleting now unused module send_Release_BtoN.
+Deleting now unused module send_AcquirePerm_toT_3.
+Deleting now unused module send_AcquirePerm_toT_2.
+Deleting now unused module send_AcquirePerm_toT_1.
+Deleting now unused module send_AcquirePerm_toT.
+Deleting now unused module send_AcquireBlock_toT_3.
+Deleting now unused module send_AcquireBlock_toT_2.
+Deleting now unused module send_AcquireBlock_toT_1.
+Deleting now unused module send_AcquireBlock_toT.
+Deleting now unused module send_AcquireBlock_toB_3.
+Deleting now unused module send_AcquireBlock_toB_2.
+Deleting now unused module send_AcquireBlock_toB_1.
+Deleting now unused module send_AcquireBlock_toB.
+Deleting now unused module respond_Probe_NtoN_3.
+Deleting now unused module respond_Probe_NtoN_2.
+Deleting now unused module respond_Probe_NtoN_1.
+Deleting now unused module respond_Probe_NtoN.
+Deleting now unused module respond_ProbePerm_BtoN_3.
+Deleting now unused module respond_ProbePerm_BtoN_2.
+Deleting now unused module respond_ProbePerm_BtoN_1.
+Deleting now unused module respond_ProbePerm_BtoN.
+Deleting now unused module respond_ProbeBlock_toB_2_3.
+Deleting now unused module respond_ProbeBlock_toB_2_2.
+Deleting now unused module respond_ProbeBlock_toB_2_1.
+Deleting now unused module respond_ProbeBlock_toB_2.
+Deleting now unused module respond_ProbeBlock_toB_1_3.
+Deleting now unused module respond_ProbeBlock_toB_1_2.
+Deleting now unused module respond_ProbeBlock_toB_1_1.
+Deleting now unused module respond_ProbeBlock_toB_1.
+Deleting now unused module respond_ProbeBlock_TtoN_2_3.
+Deleting now unused module respond_ProbeBlock_TtoN_2_2.
+Deleting now unused module respond_ProbeBlock_TtoN_2_1.
+Deleting now unused module respond_ProbeBlock_TtoN_2.
+Deleting now unused module respond_ProbeBlock_TtoN_1_3.
+Deleting now unused module respond_ProbeBlock_TtoN_1_2.
+Deleting now unused module respond_ProbeBlock_TtoN_1_1.
+Deleting now unused module respond_ProbeBlock_TtoN_1.
+Deleting now unused module respond_Grant_toT_3.
+Deleting now unused module respond_Grant_toT_2.
+Deleting now unused module respond_Grant_toT_1.
+Deleting now unused module respond_Grant_toT.
+Deleting now unused module respond_GrantData_toT_3.
+Deleting now unused module respond_GrantData_toT_2.
+Deleting now unused module respond_GrantData_toT_1.
+Deleting now unused module respond_GrantData_toT.
+Deleting now unused module respond_GrantData_toB_3.
+Deleting now unused module respond_GrantData_toB_2.
+Deleting now unused module respond_GrantData_toB_1.
+Deleting now unused module respond_GrantData_toB.
+Deleting now unused module receive_ReleaseAck_3.
+Deleting now unused module receive_ReleaseAck_2.
+Deleting now unused module receive_ReleaseAck_1.
+Deleting now unused module receive_ReleaseAck.
+Deleting now unused module Ln_send_Release_5_1.
+Deleting now unused module Ln_send_Release_5.
+Deleting now unused module Ln_send_Release_4_1.
+Deleting now unused module Ln_send_Release_4.
+Deleting now unused module Ln_receive_Release_2_2.
+Deleting now unused module Ln_receive_Release_2.
+Deleting now unused module Ln_receive_Release_1_2.
+Deleting now unused module Ln_receive_Release_1.
+Deleting now unused module Ln_receive_ProbeAck_3_2.
+Deleting now unused module Ln_receive_ProbeAck_3.
+Deleting now unused module Ln_receive_ProbeAck_2_2.
+Deleting now unused module Ln_receive_ProbeAck_2.
+Deleting now unused module Ln_receive_ProbeAck_1_2.
+Deleting now unused module Ln_receive_ProbeAck_1.
+Deleting now unused module Ln_receive_ProbeAckData_2_2.
+Deleting now unused module Ln_receive_ProbeAckData_2.
+Deleting now unused module Ln_receive_ProbeAckData_1_2.
+Deleting now unused module Ln_receive_ProbeAckData_1.
+Deleting now unused module Ln_receive_GrantAck_2.
+Deleting now unused module Ln_receive_GrantAck.
+Deleting now unused module Ln_receive_AcquirePerm_6_3.
+Deleting now unused module Ln_receive_AcquirePerm_6_2.
+Deleting now unused module Ln_receive_AcquirePerm_6_1.
+Deleting now unused module Ln_receive_AcquirePerm_6.
+Deleting now unused module Ln_receive_AcquirePerm_3_3.
+Deleting now unused module Ln_receive_AcquirePerm_3_2.
+Deleting now unused module Ln_receive_AcquirePerm_3_1.
+Deleting now unused module Ln_receive_AcquirePerm_3.
+Deleting now unused module Ln_receive_AcquirePerm_2_3.
+Deleting now unused module Ln_receive_AcquirePerm_2_2.
+Deleting now unused module Ln_receive_AcquirePerm_2_1.
+Deleting now unused module Ln_receive_AcquirePerm_2.
+Deleting now unused module Ln_receive_AcquirePerm_1_3.
+Deleting now unused module Ln_receive_AcquirePerm_1_2.
+Deleting now unused module Ln_receive_AcquirePerm_1_1.
+Deleting now unused module Ln_receive_AcquirePerm_1.
+Deleting now unused module Ln_receive_AcquireBlock_8_3.
+Deleting now unused module Ln_receive_AcquireBlock_8_2.
+Deleting now unused module Ln_receive_AcquireBlock_8_1.
+Deleting now unused module Ln_receive_AcquireBlock_8.
+Deleting now unused module Ln_receive_AcquireBlock_7_3.
+Deleting now unused module Ln_receive_AcquireBlock_7_2.
+Deleting now unused module Ln_receive_AcquireBlock_7_1.
+Deleting now unused module Ln_receive_AcquireBlock_7.
+Deleting now unused module Ln_receive_AcquireBlock_6_3.
+Deleting now unused module Ln_receive_AcquireBlock_6_2.
+Deleting now unused module Ln_receive_AcquireBlock_6_1.
+Deleting now unused module Ln_receive_AcquireBlock_6.
+Deleting now unused module Ln_receive_AcquireBlock_3_3.
+Deleting now unused module Ln_receive_AcquireBlock_3_2.
+Deleting now unused module Ln_receive_AcquireBlock_3_1.
+Deleting now unused module Ln_receive_AcquireBlock_3.
+Deleting now unused module Ln_receive_AcquireBlock_2_3.
+Deleting now unused module Ln_receive_AcquireBlock_2_2.
+Deleting now unused module Ln_receive_AcquireBlock_2_1.
+Deleting now unused module Ln_receive_AcquireBlock_2.
+Deleting now unused module L3_send_release_2.
+Deleting now unused module L3_receive_AcquirePerm_1.
+Deleting now unused module L3_receive_AcquirePerm.
+Deleting now unused module L3_receive_AcquireBlock_1.
+Deleting now unused module L3_receive_AcquireBlock.
+Deleting now unused module Init.
+<suppressed ~145 debug messages>
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~23103 debug messages>
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~3060 debug messages>
+Removed a total of 1020 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $flatten\rules_95.$ternary$protocol.sv:57217$28329.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:39821$30282.
+    dead port 2/2 on $mux $flatten\rules_11.$ternary$protocol.sv:7007$33569.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:468$34114.
+    dead port 2/2 on $mux $flatten\rules_101.$ternary$protocol.sv:59564$28200.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:20133$32290.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:47669$29289.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:462$34111.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:37378$30625.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:16561$32571.
+    dead port 2/2 on $mux $flatten\rules_126.$ternary$protocol.sv:66643$27896.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:15978$32618.
+    dead port 2/2 on $mux $flatten\rules_31.$ternary$protocol.sv:19005$32386.
+    dead port 2/2 on $mux $flatten\rules_97.$ternary$protocol.sv:58396$28243.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:21951$32028.
+    dead port 2/2 on $mux $flatten\rules_130.$ternary$protocol.sv:68483$27764.
+    dead port 2/2 on $mux $flatten\rules_139.$ternary$protocol.sv:70252$27475.
+    dead port 2/2 on $mux $flatten\rules_133.$ternary$protocol.sv:69089$27644.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:47039$29377.
+    dead port 2/2 on $mux $flatten\rules_117.$ternary$protocol.sv:64305$28042.
+    dead port 2/2 on $mux $flatten\rules_104.$ternary$protocol.sv:60194$28183.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:53024$28701.
+    dead port 2/2 on $mux $flatten\rules_49.$ternary$protocol.sv:29706$31170.
+    dead port 2/2 on $mux $flatten\rules_108.$ternary$protocol.sv:61335$28141.
+    dead port 2/2 on $mux $flatten\rules_115.$ternary$protocol.sv:63690$28062.
+    dead port 2/2 on $mux $flatten\rules_134.$ternary$protocol.sv:69678$27557.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:4065$33836.
+    dead port 2/2 on $mux $flatten\rules_41.$ternary$protocol.sv:24946$31685.
+    dead port 2/2 on $mux $flatten\rules_115.$ternary$protocol.sv:63680$28060.
+    dead port 2/2 on $mux $flatten\rules_130.$ternary$protocol.sv:68464$27762.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:21335$32114.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:10615$33160.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:39218$30368.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:36216$30726.
+    dead port 2/2 on $mux $flatten\rules_133.$ternary$protocol.sv:69071$27643.
+    dead port 2/2 on $mux $flatten\rules_117.$ternary$protocol.sv:64303$28041.
+    dead port 2/2 on $mux $flatten\rules_104.$ternary$protocol.sv:60162$28182.
+    dead port 2/2 on $mux $flatten\rules_22.$ternary$protocol.sv:13601$32808.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:39814$30280.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:445$34108.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:36808$30717.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:45856$29564.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:51232$28971.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:47638$29287.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:36279$30727.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:440$34105.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:16563$32572.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:44633$29761.
+    dead port 2/2 on $mux $flatten\rules_101.$ternary$protocol.sv:59570$28201.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:10064$33236.
+    dead port 2/2 on $mux $flatten\rules_133.$ternary$protocol.sv:69070$27642.
+    dead port 2/2 on $mux $flatten\rules_117.$ternary$protocol.sv:64279$28040.
+    dead port 2/2 on $mux $flatten\rules_104.$ternary$protocol.sv:60159$28181.
+    dead port 2/2 on $mux $flatten\rules_52.$ternary$protocol.sv:31500$31014.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:52428$28792.
+    dead port 2/2 on $mux $flatten\rules_116.$ternary$protocol.sv:63687$28061.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:49426$29076.
+    dead port 2/2 on $mux $flatten\rules_41.$ternary$protocol.sv:24928$31683.
+    dead port 2/2 on $mux $flatten\rules_135.$ternary$protocol.sv:69071$27643.
+    dead port 2/2 on $mux $flatten\rules_130.$ternary$protocol.sv:68494$27765.
+    dead port 2/2 on $mux $flatten\rules_22.$ternary$protocol.sv:13598$32806.
+    dead port 2/2 on $mux $flatten\rules_114.$ternary$protocol.sv:63092$28080.
+    dead port 2/2 on $mux $flatten\rules_122.$ternary$protocol.sv:65492$27977.
+    dead port 2/2 on $mux $flatten\rules_134.$ternary$protocol.sv:69697$27559.
+    dead port 2/2 on $mux $flatten\rules_94.$ternary$protocol.sv:56653$28374.
+    dead port 2/2 on $mux $flatten\rules_117.$ternary$protocol.sv:64273$28039.
+    dead port 2/2 on $mux $flatten\rules_104.$ternary$protocol.sv:60152$28180.
+    dead port 2/2 on $mux $flatten\rules_113.$ternary$protocol.sv:63122$28083.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:44002$29857.
+    dead port 2/2 on $mux $flatten\rules_100.$ternary$protocol.sv:58983$28222.
+    dead port 2/2 on $mux $flatten\rules_110.$ternary$protocol.sv:61916$28120.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:39797$30279.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:484$34121.
+    dead port 2/2 on $mux $flatten\rules_110.$ternary$protocol.sv:61946$28123.
+    dead port 2/2 on $mux $flatten\rules_126.$ternary$protocol.sv:66668$27897.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:67262$27891.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:2328$33995.
+    dead port 2/2 on $mux $flatten\rules_122.$ternary$protocol.sv:65489$27975.
+    dead port 2/2 on $mux $flatten\rules_102.$ternary$protocol.sv:59564$28200.
+    dead port 2/2 on $mux $flatten\rules_144.$ternary$protocol.sv:72580$27453.
+    dead port 2/2 on $mux $flatten\rules_128.$ternary$protocol.sv:67226$27890.
+    dead port 2/2 on $mux $flatten\rules_41.$ternary$protocol.sv:24926$31682.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:1057$34099.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:53633$28615.
+    dead port 2/2 on $mux $flatten\rules_25.$ternary$protocol.sv:15387$32668.
+    dead port 2/2 on $mux $flatten\rules_136.$ternary$protocol.sv:69678$27557.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:37387$30627.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:51239$28973.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:2248$33994.
+    dead port 2/2 on $mux $flatten\rules_20.$ternary$protocol.sv:12471$32933.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:46435$29465.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:47641$29288.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:443$34107.
+    dead port 2/2 on $mux $flatten\rules_111.$ternary$protocol.sv:62546$28103.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:51212$28969.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:21338$32116.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:1664$34046.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:50036$29042.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:46438$29466.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:40434$30194.
+    dead port 2/2 on $mux $flatten\rules_136.$ternary$protocol.sv:69696$27558.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:2247$33993.
+    dead port 2/2 on $mux $flatten\rules_20.$ternary$protocol.sv:12460$32932.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:8831$33389.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:44021$29859.
+    dead port 2/2 on $mux $flatten\rules_116.$ternary$protocol.sv:63680$28060.
+    dead port 2/2 on $mux $flatten\rules_23.$ternary$protocol.sv:14184$32761.
+    dead port 2/2 on $mux $flatten\rules_108.$ternary$protocol.sv:61370$28143.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:35048$30746.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:36807$30716.
+    dead port 2/2 on $mux $flatten\rules_25.$ternary$protocol.sv:15398$32669.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:52425$28791.
+    dead port 2/2 on $mux $flatten\rules_122.$ternary$protocol.sv:65465$27974.
+    dead port 2/2 on $mux $flatten\rules_52.$ternary$protocol.sv:31502$31015.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:48865$29113.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:39794$30278.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:20754$32205.
+    dead port 2/2 on $mux $flatten\rules_31.$ternary$protocol.sv:19016$32387.
+    dead port 2/2 on $mux $flatten\rules_29.$ternary$protocol.sv:17767$32480.
+    dead port 2/2 on $mux $flatten\rules_20.$ternary$protocol.sv:12407$32931.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:8820$33388.
+    dead port 2/2 on $mux $flatten\rules_136.$ternary$protocol.sv:69677$27556.
+    dead port 2/2 on $mux $flatten\rules_44.$ternary$protocol.sv:26732$31490.
+    dead port 2/2 on $mux $flatten\rules_132.$ternary$protocol.sv:68494$27765.
+    dead port 2/2 on $mux $flatten\rules_125.$ternary$protocol.sv:66643$27896.
+    dead port 2/2 on $mux $flatten\rules_101.$ternary$protocol.sv:59573$28202.
+    dead port 2/2 on $mux $flatten\rules_32.$ternary$protocol.sv:19548$32336.
+    dead port 2/2 on $mux $flatten\rules_134.$ternary$protocol.sv:69708$27560.
+    dead port 2/2 on $mux $flatten\rules_135.$ternary$protocol.sv:69101$27646.
+    dead port 2/2 on $mux $flatten\rules_113.$ternary$protocol.sv:63098$28081.
+    dead port 2/2 on $mux $flatten\rules_49.$ternary$protocol.sv:29726$31173.
+    dead port 2/2 on $mux $flatten\rules_40.$ternary$protocol.sv:24342$31747.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:20135$32291.
+    dead port 2/2 on $mux $flatten\rules_24.$ternary$protocol.sv:14851$32716.
+    dead port 2/2 on $mux $flatten\rules_134.$ternary$protocol.sv:69696$27558.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:10010$33234.
+    dead port 2/2 on $mux $flatten\rules_121.$ternary$protocol.sv:65465$27974.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:50628$29007.
+    dead port 2/2 on $mux $flatten\rules_42.$ternary$protocol.sv:25538$31619.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:53664$28617.
+    dead port 2/2 on $mux $flatten\rules_98.$ternary$protocol.sv:58420$28245.
+    dead port 2/2 on $mux $flatten\rules_143.$ternary$protocol.sv:71998$27458.
+    dead port 2/2 on $mux $flatten\rules_97.$ternary$protocol.sv:58399$28244.
+    dead port 2/2 on $mux $flatten\rules_46.$ternary$protocol.sv:27936$31365.
+    dead port 2/2 on $mux $flatten\rules_20.$ternary$protocol.sv:12406$32930.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:8815$33387.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:40999$30104.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:11225$33085.
+    dead port 2/2 on $mux $flatten\rules_48.$ternary$protocol.sv:29126$31235.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:38019$30541.
+    dead port 2/2 on $mux $flatten\rules_52.$ternary$protocol.sv:31556$31017.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:21337$32115.
+    dead port 2/2 on $mux $flatten\rules_29.$ternary$protocol.sv:17751$32477.
+    dead port 2/2 on $mux $flatten\rules_130.$ternary$protocol.sv:68482$27763.
+    dead port 2/2 on $mux $flatten\rules_121.$ternary$protocol.sv:65491$27976.
+    dead port 2/2 on $mux $flatten\rules_108.$ternary$protocol.sv:61328$28140.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:53031$28702.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:40390$30190.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:37991$30540.
+    dead port 2/2 on $mux $flatten\rules_98.$ternary$protocol.sv:58399$28244.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:41630$30021.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:33338$30861.
+    dead port 2/2 on $mux $flatten\rules_46.$ternary$protocol.sv:27931$31364.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:8814$33386.
+    dead port 2/2 on $mux $flatten\rules_54.$ternary$protocol.sv:32696$30913.
+    dead port 2/2 on $mux $flatten\rules_45.$ternary$protocol.sv:27318$31426.
+    dead port 2/2 on $mux $flatten\rules_29.$ternary$protocol.sv:17753$32478.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:22554$31941.
+    dead port 2/2 on $mux $flatten\rules_120.$ternary$protocol.sv:64873$28007.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:53062$28704.
+    dead port 2/2 on $mux $flatten\rules_135.$ternary$protocol.sv:69089$27644.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:10626$33161.
+    dead port 2/2 on $mux $flatten\rules_111.$ternary$protocol.sv:62514$28102.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:44614$29759.
+    dead port 2/2 on $mux $flatten\rules_107.$ternary$protocol.sv:61335$28141.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:447$34110.
+    dead port 2/2 on $mux $flatten\rules_129.$ternary$protocol.sv:67844$27880.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:42792$29939.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:47676$29291.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:532$34124.
+    dead port 2/2 on $mux $flatten\rules_134.$ternary$protocol.sv:69677$27556.
+    dead port 2/2 on $mux $flatten\rules_49.$ternary$protocol.sv:29708$31171.
+    dead port 2/2 on $mux $flatten\rules_98.$ternary$protocol.sv:58396$28243.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:41629$30020.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:33273$30860.
+    dead port 2/2 on $mux $flatten\rules_46.$ternary$protocol.sv:27930$31363.
+    dead port 2/2 on $mux $flatten\rules_105.$ternary$protocol.sv:60770$28163.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:39219$30369.
+    dead port 2/2 on $mux $flatten\rules_109.$ternary$protocol.sv:61946$28123.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:436$34102.
+    dead port 2/2 on $mux $flatten\rules_12.$ternary$protocol.sv:7614$33516.
+    dead port 2/2 on $mux $flatten\rules_138.$ternary$protocol.sv:70252$27475.
+    dead port 2/2 on $mux $flatten\rules_112.$ternary$protocol.sv:62511$28101.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:36781$30713.
+    dead port 2/2 on $mux $flatten\rules_25.$ternary$protocol.sv:15373$32666.
+    dead port 2/2 on $mux $flatten\rules_123.$ternary$protocol.sv:66097$27937.
+    dead port 2/2 on $mux $flatten\rules_110.$ternary$protocol.sv:61925$28122.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:47056$29378.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:11796$33007.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:464$34112.
+    dead port 2/2 on $mux $flatten\rules_8.$ternary$protocol.sv:5303$33730.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:41599$30019.
+    dead port 2/2 on $mux $flatten\rules_114.$ternary$protocol.sv:63122$28083.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:33272$30859.
+    dead port 2/2 on $mux $flatten\rules_46.$ternary$protocol.sv:27928$31362.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:23152$31877.
+    dead port 2/2 on $mux $flatten\rules_118.$ternary$protocol.sv:64306$28043.
+    dead port 2/2 on $mux $flatten\rules_105.$ternary$protocol.sv:60749$28162.
+    dead port 2/2 on $mux $flatten\rules_50.$ternary$protocol.sv:30320$31121.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:55448$28466.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:42227$29981.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:16636$32575.
+    dead port 2/2 on $mux $flatten\rules_4.$ternary$protocol.sv:2854$33940.
+    dead port 2/2 on $mux $flatten\rules_102.$ternary$protocol.sv:59594$28203.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:53069$28706.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:20748$32203.
+    dead port 2/2 on $mux $flatten\rules_132.$ternary$protocol.sv:68464$27762.
+    dead port 2/2 on $mux $flatten\rules_9.$ternary$protocol.sv:5818$33676.
+    dead port 2/2 on $mux $flatten\rules_43.$ternary$protocol.sv:26190$31557.
+    dead port 2/2 on $mux $flatten\rules_51.$ternary$protocol.sv:30897$31068.
+    dead port 2/2 on $mux $flatten\rules_120.$ternary$protocol.sv:64911$28010.
+    dead port 2/2 on $mux $flatten\rules_109.$ternary$protocol.sv:61922$28121.
+    dead port 2/2 on $mux $flatten\rules_4.$ternary$protocol.sv:2923$33942.
+    dead port 2/2 on $mux $flatten\rules_8.$ternary$protocol.sv:5235$33729.
+    dead port 2/2 on $mux $flatten\rules_109.$ternary$protocol.sv:61916$28120.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:33270$30858.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:23147$31876.
+    dead port 2/2 on $mux $flatten\rules_118.$ternary$protocol.sv:64305$28042.
+    dead port 2/2 on $mux $flatten\rules_105.$ternary$protocol.sv:60746$28161.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:9401$33311.
+    dead port 2/2 on $mux $flatten\rules_109.$ternary$protocol.sv:61925$28122.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:446$34109.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:495$34123.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:42196$29979.
+    dead port 2/2 on $mux $flatten\rules_95.$ternary$protocol.sv:57236$28330.
+    dead port 2/2 on $mux $flatten\rules_31.$ternary$protocol.sv:18944$32385.
+    dead port 2/2 on $mux $flatten\rules_53.$ternary$protocol.sv:32084$30963.
+    dead port 2/2 on $mux $flatten\rules_22.$ternary$protocol.sv:13613$32810.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:40992$30103.
+    dead port 2/2 on $mux $flatten\rules_131.$ternary$protocol.sv:67863$27882.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:22004$32029.
+    dead port 2/2 on $mux $flatten\rules_8.$ternary$protocol.sv:5234$33728.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:23146$31875.
+    dead port 2/2 on $mux $flatten\rules_118.$ternary$protocol.sv:64303$28041.
+    dead port 2/2 on $mux $flatten\rules_105.$ternary$protocol.sv:60740$28160.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:11214$33084.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:21403$32117.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:37988$30539.
+    dead port 2/2 on $mux $flatten\rules_120.$ternary$protocol.sv:64908$28008.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:11795$33006.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:44001$29856.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:52462$28794.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:10597$33158.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:40428$30193.
+    dead port 2/2 on $mux $flatten\rules_136.$ternary$protocol.sv:69709$27561.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:45838$29563.
+    dead port 2/2 on $mux $flatten\rules_28.$ternary$protocol.sv:17231$32528.
+    dead port 2/2 on $mux $flatten\rules_11.$ternary$protocol.sv:7008$33570.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:470$34115.
+    dead port 2/2 on $mux $flatten\rules_102.$ternary$protocol.sv:59573$28202.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:38629$30456.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:23144$31874.
+    dead port 2/2 on $mux $flatten\rules_131.$ternary$protocol.sv:67864$27883.
+    dead port 2/2 on $mux $flatten\rules_118.$ternary$protocol.sv:64279$28040.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:10075$33237.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:39195$30366.
+    dead port 2/2 on $mux $flatten\rules_32.$ternary$protocol.sv:19551$32338.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:35620$30736.
+    dead port 2/2 on $mux $flatten\rules_45.$ternary$protocol.sv:27321$31428.
+    dead port 2/2 on $mux $flatten\rules_103.$ternary$protocol.sv:60159$28181.
+    dead port 2/2 on $mux $flatten\rules_111.$ternary$protocol.sv:62504$28100.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:20746$32202.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:49457$29078.
+    dead port 2/2 on $mux $flatten\rules_102.$ternary$protocol.sv:59570$28201.
+    dead port 2/2 on $mux $flatten\rules_115.$ternary$protocol.sv:63687$28061.
+    dead port 2/2 on $mux $flatten\rules_43.$ternary$protocol.sv:26122$31554.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:38628$30455.
+    dead port 2/2 on $mux $flatten\rules_118.$ternary$protocol.sv:64273$28039.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:37410$30629.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:20749$32204.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:533$34125.
+    dead port 2/2 on $mux $flatten\rules_135.$ternary$protocol.sv:69102$27647.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:11861$33008.
+    dead port 2/2 on $mux $flatten\rules_129.$ternary$protocol.sv:67863$27882.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:53034$28703.
+    dead port 2/2 on $mux $flatten\rules_123.$ternary$protocol.sv:66094$27935.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:39820$30281.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:9400$33310.
+    dead port 2/2 on $mux $flatten\rules_28.$ternary$protocol.sv:17171$32526.
+    dead port 2/2 on $mux $flatten\rules_129.$ternary$protocol.sv:67875$27884.
+    dead port 2/2 on $mux $flatten\rules_23.$ternary$protocol.sv:14245$32762.
+    dead port 2/2 on $mux $flatten\rules_24.$ternary$protocol.sv:14788$32712.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:51845$28884.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:38622$30454.
+    dead port 2/2 on $mux $flatten\rules_13.$ternary$protocol.sv:8233$33465.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:50609$29006.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:478$34118.
+    dead port 2/2 on $mux $flatten\rules_112.$ternary$protocol.sv:62504$28100.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:43389$29899.
+    dead port 2/2 on $mux $flatten\rules_124.$ternary$protocol.sv:66094$27935.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:11209$33083.
+    dead port 2/2 on $mux $flatten\rules_131.$ternary$protocol.sv:67875$27884.
+    dead port 2/2 on $mux $flatten\rules_10.$ternary$protocol.sv:6425$33623.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:439$34104.
+    dead port 2/2 on $mux $flatten\rules_22.$ternary$protocol.sv:13600$32807.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:21948$32026.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:37404$30628.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:35695$30737.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:54850$28517.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:51844$28883.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:38594$30453.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:16625$32574.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:44645$29763.
+    dead port 2/2 on $mux $flatten\rules_13.$ternary$protocol.sv:8222$33464.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:15993$32622.
+    dead port 2/2 on $mux $flatten\rules_9.$ternary$protocol.sv:5817$33675.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:51238$28972.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:47675$29290.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:44613$29758.
+    dead port 2/2 on $mux $flatten\rules_23.$ternary$protocol.sv:14256$32763.
+    dead port 2/2 on $mux $flatten\rules_135.$ternary$protocol.sv:69090$27645.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:44020$29858.
+    dead port 2/2 on $mux $flatten\rules_42.$ternary$protocol.sv:25539$31620.
+    dead port 2/2 on $mux $flatten\rules_50.$ternary$protocol.sv:30315$31120.
+    dead port 2/2 on $mux $flatten\rules_132.$ternary$protocol.sv:68483$27764.
+    dead port 2/2 on $mux $flatten\rules_48.$ternary$protocol.sv:29180$31237.
+    dead port 2/2 on $mux $flatten\rules_23.$ternary$protocol.sv:14181$32759.
+    dead port 2/2 on $mux $flatten\rules_44.$ternary$protocol.sv:26734$31491.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:3438$33888.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:442$34106.
+    dead port 2/2 on $mux $flatten\rules_99.$ternary$protocol.sv:59018$28224.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:54849$28516.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:51838$28882.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:38591$30452.
+    dead port 2/2 on $mux $flatten\rules_30.$ternary$protocol.sv:18373$32434.
+    dead port 2/2 on $mux $flatten\rules_13.$ternary$protocol.sv:8205$33463.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:15980$32619.
+    dead port 2/2 on $mux $flatten\rules_32.$ternary$protocol.sv:19611$32340.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:39186$30364.
+    dead port 2/2 on $mux $flatten\rules_41.$ternary$protocol.sv:24929$31684.
+    dead port 2/2 on $mux $flatten\rules_121.$ternary$protocol.sv:65492$27977.
+    dead port 2/2 on $mux $flatten\rules_44.$ternary$protocol.sv:26788$31493.
+    dead port 2/2 on $mux $flatten\rules_112.$ternary$protocol.sv:62546$28103.
+    dead port 2/2 on $mux $flatten\rules_111.$ternary$protocol.sv:62511$28101.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:482$34120.
+    dead port 2/2 on $mux $flatten\rules_50.$ternary$protocol.sv:30314$31119.
+    dead port 2/2 on $mux $flatten\rules_115.$ternary$protocol.sv:63722$28063.
+    dead port 2/2 on $mux $flatten\rules_28.$ternary$protocol.sv:17220$32527.
+    dead port 2/2 on $mux $flatten\rules_10.$ternary$protocol.sv:6445$33624.
+    dead port 2/2 on $mux $flatten\rules_53.$ternary$protocol.sv:32085$30964.
+    dead port 2/2 on $mux $flatten\rules_99.$ternary$protocol.sv:58986$28223.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:54830$28515.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:51821$28881.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:38584$30451.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:54263$28567.
+    dead port 2/2 on $mux $flatten\rules_30.$ternary$protocol.sv:18362$32433.
+    dead port 2/2 on $mux $flatten\rules_13.$ternary$protocol.sv:8204$33462.
+    dead port 2/2 on $mux $flatten\rules_54.$ternary$protocol.sv:32691$30912.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:22537$31940.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:485$34122.
+    dead port 2/2 on $mux $flatten\rules_94.$ternary$protocol.sv:56652$28373.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:21950$32027.
+    dead port 2/2 on $mux $flatten\rules_28.$ternary$protocol.sv:17168$32524.
+    dead port 2/2 on $mux $flatten\rules_42.$ternary$protocol.sv:25544$31621.
+    dead port 2/2 on $mux $flatten\rules_100.$ternary$protocol.sv:59018$28224.
+    dead port 2/2 on $mux $flatten\rules_113.$ternary$protocol.sv:63092$28080.
+    dead port 2/2 on $mux $flatten\rules_131.$ternary$protocol.sv:67845$27881.
+    dead port 2/2 on $mux $flatten\rules_124.$ternary$protocol.sv:66059$27934.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:39212$30367.
+    dead port 2/2 on $mux $flatten\rules_129.$ternary$protocol.sv:67845$27881.
+    dead port 2/2 on $mux $flatten\rules_99.$ternary$protocol.sv:58983$28222.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:51818$28880.
+    dead port 2/2 on $mux $flatten\rules_30.$ternary$protocol.sv:18361$32432.
+    dead port 2/2 on $mux $flatten\rules_106.$ternary$protocol.sv:60770$28163.
+    dead port 2/2 on $mux $flatten\rules_51.$ternary$protocol.sv:30962$31069.
+    dead port 2/2 on $mux $flatten\rules_96.$ternary$protocol.sv:57813$28286.
+    dead port 2/2 on $mux $flatten\rules_130.$ternary$protocol.sv:68495$27766.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:543$34126.
+    dead port 2/2 on $mux $flatten\rules_94.$ternary$protocol.sv:56622$28372.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:9477$33313.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:35063$30747.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:45869$29567.
+    dead port 2/2 on $mux $flatten\rules_116.$ternary$protocol.sv:63722$28063.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:9466$33312.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:51812$28879.
+    dead port 2/2 on $mux $flatten\rules_95.$ternary$protocol.sv:57237$28331.
+    dead port 2/2 on $mux $flatten\rules_30.$ternary$protocol.sv:18360$32431.
+    dead port 2/2 on $mux $flatten\rules_9.$ternary$protocol.sv:5850$33677.
+    dead port 2/2 on $mux $flatten\rules_106.$ternary$protocol.sv:60749$28162.
+    dead port 2/2 on $mux $flatten\rules_4.$ternary$protocol.sv:2855$33941.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:40400$30192.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:48864$29112.
+    dead port 2/2 on $mux $flatten\rules_23.$ternary$protocol.sv:14183$32760.
+    dead port 2/2 on $mux $flatten\rules_136.$ternary$protocol.sv:69697$27559.
+    dead port 2/2 on $mux $flatten\rules_131.$ternary$protocol.sv:67876$27885.
+    dead port 2/2 on $mux $flatten\rules_93.$ternary$protocol.sv:56057$28417.
+    dead port 2/2 on $mux $flatten\rules_125.$ternary$protocol.sv:66668$27897.
+    dead port 2/2 on $mux $flatten\rules_112.$ternary$protocol.sv:62514$28102.
+    dead port 2/2 on $mux $flatten\rules_101.$ternary$protocol.sv:59594$28203.
+    dead port 2/2 on $mux $flatten\rules_100.$ternary$protocol.sv:58986$28223.
+    dead port 2/2 on $mux $flatten\rules_97.$ternary$protocol.sv:58420$28245.
+    dead port 2/2 on $mux $flatten\rules_40.$ternary$protocol.sv:24343$31748.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:20136$32292.
+    dead port 2/2 on $mux $flatten\rules_28.$ternary$protocol.sv:17170$32525.
+    dead port 2/2 on $mux $flatten\rules_135.$ternary$protocol.sv:69070$27642.
+    dead port 2/2 on $mux $flatten\rules_10.$ternary$protocol.sv:6424$33622.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:45257$29665.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:54232$28565.
+    dead port 2/2 on $mux $flatten\rules_30.$ternary$protocol.sv:18358$32430.
+    dead port 2/2 on $mux $flatten\rules_106.$ternary$protocol.sv:60746$28161.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:52456$28793.
+    dead port 2/2 on $mux $flatten\rules_43.$ternary$protocol.sv:26124$31555.
+    dead port 2/2 on $mux $flatten\rules_54.$ternary$protocol.sv:32688$30910.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:51215$28970.
+    dead port 2/2 on $mux $flatten\rules_50.$ternary$protocol.sv:30312$31118.
+    dead port 2/2 on $mux $flatten\rules_44.$ternary$protocol.sv:26735$31492.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:437$34103.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:37384$30626.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:10011$33235.
+    dead port 2/2 on $mux $flatten\rules_128.$ternary$protocol.sv:67262$27891.
+    dead port 2/2 on $mux $flatten\rules_53.$ternary$protocol.sv:32102$30965.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:47036$29376.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:22534$31938.
+    dead port 2/2 on $mux $flatten\rules_12.$ternary$protocol.sv:7615$33517.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:45256$29664.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:33932$30809.
+    dead port 2/2 on $mux $flatten\rules_21.$ternary$protocol.sv:13018$32857.
+    dead port 2/2 on $mux $flatten\rules_119.$ternary$protocol.sv:64911$28010.
+    dead port 2/2 on $mux $flatten\rules_106.$ternary$protocol.sv:60740$28160.
+    dead port 2/2 on $mux $flatten\rules_24.$ternary$protocol.sv:14840$32715.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:53663$28616.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:50629$29008.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:47062$29379.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:480$34119.
+    dead port 2/2 on $mux $flatten\rules_133.$ternary$protocol.sv:69101$27646.
+    dead port 2/2 on $mux $flatten\rules_120.$ternary$protocol.sv:64866$28006.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:1665$34047.
+    dead port 2/2 on $mux $flatten\rules_132.$ternary$protocol.sv:68495$27766.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:45857$29565.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:47063$29380.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:53068$28705.
+    dead port 2/2 on $mux $flatten\rules_133.$ternary$protocol.sv:69090$27645.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:45245$29663.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:33879$30808.
+    dead port 2/2 on $mux $flatten\rules_47.$ternary$protocol.sv:28582$31301.
+    dead port 2/2 on $mux $flatten\rules_21.$ternary$protocol.sv:13007$32856.
+    dead port 2/2 on $mux $flatten\rules_140.$ternary$protocol.sv:70252$27475.
+    dead port 2/2 on $mux $flatten\rules_119.$ternary$protocol.sv:64910$28009.
+    dead port 2/2 on $mux $flatten\rules_108.$ternary$protocol.sv:61338$28142.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:46461$29468.
+    dead port 2/2 on $mux $flatten\rules_11.$ternary$protocol.sv:7088$33571.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:43409$29901.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:44032$29860.
+    dead port 2/2 on $mux $flatten\rules_31.$ternary$protocol.sv:18941$32383.
+    dead port 2/2 on $mux $flatten\rules_42.$ternary$protocol.sv:25536$31618.
+    dead port 2/2 on $mux $flatten\rules_117.$ternary$protocol.sv:64306$28043.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:46462$29469.
+    dead port 2/2 on $mux $flatten\rules_51.$ternary$protocol.sv:30896$31067.
+    dead port 2/2 on $mux $flatten\rules_93.$ternary$protocol.sv:56056$28416.
+    dead port 2/2 on $mux $flatten\rules_113.$ternary$protocol.sv:63101$28082.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:41037$30108.
+    dead port 2/2 on $mux $flatten\rules_24.$ternary$protocol.sv:14790$32713.
+    dead port 2/2 on $mux $flatten\rules_25.$ternary$protocol.sv:15371$32665.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:48277$29202.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:45244$29662.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:33878$30807.
+    dead port 2/2 on $mux $flatten\rules_47.$ternary$protocol.sv:28517$31300.
+    dead port 2/2 on $mux $flatten\rules_21.$ternary$protocol.sv:12994$32855.
+    dead port 2/2 on $mux $flatten\rules_130.$ternary$protocol.sv:68463$27761.
+    dead port 2/2 on $mux $flatten\rules_119.$ternary$protocol.sv:64908$28008.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:3437$33887.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:476$34117.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:55429$28465.
+    dead port 2/2 on $mux $flatten\rules_12.$ternary$protocol.sv:7683$33518.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:50037$29043.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:10598$33159.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:67226$27890.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:42226$29980.
+    dead port 2/2 on $mux $flatten\rules_107.$ternary$protocol.sv:61328$28140.
+    dead port 2/2 on $mux $flatten\rules_96.$ternary$protocol.sv:57832$28287.
+    dead port 2/2 on $mux $flatten\rules_142.$ternary$protocol.sv:71416$27463.
+    dead port 2/2 on $mux $flatten\rules_103.$ternary$protocol.sv:60194$28183.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:48276$29201.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:45226$29661.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:33876$30806.
+    dead port 2/2 on $mux $flatten\rules_47.$ternary$protocol.sv:28516$31299.
+    dead port 2/2 on $mux $flatten\rules_21.$ternary$protocol.sv:12993$32854.
+    dead port 2/2 on $mux $flatten\rules_119.$ternary$protocol.sv:64873$28007.
+    dead port 2/2 on $mux $flatten\rules_43.$ternary$protocol.sv:26125$31556.
+    dead port 2/2 on $mux $flatten\rules_132.$ternary$protocol.sv:68463$27761.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:52418$28790.
+    dead port 2/2 on $mux $flatten\rules_31.$ternary$protocol.sv:18943$32384.
+    dead port 2/2 on $mux $flatten\rules_124.$ternary$protocol.sv:66097$27937.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:49456$29077.
+    dead port 2/2 on $mux $flatten\rules_132.$ternary$protocol.sv:68482$27763.
+    dead port 2/2 on $mux $flatten\rules_122.$ternary$protocol.sv:65491$27976.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:36801$30715.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:15981$32620.
+    dead port 2/2 on $mux $flatten\rules_124.$ternary$protocol.sv:66096$27936.
+    dead port 2/2 on $mux $flatten\rules_114.$ternary$protocol.sv:63098$28081.
+    dead port 2/2 on $mux $flatten\rules_24.$ternary$protocol.sv:14791$32714.
+    dead port 2/2 on $mux $flatten\rules_53.$ternary$protocol.sv:32082$30962.
+    dead port 2/2 on $mux $flatten\rules_48.$ternary$protocol.sv:29127$31236.
+    dead port 2/2 on $mux $flatten\rules_116.$ternary$protocol.sv:63690$28062.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:48270$29200.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:45225$29660.
+    dead port 2/2 on $mux $flatten\rules_22.$ternary$protocol.sv:13602$32809.
+    dead port 2/2 on $mux $flatten\rules_47.$ternary$protocol.sv:28514$31298.
+    dead port 2/2 on $mux $flatten\rules_39.$ternary$protocol.sv:23798$31813.
+    dead port 2/2 on $mux $flatten\rules_21.$ternary$protocol.sv:12991$32853.
+    dead port 2/2 on $mux $flatten\rules_119.$ternary$protocol.sv:64866$28006.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:16564$32573.
+    dead port 2/2 on $mux $flatten\rules_40.$ternary$protocol.sv:24396$31749.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:474$34116.
+    dead port 2/2 on $mux $flatten\rules_32.$ternary$protocol.sv:19550$32337.
+    dead port 2/2 on $mux $flatten\rules_131.$ternary$protocol.sv:67844$27880.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:41030$30106.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:38026$30543.
+    dead port 2/2 on $mux $flatten\rules_45.$ternary$protocol.sv:27338$31429.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:39788$30277.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:54262$28566.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:52463$28795.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:48834$29111.
+    dead port 2/2 on $mux $flatten\rules_103.$ternary$protocol.sv:60152$28180.
+    dead port 2/2 on $mux $flatten\rules_54.$ternary$protocol.sv:32690$30911.
+    dead port 2/2 on $mux $flatten\rules_29.$ternary$protocol.sv:17778$32481.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:45837$29562.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:36775$30712.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:22536$31939.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:38025$30542.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:41002$30105.
+    dead port 2/2 on $mux $flatten\rules_133.$ternary$protocol.sv:69102$27647.
+    dead port 2/2 on $mux $flatten\rules_29.$ternary$protocol.sv:17754$32479.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:43408$29900.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:40397$30191.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:1058$34100.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:34479$30757.
+    dead port 2/2 on $mux $flatten\rules_129.$ternary$protocol.sv:67864$27883.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:45868$29566.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:11208$33082.
+    dead port 2/2 on $mux $flatten\rules_137.$ternary$protocol.sv:70252$27475.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:11872$33009.
+    dead port 2/2 on $mux $flatten\rules_93.$ternary$protocol.sv:56026$28415.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:37411$30630.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:55449$28467.
+    dead port 2/2 on $mux $flatten\rules_25.$ternary$protocol.sv:15374$32667.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:46455$29467.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:44632$29760.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:36784$30714.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:44644$29762.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:34452$30756.
+    dead port 2/2 on $mux $flatten\rules_51.$ternary$protocol.sv:30894$31066.
+    dead port 2/2 on $mux $flatten\rules_136.$ternary$protocol.sv:69708$27560.
+    dead port 2/2 on $mux $flatten\rules_32.$ternary$protocol.sv:19600$32339.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:40435$30195.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:51206$28968.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:15982$32621.
+    dead port 2/2 on $mux $flatten\rules_114.$ternary$protocol.sv:63101$28082.
+    dead port 2/2 on $mux $flatten\rules_96.$ternary$protocol.sv:57833$28288.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:1685$34048.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:1090$34101.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:50017$29041.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:39192$30365.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:37981$30538.
+    dead port 2/2 on $mux $flatten\rules_52.$ternary$protocol.sv:31503$31016.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:466$34113.
+    dead port 2/2 on $mux $flatten\rules_121.$ternary$protocol.sv:65489$27975.
+    dead port 2/2 on $mux $flatten\rules_45.$ternary$protocol.sv:27320$31427.
+    dead port 2/2 on $mux $flatten\rules_129.$ternary$protocol.sv:67876$27885.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:20153$32293.
+    dead port 2/2 on $mux $flatten\rules_40.$ternary$protocol.sv:24340$31746.
+    dead port 2/2 on $mux $flatten\rules_123.$ternary$protocol.sv:66096$27936.
+    dead port 2/2 on $mux $flatten\rules_49.$ternary$protocol.sv:29709$31172.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:4044$33834.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:44033$29861.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:41036$30107.
+    dead port 2/2 on $mux $flatten\rules_123.$ternary$protocol.sv:66059$27934.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:42812$29941.
+    dead port 2/2 on $mux $flatten\rules_107.$ternary$protocol.sv:61370$28143.
+    dead port 2/2 on $mux $flatten\rules_107.$ternary$protocol.sv:61338$28142.
+    dead port 2/2 on $mux $flatten\rules_103.$ternary$protocol.sv:60162$28182.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:4045$33835.
+    dead port 2/2 on $mux $flatten\rules_134.$ternary$protocol.sv:69709$27561.
+    dead port 2/2 on $mux $flatten\rules_120.$ternary$protocol.sv:64910$28009.
+    dead port 2/2 on $mux $flatten\rules_141.$ternary$protocol.sv:70834$27468.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:42811$29940.
+    dead port 2/2 on $mux $flatten\rules_39.$ternary$protocol.sv:23733$31812.
+    dead port 2/2 on $mux $flatten\rules_39.$ternary$protocol.sv:23732$31811.
+    dead port 2/2 on $mux $flatten\rules_39.$ternary$protocol.sv:23730$31810.
+    dead port 2/2 on $mux $flatten\rules_7.$ternary$protocol.sv:4708$33783.
+    dead port 2/2 on $mux $flatten\rules_7.$ternary$protocol.sv:4628$33782.
+    dead port 2/2 on $mux $flatten\rules_7.$ternary$protocol.sv:4627$33781.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:48242$29199.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:48239$29198.
+    dead port 2/2 on $mux $flatten\rules_48.$ternary$protocol.sv:29124$31234.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:3470$33889.
+    dead port 2/2 on $mux $flatten\rules_110.$ternary$protocol.sv:61922$28121.
+Removed 597 multiplexer ports.
+<suppressed ~36 debug messages>
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~939 debug messages>
+Removed a total of 313 cells.
+
+6.6. Executing OPT_SHARE pass.
+
+6.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 157 unused cells and 1572 unused wires.
+<suppressed ~158 debug messages>
+
+6.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~497 debug messages>
+
+6.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~239 debug messages>
+
+6.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+6.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+6.14. Executing OPT_SHARE pass.
+
+6.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+
+6.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+
+6.18. Finished OPT passes. (There is nothing left to do.)
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /home/czh/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/czh/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $ff.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $ne.
+No more expansions possible.
+<suppressed ~5684 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~17520 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~4281 debug messages>
+Removed a total of 1427 cells.
+
+8.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 145 unused cells and 1236 unused wires.
+<suppressed ~146 debug messages>
+
+8.5. Finished fast OPT passes.
+
+9. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+10. Executing FORMALFF pass.
+
+11. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+12. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+13. Executing ABC pass (technology mapping using ABC).
+
+13.1. Extracting gate netlist of module `\system' to `<abc-temp-dir>/input.blif'..
+Extracted 18198 gates and 18331 wires to a netlist network with 131 inputs and 124 outputs.
+
+13.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 5 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+13.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:    50347
+ABC RESULTS:               NOT cells:    49277
+ABC RESULTS:        internal signals:    18076
+ABC RESULTS:           input signals:      131
+ABC RESULTS:          output signals:      124
+Removing temp directory.
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 0 unused cells and 7634 unused wires.
+<suppressed ~6533 debug messages>
+
+15. Printing statistics.
+
+=== system ===
+
+   Number of wires:             233439
+   Number of wire bits:         590625
+   Number of public wires:      133898
+   Number of public wire bits:  490999
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              99666
+     $_AND_                      50347
+     $_FF_                           1
+     $_NOT_                      49277
+     $anyinit                       36
+     $anyseq                         1
+     $assert                         1
+     $assume                         2
+     $initstate                      1
+
+16. Executing AIGER backend.
+
+End of script. Logfile hash: c4c2424a5b, CPU: user 8.70s system 0.21s, MEM: 489.01 MB peak
+Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 42% 4x opt_clean (4 sec), 20% 1x abc (1 sec), ...

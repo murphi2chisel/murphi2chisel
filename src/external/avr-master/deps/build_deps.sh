@@ -5,7 +5,7 @@ MATHSATVERSION="5.6.6"
 
 # # Build and install yices2
 # pushd .
-# # git clone https://github.com/SRI-CSL/yices2.git
+# git clone https://github.com/SRI-CSL/yices2.git
 # cd yices2
 # autoconf
 # ./configure
@@ -14,15 +14,15 @@ MATHSATVERSION="5.6.6"
 # popd
 
 
-### Build and install boolector
+# ### Build and install boolector
 # pushd .
-# # git clone https://github.com/Boolector/boolector.git
+# git clone https://github.com/Boolector/boolector.git
 # cd boolector
-# #  ./contrib/setup-btor2tools.sh
-#  ./contrib/setup-cadical.sh
-#  ./configure.sh --only-cadical
+# ./contrib/setup-btor2tools.sh
+# ./contrib/setup-cadical.sh
+# ./configure.sh --only-cadical
 # cd build
-# sudo make
+# make
 # cd ..
 # popd
 
@@ -36,8 +36,8 @@ MATHSATVERSION="5.6.6"
 # popd
 
 
-### Build and install btor2tools
-pushd .
+# ### Build and install btor2tools
+# pushd .
 # git clone https://github.com/Boolector/btor2tools.git
 # cd btor2tools
 # ./configure.sh --static

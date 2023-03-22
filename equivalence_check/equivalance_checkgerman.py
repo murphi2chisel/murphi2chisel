@@ -185,6 +185,7 @@ def checkreachablestateset():
             log(protocol_dir,s) 
         else:
             print("check failed ")
+            log(protocol_dir,"check failed")
             exit(1)
 
 def checkunreachablestateset():
@@ -314,6 +315,7 @@ def checkunreachablestateset():
             log(protocol_dir,s) 
         else:
             print("check failed")
+            log(protocol_dir,"check failed un")
             exit(1)
      
 

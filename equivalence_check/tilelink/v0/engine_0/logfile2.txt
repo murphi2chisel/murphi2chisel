@@ -1,0 +1,23 @@
+##   0:00:00  Solver: yices
+##   0:00:05  Skipping step 0..
+##   0:00:05  Skipping step 1..
+##   0:00:05  Skipping step 2..
+##   0:00:05  Skipping step 3..
+##   0:00:05  Skipping step 4..
+##   0:00:05  Skipping step 5..
+##   0:00:05  Skipping step 6..
+##   0:00:05  Skipping step 7..
+##   0:00:05  Skipping step 8..
+##   0:00:05  Skipping step 9..
+##   0:00:05  Skipping step 10..
+##   0:00:05  Skipping step 11..
+##   0:00:05  Skipping step 12..
+##   0:00:05  Skipping step 13..
+##   0:00:05  Skipping step 14..
+##   0:00:05  Skipping step 15..
+##   0:00:05  Skipping step 16..
+##   0:00:05  Skipping step 17..
+##   0:00:05  Checking assertions in step 18..
+##   0:00:07  BMC failed!
+##   0:00:07  Assert failed in system: protocol.sv:242793.22-242795.48 ($assert$protocol.sv:242793$27440)
+##   0:00:07  Writing trace to VCD file: engine_0/trace.vcd

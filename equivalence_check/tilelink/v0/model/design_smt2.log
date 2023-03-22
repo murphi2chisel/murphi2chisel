@@ -1,0 +1,2568 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Ln_receive_ProbeAck_1_2
+Used module:     \Ln_receive_ProbeAck_1
+Used module:     \Ln_receive_AcquireBlock_8_3
+Used module:     \Ln_receive_AcquireBlock_8_2
+Used module:     \Ln_receive_AcquireBlock_8_1
+Used module:     \Ln_receive_AcquireBlock_8
+Used module:     \Ln_receive_AcquireBlock_7_3
+Used module:     \Ln_receive_AcquireBlock_7_2
+Used module:     \Ln_receive_AcquireBlock_7_1
+Used module:     \send_AcquireBlock_toT
+Used module:     \Ln_receive_AcquireBlock_7
+Used module:     \Ln_receive_AcquireBlock_6_3
+Used module:     \Ln_receive_AcquireBlock_6_2
+Used module:     \Ln_receive_AcquireBlock_6_1
+Used module:     \Ln_receive_AcquireBlock_6
+Used module:     \Ln_receive_AcquireBlock_3_3
+Used module:     \Ln_receive_AcquireBlock_3_2
+Used module:     \Ln_receive_AcquireBlock_3_1
+Used module:     \Ln_receive_AcquireBlock_3
+Used module:     \Ln_receive_AcquireBlock_2_3
+Used module:     \send_AcquirePerm_toT_3
+Used module:     \Ln_receive_AcquireBlock_2_2
+Used module:     \Ln_receive_AcquireBlock_2_1
+Used module:     \Ln_receive_AcquireBlock_2
+Used module:     \Ln_receive_AcquirePerm_6_3
+Used module:     \Ln_receive_AcquirePerm_6_2
+Used module:     \Ln_receive_AcquirePerm_6_1
+Used module:     \Ln_receive_AcquirePerm_6
+Used module:     \Ln_receive_AcquirePerm_3_3
+Used module:     \Ln_receive_AcquirePerm_3_2
+Used module:     \Ln_receive_AcquirePerm_3_1
+Used module:     \send_AcquirePerm_toT_2
+Used module:     \Ln_receive_AcquirePerm_3
+Used module:     \Ln_receive_AcquirePerm_2_3
+Used module:     \Ln_receive_AcquirePerm_2_2
+Used module:     \Ln_receive_AcquirePerm_2_1
+Used module:     \Ln_receive_AcquirePerm_2
+Used module:     \Ln_receive_AcquirePerm_1_3
+Used module:     \Ln_receive_AcquirePerm_1_2
+Used module:     \Ln_receive_AcquirePerm_1_1
+Used module:     \Ln_receive_AcquirePerm_1
+Used module:     \receive_ReleaseAck_3
+Used module:     \send_AcquirePerm_toT_1
+Used module:     \receive_ReleaseAck_2
+Used module:     \receive_ReleaseAck_1
+Used module:     \receive_ReleaseAck
+Used module:     \respond_ProbeBlock_toB_2_3
+Used module:     \respond_ProbeBlock_toB_2_2
+Used module:     \respond_ProbeBlock_toB_2_1
+Used module:     \respond_ProbeBlock_toB_2
+Used module:     \respond_ProbeBlock_toB_1_3
+Used module:     \respond_ProbeBlock_toB_1_2
+Used module:     \respond_ProbeBlock_toB_1_1
+Used module:     \send_AcquirePerm_toT
+Used module:     \respond_ProbeBlock_toB_1
+Used module:     \respond_ProbeBlock_TtoN_2_3
+Used module:     \respond_ProbeBlock_TtoN_2_2
+Used module:     \respond_ProbeBlock_TtoN_2_1
+Used module:     \respond_ProbeBlock_TtoN_2
+Used module:     \respond_ProbeBlock_TtoN_1_3
+Used module:     \respond_ProbeBlock_TtoN_1_2
+Used module:     \respond_ProbeBlock_TtoN_1_1
+Used module:     \respond_ProbeBlock_TtoN_1
+Used module:     \respond_ProbePerm_BtoN_3
+Used module:     \send_AcquireBlock_toB_3
+Used module:     \respond_ProbePerm_BtoN_2
+Used module:     \respond_ProbePerm_BtoN_1
+Used module:     \respond_ProbePerm_BtoN
+Used module:     \respond_Probe_NtoN_3
+Used module:     \respond_Probe_NtoN_2
+Used module:     \respond_Probe_NtoN_1
+Used module:     \respond_Probe_NtoN
+Used module:     \respond_GrantData_toT_3
+Used module:     \respond_GrantData_toT_2
+Used module:     \respond_GrantData_toT_1
+Used module:     \send_AcquireBlock_toB_2
+Used module:     \respond_GrantData_toT
+Used module:     \respond_GrantData_toB_3
+Used module:     \respond_GrantData_toB_2
+Used module:     \respond_GrantData_toB_1
+Used module:     \respond_GrantData_toB
+Used module:     \respond_Grant_toT_3
+Used module:     \respond_Grant_toT_2
+Used module:     \respond_Grant_toT_1
+Used module:     \respond_Grant_toT
+Used module:     \send_Release_TtoN_1_3
+Used module:     \send_AcquireBlock_toB_1
+Used module:     \send_Release_TtoN_1_2
+Used module:     \send_Release_TtoN_1_1
+Used module:     \send_Release_TtoN_1
+Used module:     \send_Release_BtoN_3
+Used module:     \send_Release_BtoN_2
+Used module:     \L3_receive_AcquireBlock_1
+Used module:     \L3_receive_AcquireBlock
+Used module:     \L3_receive_AcquirePerm_1
+Used module:     \L3_receive_AcquirePerm
+Used module:     \L3_send_release_2
+Used module:     \send_Release_BtoN_1
+Used module:     \Ln_send_Release_5_1
+Used module:     \Ln_send_Release_5
+Used module:     \Ln_send_Release_4_1
+Used module:     \Ln_send_Release_4
+Used module:     \send_Release_BtoN
+Used module:     \Ln_receive_GrantAck_2
+Used module:     \Ln_receive_GrantAck
+Used module:     \Ln_receive_Release_2_2
+Used module:     \Ln_receive_Release_2
+Used module:     \Ln_receive_Release_1_2
+Used module:     \send_AcquireBlock_toT_3
+Used module:     \Ln_receive_Release_1
+Used module:     \Ln_receive_ProbeAckData_2_2
+Used module:     \Ln_receive_ProbeAckData_2
+Used module:     \Ln_receive_ProbeAckData_1_2
+Used module:     \Ln_receive_ProbeAckData_1
+Used module:     \send_AcquireBlock_toT_2
+Used module:     \Ln_receive_ProbeAck_3_2
+Used module:     \Ln_receive_ProbeAck_3
+Used module:     \Ln_receive_ProbeAck_2_2
+Used module:     \Ln_receive_ProbeAck_2
+Used module:     \send_AcquireBlock_toT_1
+Used module:     \send_AcquireBlock_toB
+Used module:     \Init
+
+2.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Ln_receive_ProbeAck_1_2
+Used module:     \Ln_receive_ProbeAck_1
+Used module:     \Ln_receive_AcquireBlock_8_3
+Used module:     \Ln_receive_AcquireBlock_8_2
+Used module:     \Ln_receive_AcquireBlock_8_1
+Used module:     \Ln_receive_AcquireBlock_8
+Used module:     \Ln_receive_AcquireBlock_7_3
+Used module:     \Ln_receive_AcquireBlock_7_2
+Used module:     \Ln_receive_AcquireBlock_7_1
+Used module:     \send_AcquireBlock_toT
+Used module:     \Ln_receive_AcquireBlock_7
+Used module:     \Ln_receive_AcquireBlock_6_3
+Used module:     \Ln_receive_AcquireBlock_6_2
+Used module:     \Ln_receive_AcquireBlock_6_1
+Used module:     \Ln_receive_AcquireBlock_6
+Used module:     \Ln_receive_AcquireBlock_3_3
+Used module:     \Ln_receive_AcquireBlock_3_2
+Used module:     \Ln_receive_AcquireBlock_3_1
+Used module:     \Ln_receive_AcquireBlock_3
+Used module:     \Ln_receive_AcquireBlock_2_3
+Used module:     \send_AcquirePerm_toT_3
+Used module:     \Ln_receive_AcquireBlock_2_2
+Used module:     \Ln_receive_AcquireBlock_2_1
+Used module:     \Ln_receive_AcquireBlock_2
+Used module:     \Ln_receive_AcquirePerm_6_3
+Used module:     \Ln_receive_AcquirePerm_6_2
+Used module:     \Ln_receive_AcquirePerm_6_1
+Used module:     \Ln_receive_AcquirePerm_6
+Used module:     \Ln_receive_AcquirePerm_3_3
+Used module:     \Ln_receive_AcquirePerm_3_2
+Used module:     \Ln_receive_AcquirePerm_3_1
+Used module:     \send_AcquirePerm_toT_2
+Used module:     \Ln_receive_AcquirePerm_3
+Used module:     \Ln_receive_AcquirePerm_2_3
+Used module:     \Ln_receive_AcquirePerm_2_2
+Used module:     \Ln_receive_AcquirePerm_2_1
+Used module:     \Ln_receive_AcquirePerm_2
+Used module:     \Ln_receive_AcquirePerm_1_3
+Used module:     \Ln_receive_AcquirePerm_1_2
+Used module:     \Ln_receive_AcquirePerm_1_1
+Used module:     \Ln_receive_AcquirePerm_1
+Used module:     \receive_ReleaseAck_3
+Used module:     \send_AcquirePerm_toT_1
+Used module:     \receive_ReleaseAck_2
+Used module:     \receive_ReleaseAck_1
+Used module:     \receive_ReleaseAck
+Used module:     \respond_ProbeBlock_toB_2_3
+Used module:     \respond_ProbeBlock_toB_2_2
+Used module:     \respond_ProbeBlock_toB_2_1
+Used module:     \respond_ProbeBlock_toB_2
+Used module:     \respond_ProbeBlock_toB_1_3
+Used module:     \respond_ProbeBlock_toB_1_2
+Used module:     \respond_ProbeBlock_toB_1_1
+Used module:     \send_AcquirePerm_toT
+Used module:     \respond_ProbeBlock_toB_1
+Used module:     \respond_ProbeBlock_TtoN_2_3
+Used module:     \respond_ProbeBlock_TtoN_2_2
+Used module:     \respond_ProbeBlock_TtoN_2_1
+Used module:     \respond_ProbeBlock_TtoN_2
+Used module:     \respond_ProbeBlock_TtoN_1_3
+Used module:     \respond_ProbeBlock_TtoN_1_2
+Used module:     \respond_ProbeBlock_TtoN_1_1
+Used module:     \respond_ProbeBlock_TtoN_1
+Used module:     \respond_ProbePerm_BtoN_3
+Used module:     \send_AcquireBlock_toB_3
+Used module:     \respond_ProbePerm_BtoN_2
+Used module:     \respond_ProbePerm_BtoN_1
+Used module:     \respond_ProbePerm_BtoN
+Used module:     \respond_Probe_NtoN_3
+Used module:     \respond_Probe_NtoN_2
+Used module:     \respond_Probe_NtoN_1
+Used module:     \respond_Probe_NtoN
+Used module:     \respond_GrantData_toT_3
+Used module:     \respond_GrantData_toT_2
+Used module:     \respond_GrantData_toT_1
+Used module:     \send_AcquireBlock_toB_2
+Used module:     \respond_GrantData_toT
+Used module:     \respond_GrantData_toB_3
+Used module:     \respond_GrantData_toB_2
+Used module:     \respond_GrantData_toB_1
+Used module:     \respond_GrantData_toB
+Used module:     \respond_Grant_toT_3
+Used module:     \respond_Grant_toT_2
+Used module:     \respond_Grant_toT_1
+Used module:     \respond_Grant_toT
+Used module:     \send_Release_TtoN_1_3
+Used module:     \send_AcquireBlock_toB_1
+Used module:     \send_Release_TtoN_1_2
+Used module:     \send_Release_TtoN_1_1
+Used module:     \send_Release_TtoN_1
+Used module:     \send_Release_BtoN_3
+Used module:     \send_Release_BtoN_2
+Used module:     \L3_receive_AcquireBlock_1
+Used module:     \L3_receive_AcquireBlock
+Used module:     \L3_receive_AcquirePerm_1
+Used module:     \L3_receive_AcquirePerm
+Used module:     \L3_send_release_2
+Used module:     \send_Release_BtoN_1
+Used module:     \Ln_send_Release_5_1
+Used module:     \Ln_send_Release_5
+Used module:     \Ln_send_Release_4_1
+Used module:     \Ln_send_Release_4
+Used module:     \send_Release_BtoN
+Used module:     \Ln_receive_GrantAck_2
+Used module:     \Ln_receive_GrantAck
+Used module:     \Ln_receive_Release_2_2
+Used module:     \Ln_receive_Release_2
+Used module:     \Ln_receive_Release_1_2
+Used module:     \send_AcquireBlock_toT_3
+Used module:     \Ln_receive_Release_1
+Used module:     \Ln_receive_ProbeAckData_2_2
+Used module:     \Ln_receive_ProbeAckData_2
+Used module:     \Ln_receive_ProbeAckData_1_2
+Used module:     \Ln_receive_ProbeAckData_1
+Used module:     \send_AcquireBlock_toT_2
+Used module:     \Ln_receive_ProbeAck_3_2
+Used module:     \Ln_receive_ProbeAck_3
+Used module:     \Ln_receive_ProbeAck_2_2
+Used module:     \Ln_receive_ProbeAck_2
+Used module:     \send_AcquireBlock_toT_1
+Used module:     \send_AcquireBlock_toB
+Used module:     \Init
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== system ===
+
+   Number of wires:              84273
+   Number of wire bits:         308024
+   Number of public wires:       83433
+   Number of public wire bits:  305136
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              28401
+     $and                           33
+     $anyinit                      193
+     $anyseq                         1
+     $assert                         1
+     $assume                         2
+     $eq                           161
+     $ff                             1
+     $initstate                      1
+     $logic_and                      1
+     $logic_not                     18
+     $mux                        27842
+     $not                            2
+     Init                            1
+     L3_receive_AcquireBlock         1
+     L3_receive_AcquireBlock_1       1
+     L3_receive_AcquirePerm          1
+     L3_receive_AcquirePerm_1        1
+     L3_send_release_2               4
+     Ln_receive_AcquireBlock_2       1
+     Ln_receive_AcquireBlock_2_1      1
+     Ln_receive_AcquireBlock_2_2      1
+     Ln_receive_AcquireBlock_2_3      1
+     Ln_receive_AcquireBlock_3       1
+     Ln_receive_AcquireBlock_3_1      1
+     Ln_receive_AcquireBlock_3_2      1
+     Ln_receive_AcquireBlock_3_3      1
+     Ln_receive_AcquireBlock_6       1
+     Ln_receive_AcquireBlock_6_1      1
+     Ln_receive_AcquireBlock_6_2      1
+     Ln_receive_AcquireBlock_6_3      1
+     Ln_receive_AcquireBlock_7       1
+     Ln_receive_AcquireBlock_7_1      1
+     Ln_receive_AcquireBlock_7_2      1
+     Ln_receive_AcquireBlock_7_3      1
+     Ln_receive_AcquireBlock_8       1
+     Ln_receive_AcquireBlock_8_1      1
+     Ln_receive_AcquireBlock_8_2      1
+     Ln_receive_AcquireBlock_8_3      1
+     Ln_receive_AcquirePerm_1        1
+     Ln_receive_AcquirePerm_1_1      1
+     Ln_receive_AcquirePerm_1_2      1
+     Ln_receive_AcquirePerm_1_3      1
+     Ln_receive_AcquirePerm_2        1
+     Ln_receive_AcquirePerm_2_1      1
+     Ln_receive_AcquirePerm_2_2      1
+     Ln_receive_AcquirePerm_2_3      1
+     Ln_receive_AcquirePerm_3        1
+     Ln_receive_AcquirePerm_3_1      1
+     Ln_receive_AcquirePerm_3_2      1
+     Ln_receive_AcquirePerm_3_3      1
+     Ln_receive_AcquirePerm_6        1
+     Ln_receive_AcquirePerm_6_1      1
+     Ln_receive_AcquirePerm_6_2      1
+     Ln_receive_AcquirePerm_6_3      1
+     Ln_receive_GrantAck             2
+     Ln_receive_GrantAck_2           2
+     Ln_receive_ProbeAckData_1       2
+     Ln_receive_ProbeAckData_1_2      2
+     Ln_receive_ProbeAckData_2       2
+     Ln_receive_ProbeAckData_2_2      2
+     Ln_receive_ProbeAck_1           2
+     Ln_receive_ProbeAck_1_2         2
+     Ln_receive_ProbeAck_2           2
+     Ln_receive_ProbeAck_2_2         2
+     Ln_receive_ProbeAck_3           2
+     Ln_receive_ProbeAck_3_2         2
+     Ln_receive_Release_1            2
+     Ln_receive_Release_1_2          2
+     Ln_receive_Release_2            2
+     Ln_receive_Release_2_2          2
+     Ln_send_Release_4               2
+     Ln_send_Release_4_1             2
+     Ln_send_Release_5               2
+     Ln_send_Release_5_1             2
+     receive_ReleaseAck              1
+     receive_ReleaseAck_1            1
+     receive_ReleaseAck_2            1
+     receive_ReleaseAck_3            1
+     respond_GrantData_toB           1
+     respond_GrantData_toB_1         1
+     respond_GrantData_toB_2         1
+     respond_GrantData_toB_3         1
+     respond_GrantData_toT           1
+     respond_GrantData_toT_1         1
+     respond_GrantData_toT_2         1
+     respond_GrantData_toT_3         1
+     respond_Grant_toT               1
+     respond_Grant_toT_1             1
+     respond_Grant_toT_2             1
+     respond_Grant_toT_3             1
+     respond_ProbeBlock_TtoN_1       1
+     respond_ProbeBlock_TtoN_1_1      1
+     respond_ProbeBlock_TtoN_1_2      1
+     respond_ProbeBlock_TtoN_1_3      1
+     respond_ProbeBlock_TtoN_2       1
+     respond_ProbeBlock_TtoN_2_1      1
+     respond_ProbeBlock_TtoN_2_2      1
+     respond_ProbeBlock_TtoN_2_3      1
+     respond_ProbeBlock_toB_1        1
+     respond_ProbeBlock_toB_1_1      1
+     respond_ProbeBlock_toB_1_2      1
+     respond_ProbeBlock_toB_1_3      1
+     respond_ProbeBlock_toB_2        1
+     respond_ProbeBlock_toB_2_1      1
+     respond_ProbeBlock_toB_2_2      1
+     respond_ProbeBlock_toB_2_3      1
+     respond_ProbePerm_BtoN          1
+     respond_ProbePerm_BtoN_1        1
+     respond_ProbePerm_BtoN_2        1
+     respond_ProbePerm_BtoN_3        1
+     respond_Probe_NtoN              1
+     respond_Probe_NtoN_1            1
+     respond_Probe_NtoN_2            1
+     respond_Probe_NtoN_3            1
+     send_AcquireBlock_toB           1
+     send_AcquireBlock_toB_1         1
+     send_AcquireBlock_toB_2         1
+     send_AcquireBlock_toB_3         1
+     send_AcquireBlock_toT           1
+     send_AcquireBlock_toT_1         1
+     send_AcquireBlock_toT_2         1
+     send_AcquireBlock_toT_3         1
+     send_AcquirePerm_toT            1
+     send_AcquirePerm_toT_1          1
+     send_AcquirePerm_toT_2          1
+     send_AcquirePerm_toT_3          1
+     send_Release_BtoN               1
+     send_Release_BtoN_1             1
+     send_Release_BtoN_2             1
+     send_Release_BtoN_3             1
+     send_Release_TtoN_1             1
+     send_Release_TtoN_1_1           1
+     send_Release_TtoN_1_2           1
+     send_Release_TtoN_1_3           1
+
+=== send_Release_TtoN_1_3 ===
+
+   Number of wires:                403
+   Number of wire bits:           1445
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $and                            5
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $ne                             3
+
+=== send_Release_TtoN_1_2 ===
+
+   Number of wires:                403
+   Number of wire bits:           1445
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $and                            5
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $ne                             3
+
+=== send_Release_TtoN_1_1 ===
+
+   Number of wires:                403
+   Number of wire bits:           1445
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $and                            5
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $ne                             3
+
+=== send_Release_TtoN_1 ===
+
+   Number of wires:                403
+   Number of wire bits:           1445
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $and                            5
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $ne                             3
+
+=== send_Release_BtoN_3 ===
+
+   Number of wires:                402
+   Number of wire bits:           1442
+   Number of public wires:         391
+   Number of public wire bits:    1431
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $and                            5
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $ne                             3
+
+=== send_Release_BtoN_2 ===
+
+   Number of wires:                402
+   Number of wire bits:           1442
+   Number of public wires:         391
+   Number of public wire bits:    1431
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $and                            5
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $ne                             3
+
+=== send_Release_BtoN_1 ===
+
+   Number of wires:                402
+   Number of wire bits:           1442
+   Number of public wires:         391
+   Number of public wire bits:    1431
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $and                            5
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $ne                             3
+
+=== send_Release_BtoN ===
+
+   Number of wires:                402
+   Number of wire bits:           1442
+   Number of public wires:         391
+   Number of public wire bits:    1431
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $and                            5
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $ne                             3
+
+=== send_AcquirePerm_toT_3 ===
+
+   Number of wires:                401
+   Number of wire bits:           1443
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $eq                             2
+     $mux                            6
+     $ne                             3
+
+=== send_AcquirePerm_toT_2 ===
+
+   Number of wires:                401
+   Number of wire bits:           1443
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $eq                             2
+     $mux                            6
+     $ne                             3
+
+=== send_AcquirePerm_toT_1 ===
+
+   Number of wires:                401
+   Number of wire bits:           1443
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $eq                             2
+     $mux                            6
+     $ne                             3
+
+=== send_AcquirePerm_toT ===
+
+   Number of wires:                401
+   Number of wire bits:           1443
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $eq                             2
+     $mux                            6
+     $ne                             3
+
+=== send_AcquireBlock_toT_3 ===
+
+   Number of wires:                401
+   Number of wire bits:           1443
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+     $ne                             3
+
+=== send_AcquireBlock_toT_2 ===
+
+   Number of wires:                401
+   Number of wire bits:           1443
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+     $ne                             3
+
+=== send_AcquireBlock_toT_1 ===
+
+   Number of wires:                401
+   Number of wire bits:           1443
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+     $ne                             3
+
+=== send_AcquireBlock_toT ===
+
+   Number of wires:                401
+   Number of wire bits:           1443
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+     $ne                             3
+
+=== send_AcquireBlock_toB_3 ===
+
+   Number of wires:                401
+   Number of wire bits:           1442
+   Number of public wires:         392
+   Number of public wire bits:    1433
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+     $ne                             3
+
+=== send_AcquireBlock_toB_2 ===
+
+   Number of wires:                401
+   Number of wire bits:           1442
+   Number of public wires:         392
+   Number of public wire bits:    1433
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+     $ne                             3
+
+=== send_AcquireBlock_toB_1 ===
+
+   Number of wires:                401
+   Number of wire bits:           1442
+   Number of public wires:         392
+   Number of public wire bits:    1433
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+     $ne                             3
+
+=== send_AcquireBlock_toB ===
+
+   Number of wires:                401
+   Number of wire bits:           1442
+   Number of public wires:         392
+   Number of public wire bits:    1433
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+     $ne                             3
+
+=== respond_Probe_NtoN_3 ===
+
+   Number of wires:                405
+   Number of wire bits:           1447
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $and                            4
+     $eq                             4
+     $logic_not                      2
+     $mux                            8
+     $ne                             1
+     $or                             2
+
+=== respond_Probe_NtoN_2 ===
+
+   Number of wires:                405
+   Number of wire bits:           1447
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $and                            4
+     $eq                             4
+     $logic_not                      2
+     $mux                            8
+     $ne                             1
+     $or                             2
+
+=== respond_Probe_NtoN_1 ===
+
+   Number of wires:                405
+   Number of wire bits:           1447
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $and                            4
+     $eq                             4
+     $logic_not                      2
+     $mux                            8
+     $ne                             1
+     $or                             2
+
+=== respond_Probe_NtoN ===
+
+   Number of wires:                405
+   Number of wire bits:           1447
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $and                            4
+     $eq                             4
+     $logic_not                      2
+     $mux                            8
+     $ne                             1
+     $or                             2
+
+=== respond_ProbePerm_BtoN_3 ===
+
+   Number of wires:                401
+   Number of wire bits:           1443
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            4
+     $eq                             3
+     $logic_not                      1
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbePerm_BtoN_2 ===
+
+   Number of wires:                401
+   Number of wire bits:           1443
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            4
+     $eq                             3
+     $logic_not                      1
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbePerm_BtoN_1 ===
+
+   Number of wires:                401
+   Number of wire bits:           1443
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            4
+     $eq                             3
+     $logic_not                      1
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbePerm_BtoN ===
+
+   Number of wires:                401
+   Number of wire bits:           1443
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            4
+     $eq                             3
+     $logic_not                      1
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_toB_2_3 ===
+
+   Number of wires:                400
+   Number of wire bits:           1444
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             3
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_toB_2_2 ===
+
+   Number of wires:                400
+   Number of wire bits:           1444
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             3
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_toB_2_1 ===
+
+   Number of wires:                400
+   Number of wire bits:           1444
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             3
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_toB_2 ===
+
+   Number of wires:                400
+   Number of wire bits:           1444
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             3
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_toB_1_3 ===
+
+   Number of wires:                400
+   Number of wire bits:           1444
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             3
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_toB_1_2 ===
+
+   Number of wires:                400
+   Number of wire bits:           1444
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             3
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_toB_1_1 ===
+
+   Number of wires:                400
+   Number of wire bits:           1444
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             3
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_toB_1 ===
+
+   Number of wires:                400
+   Number of wire bits:           1444
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             3
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_TtoN_2_3 ===
+
+   Number of wires:                402
+   Number of wire bits:           1446
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            4
+     $eq                             3
+     $logic_not                      1
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_TtoN_2_2 ===
+
+   Number of wires:                402
+   Number of wire bits:           1446
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            4
+     $eq                             3
+     $logic_not                      1
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_TtoN_2_1 ===
+
+   Number of wires:                402
+   Number of wire bits:           1446
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            4
+     $eq                             3
+     $logic_not                      1
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_TtoN_2 ===
+
+   Number of wires:                402
+   Number of wire bits:           1446
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            4
+     $eq                             3
+     $logic_not                      1
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_TtoN_1_3 ===
+
+   Number of wires:                402
+   Number of wire bits:           1446
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            4
+     $eq                             3
+     $logic_not                      1
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_TtoN_1_2 ===
+
+   Number of wires:                402
+   Number of wire bits:           1446
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            4
+     $eq                             3
+     $logic_not                      1
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_TtoN_1_1 ===
+
+   Number of wires:                402
+   Number of wire bits:           1446
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            4
+     $eq                             3
+     $logic_not                      1
+     $mux                            8
+     $ne                             1
+
+=== respond_ProbeBlock_TtoN_1 ===
+
+   Number of wires:                402
+   Number of wire bits:           1446
+   Number of public wires:         393
+   Number of public wire bits:    1437
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            4
+     $eq                             3
+     $logic_not                      1
+     $mux                            8
+     $ne                             1
+
+=== respond_Grant_toT_3 ===
+
+   Number of wires:                398
+   Number of wire bits:           1443
+   Number of public wires:         393
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            2
+     $eq                             3
+     $mux                           10
+
+=== respond_Grant_toT_2 ===
+
+   Number of wires:                398
+   Number of wire bits:           1443
+   Number of public wires:         393
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            2
+     $eq                             3
+     $mux                           10
+
+=== respond_Grant_toT_1 ===
+
+   Number of wires:                398
+   Number of wire bits:           1443
+   Number of public wires:         393
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            2
+     $eq                             3
+     $mux                           10
+
+=== respond_Grant_toT ===
+
+   Number of wires:                398
+   Number of wire bits:           1443
+   Number of public wires:         393
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            2
+     $eq                             3
+     $mux                           10
+
+=== respond_GrantData_toT_3 ===
+
+   Number of wires:                398
+   Number of wire bits:           1443
+   Number of public wires:         393
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            2
+     $eq                             3
+     $mux                           10
+
+=== respond_GrantData_toT_2 ===
+
+   Number of wires:                398
+   Number of wire bits:           1443
+   Number of public wires:         393
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            2
+     $eq                             3
+     $mux                           10
+
+=== respond_GrantData_toT_1 ===
+
+   Number of wires:                398
+   Number of wire bits:           1443
+   Number of public wires:         393
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            2
+     $eq                             3
+     $mux                           10
+
+=== respond_GrantData_toT ===
+
+   Number of wires:                398
+   Number of wire bits:           1443
+   Number of public wires:         393
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            2
+     $eq                             3
+     $mux                           10
+
+=== respond_GrantData_toB_3 ===
+
+   Number of wires:                398
+   Number of wire bits:           1443
+   Number of public wires:         393
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            2
+     $eq                             3
+     $mux                           10
+
+=== respond_GrantData_toB_2 ===
+
+   Number of wires:                398
+   Number of wire bits:           1443
+   Number of public wires:         393
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            2
+     $eq                             3
+     $mux                           10
+
+=== respond_GrantData_toB_1 ===
+
+   Number of wires:                398
+   Number of wire bits:           1443
+   Number of public wires:         393
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            2
+     $eq                             3
+     $mux                           10
+
+=== respond_GrantData_toB ===
+
+   Number of wires:                398
+   Number of wire bits:           1443
+   Number of public wires:         393
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            2
+     $eq                             3
+     $mux                           10
+
+=== receive_ReleaseAck_3 ===
+
+   Number of wires:                390
+   Number of wire bits:           1420
+   Number of public wires:         387
+   Number of public wire bits:    1417
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             2
+     $mux                            4
+
+=== receive_ReleaseAck_2 ===
+
+   Number of wires:                390
+   Number of wire bits:           1420
+   Number of public wires:         387
+   Number of public wire bits:    1417
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             2
+     $mux                            4
+
+=== receive_ReleaseAck_1 ===
+
+   Number of wires:                390
+   Number of wire bits:           1420
+   Number of public wires:         387
+   Number of public wire bits:    1417
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             2
+     $mux                            4
+
+=== receive_ReleaseAck ===
+
+   Number of wires:                390
+   Number of wire bits:           1420
+   Number of public wires:         387
+   Number of public wire bits:    1417
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             2
+     $mux                            4
+
+=== Ln_send_Release_5_1 ===
+
+   Number of wires:                418
+   Number of wire bits:           1481
+   Number of public wires:         404
+   Number of public wire bits:    1467
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $and                            7
+     $eq                             3
+     $mux                           18
+     $ne                             6
+     $or                             1
+
+=== Ln_send_Release_5 ===
+
+   Number of wires:                418
+   Number of wire bits:           1481
+   Number of public wires:         404
+   Number of public wire bits:    1467
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $and                            7
+     $eq                             3
+     $mux                           18
+     $ne                             6
+     $or                             1
+
+=== Ln_send_Release_4_1 ===
+
+   Number of wires:                424
+   Number of wire bits:           1496
+   Number of public wires:         408
+   Number of public wire bits:    1480
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 37
+     $and                            7
+     $eq                             4
+     $mux                           18
+     $ne                             6
+     $or                             2
+
+=== Ln_send_Release_4 ===
+
+   Number of wires:                424
+   Number of wire bits:           1496
+   Number of public wires:         408
+   Number of public wire bits:    1480
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 37
+     $and                            7
+     $eq                             4
+     $mux                           18
+     $ne                             6
+     $or                             2
+
+=== Ln_receive_Release_2_2 ===
+
+   Number of wires:                397
+   Number of wire bits:           1439
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             3
+     $mux                            8
+     $or                             1
+
+=== Ln_receive_Release_2 ===
+
+   Number of wires:                397
+   Number of wire bits:           1439
+   Number of public wires:         392
+   Number of public wire bits:    1434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             3
+     $mux                            8
+     $or                             1
+
+=== Ln_receive_Release_1_2 ===
+
+   Number of wires:                396
+   Number of wire bits:           1439
+   Number of public wires:         393
+   Number of public wire bits:    1436
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             2
+     $mux                           10
+
+=== Ln_receive_Release_1 ===
+
+   Number of wires:                396
+   Number of wire bits:           1439
+   Number of public wires:         393
+   Number of public wire bits:    1436
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             2
+     $mux                           10
+
+=== Ln_receive_ProbeAck_3_2 ===
+
+   Number of wires:                392
+   Number of wire bits:           1424
+   Number of public wires:         389
+   Number of public wire bits:    1421
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            1
+     $eq                             2
+     $mux                            8
+
+=== Ln_receive_ProbeAck_3 ===
+
+   Number of wires:                392
+   Number of wire bits:           1424
+   Number of public wires:         389
+   Number of public wire bits:    1421
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            1
+     $eq                             2
+     $mux                            8
+
+=== Ln_receive_ProbeAck_2_2 ===
+
+   Number of wires:                392
+   Number of wire bits:           1424
+   Number of public wires:         389
+   Number of public wire bits:    1421
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            1
+     $eq                             2
+     $mux                            8
+
+=== Ln_receive_ProbeAck_2 ===
+
+   Number of wires:                392
+   Number of wire bits:           1424
+   Number of public wires:         389
+   Number of public wire bits:    1421
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            1
+     $eq                             2
+     $mux                            8
+
+=== Ln_receive_ProbeAck_1_2 ===
+
+   Number of wires:                393
+   Number of wire bits:           1424
+   Number of public wires:         388
+   Number of public wire bits:    1419
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            1
+     $eq                             3
+     $mux                            6
+     $or                             1
+
+=== Ln_receive_ProbeAck_1 ===
+
+   Number of wires:                393
+   Number of wire bits:           1424
+   Number of public wires:         388
+   Number of public wire bits:    1419
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            1
+     $eq                             3
+     $mux                            6
+     $or                             1
+
+=== Ln_receive_ProbeAckData_2_2 ===
+
+   Number of wires:                392
+   Number of wire bits:           1424
+   Number of public wires:         389
+   Number of public wire bits:    1421
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            1
+     $eq                             2
+     $mux                            8
+
+=== Ln_receive_ProbeAckData_2 ===
+
+   Number of wires:                392
+   Number of wire bits:           1424
+   Number of public wires:         389
+   Number of public wire bits:    1421
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            1
+     $eq                             2
+     $mux                            8
+
+=== Ln_receive_ProbeAckData_1_2 ===
+
+   Number of wires:                392
+   Number of wire bits:           1424
+   Number of public wires:         389
+   Number of public wire bits:    1421
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            1
+     $eq                             2
+     $mux                            8
+
+=== Ln_receive_ProbeAckData_1 ===
+
+   Number of wires:                392
+   Number of wire bits:           1424
+   Number of public wires:         389
+   Number of public wire bits:    1421
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            1
+     $eq                             2
+     $mux                            8
+
+=== Ln_receive_GrantAck_2 ===
+
+   Number of wires:                388
+   Number of wire bits:           1418
+   Number of public wires:         387
+   Number of public wire bits:    1417
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Ln_receive_GrantAck ===
+
+   Number of wires:                388
+   Number of wire bits:           1418
+   Number of public wires:         387
+   Number of public wire bits:    1417
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Ln_receive_AcquirePerm_6_3 ===
+
+   Number of wires:                418
+   Number of wire bits:           1481
+   Number of public wires:         401
+   Number of public wire bits:    1464
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $and                            7
+     $eq                             4
+     $mux                           18
+     $ne                             6
+
+=== Ln_receive_AcquirePerm_6_2 ===
+
+   Number of wires:                418
+   Number of wire bits:           1481
+   Number of public wires:         401
+   Number of public wire bits:    1464
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $and                            7
+     $eq                             4
+     $mux                           18
+     $ne                             6
+
+=== Ln_receive_AcquirePerm_6_1 ===
+
+   Number of wires:                418
+   Number of wire bits:           1481
+   Number of public wires:         401
+   Number of public wire bits:    1464
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $and                            7
+     $eq                             4
+     $mux                           18
+     $ne                             6
+
+=== Ln_receive_AcquirePerm_6 ===
+
+   Number of wires:                418
+   Number of wire bits:           1481
+   Number of public wires:         401
+   Number of public wire bits:    1464
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $and                            7
+     $eq                             4
+     $mux                           18
+     $ne                             6
+
+=== Ln_receive_AcquirePerm_3_3 ===
+
+   Number of wires:                408
+   Number of wire bits:           1460
+   Number of public wires:         398
+   Number of public wire bits:    1450
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $and                            5
+     $eq                             3
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquirePerm_3_2 ===
+
+   Number of wires:                408
+   Number of wire bits:           1460
+   Number of public wires:         398
+   Number of public wire bits:    1450
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $and                            5
+     $eq                             3
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquirePerm_3_1 ===
+
+   Number of wires:                408
+   Number of wire bits:           1460
+   Number of public wires:         398
+   Number of public wire bits:    1450
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $and                            5
+     $eq                             3
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquirePerm_3 ===
+
+   Number of wires:                408
+   Number of wire bits:           1460
+   Number of public wires:         398
+   Number of public wire bits:    1450
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $and                            5
+     $eq                             3
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquirePerm_2_3 ===
+
+   Number of wires:                411
+   Number of wire bits:           1456
+   Number of public wires:         397
+   Number of public wire bits:    1442
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 29
+     $and                            8
+     $eq                             2
+     $logic_not                      2
+     $mux                           12
+     $ne                             5
+
+=== Ln_receive_AcquirePerm_2_2 ===
+
+   Number of wires:                411
+   Number of wire bits:           1456
+   Number of public wires:         397
+   Number of public wire bits:    1442
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 29
+     $and                            8
+     $eq                             2
+     $logic_not                      2
+     $mux                           12
+     $ne                             5
+
+=== Ln_receive_AcquirePerm_2_1 ===
+
+   Number of wires:                411
+   Number of wire bits:           1456
+   Number of public wires:         397
+   Number of public wire bits:    1442
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 29
+     $and                            8
+     $eq                             2
+     $logic_not                      2
+     $mux                           12
+     $ne                             5
+
+=== Ln_receive_AcquirePerm_2 ===
+
+   Number of wires:                411
+   Number of wire bits:           1456
+   Number of public wires:         397
+   Number of public wire bits:    1442
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 29
+     $and                            8
+     $eq                             2
+     $logic_not                      2
+     $mux                           12
+     $ne                             5
+
+=== Ln_receive_AcquirePerm_1_3 ===
+
+   Number of wires:                412
+   Number of wire bits:           1459
+   Number of public wires:         398
+   Number of public wire bits:    1445
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 29
+     $and                            8
+     $eq                             3
+     $logic_not                      1
+     $mux                           12
+     $ne                             5
+
+=== Ln_receive_AcquirePerm_1_2 ===
+
+   Number of wires:                412
+   Number of wire bits:           1459
+   Number of public wires:         398
+   Number of public wire bits:    1445
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 29
+     $and                            8
+     $eq                             3
+     $logic_not                      1
+     $mux                           12
+     $ne                             5
+
+=== Ln_receive_AcquirePerm_1_1 ===
+
+   Number of wires:                412
+   Number of wire bits:           1459
+   Number of public wires:         398
+   Number of public wire bits:    1445
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 29
+     $and                            8
+     $eq                             3
+     $logic_not                      1
+     $mux                           12
+     $ne                             5
+
+=== Ln_receive_AcquirePerm_1 ===
+
+   Number of wires:                412
+   Number of wire bits:           1459
+   Number of public wires:         398
+   Number of public wire bits:    1445
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 29
+     $and                            8
+     $eq                             3
+     $logic_not                      1
+     $mux                           12
+     $ne                             5
+
+=== Ln_receive_AcquireBlock_8_3 ===
+
+   Number of wires:                407
+   Number of wire bits:           1452
+   Number of public wires:         396
+   Number of public wire bits:    1441
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                            6
+     $eq                             4
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquireBlock_8_2 ===
+
+   Number of wires:                407
+   Number of wire bits:           1452
+   Number of public wires:         396
+   Number of public wire bits:    1441
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                            6
+     $eq                             4
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquireBlock_8_1 ===
+
+   Number of wires:                407
+   Number of wire bits:           1452
+   Number of public wires:         396
+   Number of public wire bits:    1441
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                            6
+     $eq                             4
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquireBlock_8 ===
+
+   Number of wires:                407
+   Number of wire bits:           1452
+   Number of public wires:         396
+   Number of public wire bits:    1441
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                            6
+     $eq                             4
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquireBlock_7_3 ===
+
+   Number of wires:                410
+   Number of wire bits:           1462
+   Number of public wires:         398
+   Number of public wire bits:    1450
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                            6
+     $eq                             4
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquireBlock_7_2 ===
+
+   Number of wires:                410
+   Number of wire bits:           1462
+   Number of public wires:         398
+   Number of public wire bits:    1450
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                            6
+     $eq                             4
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquireBlock_7_1 ===
+
+   Number of wires:                410
+   Number of wire bits:           1462
+   Number of public wires:         398
+   Number of public wire bits:    1450
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                            6
+     $eq                             4
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquireBlock_7 ===
+
+   Number of wires:                410
+   Number of wire bits:           1462
+   Number of public wires:         398
+   Number of public wire bits:    1450
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                            6
+     $eq                             4
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquireBlock_6_3 ===
+
+   Number of wires:                413
+   Number of wire bits:           1458
+   Number of public wires:         397
+   Number of public wire bits:    1442
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 31
+     $and                            9
+     $eq                             3
+     $logic_not                      2
+     $mux                           12
+     $ne                             5
+
+=== Ln_receive_AcquireBlock_6_2 ===
+
+   Number of wires:                413
+   Number of wire bits:           1458
+   Number of public wires:         397
+   Number of public wire bits:    1442
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 31
+     $and                            9
+     $eq                             3
+     $logic_not                      2
+     $mux                           12
+     $ne                             5
+
+=== Ln_receive_AcquireBlock_6_1 ===
+
+   Number of wires:                413
+   Number of wire bits:           1458
+   Number of public wires:         397
+   Number of public wire bits:    1442
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 31
+     $and                            9
+     $eq                             3
+     $logic_not                      2
+     $mux                           12
+     $ne                             5
+
+=== Ln_receive_AcquireBlock_6 ===
+
+   Number of wires:                413
+   Number of wire bits:           1458
+   Number of public wires:         397
+   Number of public wire bits:    1442
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 31
+     $and                            9
+     $eq                             3
+     $logic_not                      2
+     $mux                           12
+     $ne                             5
+
+=== Ln_receive_AcquireBlock_3_3 ===
+
+   Number of wires:                404
+   Number of wire bits:           1446
+   Number of public wires:         393
+   Number of public wire bits:    1435
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                            6
+     $eq                             4
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquireBlock_3_2 ===
+
+   Number of wires:                404
+   Number of wire bits:           1446
+   Number of public wires:         393
+   Number of public wire bits:    1435
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                            6
+     $eq                             4
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquireBlock_3_1 ===
+
+   Number of wires:                404
+   Number of wire bits:           1446
+   Number of public wires:         393
+   Number of public wire bits:    1435
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                            6
+     $eq                             4
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquireBlock_3 ===
+
+   Number of wires:                404
+   Number of wire bits:           1446
+   Number of public wires:         393
+   Number of public wire bits:    1435
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                            6
+     $eq                             4
+     $mux                            9
+     $ne                             3
+
+=== Ln_receive_AcquireBlock_2_3 ===
+
+   Number of wires:                404
+   Number of wire bits:           1444
+   Number of public wires:         391
+   Number of public wire bits:    1431
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 23
+     $and                            5
+     $eq                             4
+     $mux                           10
+     $ne                             3
+     $or                             1
+
+=== Ln_receive_AcquireBlock_2_2 ===
+
+   Number of wires:                404
+   Number of wire bits:           1444
+   Number of public wires:         391
+   Number of public wire bits:    1431
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 23
+     $and                            5
+     $eq                             4
+     $mux                           10
+     $ne                             3
+     $or                             1
+
+=== Ln_receive_AcquireBlock_2_1 ===
+
+   Number of wires:                404
+   Number of wire bits:           1444
+   Number of public wires:         391
+   Number of public wire bits:    1431
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 23
+     $and                            5
+     $eq                             4
+     $mux                           10
+     $ne                             3
+     $or                             1
+
+=== Ln_receive_AcquireBlock_2 ===
+
+   Number of wires:                404
+   Number of wire bits:           1444
+   Number of public wires:         391
+   Number of public wire bits:    1431
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 23
+     $and                            5
+     $eq                             4
+     $mux                           10
+     $ne                             3
+     $or                             1
+
+=== L3_send_release_2 ===
+
+   Number of wires:                391
+   Number of wire bits:           1416
+   Number of public wires:         389
+   Number of public wire bits:    1414
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            2
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+
+=== L3_receive_AcquirePerm_1 ===
+
+   Number of wires:                389
+   Number of wire bits:           1414
+   Number of public wires:         386
+   Number of public wire bits:    1411
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            2
+
+=== L3_receive_AcquirePerm ===
+
+   Number of wires:                389
+   Number of wire bits:           1414
+   Number of public wires:         386
+   Number of public wire bits:    1411
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            2
+
+=== L3_receive_AcquireBlock_1 ===
+
+   Number of wires:                389
+   Number of wire bits:           1414
+   Number of public wires:         386
+   Number of public wire bits:    1411
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            2
+
+=== L3_receive_AcquireBlock ===
+
+   Number of wires:                389
+   Number of wire bits:           1414
+   Number of public wires:         386
+   Number of public wire bits:    1411
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            2
+
+=== Init ===
+
+   Number of wires:                385
+   Number of wire bits:           1409
+   Number of public wires:         385
+   Number of public wire bits:    1409
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     $mux                           25
+
+=== design hierarchy ===
+
+   system                            1
+     Init                            1
+     L3_receive_AcquireBlock         1
+     L3_receive_AcquireBlock_1       1
+     L3_receive_AcquirePerm          1
+     L3_receive_AcquirePerm_1        1
+     L3_send_release_2               4
+     Ln_receive_AcquireBlock_2       1
+     Ln_receive_AcquireBlock_2_1      1
+     Ln_receive_AcquireBlock_2_2      1
+     Ln_receive_AcquireBlock_2_3      1
+     Ln_receive_AcquireBlock_3       1
+     Ln_receive_AcquireBlock_3_1      1
+     Ln_receive_AcquireBlock_3_2      1
+     Ln_receive_AcquireBlock_3_3      1
+     Ln_receive_AcquireBlock_6       1
+     Ln_receive_AcquireBlock_6_1      1
+     Ln_receive_AcquireBlock_6_2      1
+     Ln_receive_AcquireBlock_6_3      1
+     Ln_receive_AcquireBlock_7       1
+     Ln_receive_AcquireBlock_7_1      1
+     Ln_receive_AcquireBlock_7_2      1
+     Ln_receive_AcquireBlock_7_3      1
+     Ln_receive_AcquireBlock_8       1
+     Ln_receive_AcquireBlock_8_1      1
+     Ln_receive_AcquireBlock_8_2      1
+     Ln_receive_AcquireBlock_8_3      1
+     Ln_receive_AcquirePerm_1        1
+     Ln_receive_AcquirePerm_1_1      1
+     Ln_receive_AcquirePerm_1_2      1
+     Ln_receive_AcquirePerm_1_3      1
+     Ln_receive_AcquirePerm_2        1
+     Ln_receive_AcquirePerm_2_1      1
+     Ln_receive_AcquirePerm_2_2      1
+     Ln_receive_AcquirePerm_2_3      1
+     Ln_receive_AcquirePerm_3        1
+     Ln_receive_AcquirePerm_3_1      1
+     Ln_receive_AcquirePerm_3_2      1
+     Ln_receive_AcquirePerm_3_3      1
+     Ln_receive_AcquirePerm_6        1
+     Ln_receive_AcquirePerm_6_1      1
+     Ln_receive_AcquirePerm_6_2      1
+     Ln_receive_AcquirePerm_6_3      1
+     Ln_receive_GrantAck             2
+     Ln_receive_GrantAck_2           2
+     Ln_receive_ProbeAckData_1       2
+     Ln_receive_ProbeAckData_1_2      2
+     Ln_receive_ProbeAckData_2       2
+     Ln_receive_ProbeAckData_2_2      2
+     Ln_receive_ProbeAck_1           2
+     Ln_receive_ProbeAck_1_2         2
+     Ln_receive_ProbeAck_2           2
+     Ln_receive_ProbeAck_2_2         2
+     Ln_receive_ProbeAck_3           2
+     Ln_receive_ProbeAck_3_2         2
+     Ln_receive_Release_1            2
+     Ln_receive_Release_1_2          2
+     Ln_receive_Release_2            2
+     Ln_receive_Release_2_2          2
+     Ln_send_Release_4               2
+     Ln_send_Release_4_1             2
+     Ln_send_Release_5               2
+     Ln_send_Release_5_1             2
+     receive_ReleaseAck              1
+     receive_ReleaseAck_1            1
+     receive_ReleaseAck_2            1
+     receive_ReleaseAck_3            1
+     respond_GrantData_toB           1
+     respond_GrantData_toB_1         1
+     respond_GrantData_toB_2         1
+     respond_GrantData_toB_3         1
+     respond_GrantData_toT           1
+     respond_GrantData_toT_1         1
+     respond_GrantData_toT_2         1
+     respond_GrantData_toT_3         1
+     respond_Grant_toT               1
+     respond_Grant_toT_1             1
+     respond_Grant_toT_2             1
+     respond_Grant_toT_3             1
+     respond_ProbeBlock_TtoN_1       1
+     respond_ProbeBlock_TtoN_1_1      1
+     respond_ProbeBlock_TtoN_1_2      1
+     respond_ProbeBlock_TtoN_1_3      1
+     respond_ProbeBlock_TtoN_2       1
+     respond_ProbeBlock_TtoN_2_1      1
+     respond_ProbeBlock_TtoN_2_2      1
+     respond_ProbeBlock_TtoN_2_3      1
+     respond_ProbeBlock_toB_1        1
+     respond_ProbeBlock_toB_1_1      1
+     respond_ProbeBlock_toB_1_2      1
+     respond_ProbeBlock_toB_1_3      1
+     respond_ProbeBlock_toB_2        1
+     respond_ProbeBlock_toB_2_1      1
+     respond_ProbeBlock_toB_2_2      1
+     respond_ProbeBlock_toB_2_3      1
+     respond_ProbePerm_BtoN          1
+     respond_ProbePerm_BtoN_1        1
+     respond_ProbePerm_BtoN_2        1
+     respond_ProbePerm_BtoN_3        1
+     respond_Probe_NtoN              1
+     respond_Probe_NtoN_1            1
+     respond_Probe_NtoN_2            1
+     respond_Probe_NtoN_3            1
+     send_AcquireBlock_toB           1
+     send_AcquireBlock_toB_1         1
+     send_AcquireBlock_toB_2         1
+     send_AcquireBlock_toB_3         1
+     send_AcquireBlock_toT           1
+     send_AcquireBlock_toT_1         1
+     send_AcquireBlock_toT_2         1
+     send_AcquireBlock_toT_3         1
+     send_AcquirePerm_toT            1
+     send_AcquirePerm_toT_1          1
+     send_AcquirePerm_toT_2          1
+     send_AcquirePerm_toT_3          1
+     send_Release_BtoN               1
+     send_Release_BtoN_1             1
+     send_Release_BtoN_2             1
+     send_Release_BtoN_3             1
+     send_Release_TtoN_1             1
+     send_Release_TtoN_1_1           1
+     send_Release_TtoN_1_2           1
+     send_Release_TtoN_1_3           1
+
+   Number of wires:             142470
+   Number of wire bits:         517333
+   Number of public wires:      140430
+   Number of public wire bits:  513245
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              30841
+     $and                          573
+     $anyinit                      193
+     $anyseq                         1
+     $assert                         1
+     $assume                         2
+     $eq                           541
+     $ff                             1
+     $initstate                      1
+     $logic_and                      1
+     $logic_not                     86
+     $mux                        29131
+     $ne                           276
+     $not                            2
+     $or                            32
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module Init.
+Creating SMT-LIBv2 representation of module L3_receive_AcquireBlock.
+Creating SMT-LIBv2 representation of module L3_receive_AcquireBlock_1.
+Creating SMT-LIBv2 representation of module L3_receive_AcquirePerm.
+Creating SMT-LIBv2 representation of module L3_receive_AcquirePerm_1.
+Creating SMT-LIBv2 representation of module L3_send_release_2.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_2.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_2_1.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_2_3.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_2_2.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_2_3.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_3.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_3_1.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_3_2.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_3_3.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_6.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_6_1.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_6_2.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_6_3.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_7.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_7_1.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_7_2.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_7_3.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_8.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_8_1.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_8_2.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquireBlock_8_3.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_1.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_1_1.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_1_2.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_1_3.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_2.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_2_1.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_2_2.
+Creating SMT-LIBv2 representation of module send_AcquirePerm_toT_3.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_3.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_3_1.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_3_2.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_3_3.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_6.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_6_1.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_6_2.
+Creating SMT-LIBv2 representation of module Ln_receive_AcquirePerm_6_3.
+Creating SMT-LIBv2 representation of module Ln_receive_GrantAck.
+Creating SMT-LIBv2 representation of module Ln_receive_GrantAck_2.
+Creating SMT-LIBv2 representation of module Ln_receive_ProbeAckData_1.
+Creating SMT-LIBv2 representation of module Ln_receive_ProbeAckData_1_2.
+Creating SMT-LIBv2 representation of module Ln_receive_ProbeAckData_2.
+Creating SMT-LIBv2 representation of module Ln_receive_ProbeAckData_2_2.
+Creating SMT-LIBv2 representation of module Ln_receive_ProbeAck_1.
+Creating SMT-LIBv2 representation of module Ln_receive_ProbeAck_1_2.
+Creating SMT-LIBv2 representation of module Ln_receive_ProbeAck_2.
+Creating SMT-LIBv2 representation of module Ln_receive_ProbeAck_2_2.
+Creating SMT-LIBv2 representation of module Ln_receive_ProbeAck_3.
+Creating SMT-LIBv2 representation of module Ln_receive_ProbeAck_3_2.
+Creating SMT-LIBv2 representation of module Ln_receive_Release_1.
+Creating SMT-LIBv2 representation of module Ln_receive_Release_1_2.
+Creating SMT-LIBv2 representation of module Ln_receive_Release_2.
+Creating SMT-LIBv2 representation of module Ln_receive_Release_2_2.
+Creating SMT-LIBv2 representation of module Ln_send_Release_4.
+Creating SMT-LIBv2 representation of module Ln_send_Release_4_1.
+Creating SMT-LIBv2 representation of module Ln_send_Release_5.
+Creating SMT-LIBv2 representation of module Ln_send_Release_5_1.
+Creating SMT-LIBv2 representation of module receive_ReleaseAck.
+Creating SMT-LIBv2 representation of module receive_ReleaseAck_1.
+Creating SMT-LIBv2 representation of module receive_ReleaseAck_2.
+Creating SMT-LIBv2 representation of module receive_ReleaseAck_3.
+Creating SMT-LIBv2 representation of module respond_GrantData_toB.
+Creating SMT-LIBv2 representation of module respond_GrantData_toB_1.
+Creating SMT-LIBv2 representation of module respond_GrantData_toB_2.
+Creating SMT-LIBv2 representation of module respond_GrantData_toB_3.
+Creating SMT-LIBv2 representation of module respond_GrantData_toT.
+Creating SMT-LIBv2 representation of module respond_GrantData_toT_1.
+Creating SMT-LIBv2 representation of module respond_GrantData_toT_2.
+Creating SMT-LIBv2 representation of module respond_GrantData_toT_3.
+Creating SMT-LIBv2 representation of module respond_Grant_toT.
+Creating SMT-LIBv2 representation of module respond_Grant_toT_1.
+Creating SMT-LIBv2 representation of module respond_Grant_toT_2.
+Creating SMT-LIBv2 representation of module respond_Grant_toT_3.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_TtoN_1.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_TtoN_1_1.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_TtoN_1_2.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_TtoN_1_3.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_TtoN_2.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_TtoN_2_1.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_TtoN_2_2.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_TtoN_2_3.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_toB_1.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_toB_1_1.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_toB_1_2.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_toB_1_3.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_toB_2.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_toB_2_1.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_toB_2_2.
+Creating SMT-LIBv2 representation of module respond_ProbeBlock_toB_2_3.
+Creating SMT-LIBv2 representation of module respond_ProbePerm_BtoN.
+Creating SMT-LIBv2 representation of module respond_ProbePerm_BtoN_1.
+Creating SMT-LIBv2 representation of module respond_ProbePerm_BtoN_2.
+Creating SMT-LIBv2 representation of module respond_ProbePerm_BtoN_3.
+Creating SMT-LIBv2 representation of module respond_Probe_NtoN.
+Creating SMT-LIBv2 representation of module respond_Probe_NtoN_1.
+Creating SMT-LIBv2 representation of module respond_Probe_NtoN_2.
+Creating SMT-LIBv2 representation of module respond_Probe_NtoN_3.
+Creating SMT-LIBv2 representation of module send_AcquireBlock_toB.
+Creating SMT-LIBv2 representation of module send_AcquireBlock_toB_1.
+Creating SMT-LIBv2 representation of module send_AcquireBlock_toB_2.
+Creating SMT-LIBv2 representation of module send_AcquireBlock_toB_3.
+Creating SMT-LIBv2 representation of module send_AcquireBlock_toT.
+Creating SMT-LIBv2 representation of module send_AcquireBlock_toT_1.
+Creating SMT-LIBv2 representation of module send_AcquireBlock_toT_2.
+Creating SMT-LIBv2 representation of module send_AcquireBlock_toT_3.
+Creating SMT-LIBv2 representation of module send_AcquirePerm_toT.
+Creating SMT-LIBv2 representation of module send_AcquirePerm_toT_1.
+Creating SMT-LIBv2 representation of module send_AcquirePerm_toT_2.
+Creating SMT-LIBv2 representation of module send_Release_BtoN.
+Creating SMT-LIBv2 representation of module send_Release_BtoN_1.
+Creating SMT-LIBv2 representation of module send_Release_BtoN_2.
+Creating SMT-LIBv2 representation of module send_Release_BtoN_3.
+Creating SMT-LIBv2 representation of module send_Release_TtoN_1.
+Creating SMT-LIBv2 representation of module send_Release_TtoN_1_1.
+Creating SMT-LIBv2 representation of module send_Release_TtoN_1_2.
+Creating SMT-LIBv2 representation of module send_Release_TtoN_1_3.
+Creating SMT-LIBv2 representation of module system.
+
+End of script. Logfile hash: bdfc98f91c, CPU: user 2.07s system 0.32s, MEM: 263.89 MB peak
+Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 74% 2x write_smt2 (1 sec), 21% 2x read_ilang (0 sec), ...

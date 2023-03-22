@@ -1,0 +1,2733 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \NI_Remote_GetX_PutX
+Used module:     \NI_Remote_GetX_Nak_Home_1
+Used module:     \NI_Remote_GetX_Nak_Home
+Used module:     \NI_Remote_GetX_Nak_3
+Used module:     \NI_Remote_GetX_Nak_2
+Used module:     \NI_Remote_GetX_Nak_1
+Used module:     \NI_Remote_GetX_Nak
+Used module:     \NI_Local_GetX_PutX_11_1
+Used module:     \NI_Local_GetX_PutX_11
+Used module:     \NI_Local_GetX_PutX_10_3
+Used module:     \Store_Home_1
+Used module:     \NI_Local_GetX_PutX_10_2
+Used module:     \NI_Local_GetX_PutX_10_1
+Used module:     \NI_Local_GetX_PutX_10
+Used module:     \NI_Local_GetX_PutX_10_Home_1
+Used module:     \NI_Local_GetX_PutX_10_Home
+Used module:     \NI_Local_GetX_PutX_9_1
+Used module:     \NI_Local_GetX_PutX_9
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get_3
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get_2
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get_1
+Used module:     \Store_Home
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get
+Used module:     \NI_Local_GetX_PutX_8_3
+Used module:     \NI_Local_GetX_PutX_8_2
+Used module:     \NI_Local_GetX_PutX_8_1
+Used module:     \NI_Local_GetX_PutX_8
+Used module:     \NI_Local_GetX_PutX_8_Home_NODE_Get_1
+Used module:     \NI_Local_GetX_PutX_8_Home_NODE_Get
+Used module:     \NI_Local_GetX_PutX_8_Home_1
+Used module:     \NI_Local_GetX_PutX_8_Home
+Used module:     \NI_Local_GetX_PutX_7_NODE_Get_1
+Used module:     \Store_3
+Used module:     \NI_Local_GetX_PutX_7_NODE_Get
+Used module:     \NI_Local_GetX_PutX_7_1
+Used module:     \NI_Local_GetX_PutX_7
+Used module:     \NI_Local_GetX_PutX_6_1
+Used module:     \NI_Local_GetX_PutX_6
+Used module:     \NI_Local_GetX_PutX_5_1
+Used module:     \NI_Local_GetX_PutX_5
+Used module:     \NI_Local_GetX_PutX_4_1
+Used module:     \NI_Local_GetX_PutX_4
+Used module:     \NI_Local_GetX_PutX_3_1
+Used module:     \Store_2
+Used module:     \NI_Local_GetX_PutX_3
+Used module:     \NI_Local_GetX_PutX_2_1
+Used module:     \NI_Local_GetX_PutX_2
+Used module:     \NI_Local_GetX_PutX_1_1
+Used module:     \NI_Local_GetX_PutX_1
+Used module:     \NI_Local_GetX_GetX_1
+Used module:     \NI_Local_GetX_GetX
+Used module:     \NI_Local_GetX_Nak_1
+Used module:     \NI_Local_GetX_Nak
+Used module:     \NI_Remote_Get_Put_Home_1
+Used module:     \Store_1
+Used module:     \NI_Remote_Get_Put_Home
+Used module:     \NI_Remote_Get_Put_3
+Used module:     \NI_Remote_Get_Put_2
+Used module:     \NI_Remote_Get_Put_1
+Used module:     \NI_Remote_Get_Put
+Used module:     \NI_Remote_Get_Nak_Home_1
+Used module:     \NI_Remote_Get_Nak_Home
+Used module:     \NI_Remote_Get_Nak_3
+Used module:     \NI_Remote_Get_Nak_2
+Used module:     \NI_Remote_Get_Nak_1
+Used module:     \Store
+Used module:     \NI_Remote_Get_Nak
+Used module:     \NI_Local_Get_Put_Dirty_1
+Used module:     \NI_Local_Get_Put_Dirty
+Used module:     \NI_Local_Get_Put_1
+Used module:     \NI_Local_Get_Put
+Used module:     \NI_Local_Get_Put_Head_1
+Used module:     \NI_Local_Get_Put_Head
+Used module:     \NI_Local_Get_Get_1
+Used module:     \NI_Local_Get_Get
+Used module:     \NI_Local_Get_Nak_1
+Used module:     \Init_3
+Used module:     \NI_Local_Get_Nak
+Used module:     \NI_Nak_Clear
+Used module:     \NI_Nak_Home
+Used module:     \NI_Nak_1
+Used module:     \NI_Nak
+Used module:     \PI_Local_Replace
+Used module:     \PI_Remote_Replace_1
+Used module:     \PI_Remote_Replace
+Used module:     \PI_Local_PutX
+Used module:     \PI_Remote_PutX_1
+Used module:     \Init_2
+Used module:     \PI_Remote_PutX
+Used module:     \PI_Local_GetX_PutX
+Used module:     \PI_Local_GetX_PutX_HeadVld
+Used module:     \PI_Local_GetX_GetX
+Used module:     \PI_Remote_GetX_1
+Used module:     \PI_Remote_GetX
+Used module:     \NI_Replace_Home
+Used module:     \PI_Local_Get_Put
+Used module:     \NI_Replace_1
+Used module:     \NI_Replace
+Used module:     \NI_ShWb
+Used module:     \NI_FAck
+Used module:     \NI_Wb
+Used module:     \NI_InvAck_3_1
+Used module:     \NI_InvAck_3
+Used module:     \NI_InvAck_2_1
+Used module:     \NI_InvAck_2
+Used module:     \NI_InvAck_1_1
+Used module:     \PI_Local_Get_Get
+Used module:     \NI_InvAck_1
+Used module:     \NI_InvAck_exists_3
+Used module:     \NI_InvAck_exists_2
+Used module:     \NI_InvAck_exists_1
+Used module:     \NI_InvAck_exists
+Used module:     \NI_InvAck_exists_Home_1
+Used module:     \NI_InvAck_exists_Home
+Used module:     \NI_Inv_1
+Used module:     \NI_Inv
+Used module:     \NI_Remote_PutX_1
+Used module:     \PI_Remote_Get_1
+Used module:     \NI_Remote_PutX
+Used module:     \NI_Local_PutXAcksDone
+Used module:     \NI_Remote_Put_1
+Used module:     \NI_Remote_Put
+Used module:     \NI_Local_Put
+Used module:     \NI_Remote_GetX_PutX_Home_1
+Used module:     \NI_Remote_GetX_PutX_Home
+Used module:     \NI_Remote_GetX_PutX_3
+Used module:     \NI_Remote_GetX_PutX_2
+Used module:     \NI_Remote_GetX_PutX_1
+Used module:     \PI_Remote_Get
+Used module:     \Init_1
+Used module:     \Init
+
+2.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \NI_Remote_GetX_PutX
+Used module:     \NI_Remote_GetX_Nak_Home_1
+Used module:     \NI_Remote_GetX_Nak_Home
+Used module:     \NI_Remote_GetX_Nak_3
+Used module:     \NI_Remote_GetX_Nak_2
+Used module:     \NI_Remote_GetX_Nak_1
+Used module:     \NI_Remote_GetX_Nak
+Used module:     \NI_Local_GetX_PutX_11_1
+Used module:     \NI_Local_GetX_PutX_11
+Used module:     \NI_Local_GetX_PutX_10_3
+Used module:     \Store_Home_1
+Used module:     \NI_Local_GetX_PutX_10_2
+Used module:     \NI_Local_GetX_PutX_10_1
+Used module:     \NI_Local_GetX_PutX_10
+Used module:     \NI_Local_GetX_PutX_10_Home_1
+Used module:     \NI_Local_GetX_PutX_10_Home
+Used module:     \NI_Local_GetX_PutX_9_1
+Used module:     \NI_Local_GetX_PutX_9
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get_3
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get_2
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get_1
+Used module:     \Store_Home
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get
+Used module:     \NI_Local_GetX_PutX_8_3
+Used module:     \NI_Local_GetX_PutX_8_2
+Used module:     \NI_Local_GetX_PutX_8_1
+Used module:     \NI_Local_GetX_PutX_8
+Used module:     \NI_Local_GetX_PutX_8_Home_NODE_Get_1
+Used module:     \NI_Local_GetX_PutX_8_Home_NODE_Get
+Used module:     \NI_Local_GetX_PutX_8_Home_1
+Used module:     \NI_Local_GetX_PutX_8_Home
+Used module:     \NI_Local_GetX_PutX_7_NODE_Get_1
+Used module:     \Store_3
+Used module:     \NI_Local_GetX_PutX_7_NODE_Get
+Used module:     \NI_Local_GetX_PutX_7_1
+Used module:     \NI_Local_GetX_PutX_7
+Used module:     \NI_Local_GetX_PutX_6_1
+Used module:     \NI_Local_GetX_PutX_6
+Used module:     \NI_Local_GetX_PutX_5_1
+Used module:     \NI_Local_GetX_PutX_5
+Used module:     \NI_Local_GetX_PutX_4_1
+Used module:     \NI_Local_GetX_PutX_4
+Used module:     \NI_Local_GetX_PutX_3_1
+Used module:     \Store_2
+Used module:     \NI_Local_GetX_PutX_3
+Used module:     \NI_Local_GetX_PutX_2_1
+Used module:     \NI_Local_GetX_PutX_2
+Used module:     \NI_Local_GetX_PutX_1_1
+Used module:     \NI_Local_GetX_PutX_1
+Used module:     \NI_Local_GetX_GetX_1
+Used module:     \NI_Local_GetX_GetX
+Used module:     \NI_Local_GetX_Nak_1
+Used module:     \NI_Local_GetX_Nak
+Used module:     \NI_Remote_Get_Put_Home_1
+Used module:     \Store_1
+Used module:     \NI_Remote_Get_Put_Home
+Used module:     \NI_Remote_Get_Put_3
+Used module:     \NI_Remote_Get_Put_2
+Used module:     \NI_Remote_Get_Put_1
+Used module:     \NI_Remote_Get_Put
+Used module:     \NI_Remote_Get_Nak_Home_1
+Used module:     \NI_Remote_Get_Nak_Home
+Used module:     \NI_Remote_Get_Nak_3
+Used module:     \NI_Remote_Get_Nak_2
+Used module:     \NI_Remote_Get_Nak_1
+Used module:     \Store
+Used module:     \NI_Remote_Get_Nak
+Used module:     \NI_Local_Get_Put_Dirty_1
+Used module:     \NI_Local_Get_Put_Dirty
+Used module:     \NI_Local_Get_Put_1
+Used module:     \NI_Local_Get_Put
+Used module:     \NI_Local_Get_Put_Head_1
+Used module:     \NI_Local_Get_Put_Head
+Used module:     \NI_Local_Get_Get_1
+Used module:     \NI_Local_Get_Get
+Used module:     \NI_Local_Get_Nak_1
+Used module:     \Init_3
+Used module:     \NI_Local_Get_Nak
+Used module:     \NI_Nak_Clear
+Used module:     \NI_Nak_Home
+Used module:     \NI_Nak_1
+Used module:     \NI_Nak
+Used module:     \PI_Local_Replace
+Used module:     \PI_Remote_Replace_1
+Used module:     \PI_Remote_Replace
+Used module:     \PI_Local_PutX
+Used module:     \PI_Remote_PutX_1
+Used module:     \Init_2
+Used module:     \PI_Remote_PutX
+Used module:     \PI_Local_GetX_PutX
+Used module:     \PI_Local_GetX_PutX_HeadVld
+Used module:     \PI_Local_GetX_GetX
+Used module:     \PI_Remote_GetX_1
+Used module:     \PI_Remote_GetX
+Used module:     \NI_Replace_Home
+Used module:     \PI_Local_Get_Put
+Used module:     \NI_Replace_1
+Used module:     \NI_Replace
+Used module:     \NI_ShWb
+Used module:     \NI_FAck
+Used module:     \NI_Wb
+Used module:     \NI_InvAck_3_1
+Used module:     \NI_InvAck_3
+Used module:     \NI_InvAck_2_1
+Used module:     \NI_InvAck_2
+Used module:     \NI_InvAck_1_1
+Used module:     \PI_Local_Get_Get
+Used module:     \NI_InvAck_1
+Used module:     \NI_InvAck_exists_3
+Used module:     \NI_InvAck_exists_2
+Used module:     \NI_InvAck_exists_1
+Used module:     \NI_InvAck_exists
+Used module:     \NI_InvAck_exists_Home_1
+Used module:     \NI_InvAck_exists_Home
+Used module:     \NI_Inv_1
+Used module:     \NI_Inv
+Used module:     \NI_Remote_PutX_1
+Used module:     \PI_Remote_Get_1
+Used module:     \NI_Remote_PutX
+Used module:     \NI_Local_PutXAcksDone
+Used module:     \NI_Remote_Put_1
+Used module:     \NI_Remote_Put
+Used module:     \NI_Local_Put
+Used module:     \NI_Remote_GetX_PutX_Home_1
+Used module:     \NI_Remote_GetX_PutX_Home
+Used module:     \NI_Remote_GetX_PutX_3
+Used module:     \NI_Remote_GetX_PutX_2
+Used module:     \NI_Remote_GetX_PutX_1
+Used module:     \PI_Remote_Get
+Used module:     \Init_1
+Used module:     \Init
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== system ===
+
+   Number of wires:              26414
+   Number of wire bits:          42221
+   Number of public wires:       26065
+   Number of public wire bits:   41712
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               9066
+     $and                           42
+     $anyinit                       67
+     $anyseq                         1
+     $assert                         1
+     $assume                         2
+     $eq                           146
+     $ff                             1
+     $initstate                      1
+     $logic_and                      1
+     $logic_not                      6
+     $mux                         8648
+     $not                           19
+     Init                            1
+     Init_1                          1
+     Init_2                          1
+     Init_3                          1
+     NI_FAck                         1
+     NI_Inv                          1
+     NI_InvAck_1                     1
+     NI_InvAck_1_1                   1
+     NI_InvAck_2                     1
+     NI_InvAck_2_1                   1
+     NI_InvAck_3                     1
+     NI_InvAck_3_1                   1
+     NI_InvAck_exists                1
+     NI_InvAck_exists_1              1
+     NI_InvAck_exists_2              1
+     NI_InvAck_exists_3              1
+     NI_InvAck_exists_Home           1
+     NI_InvAck_exists_Home_1         1
+     NI_Inv_1                        1
+     NI_Local_GetX_GetX              1
+     NI_Local_GetX_GetX_1            1
+     NI_Local_GetX_Nak               1
+     NI_Local_GetX_Nak_1             1
+     NI_Local_GetX_PutX_1            1
+     NI_Local_GetX_PutX_10           1
+     NI_Local_GetX_PutX_10_1         1
+     NI_Local_GetX_PutX_10_2         1
+     NI_Local_GetX_PutX_10_3         1
+     NI_Local_GetX_PutX_10_Home      1
+     NI_Local_GetX_PutX_10_Home_1      1
+     NI_Local_GetX_PutX_11           1
+     NI_Local_GetX_PutX_11_1         1
+     NI_Local_GetX_PutX_1_1          1
+     NI_Local_GetX_PutX_2            1
+     NI_Local_GetX_PutX_2_1          1
+     NI_Local_GetX_PutX_3            1
+     NI_Local_GetX_PutX_3_1          1
+     NI_Local_GetX_PutX_4            1
+     NI_Local_GetX_PutX_4_1          1
+     NI_Local_GetX_PutX_5            1
+     NI_Local_GetX_PutX_5_1          1
+     NI_Local_GetX_PutX_6            1
+     NI_Local_GetX_PutX_6_1          1
+     NI_Local_GetX_PutX_7            1
+     NI_Local_GetX_PutX_7_1          1
+     NI_Local_GetX_PutX_7_NODE_Get      1
+     NI_Local_GetX_PutX_7_NODE_Get_1      1
+     NI_Local_GetX_PutX_8            1
+     NI_Local_GetX_PutX_8_1          1
+     NI_Local_GetX_PutX_8_2          1
+     NI_Local_GetX_PutX_8_3          1
+     NI_Local_GetX_PutX_8_Home       1
+     NI_Local_GetX_PutX_8_Home_1      1
+     NI_Local_GetX_PutX_8_Home_NODE_Get      1
+     NI_Local_GetX_PutX_8_Home_NODE_Get_1      1
+     NI_Local_GetX_PutX_8_NODE_Get      1
+     NI_Local_GetX_PutX_8_NODE_Get_1      1
+     NI_Local_GetX_PutX_8_NODE_Get_2      1
+     NI_Local_GetX_PutX_8_NODE_Get_3      1
+     NI_Local_GetX_PutX_9            1
+     NI_Local_GetX_PutX_9_1          1
+     NI_Local_Get_Get                1
+     NI_Local_Get_Get_1              1
+     NI_Local_Get_Nak                1
+     NI_Local_Get_Nak_1              1
+     NI_Local_Get_Put                1
+     NI_Local_Get_Put_1              1
+     NI_Local_Get_Put_Dirty          1
+     NI_Local_Get_Put_Dirty_1        1
+     NI_Local_Get_Put_Head           1
+     NI_Local_Get_Put_Head_1         1
+     NI_Local_Put                    1
+     NI_Local_PutXAcksDone           1
+     NI_Nak                          1
+     NI_Nak_1                        1
+     NI_Nak_Clear                    1
+     NI_Nak_Home                     1
+     NI_Remote_GetX_Nak              1
+     NI_Remote_GetX_Nak_1            1
+     NI_Remote_GetX_Nak_2            1
+     NI_Remote_GetX_Nak_3            1
+     NI_Remote_GetX_Nak_Home         1
+     NI_Remote_GetX_Nak_Home_1       1
+     NI_Remote_GetX_PutX             1
+     NI_Remote_GetX_PutX_1           1
+     NI_Remote_GetX_PutX_2           1
+     NI_Remote_GetX_PutX_3           1
+     NI_Remote_GetX_PutX_Home        1
+     NI_Remote_GetX_PutX_Home_1      1
+     NI_Remote_Get_Nak               1
+     NI_Remote_Get_Nak_1             1
+     NI_Remote_Get_Nak_2             1
+     NI_Remote_Get_Nak_3             1
+     NI_Remote_Get_Nak_Home          1
+     NI_Remote_Get_Nak_Home_1        1
+     NI_Remote_Get_Put               1
+     NI_Remote_Get_Put_1             1
+     NI_Remote_Get_Put_2             1
+     NI_Remote_Get_Put_3             1
+     NI_Remote_Get_Put_Home          1
+     NI_Remote_Get_Put_Home_1        1
+     NI_Remote_Put                   1
+     NI_Remote_PutX                  1
+     NI_Remote_PutX_1                1
+     NI_Remote_Put_1                 1
+     NI_Replace                      1
+     NI_Replace_1                    1
+     NI_Replace_Home                 1
+     NI_ShWb                         1
+     NI_Wb                           1
+     PI_Local_GetX_GetX              1
+     PI_Local_GetX_PutX              1
+     PI_Local_GetX_PutX_HeadVld      1
+     PI_Local_Get_Get                1
+     PI_Local_Get_Put                1
+     PI_Local_PutX                   1
+     PI_Local_Replace                1
+     PI_Remote_Get                   1
+     PI_Remote_GetX                  1
+     PI_Remote_GetX_1                1
+     PI_Remote_Get_1                 1
+     PI_Remote_PutX                  1
+     PI_Remote_PutX_1                1
+     PI_Remote_Replace               1
+     PI_Remote_Replace_1             1
+     Store                           1
+     Store_1                         1
+     Store_2                         1
+     Store_3                         1
+     Store_Home                      1
+     Store_Home_1                    1
+
+=== Store_Home_1 ===
+
+   Number of wires:                136
+   Number of wire bits:            218
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_Home ===
+
+   Number of wires:                136
+   Number of wire bits:            218
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_3 ===
+
+   Number of wires:                136
+   Number of wire bits:            218
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_2 ===
+
+   Number of wires:                136
+   Number of wire bits:            218
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_1 ===
+
+   Number of wires:                136
+   Number of wire bits:            218
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store ===
+
+   Number of wires:                136
+   Number of wire bits:            218
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== PI_Remote_Replace_1 ===
+
+   Number of wires:                138
+   Number of wire bits:            219
+   Number of public wires:         135
+   Number of public wire bits:     216
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            3
+     $or                             1
+
+=== PI_Remote_Replace ===
+
+   Number of wires:                138
+   Number of wire bits:            219
+   Number of public wires:         135
+   Number of public wire bits:     216
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            3
+     $or                             1
+
+=== PI_Remote_PutX_1 ===
+
+   Number of wires:                141
+   Number of wire bits:            224
+   Number of public wires:         138
+   Number of public wire bits:     221
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            9
+     $or                             1
+
+=== PI_Remote_PutX ===
+
+   Number of wires:                141
+   Number of wire bits:            224
+   Number of public wires:         138
+   Number of public wire bits:     221
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            9
+     $or                             1
+
+=== PI_Remote_Get_1 ===
+
+   Number of wires:                139
+   Number of wire bits:            222
+   Number of public wires:         136
+   Number of public wire bits:     219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $logic_not                      2
+     $mux                            5
+     $or                             1
+
+=== PI_Remote_GetX_1 ===
+
+   Number of wires:                139
+   Number of wire bits:            222
+   Number of public wires:         136
+   Number of public wire bits:     219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $logic_not                      2
+     $mux                            5
+     $or                             1
+
+=== PI_Remote_GetX ===
+
+   Number of wires:                139
+   Number of wire bits:            222
+   Number of public wires:         136
+   Number of public wire bits:     219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $logic_not                      2
+     $mux                            5
+     $or                             1
+
+=== PI_Remote_Get ===
+
+   Number of wires:                139
+   Number of wire bits:            222
+   Number of public wires:         136
+   Number of public wire bits:     219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $logic_not                      2
+     $mux                            5
+     $or                             1
+
+=== PI_Local_Replace ===
+
+   Number of wires:                138
+   Number of wire bits:            219
+   Number of public wires:         135
+   Number of public wire bits:     216
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            4
+
+=== PI_Local_PutX ===
+
+   Number of wires:                141
+   Number of wire bits:            224
+   Number of public wires:         138
+   Number of public wire bits:     221
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            8
+
+=== PI_Local_Get_Put ===
+
+   Number of wires:                146
+   Number of wire bits:            228
+   Number of public wires:         139
+   Number of public wire bits:     221
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     $and                            3
+     $logic_not                      2
+     $mux                            8
+     $not                            2
+     $or                             1
+
+=== PI_Local_Get_Get ===
+
+   Number of wires:                144
+   Number of wire bits:            228
+   Number of public wires:         138
+   Number of public wire bits:     222
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     $and                            3
+     $logic_not                      2
+     $mux                            9
+     $not                            1
+     $or                             1
+
+=== PI_Local_GetX_PutX_HeadVld ===
+
+   Number of wires:                172
+   Number of wire bits:            260
+   Number of public wires:         155
+   Number of public wire bits:     243
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 57
+     $and                            8
+     $eq                             3
+     $logic_not                      2
+     $mux                           35
+     $not                            3
+     $or                             6
+
+=== PI_Local_GetX_PutX ===
+
+   Number of wires:                150
+   Number of wire bits:            233
+   Number of public wires:         139
+   Number of public wire bits:     222
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 23
+     $and                            4
+     $eq                             1
+     $logic_not                      2
+     $mux                           10
+     $not                            3
+     $or                             3
+
+=== PI_Local_GetX_GetX ===
+
+   Number of wires:                146
+   Number of wire bits:            230
+   Number of public wires:         138
+   Number of public wire bits:     222
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $and                            3
+     $eq                             1
+     $logic_not                      2
+     $mux                            9
+     $not                            1
+     $or                             2
+
+=== NI_Wb ===
+
+   Number of wires:                137
+   Number of wire bits:            218
+   Number of public wires:         137
+   Number of public wire bits:     218
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $mux                            7
+
+=== NI_ShWb ===
+
+   Number of wires:                156
+   Number of wire bits:            238
+   Number of public wires:         150
+   Number of public wire bits:     232
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 34
+     $and                            2
+     $eq                             3
+     $mux                           21
+     $not                            1
+     $or                             7
+
+=== NI_Replace_Home ===
+
+   Number of wires:                138
+   Number of wire bits:            218
+   Number of public wires:         138
+   Number of public wire bits:     218
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $mux                            7
+
+=== NI_Replace_1 ===
+
+   Number of wires:                138
+   Number of wire bits:            218
+   Number of public wires:         138
+   Number of public wire bits:     218
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $mux                            7
+
+=== NI_Replace ===
+
+   Number of wires:                138
+   Number of wire bits:            218
+   Number of public wires:         138
+   Number of public wire bits:     218
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $mux                            7
+
+=== NI_Remote_Put_1 ===
+
+   Number of wires:                140
+   Number of wire bits:            224
+   Number of public wires:         139
+   Number of public wire bits:     223
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $eq                             1
+     $mux                            9
+
+=== NI_Remote_PutX_1 ===
+
+   Number of wires:                141
+   Number of wire bits:            226
+   Number of public wires:         138
+   Number of public wire bits:     223
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             2
+     $mux                           10
+
+=== NI_Remote_PutX ===
+
+   Number of wires:                141
+   Number of wire bits:            226
+   Number of public wires:         138
+   Number of public wire bits:     223
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             2
+     $mux                           10
+
+=== NI_Remote_Put ===
+
+   Number of wires:                140
+   Number of wire bits:            224
+   Number of public wires:         139
+   Number of public wire bits:     223
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $eq                             1
+     $mux                            9
+
+=== NI_Remote_Get_Put_Home_1 ===
+
+   Number of wires:                143
+   Number of wire bits:            227
+   Number of public wires:         136
+   Number of public wire bits:     220
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            3
+     $eq                             3
+     $mux                            6
+     $not                            1
+
+=== NI_Remote_Get_Put_Home ===
+
+   Number of wires:                143
+   Number of wire bits:            227
+   Number of public wires:         136
+   Number of public wire bits:     220
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            3
+     $eq                             3
+     $mux                            6
+     $not                            1
+
+=== NI_Remote_Get_Put_3 ===
+
+   Number of wires:                132
+   Number of wire bits:            212
+   Number of public wires:         132
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== NI_Remote_Get_Put_2 ===
+
+   Number of wires:                147
+   Number of wire bits:            234
+   Number of public wires:         140
+   Number of public wire bits:     227
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $and                            3
+     $eq                             3
+     $mux                           14
+     $not                            1
+
+=== NI_Remote_Get_Put_1 ===
+
+   Number of wires:                147
+   Number of wire bits:            234
+   Number of public wires:         140
+   Number of public wire bits:     227
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $and                            3
+     $eq                             3
+     $mux                           14
+     $not                            1
+
+=== NI_Remote_Get_Put ===
+
+   Number of wires:                132
+   Number of wire bits:            212
+   Number of public wires:         132
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== NI_Remote_Get_Nak_Home_1 ===
+
+   Number of wires:                142
+   Number of wire bits:            224
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $mux                            3
+     $ne                             1
+     $not                            1
+     $or                             1
+
+=== NI_Remote_Get_Nak_Home ===
+
+   Number of wires:                142
+   Number of wire bits:            224
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $mux                            3
+     $ne                             1
+     $not                            1
+     $or                             1
+
+=== NI_Remote_Get_Nak_3 ===
+
+   Number of wires:                132
+   Number of wire bits:            212
+   Number of public wires:         132
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== NI_Remote_Get_Nak_2 ===
+
+   Number of wires:                142
+   Number of wire bits:            224
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $mux                            3
+     $ne                             1
+     $not                            1
+     $or                             1
+
+=== NI_Remote_Get_Nak_1 ===
+
+   Number of wires:                142
+   Number of wire bits:            224
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $mux                            3
+     $ne                             1
+     $not                            1
+     $or                             1
+
+=== NI_Remote_Get_Nak ===
+
+   Number of wires:                132
+   Number of wire bits:            212
+   Number of public wires:         132
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== NI_Remote_GetX_PutX_Home_1 ===
+
+   Number of wires:                143
+   Number of wire bits:            227
+   Number of public wires:         136
+   Number of public wire bits:     220
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            3
+     $eq                             3
+     $mux                            6
+     $not                            1
+
+=== NI_Remote_GetX_PutX_Home ===
+
+   Number of wires:                143
+   Number of wire bits:            227
+   Number of public wires:         136
+   Number of public wire bits:     220
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            3
+     $eq                             3
+     $mux                            6
+     $not                            1
+
+=== NI_Remote_GetX_PutX_3 ===
+
+   Number of wires:                132
+   Number of wire bits:            212
+   Number of public wires:         132
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== NI_Remote_GetX_PutX_2 ===
+
+   Number of wires:                146
+   Number of wire bits:            232
+   Number of public wires:         139
+   Number of public wire bits:     225
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $and                            3
+     $eq                             3
+     $mux                           12
+     $not                            1
+
+=== NI_Remote_GetX_PutX_1 ===
+
+   Number of wires:                146
+   Number of wire bits:            232
+   Number of public wires:         139
+   Number of public wire bits:     225
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $and                            3
+     $eq                             3
+     $mux                           12
+     $not                            1
+
+=== NI_Remote_GetX_PutX ===
+
+   Number of wires:                132
+   Number of wire bits:            212
+   Number of public wires:         132
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== NI_Remote_GetX_Nak_Home_1 ===
+
+   Number of wires:                142
+   Number of wire bits:            224
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $mux                            3
+     $ne                             1
+     $not                            1
+     $or                             1
+
+=== NI_Remote_GetX_Nak_Home ===
+
+   Number of wires:                142
+   Number of wire bits:            224
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $mux                            3
+     $ne                             1
+     $not                            1
+     $or                             1
+
+=== NI_Remote_GetX_Nak_3 ===
+
+   Number of wires:                132
+   Number of wire bits:            212
+   Number of public wires:         132
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== NI_Remote_GetX_Nak_2 ===
+
+   Number of wires:                142
+   Number of wire bits:            224
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $mux                            3
+     $ne                             1
+     $not                            1
+     $or                             1
+
+=== NI_Remote_GetX_Nak_1 ===
+
+   Number of wires:                142
+   Number of wire bits:            224
+   Number of public wires:         135
+   Number of public wire bits:     217
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $mux                            3
+     $ne                             1
+     $not                            1
+     $or                             1
+
+=== NI_Remote_GetX_Nak ===
+
+   Number of wires:                132
+   Number of wire bits:            212
+   Number of public wires:         132
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== NI_Nak_Home ===
+
+   Number of wires:                137
+   Number of wire bits:            220
+   Number of public wires:         136
+   Number of public wire bits:     219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== NI_Nak_Clear ===
+
+   Number of wires:                135
+   Number of wire bits:            215
+   Number of public wires:         135
+   Number of public wire bits:     215
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== NI_Nak_1 ===
+
+   Number of wires:                137
+   Number of wire bits:            220
+   Number of public wires:         136
+   Number of public wire bits:     219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== NI_Nak ===
+
+   Number of wires:                137
+   Number of wire bits:            220
+   Number of public wires:         136
+   Number of public wire bits:     219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== NI_Local_PutXAcksDone ===
+
+   Number of wires:                142
+   Number of wire bits:            227
+   Number of public wires:         141
+   Number of public wire bits:     226
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $eq                             1
+     $mux                           15
+     $or                             1
+
+=== NI_Local_Put ===
+
+   Number of wires:                144
+   Number of wire bits:            229
+   Number of public wires:         143
+   Number of public wire bits:     228
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $eq                             1
+     $mux                           16
+     $or                             1
+
+=== NI_Local_Get_Put_Head_1 ===
+
+   Number of wires:                149
+   Number of wire bits:            232
+   Number of public wires:         140
+   Number of public wire bits:     223
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 23
+     $and                            5
+     $eq                             1
+     $mux                           11
+     $not                            3
+     $or                             3
+
+=== NI_Local_Get_Put_Head ===
+
+   Number of wires:                149
+   Number of wire bits:            232
+   Number of public wires:         140
+   Number of public wire bits:     223
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 23
+     $and                            5
+     $eq                             1
+     $mux                           11
+     $not                            3
+     $or                             3
+
+=== NI_Local_Get_Put_Dirty_1 ===
+
+   Number of wires:                151
+   Number of wire bits:            237
+   Number of public wires:         141
+   Number of public wire bits:     227
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 26
+     $and                            6
+     $eq                             2
+     $mux                           15
+     $not                            2
+     $or                             1
+
+=== NI_Local_Get_Put_Dirty ===
+
+   Number of wires:                151
+   Number of wire bits:            237
+   Number of public wires:         141
+   Number of public wire bits:     227
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 26
+     $and                            6
+     $eq                             2
+     $mux                           15
+     $not                            2
+     $or                             1
+
+=== NI_Local_Get_Put_1 ===
+
+   Number of wires:                148
+   Number of wire bits:            232
+   Number of public wires:         138
+   Number of public wire bits:     222
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $and                            5
+     $eq                             1
+     $mux                            9
+     $not                            4
+     $or                             1
+
+=== NI_Local_Get_Put ===
+
+   Number of wires:                148
+   Number of wire bits:            232
+   Number of public wires:         138
+   Number of public wire bits:     222
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $and                            5
+     $eq                             1
+     $mux                            9
+     $not                            4
+     $or                             1
+
+=== NI_Local_Get_Nak_1 ===
+
+   Number of wires:                150
+   Number of wire bits:            232
+   Number of public wires:         134
+   Number of public wire bits:     216
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $and                            8
+     $eq                             2
+     $mux                            2
+     $ne                             1
+     $not                            3
+     $or                             2
+
+=== NI_Local_Get_Nak ===
+
+   Number of wires:                150
+   Number of wire bits:            232
+   Number of public wires:         134
+   Number of public wire bits:     216
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $and                            8
+     $eq                             2
+     $mux                            2
+     $ne                             1
+     $not                            3
+     $or                             2
+
+=== NI_Local_Get_Get_1 ===
+
+   Number of wires:                149
+   Number of wire bits:            232
+   Number of public wires:         137
+   Number of public wire bits:     220
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $and                            6
+     $eq                             1
+     $mux                            7
+     $ne                             1
+     $not                            3
+     $or                             2
+
+=== NI_Local_Get_Get ===
+
+   Number of wires:                149
+   Number of wire bits:            232
+   Number of public wires:         137
+   Number of public wire bits:     220
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $and                            6
+     $eq                             1
+     $mux                            7
+     $ne                             1
+     $not                            3
+     $or                             2
+
+=== NI_Local_GetX_PutX_9_1 ===
+
+   Number of wires:                169
+   Number of wire bits:            256
+   Number of public wires:         152
+   Number of public wire bits:     239
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 53
+     $and                            9
+     $eq                             2
+     $mux                           32
+     $ne                             1
+     $not                            4
+     $or                             5
+
+=== NI_Local_GetX_PutX_9 ===
+
+   Number of wires:                169
+   Number of wire bits:            256
+   Number of public wires:         152
+   Number of public wire bits:     239
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 53
+     $and                            9
+     $eq                             2
+     $mux                           32
+     $ne                             1
+     $not                            4
+     $or                             5
+
+=== NI_Local_GetX_PutX_8_NODE_Get_3 ===
+
+   Number of wires:                173
+   Number of wire bits:            261
+   Number of public wires:         155
+   Number of public wire bits:     243
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     $and                           12
+     $eq                             4
+     $mux                           35
+     $not                            3
+     $or                             5
+
+=== NI_Local_GetX_PutX_8_NODE_Get_2 ===
+
+   Number of wires:                173
+   Number of wire bits:            261
+   Number of public wires:         155
+   Number of public wire bits:     243
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     $and                           12
+     $eq                             4
+     $mux                           35
+     $not                            3
+     $or                             5
+
+=== NI_Local_GetX_PutX_8_NODE_Get_1 ===
+
+   Number of wires:                173
+   Number of wire bits:            261
+   Number of public wires:         155
+   Number of public wire bits:     243
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     $and                           12
+     $eq                             4
+     $mux                           35
+     $not                            3
+     $or                             5
+
+=== NI_Local_GetX_PutX_8_NODE_Get ===
+
+   Number of wires:                173
+   Number of wire bits:            261
+   Number of public wires:         155
+   Number of public wire bits:     243
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     $and                           12
+     $eq                             4
+     $mux                           35
+     $not                            3
+     $or                             5
+
+=== NI_Local_GetX_PutX_8_Home_NODE_Get_1 ===
+
+   Number of wires:                173
+   Number of wire bits:            261
+   Number of public wires:         155
+   Number of public wire bits:     243
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     $and                           12
+     $eq                             4
+     $mux                           35
+     $not                            3
+     $or                             5
+
+=== NI_Local_GetX_PutX_8_Home_NODE_Get ===
+
+   Number of wires:                173
+   Number of wire bits:            261
+   Number of public wires:         155
+   Number of public wire bits:     243
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     $and                           12
+     $eq                             4
+     $mux                           35
+     $not                            3
+     $or                             5
+
+=== NI_Local_GetX_PutX_8_Home_1 ===
+
+   Number of wires:                172
+   Number of wire bits:            260
+   Number of public wires:         154
+   Number of public wire bits:     242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 57
+     $and                           12
+     $eq                             3
+     $mux                           34
+     $ne                             1
+     $not                            3
+     $or                             4
+
+=== NI_Local_GetX_PutX_8_Home ===
+
+   Number of wires:                172
+   Number of wire bits:            260
+   Number of public wires:         154
+   Number of public wire bits:     242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 57
+     $and                           12
+     $eq                             3
+     $mux                           34
+     $ne                             1
+     $not                            3
+     $or                             4
+
+=== NI_Local_GetX_PutX_8_3 ===
+
+   Number of wires:                172
+   Number of wire bits:            260
+   Number of public wires:         154
+   Number of public wire bits:     242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 57
+     $and                           12
+     $eq                             3
+     $mux                           34
+     $ne                             1
+     $not                            3
+     $or                             4
+
+=== NI_Local_GetX_PutX_8_2 ===
+
+   Number of wires:                172
+   Number of wire bits:            260
+   Number of public wires:         154
+   Number of public wire bits:     242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 57
+     $and                           12
+     $eq                             3
+     $mux                           34
+     $ne                             1
+     $not                            3
+     $or                             4
+
+=== NI_Local_GetX_PutX_8_1 ===
+
+   Number of wires:                172
+   Number of wire bits:            260
+   Number of public wires:         154
+   Number of public wire bits:     242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 57
+     $and                           12
+     $eq                             3
+     $mux                           34
+     $ne                             1
+     $not                            3
+     $or                             4
+
+=== NI_Local_GetX_PutX_8 ===
+
+   Number of wires:                172
+   Number of wire bits:            260
+   Number of public wires:         154
+   Number of public wire bits:     242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 57
+     $and                           12
+     $eq                             3
+     $mux                           34
+     $ne                             1
+     $not                            3
+     $or                             4
+
+=== NI_Local_GetX_PutX_7_NODE_Get_1 ===
+
+   Number of wires:                172
+   Number of wire bits:            260
+   Number of public wires:         154
+   Number of public wire bits:     242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 58
+     $and                           10
+     $eq                             3
+     $mux                           35
+     $ne                             1
+     $not                            3
+     $or                             6
+
+=== NI_Local_GetX_PutX_7_NODE_Get ===
+
+   Number of wires:                172
+   Number of wire bits:            260
+   Number of public wires:         154
+   Number of public wire bits:     242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 58
+     $and                           10
+     $eq                             3
+     $mux                           35
+     $ne                             1
+     $not                            3
+     $or                             6
+
+=== NI_Local_GetX_PutX_7_1 ===
+
+   Number of wires:                171
+   Number of wire bits:            259
+   Number of public wires:         153
+   Number of public wire bits:     241
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 56
+     $and                           10
+     $eq                             2
+     $mux                           34
+     $ne                             2
+     $not                            3
+     $or                             5
+
+=== NI_Local_GetX_PutX_7 ===
+
+   Number of wires:                171
+   Number of wire bits:            259
+   Number of public wires:         153
+   Number of public wire bits:     241
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 56
+     $and                           10
+     $eq                             2
+     $mux                           34
+     $ne                             2
+     $not                            3
+     $or                             5
+
+=== NI_Local_GetX_PutX_6_1 ===
+
+   Number of wires:                164
+   Number of wire bits:            249
+   Number of public wires:         149
+   Number of public wire bits:     234
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 46
+     $and                            8
+     $eq                             2
+     $mux                           28
+     $not                            6
+     $or                             2
+
+=== NI_Local_GetX_PutX_6 ===
+
+   Number of wires:                164
+   Number of wire bits:            249
+   Number of public wires:         149
+   Number of public wire bits:     234
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 46
+     $and                            8
+     $eq                             2
+     $mux                           28
+     $not                            6
+     $or                             2
+
+=== NI_Local_GetX_PutX_5_1 ===
+
+   Number of wires:                165
+   Number of wire bits:            250
+   Number of public wires:         149
+   Number of public wire bits:     234
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 47
+     $and                            9
+     $eq                             2
+     $mux                           28
+     $ne                             1
+     $not                            5
+     $or                             2
+
+=== NI_Local_GetX_PutX_5 ===
+
+   Number of wires:                165
+   Number of wire bits:            250
+   Number of public wires:         149
+   Number of public wire bits:     234
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 47
+     $and                            9
+     $eq                             2
+     $mux                           28
+     $ne                             1
+     $not                            5
+     $or                             2
+
+=== NI_Local_GetX_PutX_4_1 ===
+
+   Number of wires:                166
+   Number of wire bits:            251
+   Number of public wires:         150
+   Number of public wire bits:     235
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 49
+     $and                            9
+     $eq                             3
+     $mux                           29
+     $not                            5
+     $or                             3
+
+=== NI_Local_GetX_PutX_4 ===
+
+   Number of wires:                166
+   Number of wire bits:            251
+   Number of public wires:         150
+   Number of public wire bits:     235
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 49
+     $and                            9
+     $eq                             3
+     $mux                           29
+     $not                            5
+     $or                             3
+
+=== NI_Local_GetX_PutX_3_1 ===
+
+   Number of wires:                158
+   Number of wire bits:            243
+   Number of public wires:         148
+   Number of public wire bits:     233
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 40
+     $and                            5
+     $eq                             1
+     $mux                           28
+     $not                            4
+     $or                             2
+
+=== NI_Local_GetX_PutX_3 ===
+
+   Number of wires:                158
+   Number of wire bits:            243
+   Number of public wires:         148
+   Number of public wire bits:     233
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 40
+     $and                            5
+     $eq                             1
+     $mux                           28
+     $not                            4
+     $or                             2
+
+=== NI_Local_GetX_PutX_2_1 ===
+
+   Number of wires:                159
+   Number of wire bits:            244
+   Number of public wires:         148
+   Number of public wire bits:     233
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 41
+     $and                            6
+     $eq                             1
+     $mux                           28
+     $ne                             1
+     $not                            3
+     $or                             2
+
+=== NI_Local_GetX_PutX_2 ===
+
+   Number of wires:                159
+   Number of wire bits:            244
+   Number of public wires:         148
+   Number of public wire bits:     233
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 41
+     $and                            6
+     $eq                             1
+     $mux                           28
+     $ne                             1
+     $not                            3
+     $or                             2
+
+=== NI_Local_GetX_PutX_1_1 ===
+
+   Number of wires:                160
+   Number of wire bits:            245
+   Number of public wires:         149
+   Number of public wire bits:     234
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 43
+     $and                            6
+     $eq                             2
+     $mux                           29
+     $not                            3
+     $or                             3
+
+=== NI_Local_GetX_PutX_11_1 ===
+
+   Number of wires:                156
+   Number of wire bits:            241
+   Number of public wires:         148
+   Number of public wire bits:     233
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 38
+     $and                            5
+     $eq                             2
+     $mux                           28
+     $not                            1
+     $or                             2
+
+=== NI_Local_GetX_PutX_11 ===
+
+   Number of wires:                156
+   Number of wire bits:            241
+   Number of public wires:         148
+   Number of public wire bits:     233
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 38
+     $and                            5
+     $eq                             2
+     $mux                           28
+     $not                            1
+     $or                             2
+
+=== NI_Local_GetX_PutX_10_Home_1 ===
+
+   Number of wires:                170
+   Number of wire bits:            257
+   Number of public wires:         153
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $and                           11
+     $eq                             3
+     $mux                           32
+     $not                            4
+     $or                             4
+
+=== NI_Local_GetX_PutX_10_Home ===
+
+   Number of wires:                170
+   Number of wire bits:            257
+   Number of public wires:         153
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $and                           11
+     $eq                             3
+     $mux                           32
+     $not                            4
+     $or                             4
+
+=== NI_Local_GetX_PutX_10_3 ===
+
+   Number of wires:                170
+   Number of wire bits:            257
+   Number of public wires:         153
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $and                           11
+     $eq                             3
+     $mux                           32
+     $not                            4
+     $or                             4
+
+=== NI_Local_GetX_PutX_10_2 ===
+
+   Number of wires:                170
+   Number of wire bits:            257
+   Number of public wires:         153
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $and                           11
+     $eq                             3
+     $mux                           32
+     $not                            4
+     $or                             4
+
+=== NI_Local_GetX_PutX_10_1 ===
+
+   Number of wires:                170
+   Number of wire bits:            257
+   Number of public wires:         153
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $and                           11
+     $eq                             3
+     $mux                           32
+     $not                            4
+     $or                             4
+
+=== NI_Local_GetX_PutX_10 ===
+
+   Number of wires:                170
+   Number of wire bits:            257
+   Number of public wires:         153
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $and                           11
+     $eq                             3
+     $mux                           32
+     $not                            4
+     $or                             4
+
+=== NI_Local_GetX_PutX_1 ===
+
+   Number of wires:                160
+   Number of wire bits:            245
+   Number of public wires:         149
+   Number of public wire bits:     234
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 43
+     $and                            6
+     $eq                             2
+     $mux                           29
+     $not                            3
+     $or                             3
+
+=== NI_Local_GetX_Nak_1 ===
+
+   Number of wires:                148
+   Number of wire bits:            230
+   Number of public wires:         134
+   Number of public wire bits:     216
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     $and                            7
+     $eq                             2
+     $mux                            2
+     $ne                             1
+     $not                            2
+     $or                             2
+
+=== NI_Local_GetX_Nak ===
+
+   Number of wires:                148
+   Number of wire bits:            230
+   Number of public wires:         134
+   Number of public wire bits:     216
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     $and                            7
+     $eq                             2
+     $mux                            2
+     $ne                             1
+     $not                            2
+     $or                             2
+
+=== NI_Local_GetX_GetX_1 ===
+
+   Number of wires:                147
+   Number of wire bits:            230
+   Number of public wires:         137
+   Number of public wire bits:     220
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $and                            5
+     $eq                             1
+     $mux                            7
+     $ne                             1
+     $not                            2
+     $or                             2
+
+=== NI_Local_GetX_GetX ===
+
+   Number of wires:                147
+   Number of wire bits:            230
+   Number of public wires:         137
+   Number of public wire bits:     220
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $and                            5
+     $eq                             1
+     $mux                            7
+     $ne                             1
+     $not                            2
+     $or                             2
+
+=== NI_Inv_1 ===
+
+   Number of wires:                139
+   Number of wire bits:            221
+   Number of public wires:         137
+   Number of public wire bits:     219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $eq                             2
+     $mux                            6
+     $or                             1
+
+=== NI_InvAck_exists_Home_1 ===
+
+   Number of wires:                139
+   Number of wire bits:            220
+   Number of public wires:         135
+   Number of public wire bits:     216
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $and                            3
+     $eq                             1
+     $mux                            4
+
+=== NI_InvAck_exists_Home ===
+
+   Number of wires:                139
+   Number of wire bits:            220
+   Number of public wires:         135
+   Number of public wire bits:     216
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $and                            3
+     $eq                             1
+     $mux                            4
+
+=== NI_InvAck_exists_3 ===
+
+   Number of wires:                132
+   Number of wire bits:            212
+   Number of public wires:         132
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== NI_InvAck_exists_2 ===
+
+   Number of wires:                139
+   Number of wire bits:            220
+   Number of public wires:         135
+   Number of public wire bits:     216
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $and                            3
+     $eq                             1
+     $mux                            4
+
+=== NI_InvAck_exists_1 ===
+
+   Number of wires:                139
+   Number of wire bits:            220
+   Number of public wires:         135
+   Number of public wire bits:     216
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $and                            3
+     $eq                             1
+     $mux                            4
+
+=== NI_InvAck_exists ===
+
+   Number of wires:                132
+   Number of wire bits:            212
+   Number of public wires:         132
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== NI_InvAck_3_1 ===
+
+   Number of wires:                144
+   Number of wire bits:            225
+   Number of public wires:         137
+   Number of public wire bits:     218
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $and                            5
+     $eq                             1
+     $mux                            6
+     $not                            2
+
+=== NI_InvAck_3 ===
+
+   Number of wires:                144
+   Number of wire bits:            225
+   Number of public wires:         137
+   Number of public wire bits:     218
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $and                            5
+     $eq                             1
+     $mux                            6
+     $not                            2
+
+=== NI_InvAck_2_1 ===
+
+   Number of wires:                145
+   Number of wire bits:            226
+   Number of public wires:         137
+   Number of public wire bits:     218
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            5
+     $eq                             1
+     $mux                            6
+     $not                            3
+
+=== NI_InvAck_2 ===
+
+   Number of wires:                145
+   Number of wire bits:            226
+   Number of public wires:         137
+   Number of public wire bits:     218
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            5
+     $eq                             1
+     $mux                            6
+     $not                            3
+
+=== NI_InvAck_1_1 ===
+
+   Number of wires:                147
+   Number of wire bits:            228
+   Number of public wires:         138
+   Number of public wire bits:     219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $and                            6
+     $eq                             1
+     $mux                            8
+     $not                            3
+
+=== NI_InvAck_1 ===
+
+   Number of wires:                147
+   Number of wire bits:            228
+   Number of public wires:         138
+   Number of public wire bits:     219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $and                            6
+     $eq                             1
+     $mux                            8
+     $not                            3
+
+=== NI_Inv ===
+
+   Number of wires:                139
+   Number of wire bits:            221
+   Number of public wires:         137
+   Number of public wire bits:     219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $eq                             2
+     $mux                            6
+     $or                             1
+
+=== NI_FAck ===
+
+   Number of wires:                140
+   Number of wire bits:            223
+   Number of public wires:         139
+   Number of public wire bits:     222
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $eq                             1
+     $mux                           10
+
+=== Init_3 ===
+
+   Number of wires:                133
+   Number of wire bits:            213
+   Number of public wires:         133
+   Number of public wire bits:     213
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $mux                           48
+     $or                             6
+
+=== Init_2 ===
+
+   Number of wires:                133
+   Number of wire bits:            213
+   Number of public wires:         133
+   Number of public wire bits:     213
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $mux                           48
+     $or                             6
+
+=== Init_1 ===
+
+   Number of wires:                133
+   Number of wire bits:            213
+   Number of public wires:         133
+   Number of public wire bits:     213
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $mux                           48
+     $or                             6
+
+=== Init ===
+
+   Number of wires:                133
+   Number of wire bits:            213
+   Number of public wires:         133
+   Number of public wire bits:     213
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $mux                           48
+     $or                             6
+
+=== design hierarchy ===
+
+   system                            1
+     Init                            1
+     Init_1                          1
+     Init_2                          1
+     Init_3                          1
+     NI_FAck                         1
+     NI_Inv                          1
+     NI_InvAck_1                     1
+     NI_InvAck_1_1                   1
+     NI_InvAck_2                     1
+     NI_InvAck_2_1                   1
+     NI_InvAck_3                     1
+     NI_InvAck_3_1                   1
+     NI_InvAck_exists                1
+     NI_InvAck_exists_1              1
+     NI_InvAck_exists_2              1
+     NI_InvAck_exists_3              1
+     NI_InvAck_exists_Home           1
+     NI_InvAck_exists_Home_1         1
+     NI_Inv_1                        1
+     NI_Local_GetX_GetX              1
+     NI_Local_GetX_GetX_1            1
+     NI_Local_GetX_Nak               1
+     NI_Local_GetX_Nak_1             1
+     NI_Local_GetX_PutX_1            1
+     NI_Local_GetX_PutX_10           1
+     NI_Local_GetX_PutX_10_1         1
+     NI_Local_GetX_PutX_10_2         1
+     NI_Local_GetX_PutX_10_3         1
+     NI_Local_GetX_PutX_10_Home      1
+     NI_Local_GetX_PutX_10_Home_1      1
+     NI_Local_GetX_PutX_11           1
+     NI_Local_GetX_PutX_11_1         1
+     NI_Local_GetX_PutX_1_1          1
+     NI_Local_GetX_PutX_2            1
+     NI_Local_GetX_PutX_2_1          1
+     NI_Local_GetX_PutX_3            1
+     NI_Local_GetX_PutX_3_1          1
+     NI_Local_GetX_PutX_4            1
+     NI_Local_GetX_PutX_4_1          1
+     NI_Local_GetX_PutX_5            1
+     NI_Local_GetX_PutX_5_1          1
+     NI_Local_GetX_PutX_6            1
+     NI_Local_GetX_PutX_6_1          1
+     NI_Local_GetX_PutX_7            1
+     NI_Local_GetX_PutX_7_1          1
+     NI_Local_GetX_PutX_7_NODE_Get      1
+     NI_Local_GetX_PutX_7_NODE_Get_1      1
+     NI_Local_GetX_PutX_8            1
+     NI_Local_GetX_PutX_8_1          1
+     NI_Local_GetX_PutX_8_2          1
+     NI_Local_GetX_PutX_8_3          1
+     NI_Local_GetX_PutX_8_Home       1
+     NI_Local_GetX_PutX_8_Home_1      1
+     NI_Local_GetX_PutX_8_Home_NODE_Get      1
+     NI_Local_GetX_PutX_8_Home_NODE_Get_1      1
+     NI_Local_GetX_PutX_8_NODE_Get      1
+     NI_Local_GetX_PutX_8_NODE_Get_1      1
+     NI_Local_GetX_PutX_8_NODE_Get_2      1
+     NI_Local_GetX_PutX_8_NODE_Get_3      1
+     NI_Local_GetX_PutX_9            1
+     NI_Local_GetX_PutX_9_1          1
+     NI_Local_Get_Get                1
+     NI_Local_Get_Get_1              1
+     NI_Local_Get_Nak                1
+     NI_Local_Get_Nak_1              1
+     NI_Local_Get_Put                1
+     NI_Local_Get_Put_1              1
+     NI_Local_Get_Put_Dirty          1
+     NI_Local_Get_Put_Dirty_1        1
+     NI_Local_Get_Put_Head           1
+     NI_Local_Get_Put_Head_1         1
+     NI_Local_Put                    1
+     NI_Local_PutXAcksDone           1
+     NI_Nak                          1
+     NI_Nak_1                        1
+     NI_Nak_Clear                    1
+     NI_Nak_Home                     1
+     NI_Remote_GetX_Nak              1
+     NI_Remote_GetX_Nak_1            1
+     NI_Remote_GetX_Nak_2            1
+     NI_Remote_GetX_Nak_3            1
+     NI_Remote_GetX_Nak_Home         1
+     NI_Remote_GetX_Nak_Home_1       1
+     NI_Remote_GetX_PutX             1
+     NI_Remote_GetX_PutX_1           1
+     NI_Remote_GetX_PutX_2           1
+     NI_Remote_GetX_PutX_3           1
+     NI_Remote_GetX_PutX_Home        1
+     NI_Remote_GetX_PutX_Home_1      1
+     NI_Remote_Get_Nak               1
+     NI_Remote_Get_Nak_1             1
+     NI_Remote_Get_Nak_2             1
+     NI_Remote_Get_Nak_3             1
+     NI_Remote_Get_Nak_Home          1
+     NI_Remote_Get_Nak_Home_1        1
+     NI_Remote_Get_Put               1
+     NI_Remote_Get_Put_1             1
+     NI_Remote_Get_Put_2             1
+     NI_Remote_Get_Put_3             1
+     NI_Remote_Get_Put_Home          1
+     NI_Remote_Get_Put_Home_1        1
+     NI_Remote_Put                   1
+     NI_Remote_PutX                  1
+     NI_Remote_PutX_1                1
+     NI_Remote_Put_1                 1
+     NI_Replace                      1
+     NI_Replace_1                    1
+     NI_Replace_Home                 1
+     NI_ShWb                         1
+     NI_Wb                           1
+     PI_Local_GetX_GetX              1
+     PI_Local_GetX_PutX              1
+     PI_Local_GetX_PutX_HeadVld      1
+     PI_Local_Get_Get                1
+     PI_Local_Get_Put                1
+     PI_Local_PutX                   1
+     PI_Local_Replace                1
+     PI_Remote_Get                   1
+     PI_Remote_GetX                  1
+     PI_Remote_GetX_1                1
+     PI_Remote_Get_1                 1
+     PI_Remote_PutX                  1
+     PI_Remote_PutX_1                1
+     PI_Remote_Replace               1
+     PI_Remote_Replace_1             1
+     Store                           1
+     Store_1                         1
+     Store_2                         1
+     Store_3                         1
+     Store_Home                      1
+     Store_Home_1                    1
+
+   Number of wires:              45928
+   Number of wire bits:          72687
+   Number of public wires:       44534
+   Number of public wire bits:   71133
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              12191
+     $and                          617
+     $anyinit                       67
+     $anyseq                         1
+     $assert                         1
+     $assume                         2
+     $eq                           352
+     $ff                             1
+     $initstate                      1
+     $logic_and                      1
+     $logic_not                     30
+     $mux                        10618
+     $ne                            34
+     $not                          234
+     $or                           232
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module Init.
+Creating SMT-LIBv2 representation of module Init_1.
+Creating SMT-LIBv2 representation of module Init_2.
+Creating SMT-LIBv2 representation of module Init_3.
+Creating SMT-LIBv2 representation of module NI_FAck.
+Creating SMT-LIBv2 representation of module NI_Inv.
+Creating SMT-LIBv2 representation of module NI_InvAck_1.
+Creating SMT-LIBv2 representation of module NI_InvAck_1_1.
+Creating SMT-LIBv2 representation of module NI_InvAck_2.
+Creating SMT-LIBv2 representation of module NI_InvAck_2_1.
+Creating SMT-LIBv2 representation of module NI_InvAck_3.
+Creating SMT-LIBv2 representation of module NI_InvAck_3_1.
+Creating SMT-LIBv2 representation of module NI_InvAck_exists.
+Creating SMT-LIBv2 representation of module NI_InvAck_exists_1.
+Creating SMT-LIBv2 representation of module NI_InvAck_exists_2.
+Creating SMT-LIBv2 representation of module NI_InvAck_exists_3.
+Creating SMT-LIBv2 representation of module NI_InvAck_exists_Home.
+Creating SMT-LIBv2 representation of module NI_InvAck_exists_Home_1.
+Creating SMT-LIBv2 representation of module NI_Inv_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_GetX.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_GetX_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_Nak.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_Nak_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_10.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_10_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_10_2.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_10_3.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_10_Home.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_10_Home_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_11.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_11_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_1_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_2.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_2_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_3.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_3_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_4.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_4_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_5.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_5_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_6.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_6_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_7.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_7_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_7_NODE_Get.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_7_NODE_Get_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_8.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_8_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_8_2.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_8_3.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_8_Home.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_8_Home_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_8_Home_NODE_Get.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_8_Home_NODE_Get_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_8_NODE_Get.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_8_NODE_Get_1.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_8_NODE_Get_2.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_8_NODE_Get_3.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_9.
+Creating SMT-LIBv2 representation of module NI_Local_GetX_PutX_9_1.
+Creating SMT-LIBv2 representation of module NI_Local_Get_Get.
+Creating SMT-LIBv2 representation of module NI_Local_Get_Get_1.
+Creating SMT-LIBv2 representation of module NI_Local_Get_Nak.
+Creating SMT-LIBv2 representation of module NI_Local_Get_Nak_1.
+Creating SMT-LIBv2 representation of module NI_Local_Get_Put.
+Creating SMT-LIBv2 representation of module NI_Local_Get_Put_1.
+Creating SMT-LIBv2 representation of module NI_Local_Get_Put_Dirty.
+Creating SMT-LIBv2 representation of module NI_Local_Get_Put_Dirty_1.
+Creating SMT-LIBv2 representation of module NI_Local_Get_Put_Head.
+Creating SMT-LIBv2 representation of module NI_Local_Get_Put_Head_1.
+Creating SMT-LIBv2 representation of module NI_Local_Put.
+Creating SMT-LIBv2 representation of module NI_Local_PutXAcksDone.
+Creating SMT-LIBv2 representation of module NI_Nak.
+Creating SMT-LIBv2 representation of module NI_Nak_1.
+Creating SMT-LIBv2 representation of module NI_Nak_Clear.
+Creating SMT-LIBv2 representation of module NI_Nak_Home.
+Creating SMT-LIBv2 representation of module NI_Remote_GetX_Nak.
+Creating SMT-LIBv2 representation of module NI_Remote_GetX_Nak_1.
+Creating SMT-LIBv2 representation of module NI_Remote_GetX_Nak_2.
+Creating SMT-LIBv2 representation of module NI_Remote_GetX_Nak_3.
+Creating SMT-LIBv2 representation of module NI_Remote_GetX_Nak_Home.
+Creating SMT-LIBv2 representation of module NI_Remote_GetX_Nak_Home_1.
+Creating SMT-LIBv2 representation of module NI_Remote_GetX_PutX.
+Creating SMT-LIBv2 representation of module NI_Remote_GetX_PutX_1.
+Creating SMT-LIBv2 representation of module NI_Remote_GetX_PutX_2.
+Creating SMT-LIBv2 representation of module NI_Remote_GetX_PutX_3.
+Creating SMT-LIBv2 representation of module NI_Remote_GetX_PutX_Home.
+Creating SMT-LIBv2 representation of module NI_Remote_GetX_PutX_Home_1.
+Creating SMT-LIBv2 representation of module NI_Remote_Get_Nak.
+Creating SMT-LIBv2 representation of module NI_Remote_Get_Nak_1.
+Creating SMT-LIBv2 representation of module NI_Remote_Get_Nak_2.
+Creating SMT-LIBv2 representation of module NI_Remote_Get_Nak_3.
+Creating SMT-LIBv2 representation of module NI_Remote_Get_Nak_Home.
+Creating SMT-LIBv2 representation of module NI_Remote_Get_Nak_Home_1.
+Creating SMT-LIBv2 representation of module NI_Remote_Get_Put.
+Creating SMT-LIBv2 representation of module NI_Remote_Get_Put_1.
+Creating SMT-LIBv2 representation of module NI_Remote_Get_Put_2.
+Creating SMT-LIBv2 representation of module NI_Remote_Get_Put_3.
+Creating SMT-LIBv2 representation of module NI_Remote_Get_Put_Home.
+Creating SMT-LIBv2 representation of module NI_Remote_Get_Put_Home_1.
+Creating SMT-LIBv2 representation of module NI_Remote_Put.
+Creating SMT-LIBv2 representation of module NI_Remote_PutX.
+Creating SMT-LIBv2 representation of module NI_Remote_PutX_1.
+Creating SMT-LIBv2 representation of module NI_Remote_Put_1.
+Creating SMT-LIBv2 representation of module NI_Replace.
+Creating SMT-LIBv2 representation of module NI_Replace_1.
+Creating SMT-LIBv2 representation of module NI_Replace_Home.
+Creating SMT-LIBv2 representation of module NI_ShWb.
+Creating SMT-LIBv2 representation of module NI_Wb.
+Creating SMT-LIBv2 representation of module PI_Local_GetX_GetX.
+Creating SMT-LIBv2 representation of module PI_Local_GetX_PutX.
+Creating SMT-LIBv2 representation of module PI_Local_GetX_PutX_HeadVld.
+Creating SMT-LIBv2 representation of module PI_Local_Get_Get.
+Creating SMT-LIBv2 representation of module PI_Local_Get_Put.
+Creating SMT-LIBv2 representation of module PI_Local_PutX.
+Creating SMT-LIBv2 representation of module PI_Local_Replace.
+Creating SMT-LIBv2 representation of module PI_Remote_Get.
+Creating SMT-LIBv2 representation of module PI_Remote_GetX.
+Creating SMT-LIBv2 representation of module PI_Remote_GetX_1.
+Creating SMT-LIBv2 representation of module PI_Remote_Get_1.
+Creating SMT-LIBv2 representation of module PI_Remote_PutX.
+Creating SMT-LIBv2 representation of module PI_Remote_PutX_1.
+Creating SMT-LIBv2 representation of module PI_Remote_Replace.
+Creating SMT-LIBv2 representation of module PI_Remote_Replace_1.
+Creating SMT-LIBv2 representation of module Store.
+Creating SMT-LIBv2 representation of module Store_1.
+Creating SMT-LIBv2 representation of module Store_2.
+Creating SMT-LIBv2 representation of module Store_3.
+Creating SMT-LIBv2 representation of module Store_Home.
+Creating SMT-LIBv2 representation of module Store_Home_1.
+Creating SMT-LIBv2 representation of module system.
+
+End of script. Logfile hash: 8dd05bda88, CPU: user 0.64s system 0.03s, MEM: 91.71 MB peak
+Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 70% 2x write_smt2 (0 sec), 25% 2x read_ilang (0 sec), ...

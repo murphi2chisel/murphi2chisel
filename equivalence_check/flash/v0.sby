@@ -1,0 +1,15 @@
+
+    [options]
+    mode prove
+
+    [engines]
+    abc pdr
+
+    [script]
+    read -sv protocol.sv 
+    prep -top system
+
+    [files]
+    protocol.sv
+
+    

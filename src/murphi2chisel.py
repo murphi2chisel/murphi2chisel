@@ -1,6 +1,8 @@
 import argparse
+
 from load import *
 import os
+
 
 # export PATH=/home/ubuntu/oss-cad-suite/bin:$PATH
 # python murphi2chisel.py -v3 -f example/mutual.m -c 2 -o ../mutual
@@ -50,6 +52,7 @@ def chisel2verilog():
         os.system(f"cp {out_dir}/{file_name} {chisel_dir}/src/main/scala")
     os.chdir(chisel_dir)
     os.system(f"sbt \"runMain gensystem {' '.join(str(const) for const in constlist)}\"")
+    # remove initial reg init & add init of reset==1 && io_en_a==0
     with open(f"{chisel_dir}/system_build/system.sv") as f1, open(f"{out_dir}/protocol.sv", 'w') as f2:
         sv = ""
         flag = False
@@ -76,6 +79,8 @@ if __name__ == "__main__":
     cwd = os.getcwd()
     protocol_dir = f"{cwd}/{args.file}" if args.file else cwd
     out_dir = f"{cwd}/{args.out}" if args.out else cwd
+    if not os.path.exists(out_dir):
+        os.mkdir(out_dir)
     chisel_dir = f"{cwd}/external/chisel-template"
     avr_dir = f"{cwd}/external/avr-master"
     cmurphi_dir = f"{cwd}/external/cmurphi"
@@ -84,13 +89,15 @@ if __name__ == "__main__":
     if args.parse:
         parser.parse()
     elif args.verifyabc:
+        t = RepeatingTimer(2.0, printmem)
+        t.start()
         parser.parse()
         chisel2verilog()
         s = sby_script()
         with open("v.sby","w") as f:
             f.write(s)
         os.system("sby -f v.sby")
-
+        t.cancel()
     elif args.verifyavr:
         parser.parse()
         chisel2verilog()
@@ -110,5 +117,15 @@ if __name__ == "__main__":
         os.system(f"python3 avr.py -o {out_dir} -n bar ./protocol.btor2 " )
         os.system(f"cp out.log {out_dir}/ " )
     elif args.verifycmurphi:
-        parser.parse()
-        chisel2verilog()
+        os.chdir(out_dir)
+        os.system(f"cp {protocol_dir} {out_dir}/protocol.m")
+        status = os.system(f"{cmurphi_dir}/src/mu -c protocol.m")
+        if status:
+            print('murphi failed to compile')
+            exit(1)
+        status = os.system(f"g++ -o protocol.o protocol.cpp -I {cmurphi_dir}/include")
+        if status:
+            print('g++ failed to compile')
+            exit(1)
+        # os.system(f"./protocol.o -k322583 >{out_dir}/trace%d.txt")
+        os.system(f"./protocol.o -k3225 -ta -vdfs >{out_dir}/trace%d.txt")

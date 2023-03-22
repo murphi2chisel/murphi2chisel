@@ -8,6 +8,13 @@ from error import *
 from config import *
 
 
+constmap = {}
+typemap = {}
+varmap = {}
+localvarmap = {}
+enumelementlist = []
+
+
 class decl_class(Enum):
     Type = 1
     Const = 2
@@ -88,7 +95,10 @@ class designator(object):
                 res += "%s" % ref
             else:
                 # arrayref
-                res += "(%s)" % ref
+                if ref in varmap:
+                    res += "(io.%s_in)" % ref
+                else:
+                    res += "(%s)" % ref
         return res
 
     def generate_io_out(self):
@@ -103,7 +113,10 @@ class designator(object):
                 res += "%s" % ref
             else:
                 # arrayref
-                res += "(%s)" % ref
+                if ref in varmap:
+                    res += "(io.%s_in)" % ref
+                else:
+                    res += "(%s)" % ref
         return res
 
     def generate_out(self):
@@ -469,8 +482,3 @@ class constdecl(decl):
         return "%s" % self.name
 
 
-constmap = {}
-typemap = {}
-varmap = {}
-localvarmap = {}
-enumelementlist = []
