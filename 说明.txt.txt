@@ -1,3 +1,0 @@
-equivalce_check___.py是代码
-里面的文件夹是每个协议运行日志：目前german文件夹里是完整的
-（reachablestate.txt是对称规约拿过来的800多个状态，unreachablestate.txt是我自己看着inv随便构造的）
