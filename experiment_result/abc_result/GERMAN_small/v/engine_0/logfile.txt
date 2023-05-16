@@ -1,0 +1,6 @@
+ABC command line: "read_aiger model/design_aiger.aig; fold; strash; pdr; write_cex -a engine_0/trace.aiw".
+Warning: The last output is interpreted as a constraint.
+Invariant F[9] : 320 clauses with 62 flops (out of 80) (cex = 0, ave = 18.02)
+Verification of invariant with 320 clauses was successful.  Time =     0.05 sec
+Property proved.  Time =     3.61 sec
+Counter-example is not available.

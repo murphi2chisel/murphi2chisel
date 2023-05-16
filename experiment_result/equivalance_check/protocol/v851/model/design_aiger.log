@@ -1,0 +1,1777 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_aiger.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \NI_Remote_GetX_PutX
+Used module:     \NI_Remote_GetX_Nak_Home_1
+Used module:     \NI_Remote_GetX_Nak_Home
+Used module:     \NI_Remote_GetX_Nak_3
+Used module:     \NI_Remote_GetX_Nak_2
+Used module:     \NI_Remote_GetX_Nak_1
+Used module:     \NI_Remote_GetX_Nak
+Used module:     \NI_Local_GetX_PutX_11_1
+Used module:     \NI_Local_GetX_PutX_11
+Used module:     \NI_Local_GetX_PutX_10_3
+Used module:     \Store_Home_1
+Used module:     \NI_Local_GetX_PutX_10_2
+Used module:     \NI_Local_GetX_PutX_10_1
+Used module:     \NI_Local_GetX_PutX_10
+Used module:     \NI_Local_GetX_PutX_10_Home_1
+Used module:     \NI_Local_GetX_PutX_10_Home
+Used module:     \NI_Local_GetX_PutX_9_1
+Used module:     \NI_Local_GetX_PutX_9
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get_3
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get_2
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get_1
+Used module:     \Store_Home
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get
+Used module:     \NI_Local_GetX_PutX_8_3
+Used module:     \NI_Local_GetX_PutX_8_2
+Used module:     \NI_Local_GetX_PutX_8_1
+Used module:     \NI_Local_GetX_PutX_8
+Used module:     \NI_Local_GetX_PutX_8_Home_NODE_Get_1
+Used module:     \NI_Local_GetX_PutX_8_Home_NODE_Get
+Used module:     \NI_Local_GetX_PutX_8_Home_1
+Used module:     \NI_Local_GetX_PutX_8_Home
+Used module:     \NI_Local_GetX_PutX_7_NODE_Get_1
+Used module:     \Store_3
+Used module:     \NI_Local_GetX_PutX_7_NODE_Get
+Used module:     \NI_Local_GetX_PutX_7_1
+Used module:     \NI_Local_GetX_PutX_7
+Used module:     \NI_Local_GetX_PutX_6_1
+Used module:     \NI_Local_GetX_PutX_6
+Used module:     \NI_Local_GetX_PutX_5_1
+Used module:     \NI_Local_GetX_PutX_5
+Used module:     \NI_Local_GetX_PutX_4_1
+Used module:     \NI_Local_GetX_PutX_4
+Used module:     \NI_Local_GetX_PutX_3_1
+Used module:     \Store_2
+Used module:     \NI_Local_GetX_PutX_3
+Used module:     \NI_Local_GetX_PutX_2_1
+Used module:     \NI_Local_GetX_PutX_2
+Used module:     \NI_Local_GetX_PutX_1_1
+Used module:     \NI_Local_GetX_PutX_1
+Used module:     \NI_Local_GetX_GetX_1
+Used module:     \NI_Local_GetX_GetX
+Used module:     \NI_Local_GetX_Nak_1
+Used module:     \NI_Local_GetX_Nak
+Used module:     \NI_Remote_Get_Put_Home_1
+Used module:     \Store_1
+Used module:     \NI_Remote_Get_Put_Home
+Used module:     \NI_Remote_Get_Put_3
+Used module:     \NI_Remote_Get_Put_2
+Used module:     \NI_Remote_Get_Put_1
+Used module:     \NI_Remote_Get_Put
+Used module:     \NI_Remote_Get_Nak_Home_1
+Used module:     \NI_Remote_Get_Nak_Home
+Used module:     \NI_Remote_Get_Nak_3
+Used module:     \NI_Remote_Get_Nak_2
+Used module:     \NI_Remote_Get_Nak_1
+Used module:     \Store
+Used module:     \NI_Remote_Get_Nak
+Used module:     \NI_Local_Get_Put_Dirty_1
+Used module:     \NI_Local_Get_Put_Dirty
+Used module:     \NI_Local_Get_Put_1
+Used module:     \NI_Local_Get_Put
+Used module:     \NI_Local_Get_Put_Head_1
+Used module:     \NI_Local_Get_Put_Head
+Used module:     \NI_Local_Get_Get_1
+Used module:     \NI_Local_Get_Get
+Used module:     \NI_Local_Get_Nak_1
+Used module:     \Init_3
+Used module:     \NI_Local_Get_Nak
+Used module:     \NI_Nak_Clear
+Used module:     \NI_Nak_Home
+Used module:     \NI_Nak_1
+Used module:     \NI_Nak
+Used module:     \PI_Local_Replace
+Used module:     \PI_Remote_Replace_1
+Used module:     \PI_Remote_Replace
+Used module:     \PI_Local_PutX
+Used module:     \PI_Remote_PutX_1
+Used module:     \Init_2
+Used module:     \PI_Remote_PutX
+Used module:     \PI_Local_GetX_PutX
+Used module:     \PI_Local_GetX_PutX_HeadVld
+Used module:     \PI_Local_GetX_GetX
+Used module:     \PI_Remote_GetX_1
+Used module:     \PI_Remote_GetX
+Used module:     \NI_Replace_Home
+Used module:     \PI_Local_Get_Put
+Used module:     \NI_Replace_1
+Used module:     \NI_Replace
+Used module:     \NI_ShWb
+Used module:     \NI_FAck
+Used module:     \NI_Wb
+Used module:     \NI_InvAck_3_1
+Used module:     \NI_InvAck_3
+Used module:     \NI_InvAck_2_1
+Used module:     \NI_InvAck_2
+Used module:     \NI_InvAck_1_1
+Used module:     \PI_Local_Get_Get
+Used module:     \NI_InvAck_1
+Used module:     \NI_InvAck_exists_3
+Used module:     \NI_InvAck_exists_2
+Used module:     \NI_InvAck_exists_1
+Used module:     \NI_InvAck_exists
+Used module:     \NI_InvAck_exists_Home_1
+Used module:     \NI_InvAck_exists_Home
+Used module:     \NI_Inv_1
+Used module:     \NI_Inv
+Used module:     \NI_Remote_PutX_1
+Used module:     \PI_Remote_Get_1
+Used module:     \NI_Remote_PutX
+Used module:     \NI_Local_PutXAcksDone
+Used module:     \NI_Remote_Put_1
+Used module:     \NI_Remote_Put
+Used module:     \NI_Local_Put
+Used module:     \NI_Remote_GetX_PutX_Home_1
+Used module:     \NI_Remote_GetX_PutX_Home
+Used module:     \NI_Remote_GetX_PutX_3
+Used module:     \NI_Remote_GetX_PutX_2
+Used module:     \NI_Remote_GetX_PutX_1
+Used module:     \PI_Remote_Get
+Used module:     \Init_1
+Used module:     \Init
+
+2.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \NI_Remote_GetX_PutX
+Used module:     \NI_Remote_GetX_Nak_Home_1
+Used module:     \NI_Remote_GetX_Nak_Home
+Used module:     \NI_Remote_GetX_Nak_3
+Used module:     \NI_Remote_GetX_Nak_2
+Used module:     \NI_Remote_GetX_Nak_1
+Used module:     \NI_Remote_GetX_Nak
+Used module:     \NI_Local_GetX_PutX_11_1
+Used module:     \NI_Local_GetX_PutX_11
+Used module:     \NI_Local_GetX_PutX_10_3
+Used module:     \Store_Home_1
+Used module:     \NI_Local_GetX_PutX_10_2
+Used module:     \NI_Local_GetX_PutX_10_1
+Used module:     \NI_Local_GetX_PutX_10
+Used module:     \NI_Local_GetX_PutX_10_Home_1
+Used module:     \NI_Local_GetX_PutX_10_Home
+Used module:     \NI_Local_GetX_PutX_9_1
+Used module:     \NI_Local_GetX_PutX_9
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get_3
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get_2
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get_1
+Used module:     \Store_Home
+Used module:     \NI_Local_GetX_PutX_8_NODE_Get
+Used module:     \NI_Local_GetX_PutX_8_3
+Used module:     \NI_Local_GetX_PutX_8_2
+Used module:     \NI_Local_GetX_PutX_8_1
+Used module:     \NI_Local_GetX_PutX_8
+Used module:     \NI_Local_GetX_PutX_8_Home_NODE_Get_1
+Used module:     \NI_Local_GetX_PutX_8_Home_NODE_Get
+Used module:     \NI_Local_GetX_PutX_8_Home_1
+Used module:     \NI_Local_GetX_PutX_8_Home
+Used module:     \NI_Local_GetX_PutX_7_NODE_Get_1
+Used module:     \Store_3
+Used module:     \NI_Local_GetX_PutX_7_NODE_Get
+Used module:     \NI_Local_GetX_PutX_7_1
+Used module:     \NI_Local_GetX_PutX_7
+Used module:     \NI_Local_GetX_PutX_6_1
+Used module:     \NI_Local_GetX_PutX_6
+Used module:     \NI_Local_GetX_PutX_5_1
+Used module:     \NI_Local_GetX_PutX_5
+Used module:     \NI_Local_GetX_PutX_4_1
+Used module:     \NI_Local_GetX_PutX_4
+Used module:     \NI_Local_GetX_PutX_3_1
+Used module:     \Store_2
+Used module:     \NI_Local_GetX_PutX_3
+Used module:     \NI_Local_GetX_PutX_2_1
+Used module:     \NI_Local_GetX_PutX_2
+Used module:     \NI_Local_GetX_PutX_1_1
+Used module:     \NI_Local_GetX_PutX_1
+Used module:     \NI_Local_GetX_GetX_1
+Used module:     \NI_Local_GetX_GetX
+Used module:     \NI_Local_GetX_Nak_1
+Used module:     \NI_Local_GetX_Nak
+Used module:     \NI_Remote_Get_Put_Home_1
+Used module:     \Store_1
+Used module:     \NI_Remote_Get_Put_Home
+Used module:     \NI_Remote_Get_Put_3
+Used module:     \NI_Remote_Get_Put_2
+Used module:     \NI_Remote_Get_Put_1
+Used module:     \NI_Remote_Get_Put
+Used module:     \NI_Remote_Get_Nak_Home_1
+Used module:     \NI_Remote_Get_Nak_Home
+Used module:     \NI_Remote_Get_Nak_3
+Used module:     \NI_Remote_Get_Nak_2
+Used module:     \NI_Remote_Get_Nak_1
+Used module:     \Store
+Used module:     \NI_Remote_Get_Nak
+Used module:     \NI_Local_Get_Put_Dirty_1
+Used module:     \NI_Local_Get_Put_Dirty
+Used module:     \NI_Local_Get_Put_1
+Used module:     \NI_Local_Get_Put
+Used module:     \NI_Local_Get_Put_Head_1
+Used module:     \NI_Local_Get_Put_Head
+Used module:     \NI_Local_Get_Get_1
+Used module:     \NI_Local_Get_Get
+Used module:     \NI_Local_Get_Nak_1
+Used module:     \Init_3
+Used module:     \NI_Local_Get_Nak
+Used module:     \NI_Nak_Clear
+Used module:     \NI_Nak_Home
+Used module:     \NI_Nak_1
+Used module:     \NI_Nak
+Used module:     \PI_Local_Replace
+Used module:     \PI_Remote_Replace_1
+Used module:     \PI_Remote_Replace
+Used module:     \PI_Local_PutX
+Used module:     \PI_Remote_PutX_1
+Used module:     \Init_2
+Used module:     \PI_Remote_PutX
+Used module:     \PI_Local_GetX_PutX
+Used module:     \PI_Local_GetX_PutX_HeadVld
+Used module:     \PI_Local_GetX_GetX
+Used module:     \PI_Remote_GetX_1
+Used module:     \PI_Remote_GetX
+Used module:     \NI_Replace_Home
+Used module:     \PI_Local_Get_Put
+Used module:     \NI_Replace_1
+Used module:     \NI_Replace
+Used module:     \NI_ShWb
+Used module:     \NI_FAck
+Used module:     \NI_Wb
+Used module:     \NI_InvAck_3_1
+Used module:     \NI_InvAck_3
+Used module:     \NI_InvAck_2_1
+Used module:     \NI_InvAck_2
+Used module:     \NI_InvAck_1_1
+Used module:     \PI_Local_Get_Get
+Used module:     \NI_InvAck_1
+Used module:     \NI_InvAck_exists_3
+Used module:     \NI_InvAck_exists_2
+Used module:     \NI_InvAck_exists_1
+Used module:     \NI_InvAck_exists
+Used module:     \NI_InvAck_exists_Home_1
+Used module:     \NI_InvAck_exists_Home
+Used module:     \NI_Inv_1
+Used module:     \NI_Inv
+Used module:     \NI_Remote_PutX_1
+Used module:     \PI_Remote_Get_1
+Used module:     \NI_Remote_PutX
+Used module:     \NI_Local_PutXAcksDone
+Used module:     \NI_Remote_Put_1
+Used module:     \NI_Remote_Put
+Used module:     \NI_Local_Put
+Used module:     \NI_Remote_GetX_PutX_Home_1
+Used module:     \NI_Remote_GetX_PutX_Home
+Used module:     \NI_Remote_GetX_PutX_3
+Used module:     \NI_Remote_GetX_PutX_2
+Used module:     \NI_Remote_GetX_PutX_1
+Used module:     \PI_Remote_Get
+Used module:     \Init_1
+Used module:     \Init
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing FLATTEN pass (flatten design).
+Deleting now unused module Store_Home_1.
+Deleting now unused module Store_Home.
+Deleting now unused module Store_3.
+Deleting now unused module Store_2.
+Deleting now unused module Store_1.
+Deleting now unused module Store.
+Deleting now unused module PI_Remote_Replace_1.
+Deleting now unused module PI_Remote_Replace.
+Deleting now unused module PI_Remote_PutX_1.
+Deleting now unused module PI_Remote_PutX.
+Deleting now unused module PI_Remote_Get_1.
+Deleting now unused module PI_Remote_GetX_1.
+Deleting now unused module PI_Remote_GetX.
+Deleting now unused module PI_Remote_Get.
+Deleting now unused module PI_Local_Replace.
+Deleting now unused module PI_Local_PutX.
+Deleting now unused module PI_Local_Get_Put.
+Deleting now unused module PI_Local_Get_Get.
+Deleting now unused module PI_Local_GetX_PutX_HeadVld.
+Deleting now unused module PI_Local_GetX_PutX.
+Deleting now unused module PI_Local_GetX_GetX.
+Deleting now unused module NI_Wb.
+Deleting now unused module NI_ShWb.
+Deleting now unused module NI_Replace_Home.
+Deleting now unused module NI_Replace_1.
+Deleting now unused module NI_Replace.
+Deleting now unused module NI_Remote_Put_1.
+Deleting now unused module NI_Remote_PutX_1.
+Deleting now unused module NI_Remote_PutX.
+Deleting now unused module NI_Remote_Put.
+Deleting now unused module NI_Remote_Get_Put_Home_1.
+Deleting now unused module NI_Remote_Get_Put_Home.
+Deleting now unused module NI_Remote_Get_Put_3.
+Deleting now unused module NI_Remote_Get_Put_2.
+Deleting now unused module NI_Remote_Get_Put_1.
+Deleting now unused module NI_Remote_Get_Put.
+Deleting now unused module NI_Remote_Get_Nak_Home_1.
+Deleting now unused module NI_Remote_Get_Nak_Home.
+Deleting now unused module NI_Remote_Get_Nak_3.
+Deleting now unused module NI_Remote_Get_Nak_2.
+Deleting now unused module NI_Remote_Get_Nak_1.
+Deleting now unused module NI_Remote_Get_Nak.
+Deleting now unused module NI_Remote_GetX_PutX_Home_1.
+Deleting now unused module NI_Remote_GetX_PutX_Home.
+Deleting now unused module NI_Remote_GetX_PutX_3.
+Deleting now unused module NI_Remote_GetX_PutX_2.
+Deleting now unused module NI_Remote_GetX_PutX_1.
+Deleting now unused module NI_Remote_GetX_PutX.
+Deleting now unused module NI_Remote_GetX_Nak_Home_1.
+Deleting now unused module NI_Remote_GetX_Nak_Home.
+Deleting now unused module NI_Remote_GetX_Nak_3.
+Deleting now unused module NI_Remote_GetX_Nak_2.
+Deleting now unused module NI_Remote_GetX_Nak_1.
+Deleting now unused module NI_Remote_GetX_Nak.
+Deleting now unused module NI_Nak_Home.
+Deleting now unused module NI_Nak_Clear.
+Deleting now unused module NI_Nak_1.
+Deleting now unused module NI_Nak.
+Deleting now unused module NI_Local_PutXAcksDone.
+Deleting now unused module NI_Local_Put.
+Deleting now unused module NI_Local_Get_Put_Head_1.
+Deleting now unused module NI_Local_Get_Put_Head.
+Deleting now unused module NI_Local_Get_Put_Dirty_1.
+Deleting now unused module NI_Local_Get_Put_Dirty.
+Deleting now unused module NI_Local_Get_Put_1.
+Deleting now unused module NI_Local_Get_Put.
+Deleting now unused module NI_Local_Get_Nak_1.
+Deleting now unused module NI_Local_Get_Nak.
+Deleting now unused module NI_Local_Get_Get_1.
+Deleting now unused module NI_Local_Get_Get.
+Deleting now unused module NI_Local_GetX_PutX_9_1.
+Deleting now unused module NI_Local_GetX_PutX_9.
+Deleting now unused module NI_Local_GetX_PutX_8_NODE_Get_3.
+Deleting now unused module NI_Local_GetX_PutX_8_NODE_Get_2.
+Deleting now unused module NI_Local_GetX_PutX_8_NODE_Get_1.
+Deleting now unused module NI_Local_GetX_PutX_8_NODE_Get.
+Deleting now unused module NI_Local_GetX_PutX_8_Home_NODE_Get_1.
+Deleting now unused module NI_Local_GetX_PutX_8_Home_NODE_Get.
+Deleting now unused module NI_Local_GetX_PutX_8_Home_1.
+Deleting now unused module NI_Local_GetX_PutX_8_Home.
+Deleting now unused module NI_Local_GetX_PutX_8_3.
+Deleting now unused module NI_Local_GetX_PutX_8_2.
+Deleting now unused module NI_Local_GetX_PutX_8_1.
+Deleting now unused module NI_Local_GetX_PutX_8.
+Deleting now unused module NI_Local_GetX_PutX_7_NODE_Get_1.
+Deleting now unused module NI_Local_GetX_PutX_7_NODE_Get.
+Deleting now unused module NI_Local_GetX_PutX_7_1.
+Deleting now unused module NI_Local_GetX_PutX_7.
+Deleting now unused module NI_Local_GetX_PutX_6_1.
+Deleting now unused module NI_Local_GetX_PutX_6.
+Deleting now unused module NI_Local_GetX_PutX_5_1.
+Deleting now unused module NI_Local_GetX_PutX_5.
+Deleting now unused module NI_Local_GetX_PutX_4_1.
+Deleting now unused module NI_Local_GetX_PutX_4.
+Deleting now unused module NI_Local_GetX_PutX_3_1.
+Deleting now unused module NI_Local_GetX_PutX_3.
+Deleting now unused module NI_Local_GetX_PutX_2_1.
+Deleting now unused module NI_Local_GetX_PutX_2.
+Deleting now unused module NI_Local_GetX_PutX_1_1.
+Deleting now unused module NI_Local_GetX_PutX_11_1.
+Deleting now unused module NI_Local_GetX_PutX_11.
+Deleting now unused module NI_Local_GetX_PutX_10_Home_1.
+Deleting now unused module NI_Local_GetX_PutX_10_Home.
+Deleting now unused module NI_Local_GetX_PutX_10_3.
+Deleting now unused module NI_Local_GetX_PutX_10_2.
+Deleting now unused module NI_Local_GetX_PutX_10_1.
+Deleting now unused module NI_Local_GetX_PutX_10.
+Deleting now unused module NI_Local_GetX_PutX_1.
+Deleting now unused module NI_Local_GetX_Nak_1.
+Deleting now unused module NI_Local_GetX_Nak.
+Deleting now unused module NI_Local_GetX_GetX_1.
+Deleting now unused module NI_Local_GetX_GetX.
+Deleting now unused module NI_Inv_1.
+Deleting now unused module NI_InvAck_exists_Home_1.
+Deleting now unused module NI_InvAck_exists_Home.
+Deleting now unused module NI_InvAck_exists_3.
+Deleting now unused module NI_InvAck_exists_2.
+Deleting now unused module NI_InvAck_exists_1.
+Deleting now unused module NI_InvAck_exists.
+Deleting now unused module NI_InvAck_3_1.
+Deleting now unused module NI_InvAck_3.
+Deleting now unused module NI_InvAck_2_1.
+Deleting now unused module NI_InvAck_2.
+Deleting now unused module NI_InvAck_1_1.
+Deleting now unused module NI_InvAck_1.
+Deleting now unused module NI_Inv.
+Deleting now unused module NI_FAck.
+Deleting now unused module Init_3.
+Deleting now unused module Init_2.
+Deleting now unused module Init_1.
+Deleting now unused module Init.
+<suppressed ~131 debug messages>
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~1577 debug messages>
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~1905 debug messages>
+Removed a total of 635 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:7708$20465.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:7709$20466.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:7710$20467.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:7729$20468.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:7732$20469.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:7495$20525.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:7496$20526.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:7497$20527.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:7512$20528.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:7515$20529.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:7285$20600.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:7288$20601.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:7291$20602.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:7292$20603.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:7293$20604.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:7303$20605.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:7306$20606.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13697$18087.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13436$18367.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:7066$20677.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:7068$20678.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:7072$20679.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:7073$20680.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:7074$20681.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:7080$20682.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:7083$20683.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13437$18368.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13440$18369.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13441$18370.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13442$18371.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13443$18372.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13444$18373.
+    dead port 2/2 on $mux $flatten\rules_32.$ternary$protocol.sv:6841$20736.
+    dead port 2/2 on $mux $flatten\rules_32.$ternary$protocol.sv:6865$20737.
+    dead port 2/2 on $mux $flatten\rules_32.$ternary$protocol.sv:6866$20738.
+    dead port 2/2 on $mux $flatten\rules_32.$ternary$protocol.sv:6867$20739.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13445$18374.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13447$18375.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13448$18376.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13449$18377.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13451$18378.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13452$18379.
+    dead port 2/2 on $mux $flatten\rules_31.$ternary$protocol.sv:6627$20792.
+    dead port 2/2 on $mux $flatten\rules_31.$ternary$protocol.sv:6647$20793.
+    dead port 2/2 on $mux $flatten\rules_31.$ternary$protocol.sv:6648$20794.
+    dead port 2/2 on $mux $flatten\rules_31.$ternary$protocol.sv:6649$20795.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13453$18380.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13463$18381.
+    dead port 2/2 on $mux $flatten\rules_62.$ternary$protocol.sv:13466$18382.
+    dead port 2/2 on $mux $flatten\rules_30.$ternary$protocol.sv:6437$20813.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:746$21500.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:747$21501.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:748$21502.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:749$21503.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:750$21504.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:751$21505.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:752$21506.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:753$21507.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:754$21508.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:755$21509.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:756$21510.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:757$21511.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:758$21512.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:759$21513.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:760$21514.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:761$21515.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:762$21516.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:764$21518.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:766$21519.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:767$21520.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:768$21521.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:770$21522.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:771$21523.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:772$21524.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:773$21525.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:778$21526.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:779$21527.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:781$21529.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:782$21530.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:783$21531.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:785$21533.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:786$21534.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:787$21535.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:789$21537.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:791$21538.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:792$21539.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:793$21540.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:795$21541.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:796$21542.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:797$21543.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:798$21544.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:799$21545.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:801$21547.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:802$21548.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:803$21549.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:805$21551.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:806$21552.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:807$21553.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13939$17810.
+    dead port 2/2 on $mux $flatten\rules_29.$ternary$protocol.sv:6227$20831.
+    dead port 2/2 on $mux $flatten\rules_28.$ternary$protocol.sv:6001$20834.
+    dead port 2/2 on $mux $flatten\rules_28.$ternary$protocol.sv:6049$20835.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:5793$20842.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:5794$20843.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:5825$20844.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:5584$20851.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:5585$20852.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:5616$20853.
+    dead port 2/2 on $mux $flatten\rules_25.$ternary$protocol.sv:5375$20860.
+    dead port 2/2 on $mux $flatten\rules_25.$ternary$protocol.sv:5376$20861.
+    dead port 2/2 on $mux $flatten\rules_25.$ternary$protocol.sv:5407$20862.
+    dead port 2/2 on $mux $flatten\rules_24.$ternary$protocol.sv:5180$20871.
+    dead port 2/2 on $mux $flatten\rules_24.$ternary$protocol.sv:5183$20872.
+    dead port 2/2 on $mux $flatten\rules_23.$ternary$protocol.sv:4970$20881.
+    dead port 2/2 on $mux $flatten\rules_23.$ternary$protocol.sv:5014$20882.
+    dead port 2/2 on $mux $flatten\rules_22.$ternary$protocol.sv:4761$20891.
+    dead port 2/2 on $mux $flatten\rules_22.$ternary$protocol.sv:4808$20892.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13940$17811.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13941$17812.
+    dead port 2/2 on $mux $flatten\rules_21.$ternary$protocol.sv:4564$20907.
+    dead port 2/2 on $mux $flatten\rules_21.$ternary$protocol.sv:4568$20908.
+    dead port 2/2 on $mux $flatten\rules_21.$ternary$protocol.sv:4581$20909.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13942$17813.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13943$17814.
+    dead port 2/2 on $mux $flatten\rules_20.$ternary$protocol.sv:4350$20930.
+    dead port 2/2 on $mux $flatten\rules_20.$ternary$protocol.sv:4396$20931.
+    dead port 2/2 on $mux $flatten\rules_20.$ternary$protocol.sv:4397$20932.
+    dead port 2/2 on $mux $flatten\rules_20.$ternary$protocol.sv:4398$20933.
+    dead port 2/2 on $mux $flatten\rules_20.$ternary$protocol.sv:4399$20934.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:544$21554.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:545$21555.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:546$21556.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:547$21557.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:548$21558.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:549$21559.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:550$21560.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:551$21561.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:552$21562.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:553$21563.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:554$21564.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:555$21565.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:556$21566.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:557$21567.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:558$21568.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:559$21569.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:560$21570.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:562$21572.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:564$21573.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:565$21574.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:566$21575.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:568$21576.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:569$21577.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:570$21578.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:571$21579.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:576$21580.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:577$21581.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:579$21583.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:580$21584.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:581$21585.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:583$21587.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:584$21588.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:585$21589.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:587$21591.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:589$21592.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:590$21593.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:591$21594.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:593$21595.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:594$21596.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:595$21597.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:596$21598.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:597$21599.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:599$21601.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:600$21602.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:601$21603.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:603$21605.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:604$21606.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:605$21607.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13945$17815.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13946$17816.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:4135$20955.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:4185$20956.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:4186$20957.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:4187$20958.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:4188$20959.
+    dead port 2/2 on $mux $flatten\rules_49.$ternary$protocol.sv:10416$20017.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13947$17817.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:3930$21032.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:3931$21033.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:3932$21034.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:3933$21035.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:3935$21036.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:3936$21037.
+    dead port 2/2 on $mux $flatten\rules_49.$ternary$protocol.sv:10454$20018.
+    dead port 2/2 on $mux $flatten\rules_49.$ternary$protocol.sv:10457$20019.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3710$21258.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3711$21259.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3712$21260.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3713$21261.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3714$21262.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3715$21263.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3716$21264.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3717$21265.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3720$21266.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3722$21267.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3723$21268.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3724$21269.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3726$21270.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3727$21271.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3728$21272.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3747$21273.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3748$21274.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:3749$21275.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13184$18656.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13185$18657.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:3446$21321.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:3450$21322.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:3478$21323.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:3479$21324.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:3480$21325.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13188$18658.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:3226$21338.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:3258$21339.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:3260$21340.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13189$18659.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:3015$21353.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:3047$21354.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:3049$21355.
+    dead port 2/2 on $mux $flatten\rules_130.$ternary$protocol.sv:29267$8719.
+    dead port 2/2 on $mux $flatten\rules_130.$ternary$protocol.sv:29271$8720.
+    dead port 2/2 on $mux $flatten\rules_130.$ternary$protocol.sv:29296$8721.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13190$18660.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13191$18661.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13192$18662.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13193$18663.
+    dead port 2/2 on $mux $flatten\rules_13.$ternary$protocol.sv:2816$21390.
+    dead port 2/2 on $mux $flatten\rules_13.$ternary$protocol.sv:2817$21391.
+    dead port 2/2 on $mux $flatten\rules_13.$ternary$protocol.sv:2818$21392.
+    dead port 2/2 on $mux $flatten\rules_13.$ternary$protocol.sv:2821$21393.
+    dead port 2/2 on $mux $flatten\rules_129.$ternary$protocol.sv:29059$8727.
+    dead port 2/2 on $mux $flatten\rules_129.$ternary$protocol.sv:29063$8728.
+    dead port 2/2 on $mux $flatten\rules_129.$ternary$protocol.sv:29088$8729.
+    dead port 2/2 on $mux $flatten\rules_128.$ternary$protocol.sv:28851$8735.
+    dead port 2/2 on $mux $flatten\rules_128.$ternary$protocol.sv:28855$8736.
+    dead port 2/2 on $mux $flatten\rules_128.$ternary$protocol.sv:28880$8737.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:28636$8781.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:28638$8782.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:28642$8783.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:28644$8784.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:28645$8785.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:28646$8786.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:28648$8787.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:28649$8788.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:28650$8789.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:28651$8790.
+    dead port 2/2 on $mux $flatten\rules_127.$ternary$protocol.sv:28680$8791.
+    dead port 2/2 on $mux $flatten\rules_126.$ternary$protocol.sv:28415$8802.
+    dead port 2/2 on $mux $flatten\rules_126.$ternary$protocol.sv:28419$8803.
+    dead port 2/2 on $mux $flatten\rules_126.$ternary$protocol.sv:28420$8804.
+    dead port 2/2 on $mux $flatten\rules_126.$ternary$protocol.sv:28459$8805.
+    dead port 2/2 on $mux $flatten\rules_125.$ternary$protocol.sv:28209$8810.
+    dead port 2/2 on $mux $flatten\rules_125.$ternary$protocol.sv:28210$8811.
+    dead port 2/2 on $mux $flatten\rules_125.$ternary$protocol.sv:28222$8812.
+    dead port 2/2 on $mux $flatten\rules_125.$ternary$protocol.sv:28247$8813.
+    dead port 2/2 on $mux $flatten\rules_124.$ternary$protocol.sv:28001$8839.
+    dead port 2/2 on $mux $flatten\rules_124.$ternary$protocol.sv:28014$8840.
+    dead port 2/2 on $mux $flatten\rules_124.$ternary$protocol.sv:28035$8841.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13195$18664.
+    dead port 2/2 on $mux $flatten\rules_123.$ternary$protocol.sv:27792$8867.
+    dead port 2/2 on $mux $flatten\rules_123.$ternary$protocol.sv:27804$8868.
+    dead port 2/2 on $mux $flatten\rules_123.$ternary$protocol.sv:27825$8869.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13196$18665.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13197$18666.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13199$18667.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13200$18668.
+    dead port 2/2 on $mux $flatten\rules_122.$ternary$protocol.sv:27583$8898.
+    dead port 2/2 on $mux $flatten\rules_122.$ternary$protocol.sv:27596$8899.
+    dead port 2/2 on $mux $flatten\rules_122.$ternary$protocol.sv:27617$8900.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13201$18669.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13207$18670.
+    dead port 2/2 on $mux $flatten\rules_61.$ternary$protocol.sv:13210$18671.
+    dead port 2/2 on $mux $flatten\rules_121.$ternary$protocol.sv:27374$8929.
+    dead port 2/2 on $mux $flatten\rules_121.$ternary$protocol.sv:27386$8930.
+    dead port 2/2 on $mux $flatten\rules_121.$ternary$protocol.sv:27407$8931.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13949$17818.
+    dead port 2/2 on $mux $flatten\rules_120.$ternary$protocol.sv:27165$8973.
+    dead port 2/2 on $mux $flatten\rules_120.$ternary$protocol.sv:27166$8974.
+    dead port 2/2 on $mux $flatten\rules_120.$ternary$protocol.sv:27178$8975.
+    dead port 2/2 on $mux $flatten\rules_120.$ternary$protocol.sv:27199$8976.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13950$17819.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13951$17820.
+    dead port 2/2 on $mux $flatten\rules_12.$ternary$protocol.sv:2604$21429.
+    dead port 2/2 on $mux $flatten\rules_12.$ternary$protocol.sv:2608$21430.
+    dead port 2/2 on $mux $flatten\rules_12.$ternary$protocol.sv:2636$21431.
+    dead port 2/2 on $mux $flatten\rules_12.$ternary$protocol.sv:2637$21432.
+    dead port 2/2 on $mux $flatten\rules_12.$ternary$protocol.sv:2638$21433.
+    dead port 2/2 on $mux $flatten\rules_119.$ternary$protocol.sv:26954$9018.
+    dead port 2/2 on $mux $flatten\rules_119.$ternary$protocol.sv:26955$9019.
+    dead port 2/2 on $mux $flatten\rules_119.$ternary$protocol.sv:26966$9020.
+    dead port 2/2 on $mux $flatten\rules_119.$ternary$protocol.sv:26987$9021.
+    dead port 2/2 on $mux $flatten\rules_117.$ternary$protocol.sv:26555$9032.
+    dead port 2/2 on $mux $flatten\rules_117.$ternary$protocol.sv:26576$9033.
+    dead port 2/2 on $mux $flatten\rules_116.$ternary$protocol.sv:26348$9044.
+    dead port 2/2 on $mux $flatten\rules_116.$ternary$protocol.sv:26369$9045.
+    dead port 2/2 on $mux $flatten\rules_114.$ternary$protocol.sv:25942$9056.
+    dead port 2/2 on $mux $flatten\rules_114.$ternary$protocol.sv:25963$9057.
+    dead port 2/2 on $mux $flatten\rules_113.$ternary$protocol.sv:25735$9068.
+    dead port 2/2 on $mux $flatten\rules_113.$ternary$protocol.sv:25756$9069.
+    dead port 2/2 on $mux $flatten\rules_112.$ternary$protocol.sv:25510$9078.
+    dead port 2/2 on $mux $flatten\rules_112.$ternary$protocol.sv:25511$9079.
+    dead port 2/2 on $mux $flatten\rules_112.$ternary$protocol.sv:25551$9080.
+    dead port 2/2 on $mux $flatten\rules_111.$ternary$protocol.sv:25300$9089.
+    dead port 2/2 on $mux $flatten\rules_111.$ternary$protocol.sv:25301$9090.
+    dead port 2/2 on $mux $flatten\rules_111.$ternary$protocol.sv:25344$9091.
+    dead port 2/2 on $mux $flatten\rules_110.$ternary$protocol.sv:25097$9112.
+    dead port 2/2 on $mux $flatten\rules_110.$ternary$protocol.sv:25098$9113.
+    dead port 2/2 on $mux $flatten\rules_110.$ternary$protocol.sv:25099$9114.
+    dead port 2/2 on $mux $flatten\rules_110.$ternary$protocol.sv:25100$9115.
+    dead port 2/2 on $mux $flatten\rules_110.$ternary$protocol.sv:25129$9116.
+    dead port 2/2 on $mux $flatten\rules_11.$ternary$protocol.sv:2388$21446.
+    dead port 2/2 on $mux $flatten\rules_11.$ternary$protocol.sv:2420$21447.
+    dead port 2/2 on $mux $flatten\rules_11.$ternary$protocol.sv:2422$21448.
+    dead port 2/2 on $mux $flatten\rules_109.$ternary$protocol.sv:24883$9137.
+    dead port 2/2 on $mux $flatten\rules_109.$ternary$protocol.sv:24884$9138.
+    dead port 2/2 on $mux $flatten\rules_109.$ternary$protocol.sv:24885$9139.
+    dead port 2/2 on $mux $flatten\rules_109.$ternary$protocol.sv:24886$9140.
+    dead port 2/2 on $mux $flatten\rules_109.$ternary$protocol.sv:24915$9141.
+    dead port 2/2 on $mux $flatten\rules_108.$ternary$protocol.sv:24681$9158.
+    dead port 2/2 on $mux $flatten\rules_108.$ternary$protocol.sv:24682$9159.
+    dead port 2/2 on $mux $flatten\rules_108.$ternary$protocol.sv:24683$9160.
+    dead port 2/2 on $mux $flatten\rules_108.$ternary$protocol.sv:24684$9161.
+    dead port 2/2 on $mux $flatten\rules_108.$ternary$protocol.sv:24685$9162.
+    dead port 2/2 on $mux $flatten\rules_108.$ternary$protocol.sv:24686$9163.
+    dead port 2/2 on $mux $flatten\rules_108.$ternary$protocol.sv:24688$9164.
+    dead port 2/2 on $mux $flatten\rules_108.$ternary$protocol.sv:24713$9165.
+    dead port 2/2 on $mux $flatten\rules_107.$ternary$protocol.sv:24467$9176.
+    dead port 2/2 on $mux $flatten\rules_107.$ternary$protocol.sv:24468$9177.
+    dead port 2/2 on $mux $flatten\rules_107.$ternary$protocol.sv:24469$9178.
+    dead port 2/2 on $mux $flatten\rules_107.$ternary$protocol.sv:24499$9179.
+    dead port 2/2 on $mux $flatten\rules_106.$ternary$protocol.sv:24255$9190.
+    dead port 2/2 on $mux $flatten\rules_106.$ternary$protocol.sv:24256$9191.
+    dead port 2/2 on $mux $flatten\rules_106.$ternary$protocol.sv:24257$9192.
+    dead port 2/2 on $mux $flatten\rules_106.$ternary$protocol.sv:24287$9193.
+    dead port 2/2 on $mux $flatten\rules_105.$ternary$protocol.sv:24055$9212.
+    dead port 2/2 on $mux $flatten\rules_105.$ternary$protocol.sv:24056$9213.
+    dead port 2/2 on $mux $flatten\rules_105.$ternary$protocol.sv:24057$9214.
+    dead port 2/2 on $mux $flatten\rules_105.$ternary$protocol.sv:24059$9215.
+    dead port 2/2 on $mux $flatten\rules_105.$ternary$protocol.sv:24060$9216.
+    dead port 2/2 on $mux $flatten\rules_105.$ternary$protocol.sv:24061$9217.
+    dead port 2/2 on $mux $flatten\rules_105.$ternary$protocol.sv:24074$9218.
+    dead port 2/2 on $mux $flatten\rules_105.$ternary$protocol.sv:24087$9219.
+    dead port 2/2 on $mux $flatten\rules_104.$ternary$protocol.sv:23841$9244.
+    dead port 2/2 on $mux $flatten\rules_104.$ternary$protocol.sv:23875$9245.
+    dead port 2/2 on $mux $flatten\rules_104.$ternary$protocol.sv:23878$9246.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12933$18837.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12936$18838.
+    dead port 2/2 on $mux $flatten\rules_103.$ternary$protocol.sv:23628$9271.
+    dead port 2/2 on $mux $flatten\rules_103.$ternary$protocol.sv:23666$9272.
+    dead port 2/2 on $mux $flatten\rules_103.$ternary$protocol.sv:23669$9273.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12937$18839.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12938$18840.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12939$18841.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12940$18842.
+    dead port 2/2 on $mux $flatten\rules_101.$ternary$protocol.sv:23218$9322.
+    dead port 2/2 on $mux $flatten\rules_101.$ternary$protocol.sv:23252$9323.
+    dead port 2/2 on $mux $flatten\rules_101.$ternary$protocol.sv:23255$9324.
+    dead port 2/2 on $mux $flatten\rules_101.$ternary$protocol.sv:23272$9325.
+    dead port 2/2 on $mux $flatten\rules_101.$ternary$protocol.sv:23273$9326.
+    dead port 2/2 on $mux $flatten\rules_101.$ternary$protocol.sv:23274$9327.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13698$18088.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12941$18843.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12943$18844.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12944$18845.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12945$18846.
+    dead port 2/2 on $mux $flatten\rules_100.$ternary$protocol.sv:23008$9376.
+    dead port 2/2 on $mux $flatten\rules_100.$ternary$protocol.sv:23034$9377.
+    dead port 2/2 on $mux $flatten\rules_100.$ternary$protocol.sv:23037$9378.
+    dead port 2/2 on $mux $flatten\rules_100.$ternary$protocol.sv:23058$9379.
+    dead port 2/2 on $mux $flatten\rules_100.$ternary$protocol.sv:23059$9380.
+    dead port 2/2 on $mux $flatten\rules_100.$ternary$protocol.sv:23060$9381.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12947$18847.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12948$18848.
+    dead port 2/2 on $mux $flatten\rules_10.$ternary$protocol.sv:2177$21461.
+    dead port 2/2 on $mux $flatten\rules_10.$ternary$protocol.sv:2209$21462.
+    dead port 2/2 on $mux $flatten\rules_10.$ternary$protocol.sv:2211$21463.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:342$21608.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:343$21609.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:344$21610.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:345$21611.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:346$21612.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:347$21613.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:348$21614.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:349$21615.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:350$21616.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:351$21617.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:352$21618.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:353$21619.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:354$21620.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:355$21621.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:356$21622.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:357$21623.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:358$21624.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:360$21626.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:362$21627.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:363$21628.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:364$21629.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:366$21630.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:367$21631.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:368$21632.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:369$21633.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:374$21634.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:375$21635.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:377$21637.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:378$21638.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:379$21639.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:381$21641.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:382$21642.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:383$21643.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:385$21645.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:387$21646.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:388$21647.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:389$21648.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:391$21649.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:392$21650.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:393$21651.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:394$21652.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:395$21653.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:397$21655.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:398$21656.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:399$21657.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:401$21659.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:402$21660.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:403$21661.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:140$21662.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:141$21663.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:142$21664.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:143$21665.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:144$21666.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:145$21667.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:146$21668.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:147$21669.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:148$21670.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:149$21671.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:150$21672.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:151$21673.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:152$21674.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:153$21675.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:154$21676.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:155$21677.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:156$21678.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:158$21680.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:160$21681.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:161$21682.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:162$21683.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:164$21684.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:165$21685.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:166$21686.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:167$21687.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:172$21688.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:173$21689.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:175$21691.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:176$21692.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:177$21693.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:179$21695.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:180$21696.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:181$21697.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:183$21699.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:185$21700.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:186$21701.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:187$21702.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:189$21703.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:190$21704.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:191$21705.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:192$21706.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:193$21707.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:195$21709.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:196$21710.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:197$21711.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:199$21713.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:200$21714.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:201$21715.
+    dead port 2/2 on $mux $flatten\rules_4.$ternary$protocol.sv:953$21498.
+    dead port 2/2 on $mux $flatten\rules_47.$ternary$protocol.sv:10006$20076.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12949$18849.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12959$18850.
+    dead port 2/2 on $mux $flatten\rules_60.$ternary$protocol.sv:12962$18851.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:1365$21486.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:1419$21487.
+    dead port 2/2 on $mux $flatten\rules_47.$ternary$protocol.sv:10040$20077.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13961$17821.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13964$17822.
+    dead port 2/2 on $mux $flatten\rules_47.$ternary$protocol.sv:10043$20078.
+    dead port 2/2 on $mux $flatten\rules_47.$ternary$protocol.sv:10060$20079.
+    dead port 2/2 on $mux $flatten\rules_47.$ternary$protocol.sv:10061$20080.
+    dead port 2/2 on $mux $flatten\rules_47.$ternary$protocol.sv:10062$20081.
+    dead port 2/2 on $mux $flatten\rules_47.$ternary$protocol.sv:10063$20082.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12700$19017.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12703$19018.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12704$19019.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12705$19020.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12706$19021.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12707$19022.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12708$19023.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12710$19024.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12711$19025.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12712$19026.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12714$19027.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20369$10589.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18570$12627.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16604$14895.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14693$17023.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12715$19028.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18567$12626.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16603$14894.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14691$17022.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12716$19029.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18557$12625.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16602$14893.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12722$19030.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18556$12624.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16601$14892.
+    dead port 2/2 on $mux $flatten\rules_59.$ternary$protocol.sv:12725$19031.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18555$12623.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16600$14891.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18553$12622.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16599$14890.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18552$12621.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16597$14889.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16070$15559.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18551$12620.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16596$14888.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16068$15558.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18549$12619.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13700$18089.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16062$15557.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19888$11173.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18548$12618.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:18018$13299.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16059$15556.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19886$11172.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18547$12617.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:18017$13298.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16049$15555.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19880$11171.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18546$12616.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:18006$13297.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16048$15554.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19877$11170.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18545$12615.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:18003$13296.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16047$15553.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19867$11169.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18544$12614.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17997$13295.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16045$15552.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19866$11168.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18543$12613.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17996$13294.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16044$15551.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19865$11167.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18541$12612.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17995$13293.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16043$15550.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21152$9753.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19863$11166.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18540$12611.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17993$13292.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16041$15549.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21149$9752.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19862$11165.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17992$13291.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16040$15548.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21143$9751.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19861$11164.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17991$13290.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16039$15547.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21142$9750.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19859$11163.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17989$13289.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16038$15546.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21141$9749.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19858$11162.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12467$19212.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17988$13288.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16037$15545.
+    dead port 2/2 on $mux $flatten\rules_7.$ternary$protocol.sv:1623$21481.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21139$9748.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12470$19213.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19857$11161.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12471$19214.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17987$13287.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12472$19215.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16036$15544.
+    dead port 2/2 on $mux $flatten\rules_7.$ternary$protocol.sv:1569$21480.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21138$9747.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12473$19216.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19856$11160.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12474$19217.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17986$13286.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16035$15543.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12475$19218.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21137$9746.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12477$19219.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19855$11159.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12478$19220.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17985$13285.
+    dead port 2/2 on $mux $flatten\rules_72.$ternary$protocol.sv:16033$15542.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12479$19221.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21135$9745.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12481$19222.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19854$11158.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12482$19223.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17984$13284.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15514$16175.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12483$19224.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21134$9744.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12493$19225.
+    dead port 2/2 on $mux $flatten\rules_86.$ternary$protocol.sv:19853$11157.
+    dead port 2/2 on $mux $flatten\rules_58.$ternary$protocol.sv:12496$19226.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17983$13283.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15512$16174.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14208$17551.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21133$9743.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17981$13282.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15506$16173.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14205$17550.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21132$9742.
+    dead port 2/2 on $mux $flatten\rules_79.$ternary$protocol.sv:17980$13281.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15503$16172.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14199$17549.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21131$9741.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:8155$20306.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17462$13935.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15493$16171.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14198$17548.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21130$9740.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17460$13934.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15492$16170.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14197$17547.
+    dead port 2/2 on $mux $flatten\rules_91.$ternary$protocol.sv:21127$9739.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17454$13933.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15491$16169.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14195$17546.
+    dead port 2/2 on $mux $flatten\rules_46.$ternary$protocol.sv:9794$20139.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17451$13932.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15489$16168.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14194$17545.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17441$13931.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15488$16167.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14193$17544.
+    dead port 2/2 on $mux $flatten\rules_46.$ternary$protocol.sv:9820$20140.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17440$13930.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15487$16166.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14191$17543.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17439$13929.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15485$16165.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14190$17542.
+    dead port 2/2 on $mux $flatten\rules_46.$ternary$protocol.sv:9823$20141.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19372$11708.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17437$13928.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15484$16164.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14189$17541.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19370$11707.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17436$13927.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15483$16163.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14188$17540.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20662$10321.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19364$11706.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:8159$20307.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17435$13926.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15482$16162.
+    dead port 2/2 on $mux $flatten\rules_46.$ternary$protocol.sv:9844$20142.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14187$17539.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20660$10320.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19361$11705.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17433$13925.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15481$16161.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14186$17538.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20654$10319.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19351$11704.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17432$13924.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15480$16160.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14988$16756.
+    dead port 2/2 on $mux $flatten\rules_65.$ternary$protocol.sv:14183$17537.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20651$10318.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19350$11703.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17431$13923.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15479$16159.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14986$16755.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20641$10317.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19349$11702.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17430$13922.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15477$16158.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14980$16754.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20640$10316.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19347$11701.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17429$13921.
+    dead port 2/2 on $mux $flatten\rules_70.$ternary$protocol.sv:15476$16157.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14977$16753.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20639$10315.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19346$11700.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12220$19407.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17428$13920.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:8160$20308.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14967$16752.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20637$10314.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:8161$20309.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19345$11699.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12223$19408.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17427$13919.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12224$19409.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14966$16751.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20636$10313.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12225$19410.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19343$11698.
+    dead port 2/2 on $mux $flatten\rules_77.$ternary$protocol.sv:17425$13918.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:8162$20310.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12226$19411.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14965$16750.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12227$19412.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20635$10312.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12228$19413.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19342$11697.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12230$19414.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12231$19415.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14963$16749.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12232$19416.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20633$10311.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12234$19417.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19341$11696.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16910$14571.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12235$19418.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14962$16748.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12236$19419.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20632$10310.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12242$19420.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19340$11695.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13938$17809.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16909$14570.
+    dead port 2/2 on $mux $flatten\rules_57.$ternary$protocol.sv:12245$19421.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14961$16747.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20631$10309.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19339$11694.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16898$14569.
+    dead port 2/2 on $mux $flatten\rules_46.$ternary$protocol.sv:9845$20143.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14959$16746.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20630$10308.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19338$11693.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16895$14568.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14958$16745.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:8172$20311.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20629$10307.
+    dead port 2/2 on $mux $flatten\rules_84.$ternary$protocol.sv:19337$11692.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16889$14567.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14957$16744.
+    dead port 2/2 on $mux $flatten\rules_46.$ternary$protocol.sv:9846$20144.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20628$10306.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16888$14566.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14956$16743.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21400$9603.
+    dead port 2/2 on $mux $flatten\rules_89.$ternary$protocol.sv:20627$10305.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:8181$20312.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16887$14565.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14955$16742.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21397$9602.
+    dead port 2/2 on $mux $flatten\rules_46.$ternary$protocol.sv:9847$20145.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16885$14564.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14954$16741.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21387$9601.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16884$14563.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14953$16740.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21386$9600.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18858$12294.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16883$14562.
+    dead port 2/2 on $mux $flatten\rules_68.$ternary$protocol.sv:14951$16739.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21385$9599.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18856$12293.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16881$14561.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21383$9598.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18850$12292.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:8184$20313.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16880$14560.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21382$9597.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18847$12291.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16879$14559.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21381$9596.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13701$18090.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18837$12290.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16878$14558.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13702$18091.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21379$9595.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18836$12289.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16877$14557.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21378$9594.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20146$10889.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18835$12288.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16876$14556.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16352$15241.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21377$9593.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20145$10888.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18833$12287.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16875$14555.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16351$15240.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21376$9592.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20134$10887.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18832$12286.
+    dead port 2/2 on $mux $flatten\rules_75.$ternary$protocol.sv:16873$14554.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16340$15239.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21375$9591.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20131$10886.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18831$12285.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13708$18092.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16337$15238.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11972$19614.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21374$9590.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20125$10885.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18829$12284.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11973$19615.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11976$19616.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16331$15237.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11977$19617.
+    dead port 2/2 on $mux $flatten\rules_92.$ternary$protocol.sv:21371$9589.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20124$10884.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18828$12283.
+    dead port 2/2 on $mux $flatten\rules_8.$ternary$protocol.sv:1827$21475.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11978$19618.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16330$15236.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11979$19619.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20123$10883.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18827$12282.
+    dead port 2/2 on $mux $flatten\rules_8.$ternary$protocol.sv:1777$21474.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11980$19620.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16329$15235.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11981$19621.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20121$10882.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18826$12281.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11983$19622.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16327$15234.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11984$19623.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20120$10881.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18825$12280.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11985$19624.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16326$15233.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11987$19625.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14460$17295.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20119$10880.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18824$12279.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18298$12964.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11988$19626.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16325$15232.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11989$19627.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14457$17294.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20117$10879.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:11999$19628.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18823$12278.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18297$12963.
+    dead port 2/2 on $mux $flatten\rules_56.$ternary$protocol.sv:12002$19629.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16323$15231.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14447$17293.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20116$10878.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18821$12277.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18286$12962.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16322$15230.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14446$17292.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20115$10877.
+    dead port 2/2 on $mux $flatten\rules_44.$ternary$protocol.sv:9411$20162.
+    dead port 2/2 on $mux $flatten\rules_82.$ternary$protocol.sv:18820$12276.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18283$12961.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16321$15229.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14445$17291.
+    dead port 2/2 on $mux $flatten\rules_44.$ternary$protocol.sv:9431$20163.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20114$10876.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18277$12960.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16320$15228.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14443$17290.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20113$10875.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18276$12959.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16319$15227.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14442$17289.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20112$10874.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18275$12958.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16318$15226.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14441$17288.
+    dead port 2/2 on $mux $flatten\rules_87.$ternary$protocol.sv:20111$10873.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18273$12957.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16317$15225.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14439$17287.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18272$12956.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16315$15224.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14438$17286.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18271$12955.
+    dead port 2/2 on $mux $flatten\rules_73.$ternary$protocol.sv:16314$15223.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14437$17285.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18269$12954.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15792$15877.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14436$17284.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18268$12953.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13711$18093.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15791$15876.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14435$17283.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18267$12952.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15780$15875.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14434$17282.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18266$12951.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17738$13617.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15777$15874.
+    dead port 2/2 on $mux $flatten\rules_66.$ternary$protocol.sv:14431$17281.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11722$19822.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18265$12950.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17736$13616.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11723$19823.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15771$15873.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11726$19824.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18264$12949.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17730$13615.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11727$19825.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15770$15872.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19630$11457.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18263$12948.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17727$13614.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11728$19826.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15769$15871.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19629$11456.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18261$12947.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17717$13613.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11729$19827.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15767$15870.
+    dead port 2/2 on $mux $flatten\rules_94.$ternary$protocol.sv:21828$9453.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11730$19828.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19618$11455.
+    dead port 2/2 on $mux $flatten\rules_80.$ternary$protocol.sv:18260$12946.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17716$13612.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11731$19829.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15766$15869.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11733$19830.
+    dead port 2/2 on $mux $flatten\rules_94.$ternary$protocol.sv:21800$9452.
+    dead port 2/2 on $mux $flatten\rules_9.$ternary$protocol.sv:2031$21469.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19615$11454.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17715$13611.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11734$19831.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15765$15868.
+    dead port 2/2 on $mux $flatten\rules_9.$ternary$protocol.sv:1981$21468.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19609$11453.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17713$13610.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11735$19832.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15763$15867.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19608$11452.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17712$13609.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15762$15866.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11737$19833.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19607$11451.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17711$13608.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15761$15865.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11738$19834.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11739$19835.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20920$10037.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19605$11450.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17709$13607.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15760$15864.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15251$16473.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11745$19836.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20918$10036.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19604$11449.
+    dead port 2/2 on $mux $flatten\rules_64.$ternary$protocol.sv:13935$17808.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17708$13606.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15759$15863.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15250$16472.
+    dead port 2/2 on $mux $flatten\rules_55.$ternary$protocol.sv:11748$19837.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20912$10035.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19603$11448.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17707$13605.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15758$15862.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15239$16471.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20909$10034.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19601$11447.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17706$13604.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15757$15861.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15236$16470.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20899$10033.
+    dead port 2/2 on $mux $flatten\rules_43.$ternary$protocol.sv:9205$20180.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19600$11446.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17705$13603.
+    dead port 2/2 on $mux $flatten\rules_71.$ternary$protocol.sv:15755$15860.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15230$16469.
+    dead port 2/2 on $mux $flatten\rules_95.$ternary$protocol.sv:22034$9435.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20898$10032.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19599$11445.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17704$13602.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15229$16468.
+    dead port 2/2 on $mux $flatten\rules_95.$ternary$protocol.sv:22010$9434.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20897$10031.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19598$11444.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17703$13601.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15228$16467.
+    dead port 2/2 on $mux $flatten\rules_43.$ternary$protocol.sv:9225$20181.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20895$10030.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19597$11443.
+    dead port 2/2 on $mux $flatten\rules_78.$ternary$protocol.sv:17701$13600.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15226$16466.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20894$10029.
+    dead port 2/2 on $mux $flatten\rules_54.$ternary$protocol.sv:11475$19882.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19596$11442.
+    dead port 2/2 on $mux $flatten\rules_54.$ternary$protocol.sv:11499$19883.
+    dead port 2/2 on $mux $flatten\rules_54.$ternary$protocol.sv:11500$19884.
+    dead port 2/2 on $mux $flatten\rules_54.$ternary$protocol.sv:11501$19885.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15225$16465.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20893$10028.
+    dead port 2/2 on $mux $flatten\rules_85.$ternary$protocol.sv:19595$11441.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17186$14253.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15224$16464.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20891$10027.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17185$14252.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15222$16463.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20890$10026.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17174$14251.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15221$16462.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20889$10025.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17171$14250.
+    dead port 2/2 on $mux $flatten\rules_53.$ternary$protocol.sv:11261$19930.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15220$16461.
+    dead port 2/2 on $mux $flatten\rules_53.$ternary$protocol.sv:11281$19931.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20888$10024.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17165$14249.
+    dead port 2/2 on $mux $flatten\rules_53.$ternary$protocol.sv:11282$19932.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15219$16460.
+    dead port 2/2 on $mux $flatten\rules_53.$ternary$protocol.sv:11283$19933.
+    dead port 2/2 on $mux $flatten\rules_97.$ternary$protocol.sv:22441$9417.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20887$10023.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17164$14248.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15218$16459.
+    dead port 2/2 on $mux $flatten\rules_97.$ternary$protocol.sv:22421$9416.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20886$10022.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17163$14247.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15217$16458.
+    dead port 2/2 on $mux $flatten\rules_90.$ternary$protocol.sv:20885$10021.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17161$14246.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15216$16457.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17160$14245.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15214$16456.
+    dead port 2/2 on $mux $flatten\rules_41.$ternary$protocol.sv:8794$20198.
+    dead port 2/2 on $mux $flatten\rules_41.$ternary$protocol.sv:8818$20199.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17159$14244.
+    dead port 2/2 on $mux $flatten\rules_69.$ternary$protocol.sv:15213$16455.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17157$14243.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13686$18079.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13689$18080.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19115$11959.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17156$14242.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20404$10605.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19114$11958.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17155$14241.
+    dead port 2/2 on $mux $flatten\rules_52.$ternary$protocol.sv:11071$19949.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14728$17039.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20403$10604.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19103$11957.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17154$14240.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14727$17038.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:7929$20402.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20392$10603.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19100$11956.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17153$14239.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14716$17037.
+    dead port 2/2 on $mux $flatten\rules_98.$ternary$protocol.sv:22647$9399.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20389$10602.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19094$11955.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17152$14238.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:7933$20403.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14713$17036.
+    dead port 2/2 on $mux $flatten\rules_98.$ternary$protocol.sv:22627$9398.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20383$10601.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19093$11954.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17151$14237.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:7934$20404.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14707$17035.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20382$10600.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19092$11953.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:7935$20405.
+    dead port 2/2 on $mux $flatten\rules_76.$ternary$protocol.sv:17149$14236.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16634$14906.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:7936$20406.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14706$17034.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20381$10599.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19090$11952.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:7946$20407.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16632$14905.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14705$17033.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13690$18081.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20379$10598.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:7951$20408.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19089$11951.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13691$18082.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16626$14904.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13692$18083.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14703$17032.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13693$18084.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20378$10597.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13694$18085.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19088$11950.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16623$14903.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:7954$20409.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14702$17031.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20377$10596.
+    dead port 2/2 on $mux $flatten\rules_51.$ternary$protocol.sv:10861$19965.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19086$11949.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16613$14902.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14701$17030.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20375$10595.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19085$11948.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16612$14901.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14699$17029.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20374$10594.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19084$11947.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16611$14900.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14698$17028.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14697$17027.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14696$17026.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14695$17025.
+    dead port 2/2 on $mux $flatten\rules_67.$ternary$protocol.sv:14694$17024.
+    dead port 2/2 on $mux $flatten\rules_40.$ternary$protocol.sv:8584$20216.
+    dead port 2/2 on $mux $flatten\rules_50.$ternary$protocol.sv:10629$19990.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16609$14899.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16608$14898.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16607$14897.
+    dead port 2/2 on $mux $flatten\rules_74.$ternary$protocol.sv:16605$14896.
+    dead port 2/2 on $mux $flatten\rules_50.$ternary$protocol.sv:10663$19991.
+    dead port 2/2 on $mux $flatten\rules_50.$ternary$protocol.sv:10666$19992.
+    dead port 2/2 on $mux $flatten\rules_40.$ternary$protocol.sv:8612$20217.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18578$12629.
+    dead port 2/2 on $mux $flatten\rules_81.$ternary$protocol.sv:18576$12628.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19083$11946.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19082$11945.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19081$11944.
+    dead port 2/2 on $mux $flatten\rules_83.$ternary$protocol.sv:19080$11943.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:1157$21492.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:1215$21493.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20373$10593.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20372$10592.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20371$10591.
+    dead port 2/2 on $mux $flatten\rules_88.$ternary$protocol.sv:20370$10590.
+    dead port 2/2 on $mux $flatten\rules_4.$ternary$protocol.sv:1011$21499.
+    dead port 2/2 on $mux $flatten\rules_63.$ternary$protocol.sv:13696$18086.
+Removed 1140 multiplexer ports.
+<suppressed ~60 debug messages>
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~66 debug messages>
+Removed a total of 22 cells.
+
+6.6. Executing OPT_SHARE pass.
+
+6.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 441 unused cells and 1121 unused wires.
+<suppressed ~918 debug messages>
+
+6.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~25 debug messages>
+
+6.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~59 debug messages>
+
+6.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+6.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+6.14. Executing OPT_SHARE pass.
+
+6.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+
+6.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+
+6.18. Finished OPT passes. (There is nothing left to do.)
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /home/czh/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/czh/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $ff.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $ne.
+No more expansions possible.
+<suppressed ~8338 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~11870 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~3660 debug messages>
+Removed a total of 1220 cells.
+
+8.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 135 unused cells and 1075 unused wires.
+<suppressed ~146 debug messages>
+
+8.5. Finished fast OPT passes.
+
+9. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+10. Executing FORMALFF pass.
+
+11. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+12. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+13. Executing ABC pass (technology mapping using ABC).
+
+13.1. Extracting gate netlist of module `\system' to `<abc-temp-dir>/input.blif'..
+Extracted 12752 gates and 12851 wires to a netlist network with 97 inputs and 90 outputs.
+
+13.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 5 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+13.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:    33747
+ABC RESULTS:               NOT cells:    32496
+ABC RESULTS:        internal signals:    12664
+ABC RESULTS:           input signals:       97
+ABC RESULTS:          output signals:       90
+Removing temp directory.
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 0 unused cells and 10435 unused wires.
+<suppressed ~9367 debug messages>
+
+15. Printing statistics.
+
+=== system ===
+
+   Number of wires:             100909
+   Number of wire bits:         122114
+   Number of public wires:       34694
+   Number of public wire bits:   55869
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              66318
+     $_AND_                      33747
+     $_FF_                           1
+     $_NOT_                      32496
+     $anyinit                       58
+     $anyseq                         6
+     $assert                         7
+     $assume                         2
+     $initstate                      1
+
+16. Executing AIGER backend.
+
+End of script. Logfile hash: 368f0a9c73, CPU: user 3.08s system 0.04s, MEM: 211.31 MB peak
+Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 31% 1x abc (1 sec), 30% 4x opt_clean (1 sec), ...

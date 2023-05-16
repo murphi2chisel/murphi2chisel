@@ -1,0 +1,67 @@
+SBY 11:16:12 [v] Removing directory '/home/czh/murphi2chisel/cache_err12v1/v'.
+SBY 11:16:12 [v] Copy '/home/czh/murphi2chisel/cache_err12v1/protocol.sv' to '/home/czh/murphi2chisel/cache_err12v1/v/src/protocol.sv'.
+SBY 11:16:12 [v] engine_0: abc pdr
+SBY 11:16:12 [v] base: starting process "cd v/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 11:16:15 [v] base: finished (returncode=0)
+SBY 11:16:15 [v] prep: starting process "cd v/model; yosys -ql design_prep.log design_prep.ys"
+SBY 11:16:17 [v] prep: finished (returncode=0)
+SBY 11:16:17 [v] aig: starting process "cd v/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY 11:16:22 [v] aig: finished (returncode=0)
+SBY 11:16:22 [v] engine_0: starting process "cd v; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw'"
+SBY 11:16:22 [v] engine_0: ABC command line: "read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw".
+SBY 11:16:22 [v] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 11:16:22 [v] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+SBY 11:16:22 [v] engine_0: Frame Clauses                                                     Max Queue Flops Cex      Time
+SBY 11:16:22 [v] engine_0: 1 : 0 3                                                                 1     4      0.04 sec
+SBY 11:16:22 [v] engine_0: 2 : 0 23 171                                                            7   186      0.11 sec
+SBY 11:16:22 [v] engine_0: 3 : 0 5 11 167                                                          0   186      0.11 sec
+SBY 11:16:22 [v] engine_0: 4 : 0 5 11 22 145                                                       0   186      0.12 sec
+SBY 11:16:22 [v] engine_0: 5 : 0 6 12 29 148 27                                                   11   205      0.23 sec
+SBY 11:16:22 [v] engine_0: Block =  147  Oblig =   334  Clause =   233  Call =  2400 (sat=40.3%)  Cex =   0  Start =   2
+SBY 11:16:22 [v] engine_0: SAT solving =     0.16 sec ( 65.99 %)
+SBY 11:16:22 [v] engine_0: unsat     =     0.04 sec ( 15.10 %)
+SBY 11:16:22 [v] engine_0: sat       =     0.12 sec ( 50.89 %)
+SBY 11:16:22 [v] engine_0: Generalize  =     0.13 sec ( 55.72 %)
+SBY 11:16:22 [v] engine_0: Push clause =     0.02 sec ( 10.28 %)
+SBY 11:16:22 [v] engine_0: Ternary sim =     0.01 sec (  4.98 %)
+SBY 11:16:22 [v] engine_0: Containment =     0.00 sec (  0.10 %)
+SBY 11:16:22 [v] engine_0: CNF compute =     0.01 sec (  4.00 %)
+SBY 11:16:22 [v] engine_0: Refinement  =     0.00 sec (  0.41 %)
+SBY 11:16:22 [v] engine_0: TOTAL       =     0.24 sec (100.00 %)
+SBY 11:16:22 [v] engine_0: Output 1 of miter "model/design_aiger" was asserted in frame 10.  Time =     0.25 sec
+SBY 11:16:22 [v] engine_0: finished (returncode=0)
+SBY 11:16:22 [v] engine_0: Status returned by engine: FAIL
+SBY 11:16:22 [v] smt2: starting process "cd v/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 11:16:22 [v] engine_0: Engine did not produce a counter example.
+SBY 11:16:22 [v] engine_0: starting process "cd v; yosys-witness aiw2yw engine_0/trace.aiw model/design_aiger.ywa engine_0/trace_aiw.yw"
+SBY 11:16:22 [v] engine_0: Converting AIGER witness trace 'engine_0/trace.aiw' to Yosys witness trace 'engine_0/trace_aiw.yw'...
+SBY 11:16:22 [v] engine_0: Using Yosys witness AIGER map file 'model/design_aiger.ywa'
+SBY 11:16:22 [v] engine_0: Converted 11 time steps.
+SBY 11:16:22 [v] engine_0: finished (returncode=0)
+SBY 11:16:22 [v] smt2: finished (returncode=0)
+SBY 11:16:22 [v] engine_0: starting process "cd v; yosys-smtbmc -s yices --noprogress --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc --yw engine_0/trace_aiw.yw model/design_smt2.smt2"
+SBY 11:16:23 [v] engine_0: ##   0:00:00  Solver: yices
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Skipping step 0..
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Skipping step 1..
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Skipping step 2..
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Skipping step 3..
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Skipping step 4..
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Skipping step 5..
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Skipping step 6..
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Skipping step 7..
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Skipping step 8..
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Skipping step 9..
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Checking assertions in step 10..
+SBY 11:16:24 [v] engine_0: ##   0:00:01  BMC failed!
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Assert failed in system: protocol.sv:74813.22-74814.59 ($assert$protocol.sv:74813$9004)
+SBY 11:16:24 [v] engine_0: ##   0:00:01  Writing trace to VCD file: engine_0/trace.vcd
+SBY 11:16:35 [v] engine_0: ##   0:00:12  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 11:16:35 [v] engine_0: ##   0:00:12  Writing trace to constraints file: engine_0/trace.smtc
+SBY 11:16:35 [v] engine_0: ##   0:00:12  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 11:16:36 [v] engine_0: ##   0:00:13  Status: FAILED
+SBY 11:16:36 [v] engine_0: finished (returncode=1)
+SBY 11:16:36 [v] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:24 (24)
+SBY 11:16:36 [v] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:25 (25)
+SBY 11:16:36 [v] summary: engine_0 (abc pdr) returned FAIL
+SBY 11:16:36 [v] summary: counterexample trace: v/engine_0/trace.vcd
+SBY 11:16:36 [v] DONE (FAIL, rc=2)

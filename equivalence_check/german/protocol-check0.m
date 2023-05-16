@@ -8,29 +8,28 @@ type
   NODE : 1..NODE_NUM;
   DATA : 1..DATA_NUM;
 
-  CACHE_STATE : enum {I, S, E};                            -- I（invalid）无效、S（share）读共享、E（Exclusive）写互斥
+  CACHE_STATE : enum {I, S, E};                            
   CACHE : record State : CACHE_STATE; Data : DATA; end;
 
   MSG_CMD : enum {Empty, ReqS, ReqE, Inv, InvAck, GntS, GntE};
-  MSG : record Cmd : MSG_CMD; Data : DATA; end;            -- 一个 MSG 包括 Cmd(命令) 和 Data(数据)
+  MSG : record Cmd : MSG_CMD; Data : DATA; end;            
 
 var
 
   Cache : array [NODE] of CACHE;
-  -- 每个 NODE 都有3个通信通道，Chan1、Chan2、Chan3
-  Chan1 : array [NODE] of MSG;                              -- chanel1: cache向home发送——sendReqS, sendReqEI, sendReqES
-  Chan2 : array [NODE] of MSG;                              -- chanel2: home向cache发送——InvS, InvE, GntS, GntE
-  Chan3 : array [NODE] of MSG;                              -- chanel3: cache向home发送——InvAck
+  Chan1 : array [NODE] of MSG;                              
+  Chan2 : array [NODE] of MSG;                              
+  Chan3 : array [NODE] of MSG;                              
   InvSet : array [NODE] of boolean;
   ShrSet : array [NODE] of boolean;
-  ExGntd : boolean;                                         -- 互斥标志，表示 memory 是否在写
-  CurCmd : MSG_CMD;                                         -- home 用以记录 当前执行的命令
-  CurPtr : NODE;                                            -- home 用以记录 当前运行命令的节点
-  MemData : DATA;                                           -- memory 当前存放的数据
+  ExGntd : boolean;                                        
+  CurCmd : MSG_CMD;                                        
+  CurPtr : NODE;                                           
+  MemData : DATA;                                         
   AuxData : DATA;
 
-                                                            -- 初始化问题，python是弱类型的，本来是想在初始化阶段定义结构；但现在来看，部分变量未声明，导致实现也有一点问题
-ruleset d : DATA do startstate "Init"                       -- 对 DATA 进行枚举，即假定要传的数据为1、2
+                                                            
+ruleset d : DATA do startstate "Init"                       
   for i : NODE do
     Chan1[i].Cmd := Empty; Chan2[i].Cmd := Empty; Chan3[i].Cmd := Empty;
     Cache[i].State := I; InvSet[i] := false; ShrSet[i] := false;
@@ -39,13 +38,13 @@ ruleset d : DATA do startstate "Init"                       -- 对 DATA 进行�
 endstartstate; endruleset;
 
 
-ruleset i : NODE; d : DATA do rule "Store"                   -- 若 cache 的状态为 E，则 给 cache 的 data 赋值
+ruleset i : NODE; d : DATA do rule "Store"                   
   Cache[i].State = E
 ==> begin
   Cache[i].Data := d; AuxData := d;
 endrule; endruleset;
 
--- chanl1 是 cache 向 home 发送申请的通道，申请的内容包括：申请读、申请写
+
 ruleset i : NODE do rule "SendReqS"
   Chan1[i].Cmd = Empty & Cache[i].State = I
 ==> begin
@@ -62,7 +61,7 @@ ruleset i : NODE do rule "RecvReqS"
   CurCmd = Empty & Chan1[i].Cmd = ReqS
 ==> begin
   CurCmd := ReqS; CurPtr := i; Chan1[i].Cmd := Empty;
-  for j : NODE do InvSet[j] := ShrSet[j]; end;   -- 虽然有时候不报错，但也无法打印出来，但有时候显示已经写在文件中了
+  for j : NODE do InvSet[j] := ShrSet[j]; end;   
 endrule; endruleset;
 
 ruleset i : NODE do rule "RecvReqE"
@@ -72,7 +71,7 @@ ruleset i : NODE do rule "RecvReqE"
   for j : NODE do InvSet[j] := ShrSet[j]; end;
 endrule; endruleset;
 
--- Chanl2 是 home 向 cache 发送命令的通道，包括：使 cache 无效；通过 cache 的申请；
+
 ruleset i : NODE do rule "SendInv"
   Chan2[i].Cmd = Empty & InvSet[i] = true &
   ( CurCmd = ReqE | CurCmd = ReqS & ExGntd = true )
@@ -89,7 +88,7 @@ endrule; endruleset;
 
 ruleset i : NODE do rule "SendGntE"
   CurCmd = ReqE & CurPtr = i & Chan2[i].Cmd = Empty & ExGntd = false &
-  forall j : NODE do ShrSet[j] = false end   -- forall 语法
+  forall j : NODE do ShrSet[j] = false end   
 ==> begin
   Chan2[i].Cmd := GntE; Chan2[i].Data := MemData; ShrSet[i] := true;
   ExGntd := true; CurCmd := Empty;
@@ -109,7 +108,7 @@ ruleset i : NODE do rule "RecvGntE"
   Chan2[i].Cmd := Empty;
 endrule; endruleset;
 
--- Chanl3 是从 cache 流向 home 的命令通道，命令用于确认之前收到的 home 传来的使无效命令
+
 ruleset i : NODE do rule "SendInvAck"
   Chan2[i].Cmd = Inv & Chan3[i].Cmd = Empty
 ==> begin
@@ -125,5 +124,6 @@ ruleset i : NODE do rule "RecvInvAck"
   if (ExGntd = true)
   then ExGntd := false; MemData := Chan3[i].Data; end;
 endrule; endruleset;
-invariant "reachableStateN"
-!(Cache[1].State = E&Cache[1].Data = 1&Cache[2].State = I&Cache[2].Data = 1&Chan1[1].Cmd = ReqS&Chan1[1].Data = 1&Chan1[2].Cmd = ReqE&Chan1[2].Data = 1&Chan2[1].Cmd = Empty&Chan2[1].Data = 2&Chan2[2].Cmd = Empty&Chan2[2].Data = 2&Chan3[1].Cmd = Empty&Chan3[1].Data = 2&Chan3[2].Cmd = Empty&Chan3[2].Data = 1&InvSet[1] = true&InvSet[2] = false&ShrSet[1] = true&ShrSet[2] = false&ExGntd = true&CurCmd = ReqE&CurPtr = 1&MemData = 2&AuxData = 1)
+
+invariant "unreachableStateN"
+!(Cache[1].State = E&Cache[2].State = E&Chan1[1].Cmd = ReqE&Chan1[2].Cmd = ReqE&Chan2[1].Cmd = Empty&Chan2[2].Cmd = Empty&Chan3[1].Cmd = Empty&Chan3[2].Cmd = Empty&InvSet[1] = false&InvSet[2] = false&ShrSet[1] = false&ShrSet[2] = false&ExGntd = false&CurCmd = Empty&MemData = 1&AuxData = 1)

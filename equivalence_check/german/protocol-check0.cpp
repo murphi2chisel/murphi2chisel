@@ -2452,7 +2452,7 @@ unsigned short StartStateManager::numstartstates = 2;
 /********************
   Invariant records
  ********************/
-int mu__invariant_44() // Invariant "reachableStateN"
+int mu__invariant_44() // Invariant "unreachableStateN"
 {
 bool mu__boolexpr45;
 bool mu__boolexpr46;
@@ -2469,106 +2469,61 @@ bool mu__boolexpr56;
 bool mu__boolexpr57;
 bool mu__boolexpr58;
 bool mu__boolexpr59;
-bool mu__boolexpr60;
-bool mu__boolexpr61;
-bool mu__boolexpr62;
-bool mu__boolexpr63;
-bool mu__boolexpr64;
-bool mu__boolexpr65;
-bool mu__boolexpr66;
-bool mu__boolexpr67;
-bool mu__boolexpr68;
-  if (!((mu_Cache[1].mu_State) == (mu_E))) mu__boolexpr68 = FALSE ;
+  if (!((mu_Cache[1].mu_State) == (mu_E))) mu__boolexpr59 = FALSE ;
   else {
-  mu__boolexpr68 = ((mu_Cache[1].mu_Data) == (1)) ; 
-}
-  if (!(mu__boolexpr68)) mu__boolexpr67 = FALSE ;
-  else {
-  mu__boolexpr67 = ((mu_Cache[2].mu_State) == (mu_I)) ; 
-}
-  if (!(mu__boolexpr67)) mu__boolexpr66 = FALSE ;
-  else {
-  mu__boolexpr66 = ((mu_Cache[2].mu_Data) == (1)) ; 
-}
-  if (!(mu__boolexpr66)) mu__boolexpr65 = FALSE ;
-  else {
-  mu__boolexpr65 = ((mu_Chan1[1].mu_Cmd) == (mu_ReqS)) ; 
-}
-  if (!(mu__boolexpr65)) mu__boolexpr64 = FALSE ;
-  else {
-  mu__boolexpr64 = ((mu_Chan1[1].mu_Data) == (1)) ; 
-}
-  if (!(mu__boolexpr64)) mu__boolexpr63 = FALSE ;
-  else {
-  mu__boolexpr63 = ((mu_Chan1[2].mu_Cmd) == (mu_ReqE)) ; 
-}
-  if (!(mu__boolexpr63)) mu__boolexpr62 = FALSE ;
-  else {
-  mu__boolexpr62 = ((mu_Chan1[2].mu_Data) == (1)) ; 
-}
-  if (!(mu__boolexpr62)) mu__boolexpr61 = FALSE ;
-  else {
-  mu__boolexpr61 = ((mu_Chan2[1].mu_Cmd) == (mu_Empty)) ; 
-}
-  if (!(mu__boolexpr61)) mu__boolexpr60 = FALSE ;
-  else {
-  mu__boolexpr60 = ((mu_Chan2[1].mu_Data) == (2)) ; 
-}
-  if (!(mu__boolexpr60)) mu__boolexpr59 = FALSE ;
-  else {
-  mu__boolexpr59 = ((mu_Chan2[2].mu_Cmd) == (mu_Empty)) ; 
+  mu__boolexpr59 = ((mu_Cache[2].mu_State) == (mu_E)) ; 
 }
   if (!(mu__boolexpr59)) mu__boolexpr58 = FALSE ;
   else {
-  mu__boolexpr58 = ((mu_Chan2[2].mu_Data) == (2)) ; 
+  mu__boolexpr58 = ((mu_Chan1[1].mu_Cmd) == (mu_ReqE)) ; 
 }
   if (!(mu__boolexpr58)) mu__boolexpr57 = FALSE ;
   else {
-  mu__boolexpr57 = ((mu_Chan3[1].mu_Cmd) == (mu_Empty)) ; 
+  mu__boolexpr57 = ((mu_Chan1[2].mu_Cmd) == (mu_ReqE)) ; 
 }
   if (!(mu__boolexpr57)) mu__boolexpr56 = FALSE ;
   else {
-  mu__boolexpr56 = ((mu_Chan3[1].mu_Data) == (2)) ; 
+  mu__boolexpr56 = ((mu_Chan2[1].mu_Cmd) == (mu_Empty)) ; 
 }
   if (!(mu__boolexpr56)) mu__boolexpr55 = FALSE ;
   else {
-  mu__boolexpr55 = ((mu_Chan3[2].mu_Cmd) == (mu_Empty)) ; 
+  mu__boolexpr55 = ((mu_Chan2[2].mu_Cmd) == (mu_Empty)) ; 
 }
   if (!(mu__boolexpr55)) mu__boolexpr54 = FALSE ;
   else {
-  mu__boolexpr54 = ((mu_Chan3[2].mu_Data) == (1)) ; 
+  mu__boolexpr54 = ((mu_Chan3[1].mu_Cmd) == (mu_Empty)) ; 
 }
   if (!(mu__boolexpr54)) mu__boolexpr53 = FALSE ;
   else {
-  mu__boolexpr53 = ((mu_InvSet[1]) == (mu_true)) ; 
+  mu__boolexpr53 = ((mu_Chan3[2].mu_Cmd) == (mu_Empty)) ; 
 }
   if (!(mu__boolexpr53)) mu__boolexpr52 = FALSE ;
   else {
-  mu__boolexpr52 = ((mu_InvSet[2]) == (mu_false)) ; 
+  mu__boolexpr52 = ((mu_InvSet[1]) == (mu_false)) ; 
 }
   if (!(mu__boolexpr52)) mu__boolexpr51 = FALSE ;
   else {
-  mu__boolexpr51 = ((mu_ShrSet[1]) == (mu_true)) ; 
+  mu__boolexpr51 = ((mu_InvSet[2]) == (mu_false)) ; 
 }
   if (!(mu__boolexpr51)) mu__boolexpr50 = FALSE ;
   else {
-  mu__boolexpr50 = ((mu_ShrSet[2]) == (mu_false)) ; 
+  mu__boolexpr50 = ((mu_ShrSet[1]) == (mu_false)) ; 
 }
   if (!(mu__boolexpr50)) mu__boolexpr49 = FALSE ;
   else {
-  mu__boolexpr49 = ((mu_ExGntd) == (mu_true)) ; 
+  mu__boolexpr49 = ((mu_ShrSet[2]) == (mu_false)) ; 
 }
   if (!(mu__boolexpr49)) mu__boolexpr48 = FALSE ;
   else {
-  mu__boolexpr48 = ((mu_CurCmd) == (mu_ReqE)) ; 
+  mu__boolexpr48 = ((mu_ExGntd) == (mu_false)) ; 
 }
   if (!(mu__boolexpr48)) mu__boolexpr47 = FALSE ;
   else {
-  mu__boolexpr47 = ((mu_CurPtr) == (1)) ; 
+  mu__boolexpr47 = ((mu_CurCmd) == (mu_Empty)) ; 
 }
   if (!(mu__boolexpr47)) mu__boolexpr46 = FALSE ;
   else {
-  mu__boolexpr46 = ((mu_MemData) == (2)) ; 
+  mu__boolexpr46 = ((mu_MemData) == (1)) ; 
 }
   if (!(mu__boolexpr46)) mu__boolexpr45 = FALSE ;
   else {
@@ -2577,7 +2532,7 @@ bool mu__boolexpr68;
 return !(mu__boolexpr45);
 };
 
-bool mu__condition_69() // Condition for Rule "reachableStateN"
+bool mu__condition_60() // Condition for Rule "unreachableStateN"
 {
   return mu__invariant_44( );
 }
@@ -2585,7 +2540,7 @@ bool mu__condition_69() // Condition for Rule "reachableStateN"
 /**** end rule declaration ****/
 
 const rulerec invariants[] = {
-{"reachableStateN", &mu__condition_69, NULL, },
+{"unreachableStateN", &mu__condition_60, NULL, },
 };
 const unsigned short numinvariants = 1;
 

@@ -1,0 +1,3 @@
+python3 equivalance_checkgerman.py
+python3 equivalance_checkflash.py
+python3 equivalance_checktilelink.py

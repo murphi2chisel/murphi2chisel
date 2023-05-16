@@ -1,0 +1,4633 @@
+(benchmark) bar
+
+(#2)		!((((_i1_io_en_a == 9'd114) || (_i1_io_en_a != 9'd114)) && b$73965 && (_s95_id211 || !(_s95_id211)) && _s95_id211))
+	(id)	64166
+	(#UF )	0
+	(#UFt)	0
+	(#K  )	1
+	(#reg)	1
+	(#inp)	1
+	(#ite)	0
+	(#CF )	7
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd8) && _s95_id211))
+	(id)	64389
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#4)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd9) && _s95_id211))
+	(id)	64397
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#5)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd10) && _s95_id211))
+	(id)	64405
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#6)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd11) && _s95_id211))
+	(id)	64413
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#7)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd12) && _s95_id211))
+	(id)	64421
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#8)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd13) && _s95_id211))
+	(id)	64429
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#9)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd14) && _s95_id211))
+	(id)	64437
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#10)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd15) && _s95_id211))
+	(id)	64445
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#11)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd16) && _s95_id211))
+	(id)	64453
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#12)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd17) && _s95_id211))
+	(id)	64461
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#13)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd18) && _s95_id211))
+	(id)	64469
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#14)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd19) && _s95_id211))
+	(id)	64477
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#15)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd20) && _s95_id211))
+	(id)	64485
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#16)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd21) && _s95_id211))
+	(id)	64493
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#17)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd22) && _s95_id211))
+	(id)	64501
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#18)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd23) && _s95_id211))
+	(id)	64509
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#19)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd24) && _s95_id211))
+	(id)	64517
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#20)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd25) && _s95_id211))
+	(id)	64525
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#21)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd26) && _s95_id211))
+	(id)	64533
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#22)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd27) && _s95_id211))
+	(id)	64541
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#23)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd28) && _s95_id211))
+	(id)	64549
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#24)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd29) && _s95_id211))
+	(id)	64557
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#25)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd30) && _s95_id211))
+	(id)	64565
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#26)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd31) && _s95_id211))
+	(id)	64573
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#27)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd32) && _s95_id211))
+	(id)	64581
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#28)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd34) && _s95_id211))
+	(id)	64592
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#29)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd35) && _s95_id211))
+	(id)	64600
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#30)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd36) && _s95_id211))
+	(id)	64608
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#31)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd37) && _s95_id211))
+	(id)	64616
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#32)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd38) && _s95_id211))
+	(id)	64626
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#33)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd39) && _s95_id211))
+	(id)	64634
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#34)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd40) && _s95_id211))
+	(id)	64642
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#35)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd42) && _s95_id211))
+	(id)	64650
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#36)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd43) && _s95_id211))
+	(id)	64658
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#37)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd44) && _s95_id211))
+	(id)	64666
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#38)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd46) && _s95_id211))
+	(id)	64674
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#39)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd47) && _s95_id211))
+	(id)	64682
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#40)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd48) && _s95_id211))
+	(id)	64690
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#41)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd49) && _s95_id211))
+	(id)	64698
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#42)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd50) && _s95_id211))
+	(id)	64706
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#43)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd51) && _s95_id211))
+	(id)	64714
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#44)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd52) && _s95_id211))
+	(id)	64722
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#45)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd53) && _s95_id211))
+	(id)	64730
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#46)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd54) && _s95_id211))
+	(id)	64738
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#47)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd55) && _s95_id211))
+	(id)	64746
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#48)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd56) && _s95_id211))
+	(id)	64754
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#49)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd57) && _s95_id211))
+	(id)	64762
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#50)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd58) && _s95_id211))
+	(id)	64770
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#51)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd59) && _s95_id211))
+	(id)	64778
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#52)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd60) && _s95_id211))
+	(id)	64786
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#53)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd61) && _s95_id211))
+	(id)	64794
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#54)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd62) && _s95_id211))
+	(id)	64802
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#55)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd63) && _s95_id211))
+	(id)	64810
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#56)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd64) && _s95_id211))
+	(id)	64818
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#57)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd65) && _s95_id211))
+	(id)	64826
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#58)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd66) && _s95_id211))
+	(id)	64834
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#59)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd67) && _s95_id211))
+	(id)	64842
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#60)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd68) && _s95_id211))
+	(id)	64850
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#61)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd69) && _s95_id211))
+	(id)	64858
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#62)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd70) && _s95_id211))
+	(id)	64866
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#63)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd71) && _s95_id211))
+	(id)	64874
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#64)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd72) && _s95_id211))
+	(id)	64882
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#65)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd73) && _s95_id211))
+	(id)	64890
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#66)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd74) && _s95_id211))
+	(id)	64898
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#67)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd75) && _s95_id211))
+	(id)	64906
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#68)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd76) && _s95_id211))
+	(id)	64914
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#69)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd77) && _s95_id211))
+	(id)	64922
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#70)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd78) && _s95_id211))
+	(id)	64930
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#71)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd79) && _s95_id211))
+	(id)	64938
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#72)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd80) && _s95_id211))
+	(id)	64946
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#73)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd81) && _s95_id211))
+	(id)	64954
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#74)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd82) && _s95_id211))
+	(id)	64962
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#75)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd83) && _s95_id211))
+	(id)	64970
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#76)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd84) && _s95_id211))
+	(id)	64978
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#77)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd85) && _s95_id211))
+	(id)	64986
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#78)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd86) && _s95_id211))
+	(id)	64994
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#79)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd87) && _s95_id211))
+	(id)	65002
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#80)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd88) && _s95_id211))
+	(id)	65010
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#81)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd89) && _s95_id211))
+	(id)	65021
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#82)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd90) && _s95_id211))
+	(id)	65029
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#83)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd91) && _s95_id211))
+	(id)	65037
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#84)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd92) && _s95_id211))
+	(id)	65045
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#85)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd93) && _s95_id211))
+	(id)	65056
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#86)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd94) && _s95_id211))
+	(id)	65064
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#87)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd95) && _s95_id211))
+	(id)	65072
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#88)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd96) && _s95_id211))
+	(id)	65080
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#89)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd97) && _s95_id211))
+	(id)	65088
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#90)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd98) && _s95_id211))
+	(id)	65099
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#91)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd99) && _s95_id211))
+	(id)	65107
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#92)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd100) && _s95_id211))
+	(id)	65115
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#93)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd101) && _s95_id211))
+	(id)	65126
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#94)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd102) && _s95_id211))
+	(id)	65134
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#95)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd103) && _s95_id211))
+	(id)	65142
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#96)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd104) && _s95_id211))
+	(id)	65150
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#97)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd105) && _s95_id211))
+	(id)	65161
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#98)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd106) && _s95_id211))
+	(id)	65169
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#99)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd107) && _s95_id211))
+	(id)	65177
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#100)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd108) && _s95_id211))
+	(id)	65185
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#101)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd109) && _s95_id211))
+	(id)	65193
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#102)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd110) && _s95_id211))
+	(id)	65201
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#103)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd111) && _s95_id211))
+	(id)	65209
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#104)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd112) && _s95_id211))
+	(id)	65217
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#105)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd113) && _s95_id211))
+	(id)	65225
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#106)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd115) && _s95_id211))
+	(id)	65233
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#107)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd116) && _s95_id211))
+	(id)	65241
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#108)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd117) && _s95_id211))
+	(id)	65249
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#109)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd118) && _s95_id211))
+	(id)	65257
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#110)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd119) && _s95_id211))
+	(id)	65265
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#111)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd120) && _s95_id211))
+	(id)	65273
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#112)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd121) && _s95_id211))
+	(id)	65281
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#113)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd122) && _s95_id211))
+	(id)	65289
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#114)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd123) && _s95_id211))
+	(id)	65297
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#115)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd124) && _s95_id211))
+	(id)	65305
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#116)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd125) && _s95_id211))
+	(id)	65313
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#117)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd126) && _s95_id211))
+	(id)	65321
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#118)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd127) && _s95_id211))
+	(id)	65329
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#119)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd128) && _s95_id211))
+	(id)	65337
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#120)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd129) && _s95_id211))
+	(id)	65345
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#121)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd130) && _s95_id211))
+	(id)	65353
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#122)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd131) && _s95_id211))
+	(id)	65361
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#123)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd132) && _s95_id211))
+	(id)	65369
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#124)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd134) && _s95_id211))
+	(id)	65377
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#125)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd135) && _s95_id211))
+	(id)	65385
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#126)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd136) && _s95_id211))
+	(id)	65393
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#127)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd137) && _s95_id211))
+	(id)	65401
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#128)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd138) && _s95_id211))
+	(id)	65409
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#129)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd139) && _s95_id211))
+	(id)	65417
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#130)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd140) && _s95_id211))
+	(id)	65425
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#131)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd141) && _s95_id211))
+	(id)	65433
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#132)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd142) && _s95_id211))
+	(id)	65441
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#133)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd143) && _s95_id211))
+	(id)	65449
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#134)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd144) && _s95_id211))
+	(id)	65457
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#135)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd145) && _s95_id211))
+	(id)	65465
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#136)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd146) && _s95_id211))
+	(id)	65473
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#137)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd147) && _s95_id211))
+	(id)	65481
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#138)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd45) && _s95_id211))
+	(id)	65489
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#139)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd148) && _s95_id211))
+	(id)	65497
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#140)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd149) && _s95_id211))
+	(id)	65505
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#141)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd150) && _s95_id211))
+	(id)	65513
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#142)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd151) && _s95_id211))
+	(id)	65521
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#143)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd152) && _s95_id211))
+	(id)	65529
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#144)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd153) && _s95_id211))
+	(id)	65537
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#145)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd154) && _s95_id211))
+	(id)	65545
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#146)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd155) && _s95_id211))
+	(id)	65553
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#147)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd156) && _s95_id211))
+	(id)	65561
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#148)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd157) && _s95_id211))
+	(id)	65569
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#149)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd158) && _s95_id211))
+	(id)	65577
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#150)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd133) && _s95_id211))
+	(id)	65585
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#151)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd159) && _s95_id211))
+	(id)	65593
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#152)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd160) && _s95_id211))
+	(id)	65601
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#153)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd161) && _s95_id211))
+	(id)	65609
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#154)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd162) && _s95_id211))
+	(id)	65617
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#155)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd163) && _s95_id211))
+	(id)	65625
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#156)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd164) && _s95_id211))
+	(id)	65633
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#157)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd165) && _s95_id211))
+	(id)	65641
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#158)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd166) && _s95_id211))
+	(id)	65649
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#159)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd41) && _s95_id211))
+	(id)	65657
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#160)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd167) && _s95_id211))
+	(id)	65665
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#161)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd168) && _s95_id211))
+	(id)	65673
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#162)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd169) && _s95_id211))
+	(id)	65681
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#163)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd170) && _s95_id211))
+	(id)	65689
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#164)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd171) && _s95_id211))
+	(id)	65697
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#165)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd172) && _s95_id211))
+	(id)	65705
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#166)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd173) && _s95_id211))
+	(id)	65713
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#167)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd174) && _s95_id211))
+	(id)	65721
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#168)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd175) && _s95_id211))
+	(id)	65729
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#169)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd176) && _s95_id211))
+	(id)	65737
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#170)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd177) && _s95_id211))
+	(id)	65745
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#171)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd178) && _s95_id211))
+	(id)	65753
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#172)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd179) && _s95_id211))
+	(id)	65761
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#173)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd180) && _s95_id211))
+	(id)	65769
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#174)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd181) && _s95_id211))
+	(id)	65777
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#175)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd182) && _s95_id211))
+	(id)	65785
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#176)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd183) && _s95_id211))
+	(id)	65793
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#177)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd184) && _s95_id211))
+	(id)	65801
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#178)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd185) && _s95_id211))
+	(id)	65809
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#179)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd186) && _s95_id211))
+	(id)	65817
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#180)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd187) && _s95_id211))
+	(id)	65825
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#181)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd188) && _s95_id211))
+	(id)	65833
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#182)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd189) && _s95_id211))
+	(id)	65841
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#183)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd190) && _s95_id211))
+	(id)	65849
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#184)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd191) && _s95_id211))
+	(id)	65857
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#185)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd192) && _s95_id211))
+	(id)	65865
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#186)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd193) && _s95_id211))
+	(id)	65873
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#187)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd194) && _s95_id211))
+	(id)	65881
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#188)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd195) && _s95_id211))
+	(id)	65889
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#189)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd196) && _s95_id211))
+	(id)	65897
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#190)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd197) && _s95_id211))
+	(id)	65905
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#191)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd198) && _s95_id211))
+	(id)	65913
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#192)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd199) && _s95_id211))
+	(id)	65921
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#193)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd200) && _s95_id211))
+	(id)	65929
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#194)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd201) && _s95_id211))
+	(id)	65937
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#195)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd202) && _s95_id211))
+	(id)	65945
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#196)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd203) && _s95_id211))
+	(id)	65953
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#197)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd204) && _s95_id211))
+	(id)	65961
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#198)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd205) && _s95_id211))
+	(id)	65969
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#199)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd206) && _s95_id211))
+	(id)	65977
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#200)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd207) && _s95_id211))
+	(id)	65985
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#201)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd208) && _s95_id211))
+	(id)	65993
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#202)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd209) && _s95_id211))
+	(id)	66001
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#203)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd210) && _s95_id211))
+	(id)	66009
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#204)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd211) && _s95_id211))
+	(id)	66017
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#205)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd212) && _s95_id211))
+	(id)	66025
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#206)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd213) && _s95_id211))
+	(id)	66033
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#207)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd214) && _s95_id211))
+	(id)	66041
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#208)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd215) && _s95_id211))
+	(id)	66049
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#209)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd216) && _s95_id211))
+	(id)	66057
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#210)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd217) && _s95_id211))
+	(id)	66065
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#211)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd218) && _s95_id211))
+	(id)	66073
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#212)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd219) && _s95_id211))
+	(id)	66081
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#213)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd220) && _s95_id211))
+	(id)	66089
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#214)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd221) && _s95_id211))
+	(id)	66097
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#215)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd222) && _s95_id211))
+	(id)	66105
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#216)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd223) && _s95_id211))
+	(id)	66113
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#217)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd224) && _s95_id211))
+	(id)	66121
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#218)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd225) && _s95_id211))
+	(id)	66129
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#219)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd226) && _s95_id211))
+	(id)	66137
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#220)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd227) && _s95_id211))
+	(id)	66145
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#221)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd228) && _s95_id211))
+	(id)	66153
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#222)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd33) && _s95_id211))
+	(id)	66164
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#223)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd229) && _s95_id211))
+	(id)	66172
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#224)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd230) && _s95_id211))
+	(id)	66180
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#225)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd231) && _s95_id211))
+	(id)	66188
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#226)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd232) && _s95_id211))
+	(id)	66196
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#227)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd233) && _s95_id211))
+	(id)	66204
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#228)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd234) && _s95_id211))
+	(id)	66212
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#229)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd235) && _s95_id211))
+	(id)	66220
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#230)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd236) && _s95_id211))
+	(id)	66228
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#231)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd237) && _s95_id211))
+	(id)	66239
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#232)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd238) && _s95_id211))
+	(id)	66247
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#233)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd239) && _s95_id211))
+	(id)	66255
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#234)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd240) && _s95_id211))
+	(id)	66263
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#235)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd241) && _s95_id211))
+	(id)	66274
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#236)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd242) && _s95_id211))
+	(id)	66282
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#237)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd243) && _s95_id211))
+	(id)	66290
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#238)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd244) && _s95_id211))
+	(id)	66298
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#239)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd245) && _s95_id211))
+	(id)	66306
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#240)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd246) && _s95_id211))
+	(id)	66317
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#241)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd247) && _s95_id211))
+	(id)	66325
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#242)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd248) && _s95_id211))
+	(id)	66333
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#243)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd249) && _s95_id211))
+	(id)	66344
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#244)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd250) && _s95_id211))
+	(id)	66352
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#245)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd251) && _s95_id211))
+	(id)	66360
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#246)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd252) && _s95_id211))
+	(id)	66368
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#247)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd253) && _s95_id211))
+	(id)	66379
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#248)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd254) && _s95_id211))
+	(id)	66387
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#249)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd255) && _s95_id211))
+	(id)	66395
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#250)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd256) && _s95_id211))
+	(id)	66403
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#251)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd257) && _s95_id211))
+	(id)	66411
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#252)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd258) && _s95_id211))
+	(id)	66422
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#253)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd259) && _s95_id211))
+	(id)	66433
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#254)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd260) && _s95_id211))
+	(id)	66441
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#255)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd261) && _s95_id211))
+	(id)	66449
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#256)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd262) && _s95_id211))
+	(id)	66457
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#257)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd263) && _s95_id211))
+	(id)	66468
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#258)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd264) && _s95_id211))
+	(id)	66479
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#259)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd265) && _s95_id211))
+	(id)	66487
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#260)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd266) && _s95_id211))
+	(id)	66495
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#261)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd267) && _s95_id211))
+	(id)	66508
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#262)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd268) && _s95_id211))
+	(id)	66521
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#263)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd269) && _s95_id211))
+	(id)	66529
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#264)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd270) && _s95_id211))
+	(id)	66537
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#265)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd271) && _s95_id211))
+	(id)	66545
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#266)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd272) && _s95_id211))
+	(id)	66553
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#267)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd273) && _s95_id211))
+	(id)	66561
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#268)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd274) && _s95_id211))
+	(id)	66569
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#269)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd275) && _s95_id211))
+	(id)	66577
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#270)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd276) && _s95_id211))
+	(id)	66585
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#271)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd277) && _s95_id211))
+	(id)	66593
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#272)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd278) && _s95_id211))
+	(id)	66601
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#273)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd279) && _s95_id211))
+	(id)	66609
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#274)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd280) && _s95_id211))
+	(id)	66617
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#275)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd281) && _s95_id211))
+	(id)	66625
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#276)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd282) && _s95_id211))
+	(id)	66633
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#277)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd283) && _s95_id211))
+	(id)	66641
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#278)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd284) && _s95_id211))
+	(id)	66649
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#279)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd285) && _s95_id211))
+	(id)	66657
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#280)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd286) && _s95_id211))
+	(id)	66665
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#281)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd287) && _s95_id211))
+	(id)	66673
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#282)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd288) && _s95_id211))
+	(id)	66681
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#283)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd289) && _s95_id211))
+	(id)	66689
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#284)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd290) && _s95_id211))
+	(id)	66697
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#285)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd291) && _s95_id211))
+	(id)	66705
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#286)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd292) && _s95_id211))
+	(id)	66713
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#287)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd293) && _s95_id211))
+	(id)	66721
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#288)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd294) && _s95_id211))
+	(id)	66729
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#289)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd295) && _s95_id211))
+	(id)	66737
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#290)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd296) && _s95_id211))
+	(id)	66745
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#291)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd297) && _s95_id211))
+	(id)	66753
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#292)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd298) && _s95_id211))
+	(id)	66761
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#293)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd299) && _s95_id211))
+	(id)	66769
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#294)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd300) && _s95_id211))
+	(id)	66777
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#295)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd301) && _s95_id211))
+	(id)	66785
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#296)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd302) && _s95_id211))
+	(id)	66793
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#297)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd303) && _s95_id211))
+	(id)	66801
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#298)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd304) && _s95_id211))
+	(id)	66809
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#299)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd305) && _s95_id211))
+	(id)	66817
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#300)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd306) && _s95_id211))
+	(id)	66825
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#301)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd307) && _s95_id211))
+	(id)	66833
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#302)		!(((((b$209 || b$214) && (b$209$next || b$214$next)) && !(_s95_id211$next)) && (_i1_io_en_a == 9'd308) && _s95_id211))
+	(id)	66841
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_9	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#303)		!(((_s22_Sta_reg_HomeProc_CacheState$next == 2'd2) && (_i1_io_en_a == 9'd23) && !(ReductionOr_1_2(_s22_Sta_reg_HomeProc_CacheState)) && (_s22_Sta_reg_HomeProc_CacheState$next == w$320)))
+	(id)	67794
+	(#UF )	3
+	(#UFt)	2
+	      	ReductionOr_1_2	#2
+	      	ReductionOr_1_9	#1
+	(#K  )	316
+	(#reg)	28
+	(#inp)	1
+	(#ite)	491
+	(#CF )	934
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#304)		!(((_s54_Sta_reg_Proc_4_CacheState$next == 2'd2) && (_s82_Sta_reg_UniMsg_4_Cmd == 3'd3) && (_i1_io_en_a == 9'd259) && (_s54_Sta_reg_Proc_4_CacheState$next == w$570)))
+	(id)	68786
+	(#UF )	2
+	(#UFt)	2
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_9	#1
+	(#K  )	316
+	(#reg)	18
+	(#inp)	1
+	(#ite)	343
+	(#CF )	691
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#305)		!(((_s50_Sta_reg_Proc_3_CacheState$next == 2'd2) && (_s78_Sta_reg_UniMsg_3_Cmd == 3'd3) && (_i1_io_en_a == 9'd258) && (_s50_Sta_reg_Proc_3_CacheState$next == w$513)))
+	(id)	68839
+	(#UF )	2
+	(#UFt)	2
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_9	#1
+	(#K  )	316
+	(#reg)	18
+	(#inp)	1
+	(#ite)	343
+	(#CF )	691
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#306)		!(((_s46_Sta_reg_Proc_2_CacheState$next == 2'd2) && (_s74_Sta_reg_UniMsg_2_Cmd == 3'd3) && (_i1_io_en_a == 9'd257) && (_s46_Sta_reg_Proc_2_CacheState$next == w$455)))
+	(id)	68899
+	(#UF )	2
+	(#UFt)	2
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_9	#1
+	(#K  )	316
+	(#reg)	18
+	(#inp)	1
+	(#ite)	343
+	(#CF )	691
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#307)		!(((_s42_Sta_reg_Proc_1_CacheState$next == 2'd2) && (_s70_Sta_reg_UniMsg_1_Cmd == 3'd3) && (_i1_io_en_a == 9'd256) && (_s42_Sta_reg_Proc_1_CacheState$next == w$396)))
+	(id)	68959
+	(#UF )	2
+	(#UFt)	2
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_9	#1
+	(#K  )	316
+	(#reg)	18
+	(#inp)	1
+	(#ite)	343
+	(#CF )	691
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#308)		!(((_s22_Sta_reg_HomeProc_CacheState$next == 2'd2) && (_s26_Sta_reg_HomeUniMsg_Cmd == 3'd3) && (_i1_io_en_a == 9'd255) && (_s22_Sta_reg_HomeProc_CacheState$next == w$320)))
+	(id)	70424
+	(#UF )	3
+	(#UFt)	2
+	      	ReductionOr_1_2	#2
+	      	ReductionOr_1_9	#1
+	(#K  )	316
+	(#reg)	28
+	(#inp)	1
+	(#ite)	491
+	(#CF )	933
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+
+(local equalities) #0
+
+(learned predicates) #2
+            _s95_id211
+            (_i1_io_en_a == 9'd114)
+
+(learned constants)  #1
+            9'd114
+
+(learned signals)    #2
+            _s95_id211
+            _i1_io_en_a
+
+(learned UFs)        #0
+
+(#sim. iterations) 1
+(#ref. iterations) 307
+(#refs) 307
+(#assump. lemmas)  2
+(#lemmas)          309

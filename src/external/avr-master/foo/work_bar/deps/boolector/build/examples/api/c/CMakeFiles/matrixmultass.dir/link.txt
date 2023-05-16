@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=gnu++11 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG  -rdynamic CMakeFiles/matrixmultass.dir/matrixmultass/matrixmultass.c.o  -o ../../../bin/examples/api/c/matrixmultass/matrixmultass  ../../../lib/libboolector.a -pthread ../../../../deps/install/lib/libbtor2parser.a ../../../../deps/install/lib/libcadical.a 

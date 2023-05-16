@@ -1,0 +1,127 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addDefaultCommands), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addDefaultCommands, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(initialize), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(initialize, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(boot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(writeSbtVersion, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.8.0 (Private Build Java 1.8.0_362)[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.defaultLoad until apply took 47.113477ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 31.516829ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 0.176389ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/czh/murphi2chisel/src/external/chisel-template/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadUnit: mkEval took 3.749277ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/czh/murphi2chisel/src/external/chisel-template/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 6.749 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project chisel-template-build from plugins.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProject(chisel-template-build) took 20.205927ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: finalizeProject(Project(id chisel-template-build, base: /home/czh/murphi2chisel/src/external/chisel-template/project, plugins: List(<none>))) took 37.67095ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/czh/murphi2chisel/src/external/chisel-template/project, returning: (chisel-template-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 294.335238ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 4.397668ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/home/czh/murphi2chisel/src/external/chisel-template/project/, ...) took 332.765531ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 399.755201ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 2.12698ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 24.797019ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 3.570966ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 198.564112ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 45.894342ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 0.882236ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/czh/murphi2chisel/src/external/chisel-template/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 1071.567919ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.002261ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/czh/murphi2chisel/src/external/chisel-template[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 0.121159ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found root project root w/ remaining [0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 0.900409 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProject(root) took 1.546025ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: finalizeProject(Project(id root, base: /home/czh/murphi2chisel/src/external/chisel-template, plugins: List(<none>))) took 3.008655ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/czh/murphi2chisel/src/external/chisel-template, returning: (root)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 35.630472ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 0.416501ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/home/czh/murphi2chisel/src/external/chisel-template/, ...) took 1108.243531ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: load took 1118.005604ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: resolveProjects took 0.063693ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: finalTransforms took 3.971246ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: config.delegates took 0.193728ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: Def.make(settings)... took 51.062597ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: structureIndex took 12.750641ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: mkStreams took 0.002055ms[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to %NAME% (in build file:/home/czh/murphi2chisel/src/external/chisel-template/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(notifyUsersAboutShell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(iflast shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(runMain gensystem 2 2, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / runMain[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /home/czh/murphi2chisel/src/external/chisel-template/target/scala-2.13/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 5.268 (53.4%) were spent in GC. [Heap: 0.07GB free of 0.93GB, max 0.93GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 9 seconds, 10.389 (129.6%) were spent in GC. [Heap: 0.07GB free of 0.93GB, max 0.93GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[31merror[0m] [0m[0m## Exception when compiling 11 sources to /home/czh/murphi2chisel/src/external/chisel-template/target/scala-2.13/classes[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.OutOfMemoryError: GC overhead limit exceeded[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$StrictTreeCopier.Ident(Trees.scala:1117)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$StrictTreeCopier.Ident(Trees.scala:1045)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Ident.transform(Trees.scala:865)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1849)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Select.transform(Trees.scala:852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1849)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Select.transform(Trees.scala:852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1849)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Select.transform(Trees.scala:852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1849)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Select.transform(Trees.scala:852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1849)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Apply.transform(Trees.scala:786)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1849)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Typed.transform(Trees.scala:743)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1849)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.transformTrees(Trees.scala:2591)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Apply.transform(Trees.scala:786)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1849)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.transformTrees(Trees.scala:2591)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Apply.transform(Trees.scala:786)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1852)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Duplicator.transform(Trees.scala:1849)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Typed.transform(Trees.scala:743)[0m
+[0m[[0m[31merror[0m] [0m[0m           [0m

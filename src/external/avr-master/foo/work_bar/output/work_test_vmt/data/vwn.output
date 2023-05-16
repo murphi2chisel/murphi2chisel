@@ -1,0 +1,5 @@
+examples/vmt/counter.smt2  examples/vmt/
+Using MathSAT5 version 5.6.6 (218275631c24) (Apr 23 2021 07:55:22, gmp 6.1.2, gcc 7.5.0, 64-bit)
+parsed system with 1 state variables
+found total 1 relations in T
+	(performing splitting nodes at extract points)

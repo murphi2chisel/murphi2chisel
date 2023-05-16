@@ -2,24 +2,17 @@ import os
 import sys
 sys.path.append("../src")
 from load import *
+sys.path.append("../equivalence_check")
 
 cmurphi_path = '/home/czh/murphi2chisel/src/external/cmurphi'
 protocol_dir = '/home/czh/murphi2chisel/equivalence_check/flash'
 constlist = [2,2]
 
+
+cwd = os.getcwd()
+chisel_dir = f"{cwd}/../src/external/chisel-template"
+
 def reachablestateset():
-    # reachable_state_set = [
-    #     {
-    #         "n[1]": "I",
-    #         "n[2]": "I",
-    #         "x":"true"
-    #     },
-    #     {
-    #         "n[1]": "T",
-    #         "n[2]": "I",
-    #         "x":"true"
-    #     }
-    # ]
     reachable_state_set = []
     with open("%s/reachablestate.txt" % protocol_dir,'r') as f:
         reachable_state = {}
@@ -32,7 +25,6 @@ def reachablestateset():
                 reachable_state[l[0]]=l[1]
             else:
                 reachable_state_set.append(reachable_state)
-            
     print(len(reachable_state_set))
     # print((reachable_state_set))
     return reachable_state_set
@@ -50,10 +42,37 @@ def unreachablestateset():
                 unreachable_state[l[0]]=l[1]
             else:
                 unreachable_state_set.append(unreachable_state)
-            
-    print(len(unreachable_state_set))
     return unreachable_state_set
 
+def chisel2verilog():
+    out_dir = protocol_dir
+    t = [f"args({i}).toInt" for i in range(len(constlist))]
+    s = gen_system_script(','.join(t))
+    with open(f"{out_dir}/gen_system.scala", 'w') as f:
+        f.write(s)
+    for file_name in ['gen_system.scala', 'cache_pkg.scala', 'node.scala', 'router.scala', 'system.scala']:
+        os.system(f"cp {out_dir}/{file_name} {chisel_dir}/src/main/scala")
+    os.chdir(chisel_dir)
+    os.system(f"sbt \"runMain gensystem {' '.join(str(const) for const in constlist)}\"")
+    # remove initial reg init & add init of reset==1 && io_en_a==0
+    with open(f"{chisel_dir}/system_build/system.sv") as f1, open(f"{out_dir}/protocol.sv", 'w') as f2:
+        sv = ""
+        flag = False
+        for line in f1:
+            if "`ifndef SYNTHESIS" in line:
+                flag = True
+            if not flag:
+                sv += line
+            if "`endif // SYNTHESIS" in line:
+                flag = False
+            if "initial begin" in line:
+                sv += """
+                initial begin
+                    assume(reset==1 && io_en_a==0);
+                end\n
+                """
+        f2.write(sv)
+    os.chdir(out_dir)
 
 
 def log(protocol_dir:str, s:str):
@@ -61,14 +80,13 @@ def log(protocol_dir:str, s:str):
         f.write(s)
     
 def checkreachablestateset():
-    os.system("export PATH=/home/ubuntu/oss-cad-suite/bin:$PATH")
     
     reachable_state_set = reachablestateset()
     # sys.path.append("../equivalence_check/flash")
     os.chdir(protocol_dir)
-    for i in range(len(reachable_state_set)):
-        reachable_state = reachable_state_set[i]
-
+    for j in range(len(reachable_state_set)):
+        reachable_state = reachable_state_set[j]
+        i = 0
         
         # murphi
         f1 = open('protocol.m','r')
@@ -89,7 +107,7 @@ def checkreachablestateset():
         parser = murphi_parser("flash%d" % i, "%s/protocol-check%d.m" % (protocol_dir,i))
         parser.dir = protocol_dir
         parser.parse()
-        os.chdir(protocol_dir)
+
         status = os.system('%s/src/mu -c protocol-check%i.m' % (cmurphi_path,i))
         if status:
             print('murphi failed to compile')
@@ -98,107 +116,44 @@ def checkreachablestateset():
         if status:
             print('g++ failed to compile')
             exit(1)
-        # -ta all the states
-        os.system("./protocol.o -k322583 -vdfs >./trace%d.txt" % i)
+        
+
 
         
 
         # chisel
-        t = []
-        j = 0
-        for x in constlist:
-            t.append("args(%d).toInt" % j)
-            j += 1
-        gen_system_script = """
-        import chisel3._
-        import chiselsby.Check
-        object gensystem extends App {
-            Check.generateRTL(() => new system(%s))
-        } 
-        """ % ','.join(t)
-        with open("%s/gen_system.scala" % protocol_dir, "w") as f:
-            f.write(gen_system_script)
-        os.system(
-            "cp %s/gen_system.scala ../../src/external/chisel-template/src/main/scala" % protocol_dir)
-        os.system(
-            "cp %s/cache_pkg.scala ../../src/external/chisel-template/src/main/scala" % protocol_dir)
-        os.system(
-            "cp %s/node.scala ../../src/external/chisel-template/src/main/scala" % protocol_dir)
-        os.system(
-            "cp %s/router.scala ../../src/external/chisel-template/src/main/scala" % protocol_dir)
-        os.system(
-            "cp %s/system.scala ../../src/external/chisel-template/src/main/scala" % protocol_dir)
-        os.chdir("../../src/external/chisel-template")
-        os.system("sbt \"runMain gensystem %s\"" %
-                    ' '.join(str(const) for const in constlist))
-        # delete random init, add init:reset==1
-        f1 = open('./system_build/system.sv')
-        f2 = open('%s/protocol.sv' % protocol_dir, 'w')
-        sv = ""
-        flag = False
-        for line in f1:
-            if "`ifndef SYNTHESIS" in line:
-                flag = True
-            if flag == False:
-                sv += line
-            if "`endif // SYNTHESIS" in line:
-                flag = False
-            if "initial begin" in line:
-                sv += """
-                initial begin
-                    assume(reset==1&&io_en_a==0);
-                end\n
-                """
-        f2.write(sv)
-        f1.close()
-        f2.close()
-        sby_script = """
-    [options]
-    mode prove
-
-    [engines]
-    abc pdr
-
-    [script]
-    read -sv protocol.sv 
-    prep -top system
-
-    [files]
-    protocol.sv
-
-    """
-        os.chdir(protocol_dir)
-        print("v%d.sby" % i)
-        with open("v%d.sby" % i,"w") as f:
-            f.write(sby_script)
-        os.system("sby -f v%d.sby" % i)
+        chisel2verilog()
+        s = sby_script()
+        with open("v%d.sby" % j,"w") as f:
+            f.write(s)
+        os.system("sby -f v%d.sby" % j)
+        # -ta all the states
+        os.system("./protocol.o -k322583 -vdfs >./v%d/trace%d.txt" % (j,i))
         
         # check
         flag_murphi = False
-        with open('trace%d.txt' % i, 'r') as f:
+        with open('./v%d/trace%d.txt' % (j,i), 'r') as f:
             for line in f.readlines():
-                if "failed" in line or "referenced" in line:
+                if "No error found" in line:
                     flag_murphi = True 
-        flag_chisel = os.path.exists("./v%d/FAIL" % i)
-        if flag_murphi and flag_chisel:
-            s = "State %s is checked reachable both in Murphi and Chisel\nMurphi log can be found in trace%d.txt and Chisel log can be found in dir v%d\n" % (str(reachable_state),i,i)
+        flag_chisel = not os.path.exists("./v%d/FAIL" % j)
+        if not flag_murphi and not flag_chisel:
+            s = "State %d %s is checked \n" % (j,str(reachable_state))
             log(protocol_dir,s) 
         else:
-            print("check failed ")
+            print("check failed "+str(j))
+            log(protocol_dir,"check failed")
             exit(1)
 
 def checkunreachablestateset():
-
-    os.system("export PATH=/home/ubuntu/oss-cad-suite/bin:$PATH")
     
     unreachable_state_set = unreachablestateset()
     # sys.path.append("../equivalence_check/flash")
     os.chdir(protocol_dir)
     for j in range(len(unreachable_state_set)):
         unreachable_state = unreachable_state_set[j]
-        i = len(reachablestateset())+j
+        i = 0
 
-        
         # murphi
         f1 = open('protocol.m','r')
         f2 = open('protocol-check%d.m' % i ,'w')
@@ -218,7 +173,7 @@ def checkunreachablestateset():
         parser = murphi_parser("flash%d" % i, "%s/protocol-check%d.m" % (protocol_dir,i))
         parser.dir = protocol_dir
         parser.parse()
-        os.chdir(protocol_dir)
+
         status = os.system('%s/src/mu -c protocol-check%i.m' % (cmurphi_path,i))
         if status:
             print('murphi failed to compile')
@@ -226,100 +181,51 @@ def checkunreachablestateset():
         status = os.system('g++ -o protocol.o protocol-check%i.cpp -I %s/include' % (i,cmurphi_path))
         if status:
             print('g++ failed to compile')
-            log(protocol_dir,"check failed un")
             exit(1)
-        # -ta all the states
-        os.system("./protocol.o -k322583 -vdfs >./trace%d.txt" % i)
+
+        os.chdir(protocol_dir)
+
 
         
 
         # chisel
-        t = []
-        j = 0
-        for x in constlist:
-            t.append("args(%d).toInt" % j)
-            j += 1
-        gen_system_script = """
-        import chisel3._
-        import chiselsby.Check
-        object gensystem extends App {
-            Check.generateRTL(() => new system(%s))
-        } 
-        """ % ','.join(t)
-        with open("%s/gen_system.scala" % protocol_dir, "w") as f:
-            f.write(gen_system_script)
-        os.system(
-            "cp %s/gen_system.scala ../../src/external/chisel-template/src/main/scala" % protocol_dir)
-        os.system(
-            "cp %s/cache_pkg.scala ../../src/external/chisel-template/src/main/scala" % protocol_dir)
-        os.system(
-            "cp %s/node.scala ../../src/external/chisel-template/src/main/scala" % protocol_dir)
-        os.system(
-            "cp %s/router.scala ../../src/external/chisel-template/src/main/scala" % protocol_dir)
-        os.system(
-            "cp %s/system.scala ../../src/external/chisel-template/src/main/scala" % protocol_dir)
-        os.chdir("../../src/external/chisel-template")
-        os.system("sbt \"runMain gensystem %s\"" %
-                    ' '.join(str(const) for const in constlist))
-        # delete random init, add init:reset==1
-        f1 = open('./system_build/system.sv')
-        f2 = open('%s/protocol.sv' % protocol_dir, 'w')
-        sv = ""
-        flag = False
-        for line in f1:
-            if "`ifndef SYNTHESIS" in line:
-                flag = True
-            if flag == False:
-                sv += line
-            if "`endif // SYNTHESIS" in line:
-                flag = False
-            if "initial begin" in line:
-                sv += """
-                initial begin
-                    assume(reset==1&&io_en_a==0);
-                end\n
-                """
-        f2.write(sv)
-        f1.close()
-        f2.close()
-        sby_script = """
-    [options]
-    mode prove
-
-    [engines]
-    abc pdr
-
-    [script]
-    read -sv protocol.sv 
-    prep -top system
-
-    [files]
-    protocol.sv
-
-    """
-        os.chdir(protocol_dir)
-        print("v%d.sby" % i)
-        with open("v%d.sby" % i,"w") as f:
-            f.write(sby_script)
-        os.system("sby -f v%d.sby" % i)
+        chisel2verilog()
+        s = sby_script()
+        with open("v%d.sby" % (j+len(reachablestateset())),"w") as f:
+            f.write(s)
+        os.system("sby -f v%d.sby" % (j+len(reachablestateset())))
+        # -ta all the states
+        os.system("./protocol.o -k322583 -vdfs >./v%d/trace%d.txt" % (j+len(reachablestateset()),i))
         
         # check
         flag_murphi = False
-        with open('trace%d.txt' % i, 'r') as f:
+        with open('./v%d/trace%d.txt' % (j+len(reachablestateset()),i), 'r') as f:
             for line in f.readlines():
-                if "failed" in line:
+                if "No error found" in line:
                     flag_murphi = True 
-        flag_chisel = os.path.exists("./v%d/FAIL" % i)
-        if not flag_murphi and not flag_chisel:
-            s = "State %s is checked unreachable both in Murphi and Chisel\nMurphi log can be found in trace%d.txt and Chisel log can be found in dir v%d\n" % (str(unreachable_state),i,i)
+        flag_chisel = not os.path.exists("./v%d/FAIL" %  (j+len(reachablestateset())))
+        if flag_murphi and flag_chisel:
+            s = "State %d %s is checked \n" % ((j+len(reachablestateset())),str(unreachable_state))
             log(protocol_dir,s) 
         else:
-            print("check failed")
-            log(protocol_dir,"check failed un")
+            print("check failed "+str((j+len(reachablestateset()))))
+            log(protocol_dir,"check failed")
             exit(1)
-     
+
+    
+
+def remove():
+    with open("%s/reachablestate.txt" % protocol_dir,'r') as f , open("%s/reachablestate2.txt" % protocol_dir,'w') as f2:
+        for line in f.readlines():
+            if "Undefined" not in line:
+                f2.write(line)  
+            # if "CurPtr" not in line:
+            #     f2.write(line)  
 
 if __name__ == '__main__':
+    # remove()
+    with open("%s/equivalence_log.txt" % protocol_dir,"w+") as f:
+        f.write("start\n")
     checkreachablestateset()
     checkunreachablestateset()
 

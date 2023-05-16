@@ -1,0 +1,68 @@
+---------------------
+WITHOUT PREPROCESSING
+---------------------
+
+------------
+Size Summary
+------------
+
+State variables (#10)
+	(1-bit)	7
+	(2-bit)	3
+
+Inputs (#6)
+	(1-bit)	5
+	(4-bit)	1
+
+Constants (#12)
+	(1-bit)	2
+	(2-bit)	4
+	(3-bit)	5
+	(4-bit)	1
+
+---------------
+State Variables
+---------------
+_s9_id38                        (1-bit)
+_s8_id30                        (1-bit)
+_s7_id26                        (1-bit)
+_s6_id22                        (1-bit)
+_s5_id17                        (1-bit)
+_s4_id15                        (1-bit)
+_s3_x_reg                       (1-bit)
+_s2_n_reg_2                     (2-bit)
+_s1_n_reg_1                     (2-bit)
+_s0_n_reg_0                     (2-bit)
+
+------
+Inputs
+------
+_i5_id369                       (1-bit)
+_i4_id362                       (1-bit)
+_i3_id353                       (1-bit)
+_i2_reset                       (1-bit)
+_i0_clock                       (1-bit)
+_i1_io_en_a                     (4-bit)
+
+---------
+Constants
+---------
+1'd1
+1'd0
+2'd3
+2'd2
+2'd1
+2'd0
+3'd7
+3'd6
+3'd5
+3'd4
+3'd0
+4'd8
+
+-----------------------------
+Uninterpreted Functions (UFs)
+-----------------------------
+ReductionOr_1_2	#2
+ReductionOr_1_4	#1
+

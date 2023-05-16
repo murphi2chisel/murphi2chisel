@@ -1,0 +1,23 @@
+# running in v/model/
+read_ilang design.il
+memory_map
+async2sync
+chformal -assume -early
+chformal -live -fair -cover -remove
+opt_clean
+setundef -anyseq
+opt -keepdc -fast
+check
+hierarchy -simcheck
+flatten
+setundef -undriven -anyseq
+setattr -unset keep
+delete -output
+opt -full
+techmap
+opt -fast
+dffunmap
+abc -g AND -fast
+opt_clean
+stat
+write_aiger -I -B -zinit -no-startoffset -map design_aiger.aim design_aiger.aig

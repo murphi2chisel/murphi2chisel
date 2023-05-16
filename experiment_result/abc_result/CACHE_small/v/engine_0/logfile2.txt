@@ -1,0 +1,18 @@
+##   0:00:00  Solver: yices
+##   0:00:00  Skipping step 0 (and assuming pass)..
+##   0:00:00  Skipping step 1 (and assuming pass)..
+##   0:00:00  Skipping step 2 (and assuming pass)..
+##   0:00:00  Skipping step 3 (and assuming pass)..
+##   0:00:00  Skipping step 4 (and assuming pass)..
+##   0:00:00  Skipping step 5 (and assuming pass)..
+##   0:00:00  Skipping step 6 (and assuming pass)..
+##   0:00:00  Skipping step 7 (and assuming pass)..
+##   0:00:00  Skipping step 8 (and assuming pass)..
+##   0:00:00  Skipping step 9 (and assuming pass)..
+##   0:00:00  Checking assertions in step 10..
+##   0:00:00  BMC failed!
+##   0:00:00  Assert failed in system: protocol.sv:4142.22-4143.59 ($assert$protocol.sv:4142$384)
+##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+##   0:00:02  Writing trace to Verilog testbench: engine_0/trace_tb.v
+##   0:00:02  Writing trace to constraints file: engine_0/trace.smtc
+##   0:00:02  Status: FAILED

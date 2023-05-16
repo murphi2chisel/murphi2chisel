@@ -1355,14 +1355,32 @@ begin
   end;
 endrule;
 
-ruleset p: NODE; q: NODE do
-invariant "CacheStateProp"
-    p != q ->
-    !(Sta.Proc[p].CacheState = CACHE_E & Sta.Proc[q].CacheState = CACHE_E);
-endruleset;
+
+
 
 invariant "MemDataProp"
   !Sta.Dir.Dirty -> Sta.MemData = Sta.CurrData;
+
+
+invariant "CacheStatePropp=1q=2"
+    !(Sta.Proc[1].CacheState = CACHE_E & Sta.Proc[2].CacheState = CACHE_E)
+
+
+invariant "CacheStatePropp=2q=1"
+    !(Sta.Proc[2].CacheState = CACHE_E & Sta.Proc[1].CacheState = CACHE_E)
+
+invariant "CacheStatePropHomep=1"
+  !(Sta.Proc[1].CacheState = CACHE_E & Sta.HomeProc.CacheState = CACHE_E)
+
+invariant "CacheStatePropHomep=2"
+  !(Sta.Proc[2].CacheState = CACHE_E & Sta.HomeProc.CacheState = CACHE_E)
+
+invariant "DataPropp=1"
+  (Sta.Proc[1].CacheState = CACHE_E -> Sta.Proc[1].CacheData = Sta.CurrData)
+
+invariant "DataPropp=2"
+  (Sta.Proc[2].CacheState = CACHE_E -> Sta.Proc[2].CacheData = Sta.CurrData)
+
 
 
 

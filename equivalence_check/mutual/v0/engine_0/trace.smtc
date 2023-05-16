@@ -1,10 +1,10 @@
 initial
 assume (= [$formal$protocol.sv:506$3_EN] false)
-assume (= [_witness_.anyinit_procdff_155] false)
+assume (= [_witness_.anyinit_procdff_157] false)
 assume (= [n_reg_0] #b00)
 assume (= [n_reg_1] #b00)
 assume (= [n_reg_2] #b00)
-assume (= [x_reg] false)
+assume (= [x_reg] true)
 
 state 0
 assume (= [clock] false)

@@ -1,5 +1,4 @@
 Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
 Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
-engine_0 (smtbmc) returned FAIL
+engine_0 (abc pdr) returned FAIL
 counterexample trace: engine_0/trace.vcd
-  failed assertion system.$assert$protocol.sv:506$54 at protocol.sv:506.22-507.62 in step 2

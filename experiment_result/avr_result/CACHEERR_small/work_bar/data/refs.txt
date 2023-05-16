@@ -1,0 +1,344 @@
+(benchmark) bar
+
+(#2)		!((((_i1_io_en_a == 5'd1) || (_i1_io_en_a != 5'd1)) && b$1997 && (_s26_id73 || !(_s26_id73)) && _s26_id73))
+	(id)	1321
+	(#UF )	0
+	(#UFt)	0
+	(#K  )	1
+	(#reg)	1
+	(#inp)	1
+	(#ite)	0
+	(#CF )	7
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd2) && _s26_id73))
+	(id)	1334
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#4)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd3) && _s26_id73))
+	(id)	1342
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#5)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd4) && _s26_id73))
+	(id)	1350
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#6)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd5) && _s26_id73))
+	(id)	1358
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#7)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd6) && _s26_id73))
+	(id)	1366
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#8)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd7) && _s26_id73))
+	(id)	1374
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#9)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd8) && _s26_id73))
+	(id)	1382
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#10)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd9) && _s26_id73))
+	(id)	1390
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#11)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd10) && _s26_id73))
+	(id)	1398
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#12)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd11) && _s26_id73))
+	(id)	1409
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#13)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd12) && _s26_id73))
+	(id)	1420
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#14)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd13) && _s26_id73))
+	(id)	1431
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#15)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd14) && _s26_id73))
+	(id)	1442
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#16)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd15) && _s26_id73))
+	(id)	1453
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#17)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd16) && _s26_id73))
+	(id)	1464
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#18)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd17) && _s26_id73))
+	(id)	1472
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#19)		!(((((b$71 || b$76) && (b$71$next || b$76$next)) && !(_s26_id73$next)) && (_i1_io_en_a == 5'd18) && _s26_id73))
+	(id)	1480
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_5	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#20)		!((((_s2_cache_reg_2 == 2'd0) || (_s2_cache_reg_2 != 2'd0)) && (_s2_cache_reg_2 == 2'd0) && ((_i1_io_en_a == 5'd15) || (_i1_io_en_a != 5'd15)) && b$1586 && ReductionOr_1_2(_s2_cache_reg_2$next) && (_s2_cache_reg_2$next == _s2_cache_reg_2$next_rhs)))
+	(id)	2013
+	(#UF )	3
+	(#UFt)	3
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_3	#1
+	      	ReductionOr_1_5	#1
+	(#K  )	24
+	(#reg)	4
+	(#inp)	1
+	(#ite)	26
+	(#CF )	58
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#21)		!(((_s1_cache_reg_1 == 2'd0) && ReductionOr_1_2(_s1_cache_reg_1)))
+	(id)	2215
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#22)		!(((_s1_cache_reg_1$next == 2'd0) && ReductionOr_1_2(_s1_cache_reg_1$next)))
+	(id)	2217
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+
+(local equalities) #0
+
+(learned predicates) #4
+            _s26_id73
+            (_i1_io_en_a == 5'd15)
+            (_i1_io_en_a == 5'd1)
+            (_s2_cache_reg_2 == 2'd0)
+
+(learned constants)  #3
+            5'd15
+            2'd0
+            5'd1
+
+(learned signals)    #3
+            _s26_id73
+            _i1_io_en_a
+            _s2_cache_reg_2
+
+(learned UFs)        #0
+
+(#sim. iterations) 3
+(#ref. iterations) 20
+(#refs) 21
+(#assump. lemmas)  2
+(#lemmas)          23

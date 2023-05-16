@@ -1,0 +1,3628 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.16+63 (git sha1 11e75bc27, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: protocol.sv
+Parsing SystemVerilog input from `protocol.sv' to AST representation.
+Storing AST representation for module `$abstract\Init'.
+Storing AST representation for module `$abstract\Init_1'.
+Storing AST representation for module `$abstract\Store'.
+Storing AST representation for module `$abstract\Store_1'.
+Storing AST representation for module `$abstract\Store_2'.
+Storing AST representation for module `$abstract\Store_3'.
+Storing AST representation for module `$abstract\Store_4'.
+Storing AST representation for module `$abstract\Store_5'.
+Storing AST representation for module `$abstract\Store_6'.
+Storing AST representation for module `$abstract\Store_7'.
+Storing AST representation for module `$abstract\SendReqS'.
+Storing AST representation for module `$abstract\SendReqS_1'.
+Storing AST representation for module `$abstract\SendReqS_2'.
+Storing AST representation for module `$abstract\SendReqS_3'.
+Storing AST representation for module `$abstract\SendReqE'.
+Storing AST representation for module `$abstract\SendReqE_1'.
+Storing AST representation for module `$abstract\SendReqE_2'.
+Storing AST representation for module `$abstract\SendReqE_3'.
+Storing AST representation for module `$abstract\RecvReqS'.
+Storing AST representation for module `$abstract\RecvReqS_1'.
+Storing AST representation for module `$abstract\RecvReqS_2'.
+Storing AST representation for module `$abstract\RecvReqS_3'.
+Storing AST representation for module `$abstract\RecvReqE'.
+Storing AST representation for module `$abstract\RecvReqE_1'.
+Storing AST representation for module `$abstract\RecvReqE_2'.
+Storing AST representation for module `$abstract\RecvReqE_3'.
+Storing AST representation for module `$abstract\SendInv'.
+Storing AST representation for module `$abstract\SendInv_1'.
+Storing AST representation for module `$abstract\SendInv_2'.
+Storing AST representation for module `$abstract\SendInv_3'.
+Storing AST representation for module `$abstract\SendGntS'.
+Storing AST representation for module `$abstract\SendGntS_1'.
+Storing AST representation for module `$abstract\SendGntS_2'.
+Storing AST representation for module `$abstract\SendGntS_3'.
+Storing AST representation for module `$abstract\SendGntE'.
+Storing AST representation for module `$abstract\SendGntE_1'.
+Storing AST representation for module `$abstract\SendGntE_2'.
+Storing AST representation for module `$abstract\SendGntE_3'.
+Storing AST representation for module `$abstract\RecvGntS'.
+Storing AST representation for module `$abstract\RecvGntS_1'.
+Storing AST representation for module `$abstract\RecvGntS_2'.
+Storing AST representation for module `$abstract\RecvGntS_3'.
+Storing AST representation for module `$abstract\RecvGntE'.
+Storing AST representation for module `$abstract\RecvGntE_1'.
+Storing AST representation for module `$abstract\RecvGntE_2'.
+Storing AST representation for module `$abstract\RecvGntE_3'.
+Storing AST representation for module `$abstract\SendInvAck'.
+Storing AST representation for module `$abstract\SendInvAck_1'.
+Storing AST representation for module `$abstract\SendInvAck_2'.
+Storing AST representation for module `$abstract\SendInvAck_3'.
+Storing AST representation for module `$abstract\RecvInvAck'.
+Storing AST representation for module `$abstract\RecvInvAck_1'.
+Storing AST representation for module `$abstract\RecvInvAck_2'.
+Storing AST representation for module `$abstract\RecvInvAck_3'.
+Storing AST representation for module `$abstract\system'.
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\system'.
+Generating RTLIL representation for module `\system'.
+
+2.2.1. Analyzing design hierarchy..
+Top module:  \system
+
+2.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvInvAck_3'.
+Generating RTLIL representation for module `\RecvInvAck_3'.
+
+2.2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvInvAck_2'.
+Generating RTLIL representation for module `\RecvInvAck_2'.
+
+2.2.4. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvInvAck_1'.
+Generating RTLIL representation for module `\RecvInvAck_1'.
+
+2.2.5. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvInvAck'.
+Generating RTLIL representation for module `\RecvInvAck'.
+
+2.2.6. Executing AST frontend in derive mode using pre-parsed AST for module `\SendInvAck_3'.
+Generating RTLIL representation for module `\SendInvAck_3'.
+
+2.2.7. Executing AST frontend in derive mode using pre-parsed AST for module `\SendInvAck_2'.
+Generating RTLIL representation for module `\SendInvAck_2'.
+
+2.2.8. Executing AST frontend in derive mode using pre-parsed AST for module `\SendInvAck_1'.
+Generating RTLIL representation for module `\SendInvAck_1'.
+
+2.2.9. Executing AST frontend in derive mode using pre-parsed AST for module `\SendInvAck'.
+Generating RTLIL representation for module `\SendInvAck'.
+
+2.2.10. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvGntE_3'.
+Generating RTLIL representation for module `\RecvGntE_3'.
+
+2.2.11. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvGntE_2'.
+Generating RTLIL representation for module `\RecvGntE_2'.
+
+2.2.12. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvGntE_1'.
+Generating RTLIL representation for module `\RecvGntE_1'.
+
+2.2.13. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvGntE'.
+Generating RTLIL representation for module `\RecvGntE'.
+
+2.2.14. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvGntS_3'.
+Generating RTLIL representation for module `\RecvGntS_3'.
+
+2.2.15. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvGntS_2'.
+Generating RTLIL representation for module `\RecvGntS_2'.
+
+2.2.16. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvGntS_1'.
+Generating RTLIL representation for module `\RecvGntS_1'.
+
+2.2.17. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvGntS'.
+Generating RTLIL representation for module `\RecvGntS'.
+
+2.2.18. Executing AST frontend in derive mode using pre-parsed AST for module `\SendGntE_3'.
+Generating RTLIL representation for module `\SendGntE_3'.
+
+2.2.19. Executing AST frontend in derive mode using pre-parsed AST for module `\SendGntE_2'.
+Generating RTLIL representation for module `\SendGntE_2'.
+
+2.2.20. Executing AST frontend in derive mode using pre-parsed AST for module `\SendGntE_1'.
+Generating RTLIL representation for module `\SendGntE_1'.
+
+2.2.21. Executing AST frontend in derive mode using pre-parsed AST for module `\SendGntE'.
+Generating RTLIL representation for module `\SendGntE'.
+
+2.2.22. Executing AST frontend in derive mode using pre-parsed AST for module `\SendGntS_3'.
+Generating RTLIL representation for module `\SendGntS_3'.
+
+2.2.23. Executing AST frontend in derive mode using pre-parsed AST for module `\SendGntS_2'.
+Generating RTLIL representation for module `\SendGntS_2'.
+
+2.2.24. Executing AST frontend in derive mode using pre-parsed AST for module `\SendGntS_1'.
+Generating RTLIL representation for module `\SendGntS_1'.
+
+2.2.25. Executing AST frontend in derive mode using pre-parsed AST for module `\SendGntS'.
+Generating RTLIL representation for module `\SendGntS'.
+
+2.2.26. Executing AST frontend in derive mode using pre-parsed AST for module `\SendInv_3'.
+Generating RTLIL representation for module `\SendInv_3'.
+
+2.2.27. Executing AST frontend in derive mode using pre-parsed AST for module `\SendInv_2'.
+Generating RTLIL representation for module `\SendInv_2'.
+
+2.2.28. Executing AST frontend in derive mode using pre-parsed AST for module `\SendInv_1'.
+Generating RTLIL representation for module `\SendInv_1'.
+
+2.2.29. Executing AST frontend in derive mode using pre-parsed AST for module `\SendInv'.
+Generating RTLIL representation for module `\SendInv'.
+
+2.2.30. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvReqE_3'.
+Generating RTLIL representation for module `\RecvReqE_3'.
+
+2.2.31. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvReqE_2'.
+Generating RTLIL representation for module `\RecvReqE_2'.
+
+2.2.32. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvReqE_1'.
+Generating RTLIL representation for module `\RecvReqE_1'.
+
+2.2.33. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvReqE'.
+Generating RTLIL representation for module `\RecvReqE'.
+
+2.2.34. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvReqS_3'.
+Generating RTLIL representation for module `\RecvReqS_3'.
+
+2.2.35. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvReqS_2'.
+Generating RTLIL representation for module `\RecvReqS_2'.
+
+2.2.36. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvReqS_1'.
+Generating RTLIL representation for module `\RecvReqS_1'.
+
+2.2.37. Executing AST frontend in derive mode using pre-parsed AST for module `\RecvReqS'.
+Generating RTLIL representation for module `\RecvReqS'.
+
+2.2.38. Executing AST frontend in derive mode using pre-parsed AST for module `\SendReqE_3'.
+Generating RTLIL representation for module `\SendReqE_3'.
+
+2.2.39. Executing AST frontend in derive mode using pre-parsed AST for module `\SendReqE_2'.
+Generating RTLIL representation for module `\SendReqE_2'.
+
+2.2.40. Executing AST frontend in derive mode using pre-parsed AST for module `\SendReqE_1'.
+Generating RTLIL representation for module `\SendReqE_1'.
+
+2.2.41. Executing AST frontend in derive mode using pre-parsed AST for module `\SendReqE'.
+Generating RTLIL representation for module `\SendReqE'.
+
+2.2.42. Executing AST frontend in derive mode using pre-parsed AST for module `\SendReqS_3'.
+Generating RTLIL representation for module `\SendReqS_3'.
+
+2.2.43. Executing AST frontend in derive mode using pre-parsed AST for module `\SendReqS_2'.
+Generating RTLIL representation for module `\SendReqS_2'.
+
+2.2.44. Executing AST frontend in derive mode using pre-parsed AST for module `\SendReqS_1'.
+Generating RTLIL representation for module `\SendReqS_1'.
+
+2.2.45. Executing AST frontend in derive mode using pre-parsed AST for module `\SendReqS'.
+Generating RTLIL representation for module `\SendReqS'.
+
+2.2.46. Executing AST frontend in derive mode using pre-parsed AST for module `\Store_7'.
+Generating RTLIL representation for module `\Store_7'.
+
+2.2.47. Executing AST frontend in derive mode using pre-parsed AST for module `\Store_6'.
+Generating RTLIL representation for module `\Store_6'.
+
+2.2.48. Executing AST frontend in derive mode using pre-parsed AST for module `\Store_5'.
+Generating RTLIL representation for module `\Store_5'.
+
+2.2.49. Executing AST frontend in derive mode using pre-parsed AST for module `\Store_4'.
+Generating RTLIL representation for module `\Store_4'.
+
+2.2.50. Executing AST frontend in derive mode using pre-parsed AST for module `\Store_3'.
+Generating RTLIL representation for module `\Store_3'.
+
+2.2.51. Executing AST frontend in derive mode using pre-parsed AST for module `\Store_2'.
+Generating RTLIL representation for module `\Store_2'.
+
+2.2.52. Executing AST frontend in derive mode using pre-parsed AST for module `\Store_1'.
+Generating RTLIL representation for module `\Store_1'.
+
+2.2.53. Executing AST frontend in derive mode using pre-parsed AST for module `\Store'.
+Generating RTLIL representation for module `\Store'.
+
+2.2.54. Executing AST frontend in derive mode using pre-parsed AST for module `\Init_1'.
+Generating RTLIL representation for module `\Init_1'.
+
+2.2.55. Executing AST frontend in derive mode using pre-parsed AST for module `\Init'.
+Generating RTLIL representation for module `\Init'.
+
+2.2.56. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \RecvInvAck_3
+Used module:     \RecvInvAck_2
+Used module:     \RecvInvAck_1
+Used module:     \RecvInvAck
+Used module:     \SendInvAck_3
+Used module:     \SendInvAck_2
+Used module:     \SendInvAck_1
+Used module:     \SendInvAck
+Used module:     \RecvGntE_3
+Used module:     \RecvGntE_2
+Used module:     \RecvGntE_1
+Used module:     \RecvGntE
+Used module:     \RecvGntS_3
+Used module:     \RecvGntS_2
+Used module:     \RecvGntS_1
+Used module:     \RecvGntS
+Used module:     \SendGntE_3
+Used module:     \SendGntE_2
+Used module:     \SendGntE_1
+Used module:     \SendGntE
+Used module:     \SendGntS_3
+Used module:     \SendGntS_2
+Used module:     \SendGntS_1
+Used module:     \SendGntS
+Used module:     \SendInv_3
+Used module:     \SendInv_2
+Used module:     \SendInv_1
+Used module:     \SendInv
+Used module:     \RecvReqE_3
+Used module:     \RecvReqE_2
+Used module:     \RecvReqE_1
+Used module:     \RecvReqE
+Used module:     \RecvReqS_3
+Used module:     \RecvReqS_2
+Used module:     \RecvReqS_1
+Used module:     \RecvReqS
+Used module:     \SendReqE_3
+Used module:     \SendReqE_2
+Used module:     \SendReqE_1
+Used module:     \SendReqE
+Used module:     \SendReqS_3
+Used module:     \SendReqS_2
+Used module:     \SendReqS_1
+Used module:     \SendReqS
+Used module:     \Store_7
+Used module:     \Store_6
+Used module:     \Store_5
+Used module:     \Store_4
+Used module:     \Store_3
+Used module:     \Store_2
+Used module:     \Store_1
+Used module:     \Store
+Used module:     \Init_1
+Used module:     \Init
+
+2.2.57. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \RecvInvAck_3
+Used module:     \RecvInvAck_2
+Used module:     \RecvInvAck_1
+Used module:     \RecvInvAck
+Used module:     \SendInvAck_3
+Used module:     \SendInvAck_2
+Used module:     \SendInvAck_1
+Used module:     \SendInvAck
+Used module:     \RecvGntE_3
+Used module:     \RecvGntE_2
+Used module:     \RecvGntE_1
+Used module:     \RecvGntE
+Used module:     \RecvGntS_3
+Used module:     \RecvGntS_2
+Used module:     \RecvGntS_1
+Used module:     \RecvGntS
+Used module:     \SendGntE_3
+Used module:     \SendGntE_2
+Used module:     \SendGntE_1
+Used module:     \SendGntE
+Used module:     \SendGntS_3
+Used module:     \SendGntS_2
+Used module:     \SendGntS_1
+Used module:     \SendGntS
+Used module:     \SendInv_3
+Used module:     \SendInv_2
+Used module:     \SendInv_1
+Used module:     \SendInv
+Used module:     \RecvReqE_3
+Used module:     \RecvReqE_2
+Used module:     \RecvReqE_1
+Used module:     \RecvReqE
+Used module:     \RecvReqS_3
+Used module:     \RecvReqS_2
+Used module:     \RecvReqS_1
+Used module:     \RecvReqS
+Used module:     \SendReqE_3
+Used module:     \SendReqE_2
+Used module:     \SendReqE_1
+Used module:     \SendReqE
+Used module:     \SendReqS_3
+Used module:     \SendReqS_2
+Used module:     \SendReqS_1
+Used module:     \SendReqS
+Used module:     \Store_7
+Used module:     \Store_6
+Used module:     \Store_5
+Used module:     \Store_4
+Used module:     \Store_3
+Used module:     \Store_2
+Used module:     \Store_1
+Used module:     \Store
+Used module:     \Init_1
+Used module:     \Init
+Removing unused module `$abstract\system'.
+Removing unused module `$abstract\RecvInvAck_3'.
+Removing unused module `$abstract\RecvInvAck_2'.
+Removing unused module `$abstract\RecvInvAck_1'.
+Removing unused module `$abstract\RecvInvAck'.
+Removing unused module `$abstract\SendInvAck_3'.
+Removing unused module `$abstract\SendInvAck_2'.
+Removing unused module `$abstract\SendInvAck_1'.
+Removing unused module `$abstract\SendInvAck'.
+Removing unused module `$abstract\RecvGntE_3'.
+Removing unused module `$abstract\RecvGntE_2'.
+Removing unused module `$abstract\RecvGntE_1'.
+Removing unused module `$abstract\RecvGntE'.
+Removing unused module `$abstract\RecvGntS_3'.
+Removing unused module `$abstract\RecvGntS_2'.
+Removing unused module `$abstract\RecvGntS_1'.
+Removing unused module `$abstract\RecvGntS'.
+Removing unused module `$abstract\SendGntE_3'.
+Removing unused module `$abstract\SendGntE_2'.
+Removing unused module `$abstract\SendGntE_1'.
+Removing unused module `$abstract\SendGntE'.
+Removing unused module `$abstract\SendGntS_3'.
+Removing unused module `$abstract\SendGntS_2'.
+Removing unused module `$abstract\SendGntS_1'.
+Removing unused module `$abstract\SendGntS'.
+Removing unused module `$abstract\SendInv_3'.
+Removing unused module `$abstract\SendInv_2'.
+Removing unused module `$abstract\SendInv_1'.
+Removing unused module `$abstract\SendInv'.
+Removing unused module `$abstract\RecvReqE_3'.
+Removing unused module `$abstract\RecvReqE_2'.
+Removing unused module `$abstract\RecvReqE_1'.
+Removing unused module `$abstract\RecvReqE'.
+Removing unused module `$abstract\RecvReqS_3'.
+Removing unused module `$abstract\RecvReqS_2'.
+Removing unused module `$abstract\RecvReqS_1'.
+Removing unused module `$abstract\RecvReqS'.
+Removing unused module `$abstract\SendReqE_3'.
+Removing unused module `$abstract\SendReqE_2'.
+Removing unused module `$abstract\SendReqE_1'.
+Removing unused module `$abstract\SendReqE'.
+Removing unused module `$abstract\SendReqS_3'.
+Removing unused module `$abstract\SendReqS_2'.
+Removing unused module `$abstract\SendReqS_1'.
+Removing unused module `$abstract\SendReqS'.
+Removing unused module `$abstract\Store_7'.
+Removing unused module `$abstract\Store_6'.
+Removing unused module `$abstract\Store_5'.
+Removing unused module `$abstract\Store_4'.
+Removing unused module `$abstract\Store_3'.
+Removing unused module `$abstract\Store_2'.
+Removing unused module `$abstract\Store_1'.
+Removing unused module `$abstract\Store'.
+Removing unused module `$abstract\Init_1'.
+Removing unused module `$abstract\Init'.
+Removed 55 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+2.3. Executing PROC pass (convert processes to netlists).
+
+2.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 220 switch rules as full_case in process $proc$protocol.sv:27547$2882 in module system.
+Removed a total of 0 dead cases.
+
+2.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 55 redundant assignments.
+Promoted 22 assignments to connections.
+
+2.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\system.$proc$protocol.sv:0$3173'.
+  Set init value: $formal$protocol.sv:28271$22_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3171'.
+  Set init value: $formal$protocol.sv:28266$21_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3169'.
+  Set init value: $formal$protocol.sv:28261$20_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3167'.
+  Set init value: $formal$protocol.sv:28256$19_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3165'.
+  Set init value: $formal$protocol.sv:28252$18_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3163'.
+  Set init value: $formal$protocol.sv:28247$17_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3161'.
+  Set init value: $formal$protocol.sv:28242$16_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3159'.
+  Set init value: $formal$protocol.sv:28237$15_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3157'.
+  Set init value: $formal$protocol.sv:28232$14_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3155'.
+  Set init value: $formal$protocol.sv:28228$13_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3153'.
+  Set init value: $formal$protocol.sv:28223$12_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3151'.
+  Set init value: $formal$protocol.sv:28218$11_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3149'.
+  Set init value: $formal$protocol.sv:28213$10_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3147'.
+  Set init value: $formal$protocol.sv:28208$9_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3145'.
+  Set init value: $formal$protocol.sv:28204$8_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3143'.
+  Set init value: $formal$protocol.sv:28199$7_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3141'.
+  Set init value: $formal$protocol.sv:28194$6_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3139'.
+  Set init value: $formal$protocol.sv:28189$5_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3137'.
+  Set init value: $formal$protocol.sv:28184$4_EN = 1'0
+Found init rule in `\system.$proc$protocol.sv:0$3135'.
+  Set init value: $formal$protocol.sv:28180$3_EN = 1'0
+
+2.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\system.$proc$protocol.sv:0$3173'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3171'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3169'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3167'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3165'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3163'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3161'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3159'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3157'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3155'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3153'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3151'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3149'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3147'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3145'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3143'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3141'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3139'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3137'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3135'.
+Creating decoders for process `\system.$proc$protocol.sv:0$3129'.
+Creating decoders for process `\system.$proc$protocol.sv:28178$2883'.
+     1/40: $0$formal$protocol.sv:28180$3_EN[0:0]$2885
+     2/40: $0$formal$protocol.sv:28180$3_CHECK[0:0]$2884
+     3/40: $0$formal$protocol.sv:28184$4_EN[0:0]$2887
+     4/40: $0$formal$protocol.sv:28184$4_CHECK[0:0]$2886
+     5/40: $0$formal$protocol.sv:28189$5_EN[0:0]$2889
+     6/40: $0$formal$protocol.sv:28189$5_CHECK[0:0]$2888
+     7/40: $0$formal$protocol.sv:28194$6_EN[0:0]$2891
+     8/40: $0$formal$protocol.sv:28194$6_CHECK[0:0]$2890
+     9/40: $0$formal$protocol.sv:28199$7_EN[0:0]$2893
+    10/40: $0$formal$protocol.sv:28199$7_CHECK[0:0]$2892
+    11/40: $0$formal$protocol.sv:28204$8_EN[0:0]$2895
+    12/40: $0$formal$protocol.sv:28204$8_CHECK[0:0]$2894
+    13/40: $0$formal$protocol.sv:28208$9_EN[0:0]$2897
+    14/40: $0$formal$protocol.sv:28208$9_CHECK[0:0]$2896
+    15/40: $0$formal$protocol.sv:28213$10_EN[0:0]$2899
+    16/40: $0$formal$protocol.sv:28213$10_CHECK[0:0]$2898
+    17/40: $0$formal$protocol.sv:28218$11_EN[0:0]$2901
+    18/40: $0$formal$protocol.sv:28218$11_CHECK[0:0]$2900
+    19/40: $0$formal$protocol.sv:28223$12_EN[0:0]$2903
+    20/40: $0$formal$protocol.sv:28223$12_CHECK[0:0]$2902
+    21/40: $0$formal$protocol.sv:28228$13_EN[0:0]$2905
+    22/40: $0$formal$protocol.sv:28228$13_CHECK[0:0]$2904
+    23/40: $0$formal$protocol.sv:28232$14_EN[0:0]$2907
+    24/40: $0$formal$protocol.sv:28232$14_CHECK[0:0]$2906
+    25/40: $0$formal$protocol.sv:28237$15_EN[0:0]$2909
+    26/40: $0$formal$protocol.sv:28237$15_CHECK[0:0]$2908
+    27/40: $0$formal$protocol.sv:28242$16_EN[0:0]$2911
+    28/40: $0$formal$protocol.sv:28242$16_CHECK[0:0]$2910
+    29/40: $0$formal$protocol.sv:28247$17_EN[0:0]$2913
+    30/40: $0$formal$protocol.sv:28247$17_CHECK[0:0]$2912
+    31/40: $0$formal$protocol.sv:28252$18_EN[0:0]$2915
+    32/40: $0$formal$protocol.sv:28252$18_CHECK[0:0]$2914
+    33/40: $0$formal$protocol.sv:28256$19_EN[0:0]$2917
+    34/40: $0$formal$protocol.sv:28256$19_CHECK[0:0]$2916
+    35/40: $0$formal$protocol.sv:28261$20_EN[0:0]$2919
+    36/40: $0$formal$protocol.sv:28261$20_CHECK[0:0]$2918
+    37/40: $0$formal$protocol.sv:28266$21_EN[0:0]$2921
+    38/40: $0$formal$protocol.sv:28266$21_CHECK[0:0]$2920
+    39/40: $0$formal$protocol.sv:28271$22_EN[0:0]$2923
+    40/40: $0$formal$protocol.sv:28271$22_CHECK[0:0]$2922
+Creating decoders for process `\system.$proc$protocol.sv:27547$2882'.
+     1/55: $0\AuxData_reg[1:0]
+     2/55: $0\MemData_reg[1:0]
+     3/55: $0\CurPtr_reg[2:0]
+     4/55: $0\CurCmd_reg[2:0]
+     5/55: $0\ExGntd_reg[0:0]
+     6/55: $0\ShrSet_reg_4[0:0]
+     7/55: $0\ShrSet_reg_3[0:0]
+     8/55: $0\ShrSet_reg_2[0:0]
+     9/55: $0\ShrSet_reg_1[0:0]
+    10/55: $0\ShrSet_reg_0[0:0]
+    11/55: $0\InvSet_reg_4[0:0]
+    12/55: $0\InvSet_reg_3[0:0]
+    13/55: $0\InvSet_reg_2[0:0]
+    14/55: $0\InvSet_reg_1[0:0]
+    15/55: $0\InvSet_reg_0[0:0]
+    16/55: $0\Chan3_reg_4_Data[1:0]
+    17/55: $0\Chan3_reg_4_Cmd[2:0]
+    18/55: $0\Chan3_reg_3_Data[1:0]
+    19/55: $0\Chan3_reg_3_Cmd[2:0]
+    20/55: $0\Chan3_reg_2_Data[1:0]
+    21/55: $0\Chan3_reg_2_Cmd[2:0]
+    22/55: $0\Chan3_reg_1_Data[1:0]
+    23/55: $0\Chan3_reg_1_Cmd[2:0]
+    24/55: $0\Chan3_reg_0_Data[1:0]
+    25/55: $0\Chan3_reg_0_Cmd[2:0]
+    26/55: $0\Chan2_reg_4_Data[1:0]
+    27/55: $0\Chan2_reg_4_Cmd[2:0]
+    28/55: $0\Chan2_reg_3_Data[1:0]
+    29/55: $0\Chan2_reg_3_Cmd[2:0]
+    30/55: $0\Chan2_reg_2_Data[1:0]
+    31/55: $0\Chan2_reg_2_Cmd[2:0]
+    32/55: $0\Chan2_reg_1_Data[1:0]
+    33/55: $0\Chan2_reg_1_Cmd[2:0]
+    34/55: $0\Chan2_reg_0_Data[1:0]
+    35/55: $0\Chan2_reg_0_Cmd[2:0]
+    36/55: $0\Chan1_reg_4_Data[1:0]
+    37/55: $0\Chan1_reg_4_Cmd[2:0]
+    38/55: $0\Chan1_reg_3_Data[1:0]
+    39/55: $0\Chan1_reg_3_Cmd[2:0]
+    40/55: $0\Chan1_reg_2_Data[1:0]
+    41/55: $0\Chan1_reg_2_Cmd[2:0]
+    42/55: $0\Chan1_reg_1_Data[1:0]
+    43/55: $0\Chan1_reg_1_Cmd[2:0]
+    44/55: $0\Chan1_reg_0_Data[1:0]
+    45/55: $0\Chan1_reg_0_Cmd[2:0]
+    46/55: $0\Cache_reg_4_Data[1:0]
+    47/55: $0\Cache_reg_4_State[1:0]
+    48/55: $0\Cache_reg_3_Data[1:0]
+    49/55: $0\Cache_reg_3_State[1:0]
+    50/55: $0\Cache_reg_2_Data[1:0]
+    51/55: $0\Cache_reg_2_State[1:0]
+    52/55: $0\Cache_reg_1_Data[1:0]
+    53/55: $0\Cache_reg_1_State[1:0]
+    54/55: $0\Cache_reg_0_Data[1:0]
+    55/55: $0\Cache_reg_0_State[1:0]
+
+2.3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\system.$formal$protocol.sv:28174$1_CHECK' from process `\system.$proc$protocol.sv:0$3129'.
+No latch inferred for signal `\system.$formal$protocol.sv:28174$1_EN' from process `\system.$proc$protocol.sv:0$3129'.
+
+2.3.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\system.$formal$protocol.sv:28180$3_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5039' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28180$3_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5040' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28184$4_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5041' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28184$4_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5042' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28189$5_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5043' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28189$5_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5044' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28194$6_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5045' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28194$6_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5046' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28199$7_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5047' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28199$7_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5048' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28204$8_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5049' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28204$8_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5050' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28208$9_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5051' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28208$9_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5052' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28213$10_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5053' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28213$10_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5054' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28218$11_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5055' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28218$11_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5056' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28223$12_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5057' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28223$12_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5058' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28228$13_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5059' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28228$13_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5060' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28232$14_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5061' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28232$14_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5062' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28237$15_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5063' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28237$15_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5064' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28242$16_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5065' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28242$16_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5066' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28247$17_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5067' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28247$17_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5068' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28252$18_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5069' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28252$18_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5070' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28256$19_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5071' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28256$19_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5072' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28261$20_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5073' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28261$20_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5074' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28266$21_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5075' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28266$21_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5076' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28271$22_CHECK' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5077' with positive edge clock.
+Creating register for signal `\system.$formal$protocol.sv:28271$22_EN' using process `\system.$proc$protocol.sv:28178$2883'.
+  created $dff cell `$procdff$5078' with positive edge clock.
+Creating register for signal `\system.\Cache_reg_0_State' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5079' with positive edge clock.
+Creating register for signal `\system.\Cache_reg_0_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5080' with positive edge clock.
+Creating register for signal `\system.\Cache_reg_1_State' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5081' with positive edge clock.
+Creating register for signal `\system.\Cache_reg_1_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5082' with positive edge clock.
+Creating register for signal `\system.\Cache_reg_2_State' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5083' with positive edge clock.
+Creating register for signal `\system.\Cache_reg_2_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5084' with positive edge clock.
+Creating register for signal `\system.\Cache_reg_3_State' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5085' with positive edge clock.
+Creating register for signal `\system.\Cache_reg_3_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5086' with positive edge clock.
+Creating register for signal `\system.\Cache_reg_4_State' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5087' with positive edge clock.
+Creating register for signal `\system.\Cache_reg_4_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5088' with positive edge clock.
+Creating register for signal `\system.\Chan1_reg_0_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5089' with positive edge clock.
+Creating register for signal `\system.\Chan1_reg_0_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5090' with positive edge clock.
+Creating register for signal `\system.\Chan1_reg_1_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5091' with positive edge clock.
+Creating register for signal `\system.\Chan1_reg_1_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5092' with positive edge clock.
+Creating register for signal `\system.\Chan1_reg_2_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5093' with positive edge clock.
+Creating register for signal `\system.\Chan1_reg_2_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5094' with positive edge clock.
+Creating register for signal `\system.\Chan1_reg_3_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5095' with positive edge clock.
+Creating register for signal `\system.\Chan1_reg_3_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5096' with positive edge clock.
+Creating register for signal `\system.\Chan1_reg_4_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5097' with positive edge clock.
+Creating register for signal `\system.\Chan1_reg_4_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5098' with positive edge clock.
+Creating register for signal `\system.\Chan2_reg_0_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5099' with positive edge clock.
+Creating register for signal `\system.\Chan2_reg_0_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5100' with positive edge clock.
+Creating register for signal `\system.\Chan2_reg_1_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5101' with positive edge clock.
+Creating register for signal `\system.\Chan2_reg_1_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5102' with positive edge clock.
+Creating register for signal `\system.\Chan2_reg_2_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5103' with positive edge clock.
+Creating register for signal `\system.\Chan2_reg_2_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5104' with positive edge clock.
+Creating register for signal `\system.\Chan2_reg_3_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5105' with positive edge clock.
+Creating register for signal `\system.\Chan2_reg_3_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5106' with positive edge clock.
+Creating register for signal `\system.\Chan2_reg_4_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5107' with positive edge clock.
+Creating register for signal `\system.\Chan2_reg_4_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5108' with positive edge clock.
+Creating register for signal `\system.\Chan3_reg_0_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5109' with positive edge clock.
+Creating register for signal `\system.\Chan3_reg_0_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5110' with positive edge clock.
+Creating register for signal `\system.\Chan3_reg_1_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5111' with positive edge clock.
+Creating register for signal `\system.\Chan3_reg_1_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5112' with positive edge clock.
+Creating register for signal `\system.\Chan3_reg_2_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5113' with positive edge clock.
+Creating register for signal `\system.\Chan3_reg_2_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5114' with positive edge clock.
+Creating register for signal `\system.\Chan3_reg_3_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5115' with positive edge clock.
+Creating register for signal `\system.\Chan3_reg_3_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5116' with positive edge clock.
+Creating register for signal `\system.\Chan3_reg_4_Cmd' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5117' with positive edge clock.
+Creating register for signal `\system.\Chan3_reg_4_Data' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5118' with positive edge clock.
+Creating register for signal `\system.\InvSet_reg_0' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5119' with positive edge clock.
+Creating register for signal `\system.\InvSet_reg_1' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5120' with positive edge clock.
+Creating register for signal `\system.\InvSet_reg_2' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5121' with positive edge clock.
+Creating register for signal `\system.\InvSet_reg_3' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5122' with positive edge clock.
+Creating register for signal `\system.\InvSet_reg_4' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5123' with positive edge clock.
+Creating register for signal `\system.\ShrSet_reg_0' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5124' with positive edge clock.
+Creating register for signal `\system.\ShrSet_reg_1' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5125' with positive edge clock.
+Creating register for signal `\system.\ShrSet_reg_2' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5126' with positive edge clock.
+Creating register for signal `\system.\ShrSet_reg_3' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5127' with positive edge clock.
+Creating register for signal `\system.\ShrSet_reg_4' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5128' with positive edge clock.
+Creating register for signal `\system.\ExGntd_reg' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5129' with positive edge clock.
+Creating register for signal `\system.\CurCmd_reg' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5130' with positive edge clock.
+Creating register for signal `\system.\CurPtr_reg' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5131' with positive edge clock.
+Creating register for signal `\system.\MemData_reg' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5132' with positive edge clock.
+Creating register for signal `\system.\AuxData_reg' using process `\system.$proc$protocol.sv:27547$2882'.
+  created $dff cell `$procdff$5133' with positive edge clock.
+
+2.3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `system.$proc$protocol.sv:0$3173'.
+Removing empty process `system.$proc$protocol.sv:0$3171'.
+Removing empty process `system.$proc$protocol.sv:0$3169'.
+Removing empty process `system.$proc$protocol.sv:0$3167'.
+Removing empty process `system.$proc$protocol.sv:0$3165'.
+Removing empty process `system.$proc$protocol.sv:0$3163'.
+Removing empty process `system.$proc$protocol.sv:0$3161'.
+Removing empty process `system.$proc$protocol.sv:0$3159'.
+Removing empty process `system.$proc$protocol.sv:0$3157'.
+Removing empty process `system.$proc$protocol.sv:0$3155'.
+Removing empty process `system.$proc$protocol.sv:0$3153'.
+Removing empty process `system.$proc$protocol.sv:0$3151'.
+Removing empty process `system.$proc$protocol.sv:0$3149'.
+Removing empty process `system.$proc$protocol.sv:0$3147'.
+Removing empty process `system.$proc$protocol.sv:0$3145'.
+Removing empty process `system.$proc$protocol.sv:0$3143'.
+Removing empty process `system.$proc$protocol.sv:0$3141'.
+Removing empty process `system.$proc$protocol.sv:0$3139'.
+Removing empty process `system.$proc$protocol.sv:0$3137'.
+Removing empty process `system.$proc$protocol.sv:0$3135'.
+Removing empty process `system.$proc$protocol.sv:0$3129'.
+Found and cleaned up 20 empty switches in `\system.$proc$protocol.sv:28178$2883'.
+Removing empty process `system.$proc$protocol.sv:28178$2883'.
+Found and cleaned up 220 empty switches in `\system.$proc$protocol.sv:27547$2882'.
+Removing empty process `system.$proc$protocol.sv:27547$2882'.
+Cleaned up 240 empty switches.
+
+2.3.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
+Optimizing module Init_1.
+Optimizing module Store.
+Optimizing module Store_1.
+Optimizing module Store_2.
+Optimizing module Store_3.
+Optimizing module Store_4.
+Optimizing module Store_5.
+Optimizing module Store_6.
+Optimizing module Store_7.
+Optimizing module SendReqS.
+<suppressed ~2 debug messages>
+Optimizing module SendReqS_1.
+<suppressed ~2 debug messages>
+Optimizing module SendReqS_2.
+<suppressed ~2 debug messages>
+Optimizing module SendReqS_3.
+<suppressed ~2 debug messages>
+Optimizing module SendReqE.
+<suppressed ~2 debug messages>
+Optimizing module SendReqE_1.
+<suppressed ~2 debug messages>
+Optimizing module SendReqE_2.
+<suppressed ~2 debug messages>
+Optimizing module SendReqE_3.
+<suppressed ~2 debug messages>
+Optimizing module RecvReqS.
+<suppressed ~7 debug messages>
+Optimizing module RecvReqS_1.
+<suppressed ~7 debug messages>
+Optimizing module RecvReqS_2.
+<suppressed ~7 debug messages>
+Optimizing module RecvReqS_3.
+<suppressed ~7 debug messages>
+Optimizing module RecvReqE.
+<suppressed ~7 debug messages>
+Optimizing module RecvReqE_1.
+<suppressed ~7 debug messages>
+Optimizing module RecvReqE_2.
+<suppressed ~7 debug messages>
+Optimizing module RecvReqE_3.
+<suppressed ~7 debug messages>
+Optimizing module SendInv.
+<suppressed ~2 debug messages>
+Optimizing module SendInv_1.
+<suppressed ~2 debug messages>
+Optimizing module SendInv_2.
+<suppressed ~2 debug messages>
+Optimizing module SendInv_3.
+<suppressed ~2 debug messages>
+Optimizing module SendGntS.
+<suppressed ~4 debug messages>
+Optimizing module SendGntS_1.
+<suppressed ~4 debug messages>
+Optimizing module SendGntS_2.
+<suppressed ~4 debug messages>
+Optimizing module SendGntS_3.
+<suppressed ~4 debug messages>
+Optimizing module SendGntE.
+<suppressed ~5 debug messages>
+Optimizing module SendGntE_1.
+<suppressed ~5 debug messages>
+Optimizing module SendGntE_2.
+<suppressed ~5 debug messages>
+Optimizing module SendGntE_3.
+<suppressed ~5 debug messages>
+Optimizing module RecvGntS.
+Optimizing module RecvGntS_1.
+Optimizing module RecvGntS_2.
+Optimizing module RecvGntS_3.
+Optimizing module RecvGntE.
+Optimizing module RecvGntE_1.
+Optimizing module RecvGntE_2.
+Optimizing module RecvGntE_3.
+Optimizing module SendInvAck.
+<suppressed ~4 debug messages>
+Optimizing module SendInvAck_1.
+<suppressed ~4 debug messages>
+Optimizing module SendInvAck_2.
+<suppressed ~4 debug messages>
+Optimizing module SendInvAck_3.
+<suppressed ~4 debug messages>
+Optimizing module RecvInvAck.
+<suppressed ~4 debug messages>
+Optimizing module RecvInvAck_1.
+<suppressed ~4 debug messages>
+Optimizing module RecvInvAck_2.
+<suppressed ~4 debug messages>
+Optimizing module RecvInvAck_3.
+<suppressed ~4 debug messages>
+Optimizing module system.
+<suppressed ~76 debug messages>
+
+2.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
+Optimizing module Init_1.
+Optimizing module Store.
+Optimizing module Store_1.
+Optimizing module Store_2.
+Optimizing module Store_3.
+Optimizing module Store_4.
+Optimizing module Store_5.
+Optimizing module Store_6.
+Optimizing module Store_7.
+Optimizing module SendReqS.
+Optimizing module SendReqS_1.
+Optimizing module SendReqS_2.
+Optimizing module SendReqS_3.
+Optimizing module SendReqE.
+Optimizing module SendReqE_1.
+Optimizing module SendReqE_2.
+Optimizing module SendReqE_3.
+Optimizing module RecvReqS.
+Optimizing module RecvReqS_1.
+Optimizing module RecvReqS_2.
+Optimizing module RecvReqS_3.
+Optimizing module RecvReqE.
+Optimizing module RecvReqE_1.
+Optimizing module RecvReqE_2.
+Optimizing module RecvReqE_3.
+Optimizing module SendInv.
+Optimizing module SendInv_1.
+Optimizing module SendInv_2.
+Optimizing module SendInv_3.
+Optimizing module SendGntS.
+Optimizing module SendGntS_1.
+Optimizing module SendGntS_2.
+Optimizing module SendGntS_3.
+Optimizing module SendGntE.
+Optimizing module SendGntE_1.
+Optimizing module SendGntE_2.
+Optimizing module SendGntE_3.
+Optimizing module RecvGntS.
+Optimizing module RecvGntS_1.
+Optimizing module RecvGntS_2.
+Optimizing module RecvGntS_3.
+Optimizing module RecvGntE.
+Optimizing module RecvGntE_1.
+Optimizing module RecvGntE_2.
+Optimizing module RecvGntE_3.
+Optimizing module SendInvAck.
+Optimizing module SendInvAck_1.
+Optimizing module SendInvAck_2.
+Optimizing module SendInvAck_3.
+Optimizing module RecvInvAck.
+Optimizing module RecvInvAck_1.
+Optimizing module RecvInvAck_2.
+Optimizing module RecvInvAck_3.
+Optimizing module system.
+
+2.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \Init_1..
+Finding unused cells or wires in module \Store..
+Finding unused cells or wires in module \Store_1..
+Finding unused cells or wires in module \Store_2..
+Finding unused cells or wires in module \Store_3..
+Finding unused cells or wires in module \Store_4..
+Finding unused cells or wires in module \Store_5..
+Finding unused cells or wires in module \Store_6..
+Finding unused cells or wires in module \Store_7..
+Finding unused cells or wires in module \SendReqS..
+Finding unused cells or wires in module \SendReqS_1..
+Finding unused cells or wires in module \SendReqS_2..
+Finding unused cells or wires in module \SendReqS_3..
+Finding unused cells or wires in module \SendReqE..
+Finding unused cells or wires in module \SendReqE_1..
+Finding unused cells or wires in module \SendReqE_2..
+Finding unused cells or wires in module \SendReqE_3..
+Finding unused cells or wires in module \RecvReqS..
+Finding unused cells or wires in module \RecvReqS_1..
+Finding unused cells or wires in module \RecvReqS_2..
+Finding unused cells or wires in module \RecvReqS_3..
+Finding unused cells or wires in module \RecvReqE..
+Finding unused cells or wires in module \RecvReqE_1..
+Finding unused cells or wires in module \RecvReqE_2..
+Finding unused cells or wires in module \RecvReqE_3..
+Finding unused cells or wires in module \SendInv..
+Finding unused cells or wires in module \SendInv_1..
+Finding unused cells or wires in module \SendInv_2..
+Finding unused cells or wires in module \SendInv_3..
+Finding unused cells or wires in module \SendGntS..
+Finding unused cells or wires in module \SendGntS_1..
+Finding unused cells or wires in module \SendGntS_2..
+Finding unused cells or wires in module \SendGntS_3..
+Finding unused cells or wires in module \SendGntE..
+Finding unused cells or wires in module \SendGntE_1..
+Finding unused cells or wires in module \SendGntE_2..
+Finding unused cells or wires in module \SendGntE_3..
+Finding unused cells or wires in module \RecvGntS..
+Finding unused cells or wires in module \RecvGntS_1..
+Finding unused cells or wires in module \RecvGntS_2..
+Finding unused cells or wires in module \RecvGntS_3..
+Finding unused cells or wires in module \RecvGntE..
+Finding unused cells or wires in module \RecvGntE_1..
+Finding unused cells or wires in module \RecvGntE_2..
+Finding unused cells or wires in module \RecvGntE_3..
+Finding unused cells or wires in module \SendInvAck..
+Finding unused cells or wires in module \SendInvAck_1..
+Finding unused cells or wires in module \SendInvAck_2..
+Finding unused cells or wires in module \SendInvAck_3..
+Finding unused cells or wires in module \RecvInvAck..
+Finding unused cells or wires in module \RecvInvAck_1..
+Finding unused cells or wires in module \RecvInvAck_2..
+Finding unused cells or wires in module \RecvInvAck_3..
+Finding unused cells or wires in module \system..
+Removed 21 unused cells and 3720 unused wires.
+<suppressed ~77 debug messages>
+
+2.6. Executing CHECK pass (checking for obvious problems).
+Checking module Init...
+Checking module Init_1...
+Checking module RecvGntE...
+Checking module RecvGntE_1...
+Checking module RecvGntE_2...
+Checking module RecvGntE_3...
+Checking module RecvGntS...
+Checking module RecvGntS_1...
+Checking module RecvGntS_2...
+Checking module RecvGntS_3...
+Checking module RecvInvAck...
+Checking module RecvInvAck_1...
+Checking module RecvInvAck_2...
+Checking module RecvInvAck_3...
+Checking module RecvReqE...
+Checking module RecvReqE_1...
+Checking module RecvReqE_2...
+Checking module RecvReqE_3...
+Checking module RecvReqS...
+Checking module RecvReqS_1...
+Checking module RecvReqS_2...
+Checking module RecvReqS_3...
+Checking module SendGntE...
+Checking module SendGntE_1...
+Checking module SendGntE_2...
+Checking module SendGntE_3...
+Checking module SendGntS...
+Checking module SendGntS_1...
+Checking module SendGntS_2...
+Checking module SendGntS_3...
+Checking module SendInv...
+Checking module SendInvAck...
+Checking module SendInvAck_1...
+Checking module SendInvAck_2...
+Checking module SendInvAck_3...
+Checking module SendInv_1...
+Checking module SendInv_2...
+Checking module SendInv_3...
+Checking module SendReqE...
+Checking module SendReqE_1...
+Checking module SendReqE_2...
+Checking module SendReqE_3...
+Checking module SendReqS...
+Checking module SendReqS_1...
+Checking module SendReqS_2...
+Checking module SendReqS_3...
+Checking module Store...
+Checking module Store_1...
+Checking module Store_2...
+Checking module Store_3...
+Checking module Store_4...
+Checking module Store_5...
+Checking module Store_6...
+Checking module Store_7...
+Checking module system...
+Found and reported 0 problems.
+
+2.7. Executing OPT pass (performing simple optimizations).
+
+2.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
+Optimizing module Init_1.
+Optimizing module RecvGntE.
+Optimizing module RecvGntE_1.
+Optimizing module RecvGntE_2.
+Optimizing module RecvGntE_3.
+Optimizing module RecvGntS.
+Optimizing module RecvGntS_1.
+Optimizing module RecvGntS_2.
+Optimizing module RecvGntS_3.
+Optimizing module RecvInvAck.
+Optimizing module RecvInvAck_1.
+Optimizing module RecvInvAck_2.
+Optimizing module RecvInvAck_3.
+Optimizing module RecvReqE.
+Optimizing module RecvReqE_1.
+Optimizing module RecvReqE_2.
+Optimizing module RecvReqE_3.
+Optimizing module RecvReqS.
+Optimizing module RecvReqS_1.
+Optimizing module RecvReqS_2.
+Optimizing module RecvReqS_3.
+Optimizing module SendGntE.
+Optimizing module SendGntE_1.
+Optimizing module SendGntE_2.
+Optimizing module SendGntE_3.
+Optimizing module SendGntS.
+Optimizing module SendGntS_1.
+Optimizing module SendGntS_2.
+Optimizing module SendGntS_3.
+Optimizing module SendInv.
+Optimizing module SendInvAck.
+Optimizing module SendInvAck_1.
+Optimizing module SendInvAck_2.
+Optimizing module SendInvAck_3.
+Optimizing module SendInv_1.
+Optimizing module SendInv_2.
+Optimizing module SendInv_3.
+Optimizing module SendReqE.
+Optimizing module SendReqE_1.
+Optimizing module SendReqE_2.
+Optimizing module SendReqE_3.
+Optimizing module SendReqS.
+Optimizing module SendReqS_1.
+Optimizing module SendReqS_2.
+Optimizing module SendReqS_3.
+Optimizing module Store.
+Optimizing module Store_1.
+Optimizing module Store_2.
+Optimizing module Store_3.
+Optimizing module Store_4.
+Optimizing module Store_5.
+Optimizing module Store_6.
+Optimizing module Store_7.
+Optimizing module system.
+
+2.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Init'.
+Finding identical cells in module `\Init_1'.
+Finding identical cells in module `\RecvGntE'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\RecvGntE_1'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\RecvGntE_2'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\RecvGntE_3'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\RecvGntS'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\RecvGntS_1'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\RecvGntS_2'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\RecvGntS_3'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\RecvInvAck'.
+<suppressed ~27 debug messages>
+Finding identical cells in module `\RecvInvAck_1'.
+<suppressed ~27 debug messages>
+Finding identical cells in module `\RecvInvAck_2'.
+<suppressed ~27 debug messages>
+Finding identical cells in module `\RecvInvAck_3'.
+<suppressed ~27 debug messages>
+Finding identical cells in module `\RecvReqE'.
+<suppressed ~54 debug messages>
+Finding identical cells in module `\RecvReqE_1'.
+<suppressed ~54 debug messages>
+Finding identical cells in module `\RecvReqE_2'.
+<suppressed ~54 debug messages>
+Finding identical cells in module `\RecvReqE_3'.
+<suppressed ~54 debug messages>
+Finding identical cells in module `\RecvReqS'.
+<suppressed ~54 debug messages>
+Finding identical cells in module `\RecvReqS_1'.
+<suppressed ~54 debug messages>
+Finding identical cells in module `\RecvReqS_2'.
+<suppressed ~54 debug messages>
+Finding identical cells in module `\RecvReqS_3'.
+<suppressed ~54 debug messages>
+Finding identical cells in module `\SendGntE'.
+<suppressed ~96 debug messages>
+Finding identical cells in module `\SendGntE_1'.
+<suppressed ~96 debug messages>
+Finding identical cells in module `\SendGntE_2'.
+<suppressed ~96 debug messages>
+Finding identical cells in module `\SendGntE_3'.
+<suppressed ~96 debug messages>
+Finding identical cells in module `\SendGntS'.
+<suppressed ~63 debug messages>
+Finding identical cells in module `\SendGntS_1'.
+<suppressed ~63 debug messages>
+Finding identical cells in module `\SendGntS_2'.
+<suppressed ~63 debug messages>
+Finding identical cells in module `\SendGntS_3'.
+<suppressed ~63 debug messages>
+Finding identical cells in module `\SendInv'.
+<suppressed ~21 debug messages>
+Finding identical cells in module `\SendInvAck'.
+<suppressed ~27 debug messages>
+Finding identical cells in module `\SendInvAck_1'.
+<suppressed ~27 debug messages>
+Finding identical cells in module `\SendInvAck_2'.
+<suppressed ~27 debug messages>
+Finding identical cells in module `\SendInvAck_3'.
+<suppressed ~27 debug messages>
+Finding identical cells in module `\SendInv_1'.
+<suppressed ~21 debug messages>
+Finding identical cells in module `\SendInv_2'.
+<suppressed ~21 debug messages>
+Finding identical cells in module `\SendInv_3'.
+<suppressed ~21 debug messages>
+Finding identical cells in module `\SendReqE'.
+Finding identical cells in module `\SendReqE_1'.
+Finding identical cells in module `\SendReqE_2'.
+Finding identical cells in module `\SendReqE_3'.
+Finding identical cells in module `\SendReqS'.
+Finding identical cells in module `\SendReqS_1'.
+Finding identical cells in module `\SendReqS_2'.
+Finding identical cells in module `\SendReqS_3'.
+Finding identical cells in module `\Store'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\Store_1'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\Store_2'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\Store_3'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\Store_4'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\Store_5'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\Store_6'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\Store_7'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\system'.
+<suppressed ~399 debug messages>
+Removed a total of 613 cells.
+
+2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \Init..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Init_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntE..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntE_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntE_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntE_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntS..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntS_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntS_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntS_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvInvAck..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $ternary$protocol.sv:8808$3241: \io_ExGntd_in -> 1'0
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvInvAck_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $ternary$protocol.sv:8983$3219: \io_ExGntd_in -> 1'0
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvInvAck_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $ternary$protocol.sv:9158$3197: \io_ExGntd_in -> 1'0
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvInvAck_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $ternary$protocol.sv:9333$3175: \io_ExGntd_in -> 1'0
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqE..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqE_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqE_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqE_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqS..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqS_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqS_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqS_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntE..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntE_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntE_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntE_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntS..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntS_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntS_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntS_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInvAck..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInvAck_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInvAck_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInvAck_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInv_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInv_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInv_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqE..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqE_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqE_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqE_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqS..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqS_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqS_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqS_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_5..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_6..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_7..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~331 debug messages>
+
+2.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \Init.
+  Optimizing cells in module \Init_1.
+  Optimizing cells in module \RecvGntE.
+  Optimizing cells in module \RecvGntE_1.
+  Optimizing cells in module \RecvGntE_2.
+  Optimizing cells in module \RecvGntE_3.
+  Optimizing cells in module \RecvGntS.
+  Optimizing cells in module \RecvGntS_1.
+  Optimizing cells in module \RecvGntS_2.
+  Optimizing cells in module \RecvGntS_3.
+  Optimizing cells in module \RecvInvAck.
+  Optimizing cells in module \RecvInvAck.
+  Optimizing cells in module \RecvInvAck_1.
+  Optimizing cells in module \RecvInvAck_1.
+  Optimizing cells in module \RecvInvAck_2.
+  Optimizing cells in module \RecvInvAck_2.
+  Optimizing cells in module \RecvInvAck_3.
+  Optimizing cells in module \RecvInvAck_3.
+  Optimizing cells in module \RecvReqE.
+  Optimizing cells in module \RecvReqE_1.
+  Optimizing cells in module \RecvReqE_2.
+  Optimizing cells in module \RecvReqE_3.
+  Optimizing cells in module \RecvReqS.
+  Optimizing cells in module \RecvReqS_1.
+  Optimizing cells in module \RecvReqS_2.
+  Optimizing cells in module \RecvReqS_3.
+  Optimizing cells in module \SendGntE.
+  Optimizing cells in module \SendGntE_1.
+  Optimizing cells in module \SendGntE_2.
+  Optimizing cells in module \SendGntE_3.
+  Optimizing cells in module \SendGntS.
+  Optimizing cells in module \SendGntS_1.
+  Optimizing cells in module \SendGntS_2.
+  Optimizing cells in module \SendGntS_3.
+  Optimizing cells in module \SendInv.
+  Optimizing cells in module \SendInvAck.
+  Optimizing cells in module \SendInvAck_1.
+  Optimizing cells in module \SendInvAck_2.
+  Optimizing cells in module \SendInvAck_3.
+  Optimizing cells in module \SendInv_1.
+  Optimizing cells in module \SendInv_2.
+  Optimizing cells in module \SendInv_3.
+  Optimizing cells in module \SendReqE.
+  Optimizing cells in module \SendReqE_1.
+  Optimizing cells in module \SendReqE_2.
+  Optimizing cells in module \SendReqE_3.
+  Optimizing cells in module \SendReqS.
+  Optimizing cells in module \SendReqS_1.
+  Optimizing cells in module \SendReqS_2.
+  Optimizing cells in module \SendReqS_3.
+  Optimizing cells in module \Store.
+  Optimizing cells in module \Store_1.
+  Optimizing cells in module \Store_2.
+  Optimizing cells in module \Store_3.
+  Optimizing cells in module \Store_4.
+  Optimizing cells in module \Store_5.
+  Optimizing cells in module \Store_6.
+  Optimizing cells in module \Store_7.
+  Optimizing cells in module \system.
+Performed a total of 4 changes.
+
+2.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Init'.
+Finding identical cells in module `\Init_1'.
+Finding identical cells in module `\RecvGntE'.
+Finding identical cells in module `\RecvGntE_1'.
+Finding identical cells in module `\RecvGntE_2'.
+Finding identical cells in module `\RecvGntE_3'.
+Finding identical cells in module `\RecvGntS'.
+Finding identical cells in module `\RecvGntS_1'.
+Finding identical cells in module `\RecvGntS_2'.
+Finding identical cells in module `\RecvGntS_3'.
+Finding identical cells in module `\RecvInvAck'.
+Finding identical cells in module `\RecvInvAck_1'.
+Finding identical cells in module `\RecvInvAck_2'.
+Finding identical cells in module `\RecvInvAck_3'.
+Finding identical cells in module `\RecvReqE'.
+Finding identical cells in module `\RecvReqE_1'.
+Finding identical cells in module `\RecvReqE_2'.
+Finding identical cells in module `\RecvReqE_3'.
+Finding identical cells in module `\RecvReqS'.
+Finding identical cells in module `\RecvReqS_1'.
+Finding identical cells in module `\RecvReqS_2'.
+Finding identical cells in module `\RecvReqS_3'.
+Finding identical cells in module `\SendGntE'.
+Finding identical cells in module `\SendGntE_1'.
+Finding identical cells in module `\SendGntE_2'.
+Finding identical cells in module `\SendGntE_3'.
+Finding identical cells in module `\SendGntS'.
+Finding identical cells in module `\SendGntS_1'.
+Finding identical cells in module `\SendGntS_2'.
+Finding identical cells in module `\SendGntS_3'.
+Finding identical cells in module `\SendInv'.
+Finding identical cells in module `\SendInvAck'.
+Finding identical cells in module `\SendInvAck_1'.
+Finding identical cells in module `\SendInvAck_2'.
+Finding identical cells in module `\SendInvAck_3'.
+Finding identical cells in module `\SendInv_1'.
+Finding identical cells in module `\SendInv_2'.
+Finding identical cells in module `\SendInv_3'.
+Finding identical cells in module `\SendReqE'.
+Finding identical cells in module `\SendReqE_1'.
+Finding identical cells in module `\SendReqE_2'.
+Finding identical cells in module `\SendReqE_3'.
+Finding identical cells in module `\SendReqS'.
+Finding identical cells in module `\SendReqS_1'.
+Finding identical cells in module `\SendReqS_2'.
+Finding identical cells in module `\SendReqS_3'.
+Finding identical cells in module `\Store'.
+Finding identical cells in module `\Store_1'.
+Finding identical cells in module `\Store_2'.
+Finding identical cells in module `\Store_3'.
+Finding identical cells in module `\Store_4'.
+Finding identical cells in module `\Store_5'.
+Finding identical cells in module `\Store_6'.
+Finding identical cells in module `\Store_7'.
+Finding identical cells in module `\system'.
+<suppressed ~123 debug messages>
+Removed a total of 41 cells.
+
+2.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \Init_1..
+Finding unused cells or wires in module \RecvGntE..
+Finding unused cells or wires in module \RecvGntE_1..
+Finding unused cells or wires in module \RecvGntE_2..
+Finding unused cells or wires in module \RecvGntE_3..
+Finding unused cells or wires in module \RecvGntS..
+Finding unused cells or wires in module \RecvGntS_1..
+Finding unused cells or wires in module \RecvGntS_2..
+Finding unused cells or wires in module \RecvGntS_3..
+Finding unused cells or wires in module \RecvInvAck..
+Finding unused cells or wires in module \RecvInvAck_1..
+Finding unused cells or wires in module \RecvInvAck_2..
+Finding unused cells or wires in module \RecvInvAck_3..
+Finding unused cells or wires in module \RecvReqE..
+Finding unused cells or wires in module \RecvReqE_1..
+Finding unused cells or wires in module \RecvReqE_2..
+Finding unused cells or wires in module \RecvReqE_3..
+Finding unused cells or wires in module \RecvReqS..
+Finding unused cells or wires in module \RecvReqS_1..
+Finding unused cells or wires in module \RecvReqS_2..
+Finding unused cells or wires in module \RecvReqS_3..
+Finding unused cells or wires in module \SendGntE..
+Finding unused cells or wires in module \SendGntE_1..
+Finding unused cells or wires in module \SendGntE_2..
+Finding unused cells or wires in module \SendGntE_3..
+Finding unused cells or wires in module \SendGntS..
+Finding unused cells or wires in module \SendGntS_1..
+Finding unused cells or wires in module \SendGntS_2..
+Finding unused cells or wires in module \SendGntS_3..
+Finding unused cells or wires in module \SendInv..
+Finding unused cells or wires in module \SendInvAck..
+Finding unused cells or wires in module \SendInvAck_1..
+Finding unused cells or wires in module \SendInvAck_2..
+Finding unused cells or wires in module \SendInvAck_3..
+Finding unused cells or wires in module \SendInv_1..
+Finding unused cells or wires in module \SendInv_2..
+Finding unused cells or wires in module \SendInv_3..
+Finding unused cells or wires in module \SendReqE..
+Finding unused cells or wires in module \SendReqE_1..
+Finding unused cells or wires in module \SendReqE_2..
+Finding unused cells or wires in module \SendReqE_3..
+Finding unused cells or wires in module \SendReqS..
+Finding unused cells or wires in module \SendReqS_1..
+Finding unused cells or wires in module \SendReqS_2..
+Finding unused cells or wires in module \SendReqS_3..
+Finding unused cells or wires in module \Store..
+Finding unused cells or wires in module \Store_1..
+Finding unused cells or wires in module \Store_2..
+Finding unused cells or wires in module \Store_3..
+Finding unused cells or wires in module \Store_4..
+Finding unused cells or wires in module \Store_5..
+Finding unused cells or wires in module \Store_6..
+Finding unused cells or wires in module \Store_7..
+Finding unused cells or wires in module \system..
+Removed 0 unused cells and 600 unused wires.
+<suppressed ~45 debug messages>
+
+2.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
+Optimizing module Init_1.
+Optimizing module RecvGntE.
+Optimizing module RecvGntE_1.
+Optimizing module RecvGntE_2.
+Optimizing module RecvGntE_3.
+Optimizing module RecvGntS.
+Optimizing module RecvGntS_1.
+Optimizing module RecvGntS_2.
+Optimizing module RecvGntS_3.
+Optimizing module RecvInvAck.
+Optimizing module RecvInvAck_1.
+Optimizing module RecvInvAck_2.
+Optimizing module RecvInvAck_3.
+Optimizing module RecvReqE.
+Optimizing module RecvReqE_1.
+Optimizing module RecvReqE_2.
+Optimizing module RecvReqE_3.
+Optimizing module RecvReqS.
+Optimizing module RecvReqS_1.
+Optimizing module RecvReqS_2.
+Optimizing module RecvReqS_3.
+Optimizing module SendGntE.
+Optimizing module SendGntE_1.
+Optimizing module SendGntE_2.
+Optimizing module SendGntE_3.
+Optimizing module SendGntS.
+Optimizing module SendGntS_1.
+Optimizing module SendGntS_2.
+Optimizing module SendGntS_3.
+Optimizing module SendInv.
+Optimizing module SendInvAck.
+Optimizing module SendInvAck_1.
+Optimizing module SendInvAck_2.
+Optimizing module SendInvAck_3.
+Optimizing module SendInv_1.
+Optimizing module SendInv_2.
+Optimizing module SendInv_3.
+Optimizing module SendReqE.
+Optimizing module SendReqE_1.
+Optimizing module SendReqE_2.
+Optimizing module SendReqE_3.
+Optimizing module SendReqS.
+Optimizing module SendReqS_1.
+Optimizing module SendReqS_2.
+Optimizing module SendReqS_3.
+Optimizing module Store.
+Optimizing module Store_1.
+Optimizing module Store_2.
+Optimizing module Store_3.
+Optimizing module Store_4.
+Optimizing module Store_5.
+Optimizing module Store_6.
+Optimizing module Store_7.
+Optimizing module system.
+
+2.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \Init..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Init_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntE..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntE_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntE_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntE_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntS..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntS_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntS_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvGntS_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvInvAck..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvInvAck_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvInvAck_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvInvAck_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqE..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqE_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqE_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqE_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqS..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqS_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqS_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RecvReqS_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntE..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntE_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntE_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntE_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntS..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntS_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntS_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendGntS_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInvAck..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInvAck_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInvAck_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInvAck_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInv_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInv_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendInv_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqE..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqE_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqE_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqE_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqS..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqS_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqS_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \SendReqS_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_5..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_6..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \Store_7..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~309 debug messages>
+
+2.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \Init.
+  Optimizing cells in module \Init_1.
+  Optimizing cells in module \RecvGntE.
+  Optimizing cells in module \RecvGntE_1.
+  Optimizing cells in module \RecvGntE_2.
+  Optimizing cells in module \RecvGntE_3.
+  Optimizing cells in module \RecvGntS.
+  Optimizing cells in module \RecvGntS_1.
+  Optimizing cells in module \RecvGntS_2.
+  Optimizing cells in module \RecvGntS_3.
+  Optimizing cells in module \RecvInvAck.
+  Optimizing cells in module \RecvInvAck_1.
+  Optimizing cells in module \RecvInvAck_2.
+  Optimizing cells in module \RecvInvAck_3.
+  Optimizing cells in module \RecvReqE.
+  Optimizing cells in module \RecvReqE_1.
+  Optimizing cells in module \RecvReqE_2.
+  Optimizing cells in module \RecvReqE_3.
+  Optimizing cells in module \RecvReqS.
+  Optimizing cells in module \RecvReqS_1.
+  Optimizing cells in module \RecvReqS_2.
+  Optimizing cells in module \RecvReqS_3.
+  Optimizing cells in module \SendGntE.
+  Optimizing cells in module \SendGntE_1.
+  Optimizing cells in module \SendGntE_2.
+  Optimizing cells in module \SendGntE_3.
+  Optimizing cells in module \SendGntS.
+  Optimizing cells in module \SendGntS_1.
+  Optimizing cells in module \SendGntS_2.
+  Optimizing cells in module \SendGntS_3.
+  Optimizing cells in module \SendInv.
+  Optimizing cells in module \SendInvAck.
+  Optimizing cells in module \SendInvAck_1.
+  Optimizing cells in module \SendInvAck_2.
+  Optimizing cells in module \SendInvAck_3.
+  Optimizing cells in module \SendInv_1.
+  Optimizing cells in module \SendInv_2.
+  Optimizing cells in module \SendInv_3.
+  Optimizing cells in module \SendReqE.
+  Optimizing cells in module \SendReqE_1.
+  Optimizing cells in module \SendReqE_2.
+  Optimizing cells in module \SendReqE_3.
+  Optimizing cells in module \SendReqS.
+  Optimizing cells in module \SendReqS_1.
+  Optimizing cells in module \SendReqS_2.
+  Optimizing cells in module \SendReqS_3.
+  Optimizing cells in module \Store.
+  Optimizing cells in module \Store_1.
+  Optimizing cells in module \Store_2.
+  Optimizing cells in module \Store_3.
+  Optimizing cells in module \Store_4.
+  Optimizing cells in module \Store_5.
+  Optimizing cells in module \Store_6.
+  Optimizing cells in module \Store_7.
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+2.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Init'.
+Finding identical cells in module `\Init_1'.
+Finding identical cells in module `\RecvGntE'.
+Finding identical cells in module `\RecvGntE_1'.
+Finding identical cells in module `\RecvGntE_2'.
+Finding identical cells in module `\RecvGntE_3'.
+Finding identical cells in module `\RecvGntS'.
+Finding identical cells in module `\RecvGntS_1'.
+Finding identical cells in module `\RecvGntS_2'.
+Finding identical cells in module `\RecvGntS_3'.
+Finding identical cells in module `\RecvInvAck'.
+Finding identical cells in module `\RecvInvAck_1'.
+Finding identical cells in module `\RecvInvAck_2'.
+Finding identical cells in module `\RecvInvAck_3'.
+Finding identical cells in module `\RecvReqE'.
+Finding identical cells in module `\RecvReqE_1'.
+Finding identical cells in module `\RecvReqE_2'.
+Finding identical cells in module `\RecvReqE_3'.
+Finding identical cells in module `\RecvReqS'.
+Finding identical cells in module `\RecvReqS_1'.
+Finding identical cells in module `\RecvReqS_2'.
+Finding identical cells in module `\RecvReqS_3'.
+Finding identical cells in module `\SendGntE'.
+Finding identical cells in module `\SendGntE_1'.
+Finding identical cells in module `\SendGntE_2'.
+Finding identical cells in module `\SendGntE_3'.
+Finding identical cells in module `\SendGntS'.
+Finding identical cells in module `\SendGntS_1'.
+Finding identical cells in module `\SendGntS_2'.
+Finding identical cells in module `\SendGntS_3'.
+Finding identical cells in module `\SendInv'.
+Finding identical cells in module `\SendInvAck'.
+Finding identical cells in module `\SendInvAck_1'.
+Finding identical cells in module `\SendInvAck_2'.
+Finding identical cells in module `\SendInvAck_3'.
+Finding identical cells in module `\SendInv_1'.
+Finding identical cells in module `\SendInv_2'.
+Finding identical cells in module `\SendInv_3'.
+Finding identical cells in module `\SendReqE'.
+Finding identical cells in module `\SendReqE_1'.
+Finding identical cells in module `\SendReqE_2'.
+Finding identical cells in module `\SendReqE_3'.
+Finding identical cells in module `\SendReqS'.
+Finding identical cells in module `\SendReqS_1'.
+Finding identical cells in module `\SendReqS_2'.
+Finding identical cells in module `\SendReqS_3'.
+Finding identical cells in module `\Store'.
+Finding identical cells in module `\Store_1'.
+Finding identical cells in module `\Store_2'.
+Finding identical cells in module `\Store_3'.
+Finding identical cells in module `\Store_4'.
+Finding identical cells in module `\Store_5'.
+Finding identical cells in module `\Store_6'.
+Finding identical cells in module `\Store_7'.
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+2.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \Init_1..
+Finding unused cells or wires in module \RecvGntE..
+Finding unused cells or wires in module \RecvGntE_1..
+Finding unused cells or wires in module \RecvGntE_2..
+Finding unused cells or wires in module \RecvGntE_3..
+Finding unused cells or wires in module \RecvGntS..
+Finding unused cells or wires in module \RecvGntS_1..
+Finding unused cells or wires in module \RecvGntS_2..
+Finding unused cells or wires in module \RecvGntS_3..
+Finding unused cells or wires in module \RecvInvAck..
+Finding unused cells or wires in module \RecvInvAck_1..
+Finding unused cells or wires in module \RecvInvAck_2..
+Finding unused cells or wires in module \RecvInvAck_3..
+Finding unused cells or wires in module \RecvReqE..
+Finding unused cells or wires in module \RecvReqE_1..
+Finding unused cells or wires in module \RecvReqE_2..
+Finding unused cells or wires in module \RecvReqE_3..
+Finding unused cells or wires in module \RecvReqS..
+Finding unused cells or wires in module \RecvReqS_1..
+Finding unused cells or wires in module \RecvReqS_2..
+Finding unused cells or wires in module \RecvReqS_3..
+Finding unused cells or wires in module \SendGntE..
+Finding unused cells or wires in module \SendGntE_1..
+Finding unused cells or wires in module \SendGntE_2..
+Finding unused cells or wires in module \SendGntE_3..
+Finding unused cells or wires in module \SendGntS..
+Finding unused cells or wires in module \SendGntS_1..
+Finding unused cells or wires in module \SendGntS_2..
+Finding unused cells or wires in module \SendGntS_3..
+Finding unused cells or wires in module \SendInv..
+Finding unused cells or wires in module \SendInvAck..
+Finding unused cells or wires in module \SendInvAck_1..
+Finding unused cells or wires in module \SendInvAck_2..
+Finding unused cells or wires in module \SendInvAck_3..
+Finding unused cells or wires in module \SendInv_1..
+Finding unused cells or wires in module \SendInv_2..
+Finding unused cells or wires in module \SendInv_3..
+Finding unused cells or wires in module \SendReqE..
+Finding unused cells or wires in module \SendReqE_1..
+Finding unused cells or wires in module \SendReqE_2..
+Finding unused cells or wires in module \SendReqE_3..
+Finding unused cells or wires in module \SendReqS..
+Finding unused cells or wires in module \SendReqS_1..
+Finding unused cells or wires in module \SendReqS_2..
+Finding unused cells or wires in module \SendReqS_3..
+Finding unused cells or wires in module \Store..
+Finding unused cells or wires in module \Store_1..
+Finding unused cells or wires in module \Store_2..
+Finding unused cells or wires in module \Store_3..
+Finding unused cells or wires in module \Store_4..
+Finding unused cells or wires in module \Store_5..
+Finding unused cells or wires in module \Store_6..
+Finding unused cells or wires in module \Store_7..
+Finding unused cells or wires in module \system..
+
+2.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
+Optimizing module Init_1.
+Optimizing module RecvGntE.
+Optimizing module RecvGntE_1.
+Optimizing module RecvGntE_2.
+Optimizing module RecvGntE_3.
+Optimizing module RecvGntS.
+Optimizing module RecvGntS_1.
+Optimizing module RecvGntS_2.
+Optimizing module RecvGntS_3.
+Optimizing module RecvInvAck.
+Optimizing module RecvInvAck_1.
+Optimizing module RecvInvAck_2.
+Optimizing module RecvInvAck_3.
+Optimizing module RecvReqE.
+Optimizing module RecvReqE_1.
+Optimizing module RecvReqE_2.
+Optimizing module RecvReqE_3.
+Optimizing module RecvReqS.
+Optimizing module RecvReqS_1.
+Optimizing module RecvReqS_2.
+Optimizing module RecvReqS_3.
+Optimizing module SendGntE.
+Optimizing module SendGntE_1.
+Optimizing module SendGntE_2.
+Optimizing module SendGntE_3.
+Optimizing module SendGntS.
+Optimizing module SendGntS_1.
+Optimizing module SendGntS_2.
+Optimizing module SendGntS_3.
+Optimizing module SendInv.
+Optimizing module SendInvAck.
+Optimizing module SendInvAck_1.
+Optimizing module SendInvAck_2.
+Optimizing module SendInvAck_3.
+Optimizing module SendInv_1.
+Optimizing module SendInv_2.
+Optimizing module SendInv_3.
+Optimizing module SendReqE.
+Optimizing module SendReqE_1.
+Optimizing module SendReqE_2.
+Optimizing module SendReqE_3.
+Optimizing module SendReqS.
+Optimizing module SendReqS_1.
+Optimizing module SendReqS_2.
+Optimizing module SendReqS_3.
+Optimizing module Store.
+Optimizing module Store_1.
+Optimizing module Store_2.
+Optimizing module Store_3.
+Optimizing module Store_4.
+Optimizing module Store_5.
+Optimizing module Store_6.
+Optimizing module Store_7.
+Optimizing module system.
+
+2.7.14. Finished OPT passes. (There is nothing left to do.)
+
+2.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 3) from port B of cell RecvReqE.$eq$protocol.sv:3888$3973 ($eq).
+Removed top 1 bits (of 3) from port B of cell RecvReqE_1.$eq$protocol.sv:4064$3938 ($eq).
+Removed top 1 bits (of 3) from port B of cell RecvReqE_2.$eq$protocol.sv:4240$3903 ($eq).
+Removed top 1 bits (of 3) from port B of cell RecvReqE_3.$eq$protocol.sv:4416$3868 ($eq).
+Removed top 2 bits (of 3) from port B of cell RecvReqS.$eq$protocol.sv:3184$4113 ($eq).
+Removed top 2 bits (of 3) from port B of cell RecvReqS_1.$eq$protocol.sv:3360$4078 ($eq).
+Removed top 2 bits (of 3) from port B of cell RecvReqS_2.$eq$protocol.sv:3536$4043 ($eq).
+Removed top 2 bits (of 3) from port B of cell RecvReqS_3.$eq$protocol.sv:3712$4008 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendGntE.$eq$protocol.sv:5999$3601 ($eq).
+Removed top 2 bits (of 3) from port B of cell SendGntE.$eq$protocol.sv:5999$3602 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendGntE_1.$eq$protocol.sv:6185$3544 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendGntE_1.$eq$protocol.sv:6185$3545 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendGntE_2.$eq$protocol.sv:6371$3487 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendGntE_2.$eq$protocol.sv:6371$3488 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendGntE_3.$eq$protocol.sv:6557$3430 ($eq).
+Removed top 2 bits (of 3) from port B of cell SendGntS.$eq$protocol.sv:5284$3759 ($eq).
+Removed top 2 bits (of 3) from port B of cell SendGntS.$eq$protocol.sv:5284$3760 ($eq).
+Removed top 2 bits (of 3) from port B of cell SendGntS_1.$eq$protocol.sv:5461$3723 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendGntS_1.$eq$protocol.sv:5461$3724 ($eq).
+Removed top 2 bits (of 3) from port B of cell SendGntS_2.$eq$protocol.sv:5638$3687 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendGntS_2.$eq$protocol.sv:5638$3688 ($eq).
+Removed top 2 bits (of 3) from port B of cell SendGntS_3.$eq$protocol.sv:5815$3651 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendInv.$eq$protocol.sv:4592$3850 ($eq).
+Removed top 2 bits (of 3) from port B of cell SendInv.$eq$protocol.sv:4592$3851 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendInvAck.$eq$protocol.sv:8113$3331 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendInvAck_1.$eq$protocol.sv:8287$3309 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendInvAck_2.$eq$protocol.sv:8461$3287 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendInvAck_3.$eq$protocol.sv:8635$3265 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendInv_1.$eq$protocol.sv:4765$3832 ($eq).
+Removed top 2 bits (of 3) from port B of cell SendInv_1.$eq$protocol.sv:4765$3833 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendInv_2.$eq$protocol.sv:4938$3814 ($eq).
+Removed top 2 bits (of 3) from port B of cell SendInv_2.$eq$protocol.sv:4938$3815 ($eq).
+Removed top 1 bits (of 3) from port B of cell SendInv_3.$eq$protocol.sv:5111$3796 ($eq).
+Removed top 2 bits (of 3) from port B of cell SendInv_3.$eq$protocol.sv:5111$3797 ($eq).
+Removed top 1 bits (of 2) from port B of cell SendReqE.$eq$protocol.sv:2500$4170 ($eq).
+Removed top 1 bits (of 2) from port B of cell SendReqE_1.$eq$protocol.sv:2671$4163 ($eq).
+Removed top 1 bits (of 2) from port B of cell SendReqE_2.$eq$protocol.sv:2842$4156 ($eq).
+Removed top 1 bits (of 2) from port B of cell SendReqE_3.$eq$protocol.sv:3013$4149 ($eq).
+Removed top 5 bits (of 6) from port B of cell system.$eq$protocol.sv:15617$79 ($eq).
+Removed top 4 bits (of 6) from port B of cell system.$eq$protocol.sv:15673$135 ($eq).
+Removed top 4 bits (of 6) from port B of cell system.$eq$protocol.sv:15729$191 ($eq).
+Removed top 3 bits (of 6) from port B of cell system.$eq$protocol.sv:15785$247 ($eq).
+Removed top 3 bits (of 6) from port B of cell system.$eq$protocol.sv:15841$303 ($eq).
+Removed top 3 bits (of 6) from port B of cell system.$eq$protocol.sv:15897$359 ($eq).
+Removed top 3 bits (of 6) from port B of cell system.$eq$protocol.sv:15953$415 ($eq).
+Removed top 2 bits (of 6) from port B of cell system.$eq$protocol.sv:16009$471 ($eq).
+Removed top 2 bits (of 6) from port B of cell system.$eq$protocol.sv:16065$527 ($eq).
+Removed top 2 bits (of 6) from port B of cell system.$eq$protocol.sv:16121$583 ($eq).
+Removed top 2 bits (of 6) from port B of cell system.$eq$protocol.sv:16177$639 ($eq).
+Removed top 2 bits (of 6) from port B of cell system.$eq$protocol.sv:16233$695 ($eq).
+Removed top 2 bits (of 6) from port B of cell system.$eq$protocol.sv:16289$751 ($eq).
+Removed top 2 bits (of 6) from port B of cell system.$eq$protocol.sv:16345$807 ($eq).
+Removed top 2 bits (of 6) from port B of cell system.$eq$protocol.sv:16401$863 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:16457$919 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:16513$975 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:16569$1031 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:16625$1087 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:16681$1143 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:16737$1199 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:16793$1255 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:16849$1311 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:16905$1367 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:16961$1423 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:17017$1479 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:17073$1535 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:17129$1591 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:17185$1647 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:17241$1703 ($eq).
+Removed top 1 bits (of 6) from port B of cell system.$eq$protocol.sv:17297$1759 ($eq).
+Removed top 1 bits (of 2) from port B of cell system.$eq$protocol.sv:28185$2930 ($eq).
+Removed top 1 bits (of 2) from port B of cell system.$eq$protocol.sv:28186$2933 ($eq).
+Removed top 1 bits (of 2) from port B of cell system.$eq$protocol.sv:28191$2945 ($eq).
+Removed top 1 bits (of 2) from port B of cell system.$eq$protocol.sv:28196$2957 ($eq).
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \Init_1..
+Finding unused cells or wires in module \RecvGntE..
+Finding unused cells or wires in module \RecvGntE_1..
+Finding unused cells or wires in module \RecvGntE_2..
+Finding unused cells or wires in module \RecvGntE_3..
+Finding unused cells or wires in module \RecvGntS..
+Finding unused cells or wires in module \RecvGntS_1..
+Finding unused cells or wires in module \RecvGntS_2..
+Finding unused cells or wires in module \RecvGntS_3..
+Finding unused cells or wires in module \RecvInvAck..
+Finding unused cells or wires in module \RecvInvAck_1..
+Finding unused cells or wires in module \RecvInvAck_2..
+Finding unused cells or wires in module \RecvInvAck_3..
+Finding unused cells or wires in module \RecvReqE..
+Finding unused cells or wires in module \RecvReqE_1..
+Finding unused cells or wires in module \RecvReqE_2..
+Finding unused cells or wires in module \RecvReqE_3..
+Finding unused cells or wires in module \RecvReqS..
+Finding unused cells or wires in module \RecvReqS_1..
+Finding unused cells or wires in module \RecvReqS_2..
+Finding unused cells or wires in module \RecvReqS_3..
+Finding unused cells or wires in module \SendGntE..
+Finding unused cells or wires in module \SendGntE_1..
+Finding unused cells or wires in module \SendGntE_2..
+Finding unused cells or wires in module \SendGntE_3..
+Finding unused cells or wires in module \SendGntS..
+Finding unused cells or wires in module \SendGntS_1..
+Finding unused cells or wires in module \SendGntS_2..
+Finding unused cells or wires in module \SendGntS_3..
+Finding unused cells or wires in module \SendInv..
+Finding unused cells or wires in module \SendInvAck..
+Finding unused cells or wires in module \SendInvAck_1..
+Finding unused cells or wires in module \SendInvAck_2..
+Finding unused cells or wires in module \SendInvAck_3..
+Finding unused cells or wires in module \SendInv_1..
+Finding unused cells or wires in module \SendInv_2..
+Finding unused cells or wires in module \SendInv_3..
+Finding unused cells or wires in module \SendReqE..
+Finding unused cells or wires in module \SendReqE_1..
+Finding unused cells or wires in module \SendReqE_2..
+Finding unused cells or wires in module \SendReqE_3..
+Finding unused cells or wires in module \SendReqS..
+Finding unused cells or wires in module \SendReqS_1..
+Finding unused cells or wires in module \SendReqS_2..
+Finding unused cells or wires in module \SendReqS_3..
+Finding unused cells or wires in module \Store..
+Finding unused cells or wires in module \Store_1..
+Finding unused cells or wires in module \Store_2..
+Finding unused cells or wires in module \Store_3..
+Finding unused cells or wires in module \Store_4..
+Finding unused cells or wires in module \Store_5..
+Finding unused cells or wires in module \Store_6..
+Finding unused cells or wires in module \Store_7..
+Finding unused cells or wires in module \system..
+
+2.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
+Optimizing module Init_1.
+Optimizing module RecvGntE.
+Optimizing module RecvGntE_1.
+Optimizing module RecvGntE_2.
+Optimizing module RecvGntE_3.
+Optimizing module RecvGntS.
+Optimizing module RecvGntS_1.
+Optimizing module RecvGntS_2.
+Optimizing module RecvGntS_3.
+Optimizing module RecvInvAck.
+Optimizing module RecvInvAck_1.
+Optimizing module RecvInvAck_2.
+Optimizing module RecvInvAck_3.
+Optimizing module RecvReqE.
+Optimizing module RecvReqE_1.
+Optimizing module RecvReqE_2.
+Optimizing module RecvReqE_3.
+Optimizing module RecvReqS.
+Optimizing module RecvReqS_1.
+Optimizing module RecvReqS_2.
+Optimizing module RecvReqS_3.
+Optimizing module SendGntE.
+Optimizing module SendGntE_1.
+Optimizing module SendGntE_2.
+Optimizing module SendGntE_3.
+Optimizing module SendGntS.
+Optimizing module SendGntS_1.
+Optimizing module SendGntS_2.
+Optimizing module SendGntS_3.
+Optimizing module SendInv.
+Optimizing module SendInvAck.
+Optimizing module SendInvAck_1.
+Optimizing module SendInvAck_2.
+Optimizing module SendInvAck_3.
+Optimizing module SendInv_1.
+Optimizing module SendInv_2.
+Optimizing module SendInv_3.
+Optimizing module SendReqE.
+Optimizing module SendReqE_1.
+Optimizing module SendReqE_2.
+Optimizing module SendReqE_3.
+Optimizing module SendReqS.
+Optimizing module SendReqS_1.
+Optimizing module SendReqS_2.
+Optimizing module SendReqS_3.
+Optimizing module Store.
+Optimizing module Store_1.
+Optimizing module Store_2.
+Optimizing module Store_3.
+Optimizing module Store_4.
+Optimizing module Store_5.
+Optimizing module Store_6.
+Optimizing module Store_7.
+Optimizing module system.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Init'.
+Finding identical cells in module `\Init_1'.
+Finding identical cells in module `\RecvGntE'.
+Finding identical cells in module `\RecvGntE_1'.
+Finding identical cells in module `\RecvGntE_2'.
+Finding identical cells in module `\RecvGntE_3'.
+Finding identical cells in module `\RecvGntS'.
+Finding identical cells in module `\RecvGntS_1'.
+Finding identical cells in module `\RecvGntS_2'.
+Finding identical cells in module `\RecvGntS_3'.
+Finding identical cells in module `\RecvInvAck'.
+Finding identical cells in module `\RecvInvAck_1'.
+Finding identical cells in module `\RecvInvAck_2'.
+Finding identical cells in module `\RecvInvAck_3'.
+Finding identical cells in module `\RecvReqE'.
+Finding identical cells in module `\RecvReqE_1'.
+Finding identical cells in module `\RecvReqE_2'.
+Finding identical cells in module `\RecvReqE_3'.
+Finding identical cells in module `\RecvReqS'.
+Finding identical cells in module `\RecvReqS_1'.
+Finding identical cells in module `\RecvReqS_2'.
+Finding identical cells in module `\RecvReqS_3'.
+Finding identical cells in module `\SendGntE'.
+Finding identical cells in module `\SendGntE_1'.
+Finding identical cells in module `\SendGntE_2'.
+Finding identical cells in module `\SendGntE_3'.
+Finding identical cells in module `\SendGntS'.
+Finding identical cells in module `\SendGntS_1'.
+Finding identical cells in module `\SendGntS_2'.
+Finding identical cells in module `\SendGntS_3'.
+Finding identical cells in module `\SendInv'.
+Finding identical cells in module `\SendInvAck'.
+Finding identical cells in module `\SendInvAck_1'.
+Finding identical cells in module `\SendInvAck_2'.
+Finding identical cells in module `\SendInvAck_3'.
+Finding identical cells in module `\SendInv_1'.
+Finding identical cells in module `\SendInv_2'.
+Finding identical cells in module `\SendInv_3'.
+Finding identical cells in module `\SendReqE'.
+Finding identical cells in module `\SendReqE_1'.
+Finding identical cells in module `\SendReqE_2'.
+Finding identical cells in module `\SendReqE_3'.
+Finding identical cells in module `\SendReqS'.
+Finding identical cells in module `\SendReqS_1'.
+Finding identical cells in module `\SendReqS_2'.
+Finding identical cells in module `\SendReqS_3'.
+Finding identical cells in module `\Store'.
+Finding identical cells in module `\Store_1'.
+Finding identical cells in module `\Store_2'.
+Finding identical cells in module `\Store_3'.
+Finding identical cells in module `\Store_4'.
+Finding identical cells in module `\Store_5'.
+Finding identical cells in module `\Store_6'.
+Finding identical cells in module `\Store_7'.
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+2.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \Init_1..
+Finding unused cells or wires in module \RecvGntE..
+Finding unused cells or wires in module \RecvGntE_1..
+Finding unused cells or wires in module \RecvGntE_2..
+Finding unused cells or wires in module \RecvGntE_3..
+Finding unused cells or wires in module \RecvGntS..
+Finding unused cells or wires in module \RecvGntS_1..
+Finding unused cells or wires in module \RecvGntS_2..
+Finding unused cells or wires in module \RecvGntS_3..
+Finding unused cells or wires in module \RecvInvAck..
+Finding unused cells or wires in module \RecvInvAck_1..
+Finding unused cells or wires in module \RecvInvAck_2..
+Finding unused cells or wires in module \RecvInvAck_3..
+Finding unused cells or wires in module \RecvReqE..
+Finding unused cells or wires in module \RecvReqE_1..
+Finding unused cells or wires in module \RecvReqE_2..
+Finding unused cells or wires in module \RecvReqE_3..
+Finding unused cells or wires in module \RecvReqS..
+Finding unused cells or wires in module \RecvReqS_1..
+Finding unused cells or wires in module \RecvReqS_2..
+Finding unused cells or wires in module \RecvReqS_3..
+Finding unused cells or wires in module \SendGntE..
+Finding unused cells or wires in module \SendGntE_1..
+Finding unused cells or wires in module \SendGntE_2..
+Finding unused cells or wires in module \SendGntE_3..
+Finding unused cells or wires in module \SendGntS..
+Finding unused cells or wires in module \SendGntS_1..
+Finding unused cells or wires in module \SendGntS_2..
+Finding unused cells or wires in module \SendGntS_3..
+Finding unused cells or wires in module \SendInv..
+Finding unused cells or wires in module \SendInvAck..
+Finding unused cells or wires in module \SendInvAck_1..
+Finding unused cells or wires in module \SendInvAck_2..
+Finding unused cells or wires in module \SendInvAck_3..
+Finding unused cells or wires in module \SendInv_1..
+Finding unused cells or wires in module \SendInv_2..
+Finding unused cells or wires in module \SendInv_3..
+Finding unused cells or wires in module \SendReqE..
+Finding unused cells or wires in module \SendReqE_1..
+Finding unused cells or wires in module \SendReqE_2..
+Finding unused cells or wires in module \SendReqE_3..
+Finding unused cells or wires in module \SendReqS..
+Finding unused cells or wires in module \SendReqS_1..
+Finding unused cells or wires in module \SendReqS_2..
+Finding unused cells or wires in module \SendReqS_3..
+Finding unused cells or wires in module \Store..
+Finding unused cells or wires in module \Store_1..
+Finding unused cells or wires in module \Store_2..
+Finding unused cells or wires in module \Store_3..
+Finding unused cells or wires in module \Store_4..
+Finding unused cells or wires in module \Store_5..
+Finding unused cells or wires in module \Store_6..
+Finding unused cells or wires in module \Store_7..
+Finding unused cells or wires in module \system..
+
+2.11.4. Finished fast OPT passes.
+
+2.12. Printing statistics.
+
+=== Init ===
+
+   Number of wires:                111
+   Number of wire bits:            233
+   Number of public wires:         111
+   Number of public wire bits:     233
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     $mux                           28
+
+=== Init_1 ===
+
+   Number of wires:                111
+   Number of wire bits:            233
+   Number of public wires:         111
+   Number of public wire bits:     233
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     $mux                           28
+
+=== RecvGntE ===
+
+   Number of wires:                115
+   Number of wire bits:            241
+   Number of public wires:         114
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== RecvGntE_1 ===
+
+   Number of wires:                115
+   Number of wire bits:            241
+   Number of public wires:         114
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== RecvGntE_2 ===
+
+   Number of wires:                115
+   Number of wire bits:            241
+   Number of public wires:         114
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== RecvGntE_3 ===
+
+   Number of wires:                115
+   Number of wire bits:            241
+   Number of public wires:         114
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== RecvGntS ===
+
+   Number of wires:                115
+   Number of wire bits:            241
+   Number of public wires:         114
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== RecvGntS_1 ===
+
+   Number of wires:                115
+   Number of wire bits:            241
+   Number of public wires:         114
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== RecvGntS_2 ===
+
+   Number of wires:                115
+   Number of wire bits:            241
+   Number of public wires:         114
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== RecvGntS_3 ===
+
+   Number of wires:                115
+   Number of wire bits:            241
+   Number of public wires:         114
+   Number of public wire bits:     240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             1
+     $mux                            6
+
+=== RecvInvAck ===
+
+   Number of wires:                120
+   Number of wire bits:            246
+   Number of public wires:         117
+   Number of public wire bits:     243
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $and                            1
+     $eq                             1
+     $mux                            9
+     $reduce_bool                    1
+
+=== RecvInvAck_1 ===
+
+   Number of wires:                120
+   Number of wire bits:            246
+   Number of public wires:         117
+   Number of public wire bits:     243
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $and                            1
+     $eq                             1
+     $mux                            9
+     $reduce_bool                    1
+
+=== RecvInvAck_2 ===
+
+   Number of wires:                120
+   Number of wire bits:            246
+   Number of public wires:         117
+   Number of public wire bits:     243
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $and                            1
+     $eq                             1
+     $mux                            9
+     $reduce_bool                    1
+
+=== RecvInvAck_3 ===
+
+   Number of wires:                120
+   Number of wire bits:            246
+   Number of public wires:         117
+   Number of public wire bits:     243
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $and                            1
+     $eq                             1
+     $mux                            9
+     $reduce_bool                    1
+
+=== RecvReqE ===
+
+   Number of wires:                121
+   Number of wire bits:            249
+   Number of public wires:         118
+   Number of public wire bits:     246
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                           14
+
+=== RecvReqE_1 ===
+
+   Number of wires:                121
+   Number of wire bits:            249
+   Number of public wires:         118
+   Number of public wire bits:     246
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                           14
+
+=== RecvReqE_2 ===
+
+   Number of wires:                121
+   Number of wire bits:            249
+   Number of public wires:         118
+   Number of public wire bits:     246
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                           14
+
+=== RecvReqE_3 ===
+
+   Number of wires:                121
+   Number of wire bits:            249
+   Number of public wires:         118
+   Number of public wire bits:     246
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                           14
+
+=== RecvReqS ===
+
+   Number of wires:                121
+   Number of wire bits:            249
+   Number of public wires:         118
+   Number of public wire bits:     246
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                           14
+
+=== RecvReqS_1 ===
+
+   Number of wires:                121
+   Number of wire bits:            249
+   Number of public wires:         118
+   Number of public wire bits:     246
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                           14
+
+=== RecvReqS_2 ===
+
+   Number of wires:                121
+   Number of wire bits:            249
+   Number of public wires:         118
+   Number of public wire bits:     246
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                           14
+
+=== RecvReqS_3 ===
+
+   Number of wires:                121
+   Number of wire bits:            249
+   Number of public wires:         118
+   Number of public wire bits:     246
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                           14
+
+=== SendGntE ===
+
+   Number of wires:                131
+   Number of wire bits:            258
+   Number of public wires:         123
+   Number of public wire bits:     250
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     $and                            7
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $not                            5
+     $or                             2
+
+=== SendGntE_1 ===
+
+   Number of wires:                131
+   Number of wire bits:            258
+   Number of public wires:         123
+   Number of public wire bits:     250
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     $and                            7
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $not                            5
+     $or                             2
+
+=== SendGntE_2 ===
+
+   Number of wires:                131
+   Number of wire bits:            258
+   Number of public wires:         123
+   Number of public wire bits:     250
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     $and                            7
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $not                            5
+     $or                             2
+
+=== SendGntE_3 ===
+
+   Number of wires:                131
+   Number of wire bits:            258
+   Number of public wires:         123
+   Number of public wire bits:     250
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     $and                            7
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $not                            5
+     $or                             2
+
+=== SendGntS ===
+
+   Number of wires:                122
+   Number of wire bits:            249
+   Number of public wires:         115
+   Number of public wire bits:     242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            7
+     $not                            1
+     $or                             1
+
+=== SendGntS_1 ===
+
+   Number of wires:                122
+   Number of wire bits:            249
+   Number of public wires:         115
+   Number of public wire bits:     242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            7
+     $not                            1
+     $or                             1
+
+=== SendGntS_2 ===
+
+   Number of wires:                122
+   Number of wire bits:            249
+   Number of public wires:         115
+   Number of public wire bits:     242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            7
+     $not                            1
+     $or                             1
+
+=== SendGntS_3 ===
+
+   Number of wires:                122
+   Number of wire bits:            249
+   Number of public wires:         115
+   Number of public wire bits:     242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            7
+     $not                            1
+     $or                             1
+
+=== SendInv ===
+
+   Number of wires:                120
+   Number of wire bits:            244
+   Number of public wires:         113
+   Number of public wire bits:     237
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== SendInvAck ===
+
+   Number of wires:                120
+   Number of wire bits:            249
+   Number of public wires:         116
+   Number of public wire bits:     245
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             2
+     $logic_not                      1
+     $mux                            9
+
+=== SendInvAck_1 ===
+
+   Number of wires:                120
+   Number of wire bits:            249
+   Number of public wires:         116
+   Number of public wire bits:     245
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             2
+     $logic_not                      1
+     $mux                            9
+
+=== SendInvAck_2 ===
+
+   Number of wires:                120
+   Number of wire bits:            249
+   Number of public wires:         116
+   Number of public wire bits:     245
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             2
+     $logic_not                      1
+     $mux                            9
+
+=== SendInvAck_3 ===
+
+   Number of wires:                120
+   Number of wire bits:            249
+   Number of public wires:         116
+   Number of public wire bits:     245
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $eq                             2
+     $logic_not                      1
+     $mux                            9
+
+=== SendInv_1 ===
+
+   Number of wires:                120
+   Number of wire bits:            244
+   Number of public wires:         113
+   Number of public wire bits:     237
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== SendInv_2 ===
+
+   Number of wires:                120
+   Number of wire bits:            244
+   Number of public wires:         113
+   Number of public wire bits:     237
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== SendInv_3 ===
+
+   Number of wires:                120
+   Number of wire bits:            244
+   Number of public wires:         113
+   Number of public wire bits:     237
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== SendReqE ===
+
+   Number of wires:                117
+   Number of wire bits:            241
+   Number of public wires:         112
+   Number of public wire bits:     236
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== SendReqE_1 ===
+
+   Number of wires:                117
+   Number of wire bits:            241
+   Number of public wires:         112
+   Number of public wire bits:     236
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== SendReqE_2 ===
+
+   Number of wires:                117
+   Number of wire bits:            241
+   Number of public wires:         112
+   Number of public wire bits:     236
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== SendReqE_3 ===
+
+   Number of wires:                117
+   Number of wire bits:            241
+   Number of public wires:         112
+   Number of public wire bits:     236
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== SendReqS ===
+
+   Number of wires:                115
+   Number of wire bits:            239
+   Number of public wires:         112
+   Number of public wire bits:     236
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== SendReqS_1 ===
+
+   Number of wires:                115
+   Number of wire bits:            239
+   Number of public wires:         112
+   Number of public wire bits:     236
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== SendReqS_2 ===
+
+   Number of wires:                115
+   Number of wire bits:            239
+   Number of public wires:         112
+   Number of public wire bits:     236
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== SendReqS_3 ===
+
+   Number of wires:                115
+   Number of wire bits:            239
+   Number of public wires:         112
+   Number of public wire bits:     236
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== Store ===
+
+   Number of wires:                114
+   Number of wire bits:            238
+   Number of public wires:         113
+   Number of public wire bits:     237
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_1 ===
+
+   Number of wires:                114
+   Number of wire bits:            238
+   Number of public wires:         113
+   Number of public wire bits:     237
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_2 ===
+
+   Number of wires:                114
+   Number of wire bits:            238
+   Number of public wires:         113
+   Number of public wire bits:     237
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_3 ===
+
+   Number of wires:                114
+   Number of wire bits:            238
+   Number of public wires:         113
+   Number of public wire bits:     237
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_4 ===
+
+   Number of wires:                114
+   Number of wire bits:            238
+   Number of public wires:         113
+   Number of public wire bits:     237
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_5 ===
+
+   Number of wires:                114
+   Number of wire bits:            238
+   Number of public wires:         113
+   Number of public wire bits:     237
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_6 ===
+
+   Number of wires:                114
+   Number of wire bits:            238
+   Number of public wires:         113
+   Number of public wire bits:     237
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Store_7 ===
+
+   Number of wires:                114
+   Number of wire bits:            238
+   Number of public wires:         113
+   Number of public wire bits:     237
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== system ===
+
+   Number of wires:               9254
+   Number of wire bits:          19263
+   Number of public wires:        8911
+   Number of public wire bits:   18676
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3277
+     $and                           16
+     $assert                        20
+     $assume                         1
+     $dff                           76
+     $eq                            66
+     $initstate                      1
+     $logic_and                      1
+     $logic_not                      5
+     $mux                         2988
+     $not                           12
+     $or                            33
+     $reduce_bool                    4
+     Init                            1
+     Init_1                          1
+     RecvGntE                        1
+     RecvGntE_1                      1
+     RecvGntE_2                      1
+     RecvGntE_3                      1
+     RecvGntS                        1
+     RecvGntS_1                      1
+     RecvGntS_2                      1
+     RecvGntS_3                      1
+     RecvInvAck                      1
+     RecvInvAck_1                    1
+     RecvInvAck_2                    1
+     RecvInvAck_3                    1
+     RecvReqE                        1
+     RecvReqE_1                      1
+     RecvReqE_2                      1
+     RecvReqE_3                      1
+     RecvReqS                        1
+     RecvReqS_1                      1
+     RecvReqS_2                      1
+     RecvReqS_3                      1
+     SendGntE                        1
+     SendGntE_1                      1
+     SendGntE_2                      1
+     SendGntE_3                      1
+     SendGntS                        1
+     SendGntS_1                      1
+     SendGntS_2                      1
+     SendGntS_3                      1
+     SendInv                         1
+     SendInvAck                      1
+     SendInvAck_1                    1
+     SendInvAck_2                    1
+     SendInvAck_3                    1
+     SendInv_1                       1
+     SendInv_2                       1
+     SendInv_3                       1
+     SendReqE                        1
+     SendReqE_1                      1
+     SendReqE_2                      1
+     SendReqE_3                      1
+     SendReqS                        1
+     SendReqS_1                      1
+     SendReqS_2                      1
+     SendReqS_3                      1
+     Store                           1
+     Store_1                         1
+     Store_2                         1
+     Store_3                         1
+     Store_4                         1
+     Store_5                         1
+     Store_6                         1
+     Store_7                         1
+
+=== design hierarchy ===
+
+   system                            1
+     Init                            1
+     Init_1                          1
+     RecvGntE                        1
+     RecvGntE_1                      1
+     RecvGntE_2                      1
+     RecvGntE_3                      1
+     RecvGntS                        1
+     RecvGntS_1                      1
+     RecvGntS_2                      1
+     RecvGntS_3                      1
+     RecvInvAck                      1
+     RecvInvAck_1                    1
+     RecvInvAck_2                    1
+     RecvInvAck_3                    1
+     RecvReqE                        1
+     RecvReqE_1                      1
+     RecvReqE_2                      1
+     RecvReqE_3                      1
+     RecvReqS                        1
+     RecvReqS_1                      1
+     RecvReqS_2                      1
+     RecvReqS_3                      1
+     SendGntE                        1
+     SendGntE_1                      1
+     SendGntE_2                      1
+     SendGntE_3                      1
+     SendGntS                        1
+     SendGntS_1                      1
+     SendGntS_2                      1
+     SendGntS_3                      1
+     SendInv                         1
+     SendInvAck                      1
+     SendInvAck_1                    1
+     SendInvAck_2                    1
+     SendInvAck_3                    1
+     SendInv_1                       1
+     SendInv_2                       1
+     SendInv_3                       1
+     SendReqE                        1
+     SendReqE_1                      1
+     SendReqE_2                      1
+     SendReqE_3                      1
+     SendReqS                        1
+     SendReqS_1                      1
+     SendReqS_2                      1
+     SendReqS_3                      1
+     Store                           1
+     Store_1                         1
+     Store_2                         1
+     Store_3                         1
+     Store_4                         1
+     Store_5                         1
+     Store_6                         1
+     Store_7                         1
+
+   Number of wires:              15656
+   Number of wire bits:          32457
+   Number of public wires:       15125
+   Number of public wire bits:   31682
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3863
+     $and                           92
+     $assert                        20
+     $assume                         1
+     $dff                           76
+     $eq                           130
+     $initstate                      1
+     $logic_and                      1
+     $logic_not                     45
+     $mux                         3400
+     $not                           36
+     $or                            53
+     $reduce_bool                    8
+
+2.13. Executing CHECK pass (checking for obvious problems).
+Checking module Init...
+Checking module Init_1...
+Checking module RecvGntE...
+Checking module RecvGntE_1...
+Checking module RecvGntE_2...
+Checking module RecvGntE_3...
+Checking module RecvGntS...
+Checking module RecvGntS_1...
+Checking module RecvGntS_2...
+Checking module RecvGntS_3...
+Checking module RecvInvAck...
+Checking module RecvInvAck_1...
+Checking module RecvInvAck_2...
+Checking module RecvInvAck_3...
+Checking module RecvReqE...
+Checking module RecvReqE_1...
+Checking module RecvReqE_2...
+Checking module RecvReqE_3...
+Checking module RecvReqS...
+Checking module RecvReqS_1...
+Checking module RecvReqS_2...
+Checking module RecvReqS_3...
+Checking module SendGntE...
+Checking module SendGntE_1...
+Checking module SendGntE_2...
+Checking module SendGntE_3...
+Checking module SendGntS...
+Checking module SendGntS_1...
+Checking module SendGntS_2...
+Checking module SendGntS_3...
+Checking module SendInv...
+Checking module SendInvAck...
+Checking module SendInvAck_1...
+Checking module SendInvAck_2...
+Checking module SendInvAck_3...
+Checking module SendInv_1...
+Checking module SendInv_2...
+Checking module SendInv_3...
+Checking module SendReqE...
+Checking module SendReqE_1...
+Checking module SendReqE_2...
+Checking module SendReqE_3...
+Checking module SendReqS...
+Checking module SendReqS_1...
+Checking module SendReqS_2...
+Checking module SendReqS_3...
+Checking module Store...
+Checking module Store_1...
+Checking module Store_2...
+Checking module Store_3...
+Checking module Store_4...
+Checking module Store_5...
+Checking module Store_6...
+Checking module Store_7...
+Checking module system...
+Found and reported 0 problems.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Init
+Used module:     \Init_1
+Used module:     \SendReqS
+Used module:     \SendReqS_1
+Used module:     \SendReqS_2
+Used module:     \SendReqS_3
+Used module:     \SendReqE
+Used module:     \SendReqE_1
+Used module:     \SendReqE_2
+Used module:     \SendReqE_3
+Used module:     \RecvReqS
+Used module:     \RecvReqS_1
+Used module:     \Store
+Used module:     \RecvReqS_2
+Used module:     \RecvReqS_3
+Used module:     \RecvReqE
+Used module:     \RecvReqE_1
+Used module:     \RecvReqE_2
+Used module:     \RecvReqE_3
+Used module:     \SendInv
+Used module:     \SendInv_1
+Used module:     \SendInv_2
+Used module:     \SendInv_3
+Used module:     \Store_1
+Used module:     \SendGntS
+Used module:     \SendGntS_1
+Used module:     \SendGntS_2
+Used module:     \SendGntS_3
+Used module:     \SendGntE
+Used module:     \SendGntE_1
+Used module:     \SendGntE_2
+Used module:     \SendGntE_3
+Used module:     \RecvGntS
+Used module:     \RecvGntS_1
+Used module:     \Store_2
+Used module:     \RecvGntS_2
+Used module:     \RecvGntS_3
+Used module:     \RecvGntE
+Used module:     \RecvGntE_1
+Used module:     \RecvGntE_2
+Used module:     \RecvGntE_3
+Used module:     \SendInvAck
+Used module:     \SendInvAck_1
+Used module:     \SendInvAck_2
+Used module:     \SendInvAck_3
+Used module:     \Store_3
+Used module:     \RecvInvAck
+Used module:     \RecvInvAck_1
+Used module:     \RecvInvAck_2
+Used module:     \RecvInvAck_3
+Used module:     \Store_4
+Used module:     \Store_5
+Used module:     \Store_6
+Used module:     \Store_7
+
+3.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Init
+Used module:     \Init_1
+Used module:     \SendReqS
+Used module:     \SendReqS_1
+Used module:     \SendReqS_2
+Used module:     \SendReqS_3
+Used module:     \SendReqE
+Used module:     \SendReqE_1
+Used module:     \SendReqE_2
+Used module:     \SendReqE_3
+Used module:     \RecvReqS
+Used module:     \RecvReqS_1
+Used module:     \Store
+Used module:     \RecvReqS_2
+Used module:     \RecvReqS_3
+Used module:     \RecvReqE
+Used module:     \RecvReqE_1
+Used module:     \RecvReqE_2
+Used module:     \RecvReqE_3
+Used module:     \SendInv
+Used module:     \SendInv_1
+Used module:     \SendInv_2
+Used module:     \SendInv_3
+Used module:     \Store_1
+Used module:     \SendGntS
+Used module:     \SendGntS_1
+Used module:     \SendGntS_2
+Used module:     \SendGntS_3
+Used module:     \SendGntE
+Used module:     \SendGntE_1
+Used module:     \SendGntE_2
+Used module:     \SendGntE_3
+Used module:     \RecvGntS
+Used module:     \RecvGntS_1
+Used module:     \Store_2
+Used module:     \RecvGntS_2
+Used module:     \RecvGntS_3
+Used module:     \RecvGntE
+Used module:     \RecvGntE_1
+Used module:     \RecvGntE_2
+Used module:     \RecvGntE_3
+Used module:     \SendInvAck
+Used module:     \SendInvAck_1
+Used module:     \SendInvAck_2
+Used module:     \SendInvAck_3
+Used module:     \Store_3
+Used module:     \RecvInvAck
+Used module:     \RecvInvAck_1
+Used module:     \RecvInvAck_2
+Used module:     \RecvInvAck_3
+Used module:     \Store_4
+Used module:     \Store_5
+Used module:     \Store_6
+Used module:     \Store_7
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4. Executing jny backend.
+
+5. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: 43ef9aac08, CPU: user 2.30s system 0.05s, MEM: 111.88 MB peak
+Yosys 0.16+63 (git sha1 11e75bc27, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 27% 2x hierarchy (0 sec), 20% 5x opt_clean (0 sec), ...

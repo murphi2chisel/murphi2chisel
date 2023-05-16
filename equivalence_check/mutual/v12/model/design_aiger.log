@@ -1,0 +1,283 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_aiger.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Idle_1
+Used module:     \Idle
+Used module:     \Exit_1
+Used module:     \Exit
+Used module:     \Crit_1
+Used module:     \Crit
+Used module:     \Try_1
+Used module:     \Try
+Used module:     \Init
+
+2.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Idle_1
+Used module:     \Idle
+Used module:     \Exit_1
+Used module:     \Exit
+Used module:     \Crit_1
+Used module:     \Crit
+Used module:     \Try_1
+Used module:     \Try
+Used module:     \Init
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing FLATTEN pass (flatten design).
+Deleting now unused module Try_1.
+Deleting now unused module Try.
+Deleting now unused module Init.
+Deleting now unused module Idle_1.
+Deleting now unused module Idle.
+Deleting now unused module Exit_1.
+Deleting now unused module Exit.
+Deleting now unused module Crit_1.
+Deleting now unused module Crit.
+<suppressed ~9 debug messages>
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~10 debug messages>
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $flatten\rules_4.$ternary$protocol.sv:84$87.
+    dead port 2/2 on $mux $flatten\rules_4.$ternary$protocol.sv:85$88.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:65$95.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:67$96.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:48$99.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:30$102.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:13$103.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:14$104.
+    dead port 2/2 on $mux $flatten\rules_8.$ternary$protocol.sv:155$68.
+    dead port 2/2 on $mux $flatten\rules_8.$ternary$protocol.sv:154$67.
+    dead port 2/2 on $mux $flatten\rules_7.$ternary$protocol.sv:137$74.
+    dead port 2/2 on $mux $flatten\rules_7.$ternary$protocol.sv:135$73.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:118$77.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:100$80.
+Removed 14 multiplexer ports.
+<suppressed ~4 debug messages>
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_SHARE pass.
+
+6.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 1 unused cells and 6 unused wires.
+<suppressed ~2 debug messages>
+
+6.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~1 debug messages>
+
+6.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~4 debug messages>
+
+6.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+6.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+6.14. Executing OPT_SHARE pass.
+
+6.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+
+6.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+
+6.18. Finished OPT passes. (There is nothing left to do.)
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /home/czh/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/czh/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $ff.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $or.
+No more expansions possible.
+<suppressed ~141 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~101 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~72 debug messages>
+Removed a total of 24 cells.
+
+8.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 10 unused cells and 47 unused wires.
+<suppressed ~11 debug messages>
+
+8.5. Finished fast OPT passes.
+
+9. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+10. Executing FORMALFF pass.
+
+11. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+12. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+13. Executing ABC pass (technology mapping using ABC).
+
+13.1. Extracting gate netlist of module `\system' to `<abc-temp-dir>/input.blif'..
+Extracted 115 gates and 129 wires to a netlist network with 12 inputs and 9 outputs.
+
+13.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 5 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+13.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:      177
+ABC RESULTS:               NOT cells:      163
+ABC RESULTS:        internal signals:      108
+ABC RESULTS:           input signals:       12
+ABC RESULTS:          output signals:        9
+Removing temp directory.
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 0 unused cells and 125 unused wires.
+<suppressed ~54 debug messages>
+
+15. Printing statistics.
+
+=== system ===
+
+   Number of wires:                503
+   Number of wire bits:            611
+   Number of public wires:         163
+   Number of public wire bits:     269
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                350
+     $_AND_                        177
+     $_FF_                           1
+     $_NOT_                        163
+     $anyinit                        4
+     $anyseq                         1
+     $assert                         1
+     $assume                         2
+     $initstate                      1
+
+16. Executing AIGER backend.
+
+End of script. Logfile hash: a37e0eecea, CPU: user 0.03s system 0.00s, MEM: 14.28 MB peak
+Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 59% 1x abc (0 sec), 9% 1x read_verilog (0 sec), ...

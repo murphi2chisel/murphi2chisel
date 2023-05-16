@@ -1,10 +1,9 @@
 
     [options]
-    mode bmc
-    depth 10
+    mode prove
 
     [engines]
-    smtbmc
+    abc pdr
 
     [script]
     read -sv protocol.sv 

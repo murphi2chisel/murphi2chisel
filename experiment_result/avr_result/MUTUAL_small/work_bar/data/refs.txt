@@ -1,0 +1,142 @@
+(benchmark) bar
+
+(#2)		!((((_i1_io_en_a == 4'd3) || (_i1_io_en_a != 4'd3)) && b$210 && (_s9_id38 || !(_s9_id38)) && _s9_id38))
+	(id)	367
+	(#UF )	0
+	(#UFt)	0
+	(#K  )	1
+	(#reg)	1
+	(#inp)	1
+	(#ite)	0
+	(#CF )	7
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((((b$36 || b$41) && (b$36$next || b$41$next)) && !(_s9_id38$next)) && (_i1_io_en_a == 4'd1) && _s9_id38))
+	(id)	384
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_4	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#4)		!(((((b$36 || b$41) && (b$36$next || b$41$next)) && !(_s9_id38$next)) && (_i1_io_en_a == 4'd2) && _s9_id38))
+	(id)	393
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_4	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#5)		!(((((b$36 || b$41) && (b$36$next || b$41$next)) && !(_s9_id38$next)) && (_i1_io_en_a == 4'd4) && _s9_id38))
+	(id)	403
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_4	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#6)		!(((((b$36 || b$41) && (b$36$next || b$41$next)) && !(_s9_id38$next)) && (_i1_io_en_a == 4'd7) && _s9_id38))
+	(id)	413
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_4	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#7)		!(((((b$36 || b$41) && (b$36$next || b$41$next)) && !(_s9_id38$next)) && (_i1_io_en_a == 4'd8) && _s9_id38))
+	(id)	423
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_4	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#8)		!(((((b$36 || b$41) && (b$36$next || b$41$next)) && !(_s9_id38$next)) && (_i1_io_en_a == 4'd6) && _s9_id38))
+	(id)	455
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_4	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#9)		!(((((b$36 || b$41) && (b$36$next || b$41$next)) && !(_s9_id38$next)) && (_i1_io_en_a == 4'd5) && _s9_id38))
+	(id)	471
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_4	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+
+(local equalities) #0
+
+(learned predicates) #2
+            _s9_id38
+            (_i1_io_en_a == 4'd3)
+
+(learned constants)  #1
+            4'd3
+
+(learned signals)    #2
+            _s9_id38
+            _i1_io_en_a
+
+(learned UFs)        #0
+
+(#sim. iterations) 1
+(#ref. iterations) 8
+(#refs) 8
+(#assump. lemmas)  2
+(#lemmas)          10

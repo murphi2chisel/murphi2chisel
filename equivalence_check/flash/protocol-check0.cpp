@@ -10335,9 +10335,9 @@ bool mu__boolexpr618;
 bool mu__boolexpr619;
 bool mu__boolexpr620;
 bool mu__boolexpr621;
-  if (!((mu_Sta.mu_HomeProc.mu_CacheData) == (2))) mu__boolexpr621 = FALSE ;
+  if (!((mu_Sta.mu_HomeProc.mu_CacheData) == (1))) mu__boolexpr621 = FALSE ;
   else {
-  mu__boolexpr621 = ((mu_Sta.mu_Dir.mu_Pending) == (mu_true)) ; 
+  mu__boolexpr621 = ((mu_Sta.mu_Dir.mu_Pending) == (mu_false)) ; 
 }
   if (!(mu__boolexpr621)) mu__boolexpr620 = FALSE ;
   else {
@@ -10389,7 +10389,7 @@ bool mu__boolexpr621;
 }
   if (!(mu__boolexpr609)) mu__boolexpr608 = FALSE ;
   else {
-  mu__boolexpr608 = ((mu_Sta.mu_MemData) == (2)) ; 
+  mu__boolexpr608 = ((mu_Sta.mu_MemData) == (1)) ; 
 }
   if (!(mu__boolexpr608)) mu__boolexpr607 = FALSE ;
   else {
@@ -10397,7 +10397,7 @@ bool mu__boolexpr621;
 }
   if (!(mu__boolexpr607)) mu__boolexpr606 = FALSE ;
   else {
-  mu__boolexpr606 = ((mu_Sta.mu_UniMsg[1].mu_Proc) == (2)) ; 
+  mu__boolexpr606 = ((mu_Sta.mu_UniMsg[1].mu_Proc) == (1)) ; 
 }
   if (!(mu__boolexpr606)) mu__boolexpr605 = FALSE ;
   else {
@@ -10405,11 +10405,11 @@ bool mu__boolexpr621;
 }
   if (!(mu__boolexpr605)) mu__boolexpr604 = FALSE ;
   else {
-  mu__boolexpr604 = ((mu_Sta.mu_UniMsg[1].mu_Data) == (2)) ; 
+  mu__boolexpr604 = ((mu_Sta.mu_UniMsg[1].mu_Data) == (1)) ; 
 }
   if (!(mu__boolexpr604)) mu__boolexpr603 = FALSE ;
   else {
-  mu__boolexpr603 = ((mu_Sta.mu_UniMsg[2].mu_Cmd) == (mu_UNI_PutX)) ; 
+  mu__boolexpr603 = ((mu_Sta.mu_UniMsg[2].mu_Cmd) == (mu_UNI_None)) ; 
 }
   if (!(mu__boolexpr603)) mu__boolexpr602 = FALSE ;
   else {
@@ -10417,7 +10417,7 @@ bool mu__boolexpr621;
 }
   if (!(mu__boolexpr602)) mu__boolexpr601 = FALSE ;
   else {
-  mu__boolexpr601 = ((mu_Sta.mu_UniMsg[2].mu_HomeProc) == (mu_false)) ; 
+  mu__boolexpr601 = ((mu_Sta.mu_UniMsg[2].mu_HomeProc) == (mu_true)) ; 
 }
   if (!(mu__boolexpr601)) mu__boolexpr600 = FALSE ;
   else {
@@ -10429,7 +10429,7 @@ bool mu__boolexpr621;
 }
   if (!(mu__boolexpr599)) mu__boolexpr598 = FALSE ;
   else {
-  mu__boolexpr598 = ((mu_Sta.mu_HomeUniMsg.mu_Proc) == (2)) ; 
+  mu__boolexpr598 = ((mu_Sta.mu_HomeUniMsg.mu_Proc) == (1)) ; 
 }
   if (!(mu__boolexpr598)) mu__boolexpr597 = FALSE ;
   else {
@@ -10437,7 +10437,7 @@ bool mu__boolexpr621;
 }
   if (!(mu__boolexpr597)) mu__boolexpr596 = FALSE ;
   else {
-  mu__boolexpr596 = ((mu_Sta.mu_HomeUniMsg.mu_Data) == (2)) ; 
+  mu__boolexpr596 = ((mu_Sta.mu_HomeUniMsg.mu_Data) == (1)) ; 
 }
   if (!(mu__boolexpr596)) mu__boolexpr595 = FALSE ;
   else {
@@ -10469,7 +10469,7 @@ bool mu__boolexpr621;
 }
   if (!(mu__boolexpr589)) mu__boolexpr588 = FALSE ;
   else {
-  mu__boolexpr588 = ((mu_Sta.mu_WbMsg.mu_Proc) == (2)) ; 
+  mu__boolexpr588 = ((mu_Sta.mu_WbMsg.mu_Proc) == (1)) ; 
 }
   if (!(mu__boolexpr588)) mu__boolexpr587 = FALSE ;
   else {
@@ -10493,11 +10493,11 @@ bool mu__boolexpr621;
 }
   if (!(mu__boolexpr583)) mu__boolexpr582 = FALSE ;
   else {
-  mu__boolexpr582 = ((mu_Sta.mu_ShWbMsg.mu_Data) == (2)) ; 
+  mu__boolexpr582 = ((mu_Sta.mu_ShWbMsg.mu_Data) == (1)) ; 
 }
   if (!(mu__boolexpr582)) mu__boolexpr581 = FALSE ;
   else {
-  mu__boolexpr581 = ((mu_Sta.mu_NakcMsg.mu_Cmd) == (mu_NAKC_Nakc)) ; 
+  mu__boolexpr581 = ((mu_Sta.mu_NakcMsg.mu_Cmd) == (mu_NAKC_None)) ; 
 }
   if (!(mu__boolexpr581)) mu__boolexpr580 = FALSE ;
   else {

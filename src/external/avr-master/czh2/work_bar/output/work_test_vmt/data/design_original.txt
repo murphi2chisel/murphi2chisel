@@ -1,0 +1,22 @@
+---------------------
+WITHOUT PREPROCESSING
+---------------------
+
+-------------------------------
+Function Blocks ( out = F(in) )
+-------------------------------
+(type: control )	.X$next_rhs = (.en?v$18:.X)
+(type: control )	assume_1 = (.X$next == .X$next_rhs)
+(type: control )	property0 = (.X != 4'd0)
+(type: control )	v$16     = (.X == 4'd15)
+(type: Add     )	v$17     = Add_4_4_4(4'd1, .X)
+(type: control )	v$18     = (v$16?4'd1:v$17)
+
+------------------
+Initial Conditions
+------------------
+4 out of 4 initialized
+
+	(.X == 4'd1)
+
+

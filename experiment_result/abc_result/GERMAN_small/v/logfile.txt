@@ -1,0 +1,20 @@
+SBY  2:38:06 [v] Removing directory '/document/f322/murphi2chisel/german3v1/v'.
+SBY  2:38:06 [v] Copy '/document/f322/murphi2chisel/german3v1/protocol.sv' to '/document/f322/murphi2chisel/german3v1/v/src/protocol.sv'.
+SBY  2:38:06 [v] engine_0: abc pdr
+SBY  2:38:06 [v] base: starting process "cd v/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  2:38:07 [v] base: finished (returncode=0)
+SBY  2:38:07 [v] aig: starting process "cd v/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY  2:38:09 [v] aig: finished (returncode=0)
+SBY  2:38:09 [v] engine_0: starting process "cd v; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr; write_cex -a engine_0/trace.aiw'"
+SBY  2:38:13 [v] engine_0: ABC command line: "read_aiger model/design_aiger.aig; fold; strash; pdr; write_cex -a engine_0/trace.aiw".
+SBY  2:38:13 [v] engine_0: Warning: The last output is interpreted as a constraint.
+SBY  2:38:13 [v] engine_0: Invariant F[9] : 320 clauses with 62 flops (out of 80) (cex = 0, ave = 18.02)
+SBY  2:38:13 [v] engine_0: Verification of invariant with 320 clauses was successful.  Time =     0.05 sec
+SBY  2:38:13 [v] engine_0: Property proved.  Time =     3.61 sec
+SBY  2:38:13 [v] engine_0: Counter-example is not available.
+SBY  2:38:13 [v] engine_0: finished (returncode=0)
+SBY  2:38:13 [v] engine_0: Status returned by engine: PASS
+SBY  2:38:13 [v] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:07 (7)
+SBY  2:38:13 [v] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:07 (7)
+SBY  2:38:13 [v] summary: engine_0 (abc pdr) returned PASS
+SBY  2:38:13 [v] DONE (PASS, rc=0)

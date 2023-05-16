@@ -63,14 +63,14 @@ Module system directly or indirectly contains formal properties -> setting "keep
 
 === system ===
 
-   Number of wires:                150
-   Number of wire bits:            240
+   Number of wires:                151
+   Number of wire bits:            241
    Number of public wires:         123
    Number of public wire bits:     201
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 74
+   Number of cells:                 75
      $and                            2
      $anyinit                        5
      $anyseq                         1
@@ -79,6 +79,7 @@ Module system directly or indirectly contains formal properties -> setting "keep
      $eq                             9
      $ff                             1
      $initstate                      1
+     $logic_and                      1
      $logic_not                      2
      $mux                           38
      $not                            3
@@ -226,14 +227,14 @@ Module system directly or indirectly contains formal properties -> setting "keep
      Try                             1
      Try_1                           1
 
-   Number of wires:                253
-   Number of wire bits:            405
+   Number of wires:                254
+   Number of wire bits:            406
    Number of public wires:         216
    Number of public wire bits:     356
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                102
+   Number of cells:                103
      $and                            4
      $anyinit                        5
      $anyseq                         1
@@ -242,6 +243,7 @@ Module system directly or indirectly contains formal properties -> setting "keep
      $eq                            15
      $ff                             1
      $initstate                      1
+     $logic_and                      1
      $logic_not                      4
      $mux                           62
      $not                            3
@@ -263,6 +265,6 @@ Creating SMT-LIBv2 representation of module Try.
 Creating SMT-LIBv2 representation of module Try_1.
 Creating SMT-LIBv2 representation of module system.
 
-End of script. Logfile hash: 53aac1abd5, CPU: user 0.01s system 0.00s, MEM: 11.81 MB peak
+End of script. Logfile hash: 107e8c1d20, CPU: user 0.01s system 0.00s, MEM: 11.56 MB peak
 Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 69% 2x write_smt2 (0 sec), 20% 2x read_ilang (0 sec), ...
+Time spent: 67% 2x write_smt2 (0 sec), 24% 2x read_ilang (0 sec), ...

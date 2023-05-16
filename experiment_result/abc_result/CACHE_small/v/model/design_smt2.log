@@ -1,0 +1,697 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.16+63 (git sha1 11e75bc27, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+3. Executing ASYNC2SYNC pass.
+
+4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Finding unused cells or wires in module \sharerinvalidatescache_1..
+Finding unused cells or wires in module \sharerinvalidatescache..
+Finding unused cells or wires in module \homesendsreplytoclient_shared..
+Finding unused cells or wires in module \homesendsreplytoclient_exclusive..
+Finding unused cells or wires in module \homesendsinvalidatemessage_1..
+Finding unused cells or wires in module \homesendsinvalidatemessage..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement_1..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement..
+Finding unused cells or wires in module \homepicksnewrequest_1..
+Finding unused cells or wires in module \homepicksnewrequest..
+Finding unused cells or wires in module \clientrequestssharedaccess_1..
+Finding unused cells or wires in module \clientrequestssharedaccess..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess_1..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess..
+Finding unused cells or wires in module \clientreceivessharedgrant_1..
+Finding unused cells or wires in module \clientreceivessharedgrant..
+Finding unused cells or wires in module \clientreceivedexclusivegrant_1..
+Finding unused cells or wires in module \clientreceivedexclusivegrant..
+Finding unused cells or wires in module \Init..
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
+Optimizing module clientreceivedexclusivegrant.
+Optimizing module clientreceivedexclusivegrant_1.
+Optimizing module clientreceivessharedgrant.
+Optimizing module clientreceivessharedgrant_1.
+Optimizing module clientrequestsexclusiveaccess.
+Optimizing module clientrequestsexclusiveaccess_1.
+Optimizing module clientrequestssharedaccess.
+Optimizing module clientrequestssharedaccess_1.
+Optimizing module homepicksnewrequest.
+Optimizing module homepicksnewrequest_1.
+Optimizing module homereceivesinvalidateacknowledgement.
+Optimizing module homereceivesinvalidateacknowledgement_1.
+Optimizing module homesendsinvalidatemessage.
+Optimizing module homesendsinvalidatemessage_1.
+Optimizing module homesendsreplytoclient_exclusive.
+Optimizing module homesendsreplytoclient_shared.
+Optimizing module sharerinvalidatescache.
+Optimizing module sharerinvalidatescache_1.
+Optimizing module system.
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Init'.
+Finding identical cells in module `\clientreceivedexclusivegrant'.
+Finding identical cells in module `\clientreceivedexclusivegrant_1'.
+Finding identical cells in module `\clientreceivessharedgrant'.
+Finding identical cells in module `\clientreceivessharedgrant_1'.
+Finding identical cells in module `\clientrequestsexclusiveaccess'.
+Finding identical cells in module `\clientrequestsexclusiveaccess_1'.
+Finding identical cells in module `\clientrequestssharedaccess'.
+Finding identical cells in module `\clientrequestssharedaccess_1'.
+Finding identical cells in module `\homepicksnewrequest'.
+Finding identical cells in module `\homepicksnewrequest_1'.
+Finding identical cells in module `\homereceivesinvalidateacknowledgement'.
+Finding identical cells in module `\homereceivesinvalidateacknowledgement_1'.
+Finding identical cells in module `\homesendsinvalidatemessage'.
+Finding identical cells in module `\homesendsinvalidatemessage_1'.
+Finding identical cells in module `\homesendsreplytoclient_exclusive'.
+Finding identical cells in module `\homesendsreplytoclient_shared'.
+Finding identical cells in module `\sharerinvalidatescache'.
+Finding identical cells in module `\sharerinvalidatescache_1'.
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+6.3. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$1031 ($dff) from module system (D = $0\cache_reg_2[1:0], Q = \cache_reg_2).
+Adding EN signal on $procdff$1030 ($dff) from module system (D = $0\cache_reg_1[1:0], Q = \cache_reg_1).
+Adding EN signal on $procdff$1029 ($dff) from module system (D = $0\cache_reg_0[1:0], Q = \cache_reg_0).
+Adding EN signal on $procdff$1028 ($dff) from module system (D = $0\home_current_client_reg[1:0], Q = \home_current_client_reg).
+Adding EN signal on $procdff$1027 ($dff) from module system (D = $0\home_current_command_reg[2:0], Q = \home_current_command_reg).
+Adding EN signal on $procdff$1026 ($dff) from module system (D = $0\home_exclusive_granted_reg[0:0], Q = \home_exclusive_granted_reg).
+Adding EN signal on $procdff$1025 ($dff) from module system (D = $0\home_invalidate_list_reg_2[0:0], Q = \home_invalidate_list_reg_2).
+Adding EN signal on $procdff$1024 ($dff) from module system (D = $0\home_invalidate_list_reg_1[0:0], Q = \home_invalidate_list_reg_1).
+Adding EN signal on $procdff$1023 ($dff) from module system (D = $0\home_invalidate_list_reg_0[0:0], Q = \home_invalidate_list_reg_0).
+Adding EN signal on $procdff$1022 ($dff) from module system (D = $0\home_sharer_list_reg_2[0:0], Q = \home_sharer_list_reg_2).
+Adding EN signal on $procdff$1021 ($dff) from module system (D = $0\home_sharer_list_reg_1[0:0], Q = \home_sharer_list_reg_1).
+Adding EN signal on $procdff$1020 ($dff) from module system (D = $0\home_sharer_list_reg_0[0:0], Q = \home_sharer_list_reg_0).
+Adding EN signal on $procdff$1019 ($dff) from module system (D = $0\channel3_reg_2[2:0], Q = \channel3_reg_2).
+Adding EN signal on $procdff$1018 ($dff) from module system (D = $0\channel3_reg_1[2:0], Q = \channel3_reg_1).
+Adding EN signal on $procdff$1017 ($dff) from module system (D = $0\channel3_reg_0[2:0], Q = \channel3_reg_0).
+Adding EN signal on $procdff$1016 ($dff) from module system (D = $0\channel2_4_reg_2[2:0], Q = \channel2_4_reg_2).
+Adding EN signal on $procdff$1015 ($dff) from module system (D = $0\channel2_4_reg_1[2:0], Q = \channel2_4_reg_1).
+Adding EN signal on $procdff$1014 ($dff) from module system (D = $0\channel2_4_reg_0[2:0], Q = \channel2_4_reg_0).
+Adding EN signal on $procdff$1013 ($dff) from module system (D = $0\channel1_reg_2[2:0], Q = \channel1_reg_2).
+Adding EN signal on $procdff$1012 ($dff) from module system (D = $0\channel1_reg_1[2:0], Q = \channel1_reg_1).
+Adding EN signal on $procdff$1011 ($dff) from module system (D = $0\channel1_reg_0[2:0], Q = \channel1_reg_0).
+
+6.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \clientreceivedexclusivegrant..
+Finding unused cells or wires in module \clientreceivedexclusivegrant_1..
+Finding unused cells or wires in module \clientreceivessharedgrant..
+Finding unused cells or wires in module \clientreceivessharedgrant_1..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess_1..
+Finding unused cells or wires in module \clientrequestssharedaccess..
+Finding unused cells or wires in module \clientrequestssharedaccess_1..
+Finding unused cells or wires in module \homepicksnewrequest..
+Finding unused cells or wires in module \homepicksnewrequest_1..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement_1..
+Finding unused cells or wires in module \homesendsinvalidatemessage..
+Finding unused cells or wires in module \homesendsinvalidatemessage_1..
+Finding unused cells or wires in module \homesendsreplytoclient_exclusive..
+Finding unused cells or wires in module \homesendsreplytoclient_shared..
+Finding unused cells or wires in module \sharerinvalidatescache..
+Finding unused cells or wires in module \sharerinvalidatescache_1..
+Finding unused cells or wires in module \system..
+
+6.5. Rerunning OPT passes. (Removed registers in this run.)
+
+6.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
+Optimizing module clientreceivedexclusivegrant.
+Optimizing module clientreceivedexclusivegrant_1.
+Optimizing module clientreceivessharedgrant.
+Optimizing module clientreceivessharedgrant_1.
+Optimizing module clientrequestsexclusiveaccess.
+Optimizing module clientrequestsexclusiveaccess_1.
+Optimizing module clientrequestssharedaccess.
+Optimizing module clientrequestssharedaccess_1.
+Optimizing module homepicksnewrequest.
+Optimizing module homepicksnewrequest_1.
+Optimizing module homereceivesinvalidateacknowledgement.
+Optimizing module homereceivesinvalidateacknowledgement_1.
+Optimizing module homesendsinvalidatemessage.
+Optimizing module homesendsinvalidatemessage_1.
+Optimizing module homesendsreplytoclient_exclusive.
+Optimizing module homesendsreplytoclient_shared.
+Optimizing module sharerinvalidatescache.
+Optimizing module sharerinvalidatescache_1.
+Optimizing module system.
+<suppressed ~21 debug messages>
+
+6.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Init'.
+Finding identical cells in module `\clientreceivedexclusivegrant'.
+Finding identical cells in module `\clientreceivedexclusivegrant_1'.
+Finding identical cells in module `\clientreceivessharedgrant'.
+Finding identical cells in module `\clientreceivessharedgrant_1'.
+Finding identical cells in module `\clientrequestsexclusiveaccess'.
+Finding identical cells in module `\clientrequestsexclusiveaccess_1'.
+Finding identical cells in module `\clientrequestssharedaccess'.
+Finding identical cells in module `\clientrequestssharedaccess_1'.
+Finding identical cells in module `\homepicksnewrequest'.
+Finding identical cells in module `\homepicksnewrequest_1'.
+Finding identical cells in module `\homereceivesinvalidateacknowledgement'.
+Finding identical cells in module `\homereceivesinvalidateacknowledgement_1'.
+Finding identical cells in module `\homesendsinvalidatemessage'.
+Finding identical cells in module `\homesendsinvalidatemessage_1'.
+Finding identical cells in module `\homesendsreplytoclient_exclusive'.
+Finding identical cells in module `\homesendsreplytoclient_shared'.
+Finding identical cells in module `\sharerinvalidatescache'.
+Finding identical cells in module `\sharerinvalidatescache_1'.
+Finding identical cells in module `\system'.
+<suppressed ~60 debug messages>
+Removed a total of 20 cells.
+
+6.8. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \clientreceivedexclusivegrant..
+Finding unused cells or wires in module \clientreceivedexclusivegrant_1..
+Finding unused cells or wires in module \clientreceivessharedgrant..
+Finding unused cells or wires in module \clientreceivessharedgrant_1..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess..
+Finding unused cells or wires in module \clientrequestsexclusiveaccess_1..
+Finding unused cells or wires in module \clientrequestssharedaccess..
+Finding unused cells or wires in module \clientrequestssharedaccess_1..
+Finding unused cells or wires in module \homepicksnewrequest..
+Finding unused cells or wires in module \homepicksnewrequest_1..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement..
+Finding unused cells or wires in module \homereceivesinvalidateacknowledgement_1..
+Finding unused cells or wires in module \homesendsinvalidatemessage..
+Finding unused cells or wires in module \homesendsinvalidatemessage_1..
+Finding unused cells or wires in module \homesendsreplytoclient_exclusive..
+Finding unused cells or wires in module \homesendsreplytoclient_shared..
+Finding unused cells or wires in module \sharerinvalidatescache..
+Finding unused cells or wires in module \sharerinvalidatescache_1..
+Finding unused cells or wires in module \system..
+Removed 0 unused cells and 20 unused wires.
+<suppressed ~1 debug messages>
+
+6.10. Finished fast OPT passes.
+
+7. Executing CHECK pass (checking for obvious problems).
+Checking module Init...
+Checking module clientreceivedexclusivegrant...
+Checking module clientreceivedexclusivegrant_1...
+Checking module clientreceivessharedgrant...
+Checking module clientreceivessharedgrant_1...
+Checking module clientrequestsexclusiveaccess...
+Checking module clientrequestsexclusiveaccess_1...
+Checking module clientrequestssharedaccess...
+Checking module clientrequestssharedaccess_1...
+Checking module homepicksnewrequest...
+Checking module homepicksnewrequest_1...
+Checking module homereceivesinvalidateacknowledgement...
+Checking module homereceivesinvalidateacknowledgement_1...
+Checking module homesendsinvalidatemessage...
+Checking module homesendsinvalidatemessage_1...
+Checking module homesendsreplytoclient_exclusive...
+Checking module homesendsreplytoclient_shared...
+Checking module sharerinvalidatescache...
+Checking module sharerinvalidatescache_1...
+Checking module system...
+Found and reported 0 problems.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+8.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Init
+Used module:     \clientrequestssharedaccess
+Used module:     \homereceivesinvalidateacknowledgement_1
+Used module:     \sharerinvalidatescache
+Used module:     \sharerinvalidatescache_1
+Used module:     \clientreceivessharedgrant
+Used module:     \clientreceivessharedgrant_1
+Used module:     \clientreceivedexclusivegrant
+Used module:     \clientreceivedexclusivegrant_1
+Used module:     \homesendsreplytoclient_shared
+Used module:     \homesendsreplytoclient_exclusive
+Used module:     \clientrequestssharedaccess_1
+Used module:     \clientrequestsexclusiveaccess
+Used module:     \clientrequestsexclusiveaccess_1
+Used module:     \homepicksnewrequest
+Used module:     \homepicksnewrequest_1
+Used module:     \homesendsinvalidatemessage
+Used module:     \homesendsinvalidatemessage_1
+Used module:     \homereceivesinvalidateacknowledgement
+
+8.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Init
+Used module:     \clientrequestssharedaccess
+Used module:     \homereceivesinvalidateacknowledgement_1
+Used module:     \sharerinvalidatescache
+Used module:     \sharerinvalidatescache_1
+Used module:     \clientreceivessharedgrant
+Used module:     \clientreceivessharedgrant_1
+Used module:     \clientreceivedexclusivegrant
+Used module:     \clientreceivedexclusivegrant_1
+Used module:     \homesendsreplytoclient_shared
+Used module:     \homesendsreplytoclient_exclusive
+Used module:     \clientrequestssharedaccess_1
+Used module:     \clientrequestsexclusiveaccess
+Used module:     \clientrequestsexclusiveaccess_1
+Used module:     \homepicksnewrequest
+Used module:     \homepicksnewrequest_1
+Used module:     \homesendsinvalidatemessage
+Used module:     \homesendsinvalidatemessage_1
+Used module:     \homereceivesinvalidateacknowledgement
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+9. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+10. Printing statistics.
+
+=== Init ===
+
+   Number of wires:                 43
+   Number of wire bits:             91
+   Number of public wires:          43
+   Number of public wire bits:      91
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $mux                           14
+
+=== clientreceivedexclusivegrant ===
+
+   Number of wires:                 46
+   Number of wire bits:             97
+   Number of public wires:          45
+   Number of public wire bits:      96
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant_1 ===
+
+   Number of wires:                 46
+   Number of wire bits:             97
+   Number of public wires:          45
+   Number of public wire bits:      96
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant ===
+
+   Number of wires:                 46
+   Number of wire bits:             97
+   Number of public wires:          45
+   Number of public wire bits:      96
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant_1 ===
+
+   Number of wires:                 46
+   Number of wire bits:             97
+   Number of public wires:          45
+   Number of public wire bits:      96
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientrequestsexclusiveaccess ===
+
+   Number of wires:                 49
+   Number of wire bits:             99
+   Number of public wires:          44
+   Number of public wire bits:      94
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestsexclusiveaccess_1 ===
+
+   Number of wires:                 49
+   Number of wire bits:             99
+   Number of public wires:          44
+   Number of public wire bits:      94
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestssharedaccess ===
+
+   Number of wires:                 47
+   Number of wire bits:             97
+   Number of public wires:          44
+   Number of public wire bits:      94
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestssharedaccess_1 ===
+
+   Number of wires:                 47
+   Number of wire bits:             97
+   Number of public wires:          44
+   Number of public wire bits:      94
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== homepicksnewrequest ===
+
+   Number of wires:                 51
+   Number of wire bits:            104
+   Number of public wires:          48
+   Number of public wire bits:     101
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $logic_not                      1
+     $mux                           10
+     $reduce_bool                    1
+
+=== homepicksnewrequest_1 ===
+
+   Number of wires:                 51
+   Number of wire bits:            104
+   Number of public wires:          48
+   Number of public wire bits:     101
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $logic_not                      1
+     $mux                           10
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement ===
+
+   Number of wires:                 49
+   Number of wire bits:             99
+   Number of public wires:          46
+   Number of public wire bits:      96
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement_1 ===
+
+   Number of wires:                 49
+   Number of wire bits:             99
+   Number of public wires:          46
+   Number of public wire bits:      96
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homesendsinvalidatemessage ===
+
+   Number of wires:                 52
+   Number of wire bits:            102
+   Number of public wires:          45
+   Number of public wire bits:      95
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsinvalidatemessage_1 ===
+
+   Number of wires:                 52
+   Number of wire bits:            102
+   Number of public wires:          45
+   Number of public wire bits:      95
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsreplytoclient_exclusive ===
+
+   Number of wires:                 68
+   Number of wire bits:            134
+   Number of public wires:          61
+   Number of public wire bits:     127
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $and                            3
+     $eq                             3
+     $logic_not                      2
+     $mux                           19
+     $not                            2
+     $or                             3
+
+=== homesendsreplytoclient_shared ===
+
+   Number of wires:                 66
+   Number of wire bits:            132
+   Number of public wires:          58
+   Number of public wire bits:     124
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $eq                             3
+     $logic_not                      2
+     $mux                           19
+     $not                            1
+     $or                             3
+
+=== sharerinvalidatescache ===
+
+   Number of wires:                 49
+   Number of wire bits:            102
+   Number of public wires:          46
+   Number of public wire bits:      99
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== sharerinvalidatescache_1 ===
+
+   Number of wires:                 49
+   Number of wire bits:            102
+   Number of public wires:          46
+   Number of public wire bits:      99
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== system ===
+
+   Number of wires:               1324
+   Number of wire bits:           2768
+   Number of public wires:        1196
+   Number of public wire bits:    2520
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                507
+     $anyseq                         3
+     $assert                         4
+     $assume                         1
+     $dff                           26
+     $eq                            20
+     $initstate                      1
+     $logic_and                      1
+     $logic_not                      3
+     $mux                          424
+     $not                            2
+     $or                             2
+     $reduce_bool                    1
+     Init                            1
+     clientreceivedexclusivegrant      1
+     clientreceivedexclusivegrant_1      1
+     clientreceivessharedgrant       1
+     clientreceivessharedgrant_1      1
+     clientrequestsexclusiveaccess      1
+     clientrequestsexclusiveaccess_1      1
+     clientrequestssharedaccess      1
+     clientrequestssharedaccess_1      1
+     homepicksnewrequest             1
+     homepicksnewrequest_1           1
+     homereceivesinvalidateacknowledgement      1
+     homereceivesinvalidateacknowledgement_1      1
+     homesendsinvalidatemessage      1
+     homesendsinvalidatemessage_1      1
+     homesendsreplytoclient_exclusive      1
+     homesendsreplytoclient_shared      1
+     sharerinvalidatescache          1
+     sharerinvalidatescache_1        1
+
+=== design hierarchy ===
+
+   system                            1
+     Init                            1
+     clientreceivedexclusivegrant      1
+     clientreceivedexclusivegrant_1      1
+     clientreceivessharedgrant       1
+     clientreceivessharedgrant_1      1
+     clientrequestsexclusiveaccess      1
+     clientrequestsexclusiveaccess_1      1
+     clientrequestssharedaccess      1
+     clientrequestssharedaccess_1      1
+     homepicksnewrequest             1
+     homepicksnewrequest_1           1
+     homereceivesinvalidateacknowledgement      1
+     homereceivesinvalidateacknowledgement_1      1
+     homesendsinvalidatemessage      1
+     homesendsinvalidatemessage_1      1
+     homesendsreplytoclient_exclusive      1
+     homesendsreplytoclient_shared      1
+     sharerinvalidatescache          1
+     sharerinvalidatescache_1        1
+
+   Number of wires:               2279
+   Number of wire bits:           4719
+   Number of public wires:        2084
+   Number of public wire bits:    4404
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                692
+     $and                           21
+     $anyseq                         3
+     $assert                         4
+     $assume                         1
+     $dff                           26
+     $eq                            40
+     $initstate                      1
+     $logic_and                      1
+     $logic_not                     21
+     $mux                          552
+     $not                            5
+     $or                            12
+     $reduce_bool                    5
+
+11. Executing SMT2 backend.
+
+11.1. Executing BMUXMAP pass.
+
+11.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module Init.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant_1.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant_1.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess_1.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess_1.
+Creating SMT-LIBv2 representation of module homepicksnewrequest.
+Creating SMT-LIBv2 representation of module homepicksnewrequest_1.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement_1.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage_1.
+Creating SMT-LIBv2 representation of module homesendsreplytoclient_exclusive.
+Creating SMT-LIBv2 representation of module homesendsreplytoclient_shared.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache_1.
+Creating SMT-LIBv2 representation of module system.
+
+End of script. Logfile hash: 2383248c88, CPU: user 0.18s system 0.01s, MEM: 16.43 MB peak
+Yosys 0.16+63 (git sha1 11e75bc27, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 20% 2x opt_dff (0 sec), 20% 3x opt_clean (0 sec), ...

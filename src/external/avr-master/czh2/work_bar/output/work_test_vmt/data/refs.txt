@@ -1,0 +1,48 @@
+(benchmark) test_vmt
+
+(#2)		!(((.X$next == 4'd0) && (.X == 4'd1) && (.X$next == .X$next_rhs)))
+	(id)	47
+	(#UF )	1
+	(#UFt)	1
+	      	Add_4_4_4	#1
+	(#K  )	3
+	(#reg)	2
+	(#inp)	1
+	(#ite)	2
+	(#CF )	8
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((.X$next == 4'd0) && (.X$next == .X$next_rhs) && .en))
+	(id)	59
+	(#UF )	1
+	(#UFt)	1
+	      	Add_4_4_4	#1
+	(#K  )	3
+	(#reg)	2
+	(#inp)	1
+	(#ite)	2
+	(#CF )	7
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+
+(local equalities) #0
+
+(learned predicates) #0
+
+(learned constants)  #0
+
+(learned signals)    #0
+
+(learned UFs)        #0
+
+(#sim. iterations) 0
+(#ref. iterations) 2
+(#refs) 2
+(#assump. lemmas)  2
+(#lemmas)          4

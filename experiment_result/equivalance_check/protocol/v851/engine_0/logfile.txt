@@ -1,0 +1,11 @@
+ABC command line: "read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw".
+Warning: The last 2 outputs are interpreted as constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+1 : 0 2                                                                 1     3      0.03 sec
+2 : 0 19 24                                                             9    36      0.07 sec
+3 : 0 10 10 15                                                          0    36      0.08 sec
+4 : 0 10 12 11 20                                                       6    38      0.13 sec
+5 : 0 10 11 8 34 39                                                     9    47      0.44 sec
+6 : 0 10 11 6 10 20 24                                                  0    47      0.50 sec
+7 : 0 10 11 6 10 58 59 77                                              33    54      1.01 sec

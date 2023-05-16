@@ -1,0 +1,117 @@
+---------------------
+WITHOUT PREPROCESSING
+---------------------
+
+-------------------------------
+Function Blocks ( out = F(in) )
+-------------------------------
+(type: control )	_p0_./protocol.sv:506.22-507.19 = !b$21
+(type: control )	_p1_./protocol.sv:510.22-511.51 = !b$25
+(type: control )	_p2_./protocol.sv:514.22-515.51 = !b$29
+(type: control )	_p3_./protocol.sv:518.22-519.19 = !b$33
+(type: control )	_s1_n_reg_1$next_rhs = (b$324?_s1_n_reg_1:b$340)
+(type: control )	_s2_n_reg_2$next_rhs = (b$324?b$330:b$345)
+(type: control )	_s3_x_reg$next_rhs = (b$324?b$332:b$350)
+(type: control )	_s5_id17$next_rhs = !_i2_reset
+(type: control )	_s6_id22$next_rhs = (_i2_reset?_i4_id362:b$361)
+(type: control )	_s7_id26$next_rhs = (_i2_reset?_i5_id369:b$368)
+(type: control )	_s8_id30$next_rhs = (_i2_reset?_i3_id353:1'd1)
+(type: control )	assume_id43 = (b$36 || b$41)
+(type: control )	b$103    = (b$230?_s1_n_reg_1:b$89)
+(type: control )	b$105    = (_s2_n_reg_2 == 2'd1)
+(type: control )	b$106    = (b$105 && _s3_x_reg)
+(type: control )	b$110    = (b$230?b$236:b$91)
+(type: control )	b$114    = (b$230?b$238:b$95)
+(type: control )	b$115    = (b$152?b$158:_s2_n_reg_2)
+(type: control )	b$116    = (b$152?b$160:_s3_x_reg)
+(type: control )	b$118    = (b$171?b$176:b$49)
+(type: control )	b$119    = (b$171?_s2_n_reg_2:b$115)
+(type: control )	b$120    = (b$171?_s3_x_reg:b$116)
+(type: control )	b$122    = (b$190?_s1_n_reg_1:b$118)
+(type: control )	b$152    = !b$34
+(type: control )	b$157    = (b$152?2'd0:_s1_n_reg_1)
+(type: control )	b$158    = (b$152?2'd0:_s2_n_reg_2)
+(type: control )	b$160    = (b$152 || _s3_x_reg)
+(type: control )	b$161    = (b$78?2'd1:_s1_n_reg_1)
+(type: control )	b$171    = (_i1_io_en_a == 4'd1)
+(type: control )	b$176    = (b$171?b$161:_s1_n_reg_1)
+(type: control )	b$180    = (b$57?2'd1:_s2_n_reg_2)
+(type: control )	b$19     = !_s4_id15
+(type: control )	b$190    = (_i1_io_en_a == 4'd2)
+(type: control )	b$196    = (b$190?b$180:_s2_n_reg_2)
+(type: control )	b$199    = (b$85?2'd2:_s1_n_reg_1)
+(type: control )	b$200    = (b$85?1'd0:_s3_x_reg)
+(type: control )	b$21     = (_s5_id17 && b$19)
+(type: control )	b$210    = (_i1_io_en_a == 4'd3)
+(type: control )	b$215    = (b$210?b$199:_s1_n_reg_1)
+(type: control )	b$218    = (b$210?b$200:_s3_x_reg)
+(type: control )	b$219    = (b$106?2'd2:_s2_n_reg_2)
+(type: control )	b$220    = (b$106?1'd0:_s3_x_reg)
+(type: control )	b$23     = !_s6_id22
+(type: control )	b$230    = (_i1_io_en_a == 4'd4)
+(type: control )	b$236    = (b$230?b$219:_s2_n_reg_2)
+(type: control )	b$238    = (b$230?b$220:_s3_x_reg)
+(type: control )	b$241    = (b$358?2'd3:_s1_n_reg_1)
+(type: control )	b$25     = (_s5_id17 && b$23)
+(type: control )	b$252    = (_i1_io_en_a == 4'd5)
+(type: control )	b$257    = (b$252?b$241:_s1_n_reg_1)
+(type: control )	b$263    = (b$365?2'd3:_s2_n_reg_2)
+(type: control )	b$27     = !_s7_id26
+(type: control )	b$274    = (_i1_io_en_a == 4'd6)
+(type: control )	b$280    = (b$274?b$263:_s2_n_reg_2)
+(type: control )	b$283    = (_s1_n_reg_1 == 2'd3)
+(type: control )	b$285    = (b$283?2'd0:_s1_n_reg_1)
+(type: control )	b$287    = (b$283 || _s3_x_reg)
+(type: control )	b$29     = (_s5_id17 && b$27)
+(type: control )	b$299    = (_i1_io_en_a == 4'd7)
+(type: control )	b$304    = (b$299?b$285:_s1_n_reg_1)
+(type: control )	b$307    = (b$299?b$287:_s3_x_reg)
+(type: control )	b$308    = (_s2_n_reg_2 == 2'd3)
+(type: control )	b$31     = !_s8_id30
+(type: control )	b$310    = (b$308?2'd0:_s2_n_reg_2)
+(type: control )	b$312    = (b$308 || _s3_x_reg)
+(type: control )	b$324    = (_i1_io_en_a == 4'd8)
+(type: control )	b$33     = (_s5_id17 && b$31)
+(type: control )	b$330    = (b$324?b$310:_s2_n_reg_2)
+(type: control )	b$332    = (b$324?b$312:_s3_x_reg)
+(type: control )	b$338    = (b$252?b$257:b$103)
+(type: control )	b$339    = (b$274?_s1_n_reg_1:b$338)
+(type: ReductionOr)	b$34     = ReductionOr_1_4(_i1_io_en_a)
+(type: control )	b$340    = (b$299?b$304:b$339)
+(type: control )	b$343    = (b$252?_s2_n_reg_2:b$110)
+(type: control )	b$344    = (b$274?b$280:b$343)
+(type: control )	b$345    = (b$299?_s2_n_reg_2:b$344)
+(type: control )	b$348    = (b$252?_s3_x_reg:b$114)
+(type: control )	b$349    = (b$274?_s3_x_reg:b$348)
+(type: control )	b$350    = (b$299?b$307:b$349)
+(type: control )	b$358    = (_s1_n_reg_1 == 2'd2)
+(type: control )	b$36     = (_i2_reset && b$152)
+(type: control )	b$361    = (b$367 || b$366)
+(type: control )	b$365    = (_s2_n_reg_2 == 2'd2)
+(type: control )	b$366    = (_s2_n_reg_2 != 2'd2)
+(type: control )	b$367    = (_s1_n_reg_1 != 2'd2)
+(type: control )	b$368    = (b$366 || b$367)
+(type: control )	b$41     = !_s9_id38
+(type: control )	b$49     = (b$152?b$157:_s1_n_reg_1)
+(type: ReductionOr)	b$56     = ReductionOr_1_2(_s2_n_reg_2)
+(type: control )	b$57     = !b$56
+(type: control )	b$64     = (b$190?b$196:b$119)
+(type: control )	b$69     = (b$190?_s3_x_reg:b$120)
+(type: ReductionOr)	b$77     = ReductionOr_1_2(_s1_n_reg_1)
+(type: control )	b$78     = !b$77
+(type: control )	b$84     = (_s1_n_reg_1 == 2'd1)
+(type: control )	b$85     = (b$84 && _s3_x_reg)
+(type: control )	b$89     = (b$210?b$215:b$122)
+(type: control )	b$91     = (b$210?_s2_n_reg_2:b$64)
+(type: control )	b$95     = (b$210?b$218:b$69)
+(type: control )	property_rhs = (_p0_./protocol.sv:506.22-507.19 && _p1_./protocol.sv:510.22-511.51 && _p2_./protocol.sv:514.22-515.51 && _p3_./protocol.sv:518.22-519.19)
+
+------------------
+Initial Conditions
+------------------
+2 out of 13 initialized
+
+	!_s5_id17
+	_s9_id38
+
+

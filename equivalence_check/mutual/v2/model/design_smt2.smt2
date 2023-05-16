@@ -4,8 +4,8 @@
 (declare-fun |Crit_is| (|Crit_s|) Bool)
 (declare-fun |Crit#0| (|Crit_s|) (_ BitVec 1)) ; \io_x_in
 (declare-fun |Crit#1| (|Crit_s|) (_ BitVec 2)) ; \io_n_in_1
-(define-fun |Crit#2| ((state |Crit_s|)) Bool (= (|Crit#1| state) #b01)) ; $eq$protocol.sv:62$87_Y
-(define-fun |Crit#3| ((state |Crit_s|)) (_ BitVec 1) (bvand (ite (|Crit#2| state) #b1 #b0) (|Crit#0| state))) ; $and$protocol.sv:62$88_Y
+(define-fun |Crit#2| ((state |Crit_s|)) Bool (= (|Crit#1| state) #b01)) ; $eq$protocol.sv:62$89_Y
+(define-fun |Crit#3| ((state |Crit_s|)) (_ BitVec 1) (bvand (ite (|Crit#2| state) #b1 #b0) (|Crit#0| state))) ; $and$protocol.sv:62$90_Y
 (define-fun |Crit#4| ((state |Crit_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|Crit#3| state)) #b1) #b0 (|Crit#0| state))) ; \_GEN_1
 (declare-fun |Crit#5| (|Crit_s|) (_ BitVec 1)) ; \io_en_r
 (define-fun |Crit#6| ((state |Crit_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|Crit#5| state)) #b1) (|Crit#4| state) (|Crit#0| state))) ; \io_x_out
@@ -59,8 +59,8 @@
 (declare-fun |Crit_1_is| (|Crit_1_s|) Bool)
 (declare-fun |Crit_1#0| (|Crit_1_s|) (_ BitVec 1)) ; \io_x_in
 (declare-fun |Crit_1#1| (|Crit_1_s|) (_ BitVec 2)) ; \io_n_in_2
-(define-fun |Crit_1#2| ((state |Crit_1_s|)) Bool (= (|Crit_1#1| state) #b01)) ; $eq$protocol.sv:80$79_Y
-(define-fun |Crit_1#3| ((state |Crit_1_s|)) (_ BitVec 1) (bvand (ite (|Crit_1#2| state) #b1 #b0) (|Crit_1#0| state))) ; $and$protocol.sv:80$80_Y
+(define-fun |Crit_1#2| ((state |Crit_1_s|)) Bool (= (|Crit_1#1| state) #b01)) ; $eq$protocol.sv:80$81_Y
+(define-fun |Crit_1#3| ((state |Crit_1_s|)) (_ BitVec 1) (bvand (ite (|Crit_1#2| state) #b1 #b0) (|Crit_1#0| state))) ; $and$protocol.sv:80$82_Y
 (define-fun |Crit_1#4| ((state |Crit_1_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|Crit_1#3| state)) #b1) #b0 (|Crit_1#0| state))) ; \_GEN_1
 (declare-fun |Crit_1#5| (|Crit_1_s|) (_ BitVec 1)) ; \io_en_r
 (define-fun |Crit_1#6| ((state |Crit_1_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|Crit_1#5| state)) #b1) (|Crit_1#4| state) (|Crit_1#0| state))) ; \io_x_out
@@ -125,7 +125,7 @@
 ; yosys-smt2-wire io_n_out_2 2
 (define-fun |Exit_n io_n_out_2| ((state |Exit_s|)) (_ BitVec 2) (|Exit#1| state))
 (declare-fun |Exit#2| (|Exit_s|) (_ BitVec 2)) ; \io_n_in_1
-(define-fun |Exit#3| ((state |Exit_s|)) Bool (= (|Exit#2| state) #b10)) ; $eq$protocol.sv:98$76_Y
+(define-fun |Exit#3| ((state |Exit_s|)) Bool (= (|Exit#2| state) #b10)) ; $eq$protocol.sv:98$78_Y
 (define-fun |Exit#4| ((state |Exit_s|)) (_ BitVec 2) (ite (|Exit#3| state) #b11 (|Exit#2| state))) ; \_GEN_0
 (declare-fun |Exit#5| (|Exit_s|) (_ BitVec 1)) ; \io_en_r
 (define-fun |Exit#6| ((state |Exit_s|)) (_ BitVec 2) (ite (= ((_ extract 0 0) (|Exit#5| state)) #b1) (|Exit#4| state) (|Exit#2| state))) ; \io_n_out_1
@@ -171,7 +171,7 @@
 ; yosys-smt2-witness {"offset": 0, "path": ["\\io_x_in"], "smtname": "io_x_in", "smtoffset": 0, "type": "input", "width": 1}
 (define-fun |Exit_1_n io_x_in| ((state |Exit_1_s|)) Bool (|Exit_1#0| state))
 (declare-fun |Exit_1#1| (|Exit_1_s|) (_ BitVec 2)) ; \io_n_in_2
-(define-fun |Exit_1#2| ((state |Exit_1_s|)) Bool (= (|Exit_1#1| state) #b10)) ; $eq$protocol.sv:115$73_Y
+(define-fun |Exit_1#2| ((state |Exit_1_s|)) Bool (= (|Exit_1#1| state) #b10)) ; $eq$protocol.sv:115$75_Y
 (define-fun |Exit_1#3| ((state |Exit_1_s|)) (_ BitVec 2) (ite (|Exit_1#2| state) #b11 (|Exit_1#1| state))) ; \_GEN_0
 (declare-fun |Exit_1#4| (|Exit_1_s|) (_ BitVec 1)) ; \io_en_r
 (define-fun |Exit_1#5| ((state |Exit_1_s|)) (_ BitVec 2) (ite (= ((_ extract 0 0) (|Exit_1#4| state)) #b1) (|Exit_1#3| state) (|Exit_1#1| state))) ; \io_n_out_2
@@ -214,7 +214,7 @@
 (declare-fun |Idle_is| (|Idle_s|) Bool)
 (declare-fun |Idle#0| (|Idle_s|) (_ BitVec 1)) ; \io_x_in
 (declare-fun |Idle#1| (|Idle_s|) (_ BitVec 2)) ; \io_n_in_1
-(define-fun |Idle#2| ((state |Idle_s|)) Bool (= (|Idle#1| state) #b11)) ; $eq$protocol.sv:132$67_Y
+(define-fun |Idle#2| ((state |Idle_s|)) Bool (= (|Idle#1| state) #b11)) ; $eq$protocol.sv:132$69_Y
 (define-fun |Idle#3| ((state |Idle_s|)) (_ BitVec 1) (bvor (ite (|Idle#2| state) #b1 #b0) (|Idle#0| state))) ; \_GEN_1
 (declare-fun |Idle#4| (|Idle_s|) (_ BitVec 1)) ; \io_en_r
 (define-fun |Idle#5| ((state |Idle_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|Idle#4| state)) #b1) (|Idle#3| state) (|Idle#0| state))) ; \io_x_out
@@ -268,7 +268,7 @@
 (declare-fun |Idle_1_is| (|Idle_1_s|) Bool)
 (declare-fun |Idle_1#0| (|Idle_1_s|) (_ BitVec 1)) ; \io_x_in
 (declare-fun |Idle_1#1| (|Idle_1_s|) (_ BitVec 2)) ; \io_n_in_2
-(define-fun |Idle_1#2| ((state |Idle_1_s|)) Bool (= (|Idle_1#1| state) #b11)) ; $eq$protocol.sv:150$61_Y
+(define-fun |Idle_1#2| ((state |Idle_1_s|)) Bool (= (|Idle_1#1| state) #b11)) ; $eq$protocol.sv:150$63_Y
 (define-fun |Idle_1#3| ((state |Idle_1_s|)) (_ BitVec 1) (bvor (ite (|Idle_1#2| state) #b1 #b0) (|Idle_1#0| state))) ; \_GEN_1
 (declare-fun |Idle_1#4| (|Idle_1_s|) (_ BitVec 1)) ; \io_en_r
 (define-fun |Idle_1#5| ((state |Idle_1_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|Idle_1#4| state)) #b1) (|Idle_1#3| state) (|Idle_1#0| state))) ; \io_x_out
@@ -381,7 +381,7 @@
 ; yosys-smt2-wire io_n_out_2 2
 (define-fun |Try_n io_n_out_2| ((state |Try_s|)) (_ BitVec 2) (|Try#1| state))
 (declare-fun |Try#2| (|Try_s|) (_ BitVec 2)) ; \io_n_in_1
-(define-fun |Try#3| ((state |Try_s|)) Bool (not (or  (= ((_ extract 0 0) (|Try#2| state)) #b1) (= ((_ extract 1 1) (|Try#2| state)) #b1)))) ; $eq$protocol.sv:28$98_Y
+(define-fun |Try#3| ((state |Try_s|)) Bool (not (or  (= ((_ extract 0 0) (|Try#2| state)) #b1) (= ((_ extract 1 1) (|Try#2| state)) #b1)))) ; $eq$protocol.sv:28$100_Y
 (define-fun |Try#4| ((state |Try_s|)) (_ BitVec 2) (ite (|Try#3| state) #b01 (|Try#2| state))) ; \_GEN_0
 (declare-fun |Try#5| (|Try_s|) (_ BitVec 1)) ; \io_en_r
 (define-fun |Try#6| ((state |Try_s|)) (_ BitVec 2) (ite (= ((_ extract 0 0) (|Try#5| state)) #b1) (|Try#4| state) (|Try#2| state))) ; \io_n_out_1
@@ -427,7 +427,7 @@
 ; yosys-smt2-witness {"offset": 0, "path": ["\\io_x_in"], "smtname": "io_x_in", "smtoffset": 0, "type": "input", "width": 1}
 (define-fun |Try_1_n io_x_in| ((state |Try_1_s|)) Bool (|Try_1#0| state))
 (declare-fun |Try_1#1| (|Try_1_s|) (_ BitVec 2)) ; \io_n_in_2
-(define-fun |Try_1#2| ((state |Try_1_s|)) Bool (not (or  (= ((_ extract 0 0) (|Try_1#1| state)) #b1) (= ((_ extract 1 1) (|Try_1#1| state)) #b1)))) ; $eq$protocol.sv:45$95_Y
+(define-fun |Try_1#2| ((state |Try_1_s|)) Bool (not (or  (= ((_ extract 0 0) (|Try_1#1| state)) #b1) (= ((_ extract 1 1) (|Try_1#1| state)) #b1)))) ; $eq$protocol.sv:45$97_Y
 (define-fun |Try_1#3| ((state |Try_1_s|)) (_ BitVec 2) (ite (|Try_1#2| state) #b01 (|Try_1#1| state))) ; \_GEN_0
 (declare-fun |Try_1#4| (|Try_1_s|) (_ BitVec 1)) ; \io_en_r
 (define-fun |Try_1#5| ((state |Try_1_s|)) (_ BitVec 2) (ite (= ((_ extract 0 0) (|Try_1#4| state)) #b1) (|Try_1#3| state) (|Try_1#1| state))) ; \io_n_out_2
@@ -755,17 +755,17 @@
 ; yosys-smt2-witness {"offset": 0, "path": ["\\clock"], "smtname": "clock", "smtoffset": 0, "type": "posedge", "width": 1}
 ; yosys-smt2-witness {"offset": 0, "path": ["\\clock"], "smtname": "clock", "smtoffset": 0, "type": "input", "width": 1}
 (define-fun |system_n clock| ((state |system_s|)) Bool (|system#51| state))
-; yosys-smt2-anyseq system#52 1 $auto$setundef.cc:533:execute$164
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_164"], "smtname": 52, "smtoffset": 0, "type": "seq", "width": 1}
-(declare-fun |system#52| (|system_s|) (_ BitVec 1)) ; \_witness_.anyseq_auto_setundef_cc_533_execute_164
-; yosys-smt2-wire _witness_.anyseq_auto_setundef_cc_533_execute_164 1
-(define-fun |system_n _witness_.anyseq_auto_setundef_cc_533_execute_164| ((state |system_s|)) Bool (= ((_ extract 0 0) (|system#52| state)) #b1))
+; yosys-smt2-anyseq system#52 1 $auto$setundef.cc:533:execute$166
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_166"], "smtname": 52, "smtoffset": 0, "type": "seq", "width": 1}
+(declare-fun |system#52| (|system_s|) (_ BitVec 1)) ; \_witness_.anyseq_auto_setundef_cc_533_execute_166
+; yosys-smt2-wire _witness_.anyseq_auto_setundef_cc_533_execute_166 1
+(define-fun |system_n _witness_.anyseq_auto_setundef_cc_533_execute_166| ((state |system_s|)) Bool (= ((_ extract 0 0) (|system#52| state)) #b1))
 ; yosys-smt2-anyinit system#53 1 protocol.sv:504.19-509.6
-; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_156"], "smtname": 53, "smtoffset": 0, "type": "init", "width": 1}
-(declare-fun |system#53| (|system_s|) (_ BitVec 1)) ; \_witness_.anyinit_procdff_156
-; yosys-smt2-register _witness_.anyinit_procdff_156 1
-; yosys-smt2-wire _witness_.anyinit_procdff_156 1
-(define-fun |system_n _witness_.anyinit_procdff_156| ((state |system_s|)) Bool (= ((_ extract 0 0) (|system#53| state)) #b1))
+; yosys-smt2-witness {"offset": 0, "path": ["\\_witness_", "\\anyinit_procdff_158"], "smtname": 53, "smtoffset": 0, "type": "init", "width": 1}
+(declare-fun |system#53| (|system_s|) (_ BitVec 1)) ; \_witness_.anyinit_procdff_158
+; yosys-smt2-register _witness_.anyinit_procdff_158 1
+; yosys-smt2-wire _witness_.anyinit_procdff_158 1
+(define-fun |system_n _witness_.anyinit_procdff_158| ((state |system_s|)) Bool (= ((_ extract 0 0) (|system#53| state)) #b1))
 ; yosys-smt2-wire _T_8 1
 (define-fun |system_n _T_8| ((state |system_s|)) Bool (|system#29| state))
 ; yosys-smt2-wire _T_6 1
@@ -848,43 +848,44 @@
 (declare-fun |system#74| (|system_s|) (_ BitVec 1)) ; $formal$protocol.sv:506$3_EN
 ; yosys-smt2-register $formal$protocol.sv:506$3_EN 1
 (define-fun |system_n $formal$protocol.sv:506$3_EN| ((state |system_s|)) Bool (= ((_ extract 0 0) (|system#74| state)) #b1))
-(define-fun |system#75| ((state |system_s|)) (_ BitVec 1) (bvnot (ite (|system#51| state) #b1 #b0))) ; $auto$rtlil.cc:2399:Not$167
-; yosys-smt2-assume 0 $auto$formalff.cc:758:execute$168
-(define-fun |system_u 0| ((state |system_s|)) Bool (or (= ((_ extract 0 0) (|system#75| state)) #b1) (not true))) ; $auto$formalff.cc:758:execute$168
-(define-fun |system#76| ((state |system_s|)) Bool (|system_is| state)) ; $0$formal$protocol.sv:500$1_EN[0:0]$57
-; yosys-smt2-assume 1 $assume$protocol.sv:500$53 protocol.sv:500.30-501.37
-(define-fun |system_u 1| ((state |system_s|)) Bool (or (|system#50| state) (not (|system#76| state)))) ; $assume$protocol.sv:500$53
+(define-fun |system#75| ((state |system_s|)) (_ BitVec 1) (bvnot (ite (|system#51| state) #b1 #b0))) ; $auto$rtlil.cc:2399:Not$169
+; yosys-smt2-assume 0 $auto$formalff.cc:758:execute$170
+(define-fun |system_u 0| ((state |system_s|)) Bool (or (= ((_ extract 0 0) (|system#75| state)) #b1) (not true))) ; $auto$formalff.cc:758:execute$170
+(define-fun |system#76| ((state |system_s|)) Bool (and (or  (|system#50| state) false) (or  (|system#49| state) false))) ; $0$formal$protocol.sv:500$1_CHECK[0:0]$56
+(define-fun |system#77| ((state |system_s|)) Bool (|system_is| state)) ; $0$formal$protocol.sv:500$1_EN[0:0]$57
+; yosys-smt2-assume 1 $assume$protocol.sv:500$53 protocol.sv:500.30-501.51
+(define-fun |system_u 1| ((state |system_s|)) Bool (or (|system#76| state) (not (|system#77| state)))) ; $assume$protocol.sv:500$53
 ; yosys-smt2-assert 0 $assert$protocol.sv:506$54 protocol.sv:506.22-507.62
 (define-fun |system_a 0| ((state |system_s|)) Bool (or (= ((_ extract 0 0) (|system#53| state)) #b1) (not (= ((_ extract 0 0) (|system#74| state)) #b1)))) ; $assert$protocol.sv:506$54
-(define-fun |system#77| ((state |system_s|)) (_ BitVec 1) (ite (|system#50| state) #b0 #b1)) ; $0$formal$protocol.sv:506$3_EN[0:0]$45
-(define-fun |system#78| ((state |system_s|)) Bool (= (|system#6| state) #b10)) ; $eq$protocol.sv:507$47_Y
-(define-fun |system#79| ((state |system_s|)) Bool (not (or  (= ((_ extract 0 0) (|system#5| state)) #b1) (= ((_ extract 1 1) (|system#5| state)) #b1)))) ; $eq$protocol.sv:507$48_Y
-(define-fun |system#80| ((state |system_s|)) (_ BitVec 1) (bvnot (|system#0| state))) ; $not$protocol.sv:507$49_Y
-(define-fun |system#81| ((state |system_s|)) (_ BitVec 1) (bvand (ite (|system#79| state) #b1 #b0) (|system#80| state))) ; $and$protocol.sv:507$50_Y
-(define-fun |system#82| ((state |system_s|)) (_ BitVec 1) (bvand (ite (|system#78| state) #b1 #b0) (|system#81| state))) ; $and$protocol.sv:507$51_Y
-(define-fun |system#83| ((state |system_s|)) (_ BitVec 1) (bvnot (|system#82| state))) ; $not$protocol.sv:507$52_Y
-(define-fun |system#84| ((state |system_s|)) (_ BitVec 1) (ite (|system#50| state) (|system#52| state) (|system#83| state))) ; $0$formal$protocol.sv:506$3_CHECK[0:0]$44
-(define-fun |system#85| ((state |system_s|)) (_ BitVec 2) (ite (|system#24| state) (|system#23| state) (|system#73| state))) ; $procmux$145_Y
-(define-fun |system#86| ((state |system_s|)) (_ BitVec 2) (ite (|system#19| state) (|system#18| state) (|system#85| state))) ; $procmux$148_Y
-(define-fun |system#87| ((state |system_s|)) (_ BitVec 2) (ite (|system#14| state) (|system#13| state) (|system#86| state))) ; $procmux$151_Y
-(define-fun |system#88| ((state |system_s|)) (_ BitVec 2) (ite (|system#9| state) (|system#4| state) (|system#87| state))) ; $0\n_reg_0[1:0]
-(define-fun |system#89| ((state |system_s|)) (_ BitVec 2) (ite (|system#24| state) (|system#22| state) (|system#71| state))) ; $procmux$133_Y
-(define-fun |system#90| ((state |system_s|)) (_ BitVec 2) (ite (|system#19| state) (|system#17| state) (|system#89| state))) ; $procmux$136_Y
-(define-fun |system#91| ((state |system_s|)) (_ BitVec 2) (ite (|system#14| state) (|system#12| state) (|system#90| state))) ; $procmux$139_Y
-(define-fun |system#92| ((state |system_s|)) (_ BitVec 2) (ite (|system#9| state) (|system#3| state) (|system#91| state))) ; $0\n_reg_1[1:0]
-(define-fun |system#93| ((state |system_s|)) (_ BitVec 2) (ite (|system#24| state) (|system#21| state) (|system#69| state))) ; $procmux$121_Y
-(define-fun |system#94| ((state |system_s|)) (_ BitVec 2) (ite (|system#19| state) (|system#16| state) (|system#93| state))) ; $procmux$124_Y
-(define-fun |system#95| ((state |system_s|)) (_ BitVec 2) (ite (|system#14| state) (|system#11| state) (|system#94| state))) ; $procmux$127_Y
-(define-fun |system#96| ((state |system_s|)) (_ BitVec 2) (ite (|system#9| state) (|system#2| state) (|system#95| state))) ; $0\n_reg_2[1:0]
-(define-fun |system#97| ((state |system_s|)) (_ BitVec 1) (ite (|system#24| state) (ite (|system#20| state) #b1 #b0) (|system#66| state))) ; $procmux$109_Y
-(define-fun |system#98| ((state |system_s|)) (_ BitVec 1) (ite (|system#19| state) (ite (|system#15| state) #b1 #b0) (|system#97| state))) ; $procmux$112_Y
-(define-fun |system#99| ((state |system_s|)) (_ BitVec 1) (ite (|system#14| state) (ite (|system#10| state) #b1 #b0) (|system#98| state))) ; $procmux$115_Y
-(define-fun |system#100| ((state |system_s|)) (_ BitVec 1) (ite (|system#9| state) (ite (|system#1| state) #b1 #b0) (|system#99| state))) ; $0\x_reg[0:0]
+(define-fun |system#78| ((state |system_s|)) (_ BitVec 1) (ite (|system#50| state) #b0 #b1)) ; $0$formal$protocol.sv:506$3_EN[0:0]$45
+(define-fun |system#79| ((state |system_s|)) Bool (= (|system#6| state) #b10)) ; $eq$protocol.sv:507$47_Y
+(define-fun |system#80| ((state |system_s|)) Bool (not (or  (= ((_ extract 0 0) (|system#5| state)) #b1) (= ((_ extract 1 1) (|system#5| state)) #b1)))) ; $eq$protocol.sv:507$48_Y
+(define-fun |system#81| ((state |system_s|)) (_ BitVec 1) (bvnot (|system#0| state))) ; $not$protocol.sv:507$49_Y
+(define-fun |system#82| ((state |system_s|)) (_ BitVec 1) (bvand (ite (|system#80| state) #b1 #b0) (|system#81| state))) ; $and$protocol.sv:507$50_Y
+(define-fun |system#83| ((state |system_s|)) (_ BitVec 1) (bvand (ite (|system#79| state) #b1 #b0) (|system#82| state))) ; $and$protocol.sv:507$51_Y
+(define-fun |system#84| ((state |system_s|)) (_ BitVec 1) (bvnot (|system#83| state))) ; $not$protocol.sv:507$52_Y
+(define-fun |system#85| ((state |system_s|)) (_ BitVec 1) (ite (|system#50| state) (|system#52| state) (|system#84| state))) ; $0$formal$protocol.sv:506$3_CHECK[0:0]$44
+(define-fun |system#86| ((state |system_s|)) (_ BitVec 2) (ite (|system#24| state) (|system#23| state) (|system#73| state))) ; $procmux$147_Y
+(define-fun |system#87| ((state |system_s|)) (_ BitVec 2) (ite (|system#19| state) (|system#18| state) (|system#86| state))) ; $procmux$150_Y
+(define-fun |system#88| ((state |system_s|)) (_ BitVec 2) (ite (|system#14| state) (|system#13| state) (|system#87| state))) ; $procmux$153_Y
+(define-fun |system#89| ((state |system_s|)) (_ BitVec 2) (ite (|system#9| state) (|system#4| state) (|system#88| state))) ; $0\n_reg_0[1:0]
+(define-fun |system#90| ((state |system_s|)) (_ BitVec 2) (ite (|system#24| state) (|system#22| state) (|system#71| state))) ; $procmux$135_Y
+(define-fun |system#91| ((state |system_s|)) (_ BitVec 2) (ite (|system#19| state) (|system#17| state) (|system#90| state))) ; $procmux$138_Y
+(define-fun |system#92| ((state |system_s|)) (_ BitVec 2) (ite (|system#14| state) (|system#12| state) (|system#91| state))) ; $procmux$141_Y
+(define-fun |system#93| ((state |system_s|)) (_ BitVec 2) (ite (|system#9| state) (|system#3| state) (|system#92| state))) ; $0\n_reg_1[1:0]
+(define-fun |system#94| ((state |system_s|)) (_ BitVec 2) (ite (|system#24| state) (|system#21| state) (|system#69| state))) ; $procmux$123_Y
+(define-fun |system#95| ((state |system_s|)) (_ BitVec 2) (ite (|system#19| state) (|system#16| state) (|system#94| state))) ; $procmux$126_Y
+(define-fun |system#96| ((state |system_s|)) (_ BitVec 2) (ite (|system#14| state) (|system#11| state) (|system#95| state))) ; $procmux$129_Y
+(define-fun |system#97| ((state |system_s|)) (_ BitVec 2) (ite (|system#9| state) (|system#2| state) (|system#96| state))) ; $0\n_reg_2[1:0]
+(define-fun |system#98| ((state |system_s|)) (_ BitVec 1) (ite (|system#24| state) (ite (|system#20| state) #b1 #b0) (|system#66| state))) ; $procmux$111_Y
+(define-fun |system#99| ((state |system_s|)) (_ BitVec 1) (ite (|system#19| state) (ite (|system#15| state) #b1 #b0) (|system#98| state))) ; $procmux$114_Y
+(define-fun |system#100| ((state |system_s|)) (_ BitVec 1) (ite (|system#14| state) (ite (|system#10| state) #b1 #b0) (|system#99| state))) ; $procmux$117_Y
+(define-fun |system#101| ((state |system_s|)) (_ BitVec 1) (ite (|system#9| state) (ite (|system#1| state) #b1 #b0) (|system#100| state))) ; $0\x_reg[0:0]
 (define-fun |system_a| ((state |system_s|)) Bool (and
   (|system_a 0| state)
-  (|Try_1_a| (|system_h rules_2| state))
   (|Init_a| (|system_h rules_0| state))
   (|Try_a| (|system_h rules_1| state))
+  (|Try_1_a| (|system_h rules_2| state))
   (|Crit_a| (|system_h rules_3| state))
   (|Crit_1_a| (|system_h rules_4| state))
   (|Exit_a| (|system_h rules_5| state))
@@ -895,9 +896,9 @@
 (define-fun |system_u| ((state |system_s|)) Bool (and
   (|system_u 0| state)
   (|system_u 1| state)
-  (|Try_1_u| (|system_h rules_2| state))
   (|Init_u| (|system_h rules_0| state))
   (|Try_u| (|system_h rules_1| state))
+  (|Try_1_u| (|system_h rules_2| state))
   (|Crit_u| (|system_h rules_3| state))
   (|Crit_1_u| (|system_h rules_4| state))
   (|Exit_u| (|system_h rules_5| state))
@@ -907,9 +908,9 @@
 ))
 (define-fun |system_i| ((state |system_s|)) Bool (and
   (= (= ((_ extract 0 0) (|system#74| state)) #b1) false) ; $formal$protocol.sv:506$3_EN
-  (|Try_1_i| (|system_h rules_2| state))
   (|Init_i| (|system_h rules_0| state))
   (|Try_i| (|system_h rules_1| state))
+  (|Try_1_i| (|system_h rules_2| state))
   (|Crit_i| (|system_h rules_3| state))
   (|Crit_1_i| (|system_h rules_4| state))
   (|Exit_i| (|system_h rules_5| state))
@@ -918,16 +919,6 @@
   (|Idle_1_i| (|system_h rules_8| state))
 ))
 (define-fun |system_h| ((state |system_s|)) Bool (and
-  (= (|system_is| state) (|Try_1_is| (|system_h rules_2| state)))
-  (= (|system#35| state) (|Try_1_n io_x_out| (|system_h rules_2| state))) ; Try_1.io_x_out
-  (= (= ((_ extract 0 0) (|system#0| state)) #b1) (|Try_1_n io_x_in| (|system_h rules_2| state))) ; Try_1.io_x_in
-  (= (|system#36| state) (|Try_1_n io_n_out_2| (|system_h rules_2| state))) ; Try_1.io_n_out_2
-  (= (|system#37| state) (|Try_1_n io_n_out_1| (|system_h rules_2| state))) ; Try_1.io_n_out_1
-  (= (|system#38| state) (|Try_1_n io_n_out_0| (|system_h rules_2| state))) ; Try_1.io_n_out_0
-  (= (|system#5| state) (|Try_1_n io_n_in_2| (|system_h rules_2| state))) ; Try_1.io_n_in_2
-  (= (|system#6| state) (|Try_1_n io_n_in_1| (|system_h rules_2| state))) ; Try_1.io_n_in_1
-  (= (|system#7| state) (|Try_1_n io_n_in_0| (|system_h rules_2| state))) ; Try_1.io_n_in_0
-  (= (|system#39| state) (|Try_1_n io_en_r| (|system_h rules_2| state))) ; Try_1.io_en_r
   (= (|system_is| state) (|Init_is| (|system_h rules_0| state)))
   (= (|system#45| state) (|Init_n io_x_out| (|system_h rules_0| state))) ; Init.io_x_out
   (= (= ((_ extract 0 0) (|system#0| state)) #b1) (|Init_n io_x_in| (|system_h rules_0| state))) ; Init.io_x_in
@@ -948,6 +939,16 @@
   (= (|system#6| state) (|Try_n io_n_in_1| (|system_h rules_1| state))) ; Try.io_n_in_1
   (= (|system#7| state) (|Try_n io_n_in_0| (|system_h rules_1| state))) ; Try.io_n_in_0
   (= (|system#44| state) (|Try_n io_en_r| (|system_h rules_1| state))) ; Try.io_en_r
+  (= (|system_is| state) (|Try_1_is| (|system_h rules_2| state)))
+  (= (|system#35| state) (|Try_1_n io_x_out| (|system_h rules_2| state))) ; Try_1.io_x_out
+  (= (= ((_ extract 0 0) (|system#0| state)) #b1) (|Try_1_n io_x_in| (|system_h rules_2| state))) ; Try_1.io_x_in
+  (= (|system#36| state) (|Try_1_n io_n_out_2| (|system_h rules_2| state))) ; Try_1.io_n_out_2
+  (= (|system#37| state) (|Try_1_n io_n_out_1| (|system_h rules_2| state))) ; Try_1.io_n_out_1
+  (= (|system#38| state) (|Try_1_n io_n_out_0| (|system_h rules_2| state))) ; Try_1.io_n_out_0
+  (= (|system#5| state) (|Try_1_n io_n_in_2| (|system_h rules_2| state))) ; Try_1.io_n_in_2
+  (= (|system#6| state) (|Try_1_n io_n_in_1| (|system_h rules_2| state))) ; Try_1.io_n_in_1
+  (= (|system#7| state) (|Try_1_n io_n_in_0| (|system_h rules_2| state))) ; Try_1.io_n_in_0
+  (= (|system#39| state) (|Try_1_n io_en_r| (|system_h rules_2| state))) ; Try_1.io_en_r
   (= (|system_is| state) (|Crit_is| (|system_h rules_3| state)))
   (= (|system#30| state) (|Crit_n io_x_out| (|system_h rules_3| state))) ; Crit.io_x_out
   (= (= ((_ extract 0 0) (|system#0| state)) #b1) (|Crit_n io_x_in| (|system_h rules_3| state))) ; Crit.io_x_in
@@ -1008,9 +1009,9 @@
   (= (|system#6| state) (|Idle_1_n io_n_in_1| (|system_h rules_8| state))) ; Idle_1.io_n_in_1
   (= (|system#7| state) (|Idle_1_n io_n_in_0| (|system_h rules_8| state))) ; Idle_1.io_n_in_0
   (= (|system#9| state) (|Idle_1_n io_en_r| (|system_h rules_8| state))) ; Idle_1.io_en_r
-  (|Try_1_h| (|system_h rules_2| state))
   (|Init_h| (|system_h rules_0| state))
   (|Try_h| (|system_h rules_1| state))
+  (|Try_1_h| (|system_h rules_2| state))
   (|Crit_h| (|system_h rules_3| state))
   (|Crit_1_h| (|system_h rules_4| state))
   (|Exit_h| (|system_h rules_5| state))
@@ -1019,15 +1020,15 @@
   (|Idle_1_h| (|system_h rules_8| state))
 ))
 (define-fun |system_t| ((state |system_s|) (next_state |system_s|)) Bool (and
-  (= (|system#77| state) (|system#74| next_state)) ; $procdff$157 $formal$protocol.sv:506$3_EN
-  (= (|system#84| state) (|system#53| next_state)) ; $procdff$156 \_witness_.anyinit_procdff_156
-  (= (|system#88| state) (|system#7| next_state)) ; $procdff$158 \n_reg_0
-  (= (|system#92| state) (|system#6| next_state)) ; $procdff$159 \n_reg_1
-  (= (|system#96| state) (|system#5| next_state)) ; $procdff$160 \n_reg_2
-  (= (|system#100| state) (|system#0| next_state)) ; $procdff$161 \x_reg
-  (|Try_1_t| (|system_h rules_2| state) (|system_h rules_2| next_state))
+  (= (|system#78| state) (|system#74| next_state)) ; $procdff$159 $formal$protocol.sv:506$3_EN
+  (= (|system#85| state) (|system#53| next_state)) ; $procdff$158 \_witness_.anyinit_procdff_158
+  (= (|system#89| state) (|system#7| next_state)) ; $procdff$160 \n_reg_0
+  (= (|system#93| state) (|system#6| next_state)) ; $procdff$161 \n_reg_1
+  (= (|system#97| state) (|system#5| next_state)) ; $procdff$162 \n_reg_2
+  (= (|system#101| state) (|system#0| next_state)) ; $procdff$163 \x_reg
   (|Init_t| (|system_h rules_0| state) (|system_h rules_0| next_state))
   (|Try_t| (|system_h rules_1| state) (|system_h rules_1| next_state))
+  (|Try_1_t| (|system_h rules_2| state) (|system_h rules_2| next_state))
   (|Crit_t| (|system_h rules_3| state) (|system_h rules_3| next_state))
   (|Crit_1_t| (|system_h rules_4| state) (|system_h rules_4| next_state))
   (|Exit_t| (|system_h rules_5| state) (|system_h rules_5| next_state))

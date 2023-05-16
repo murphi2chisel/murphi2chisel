@@ -645,22 +645,22 @@ unsigned short StartStateManager::numstartstates = 1;
 /********************
   Invariant records
  ********************/
-int mu__invariant_3() // Invariant "reachableStateN"
+int mu__invariant_3() // Invariant "unreachableStateN"
 {
 bool mu__boolexpr4;
 bool mu__boolexpr5;
-  if (!((mu_n[1]) == (mu_I))) mu__boolexpr5 = FALSE ;
+  if (!((mu_n[1]) == (mu_E))) mu__boolexpr5 = FALSE ;
   else {
-  mu__boolexpr5 = ((mu_n[2]) == (mu_I)) ; 
+  mu__boolexpr5 = ((mu_n[2]) == (mu_E)) ; 
 }
   if (!(mu__boolexpr5)) mu__boolexpr4 = FALSE ;
   else {
-  mu__boolexpr4 = ((mu_x) == (mu_true)) ; 
+  mu__boolexpr4 = ((mu_x) == (mu_false)) ; 
 }
 return !(mu__boolexpr4);
 };
 
-bool mu__condition_6() // Condition for Rule "reachableStateN"
+bool mu__condition_6() // Condition for Rule "unreachableStateN"
 {
   return mu__invariant_3( );
 }
@@ -668,7 +668,7 @@ bool mu__condition_6() // Condition for Rule "reachableStateN"
 /**** end rule declaration ****/
 
 const rulerec invariants[] = {
-{"reachableStateN", &mu__condition_6, NULL, },
+{"unreachableStateN", &mu__condition_6, NULL, },
 };
 const unsigned short numinvariants = 1;
 

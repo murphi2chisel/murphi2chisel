@@ -1,0 +1,95 @@
+------------
+Size Summary
+------------
+
+State variables (#10)
+	(1-bit)	7
+	(2-bit)	3
+
+Inputs (#5)
+	(1-bit)	4
+	(4-bit)	1
+
+Constants (#14)
+	(1-bit)	2
+	(2-bit)	4
+	(4-bit)	8
+
+---------------
+State Variables
+---------------
+_s8_id30                        (1-bit)
+_s7_id26                        (1-bit)
+_s6_id22                        (1-bit)
+_s4_id15                        (1-bit)
+_s3_x_reg                       (1-bit)
+_s9_id38                        (1-bit)
+_s5_id17                        (1-bit)
+_s2_n_reg_2                     (2-bit)
+_s1_n_reg_1                     (2-bit)
+_s0_n_reg_0                     (2-bit)
+
+------
+Inputs
+------
+_i5_id369                       (1-bit)
+_i4_id362                       (1-bit)
+_i3_id353                       (1-bit)
+_i2_reset                       (1-bit)
+_i1_io_en_a                     (4-bit)
+
+---------
+Constants
+---------
+1'd1
+1'd0
+2'd1
+2'd2
+2'd0
+2'd3
+4'd1
+4'd2
+4'd3
+4'd4
+4'd5
+4'd6
+4'd7
+4'd8
+
+-----------------------------
+Uninterpreted Functions (UFs)
+-----------------------------
+ReductionOr_1_2	#2
+ReductionOr_1_4	#1
+
+------------------
+Initial Conditions
+------------------
+
+	!_s5_id17
+	_s9_id38
+
+
+
+-----------------
+Dependency List
+-----------------
+
+Depth: 0
+	(1-bit) #5	n0	u0	c0	e0	property	<= _s5_id17, _s4_id15, _s6_id22, _s7_id26, _s8_id30, 
+
+Depth: 1
+	(1-bit) #0	n1	u0	c0	e0	_s8_id30$next	<= 
+	(1-bit) #2	n1	u0	c0	e0	_s7_id26$next	<= _s1_n_reg_1, _s2_n_reg_2, 
+	(1-bit) #2	n1	u0	c0	e0	_s6_id22$next	<= _s1_n_reg_1, _s2_n_reg_2, 
+	(1-bit) #0	n1	u0	c0	e0	_s4_id15$next	<= 
+	(1-bit) #0	n0	u0	c0	e0	_s5_id17$next	<= 
+
+Depth: 2
+	(2-bit) #2	n12	u2	c0	e0	_s2_n_reg_2$next	<= _s3_x_reg, 
+	(2-bit) #2	n12	u2	c0	e0	_s1_n_reg_1$next	<= _s3_x_reg, 
+
+Depth: 3
+	(1-bit) #3	n11	u1	c0	e0	_s3_x_reg$next	<= 
+
+-----------------

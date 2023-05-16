@@ -35,5 +35,5 @@ endruleset;
 
 
 
-invariant "reachableStateN"
-!(n[1] = I&n[2] = I&x = true)
+invariant "unreachableStateN"
+!(n[1] = E&n[2] = E&x = false)

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2023-03-22T13:38:12" hostname="7e0e41b48a07" package="v" id="0" name="default" tests="1" errors="0" failures="1" time="3" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="default" name="default" time="3">
+<failure type="assert" message="FAIL" />
+</testcase>
+<system-out>SBY 13:38:08 [v] Removing directory '/document/f322/murphi2chisel/cache_errv1/v'.
+SBY 13:38:08 [v] Copy '/document/f322/murphi2chisel/cache_errv1/protocol.sv' to '/document/f322/murphi2chisel/cache_errv1/v/src/protocol.sv'.
+SBY 13:38:08 [v] engine_0: abc pdr
+SBY 13:38:08 [v] base: starting process &quot;cd v/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 13:38:08 [v] base: finished (returncode=0)
+SBY 13:38:08 [v] aig: starting process &quot;cd v/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY 13:38:09 [v] aig: finished (returncode=0)
+SBY 13:38:09 [v] engine_0: starting process &quot;cd v; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr; write_cex -a engine_0/trace.aiw'&quot;
+SBY 13:38:09 [v] engine_0: ABC command line: &quot;read_aiger model/design_aiger.aig; fold; strash; pdr; write_cex -a engine_0/trace.aiw&quot;.
+SBY 13:38:09 [v] engine_0: Warning: The last output is interpreted as a constraint.
+SBY 13:38:09 [v] engine_0: Output 1 of miter &quot;model/design_aiger&quot; was asserted in frame 10.  Time =     0.01 sec
+SBY 13:38:09 [v] engine_0: finished (returncode=0)
+SBY 13:38:09 [v] engine_0: Status returned by engine: FAIL
+SBY 13:38:09 [v] smt2: starting process &quot;cd v/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 13:38:09 [v] smt2: finished (returncode=0)
+SBY 13:38:09 [v] engine_0: starting process &quot;cd v; yosys-smtbmc -s yices --noprogress --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc --aig model/design_aiger.aim:engine_0/trace.aiw --aig-noheader model/design_smt2.smt2&quot;
+SBY 13:38:09 [v] engine_0: ##   0:00:00  Solver: yices
+SBY 13:38:09 [v] engine_0: ##   0:00:00  Skipping step 0 (and assuming pass)..
+SBY 13:38:09 [v] engine_0: ##   0:00:00  Skipping step 1 (and assuming pass)..
+SBY 13:38:09 [v] engine_0: ##   0:00:00  Skipping step 2 (and assuming pass)..
+SBY 13:38:09 [v] engine_0: ##   0:00:00  Skipping step 3 (and assuming pass)..
+SBY 13:38:09 [v] engine_0: ##   0:00:00  Skipping step 4 (and assuming pass)..
+SBY 13:38:09 [v] engine_0: ##   0:00:00  Skipping step 5 (and assuming pass)..
+SBY 13:38:09 [v] engine_0: ##   0:00:00  Skipping step 6 (and assuming pass)..
+SBY 13:38:09 [v] engine_0: ##   0:00:00  Skipping step 7 (and assuming pass)..
+SBY 13:38:09 [v] engine_0: ##   0:00:00  Skipping step 8 (and assuming pass)..
+SBY 13:38:09 [v] engine_0: ##   0:00:00  Skipping step 9 (and assuming pass)..
+SBY 13:38:09 [v] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY 13:38:10 [v] engine_0: ##   0:00:00  BMC failed!
+SBY 13:38:10 [v] engine_0: ##   0:00:00  Assert failed in system: protocol.sv:4142.22-4143.59 ($assert$protocol.sv:4142$384)
+SBY 13:38:10 [v] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 13:38:12 [v] engine_0: ##   0:00:02  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 13:38:12 [v] engine_0: ##   0:00:02  Writing trace to constraints file: engine_0/trace.smtc
+SBY 13:38:12 [v] engine_0: ##   0:00:02  Status: FAILED
+SBY 13:38:12 [v] engine_0: finished (returncode=1)
+SBY 13:38:12 [v] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:03 (3)
+SBY 13:38:12 [v] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:03 (3)
+SBY 13:38:12 [v] summary: engine_0 (abc pdr) returned FAIL
+SBY 13:38:12 [v] summary: counterexample trace: v/engine_0/trace.vcd
+SBY 13:38:12 [v] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

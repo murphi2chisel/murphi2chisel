@@ -125,7 +125,7 @@ Removed 4 redundant assignments.
 Promoted 3 assignments to connections.
 
 2.3.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\system.$proc$protocol.sv:0$58'.
+Found init rule in `\system.$proc$protocol.sv:0$60'.
   Set init value: $formal$protocol.sv:506$3_EN = 1'0
 
 2.3.5. Executing PROC_ARST pass (detect async resets in processes).
@@ -135,7 +135,7 @@ Converted 0 switches.
 <suppressed ~17 debug messages>
 
 2.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\system.$proc$protocol.sv:0$58'.
+Creating decoders for process `\system.$proc$protocol.sv:0$60'.
 Creating decoders for process `\system.$proc$protocol.sv:0$54'.
 Creating decoders for process `\system.$proc$protocol.sv:504$43'.
      1/2: $0$formal$protocol.sv:506$3_EN[0:0]$45
@@ -152,22 +152,22 @@ No latch inferred for signal `\system.$formal$protocol.sv:500$1_EN' from process
 
 2.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
 Creating register for signal `\system.$formal$protocol.sv:506$3_CHECK' using process `\system.$proc$protocol.sv:504$43'.
-  created $dff cell `$procdff$155' with positive edge clock.
-Creating register for signal `\system.$formal$protocol.sv:506$3_EN' using process `\system.$proc$protocol.sv:504$43'.
-  created $dff cell `$procdff$156' with positive edge clock.
-Creating register for signal `\system.\n_reg_0' using process `\system.$proc$protocol.sv:434$42'.
   created $dff cell `$procdff$157' with positive edge clock.
-Creating register for signal `\system.\n_reg_1' using process `\system.$proc$protocol.sv:434$42'.
+Creating register for signal `\system.$formal$protocol.sv:506$3_EN' using process `\system.$proc$protocol.sv:504$43'.
   created $dff cell `$procdff$158' with positive edge clock.
-Creating register for signal `\system.\n_reg_2' using process `\system.$proc$protocol.sv:434$42'.
+Creating register for signal `\system.\n_reg_0' using process `\system.$proc$protocol.sv:434$42'.
   created $dff cell `$procdff$159' with positive edge clock.
-Creating register for signal `\system.\x_reg' using process `\system.$proc$protocol.sv:434$42'.
+Creating register for signal `\system.\n_reg_1' using process `\system.$proc$protocol.sv:434$42'.
   created $dff cell `$procdff$160' with positive edge clock.
+Creating register for signal `\system.\n_reg_2' using process `\system.$proc$protocol.sv:434$42'.
+  created $dff cell `$procdff$161' with positive edge clock.
+Creating register for signal `\system.\x_reg' using process `\system.$proc$protocol.sv:434$42'.
+  created $dff cell `$procdff$162' with positive edge clock.
 
 2.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 2.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `system.$proc$protocol.sv:0$58'.
+Removing empty process `system.$proc$protocol.sv:0$60'.
 Removing empty process `system.$proc$protocol.sv:0$54'.
 Found and cleaned up 1 empty switch in `\system.$proc$protocol.sv:504$43'.
 Removing empty process `system.$proc$protocol.sv:504$43'.
@@ -188,7 +188,7 @@ Optimizing module Exit_1.
 Optimizing module Idle.
 Optimizing module Idle_1.
 Optimizing module system.
-<suppressed ~7 debug messages>
+<suppressed ~8 debug messages>
 
 2.4. Executing OPT_EXPR pass (perform const folding).
 Optimizing module Init.
@@ -258,8 +258,8 @@ Finding identical cells in module `\Init'.
 Finding identical cells in module `\Try'.
 Finding identical cells in module `\Try_1'.
 Finding identical cells in module `\system'.
-<suppressed ~27 debug messages>
-Removed a total of 15 cells.
+<suppressed ~30 debug messages>
+Removed a total of 16 cells.
 
 2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \Crit..
@@ -342,8 +342,8 @@ Finding unused cells or wires in module \Init..
 Finding unused cells or wires in module \Try..
 Finding unused cells or wires in module \Try_1..
 Finding unused cells or wires in module \system..
-Removed 0 unused cells and 6 unused wires.
-<suppressed ~4 debug messages>
+Removed 0 unused cells and 7 unused wires.
+<suppressed ~5 debug messages>
 
 2.7.7. Executing OPT_EXPR pass (perform const folding).
 Optimizing module Crit.
@@ -456,8 +456,8 @@ Optimizing module system.
 2.7.14. Finished OPT passes. (There is nothing left to do.)
 
 2.8. Executing WREDUCE pass (reducing word size of cells).
-Removed top 1 bits (of 2) from port B of cell Crit.$eq$protocol.sv:62$86 ($eq).
-Removed top 1 bits (of 2) from port B of cell Crit_1.$eq$protocol.sv:80$78 ($eq).
+Removed top 1 bits (of 2) from port B of cell Crit.$eq$protocol.sv:62$88 ($eq).
+Removed top 1 bits (of 2) from port B of cell Crit_1.$eq$protocol.sv:80$80 ($eq).
 Removed top 3 bits (of 4) from port B of cell system.$eq$protocol.sv:262$9 ($eq).
 Removed top 2 bits (of 4) from port B of cell system.$eq$protocol.sv:267$14 ($eq).
 Removed top 2 bits (of 4) from port B of cell system.$eq$protocol.sv:272$19 ($eq).
@@ -646,20 +646,21 @@ Finding unused cells or wires in module \system..
 
 === system ===
 
-   Number of wires:                147
-   Number of wire bits:            237
+   Number of wires:                148
+   Number of wire bits:            238
    Number of public wires:         121
    Number of public wire bits:     199
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 70
+   Number of cells:                 71
      $and                            2
      $assert                         1
      $assume                         1
      $dff                            6
      $eq                             8
      $initstate                      1
+     $logic_and                      1
      $logic_not                      3
      $mux                           38
      $not                            1
@@ -686,20 +687,21 @@ Finding unused cells or wires in module \system..
      Try                             1
      Try_1                           1
 
-   Number of wires:                250
-   Number of wire bits:            402
+   Number of wires:                251
+   Number of wire bits:            403
    Number of public wires:         214
    Number of public wire bits:     354
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 98
+   Number of cells:                 99
      $and                            4
      $assert                         1
      $assume                         1
      $dff                            6
      $eq                            14
      $initstate                      1
+     $logic_and                      1
      $logic_not                      5
      $mux                           62
      $not                            1
@@ -751,6 +753,6 @@ Module system directly or indirectly contains formal properties -> setting "keep
 5. Executing RTLIL backend.
 Output filename: ../model/design.il
 
-End of script. Logfile hash: 102caa401a, CPU: user 0.03s system 0.00s, MEM: 11.55 MB peak
+End of script. Logfile hash: b8340c8a98, CPU: user 0.02s system 0.01s, MEM: 11.19 MB peak
 Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 21% 4x opt_merge (0 sec), 20% 6x opt_expr (0 sec), ...
+Time spent: 19% 4x opt_merge (0 sec), 19% 6x opt_expr (0 sec), ...

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2023-05-16T10:52:51" hostname="DESKTOP-DVFFB09" package="v" id="0" name="default" tests="1" errors="0" failures="0" time="1" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="default" time="1">
+</testcase>
+<system-out>SBY 10:52:49 [v] Removing directory '/home/czh/murphi2chisel/mutual16v1/v'.
+SBY 10:52:49 [v] Copy '/home/czh/murphi2chisel/mutual16v1/protocol.sv' to '/home/czh/murphi2chisel/mutual16v1/v/src/protocol.sv'.
+SBY 10:52:49 [v] engine_0: abc pdr
+SBY 10:52:49 [v] base: starting process &quot;cd v/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 10:52:50 [v] base: finished (returncode=0)
+SBY 10:52:50 [v] prep: starting process &quot;cd v/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 10:52:50 [v] prep: finished (returncode=0)
+SBY 10:52:50 [v] aig: starting process &quot;cd v/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY 10:52:50 [v] aig: finished (returncode=0)
+SBY 10:52:50 [v] engine_0: starting process &quot;cd v; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw'&quot;
+SBY 10:52:51 [v] engine_0: ABC command line: &quot;read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw&quot;.
+SBY 10:52:51 [v] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 10:52:51 [v] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+SBY 10:52:51 [v] engine_0: Frame Clauses                                                     Max Queue Flops Cex      Time
+SBY 10:52:51 [v] engine_0: 1 : 0 3                                                                 1     4      0.01 sec
+SBY 10:52:51 [v] engine_0: 2 : 0 17 273                                                            3   276      0.06 sec
+SBY 10:52:51 [v] engine_0: 3 : 0 17 262 377                                                       22   284      0.23 sec
+SBY 10:52:51 [v] engine_0: 4 : 0 17 6 0 393                                                        0   284      0.25 sec
+SBY 10:52:51 [v] engine_0: Invariant F[3] : 393 clauses with 276 flops (out of 292) (cex = 0, ave = 5.19)
+SBY 10:52:51 [v] engine_0: Verification of invariant with 393 clauses was successful.  Time =     0.01 sec
+SBY 10:52:51 [v] engine_0: Block =  482  Oblig =   804  Clause =   656  Call =  4889 (sat=48.9%)  Cex =   0  Start =  10
+SBY 10:52:51 [v] engine_0: SAT solving =     0.20 sec ( 75.04 %)
+SBY 10:52:51 [v] engine_0: unsat     =     0.03 sec ( 12.59 %)
+SBY 10:52:51 [v] engine_0: sat       =     0.17 sec ( 62.45 %)
+SBY 10:52:51 [v] engine_0: Generalize  =     0.15 sec ( 54.19 %)
+SBY 10:52:51 [v] engine_0: Push clause =     0.05 sec ( 18.62 %)
+SBY 10:52:51 [v] engine_0: Ternary sim =     0.01 sec (  3.62 %)
+SBY 10:52:51 [v] engine_0: Containment =     0.00 sec (  0.17 %)
+SBY 10:52:51 [v] engine_0: CNF compute =     0.01 sec (  2.54 %)
+SBY 10:52:51 [v] engine_0: Refinement  =     0.00 sec (  0.00 %)
+SBY 10:52:51 [v] engine_0: TOTAL       =     0.27 sec (100.00 %)
+SBY 10:52:51 [v] engine_0: Property proved.  Time =     0.27 sec
+SBY 10:52:51 [v] engine_0: Counter-example is not available.
+SBY 10:52:51 [v] engine_0: finished (returncode=0)
+SBY 10:52:51 [v] engine_0: Status returned by engine: PASS
+SBY 10:52:51 [v] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY 10:52:51 [v] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 10:52:51 [v] summary: engine_0 (abc pdr) returned PASS
+SBY 10:52:51 [v] summary: engine_0 did not produce any traces
+SBY 10:52:51 [v] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

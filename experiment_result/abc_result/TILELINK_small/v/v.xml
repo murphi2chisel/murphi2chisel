@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2023-05-14T10:39:29" hostname="DESKTOP-DVFFB09" package="v" id="0" name="default" tests="1" errors="0" failures="0" time="174" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="default" time="174">
+</testcase>
+<system-out>SBY 10:36:34 [v] Removing directory '/home/czh/murphi2chisel/tilelinkv1/v'.
+SBY 10:36:34 [v] Copy '/home/czh/murphi2chisel/tilelinkv1/protocol.sv' to '/home/czh/murphi2chisel/tilelinkv1/v/src/protocol.sv'.
+SBY 10:36:34 [v] engine_0: abc pdr
+SBY 10:36:34 [v] base: starting process &quot;cd v/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 10:36:49 [v] base: finished (returncode=0)
+SBY 10:36:49 [v] prep: starting process &quot;cd v/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 10:36:56 [v] prep: finished (returncode=0)
+SBY 10:36:56 [v] aig: starting process &quot;cd v/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY 10:37:05 [v] aig: finished (returncode=0)
+SBY 10:37:05 [v] engine_0: starting process &quot;cd v; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw'&quot;
+SBY 10:37:05 [v] engine_0: ABC command line: &quot;read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw&quot;.
+SBY 10:37:05 [v] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 10:37:05 [v] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+SBY 10:37:05 [v] engine_0: Frame Clauses                                                     Max Queue Flops Cex      Time
+SBY 10:37:05 [v] engine_0: 1 : 0 2                                                                 1     3      0.03 sec
+SBY 10:37:05 [v] engine_0: 2 : 0 6 10                                                              2    13      0.04 sec
+SBY 10:37:05 [v] engine_0: 3 : 0 4 3 7                                                             0    13      0.04 sec
+SBY 10:37:06 [v] engine_0: 4 : 0 17 23 33 27                                                      29    48      0.30 sec
+SBY 10:37:06 [v] engine_0: 5 : 0 11 8 22 10 18                                                     0    48      0.34 sec
+SBY 10:37:07 [v] engine_0: 6 : 0 11 18 55 91 122 106                                              48    67      2.11 sec
+SBY 10:37:08 [v] engine_0: 7 : 0 3 3 11 20 37 59 33                                                0    67      2.30 sec
+SBY 10:37:11 [v] engine_0: 8 : 0 3 3 11 23 61 164 223 201                                         78    72      5.41 sec
+SBY 10:37:11 [v] engine_0: 9 : 0 3 3 11 13 29 56 100 109 61                                        0    72      6.00 sec
+SBY 10:37:26 [v] engine_0: 10 : 0 3 3 11 13 29 57 106 287 604 540                                  47    75     20.91 sec
+SBY 10:37:28 [v] engine_0: 11 : 0 3 3 11 13 29 55 83 141 228 331 116                                0    75     22.95 sec
+SBY 10:37:29 [v] engine_0: 12 : 0 3 3 11 13 29 55 83 138 214 322 44 71                              0    75     24.11 sec
+SBY 10:37:56 [v] engine_0: 13 : 0 3 3 11 13 29 55 83 144 270 546 710 784 489                      564    75     51.00 sec
+SBY 10:38:00 [v] engine_0: 14 : 0 3 3 11 13 29 55 76 110 119 127 78 71 188 412                      0    75     54.71 sec
+SBY 10:38:01 [v] engine_0: 15 : 0 3 3 11 13 29 55 76 110 119 120 77 68 187 172 238                  0    75     56.26 sec
+SBY 10:38:27 [v] engine_0: 16 : 0 3 3 11 13 29 55 76 110 121 124 96 120 347 697 1064 941          312    75     81.92 sec
+SBY 10:38:31 [v] engine_0: 17 : 0 3 3 11 13 29 55 76 109 114 91 37 21 33 106 150 295 628            0    75     86.10 sec
+SBY 10:38:33 [v] engine_0: 18 : ... 3 3 11 13 29 55 76 109 114 91 37 21 33 103 148 291 270 356      0    75     88.28 sec
+SBY 10:38:46 [v] engine_0: 19 : ... 11 13 29 55 76 109 114 91 37 21 33 111 170 357 506 547 561    208    75    101.01 sec
+SBY 10:38:51 [v] engine_0: 20 : ... 3 11 13 29 55 76 108 111 89 38 20 26 57 69 94 92 92 147 654     0    75    105.36 sec
+SBY 10:38:53 [v] engine_0: 21 : ... 13 29 55 76 108 111 89 38 20 26 57 69 93 91 92 145 248 406      0    75    107.57 sec
+SBY 10:39:06 [v] engine_0: 22 : ... 55 76 108 111 89 38 20 26 57 69 93 91 104 196 450 586 550     160    75    120.87 sec
+SBY 10:39:09 [v] engine_0: 23 : ... 55 76 108 111 89 38 20 26 57 67 87 63 26 18 31 60 114 724       0    75    124.13 sec
+SBY 10:39:11 [v] engine_0: 24 : ... 76 108 111 89 38 20 26 57 67 87 63 26 18 31 59 113 155 567      0    75    126.04 sec
+SBY 10:39:13 [v] engine_0: 25 : ... 108 111 89 38 20 26 57 67 87 63 26 18 31 59 113 155 143 422     0    75    128.05 sec
+SBY 10:39:25 [v] engine_0: 26 : ... 111 89 38 20 26 57 67 87 63 26 18 36 84 193 304 310 318 503   168    75    139.41 sec
+SBY 10:39:28 [v] engine_0: 27 : ... 76 108 111 89 37 20 26 57 64 84 63 22 6 3 5 1 0 0 0 0 906       0    75    143.11 sec
+SBY 10:39:29 [v] engine_0: Invariant F[23] : 906 clauses with 68 flops (out of 109) (cex = 0, ave = 32.43)
+SBY 10:39:29 [v] engine_0: Verification of invariant with 906 clauses was successful.  Time =     0.44 sec
+SBY 10:39:29 [v] engine_0: Block =   18  Oblig = 16663  Clause =  9824  Call =198033 (sat=47.7%)  Cex =   0  Start = 648
+SBY 10:39:29 [v] engine_0: SAT solving =   135.05 sec ( 94.07 %)
+SBY 10:39:29 [v] engine_0: unsat     =    62.65 sec ( 43.64 %)
+SBY 10:39:29 [v] engine_0: sat       =    72.40 sec ( 50.43 %)
+SBY 10:39:29 [v] engine_0: Generalize  =    86.75 sec ( 60.43 %)
+SBY 10:39:29 [v] engine_0: Push clause =    42.01 sec ( 29.26 %)
+SBY 10:39:29 [v] engine_0: Ternary sim =     2.44 sec (  1.70 %)
+SBY 10:39:29 [v] engine_0: Containment =     0.08 sec (  0.06 %)
+SBY 10:39:29 [v] engine_0: CNF compute =     1.30 sec (  0.91 %)
+SBY 10:39:29 [v] engine_0: Refinement  =     0.00 sec (  0.00 %)
+SBY 10:39:29 [v] engine_0: TOTAL       =   143.56 sec (100.00 %)
+SBY 10:39:29 [v] engine_0: Property proved.  Time =   143.58 sec
+SBY 10:39:29 [v] engine_0: Counter-example is not available.
+SBY 10:39:29 [v] engine_0: finished (returncode=0)
+SBY 10:39:29 [v] engine_0: Status returned by engine: PASS
+SBY 10:39:29 [v] summary: Elapsed clock time [H:MM:SS (secs)]: 0:02:54 (174)
+SBY 10:39:29 [v] summary: Elapsed process time [H:MM:SS (secs)]: 0:02:54 (174)
+SBY 10:39:29 [v] summary: engine_0 (abc pdr) returned PASS
+SBY 10:39:29 [v] summary: engine_0 did not produce any traces
+SBY 10:39:29 [v] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

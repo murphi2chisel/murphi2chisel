@@ -21,6 +21,7 @@ cmurphi_dir = ""
 constlist = []
 
 
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         prog='Murphi2Chisel',
@@ -29,9 +30,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('-v1', '--verifyabc', action='store_true',
                         help='parse and verify in abc')
     parser.add_argument('-v2', '--verifyavr', action='store_true',
-                        help='parse and verify in abc')
-    parser.add_argument('-v3', '--verifycmurphi', action='store_true',
                         help='parse and verify in avr')
+    parser.add_argument('-v3', '--verifycmurphi', action='store_true',
+                        help='parse and verify in cmurphi')
     parser.add_argument('-p', '--parse', action='store_true',
                         help='parse without verify in cmurphi')
     parser.add_argument('-f', '--file', dest="file",
@@ -73,7 +74,6 @@ def chisel2verilog():
     os.chdir(out_dir)
 
 
-
 if __name__ == "__main__":
     args = parse_args()
     cwd = os.getcwd()
@@ -89,15 +89,19 @@ if __name__ == "__main__":
     if args.parse:
         parser.parse()
     elif args.verifyabc:
-        t = RepeatingTimer(2.0, printmem)
-        t.start()
+        # t = RepeatingTimer(2.0, printmem)
+        # t.start()
         parser.parse()
         chisel2verilog()
         s = sby_script()
         with open("v.sby","w") as f:
             f.write(s)
+        begin = (psutil.virtual_memory().used/(1024*1024))
+        t = RepeatingTimer(0.1, printmem)
+        t.start()
         os.system("sby -f v.sby")
         t.cancel()
+        print(czh.mem-begin)
     elif args.verifyavr:
         parser.parse()
         chisel2verilog()
@@ -127,5 +131,5 @@ if __name__ == "__main__":
         if status:
             print('g++ failed to compile')
             exit(1)
-        # os.system(f"./protocol.o -k322583 >{out_dir}/trace%d.txt")
-        os.system(f"./protocol.o -k3225 -ta -vdfs >{out_dir}/trace%d.txt")
+        os.system(f"./protocol.o -k322583 >{out_dir}/trace%d.txt")
+        # os.system(f"./protocol.o -k322 -ta -vdfs >{out_dir}/trace%d.txt")

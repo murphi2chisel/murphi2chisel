@@ -1,0 +1,2050 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \homesendsreplytoclient_exclusive
+Used module:     \homesendsreplytoclient_shared
+Used module:     \clientreceivedexclusivegrant_11
+Used module:     \clientreceivedexclusivegrant_10
+Used module:     \clientreceivedexclusivegrant_9
+Used module:     \clientreceivedexclusivegrant_8
+Used module:     \clientreceivedexclusivegrant_7
+Used module:     \clientreceivedexclusivegrant_6
+Used module:     \clientreceivedexclusivegrant_5
+Used module:     \clientrequestssharedaccess_8
+Used module:     \clientreceivedexclusivegrant_4
+Used module:     \clientreceivedexclusivegrant_3
+Used module:     \clientreceivedexclusivegrant_2
+Used module:     \clientreceivedexclusivegrant_1
+Used module:     \clientreceivedexclusivegrant
+Used module:     \clientreceivessharedgrant_11
+Used module:     \clientreceivessharedgrant_10
+Used module:     \clientreceivessharedgrant_9
+Used module:     \clientreceivessharedgrant_8
+Used module:     \clientreceivessharedgrant_7
+Used module:     \clientrequestssharedaccess_7
+Used module:     \clientreceivessharedgrant_6
+Used module:     \clientreceivessharedgrant_5
+Used module:     \clientreceivessharedgrant_4
+Used module:     \clientreceivessharedgrant_3
+Used module:     \clientreceivessharedgrant_2
+Used module:     \clientreceivessharedgrant_1
+Used module:     \clientreceivessharedgrant
+Used module:     \sharerinvalidatescache_11
+Used module:     \sharerinvalidatescache_10
+Used module:     \sharerinvalidatescache_9
+Used module:     \clientrequestssharedaccess_6
+Used module:     \sharerinvalidatescache_8
+Used module:     \sharerinvalidatescache_7
+Used module:     \sharerinvalidatescache_6
+Used module:     \sharerinvalidatescache_5
+Used module:     \sharerinvalidatescache_4
+Used module:     \sharerinvalidatescache_3
+Used module:     \sharerinvalidatescache_2
+Used module:     \sharerinvalidatescache_1
+Used module:     \sharerinvalidatescache
+Used module:     \homereceivesinvalidateacknowledgement_11
+Used module:     \clientrequestssharedaccess_5
+Used module:     \homereceivesinvalidateacknowledgement_10
+Used module:     \homereceivesinvalidateacknowledgement_9
+Used module:     \homereceivesinvalidateacknowledgement_8
+Used module:     \homereceivesinvalidateacknowledgement_7
+Used module:     \homereceivesinvalidateacknowledgement_6
+Used module:     \homereceivesinvalidateacknowledgement_5
+Used module:     \homereceivesinvalidateacknowledgement_4
+Used module:     \homereceivesinvalidateacknowledgement_3
+Used module:     \homereceivesinvalidateacknowledgement_2
+Used module:     \homereceivesinvalidateacknowledgement_1
+Used module:     \clientrequestssharedaccess_4
+Used module:     \homereceivesinvalidateacknowledgement
+Used module:     \homesendsinvalidatemessage_11
+Used module:     \homesendsinvalidatemessage_10
+Used module:     \homesendsinvalidatemessage_9
+Used module:     \homesendsinvalidatemessage_8
+Used module:     \homesendsinvalidatemessage_7
+Used module:     \homesendsinvalidatemessage_6
+Used module:     \homesendsinvalidatemessage_5
+Used module:     \homesendsinvalidatemessage_4
+Used module:     \homesendsinvalidatemessage_3
+Used module:     \clientrequestssharedaccess_3
+Used module:     \homesendsinvalidatemessage_2
+Used module:     \homesendsinvalidatemessage_1
+Used module:     \homesendsinvalidatemessage
+Used module:     \homepicksnewrequest_11
+Used module:     \homepicksnewrequest_10
+Used module:     \homepicksnewrequest_9
+Used module:     \homepicksnewrequest_8
+Used module:     \homepicksnewrequest_7
+Used module:     \homepicksnewrequest_6
+Used module:     \homepicksnewrequest_5
+Used module:     \clientrequestssharedaccess_2
+Used module:     \homepicksnewrequest_4
+Used module:     \homepicksnewrequest_3
+Used module:     \homepicksnewrequest_2
+Used module:     \homepicksnewrequest_1
+Used module:     \homepicksnewrequest
+Used module:     \clientrequestsexclusiveaccess_11
+Used module:     \clientrequestsexclusiveaccess_10
+Used module:     \clientrequestsexclusiveaccess_9
+Used module:     \clientrequestsexclusiveaccess_8
+Used module:     \clientrequestsexclusiveaccess_7
+Used module:     \clientrequestssharedaccess_1
+Used module:     \clientrequestsexclusiveaccess_6
+Used module:     \clientrequestsexclusiveaccess_5
+Used module:     \clientrequestsexclusiveaccess_4
+Used module:     \clientrequestsexclusiveaccess_3
+Used module:     \clientrequestsexclusiveaccess_2
+Used module:     \clientrequestsexclusiveaccess_1
+Used module:     \clientrequestsexclusiveaccess
+Used module:     \clientrequestssharedaccess_11
+Used module:     \clientrequestssharedaccess_10
+Used module:     \clientrequestssharedaccess_9
+Used module:     \clientrequestssharedaccess
+Used module:     \Init
+
+2.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \homesendsreplytoclient_exclusive
+Used module:     \homesendsreplytoclient_shared
+Used module:     \clientreceivedexclusivegrant_11
+Used module:     \clientreceivedexclusivegrant_10
+Used module:     \clientreceivedexclusivegrant_9
+Used module:     \clientreceivedexclusivegrant_8
+Used module:     \clientreceivedexclusivegrant_7
+Used module:     \clientreceivedexclusivegrant_6
+Used module:     \clientreceivedexclusivegrant_5
+Used module:     \clientrequestssharedaccess_8
+Used module:     \clientreceivedexclusivegrant_4
+Used module:     \clientreceivedexclusivegrant_3
+Used module:     \clientreceivedexclusivegrant_2
+Used module:     \clientreceivedexclusivegrant_1
+Used module:     \clientreceivedexclusivegrant
+Used module:     \clientreceivessharedgrant_11
+Used module:     \clientreceivessharedgrant_10
+Used module:     \clientreceivessharedgrant_9
+Used module:     \clientreceivessharedgrant_8
+Used module:     \clientreceivessharedgrant_7
+Used module:     \clientrequestssharedaccess_7
+Used module:     \clientreceivessharedgrant_6
+Used module:     \clientreceivessharedgrant_5
+Used module:     \clientreceivessharedgrant_4
+Used module:     \clientreceivessharedgrant_3
+Used module:     \clientreceivessharedgrant_2
+Used module:     \clientreceivessharedgrant_1
+Used module:     \clientreceivessharedgrant
+Used module:     \sharerinvalidatescache_11
+Used module:     \sharerinvalidatescache_10
+Used module:     \sharerinvalidatescache_9
+Used module:     \clientrequestssharedaccess_6
+Used module:     \sharerinvalidatescache_8
+Used module:     \sharerinvalidatescache_7
+Used module:     \sharerinvalidatescache_6
+Used module:     \sharerinvalidatescache_5
+Used module:     \sharerinvalidatescache_4
+Used module:     \sharerinvalidatescache_3
+Used module:     \sharerinvalidatescache_2
+Used module:     \sharerinvalidatescache_1
+Used module:     \sharerinvalidatescache
+Used module:     \homereceivesinvalidateacknowledgement_11
+Used module:     \clientrequestssharedaccess_5
+Used module:     \homereceivesinvalidateacknowledgement_10
+Used module:     \homereceivesinvalidateacknowledgement_9
+Used module:     \homereceivesinvalidateacknowledgement_8
+Used module:     \homereceivesinvalidateacknowledgement_7
+Used module:     \homereceivesinvalidateacknowledgement_6
+Used module:     \homereceivesinvalidateacknowledgement_5
+Used module:     \homereceivesinvalidateacknowledgement_4
+Used module:     \homereceivesinvalidateacknowledgement_3
+Used module:     \homereceivesinvalidateacknowledgement_2
+Used module:     \homereceivesinvalidateacknowledgement_1
+Used module:     \clientrequestssharedaccess_4
+Used module:     \homereceivesinvalidateacknowledgement
+Used module:     \homesendsinvalidatemessage_11
+Used module:     \homesendsinvalidatemessage_10
+Used module:     \homesendsinvalidatemessage_9
+Used module:     \homesendsinvalidatemessage_8
+Used module:     \homesendsinvalidatemessage_7
+Used module:     \homesendsinvalidatemessage_6
+Used module:     \homesendsinvalidatemessage_5
+Used module:     \homesendsinvalidatemessage_4
+Used module:     \homesendsinvalidatemessage_3
+Used module:     \clientrequestssharedaccess_3
+Used module:     \homesendsinvalidatemessage_2
+Used module:     \homesendsinvalidatemessage_1
+Used module:     \homesendsinvalidatemessage
+Used module:     \homepicksnewrequest_11
+Used module:     \homepicksnewrequest_10
+Used module:     \homepicksnewrequest_9
+Used module:     \homepicksnewrequest_8
+Used module:     \homepicksnewrequest_7
+Used module:     \homepicksnewrequest_6
+Used module:     \homepicksnewrequest_5
+Used module:     \clientrequestssharedaccess_2
+Used module:     \homepicksnewrequest_4
+Used module:     \homepicksnewrequest_3
+Used module:     \homepicksnewrequest_2
+Used module:     \homepicksnewrequest_1
+Used module:     \homepicksnewrequest
+Used module:     \clientrequestsexclusiveaccess_11
+Used module:     \clientrequestsexclusiveaccess_10
+Used module:     \clientrequestsexclusiveaccess_9
+Used module:     \clientrequestsexclusiveaccess_8
+Used module:     \clientrequestsexclusiveaccess_7
+Used module:     \clientrequestssharedaccess_1
+Used module:     \clientrequestsexclusiveaccess_6
+Used module:     \clientrequestsexclusiveaccess_5
+Used module:     \clientrequestsexclusiveaccess_4
+Used module:     \clientrequestsexclusiveaccess_3
+Used module:     \clientrequestsexclusiveaccess_2
+Used module:     \clientrequestsexclusiveaccess_1
+Used module:     \clientrequestsexclusiveaccess
+Used module:     \clientrequestssharedaccess_11
+Used module:     \clientrequestssharedaccess_10
+Used module:     \clientrequestssharedaccess_9
+Used module:     \clientrequestssharedaccess
+Used module:     \Init
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== system ===
+
+   Number of wires:              25003
+   Number of wire bits:          53713
+   Number of public wires:       24373
+   Number of public wire bits:   52699
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               9027
+     $anyinit                      225
+     $anyseq                       133
+     $assert                       144
+     $assume                         2
+     $eq                           110
+     $ff                             1
+     $initstate                      1
+     $logic_and                      1
+     $logic_not                     13
+     $mux                         8153
+     $not                           13
+     $or                           132
+     Init                            1
+     clientreceivedexclusivegrant      1
+     clientreceivedexclusivegrant_1      1
+     clientreceivedexclusivegrant_10      1
+     clientreceivedexclusivegrant_11      1
+     clientreceivedexclusivegrant_2      1
+     clientreceivedexclusivegrant_3      1
+     clientreceivedexclusivegrant_4      1
+     clientreceivedexclusivegrant_5      1
+     clientreceivedexclusivegrant_6      1
+     clientreceivedexclusivegrant_7      1
+     clientreceivedexclusivegrant_8      1
+     clientreceivedexclusivegrant_9      1
+     clientreceivessharedgrant       1
+     clientreceivessharedgrant_1      1
+     clientreceivessharedgrant_10      1
+     clientreceivessharedgrant_11      1
+     clientreceivessharedgrant_2      1
+     clientreceivessharedgrant_3      1
+     clientreceivessharedgrant_4      1
+     clientreceivessharedgrant_5      1
+     clientreceivessharedgrant_6      1
+     clientreceivessharedgrant_7      1
+     clientreceivessharedgrant_8      1
+     clientreceivessharedgrant_9      1
+     clientrequestsexclusiveaccess      1
+     clientrequestsexclusiveaccess_1      1
+     clientrequestsexclusiveaccess_10      1
+     clientrequestsexclusiveaccess_11      1
+     clientrequestsexclusiveaccess_2      1
+     clientrequestsexclusiveaccess_3      1
+     clientrequestsexclusiveaccess_4      1
+     clientrequestsexclusiveaccess_5      1
+     clientrequestsexclusiveaccess_6      1
+     clientrequestsexclusiveaccess_7      1
+     clientrequestsexclusiveaccess_8      1
+     clientrequestsexclusiveaccess_9      1
+     clientrequestssharedaccess      1
+     clientrequestssharedaccess_1      1
+     clientrequestssharedaccess_10      1
+     clientrequestssharedaccess_11      1
+     clientrequestssharedaccess_2      1
+     clientrequestssharedaccess_3      1
+     clientrequestssharedaccess_4      1
+     clientrequestssharedaccess_5      1
+     clientrequestssharedaccess_6      1
+     clientrequestssharedaccess_7      1
+     clientrequestssharedaccess_8      1
+     clientrequestssharedaccess_9      1
+     homepicksnewrequest             1
+     homepicksnewrequest_1           1
+     homepicksnewrequest_10          1
+     homepicksnewrequest_11          1
+     homepicksnewrequest_2           1
+     homepicksnewrequest_3           1
+     homepicksnewrequest_4           1
+     homepicksnewrequest_5           1
+     homepicksnewrequest_6           1
+     homepicksnewrequest_7           1
+     homepicksnewrequest_8           1
+     homepicksnewrequest_9           1
+     homereceivesinvalidateacknowledgement      1
+     homereceivesinvalidateacknowledgement_1      1
+     homereceivesinvalidateacknowledgement_10      1
+     homereceivesinvalidateacknowledgement_11      1
+     homereceivesinvalidateacknowledgement_2      1
+     homereceivesinvalidateacknowledgement_3      1
+     homereceivesinvalidateacknowledgement_4      1
+     homereceivesinvalidateacknowledgement_5      1
+     homereceivesinvalidateacknowledgement_6      1
+     homereceivesinvalidateacknowledgement_7      1
+     homereceivesinvalidateacknowledgement_8      1
+     homereceivesinvalidateacknowledgement_9      1
+     homesendsinvalidatemessage      1
+     homesendsinvalidatemessage_1      1
+     homesendsinvalidatemessage_10      1
+     homesendsinvalidatemessage_11      1
+     homesendsinvalidatemessage_2      1
+     homesendsinvalidatemessage_3      1
+     homesendsinvalidatemessage_4      1
+     homesendsinvalidatemessage_5      1
+     homesendsinvalidatemessage_6      1
+     homesendsinvalidatemessage_7      1
+     homesendsinvalidatemessage_8      1
+     homesendsinvalidatemessage_9      1
+     homesendsreplytoclient_exclusive      1
+     homesendsreplytoclient_shared      1
+     sharerinvalidatescache          1
+     sharerinvalidatescache_1        1
+     sharerinvalidatescache_10       1
+     sharerinvalidatescache_11       1
+     sharerinvalidatescache_2        1
+     sharerinvalidatescache_3        1
+     sharerinvalidatescache_4        1
+     sharerinvalidatescache_5        1
+     sharerinvalidatescache_6        1
+     sharerinvalidatescache_7        1
+     sharerinvalidatescache_8        1
+     sharerinvalidatescache_9        1
+
+=== sharerinvalidatescache_9 ===
+
+   Number of wires:                169
+   Number of wire bits:            366
+   Number of public wires:         166
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== sharerinvalidatescache_8 ===
+
+   Number of wires:                169
+   Number of wire bits:            366
+   Number of public wires:         166
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== sharerinvalidatescache_7 ===
+
+   Number of wires:                169
+   Number of wire bits:            366
+   Number of public wires:         166
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== sharerinvalidatescache_6 ===
+
+   Number of wires:                169
+   Number of wire bits:            366
+   Number of public wires:         166
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== sharerinvalidatescache_5 ===
+
+   Number of wires:                169
+   Number of wire bits:            366
+   Number of public wires:         166
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== sharerinvalidatescache_4 ===
+
+   Number of wires:                169
+   Number of wire bits:            366
+   Number of public wires:         166
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== sharerinvalidatescache_3 ===
+
+   Number of wires:                169
+   Number of wire bits:            366
+   Number of public wires:         166
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== sharerinvalidatescache_2 ===
+
+   Number of wires:                169
+   Number of wire bits:            366
+   Number of public wires:         166
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== sharerinvalidatescache_11 ===
+
+   Number of wires:                169
+   Number of wire bits:            366
+   Number of public wires:         166
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== sharerinvalidatescache_10 ===
+
+   Number of wires:                169
+   Number of wire bits:            366
+   Number of public wires:         166
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== sharerinvalidatescache_1 ===
+
+   Number of wires:                169
+   Number of wire bits:            366
+   Number of public wires:         166
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== sharerinvalidatescache ===
+
+   Number of wires:                169
+   Number of wire bits:            366
+   Number of public wires:         166
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $logic_not                      1
+     $mux                            6
+
+=== homesendsreplytoclient_shared ===
+
+   Number of wires:                246
+   Number of wire bits:            516
+   Number of public wires:         228
+   Number of public wire bits:     498
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                110
+     $and                            2
+     $eq                            13
+     $logic_not                      2
+     $mux                           79
+     $not                            1
+     $or                            13
+
+=== homesendsreplytoclient_exclusive ===
+
+   Number of wires:                268
+   Number of wire bits:            538
+   Number of public wires:         251
+   Number of public wire bits:     521
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                132
+     $and                           13
+     $eq                            13
+     $logic_not                      2
+     $mux                           79
+     $not                           12
+     $or                            13
+
+=== homesendsinvalidatemessage_9 ===
+
+   Number of wires:                172
+   Number of wire bits:            366
+   Number of public wires:         165
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsinvalidatemessage_8 ===
+
+   Number of wires:                172
+   Number of wire bits:            366
+   Number of public wires:         165
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsinvalidatemessage_7 ===
+
+   Number of wires:                172
+   Number of wire bits:            366
+   Number of public wires:         165
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsinvalidatemessage_6 ===
+
+   Number of wires:                172
+   Number of wire bits:            366
+   Number of public wires:         165
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsinvalidatemessage_5 ===
+
+   Number of wires:                172
+   Number of wire bits:            366
+   Number of public wires:         165
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsinvalidatemessage_4 ===
+
+   Number of wires:                172
+   Number of wire bits:            366
+   Number of public wires:         165
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsinvalidatemessage_3 ===
+
+   Number of wires:                172
+   Number of wire bits:            366
+   Number of public wires:         165
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsinvalidatemessage_2 ===
+
+   Number of wires:                172
+   Number of wire bits:            366
+   Number of public wires:         165
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsinvalidatemessage_11 ===
+
+   Number of wires:                172
+   Number of wire bits:            366
+   Number of public wires:         165
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsinvalidatemessage_10 ===
+
+   Number of wires:                172
+   Number of wire bits:            366
+   Number of public wires:         165
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsinvalidatemessage_1 ===
+
+   Number of wires:                172
+   Number of wire bits:            366
+   Number of public wires:         165
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homesendsinvalidatemessage ===
+
+   Number of wires:                172
+   Number of wire bits:            366
+   Number of public wires:         165
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $or                             1
+
+=== homereceivesinvalidateacknowledgement_9 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         166
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement_8 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         166
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement_7 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         166
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement_6 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         166
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement_5 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         166
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement_4 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         166
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement_3 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         166
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement_2 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         166
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement_11 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         166
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement_10 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         166
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement_1 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         166
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homereceivesinvalidateacknowledgement ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         166
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $eq                             1
+     $mux                            6
+     $reduce_bool                    1
+
+=== homepicksnewrequest_9 ===
+
+   Number of wires:                181
+   Number of wire bits:            380
+   Number of public wires:         178
+   Number of public wire bits:     377
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $and                            1
+     $logic_not                      1
+     $mux                           30
+     $reduce_bool                    1
+
+=== homepicksnewrequest_8 ===
+
+   Number of wires:                181
+   Number of wire bits:            380
+   Number of public wires:         178
+   Number of public wire bits:     377
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $and                            1
+     $logic_not                      1
+     $mux                           30
+     $reduce_bool                    1
+
+=== homepicksnewrequest_7 ===
+
+   Number of wires:                181
+   Number of wire bits:            380
+   Number of public wires:         178
+   Number of public wire bits:     377
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $and                            1
+     $logic_not                      1
+     $mux                           30
+     $reduce_bool                    1
+
+=== homepicksnewrequest_6 ===
+
+   Number of wires:                181
+   Number of wire bits:            380
+   Number of public wires:         178
+   Number of public wire bits:     377
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $and                            1
+     $logic_not                      1
+     $mux                           30
+     $reduce_bool                    1
+
+=== homepicksnewrequest_5 ===
+
+   Number of wires:                181
+   Number of wire bits:            380
+   Number of public wires:         178
+   Number of public wire bits:     377
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $and                            1
+     $logic_not                      1
+     $mux                           30
+     $reduce_bool                    1
+
+=== homepicksnewrequest_4 ===
+
+   Number of wires:                181
+   Number of wire bits:            380
+   Number of public wires:         178
+   Number of public wire bits:     377
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $and                            1
+     $logic_not                      1
+     $mux                           30
+     $reduce_bool                    1
+
+=== homepicksnewrequest_3 ===
+
+   Number of wires:                181
+   Number of wire bits:            380
+   Number of public wires:         178
+   Number of public wire bits:     377
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $and                            1
+     $logic_not                      1
+     $mux                           30
+     $reduce_bool                    1
+
+=== homepicksnewrequest_2 ===
+
+   Number of wires:                181
+   Number of wire bits:            380
+   Number of public wires:         178
+   Number of public wire bits:     377
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $and                            1
+     $logic_not                      1
+     $mux                           30
+     $reduce_bool                    1
+
+=== homepicksnewrequest_11 ===
+
+   Number of wires:                181
+   Number of wire bits:            380
+   Number of public wires:         178
+   Number of public wire bits:     377
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $and                            1
+     $logic_not                      1
+     $mux                           30
+     $reduce_bool                    1
+
+=== homepicksnewrequest_10 ===
+
+   Number of wires:                181
+   Number of wire bits:            380
+   Number of public wires:         178
+   Number of public wire bits:     377
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $and                            1
+     $logic_not                      1
+     $mux                           30
+     $reduce_bool                    1
+
+=== homepicksnewrequest_1 ===
+
+   Number of wires:                181
+   Number of wire bits:            380
+   Number of public wires:         178
+   Number of public wire bits:     377
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $and                            1
+     $logic_not                      1
+     $mux                           30
+     $reduce_bool                    1
+
+=== homepicksnewrequest ===
+
+   Number of wires:                181
+   Number of wire bits:            380
+   Number of public wires:         178
+   Number of public wire bits:     377
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $and                            1
+     $logic_not                      1
+     $mux                           30
+     $reduce_bool                    1
+
+=== clientrequestssharedaccess_9 ===
+
+   Number of wires:                167
+   Number of wire bits:            361
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestssharedaccess_8 ===
+
+   Number of wires:                167
+   Number of wire bits:            361
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestssharedaccess_7 ===
+
+   Number of wires:                167
+   Number of wire bits:            361
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestssharedaccess_6 ===
+
+   Number of wires:                167
+   Number of wire bits:            361
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestssharedaccess_5 ===
+
+   Number of wires:                167
+   Number of wire bits:            361
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestssharedaccess_4 ===
+
+   Number of wires:                167
+   Number of wire bits:            361
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestssharedaccess_3 ===
+
+   Number of wires:                167
+   Number of wire bits:            361
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestssharedaccess_2 ===
+
+   Number of wires:                167
+   Number of wire bits:            361
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestssharedaccess_11 ===
+
+   Number of wires:                167
+   Number of wire bits:            361
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestssharedaccess_10 ===
+
+   Number of wires:                167
+   Number of wire bits:            361
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestssharedaccess_1 ===
+
+   Number of wires:                167
+   Number of wire bits:            361
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestssharedaccess ===
+
+   Number of wires:                167
+   Number of wire bits:            361
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            1
+     $logic_not                      2
+     $mux                            2
+
+=== clientrequestsexclusiveaccess_9 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestsexclusiveaccess_8 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestsexclusiveaccess_7 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestsexclusiveaccess_6 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestsexclusiveaccess_5 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestsexclusiveaccess_4 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestsexclusiveaccess_3 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestsexclusiveaccess_2 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestsexclusiveaccess_11 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestsexclusiveaccess_10 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestsexclusiveaccess_1 ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientrequestsexclusiveaccess ===
+
+   Number of wires:                169
+   Number of wire bits:            363
+   Number of public wires:         164
+   Number of public wire bits:     358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $eq                             1
+     $logic_not                      2
+     $mux                            2
+     $or                             1
+
+=== clientreceivessharedgrant_9 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant_8 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant_7 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant_6 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant_5 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant_4 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant_3 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant_2 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant_11 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant_10 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant_1 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivessharedgrant ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant_9 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant_8 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant_7 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant_6 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant_5 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant_4 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant_3 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant_2 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant_11 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant_10 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant_1 ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== clientreceivedexclusivegrant ===
+
+   Number of wires:                166
+   Number of wire bits:            361
+   Number of public wires:         165
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             1
+     $mux                            4
+
+=== Init ===
+
+   Number of wires:                163
+   Number of wire bits:            355
+   Number of public wires:         163
+   Number of public wire bits:     355
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 74
+     $mux                           74
+
+=== design hierarchy ===
+
+   system                            1
+     Init                            1
+     clientreceivedexclusivegrant      1
+     clientreceivedexclusivegrant_1      1
+     clientreceivedexclusivegrant_10      1
+     clientreceivedexclusivegrant_11      1
+     clientreceivedexclusivegrant_2      1
+     clientreceivedexclusivegrant_3      1
+     clientreceivedexclusivegrant_4      1
+     clientreceivedexclusivegrant_5      1
+     clientreceivedexclusivegrant_6      1
+     clientreceivedexclusivegrant_7      1
+     clientreceivedexclusivegrant_8      1
+     clientreceivedexclusivegrant_9      1
+     clientreceivessharedgrant       1
+     clientreceivessharedgrant_1      1
+     clientreceivessharedgrant_10      1
+     clientreceivessharedgrant_11      1
+     clientreceivessharedgrant_2      1
+     clientreceivessharedgrant_3      1
+     clientreceivessharedgrant_4      1
+     clientreceivessharedgrant_5      1
+     clientreceivessharedgrant_6      1
+     clientreceivessharedgrant_7      1
+     clientreceivessharedgrant_8      1
+     clientreceivessharedgrant_9      1
+     clientrequestsexclusiveaccess      1
+     clientrequestsexclusiveaccess_1      1
+     clientrequestsexclusiveaccess_10      1
+     clientrequestsexclusiveaccess_11      1
+     clientrequestsexclusiveaccess_2      1
+     clientrequestsexclusiveaccess_3      1
+     clientrequestsexclusiveaccess_4      1
+     clientrequestsexclusiveaccess_5      1
+     clientrequestsexclusiveaccess_6      1
+     clientrequestsexclusiveaccess_7      1
+     clientrequestsexclusiveaccess_8      1
+     clientrequestsexclusiveaccess_9      1
+     clientrequestssharedaccess      1
+     clientrequestssharedaccess_1      1
+     clientrequestssharedaccess_10      1
+     clientrequestssharedaccess_11      1
+     clientrequestssharedaccess_2      1
+     clientrequestssharedaccess_3      1
+     clientrequestssharedaccess_4      1
+     clientrequestssharedaccess_5      1
+     clientrequestssharedaccess_6      1
+     clientrequestssharedaccess_7      1
+     clientrequestssharedaccess_8      1
+     clientrequestssharedaccess_9      1
+     homepicksnewrequest             1
+     homepicksnewrequest_1           1
+     homepicksnewrequest_10          1
+     homepicksnewrequest_11          1
+     homepicksnewrequest_2           1
+     homepicksnewrequest_3           1
+     homepicksnewrequest_4           1
+     homepicksnewrequest_5           1
+     homepicksnewrequest_6           1
+     homepicksnewrequest_7           1
+     homepicksnewrequest_8           1
+     homepicksnewrequest_9           1
+     homereceivesinvalidateacknowledgement      1
+     homereceivesinvalidateacknowledgement_1      1
+     homereceivesinvalidateacknowledgement_10      1
+     homereceivesinvalidateacknowledgement_11      1
+     homereceivesinvalidateacknowledgement_2      1
+     homereceivesinvalidateacknowledgement_3      1
+     homereceivesinvalidateacknowledgement_4      1
+     homereceivesinvalidateacknowledgement_5      1
+     homereceivesinvalidateacknowledgement_6      1
+     homereceivesinvalidateacknowledgement_7      1
+     homereceivesinvalidateacknowledgement_8      1
+     homereceivesinvalidateacknowledgement_9      1
+     homesendsinvalidatemessage      1
+     homesendsinvalidatemessage_1      1
+     homesendsinvalidatemessage_10      1
+     homesendsinvalidatemessage_11      1
+     homesendsinvalidatemessage_2      1
+     homesendsinvalidatemessage_3      1
+     homesendsinvalidatemessage_4      1
+     homesendsinvalidatemessage_5      1
+     homesendsinvalidatemessage_6      1
+     homesendsinvalidatemessage_7      1
+     homesendsinvalidatemessage_8      1
+     homesendsinvalidatemessage_9      1
+     homesendsreplytoclient_exclusive      1
+     homesendsreplytoclient_shared      1
+     sharerinvalidatescache          1
+     sharerinvalidatescache_1        1
+     sharerinvalidatescache_10       1
+     sharerinvalidatescache_11       1
+     sharerinvalidatescache_2        1
+     sharerinvalidatescache_3        1
+     sharerinvalidatescache_4        1
+     sharerinvalidatescache_5        1
+     sharerinvalidatescache_6        1
+     sharerinvalidatescache_7        1
+     sharerinvalidatescache_8        1
+     sharerinvalidatescache_9        1
+
+   Number of wires:              41988
+   Number of wire bits:          90174
+   Number of public wires:       41011
+   Number of public wire bits:   88813
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              10252
+     $and                          111
+     $anyinit                      225
+     $anyseq                       133
+     $assert                       144
+     $assume                         2
+     $eq                           220
+     $ff                             1
+     $initstate                      1
+     $logic_and                      1
+     $logic_not                    101
+     $mux                         9081
+     $not                           26
+     $or                           182
+     $reduce_bool                   24
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module Init.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant_1.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant_10.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant_11.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant_2.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant_3.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant_4.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant_5.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant_6.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant_7.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant_8.
+Creating SMT-LIBv2 representation of module clientreceivedexclusivegrant_9.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant_1.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant_10.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant_11.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement_11.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant_2.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant_3.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant_4.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant_5.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant_6.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant_7.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant_8.
+Creating SMT-LIBv2 representation of module clientreceivessharedgrant_9.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess_1.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess_10.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess_11.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess_2.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess_3.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess_4.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess_5.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess_6.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess_7.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess_8.
+Creating SMT-LIBv2 representation of module clientrequestsexclusiveaccess_9.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess_1.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess_10.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess_11.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess_2.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess_3.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess_4.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess_5.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess_6.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess_7.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess_8.
+Creating SMT-LIBv2 representation of module clientrequestssharedaccess_9.
+Creating SMT-LIBv2 representation of module homepicksnewrequest.
+Creating SMT-LIBv2 representation of module homepicksnewrequest_1.
+Creating SMT-LIBv2 representation of module homepicksnewrequest_10.
+Creating SMT-LIBv2 representation of module homepicksnewrequest_11.
+Creating SMT-LIBv2 representation of module homepicksnewrequest_2.
+Creating SMT-LIBv2 representation of module homepicksnewrequest_3.
+Creating SMT-LIBv2 representation of module homepicksnewrequest_4.
+Creating SMT-LIBv2 representation of module homepicksnewrequest_5.
+Creating SMT-LIBv2 representation of module homepicksnewrequest_6.
+Creating SMT-LIBv2 representation of module homepicksnewrequest_7.
+Creating SMT-LIBv2 representation of module homepicksnewrequest_8.
+Creating SMT-LIBv2 representation of module homepicksnewrequest_9.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement_1.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement_10.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement_2.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement_3.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement_4.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement_5.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement_6.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement_7.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement_8.
+Creating SMT-LIBv2 representation of module homereceivesinvalidateacknowledgement_9.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage_1.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage_10.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage_11.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage_2.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage_3.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage_4.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage_5.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage_6.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage_7.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage_8.
+Creating SMT-LIBv2 representation of module homesendsinvalidatemessage_9.
+Creating SMT-LIBv2 representation of module homesendsreplytoclient_exclusive.
+Creating SMT-LIBv2 representation of module homesendsreplytoclient_shared.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache_1.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache_10.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache_11.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache_2.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache_3.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache_4.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache_5.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache_6.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache_7.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache_8.
+Creating SMT-LIBv2 representation of module sharerinvalidatescache_9.
+Creating SMT-LIBv2 representation of module system.
+
+End of script. Logfile hash: 4f6d7088ab, CPU: user 0.47s system 0.03s, MEM: 86.25 MB peak
+Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 72% 2x write_smt2 (0 sec), 23% 2x read_ilang (0 sec), ...

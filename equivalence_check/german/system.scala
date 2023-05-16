@@ -118,5 +118,13 @@ AuxData_reg := rules(i).io.AuxData_out
     }
     return v(right - left)
   }
-assert((!((Cache_reg(1).State===E)&&((Cache_reg(1).Data===1.U)&&((Cache_reg(2).State===S)&&((Cache_reg(2).Data===1.U)&&((Chan1_reg(1).Cmd===ReqS)&&((Chan1_reg(1).Data===1.U)&&((Chan1_reg(2).Cmd===ReqE)&&((Chan1_reg(2).Data===1.U)&&((Chan2_reg(1).Cmd===Empty)&&((Chan2_reg(1).Data===2.U)&&((Chan2_reg(2).Cmd===Empty)&&((Chan2_reg(2).Data===2.U)&&((Chan3_reg(1).Cmd===Empty)&&((Chan3_reg(1).Data===2.U)&&((Chan3_reg(2).Cmd===Empty)&&((Chan3_reg(2).Data===1.U)&&((InvSet_reg(1)===true.B)&&((InvSet_reg(2)===false.B)&&((ShrSet_reg(1)===true.B)&&((ShrSet_reg(2)===false.B)&&((ExGntd_reg===true.B)&&((CurCmd_reg===ReqE)&&((CurPtr_reg===1.U)&&((MemData_reg===2.U)&&(AuxData_reg===1.U)))))))))))))))))))))))))))
+  def exists(left: Int, right: Int, f: Int => Bool): Bool = {
+    val v = Wire(Vec(right - left + 1, Bool()))
+    v(0) := f(left)
+    for (i <- left until right) {
+      v(i - left + 1) := v(i - left) | f(i + 1)
+    }
+    return v(right - left)
+  }
+assert((!((Cache_reg(1).State===E)&&((Cache_reg(2).State===E)&&((Chan1_reg(1).Cmd===ReqE)&&((Chan1_reg(2).Cmd===ReqE)&&((Chan2_reg(1).Cmd===Empty)&&((Chan2_reg(2).Cmd===Empty)&&((Chan3_reg(1).Cmd===Empty)&&((Chan3_reg(2).Cmd===Empty)&&((InvSet_reg(1)===false.B)&&((InvSet_reg(2)===false.B)&&((ShrSet_reg(1)===false.B)&&((ShrSet_reg(2)===false.B)&&((ExGntd_reg===false.B)&&((CurCmd_reg===Empty)&&((MemData_reg===1.U)&&(AuxData_reg===1.U))))))))))))))))))
 }

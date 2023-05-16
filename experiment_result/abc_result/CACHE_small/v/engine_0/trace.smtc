@@ -1,0 +1,82 @@
+initial
+assume (= [$formal$protocol.sv:4138$3_CHECK] false)
+assume (= [$formal$protocol.sv:4138$3_EN] false)
+assume (= [$formal$protocol.sv:4142$4_CHECK] true)
+assume (= [$formal$protocol.sv:4146$5_CHECK] true)
+assume (= [$formal$protocol.sv:4150$6_CHECK] true)
+assume (= [cache_reg_0] #b00)
+assume (= [cache_reg_1] #b10)
+assume (= [cache_reg_2] #b00)
+assume (= [channel1_reg_0] #b000)
+assume (= [channel1_reg_1] #b010)
+assume (= [channel1_reg_2] #b000)
+assume (= [channel2_4_reg_0] #b000)
+assume (= [channel2_4_reg_1] #b100)
+assume (= [channel2_4_reg_2] #b000)
+assume (= [channel3_reg_0] #b000)
+assume (= [channel3_reg_1] #b101)
+assume (= [channel3_reg_2] #b000)
+assume (= [home_current_client_reg] #b01)
+assume (= [home_current_command_reg] #b110)
+assume (= [home_exclusive_granted_reg] false)
+assume (= [home_invalidate_list_reg_0] false)
+assume (= [home_invalidate_list_reg_1] true)
+assume (= [home_invalidate_list_reg_2] false)
+assume (= [home_sharer_list_reg_0] false)
+assume (= [home_sharer_list_reg_1] false)
+assume (= [home_sharer_list_reg_2] true)
+
+state 0
+assume (= [clock] false)
+assume (= [io_en_a] #b00000)
+assume (= [reset] true)
+
+state 1
+assume (= [clock] false)
+assume (= [io_en_a] #b00011)
+assume (= [reset] false)
+
+state 2
+assume (= [clock] false)
+assume (= [io_en_a] #b00101)
+assume (= [reset] false)
+
+state 3
+assume (= [clock] false)
+assume (= [io_en_a] #b10010)
+assume (= [reset] false)
+
+state 4
+assume (= [clock] false)
+assume (= [io_en_a] #b01111)
+assume (= [reset] false)
+
+state 5
+assume (= [clock] false)
+assume (= [io_en_a] #b00010)
+assume (= [reset] false)
+
+state 6
+assume (= [clock] false)
+assume (= [io_en_a] #b00110)
+assume (= [reset] false)
+
+state 7
+assume (= [clock] false)
+assume (= [io_en_a] #b10001)
+assume (= [reset] false)
+
+state 8
+assume (= [clock] false)
+assume (= [io_en_a] #b01110)
+assume (= [reset] false)
+
+state 9
+assume (= [clock] false)
+assume (= [io_en_a] #b00000)
+assume (= [reset] false)
+
+state 10
+assume (= [clock] false)
+assume (= [io_en_a] #b00000)
+assume (= [reset] false)

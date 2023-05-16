@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=gnu++11 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG  -rdynamic -static -Wl,--no-export-dynamic CMakeFiles/btormc.dir/btormcmain.c.o  -o ../bin/btormc  ../lib/libboolector.a ../../deps/install/lib/libbtor2parser.a -pthread ../../deps/install/lib/libcadical.a 

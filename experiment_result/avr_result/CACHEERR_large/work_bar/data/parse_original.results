@@ -1,0 +1,525 @@
+---------------------
+WITHOUT PREPROCESSING
+---------------------
+
+------------
+Size Summary
+------------
+
+State variables (#227)
+	(1-bit)	173
+	(2-bit)	13
+	(3-bit)	40
+	(4-bit)	1
+
+Inputs (#136)
+	(1-bit)	135
+	(7-bit)	1
+
+Constants (#115)
+	(1-bit)	2
+	(2-bit)	4
+	(3-bit)	8
+	(4-bit)	16
+	(5-bit)	17
+	(6-bit)	33
+	(7-bit)	35
+
+---------------
+State Variables
+---------------
+_s226_id754                     (1-bit)
+_s225_id746                     (1-bit)
+_s224_id742                     (1-bit)
+_s223_id738                     (1-bit)
+_s222_id734                     (1-bit)
+_s221_id730                     (1-bit)
+_s220_id726                     (1-bit)
+_s219_id722                     (1-bit)
+_s218_id718                     (1-bit)
+_s217_id714                     (1-bit)
+_s216_id710                     (1-bit)
+_s215_id706                     (1-bit)
+_s214_id702                     (1-bit)
+_s213_id698                     (1-bit)
+_s212_id694                     (1-bit)
+_s211_id690                     (1-bit)
+_s210_id686                     (1-bit)
+_s209_id682                     (1-bit)
+_s208_id678                     (1-bit)
+_s207_id674                     (1-bit)
+_s206_id670                     (1-bit)
+_s205_id666                     (1-bit)
+_s204_id662                     (1-bit)
+_s203_id658                     (1-bit)
+_s202_id654                     (1-bit)
+_s201_id650                     (1-bit)
+_s200_id646                     (1-bit)
+_s199_id642                     (1-bit)
+_s198_id638                     (1-bit)
+_s197_id634                     (1-bit)
+_s196_id630                     (1-bit)
+_s195_id626                     (1-bit)
+_s194_id622                     (1-bit)
+_s193_id618                     (1-bit)
+_s192_id614                     (1-bit)
+_s191_id610                     (1-bit)
+_s190_id606                     (1-bit)
+_s189_id602                     (1-bit)
+_s188_id598                     (1-bit)
+_s187_id594                     (1-bit)
+_s186_id590                     (1-bit)
+_s185_id586                     (1-bit)
+_s184_id582                     (1-bit)
+_s183_id578                     (1-bit)
+_s182_id574                     (1-bit)
+_s181_id570                     (1-bit)
+_s180_id566                     (1-bit)
+_s179_id562                     (1-bit)
+_s178_id558                     (1-bit)
+_s177_id554                     (1-bit)
+_s176_id550                     (1-bit)
+_s175_id546                     (1-bit)
+_s174_id542                     (1-bit)
+_s173_id538                     (1-bit)
+_s172_id534                     (1-bit)
+_s171_id530                     (1-bit)
+_s170_id526                     (1-bit)
+_s169_id522                     (1-bit)
+_s168_id518                     (1-bit)
+_s167_id514                     (1-bit)
+_s166_id510                     (1-bit)
+_s165_id506                     (1-bit)
+_s164_id502                     (1-bit)
+_s163_id498                     (1-bit)
+_s162_id494                     (1-bit)
+_s161_id490                     (1-bit)
+_s160_id486                     (1-bit)
+_s159_id482                     (1-bit)
+_s158_id478                     (1-bit)
+_s157_id474                     (1-bit)
+_s156_id470                     (1-bit)
+_s155_id466                     (1-bit)
+_s154_id462                     (1-bit)
+_s153_id458                     (1-bit)
+_s152_id454                     (1-bit)
+_s151_id450                     (1-bit)
+_s150_id446                     (1-bit)
+_s149_id442                     (1-bit)
+_s148_id438                     (1-bit)
+_s147_id434                     (1-bit)
+_s146_id430                     (1-bit)
+_s145_id426                     (1-bit)
+_s144_id422                     (1-bit)
+_s143_id418                     (1-bit)
+_s142_id414                     (1-bit)
+_s141_id410                     (1-bit)
+_s140_id406                     (1-bit)
+_s139_id402                     (1-bit)
+_s138_id398                     (1-bit)
+_s137_id394                     (1-bit)
+_s136_id390                     (1-bit)
+_s135_id386                     (1-bit)
+_s134_id382                     (1-bit)
+_s133_id378                     (1-bit)
+_s132_id374                     (1-bit)
+_s131_id370                     (1-bit)
+_s130_id366                     (1-bit)
+_s129_id362                     (1-bit)
+_s128_id358                     (1-bit)
+_s127_id354                     (1-bit)
+_s126_id350                     (1-bit)
+_s125_id346                     (1-bit)
+_s124_id342                     (1-bit)
+_s123_id338                     (1-bit)
+_s122_id334                     (1-bit)
+_s121_id330                     (1-bit)
+_s120_id326                     (1-bit)
+_s119_id322                     (1-bit)
+_s118_id318                     (1-bit)
+_s117_id314                     (1-bit)
+_s116_id310                     (1-bit)
+_s115_id306                     (1-bit)
+_s114_id302                     (1-bit)
+_s113_id298                     (1-bit)
+_s112_id294                     (1-bit)
+_s111_id290                     (1-bit)
+_s110_id286                     (1-bit)
+_s109_id282                     (1-bit)
+_s108_id278                     (1-bit)
+_s107_id274                     (1-bit)
+_s106_id270                     (1-bit)
+_s105_id266                     (1-bit)
+_s104_id262                     (1-bit)
+_s103_id258                     (1-bit)
+_s102_id254                     (1-bit)
+_s101_id250                     (1-bit)
+_s100_id246                     (1-bit)
+_s99_id242                      (1-bit)
+_s98_id238                      (1-bit)
+_s97_id234                      (1-bit)
+_s96_id230                      (1-bit)
+_s95_id226                      (1-bit)
+_s94_id222                      (1-bit)
+_s93_id218                      (1-bit)
+_s92_id214                      (1-bit)
+_s91_id210                      (1-bit)
+_s90_id206                      (1-bit)
+_s89_id202                      (1-bit)
+_s88_id198                      (1-bit)
+_s87_id194                      (1-bit)
+_s86_id190                      (1-bit)
+_s85_id186                      (1-bit)
+_s84_id182                      (1-bit)
+_s83_id178                      (1-bit)
+_s82_id173                      (1-bit)
+_s81_id171                      (1-bit)
+_s80_home_sharer_list_reg_9     (1-bit)
+_s79_home_sharer_list_reg_8     (1-bit)
+_s78_home_sharer_list_reg_7     (1-bit)
+_s77_home_sharer_list_reg_6     (1-bit)
+_s76_home_sharer_list_reg_5     (1-bit)
+_s75_home_sharer_list_reg_4     (1-bit)
+_s74_home_sharer_list_reg_3     (1-bit)
+_s73_home_sharer_list_reg_2     (1-bit)
+_s72_home_sharer_list_reg_12    (1-bit)
+_s71_home_sharer_list_reg_11    (1-bit)
+_s70_home_sharer_list_reg_10    (1-bit)
+_s69_home_sharer_list_reg_1     (1-bit)
+_s68_home_sharer_list_reg_0     (1-bit)
+_s67_home_invalidate_list_reg_9    (1-bit)
+_s66_home_invalidate_list_reg_8    (1-bit)
+_s65_home_invalidate_list_reg_7    (1-bit)
+_s64_home_invalidate_list_reg_6    (1-bit)
+_s63_home_invalidate_list_reg_5    (1-bit)
+_s62_home_invalidate_list_reg_4    (1-bit)
+_s61_home_invalidate_list_reg_3    (1-bit)
+_s60_home_invalidate_list_reg_2    (1-bit)
+_s59_home_invalidate_list_reg_12    (1-bit)
+_s58_home_invalidate_list_reg_11    (1-bit)
+_s57_home_invalidate_list_reg_10    (1-bit)
+_s56_home_invalidate_list_reg_1    (1-bit)
+_s55_home_invalidate_list_reg_0    (1-bit)
+_s54_home_exclusive_granted_reg    (1-bit)
+_s12_cache_reg_9                (2-bit)
+_s11_cache_reg_8                (2-bit)
+_s10_cache_reg_7                (2-bit)
+_s9_cache_reg_6                 (2-bit)
+_s8_cache_reg_5                 (2-bit)
+_s7_cache_reg_4                 (2-bit)
+_s6_cache_reg_3                 (2-bit)
+_s5_cache_reg_2                 (2-bit)
+_s4_cache_reg_12                (2-bit)
+_s3_cache_reg_11                (2-bit)
+_s2_cache_reg_10                (2-bit)
+_s1_cache_reg_1                 (2-bit)
+_s0_cache_reg_0                 (2-bit)
+_s53_home_current_command_reg    (3-bit)
+_s51_channel3_reg_9             (3-bit)
+_s50_channel3_reg_8             (3-bit)
+_s49_channel3_reg_7             (3-bit)
+_s48_channel3_reg_6             (3-bit)
+_s47_channel3_reg_5             (3-bit)
+_s46_channel3_reg_4             (3-bit)
+_s45_channel3_reg_3             (3-bit)
+_s44_channel3_reg_2             (3-bit)
+_s43_channel3_reg_12            (3-bit)
+_s42_channel3_reg_11            (3-bit)
+_s41_channel3_reg_10            (3-bit)
+_s40_channel3_reg_1             (3-bit)
+_s39_channel3_reg_0             (3-bit)
+_s38_channel2_4_reg_9           (3-bit)
+_s37_channel2_4_reg_8           (3-bit)
+_s36_channel2_4_reg_7           (3-bit)
+_s35_channel2_4_reg_6           (3-bit)
+_s34_channel2_4_reg_5           (3-bit)
+_s33_channel2_4_reg_4           (3-bit)
+_s32_channel2_4_reg_3           (3-bit)
+_s31_channel2_4_reg_2           (3-bit)
+_s30_channel2_4_reg_12          (3-bit)
+_s29_channel2_4_reg_11          (3-bit)
+_s28_channel2_4_reg_10          (3-bit)
+_s27_channel2_4_reg_1           (3-bit)
+_s26_channel2_4_reg_0           (3-bit)
+_s25_channel1_reg_9             (3-bit)
+_s24_channel1_reg_8             (3-bit)
+_s23_channel1_reg_7             (3-bit)
+_s22_channel1_reg_6             (3-bit)
+_s21_channel1_reg_5             (3-bit)
+_s20_channel1_reg_4             (3-bit)
+_s19_channel1_reg_3             (3-bit)
+_s18_channel1_reg_2             (3-bit)
+_s17_channel1_reg_12            (3-bit)
+_s16_channel1_reg_11            (3-bit)
+_s15_channel1_reg_10            (3-bit)
+_s14_channel1_reg_1             (3-bit)
+_s13_channel1_reg_0             (3-bit)
+_s52_home_current_client_reg    (4-bit)
+
+------
+Inputs
+------
+_i135_id51766                   (1-bit)
+_i134_id51762                   (1-bit)
+_i133_id51758                   (1-bit)
+_i132_id51754                   (1-bit)
+_i131_id51750                   (1-bit)
+_i130_id51746                   (1-bit)
+_i129_id51742                   (1-bit)
+_i128_id51738                   (1-bit)
+_i127_id51734                   (1-bit)
+_i126_id51730                   (1-bit)
+_i125_id51726                   (1-bit)
+_i124_id51720                   (1-bit)
+_i123_id51715                   (1-bit)
+_i122_id51711                   (1-bit)
+_i121_id51707                   (1-bit)
+_i120_id51703                   (1-bit)
+_i119_id51699                   (1-bit)
+_i118_id51695                   (1-bit)
+_i117_id51691                   (1-bit)
+_i116_id51687                   (1-bit)
+_i115_id51683                   (1-bit)
+_i114_id51679                   (1-bit)
+_i113_id51673                   (1-bit)
+_i112_id51669                   (1-bit)
+_i111_id51664                   (1-bit)
+_i110_id51660                   (1-bit)
+_i109_id51656                   (1-bit)
+_i108_id51652                   (1-bit)
+_i107_id51648                   (1-bit)
+_i106_id51644                   (1-bit)
+_i105_id51640                   (1-bit)
+_i104_id51636                   (1-bit)
+_i103_id51632                   (1-bit)
+_i102_id51626                   (1-bit)
+_i101_id51622                   (1-bit)
+_i100_id51618                   (1-bit)
+_i99_id51613                    (1-bit)
+_i98_id51609                    (1-bit)
+_i97_id51605                    (1-bit)
+_i96_id51601                    (1-bit)
+_i95_id51597                    (1-bit)
+_i94_id51593                    (1-bit)
+_i93_id51589                    (1-bit)
+_i92_id51585                    (1-bit)
+_i91_id51579                    (1-bit)
+_i90_id51575                    (1-bit)
+_i89_id51571                    (1-bit)
+_i88_id51567                    (1-bit)
+_i87_id51562                    (1-bit)
+_i86_id51558                    (1-bit)
+_i85_id51554                    (1-bit)
+_i84_id51550                    (1-bit)
+_i83_id51546                    (1-bit)
+_i82_id51542                    (1-bit)
+_i81_id51538                    (1-bit)
+_i80_id51532                    (1-bit)
+_i79_id51528                    (1-bit)
+_i78_id51524                    (1-bit)
+_i77_id51520                    (1-bit)
+_i76_id51516                    (1-bit)
+_i75_id51511                    (1-bit)
+_i74_id51507                    (1-bit)
+_i73_id51503                    (1-bit)
+_i72_id51499                    (1-bit)
+_i71_id51495                    (1-bit)
+_i70_id51491                    (1-bit)
+_i69_id51485                    (1-bit)
+_i68_id51481                    (1-bit)
+_i67_id51477                    (1-bit)
+_i66_id51473                    (1-bit)
+_i65_id51469                    (1-bit)
+_i64_id51465                    (1-bit)
+_i63_id51460                    (1-bit)
+_i62_id51456                    (1-bit)
+_i61_id51452                    (1-bit)
+_i60_id51448                    (1-bit)
+_i59_id51444                    (1-bit)
+_i58_id51438                    (1-bit)
+_i57_id51434                    (1-bit)
+_i56_id51430                    (1-bit)
+_i55_id51426                    (1-bit)
+_i54_id51422                    (1-bit)
+_i53_id51418                    (1-bit)
+_i52_id51414                    (1-bit)
+_i51_id51409                    (1-bit)
+_i50_id51405                    (1-bit)
+_i49_id51401                    (1-bit)
+_i48_id51397                    (1-bit)
+_i47_id51391                    (1-bit)
+_i46_id51387                    (1-bit)
+_i45_id51383                    (1-bit)
+_i44_id51379                    (1-bit)
+_i43_id51375                    (1-bit)
+_i42_id51371                    (1-bit)
+_i41_id51367                    (1-bit)
+_i40_id51363                    (1-bit)
+_i39_id51358                    (1-bit)
+_i38_id51354                    (1-bit)
+_i37_id51350                    (1-bit)
+_i36_id51344                    (1-bit)
+_i35_id51340                    (1-bit)
+_i34_id51336                    (1-bit)
+_i33_id51332                    (1-bit)
+_i32_id51328                    (1-bit)
+_i31_id51324                    (1-bit)
+_i30_id51320                    (1-bit)
+_i29_id51316                    (1-bit)
+_i28_id51312                    (1-bit)
+_i27_id51307                    (1-bit)
+_i26_id51303                    (1-bit)
+_i25_id51297                    (1-bit)
+_i24_id51293                    (1-bit)
+_i23_id51289                    (1-bit)
+_i22_id51285                    (1-bit)
+_i21_id51281                    (1-bit)
+_i20_id51277                    (1-bit)
+_i19_id51273                    (1-bit)
+_i18_id51269                    (1-bit)
+_i17_id51265                    (1-bit)
+_i16_id51261                    (1-bit)
+_i15_id51256                    (1-bit)
+_i14_id51248                    (1-bit)
+_i13_id51242                    (1-bit)
+_i12_id51236                    (1-bit)
+_i11_id51230                    (1-bit)
+_i10_id51224                    (1-bit)
+_i9_id51218                     (1-bit)
+_i8_id51212                     (1-bit)
+_i7_id51206                     (1-bit)
+_i6_id51200                     (1-bit)
+_i5_id51194                     (1-bit)
+_i4_id51188                     (1-bit)
+_i3_id51178                     (1-bit)
+_i2_reset                       (1-bit)
+_i0_clock                       (1-bit)
+_i1_io_en_a                     (7-bit)
+
+---------
+Constants
+---------
+1'd1
+1'd0
+2'd1
+2'd0
+2'd3
+2'd2
+3'd3
+3'd2
+3'd1
+3'd7
+3'd6
+3'd5
+3'd4
+3'd0
+4'd7
+4'd6
+4'd5
+4'd4
+4'd3
+4'd2
+4'd1
+4'd15
+4'd14
+4'd13
+4'd12
+4'd11
+4'd10
+4'd9
+4'd8
+4'd0
+5'd31
+5'd30
+5'd29
+5'd28
+5'd27
+5'd26
+5'd25
+5'd24
+5'd23
+5'd22
+5'd21
+5'd20
+5'd19
+5'd18
+5'd17
+5'd16
+5'd0
+6'd63
+6'd62
+6'd61
+6'd60
+6'd59
+6'd58
+6'd57
+6'd56
+6'd55
+6'd54
+6'd53
+6'd52
+6'd51
+6'd50
+6'd49
+6'd48
+6'd47
+6'd46
+6'd45
+6'd44
+6'd43
+6'd42
+6'd41
+6'd40
+6'd39
+6'd38
+6'd37
+6'd36
+6'd35
+6'd34
+6'd33
+6'd32
+6'd0
+7'd98
+7'd97
+7'd96
+7'd95
+7'd94
+7'd93
+7'd92
+7'd91
+7'd90
+7'd89
+7'd88
+7'd87
+7'd86
+7'd85
+7'd84
+7'd83
+7'd82
+7'd81
+7'd80
+7'd79
+7'd78
+7'd77
+7'd76
+7'd75
+7'd74
+7'd73
+7'd72
+7'd71
+7'd70
+7'd69
+7'd68
+7'd67
+7'd66
+7'd65
+7'd64
+
+-----------------------------
+Uninterpreted Functions (UFs)
+-----------------------------
+ReductionOr_1_2	#12
+ReductionOr_1_3	#38
+ReductionOr_1_4	#1
+ReductionOr_1_7	#1
+

@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=gnu++11 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG  -rdynamic CMakeFiles/matrixmultcomm.dir/matrixmultcomm/matrixmultcomm.c.o  -o ../../../bin/examples/api/c/matrixmultcomm/matrixmultcomm  ../../../lib/libboolector.a -pthread ../../../../deps/install/lib/libbtor2parser.a ../../../../deps/install/lib/libcadical.a 

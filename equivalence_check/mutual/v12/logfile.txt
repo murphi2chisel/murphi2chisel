@@ -1,36 +1,41 @@
-SBY 16:52:30 [v12] Removing directory '/home/ubuntu/murphi2chisel/equivalence_check/mutual/v12'.
-SBY 16:52:30 [v12] Copy '/home/ubuntu/murphi2chisel/equivalence_check/mutual/protocol.sv' to '/home/ubuntu/murphi2chisel/equivalence_check/mutual/v12/src/protocol.sv'.
-SBY 16:52:30 [v12] engine_0: smtbmc
-SBY 16:52:30 [v12] base: starting process "cd v12/src; yosys -ql ../model/design.log ../model/design.ys"
-SBY 16:52:30 [v12] base: finished (returncode=0)
-SBY 16:52:30 [v12] smt2: starting process "cd v12/model; yosys -ql design_smt2.log design_smt2.ys"
-SBY 16:52:30 [v12] smt2: finished (returncode=0)
-SBY 16:52:30 [v12] engine_0: starting process "cd v12; yosys-smtbmc --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Solver: yices
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assumptions in step 0..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assertions in step 0..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assumptions in step 1..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assertions in step 1..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assumptions in step 2..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assertions in step 2..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assumptions in step 3..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assertions in step 3..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assumptions in step 4..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assertions in step 4..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assumptions in step 5..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assertions in step 5..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assumptions in step 6..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assertions in step 6..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assumptions in step 7..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assertions in step 7..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assumptions in step 8..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assertions in step 8..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assumptions in step 9..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Checking assertions in step 9..
-SBY 16:52:31 [v12] engine_0: ##   0:00:00  Status: passed
-SBY 16:52:31 [v12] engine_0: finished (returncode=0)
-SBY 16:52:31 [v12] engine_0: Status returned by engine: pass
-SBY 16:52:31 [v12] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 16:52:31 [v12] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 16:52:31 [v12] summary: engine_0 (smtbmc) returned pass
-SBY 16:52:31 [v12] DONE (PASS, rc=0)
+SBY 19:59:51 [v12] Removing directory '/home/czh/murphi2chisel/equivalence_check/mutual/v12'.
+SBY 19:59:51 [v12] Copy '/home/czh/murphi2chisel/equivalence_check/mutual/protocol.sv' to '/home/czh/murphi2chisel/equivalence_check/mutual/v12/src/protocol.sv'.
+SBY 19:59:51 [v12] engine_0: abc pdr
+SBY 19:59:51 [v12] base: starting process "cd v12/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 19:59:51 [v12] base: finished (returncode=0)
+SBY 19:59:51 [v12] prep: starting process "cd v12/model; yosys -ql design_prep.log design_prep.ys"
+SBY 19:59:51 [v12] prep: finished (returncode=0)
+SBY 19:59:51 [v12] aig: starting process "cd v12/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY 19:59:51 [v12] aig: finished (returncode=0)
+SBY 19:59:51 [v12] engine_0: starting process "cd v12; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw'"
+SBY 19:59:51 [v12] engine_0: ABC command line: "read_aiger model/design_aiger.aig; fold; strash; pdr -v; write_cex -a engine_0/trace.aiw".
+SBY 19:59:51 [v12] engine_0: Warning: The last 2 outputs are interpreted as constraints.
+SBY 19:59:51 [v12] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+SBY 19:59:51 [v12] engine_0: Frame Clauses                                                     Max Queue Flops Cex      Time
+SBY 19:59:51 [v12] engine_0: 1 : 0 1                                                                 1     2      0.00 sec
+SBY 19:59:51 [v12] engine_0: 2 : 0 3 4                                                               3     7      0.00 sec
+SBY 19:59:51 [v12] engine_0: 3 : 0 3 1 3                                                             0     7      0.00 sec
+SBY 19:59:51 [v12] engine_0: 4 : 0 3 1 3 4                                                           3     7      0.00 sec
+SBY 19:59:51 [v12] engine_0: 5 : 0 3 0 0 0 5                                                         0     7      0.00 sec
+SBY 19:59:51 [v12] engine_0: Invariant F[2] : 5 clauses with 7 flops (out of 9) (cex = 0, ave = 5.38)
+SBY 19:59:51 [v12] engine_0: Verification of invariant with 5 clauses was successful.  Time =     0.00 sec
+SBY 19:59:51 [v12] engine_0: Block =    4  Oblig =    15  Clause =    11  Call =    81 (sat=59.3%)  Cex =   0  Start =   0
+SBY 19:59:51 [v12] engine_0: SAT solving =     0.00 sec (  7.77 %)
+SBY 19:59:51 [v12] engine_0: unsat     =     0.00 sec (  1.91 %)
+SBY 19:59:51 [v12] engine_0: sat       =     0.00 sec (  5.87 %)
+SBY 19:59:51 [v12] engine_0: Generalize  =     0.00 sec (  4.81 %)
+SBY 19:59:51 [v12] engine_0: Push clause =     0.00 sec (  3.32 %)
+SBY 19:59:51 [v12] engine_0: Ternary sim =     0.00 sec (  0.35 %)
+SBY 19:59:51 [v12] engine_0: Containment =     0.00 sec (  0.01 %)
+SBY 19:59:51 [v12] engine_0: CNF compute =     0.00 sec (  1.23 %)
+SBY 19:59:51 [v12] engine_0: Refinement  =     0.00 sec (  0.00 %)
+SBY 19:59:51 [v12] engine_0: TOTAL       =     0.01 sec (100.00 %)
+SBY 19:59:51 [v12] engine_0: Property proved.  Time =     0.01 sec
+SBY 19:59:51 [v12] engine_0: Counter-example is not available.
+SBY 19:59:51 [v12] engine_0: finished (returncode=0)
+SBY 19:59:51 [v12] engine_0: Status returned by engine: PASS
+SBY 19:59:51 [v12] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:59:51 [v12] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:59:51 [v12] summary: engine_0 (abc pdr) returned PASS
+SBY 19:59:51 [v12] summary: engine_0 did not produce any traces
+SBY 19:59:51 [v12] DONE (PASS, rc=0)

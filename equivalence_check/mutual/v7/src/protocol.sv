@@ -9,10 +9,10 @@ module Init(
   input        io_x_in,
   output       io_x_out
 );
-  assign io_n_out_0 = io_n_in_0; // @[node.scala 21:9]
-  assign io_n_out_1 = io_en_r ? 2'h0 : io_n_in_1; // @[router.scala 5:14 7:13 node.scala 21:9]
-  assign io_n_out_2 = io_en_r ? 2'h0 : io_n_in_2; // @[router.scala 5:14 7:13 node.scala 21:9]
-  assign io_x_out = io_en_r | io_x_in; // @[router.scala 10:10 5:14 node.scala 22:9]
+  assign io_n_out_0 = io_n_in_0; // @[node.scala 30:9]
+  assign io_n_out_1 = io_en_r ? 2'h0 : io_n_in_1; // @[router.scala 5:14 7:13 node.scala 30:9]
+  assign io_n_out_2 = io_en_r ? 2'h0 : io_n_in_2; // @[router.scala 5:14 7:13 node.scala 30:9]
+  assign io_x_out = io_en_r | io_x_in; // @[router.scala 10:10 5:14 node.scala 31:9]
 endmodule
 module Try(
   input        io_en_r,
@@ -25,11 +25,11 @@ module Try(
   input        io_x_in,
   output       io_x_out
 );
-  wire [1:0] _GEN_0 = io_n_in_1 == 2'h0 ? 2'h1 : io_n_in_1; // @[router.scala 15:23 16:13 node.scala 21:9]
-  assign io_n_out_0 = io_n_in_0; // @[node.scala 21:9]
-  assign io_n_out_1 = io_en_r ? _GEN_0 : io_n_in_1; // @[router.scala 14:14 node.scala 21:9]
-  assign io_n_out_2 = io_n_in_2; // @[node.scala 21:9]
-  assign io_x_out = io_x_in; // @[node.scala 22:9]
+  wire [1:0] _GEN_0 = io_n_in_1 == 2'h0 ? 2'h1 : io_n_in_1; // @[router.scala 15:23 16:13 node.scala 30:9]
+  assign io_n_out_0 = io_n_in_0; // @[node.scala 30:9]
+  assign io_n_out_1 = io_en_r ? _GEN_0 : io_n_in_1; // @[router.scala 14:14 node.scala 30:9]
+  assign io_n_out_2 = io_n_in_2; // @[node.scala 30:9]
+  assign io_x_out = io_x_in; // @[node.scala 31:9]
 endmodule
 module Try_1(
   input        io_en_r,
@@ -42,11 +42,11 @@ module Try_1(
   input        io_x_in,
   output       io_x_out
 );
-  wire [1:0] _GEN_0 = io_n_in_2 == 2'h0 ? 2'h1 : io_n_in_2; // @[router.scala 15:23 16:13 node.scala 21:9]
-  assign io_n_out_0 = io_n_in_0; // @[node.scala 21:9]
-  assign io_n_out_1 = io_n_in_1; // @[node.scala 21:9]
-  assign io_n_out_2 = io_en_r ? _GEN_0 : io_n_in_2; // @[router.scala 14:14 node.scala 21:9]
-  assign io_x_out = io_x_in; // @[node.scala 22:9]
+  wire [1:0] _GEN_0 = io_n_in_2 == 2'h0 ? 2'h1 : io_n_in_2; // @[router.scala 15:23 16:13 node.scala 30:9]
+  assign io_n_out_0 = io_n_in_0; // @[node.scala 30:9]
+  assign io_n_out_1 = io_n_in_1; // @[node.scala 30:9]
+  assign io_n_out_2 = io_en_r ? _GEN_0 : io_n_in_2; // @[router.scala 14:14 node.scala 30:9]
+  assign io_x_out = io_x_in; // @[node.scala 31:9]
 endmodule
 module Crit(
   input        io_en_r,
@@ -59,12 +59,12 @@ module Crit(
   input        io_x_in,
   output       io_x_out
 );
-  wire [1:0] _GEN_0 = io_n_in_1 == 2'h1 & io_x_in ? 2'h2 : io_n_in_1; // @[router.scala 22:45 23:13 node.scala 21:9]
-  wire  _GEN_1 = io_n_in_1 == 2'h1 & io_x_in ? 1'h0 : io_x_in; // @[router.scala 22:45 24:10 node.scala 22:9]
-  assign io_n_out_0 = io_n_in_0; // @[node.scala 21:9]
-  assign io_n_out_1 = io_en_r ? _GEN_0 : io_n_in_1; // @[router.scala 21:14 node.scala 21:9]
-  assign io_n_out_2 = io_n_in_2; // @[node.scala 21:9]
-  assign io_x_out = io_en_r ? _GEN_1 : io_x_in; // @[router.scala 21:14 node.scala 22:9]
+  wire [1:0] _GEN_0 = io_n_in_1 == 2'h1 & io_x_in ? 2'h2 : io_n_in_1; // @[router.scala 22:45 23:13 node.scala 30:9]
+  wire  _GEN_1 = io_n_in_1 == 2'h1 & io_x_in ? 1'h0 : io_x_in; // @[router.scala 22:45 24:10 node.scala 31:9]
+  assign io_n_out_0 = io_n_in_0; // @[node.scala 30:9]
+  assign io_n_out_1 = io_en_r ? _GEN_0 : io_n_in_1; // @[router.scala 21:14 node.scala 30:9]
+  assign io_n_out_2 = io_n_in_2; // @[node.scala 30:9]
+  assign io_x_out = io_en_r ? _GEN_1 : io_x_in; // @[router.scala 21:14 node.scala 31:9]
 endmodule
 module Crit_1(
   input        io_en_r,
@@ -77,12 +77,12 @@ module Crit_1(
   input        io_x_in,
   output       io_x_out
 );
-  wire [1:0] _GEN_0 = io_n_in_2 == 2'h1 & io_x_in ? 2'h2 : io_n_in_2; // @[router.scala 22:45 23:13 node.scala 21:9]
-  wire  _GEN_1 = io_n_in_2 == 2'h1 & io_x_in ? 1'h0 : io_x_in; // @[router.scala 22:45 24:10 node.scala 22:9]
-  assign io_n_out_0 = io_n_in_0; // @[node.scala 21:9]
-  assign io_n_out_1 = io_n_in_1; // @[node.scala 21:9]
-  assign io_n_out_2 = io_en_r ? _GEN_0 : io_n_in_2; // @[router.scala 21:14 node.scala 21:9]
-  assign io_x_out = io_en_r ? _GEN_1 : io_x_in; // @[router.scala 21:14 node.scala 22:9]
+  wire [1:0] _GEN_0 = io_n_in_2 == 2'h1 & io_x_in ? 2'h2 : io_n_in_2; // @[router.scala 22:45 23:13 node.scala 30:9]
+  wire  _GEN_1 = io_n_in_2 == 2'h1 & io_x_in ? 1'h0 : io_x_in; // @[router.scala 22:45 24:10 node.scala 31:9]
+  assign io_n_out_0 = io_n_in_0; // @[node.scala 30:9]
+  assign io_n_out_1 = io_n_in_1; // @[node.scala 30:9]
+  assign io_n_out_2 = io_en_r ? _GEN_0 : io_n_in_2; // @[router.scala 21:14 node.scala 30:9]
+  assign io_x_out = io_en_r ? _GEN_1 : io_x_in; // @[router.scala 21:14 node.scala 31:9]
 endmodule
 module Exit(
   input        io_en_r,
@@ -95,11 +95,11 @@ module Exit(
   input        io_x_in,
   output       io_x_out
 );
-  wire [1:0] _GEN_0 = io_n_in_1 == 2'h2 ? 2'h3 : io_n_in_1; // @[router.scala 30:23 31:13 node.scala 21:9]
-  assign io_n_out_0 = io_n_in_0; // @[node.scala 21:9]
-  assign io_n_out_1 = io_en_r ? _GEN_0 : io_n_in_1; // @[router.scala 29:14 node.scala 21:9]
-  assign io_n_out_2 = io_n_in_2; // @[node.scala 21:9]
-  assign io_x_out = io_x_in; // @[node.scala 22:9]
+  wire [1:0] _GEN_0 = io_n_in_1 == 2'h2 ? 2'h3 : io_n_in_1; // @[router.scala 30:23 31:13 node.scala 30:9]
+  assign io_n_out_0 = io_n_in_0; // @[node.scala 30:9]
+  assign io_n_out_1 = io_en_r ? _GEN_0 : io_n_in_1; // @[router.scala 29:14 node.scala 30:9]
+  assign io_n_out_2 = io_n_in_2; // @[node.scala 30:9]
+  assign io_x_out = io_x_in; // @[node.scala 31:9]
 endmodule
 module Exit_1(
   input        io_en_r,
@@ -112,11 +112,11 @@ module Exit_1(
   input        io_x_in,
   output       io_x_out
 );
-  wire [1:0] _GEN_0 = io_n_in_2 == 2'h2 ? 2'h3 : io_n_in_2; // @[router.scala 30:23 31:13 node.scala 21:9]
-  assign io_n_out_0 = io_n_in_0; // @[node.scala 21:9]
-  assign io_n_out_1 = io_n_in_1; // @[node.scala 21:9]
-  assign io_n_out_2 = io_en_r ? _GEN_0 : io_n_in_2; // @[router.scala 29:14 node.scala 21:9]
-  assign io_x_out = io_x_in; // @[node.scala 22:9]
+  wire [1:0] _GEN_0 = io_n_in_2 == 2'h2 ? 2'h3 : io_n_in_2; // @[router.scala 30:23 31:13 node.scala 30:9]
+  assign io_n_out_0 = io_n_in_0; // @[node.scala 30:9]
+  assign io_n_out_1 = io_n_in_1; // @[node.scala 30:9]
+  assign io_n_out_2 = io_en_r ? _GEN_0 : io_n_in_2; // @[router.scala 29:14 node.scala 30:9]
+  assign io_x_out = io_x_in; // @[node.scala 31:9]
 endmodule
 module Idle(
   input        io_en_r,
@@ -129,12 +129,12 @@ module Idle(
   input        io_x_in,
   output       io_x_out
 );
-  wire [1:0] _GEN_0 = io_n_in_1 == 2'h3 ? 2'h0 : io_n_in_1; // @[router.scala 37:23 38:13 node.scala 21:9]
-  wire  _GEN_1 = io_n_in_1 == 2'h3 | io_x_in; // @[router.scala 37:23 39:10 node.scala 22:9]
-  assign io_n_out_0 = io_n_in_0; // @[node.scala 21:9]
-  assign io_n_out_1 = io_en_r ? _GEN_0 : io_n_in_1; // @[router.scala 36:14 node.scala 21:9]
-  assign io_n_out_2 = io_n_in_2; // @[node.scala 21:9]
-  assign io_x_out = io_en_r ? _GEN_1 : io_x_in; // @[router.scala 36:14 node.scala 22:9]
+  wire [1:0] _GEN_0 = io_n_in_1 == 2'h3 ? 2'h0 : io_n_in_1; // @[router.scala 37:23 38:13 node.scala 30:9]
+  wire  _GEN_1 = io_n_in_1 == 2'h3 | io_x_in; // @[router.scala 37:23 39:10 node.scala 31:9]
+  assign io_n_out_0 = io_n_in_0; // @[node.scala 30:9]
+  assign io_n_out_1 = io_en_r ? _GEN_0 : io_n_in_1; // @[router.scala 36:14 node.scala 30:9]
+  assign io_n_out_2 = io_n_in_2; // @[node.scala 30:9]
+  assign io_x_out = io_en_r ? _GEN_1 : io_x_in; // @[router.scala 36:14 node.scala 31:9]
 endmodule
 module Idle_1(
   input        io_en_r,
@@ -147,12 +147,12 @@ module Idle_1(
   input        io_x_in,
   output       io_x_out
 );
-  wire [1:0] _GEN_0 = io_n_in_2 == 2'h3 ? 2'h0 : io_n_in_2; // @[router.scala 37:23 38:13 node.scala 21:9]
-  wire  _GEN_1 = io_n_in_2 == 2'h3 | io_x_in; // @[router.scala 37:23 39:10 node.scala 22:9]
-  assign io_n_out_0 = io_n_in_0; // @[node.scala 21:9]
-  assign io_n_out_1 = io_n_in_1; // @[node.scala 21:9]
-  assign io_n_out_2 = io_en_r ? _GEN_0 : io_n_in_2; // @[router.scala 36:14 node.scala 21:9]
-  assign io_x_out = io_en_r ? _GEN_1 : io_x_in; // @[router.scala 36:14 node.scala 22:9]
+  wire [1:0] _GEN_0 = io_n_in_2 == 2'h3 ? 2'h0 : io_n_in_2; // @[router.scala 37:23 38:13 node.scala 30:9]
+  wire  _GEN_1 = io_n_in_2 == 2'h3 | io_x_in; // @[router.scala 37:23 39:10 node.scala 31:9]
+  assign io_n_out_0 = io_n_in_0; // @[node.scala 30:9]
+  assign io_n_out_1 = io_n_in_1; // @[node.scala 30:9]
+  assign io_n_out_2 = io_en_r ? _GEN_0 : io_n_in_2; // @[router.scala 36:14 node.scala 30:9]
+  assign io_x_out = io_en_r ? _GEN_1 : io_x_in; // @[router.scala 36:14 node.scala 31:9]
 endmodule
 module system(
   input        clock,
@@ -498,13 +498,13 @@ module system(
 `endif
 
                 initial begin
-                    assume(reset==1);
+                    assume(reset==1 && io_en_a==0);
                 end
 
                   always @(posedge clock) begin
     //
     if (~reset) begin
-      assert(~(n_reg_1 == 2'h0 & (n_reg_2 == 2'h3 & ~x_reg))); // @[system.scala 47:7]
+      assert(~(n_reg_1 == 2'h0 & (n_reg_2 == 2'h3 & ~x_reg))); // @[system.scala 55:7]
     end
   end
 endmodule

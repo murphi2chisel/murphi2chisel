@@ -1,0 +1,1991 @@
+(benchmark) bar
+
+(#2)		!((((_i1_io_en_a == 8'd91) || (_i1_io_en_a != 8'd91)) && b$54506 && (_s71_id163 || !(_s71_id163)) && _s71_id163))
+	(id)	19796
+	(#UF )	0
+	(#UFt)	0
+	(#K  )	1
+	(#reg)	1
+	(#inp)	1
+	(#ite)	0
+	(#CF )	7
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd4) && _s71_id163))
+	(id)	19981
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#4)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd5) && _s71_id163))
+	(id)	19989
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#5)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd6) && _s71_id163))
+	(id)	19997
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#6)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd7) && _s71_id163))
+	(id)	20005
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#7)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd8) && _s71_id163))
+	(id)	20013
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#8)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd9) && _s71_id163))
+	(id)	20021
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#9)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd10) && _s71_id163))
+	(id)	20029
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#10)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd11) && _s71_id163))
+	(id)	20037
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#11)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd12) && _s71_id163))
+	(id)	20045
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#12)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd13) && _s71_id163))
+	(id)	20053
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#13)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd14) && _s71_id163))
+	(id)	20061
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#14)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd15) && _s71_id163))
+	(id)	20069
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#15)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd16) && _s71_id163))
+	(id)	20077
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#16)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd17) && _s71_id163))
+	(id)	20085
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#17)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd18) && _s71_id163))
+	(id)	20093
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#18)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd19) && _s71_id163))
+	(id)	20104
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#19)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd20) && _s71_id163))
+	(id)	20115
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#20)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd21) && _s71_id163))
+	(id)	20123
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#21)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd22) && _s71_id163))
+	(id)	20131
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#22)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd23) && _s71_id163))
+	(id)	20139
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#23)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd24) && _s71_id163))
+	(id)	20147
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#24)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd25) && _s71_id163))
+	(id)	20155
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#25)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd26) && _s71_id163))
+	(id)	20163
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#26)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd27) && _s71_id163))
+	(id)	20171
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#27)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd28) && _s71_id163))
+	(id)	20179
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#28)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd29) && _s71_id163))
+	(id)	20187
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#29)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd30) && _s71_id163))
+	(id)	20195
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#30)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd31) && _s71_id163))
+	(id)	20203
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#31)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd32) && _s71_id163))
+	(id)	20211
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#32)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd33) && _s71_id163))
+	(id)	20219
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#33)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd34) && _s71_id163))
+	(id)	20227
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#34)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd35) && _s71_id163))
+	(id)	20235
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#35)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd36) && _s71_id163))
+	(id)	20243
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#36)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd37) && _s71_id163))
+	(id)	20251
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#37)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd38) && _s71_id163))
+	(id)	20259
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#38)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd39) && _s71_id163))
+	(id)	20267
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#39)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd40) && _s71_id163))
+	(id)	20275
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#40)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd41) && _s71_id163))
+	(id)	20283
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#41)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd42) && _s71_id163))
+	(id)	20291
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#42)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd43) && _s71_id163))
+	(id)	20299
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#43)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd44) && _s71_id163))
+	(id)	20307
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#44)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd45) && _s71_id163))
+	(id)	20315
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#45)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd46) && _s71_id163))
+	(id)	20326
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#46)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd47) && _s71_id163))
+	(id)	20337
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#47)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd48) && _s71_id163))
+	(id)	20345
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#48)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd49) && _s71_id163))
+	(id)	20356
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#49)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd50) && _s71_id163))
+	(id)	20364
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#50)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd51) && _s71_id163))
+	(id)	20372
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#51)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd52) && _s71_id163))
+	(id)	20380
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#52)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd53) && _s71_id163))
+	(id)	20388
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#53)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd54) && _s71_id163))
+	(id)	20396
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#54)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd55) && _s71_id163))
+	(id)	20404
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#55)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd56) && _s71_id163))
+	(id)	20412
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#56)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd57) && _s71_id163))
+	(id)	20420
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#57)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd58) && _s71_id163))
+	(id)	20428
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#58)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd59) && _s71_id163))
+	(id)	20436
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#59)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd60) && _s71_id163))
+	(id)	20444
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#60)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd61) && _s71_id163))
+	(id)	20452
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#61)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd62) && _s71_id163))
+	(id)	20460
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#62)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd63) && _s71_id163))
+	(id)	20468
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#63)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd64) && _s71_id163))
+	(id)	20476
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#64)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd65) && _s71_id163))
+	(id)	20484
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#65)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd66) && _s71_id163))
+	(id)	20492
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#66)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd67) && _s71_id163))
+	(id)	20500
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#67)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd68) && _s71_id163))
+	(id)	20508
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#68)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd69) && _s71_id163))
+	(id)	20516
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#69)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd70) && _s71_id163))
+	(id)	20524
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#70)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd71) && _s71_id163))
+	(id)	20532
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#71)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd72) && _s71_id163))
+	(id)	20540
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#72)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd73) && _s71_id163))
+	(id)	20548
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#73)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd74) && _s71_id163))
+	(id)	20556
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#74)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd75) && _s71_id163))
+	(id)	20564
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#75)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd76) && _s71_id163))
+	(id)	20572
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#76)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd77) && _s71_id163))
+	(id)	20580
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#77)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd78) && _s71_id163))
+	(id)	20588
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#78)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd79) && _s71_id163))
+	(id)	20596
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#79)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd80) && _s71_id163))
+	(id)	20604
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#80)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd81) && _s71_id163))
+	(id)	20612
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#81)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd82) && _s71_id163))
+	(id)	20620
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#82)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd83) && _s71_id163))
+	(id)	20628
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#83)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd84) && _s71_id163))
+	(id)	20636
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#84)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd85) && _s71_id163))
+	(id)	20644
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#85)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd86) && _s71_id163))
+	(id)	20652
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#86)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd87) && _s71_id163))
+	(id)	20660
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#87)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd88) && _s71_id163))
+	(id)	20668
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#88)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd89) && _s71_id163))
+	(id)	20676
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#89)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd90) && _s71_id163))
+	(id)	20684
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#90)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd92) && _s71_id163))
+	(id)	20692
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#91)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd93) && _s71_id163))
+	(id)	20700
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#92)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd94) && _s71_id163))
+	(id)	20708
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#93)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd95) && _s71_id163))
+	(id)	20716
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#94)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd96) && _s71_id163))
+	(id)	20724
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#95)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd97) && _s71_id163))
+	(id)	20732
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#96)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd98) && _s71_id163))
+	(id)	20740
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#97)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd99) && _s71_id163))
+	(id)	20748
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#98)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd100) && _s71_id163))
+	(id)	20759
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#99)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd101) && _s71_id163))
+	(id)	20770
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#100)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd102) && _s71_id163))
+	(id)	20778
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#101)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd103) && _s71_id163))
+	(id)	20789
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#102)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd104) && _s71_id163))
+	(id)	20797
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#103)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd105) && _s71_id163))
+	(id)	20805
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#104)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd106) && _s71_id163))
+	(id)	20816
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#105)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd107) && _s71_id163))
+	(id)	20827
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#106)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd108) && _s71_id163))
+	(id)	20835
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#107)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd109) && _s71_id163))
+	(id)	20846
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#108)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd110) && _s71_id163))
+	(id)	20857
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#109)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd111) && _s71_id163))
+	(id)	20870
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#110)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd112) && _s71_id163))
+	(id)	20883
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#111)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd113) && _s71_id163))
+	(id)	20891
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#112)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd114) && _s71_id163))
+	(id)	20899
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#113)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd115) && _s71_id163))
+	(id)	20907
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#114)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd116) && _s71_id163))
+	(id)	20915
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#115)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd117) && _s71_id163))
+	(id)	20923
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#116)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd118) && _s71_id163))
+	(id)	20931
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#117)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd119) && _s71_id163))
+	(id)	20939
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#118)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd120) && _s71_id163))
+	(id)	20947
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#119)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd121) && _s71_id163))
+	(id)	20955
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#120)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd122) && _s71_id163))
+	(id)	20963
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#121)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd123) && _s71_id163))
+	(id)	20971
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#122)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd124) && _s71_id163))
+	(id)	20979
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#123)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd125) && _s71_id163))
+	(id)	20987
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#124)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd126) && _s71_id163))
+	(id)	20995
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#125)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd127) && _s71_id163))
+	(id)	21003
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#126)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd128) && _s71_id163))
+	(id)	21011
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#127)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd129) && _s71_id163))
+	(id)	21019
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#128)		!(((((b$161 || b$166) && (b$161$next || b$166$next)) && !(_s71_id163$next)) && (_i1_io_en_a == 8'd130) && _s71_id163))
+	(id)	21027
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_8	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#129)		!(((_s18_Sta_reg_HomeProc_CacheState$next == 2'd2) && (_i1_io_en_a == 8'd13) && !(ReductionOr_1_2(_s18_Sta_reg_HomeProc_CacheState)) && (_s18_Sta_reg_HomeProc_CacheState$next == w$148)))
+	(id)	21398
+	(#UF )	3
+	(#UFt)	2
+	      	ReductionOr_1_2	#2
+	      	ReductionOr_1_8	#1
+	(#K  )	138
+	(#reg)	20
+	(#inp)	1
+	(#ite)	213
+	(#CF )	416
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#130)		!(((_s40_Sta_reg_Proc_2_CacheState$next == 2'd2) && (_s58_Sta_reg_UniMsg_2_Cmd == 3'd3) && (_i1_io_en_a == 8'd107) && (_s40_Sta_reg_Proc_2_CacheState$next == w$225)))
+	(id)	21913
+	(#UF )	2
+	(#UFt)	2
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_8	#1
+	(#K  )	138
+	(#reg)	12
+	(#inp)	1
+	(#ite)	153
+	(#CF )	311
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#131)		!(((_s36_Sta_reg_Proc_1_CacheState$next == 2'd2) && (_s54_Sta_reg_UniMsg_1_Cmd == 3'd3) && (_i1_io_en_a == 8'd106) && (_s36_Sta_reg_Proc_1_CacheState$next == w$194)))
+	(id)	21975
+	(#UF )	2
+	(#UFt)	2
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_8	#1
+	(#K  )	138
+	(#reg)	12
+	(#inp)	1
+	(#ite)	153
+	(#CF )	311
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#132)		!(((_s18_Sta_reg_HomeProc_CacheState$next == 2'd2) && (_s22_Sta_reg_HomeUniMsg_Cmd == 3'd3) && (_i1_io_en_a == 8'd105) && (_s18_Sta_reg_HomeProc_CacheState$next == w$148)))
+	(id)	23222
+	(#UF )	3
+	(#UFt)	2
+	      	ReductionOr_1_2	#2
+	      	ReductionOr_1_8	#1
+	(#K  )	138
+	(#reg)	20
+	(#inp)	1
+	(#ite)	213
+	(#CF )	415
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+
+(local equalities) #0
+
+(learned predicates) #2
+            _s71_id163
+            (_i1_io_en_a == 8'd91)
+
+(learned constants)  #1
+            8'd91
+
+(learned signals)    #2
+            _s71_id163
+            _i1_io_en_a
+
+(learned UFs)        #0
+
+(#sim. iterations) 1
+(#ref. iterations) 131
+(#refs) 131
+(#assump. lemmas)  2
+(#lemmas)          133

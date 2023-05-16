@@ -34,11 +34,11 @@ module testbench(input clock, output reg genclock);
     #1;
 `endif
     // UUT.$formal$protocol.\sv:506$3_EN  = 1'b0;
-    UUT._witness_.anyinit_procdff_155 = 1'b0;
+    UUT._witness_.anyinit_procdff_157 = 1'b0;
     UUT.n_reg_0 = 2'b00;
     UUT.n_reg_1 = 2'b00;
     UUT.n_reg_2 = 2'b00;
-    UUT.x_reg = 1'b0;
+    UUT.x_reg = 1'b1;
 
     // state 0
     PI_io_en_a = 4'b0000;

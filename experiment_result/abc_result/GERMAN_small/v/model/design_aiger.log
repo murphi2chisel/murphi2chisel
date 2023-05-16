@@ -1,0 +1,1103 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.16+63 (git sha1 11e75bc27, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_aiger.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+3. Executing ASYNC2SYNC pass.
+
+4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Finding unused cells or wires in module \Store_5..
+Finding unused cells or wires in module \Store_4..
+Finding unused cells or wires in module \Store_3..
+Finding unused cells or wires in module \Store_2..
+Finding unused cells or wires in module \Store_1..
+Finding unused cells or wires in module \Store..
+Finding unused cells or wires in module \SendReqS_2..
+Finding unused cells or wires in module \SendReqS_1..
+Finding unused cells or wires in module \SendReqS..
+Finding unused cells or wires in module \SendReqE_2..
+Finding unused cells or wires in module \SendReqE_1..
+Finding unused cells or wires in module \SendReqE..
+Finding unused cells or wires in module \SendInv_2..
+Finding unused cells or wires in module \SendInv_1..
+Finding unused cells or wires in module \SendInvAck_2..
+Finding unused cells or wires in module \SendInvAck_1..
+Finding unused cells or wires in module \SendInvAck..
+Finding unused cells or wires in module \SendInv..
+Finding unused cells or wires in module \SendGntS_2..
+Finding unused cells or wires in module \SendGntS_1..
+Finding unused cells or wires in module \SendGntS..
+Finding unused cells or wires in module \SendGntE_2..
+Finding unused cells or wires in module \SendGntE_1..
+Finding unused cells or wires in module \SendGntE..
+Finding unused cells or wires in module \RecvReqS_2..
+Finding unused cells or wires in module \RecvReqS_1..
+Finding unused cells or wires in module \RecvReqS..
+Finding unused cells or wires in module \RecvReqE_2..
+Finding unused cells or wires in module \RecvReqE_1..
+Finding unused cells or wires in module \RecvReqE..
+Finding unused cells or wires in module \RecvInvAck_2..
+Finding unused cells or wires in module \RecvInvAck_1..
+Finding unused cells or wires in module \RecvInvAck..
+Finding unused cells or wires in module \RecvGntS_2..
+Finding unused cells or wires in module \RecvGntS_1..
+Finding unused cells or wires in module \RecvGntS..
+Finding unused cells or wires in module \RecvGntE_2..
+Finding unused cells or wires in module \RecvGntE_1..
+Finding unused cells or wires in module \RecvGntE..
+Finding unused cells or wires in module \Init_1..
+Finding unused cells or wires in module \Init..
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
+Optimizing module Init_1.
+Optimizing module RecvGntE.
+Optimizing module RecvGntE_1.
+Optimizing module RecvGntE_2.
+Optimizing module RecvGntS.
+Optimizing module RecvGntS_1.
+Optimizing module RecvGntS_2.
+Optimizing module RecvInvAck.
+Optimizing module RecvInvAck_1.
+Optimizing module RecvInvAck_2.
+Optimizing module RecvReqE.
+Optimizing module RecvReqE_1.
+Optimizing module RecvReqE_2.
+Optimizing module RecvReqS.
+Optimizing module RecvReqS_1.
+Optimizing module RecvReqS_2.
+Optimizing module SendGntE.
+Optimizing module SendGntE_1.
+Optimizing module SendGntE_2.
+Optimizing module SendGntS.
+Optimizing module SendGntS_1.
+Optimizing module SendGntS_2.
+Optimizing module SendInv.
+Optimizing module SendInvAck.
+Optimizing module SendInvAck_1.
+Optimizing module SendInvAck_2.
+Optimizing module SendInv_1.
+Optimizing module SendInv_2.
+Optimizing module SendReqE.
+Optimizing module SendReqE_1.
+Optimizing module SendReqE_2.
+Optimizing module SendReqS.
+Optimizing module SendReqS_1.
+Optimizing module SendReqS_2.
+Optimizing module Store.
+Optimizing module Store_1.
+Optimizing module Store_2.
+Optimizing module Store_3.
+Optimizing module Store_4.
+Optimizing module Store_5.
+Optimizing module system.
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Init'.
+Finding identical cells in module `\Init_1'.
+Finding identical cells in module `\RecvGntE'.
+Finding identical cells in module `\RecvGntE_1'.
+Finding identical cells in module `\RecvGntE_2'.
+Finding identical cells in module `\RecvGntS'.
+Finding identical cells in module `\RecvGntS_1'.
+Finding identical cells in module `\RecvGntS_2'.
+Finding identical cells in module `\RecvInvAck'.
+Finding identical cells in module `\RecvInvAck_1'.
+Finding identical cells in module `\RecvInvAck_2'.
+Finding identical cells in module `\RecvReqE'.
+Finding identical cells in module `\RecvReqE_1'.
+Finding identical cells in module `\RecvReqE_2'.
+Finding identical cells in module `\RecvReqS'.
+Finding identical cells in module `\RecvReqS_1'.
+Finding identical cells in module `\RecvReqS_2'.
+Finding identical cells in module `\SendGntE'.
+Finding identical cells in module `\SendGntE_1'.
+Finding identical cells in module `\SendGntE_2'.
+Finding identical cells in module `\SendGntS'.
+Finding identical cells in module `\SendGntS_1'.
+Finding identical cells in module `\SendGntS_2'.
+Finding identical cells in module `\SendInv'.
+Finding identical cells in module `\SendInvAck'.
+Finding identical cells in module `\SendInvAck_1'.
+Finding identical cells in module `\SendInvAck_2'.
+Finding identical cells in module `\SendInv_1'.
+Finding identical cells in module `\SendInv_2'.
+Finding identical cells in module `\SendReqE'.
+Finding identical cells in module `\SendReqE_1'.
+Finding identical cells in module `\SendReqE_2'.
+Finding identical cells in module `\SendReqS'.
+Finding identical cells in module `\SendReqS_1'.
+Finding identical cells in module `\SendReqS_2'.
+Finding identical cells in module `\Store'.
+Finding identical cells in module `\Store_1'.
+Finding identical cells in module `\Store_2'.
+Finding identical cells in module `\Store_3'.
+Finding identical cells in module `\Store_4'.
+Finding identical cells in module `\Store_5'.
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+6.3. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$3399 ($dff) from module system (D = $0\AuxData_reg[1:0], Q = \AuxData_reg).
+Adding EN signal on $procdff$3398 ($dff) from module system (D = $0\MemData_reg[1:0], Q = \MemData_reg).
+Adding EN signal on $procdff$3397 ($dff) from module system (D = $0\CurPtr_reg[1:0], Q = \CurPtr_reg).
+Adding EN signal on $procdff$3396 ($dff) from module system (D = $0\CurCmd_reg[2:0], Q = \CurCmd_reg).
+Adding EN signal on $procdff$3395 ($dff) from module system (D = $0\ExGntd_reg[0:0], Q = \ExGntd_reg).
+Adding EN signal on $procdff$3394 ($dff) from module system (D = $0\ShrSet_reg_3[0:0], Q = \ShrSet_reg_3).
+Adding EN signal on $procdff$3393 ($dff) from module system (D = $0\ShrSet_reg_2[0:0], Q = \ShrSet_reg_2).
+Adding EN signal on $procdff$3392 ($dff) from module system (D = $0\ShrSet_reg_1[0:0], Q = \ShrSet_reg_1).
+Adding EN signal on $procdff$3391 ($dff) from module system (D = $0\ShrSet_reg_0[0:0], Q = \ShrSet_reg_0).
+Adding EN signal on $procdff$3390 ($dff) from module system (D = $0\InvSet_reg_3[0:0], Q = \InvSet_reg_3).
+Adding EN signal on $procdff$3389 ($dff) from module system (D = $0\InvSet_reg_2[0:0], Q = \InvSet_reg_2).
+Adding EN signal on $procdff$3388 ($dff) from module system (D = $0\InvSet_reg_1[0:0], Q = \InvSet_reg_1).
+Adding EN signal on $procdff$3387 ($dff) from module system (D = $0\InvSet_reg_0[0:0], Q = \InvSet_reg_0).
+Adding EN signal on $procdff$3386 ($dff) from module system (D = $0\Chan3_reg_3_Data[1:0], Q = \Chan3_reg_3_Data).
+Adding EN signal on $procdff$3385 ($dff) from module system (D = $0\Chan3_reg_3_Cmd[2:0], Q = \Chan3_reg_3_Cmd).
+Adding EN signal on $procdff$3384 ($dff) from module system (D = $0\Chan3_reg_2_Data[1:0], Q = \Chan3_reg_2_Data).
+Adding EN signal on $procdff$3383 ($dff) from module system (D = $0\Chan3_reg_2_Cmd[2:0], Q = \Chan3_reg_2_Cmd).
+Adding EN signal on $procdff$3382 ($dff) from module system (D = $0\Chan3_reg_1_Data[1:0], Q = \Chan3_reg_1_Data).
+Adding EN signal on $procdff$3381 ($dff) from module system (D = $0\Chan3_reg_1_Cmd[2:0], Q = \Chan3_reg_1_Cmd).
+Adding EN signal on $procdff$3380 ($dff) from module system (D = $0\Chan3_reg_0_Data[1:0], Q = \Chan3_reg_0_Data).
+Adding EN signal on $procdff$3379 ($dff) from module system (D = $0\Chan3_reg_0_Cmd[2:0], Q = \Chan3_reg_0_Cmd).
+Adding EN signal on $procdff$3378 ($dff) from module system (D = $0\Chan2_reg_3_Data[1:0], Q = \Chan2_reg_3_Data).
+Adding EN signal on $procdff$3377 ($dff) from module system (D = $0\Chan2_reg_3_Cmd[2:0], Q = \Chan2_reg_3_Cmd).
+Adding EN signal on $procdff$3376 ($dff) from module system (D = $0\Chan2_reg_2_Data[1:0], Q = \Chan2_reg_2_Data).
+Adding EN signal on $procdff$3375 ($dff) from module system (D = $0\Chan2_reg_2_Cmd[2:0], Q = \Chan2_reg_2_Cmd).
+Adding EN signal on $procdff$3374 ($dff) from module system (D = $0\Chan2_reg_1_Data[1:0], Q = \Chan2_reg_1_Data).
+Adding EN signal on $procdff$3373 ($dff) from module system (D = $0\Chan2_reg_1_Cmd[2:0], Q = \Chan2_reg_1_Cmd).
+Adding EN signal on $procdff$3372 ($dff) from module system (D = $0\Chan2_reg_0_Data[1:0], Q = \Chan2_reg_0_Data).
+Adding EN signal on $procdff$3371 ($dff) from module system (D = $0\Chan2_reg_0_Cmd[2:0], Q = \Chan2_reg_0_Cmd).
+Adding EN signal on $procdff$3370 ($dff) from module system (D = $0\Chan1_reg_3_Data[1:0], Q = \Chan1_reg_3_Data).
+Adding EN signal on $procdff$3369 ($dff) from module system (D = $0\Chan1_reg_3_Cmd[2:0], Q = \Chan1_reg_3_Cmd).
+Adding EN signal on $procdff$3368 ($dff) from module system (D = $0\Chan1_reg_2_Data[1:0], Q = \Chan1_reg_2_Data).
+Adding EN signal on $procdff$3367 ($dff) from module system (D = $0\Chan1_reg_2_Cmd[2:0], Q = \Chan1_reg_2_Cmd).
+Adding EN signal on $procdff$3366 ($dff) from module system (D = $0\Chan1_reg_1_Data[1:0], Q = \Chan1_reg_1_Data).
+Adding EN signal on $procdff$3365 ($dff) from module system (D = $0\Chan1_reg_1_Cmd[2:0], Q = \Chan1_reg_1_Cmd).
+Adding EN signal on $procdff$3364 ($dff) from module system (D = $0\Chan1_reg_0_Data[1:0], Q = \Chan1_reg_0_Data).
+Adding EN signal on $procdff$3363 ($dff) from module system (D = $0\Chan1_reg_0_Cmd[2:0], Q = \Chan1_reg_0_Cmd).
+Adding EN signal on $procdff$3362 ($dff) from module system (D = $0\Cache_reg_3_Data[1:0], Q = \Cache_reg_3_Data).
+Adding EN signal on $procdff$3361 ($dff) from module system (D = $0\Cache_reg_3_State[1:0], Q = \Cache_reg_3_State).
+Adding EN signal on $procdff$3360 ($dff) from module system (D = $0\Cache_reg_2_Data[1:0], Q = \Cache_reg_2_Data).
+Adding EN signal on $procdff$3359 ($dff) from module system (D = $0\Cache_reg_2_State[1:0], Q = \Cache_reg_2_State).
+Adding EN signal on $procdff$3358 ($dff) from module system (D = $0\Cache_reg_1_Data[1:0], Q = \Cache_reg_1_Data).
+Adding EN signal on $procdff$3357 ($dff) from module system (D = $0\Cache_reg_1_State[1:0], Q = \Cache_reg_1_State).
+Adding EN signal on $procdff$3356 ($dff) from module system (D = $0\Cache_reg_0_Data[1:0], Q = \Cache_reg_0_Data).
+Adding EN signal on $procdff$3355 ($dff) from module system (D = $0\Cache_reg_0_State[1:0], Q = \Cache_reg_0_State).
+
+6.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \Init_1..
+Finding unused cells or wires in module \RecvGntE..
+Finding unused cells or wires in module \RecvGntE_1..
+Finding unused cells or wires in module \RecvGntE_2..
+Finding unused cells or wires in module \RecvGntS..
+Finding unused cells or wires in module \RecvGntS_1..
+Finding unused cells or wires in module \RecvGntS_2..
+Finding unused cells or wires in module \RecvInvAck..
+Finding unused cells or wires in module \RecvInvAck_1..
+Finding unused cells or wires in module \RecvInvAck_2..
+Finding unused cells or wires in module \RecvReqE..
+Finding unused cells or wires in module \RecvReqE_1..
+Finding unused cells or wires in module \RecvReqE_2..
+Finding unused cells or wires in module \RecvReqS..
+Finding unused cells or wires in module \RecvReqS_1..
+Finding unused cells or wires in module \RecvReqS_2..
+Finding unused cells or wires in module \SendGntE..
+Finding unused cells or wires in module \SendGntE_1..
+Finding unused cells or wires in module \SendGntE_2..
+Finding unused cells or wires in module \SendGntS..
+Finding unused cells or wires in module \SendGntS_1..
+Finding unused cells or wires in module \SendGntS_2..
+Finding unused cells or wires in module \SendInv..
+Finding unused cells or wires in module \SendInvAck..
+Finding unused cells or wires in module \SendInvAck_1..
+Finding unused cells or wires in module \SendInvAck_2..
+Finding unused cells or wires in module \SendInv_1..
+Finding unused cells or wires in module \SendInv_2..
+Finding unused cells or wires in module \SendReqE..
+Finding unused cells or wires in module \SendReqE_1..
+Finding unused cells or wires in module \SendReqE_2..
+Finding unused cells or wires in module \SendReqS..
+Finding unused cells or wires in module \SendReqS_1..
+Finding unused cells or wires in module \SendReqS_2..
+Finding unused cells or wires in module \Store..
+Finding unused cells or wires in module \Store_1..
+Finding unused cells or wires in module \Store_2..
+Finding unused cells or wires in module \Store_3..
+Finding unused cells or wires in module \Store_4..
+Finding unused cells or wires in module \Store_5..
+Finding unused cells or wires in module \system..
+
+6.5. Rerunning OPT passes. (Removed registers in this run.)
+
+6.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Init.
+Optimizing module Init_1.
+Optimizing module RecvGntE.
+Optimizing module RecvGntE_1.
+Optimizing module RecvGntE_2.
+Optimizing module RecvGntS.
+Optimizing module RecvGntS_1.
+Optimizing module RecvGntS_2.
+Optimizing module RecvInvAck.
+Optimizing module RecvInvAck_1.
+Optimizing module RecvInvAck_2.
+Optimizing module RecvReqE.
+Optimizing module RecvReqE_1.
+Optimizing module RecvReqE_2.
+Optimizing module RecvReqS.
+Optimizing module RecvReqS_1.
+Optimizing module RecvReqS_2.
+Optimizing module SendGntE.
+Optimizing module SendGntE_1.
+Optimizing module SendGntE_2.
+Optimizing module SendGntS.
+Optimizing module SendGntS_1.
+Optimizing module SendGntS_2.
+Optimizing module SendInv.
+Optimizing module SendInvAck.
+Optimizing module SendInvAck_1.
+Optimizing module SendInvAck_2.
+Optimizing module SendInv_1.
+Optimizing module SendInv_2.
+Optimizing module SendReqE.
+Optimizing module SendReqE_1.
+Optimizing module SendReqE_2.
+Optimizing module SendReqS.
+Optimizing module SendReqS_1.
+Optimizing module SendReqS_2.
+Optimizing module Store.
+Optimizing module Store_1.
+Optimizing module Store_2.
+Optimizing module Store_3.
+Optimizing module Store_4.
+Optimizing module Store_5.
+Optimizing module system.
+<suppressed ~45 debug messages>
+
+6.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Init'.
+Finding identical cells in module `\Init_1'.
+Finding identical cells in module `\RecvGntE'.
+Finding identical cells in module `\RecvGntE_1'.
+Finding identical cells in module `\RecvGntE_2'.
+Finding identical cells in module `\RecvGntS'.
+Finding identical cells in module `\RecvGntS_1'.
+Finding identical cells in module `\RecvGntS_2'.
+Finding identical cells in module `\RecvInvAck'.
+Finding identical cells in module `\RecvInvAck_1'.
+Finding identical cells in module `\RecvInvAck_2'.
+Finding identical cells in module `\RecvReqE'.
+Finding identical cells in module `\RecvReqE_1'.
+Finding identical cells in module `\RecvReqE_2'.
+Finding identical cells in module `\RecvReqS'.
+Finding identical cells in module `\RecvReqS_1'.
+Finding identical cells in module `\RecvReqS_2'.
+Finding identical cells in module `\SendGntE'.
+Finding identical cells in module `\SendGntE_1'.
+Finding identical cells in module `\SendGntE_2'.
+Finding identical cells in module `\SendGntS'.
+Finding identical cells in module `\SendGntS_1'.
+Finding identical cells in module `\SendGntS_2'.
+Finding identical cells in module `\SendInv'.
+Finding identical cells in module `\SendInvAck'.
+Finding identical cells in module `\SendInvAck_1'.
+Finding identical cells in module `\SendInvAck_2'.
+Finding identical cells in module `\SendInv_1'.
+Finding identical cells in module `\SendInv_2'.
+Finding identical cells in module `\SendReqE'.
+Finding identical cells in module `\SendReqE_1'.
+Finding identical cells in module `\SendReqE_2'.
+Finding identical cells in module `\SendReqS'.
+Finding identical cells in module `\SendReqS_1'.
+Finding identical cells in module `\SendReqS_2'.
+Finding identical cells in module `\Store'.
+Finding identical cells in module `\Store_1'.
+Finding identical cells in module `\Store_2'.
+Finding identical cells in module `\Store_3'.
+Finding identical cells in module `\Store_4'.
+Finding identical cells in module `\Store_5'.
+Finding identical cells in module `\system'.
+<suppressed ~132 debug messages>
+Removed a total of 44 cells.
+
+6.8. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \Init_1..
+Finding unused cells or wires in module \RecvGntE..
+Finding unused cells or wires in module \RecvGntE_1..
+Finding unused cells or wires in module \RecvGntE_2..
+Finding unused cells or wires in module \RecvGntS..
+Finding unused cells or wires in module \RecvGntS_1..
+Finding unused cells or wires in module \RecvGntS_2..
+Finding unused cells or wires in module \RecvInvAck..
+Finding unused cells or wires in module \RecvInvAck_1..
+Finding unused cells or wires in module \RecvInvAck_2..
+Finding unused cells or wires in module \RecvReqE..
+Finding unused cells or wires in module \RecvReqE_1..
+Finding unused cells or wires in module \RecvReqE_2..
+Finding unused cells or wires in module \RecvReqS..
+Finding unused cells or wires in module \RecvReqS_1..
+Finding unused cells or wires in module \RecvReqS_2..
+Finding unused cells or wires in module \SendGntE..
+Finding unused cells or wires in module \SendGntE_1..
+Finding unused cells or wires in module \SendGntE_2..
+Finding unused cells or wires in module \SendGntS..
+Finding unused cells or wires in module \SendGntS_1..
+Finding unused cells or wires in module \SendGntS_2..
+Finding unused cells or wires in module \SendInv..
+Finding unused cells or wires in module \SendInvAck..
+Finding unused cells or wires in module \SendInvAck_1..
+Finding unused cells or wires in module \SendInvAck_2..
+Finding unused cells or wires in module \SendInv_1..
+Finding unused cells or wires in module \SendInv_2..
+Finding unused cells or wires in module \SendReqE..
+Finding unused cells or wires in module \SendReqE_1..
+Finding unused cells or wires in module \SendReqE_2..
+Finding unused cells or wires in module \SendReqS..
+Finding unused cells or wires in module \SendReqS_1..
+Finding unused cells or wires in module \SendReqS_2..
+Finding unused cells or wires in module \Store..
+Finding unused cells or wires in module \Store_1..
+Finding unused cells or wires in module \Store_2..
+Finding unused cells or wires in module \Store_3..
+Finding unused cells or wires in module \Store_4..
+Finding unused cells or wires in module \Store_5..
+Finding unused cells or wires in module \system..
+Removed 0 unused cells and 44 unused wires.
+<suppressed ~1 debug messages>
+
+6.10. Finished fast OPT passes.
+
+7. Executing CHECK pass (checking for obvious problems).
+Checking module Init...
+Checking module Init_1...
+Checking module RecvGntE...
+Checking module RecvGntE_1...
+Checking module RecvGntE_2...
+Checking module RecvGntS...
+Checking module RecvGntS_1...
+Checking module RecvGntS_2...
+Checking module RecvInvAck...
+Checking module RecvInvAck_1...
+Checking module RecvInvAck_2...
+Checking module RecvReqE...
+Checking module RecvReqE_1...
+Checking module RecvReqE_2...
+Checking module RecvReqS...
+Checking module RecvReqS_1...
+Checking module RecvReqS_2...
+Checking module SendGntE...
+Checking module SendGntE_1...
+Checking module SendGntE_2...
+Checking module SendGntS...
+Checking module SendGntS_1...
+Checking module SendGntS_2...
+Checking module SendInv...
+Checking module SendInvAck...
+Checking module SendInvAck_1...
+Checking module SendInvAck_2...
+Checking module SendInv_1...
+Checking module SendInv_2...
+Checking module SendReqE...
+Checking module SendReqE_1...
+Checking module SendReqE_2...
+Checking module SendReqS...
+Checking module SendReqS_1...
+Checking module SendReqS_2...
+Checking module Store...
+Checking module Store_1...
+Checking module Store_2...
+Checking module Store_3...
+Checking module Store_4...
+Checking module Store_5...
+Checking module system...
+Found and reported 0 problems.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+8.1. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Init
+Used module:     \Init_1
+Used module:     \SendReqS_2
+Used module:     \SendReqE
+Used module:     \SendReqE_1
+Used module:     \SendReqE_2
+Used module:     \RecvReqS
+Used module:     \RecvReqS_1
+Used module:     \RecvReqS_2
+Used module:     \RecvReqE
+Used module:     \RecvReqE_1
+Used module:     \RecvReqE_2
+Used module:     \Store
+Used module:     \SendInv
+Used module:     \SendInv_1
+Used module:     \SendInv_2
+Used module:     \SendGntS
+Used module:     \SendGntS_1
+Used module:     \SendGntS_2
+Used module:     \SendGntE
+Used module:     \SendGntE_1
+Used module:     \SendGntE_2
+Used module:     \RecvGntS
+Used module:     \Store_1
+Used module:     \RecvGntS_1
+Used module:     \RecvGntS_2
+Used module:     \RecvGntE
+Used module:     \RecvGntE_1
+Used module:     \RecvGntE_2
+Used module:     \SendInvAck
+Used module:     \SendInvAck_1
+Used module:     \SendInvAck_2
+Used module:     \RecvInvAck
+Used module:     \RecvInvAck_1
+Used module:     \Store_2
+Used module:     \RecvInvAck_2
+Used module:     \Store_3
+Used module:     \Store_4
+Used module:     \Store_5
+Used module:     \SendReqS
+Used module:     \SendReqS_1
+
+8.2. Analyzing design hierarchy..
+Top module:  \system
+Used module:     \Init
+Used module:     \Init_1
+Used module:     \SendReqS_2
+Used module:     \SendReqE
+Used module:     \SendReqE_1
+Used module:     \SendReqE_2
+Used module:     \RecvReqS
+Used module:     \RecvReqS_1
+Used module:     \RecvReqS_2
+Used module:     \RecvReqE
+Used module:     \RecvReqE_1
+Used module:     \RecvReqE_2
+Used module:     \Store
+Used module:     \SendInv
+Used module:     \SendInv_1
+Used module:     \SendInv_2
+Used module:     \SendGntS
+Used module:     \SendGntS_1
+Used module:     \SendGntS_2
+Used module:     \SendGntE
+Used module:     \SendGntE_1
+Used module:     \SendGntE_2
+Used module:     \RecvGntS
+Used module:     \Store_1
+Used module:     \RecvGntS_1
+Used module:     \RecvGntS_2
+Used module:     \RecvGntE
+Used module:     \RecvGntE_1
+Used module:     \RecvGntE_2
+Used module:     \SendInvAck
+Used module:     \SendInvAck_1
+Used module:     \SendInvAck_2
+Used module:     \RecvInvAck
+Used module:     \RecvInvAck_1
+Used module:     \Store_2
+Used module:     \RecvInvAck_2
+Used module:     \Store_3
+Used module:     \Store_4
+Used module:     \Store_5
+Used module:     \SendReqS
+Used module:     \SendReqS_1
+Removed 0 unused modules.
+Module system directly or indirectly contains formal properties -> setting "keep" attribute.
+
+9. Executing FLATTEN pass (flatten design).
+Deleting now unused module Init.
+Deleting now unused module Init_1.
+Deleting now unused module RecvGntE.
+Deleting now unused module RecvGntE_1.
+Deleting now unused module RecvGntE_2.
+Deleting now unused module RecvGntS.
+Deleting now unused module RecvGntS_1.
+Deleting now unused module RecvGntS_2.
+Deleting now unused module RecvInvAck.
+Deleting now unused module RecvInvAck_1.
+Deleting now unused module RecvInvAck_2.
+Deleting now unused module RecvReqE.
+Deleting now unused module RecvReqE_1.
+Deleting now unused module RecvReqE_2.
+Deleting now unused module RecvReqS.
+Deleting now unused module RecvReqS_1.
+Deleting now unused module RecvReqS_2.
+Deleting now unused module SendGntE.
+Deleting now unused module SendGntE_1.
+Deleting now unused module SendGntE_2.
+Deleting now unused module SendGntS.
+Deleting now unused module SendGntS_1.
+Deleting now unused module SendGntS_2.
+Deleting now unused module SendInv.
+Deleting now unused module SendInvAck.
+Deleting now unused module SendInvAck_1.
+Deleting now unused module SendInvAck_2.
+Deleting now unused module SendInv_1.
+Deleting now unused module SendInv_2.
+Deleting now unused module SendReqE.
+Deleting now unused module SendReqE_1.
+Deleting now unused module SendReqE_2.
+Deleting now unused module SendReqS.
+Deleting now unused module SendReqS_1.
+Deleting now unused module SendReqS_2.
+Deleting now unused module Store.
+Deleting now unused module Store_1.
+Deleting now unused module Store_2.
+Deleting now unused module Store_3.
+Deleting now unused module Store_4.
+Deleting now unused module Store_5.
+<suppressed ~41 debug messages>
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~1 debug messages>
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~223 debug messages>
+Removed a total of 75 cells.
+
+11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:263$2710.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:261$2709.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:259$2708.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:255$2707.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:253$2706.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:251$2705.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:247$2704.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:245$2703.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:243$2702.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:239$2701.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:237$2700.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:235$2699.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:2108$2625.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:2102$2624.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:2101$2623.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:2100$2622.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:2077$2621.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:2253$2595.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:2247$2594.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:2246$2593.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:2245$2592.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:2224$2591.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:2398$2565.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:2392$2564.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:2391$2563.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:2390$2562.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:2371$2561.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:2543$2535.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:2537$2534.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:2536$2533.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:2535$2532.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:2512$2531.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:2688$2505.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:2682$2504.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:2681$2503.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:2680$2502.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:2659$2501.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:2833$2475.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:2827$2474.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:2826$2473.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:2825$2472.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:2806$2471.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:377$2697.
+    dead port 2/2 on $mux $flatten\rules_20.$ternary$protocol.sv:2953$2445.
+    dead port 2/2 on $mux $flatten\rules_21.$ternary$protocol.sv:3098$2427.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:276$2719.
+    dead port 2/2 on $mux $flatten\rules_22.$ternary$protocol.sv:3243$2409.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:274$2718.
+    dead port 2/2 on $mux $flatten\rules_23.$ternary$protocol.sv:3405$2391.
+    dead port 2/2 on $mux $flatten\rules_23.$ternary$protocol.sv:3387$2390.
+    dead port 2/2 on $mux $flatten\rules_23.$ternary$protocol.sv:3386$2389.
+    dead port 2/2 on $mux $flatten\rules_24.$ternary$protocol.sv:3553$2355.
+    dead port 2/2 on $mux $flatten\rules_24.$ternary$protocol.sv:3536$2354.
+    dead port 2/2 on $mux $flatten\rules_24.$ternary$protocol.sv:3535$2353.
+    dead port 2/2 on $mux $flatten\rules_25.$ternary$protocol.sv:3701$2319.
+    dead port 2/2 on $mux $flatten\rules_25.$ternary$protocol.sv:3685$2318.
+    dead port 2/2 on $mux $flatten\rules_25.$ternary$protocol.sv:3684$2317.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:3856$2283.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:3853$2282.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:3835$2281.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:3834$2280.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:4010$2228.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:4008$2227.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:3991$2226.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:3990$2225.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:267$2712.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:273$2717.
+    dead port 2/2 on $mux $flatten\rules_28.$ternary$protocol.sv:4164$2173.
+    dead port 2/2 on $mux $flatten\rules_28.$ternary$protocol.sv:4163$2172.
+    dead port 2/2 on $mux $flatten\rules_28.$ternary$protocol.sv:4147$2171.
+    dead port 2/2 on $mux $flatten\rules_28.$ternary$protocol.sv:4146$2170.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:266$2711.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:272$2716.
+    dead port 2/2 on $mux $flatten\rules_29.$ternary$protocol.sv:4269$2118.
+    dead port 2/2 on $mux $flatten\rules_29.$ternary$protocol.sv:4268$2117.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:518$2691.
+    dead port 2/2 on $mux $flatten\rules_30.$ternary$protocol.sv:4413$2109.
+    dead port 2/2 on $mux $flatten\rules_30.$ternary$protocol.sv:4412$2108.
+    dead port 2/2 on $mux $flatten\rules_31.$ternary$protocol.sv:4557$2100.
+    dead port 2/2 on $mux $flatten\rules_31.$ternary$protocol.sv:4556$2099.
+    dead port 2/2 on $mux $flatten\rules_32.$ternary$protocol.sv:4695$2091.
+    dead port 2/2 on $mux $flatten\rules_32.$ternary$protocol.sv:4694$2090.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:4839$2082.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:4838$2081.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:4983$2073.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:4982$2072.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:5146$2064.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:5138$2063.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:5122$2062.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:5292$2042.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:5284$2041.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:5268$2040.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:5438$2020.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:5430$2019.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:5414$2018.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:5593$1998.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:5590$1997.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:5579$1996.
+    dead port 2/2 on $mux $flatten\rules_39.$ternary$protocol.sv:5738$1976.
+    dead port 2/2 on $mux $flatten\rules_39.$ternary$protocol.sv:5736$1975.
+    dead port 2/2 on $mux $flatten\rules_39.$ternary$protocol.sv:5726$1974.
+    dead port 2/2 on $mux $flatten\rules_4.$ternary$protocol.sv:661$2685.
+    dead port 2/2 on $mux $flatten\rules_40.$ternary$protocol.sv:5883$1954.
+    dead port 2/2 on $mux $flatten\rules_40.$ternary$protocol.sv:5882$1953.
+    dead port 2/2 on $mux $flatten\rules_40.$ternary$protocol.sv:5873$1952.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:96$2721.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:802$2679.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:138$2742.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:945$2673.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:137$2741.
+    dead port 2/2 on $mux $flatten\rules_7.$ternary$protocol.sv:1086$2667.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:135$2740.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:134$2739.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:133$2738.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:132$2737.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:131$2736.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:271$2715.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:270$2714.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:129$2735.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:128$2734.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:127$2733.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:124$2732.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:122$2731.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:120$2730.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:116$2729.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:114$2728.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:112$2727.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:108$2726.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:268$2713.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:106$2725.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:104$2724.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:100$2723.
+    dead port 2/2 on $mux $flatten\rules_0.$ternary$protocol.sv:98$2722.
+    dead port 2/2 on $mux $flatten\rules_1.$ternary$protocol.sv:277$2720.
+    dead port 2/2 on $mux $flatten\rules_10.$ternary$protocol.sv:1513$2652.
+    dead port 2/2 on $mux $flatten\rules_11.$ternary$protocol.sv:1650$2647.
+    dead port 2/2 on $mux $flatten\rules_12.$ternary$protocol.sv:1793$2640.
+    dead port 2/2 on $mux $flatten\rules_13.$ternary$protocol.sv:1936$2633.
+    dead port 2/2 on $mux $flatten\rules_14.$ternary$protocol.sv:2109$2626.
+    dead port 2/2 on $mux $flatten\rules_15.$ternary$protocol.sv:2254$2596.
+    dead port 2/2 on $mux $flatten\rules_16.$ternary$protocol.sv:2399$2566.
+    dead port 2/2 on $mux $flatten\rules_17.$ternary$protocol.sv:2544$2536.
+    dead port 2/2 on $mux $flatten\rules_18.$ternary$protocol.sv:2689$2506.
+    dead port 2/2 on $mux $flatten\rules_19.$ternary$protocol.sv:2834$2476.
+    dead port 2/2 on $mux $flatten\rules_2.$ternary$protocol.sv:418$2698.
+    dead port 2/2 on $mux $flatten\rules_20.$ternary$protocol.sv:2968$2446.
+    dead port 2/2 on $mux $flatten\rules_21.$ternary$protocol.sv:3112$2428.
+    dead port 2/2 on $mux $flatten\rules_22.$ternary$protocol.sv:3256$2410.
+    dead port 2/2 on $mux $flatten\rules_23.$ternary$protocol.sv:3409$2392.
+    dead port 2/2 on $mux $flatten\rules_24.$ternary$protocol.sv:3556$2356.
+    dead port 2/2 on $mux $flatten\rules_25.$ternary$protocol.sv:3703$2320.
+    dead port 2/2 on $mux $flatten\rules_26.$ternary$protocol.sv:3857$2284.
+    dead port 2/2 on $mux $flatten\rules_27.$ternary$protocol.sv:4011$2229.
+    dead port 2/2 on $mux $flatten\rules_28.$ternary$protocol.sv:4165$2174.
+    dead port 2/2 on $mux $flatten\rules_29.$ternary$protocol.sv:4284$2119.
+    dead port 2/2 on $mux $flatten\rules_3.$ternary$protocol.sv:559$2692.
+    dead port 2/2 on $mux $flatten\rules_30.$ternary$protocol.sv:4428$2110.
+    dead port 2/2 on $mux $flatten\rules_31.$ternary$protocol.sv:4572$2101.
+    dead port 2/2 on $mux $flatten\rules_32.$ternary$protocol.sv:4710$2092.
+    dead port 2/2 on $mux $flatten\rules_33.$ternary$protocol.sv:4854$2083.
+    dead port 2/2 on $mux $flatten\rules_34.$ternary$protocol.sv:4998$2074.
+    dead port 2/2 on $mux $flatten\rules_35.$ternary$protocol.sv:5147$2065.
+    dead port 2/2 on $mux $flatten\rules_36.$ternary$protocol.sv:5293$2043.
+    dead port 2/2 on $mux $flatten\rules_37.$ternary$protocol.sv:5439$2021.
+    dead port 2/2 on $mux $flatten\rules_38.$ternary$protocol.sv:5596$1999.
+    dead port 2/2 on $mux $flatten\rules_39.$ternary$protocol.sv:5741$1977.
+    dead port 2/2 on $mux $flatten\rules_4.$ternary$protocol.sv:700$2686.
+    dead port 2/2 on $mux $flatten\rules_40.$ternary$protocol.sv:5886$1955.
+    dead port 2/2 on $mux $flatten\rules_5.$ternary$protocol.sv:841$2680.
+    dead port 2/2 on $mux $flatten\rules_6.$ternary$protocol.sv:982$2674.
+    dead port 2/2 on $mux $flatten\rules_7.$ternary$protocol.sv:1123$2668.
+    dead port 2/2 on $mux $flatten\rules_8.$ternary$protocol.sv:1229$2662.
+    dead port 2/2 on $mux $flatten\rules_9.$ternary$protocol.sv:1371$2657.
+Removed 173 multiplexer ports.
+<suppressed ~55 debug messages>
+
+11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+11.6. Executing OPT_SHARE pass.
+
+11.7. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$3331 ($dff) from module system (D = $auto$rtlil.cc:3138:Anyseq$3401, Q = $formal$protocol.sv:17736$3_CHECK, rval = 1'1).
+Adding EN signal on $auto$ff.cc:262:slice$3552 ($dffe) from module system (D = $0\Cache_reg_0_State[1:0], Q = \Cache_reg_0_State).
+Adding EN signal on $auto$ff.cc:262:slice$3549 ($dffe) from module system (D = $0\Cache_reg_0_Data[1:0], Q = \Cache_reg_0_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3546 ($dffe) from module system (D = $0\Cache_reg_1_State[1:0], Q = \Cache_reg_1_State).
+Adding EN signal on $auto$ff.cc:262:slice$3543 ($dffe) from module system (D = $0\Cache_reg_1_Data[1:0], Q = \Cache_reg_1_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3540 ($dffe) from module system (D = $0\Cache_reg_2_State[1:0], Q = \Cache_reg_2_State).
+Adding EN signal on $auto$ff.cc:262:slice$3537 ($dffe) from module system (D = $0\Cache_reg_2_Data[1:0], Q = \Cache_reg_2_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3534 ($dffe) from module system (D = $0\Cache_reg_3_State[1:0], Q = \Cache_reg_3_State).
+Adding EN signal on $auto$ff.cc:262:slice$3531 ($dffe) from module system (D = $0\Cache_reg_3_Data[1:0], Q = \Cache_reg_3_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3528 ($dffe) from module system (D = $0\Chan1_reg_0_Cmd[2:0], Q = \Chan1_reg_0_Cmd).
+Adding EN signal on $auto$ff.cc:262:slice$3525 ($dffe) from module system (D = $0\Chan1_reg_0_Data[1:0], Q = \Chan1_reg_0_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3522 ($dffe) from module system (D = $0\Chan1_reg_1_Cmd[2:0], Q = \Chan1_reg_1_Cmd).
+Adding EN signal on $auto$ff.cc:262:slice$3519 ($dffe) from module system (D = $0\Chan1_reg_1_Data[1:0], Q = \Chan1_reg_1_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3516 ($dffe) from module system (D = $0\Chan1_reg_2_Cmd[2:0], Q = \Chan1_reg_2_Cmd).
+Adding EN signal on $auto$ff.cc:262:slice$3513 ($dffe) from module system (D = $0\Chan1_reg_2_Data[1:0], Q = \Chan1_reg_2_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3510 ($dffe) from module system (D = $0\Chan1_reg_3_Cmd[2:0], Q = \Chan1_reg_3_Cmd).
+Adding EN signal on $auto$ff.cc:262:slice$3507 ($dffe) from module system (D = $0\Chan1_reg_3_Data[1:0], Q = \Chan1_reg_3_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3504 ($dffe) from module system (D = $0\Chan2_reg_0_Cmd[2:0], Q = \Chan2_reg_0_Cmd).
+Adding EN signal on $auto$ff.cc:262:slice$3501 ($dffe) from module system (D = $0\Chan2_reg_0_Data[1:0], Q = \Chan2_reg_0_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3498 ($dffe) from module system (D = $0\Chan2_reg_1_Cmd[2:0], Q = \Chan2_reg_1_Cmd).
+Adding EN signal on $auto$ff.cc:262:slice$3495 ($dffe) from module system (D = $0\Chan2_reg_1_Data[1:0], Q = \Chan2_reg_1_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3492 ($dffe) from module system (D = $0\Chan2_reg_2_Cmd[2:0], Q = \Chan2_reg_2_Cmd).
+Adding EN signal on $auto$ff.cc:262:slice$3489 ($dffe) from module system (D = $0\Chan2_reg_2_Data[1:0], Q = \Chan2_reg_2_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3486 ($dffe) from module system (D = $0\Chan2_reg_3_Cmd[2:0], Q = \Chan2_reg_3_Cmd).
+Adding EN signal on $auto$ff.cc:262:slice$3483 ($dffe) from module system (D = $0\Chan2_reg_3_Data[1:0], Q = \Chan2_reg_3_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3480 ($dffe) from module system (D = $0\Chan3_reg_0_Cmd[2:0], Q = \Chan3_reg_0_Cmd).
+Adding EN signal on $auto$ff.cc:262:slice$3477 ($dffe) from module system (D = $0\Chan3_reg_0_Data[1:0], Q = \Chan3_reg_0_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3474 ($dffe) from module system (D = $0\Chan3_reg_1_Cmd[2:0], Q = \Chan3_reg_1_Cmd).
+Adding EN signal on $auto$ff.cc:262:slice$3471 ($dffe) from module system (D = $0\Chan3_reg_1_Data[1:0], Q = \Chan3_reg_1_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3468 ($dffe) from module system (D = $0\Chan3_reg_2_Cmd[2:0], Q = \Chan3_reg_2_Cmd).
+Adding EN signal on $auto$ff.cc:262:slice$3465 ($dffe) from module system (D = $0\Chan3_reg_2_Data[1:0], Q = \Chan3_reg_2_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3462 ($dffe) from module system (D = $0\Chan3_reg_3_Cmd[2:0], Q = \Chan3_reg_3_Cmd).
+Adding EN signal on $auto$ff.cc:262:slice$3459 ($dffe) from module system (D = $0\Chan3_reg_3_Data[1:0], Q = \Chan3_reg_3_Data).
+Adding EN signal on $auto$ff.cc:262:slice$3456 ($dffe) from module system (D = $0\InvSet_reg_0[0:0], Q = \InvSet_reg_0).
+Adding EN signal on $auto$ff.cc:262:slice$3453 ($dffe) from module system (D = $0\InvSet_reg_1[0:0], Q = \InvSet_reg_1).
+Adding EN signal on $auto$ff.cc:262:slice$3450 ($dffe) from module system (D = $0\InvSet_reg_2[0:0], Q = \InvSet_reg_2).
+Adding EN signal on $auto$ff.cc:262:slice$3447 ($dffe) from module system (D = $0\InvSet_reg_3[0:0], Q = \InvSet_reg_3).
+Adding EN signal on $auto$ff.cc:262:slice$3444 ($dffe) from module system (D = $0\ShrSet_reg_0[0:0], Q = \ShrSet_reg_0).
+Adding EN signal on $auto$ff.cc:262:slice$3441 ($dffe) from module system (D = $0\ShrSet_reg_1[0:0], Q = \ShrSet_reg_1).
+Adding EN signal on $auto$ff.cc:262:slice$3438 ($dffe) from module system (D = $0\ShrSet_reg_2[0:0], Q = \ShrSet_reg_2).
+Adding EN signal on $auto$ff.cc:262:slice$3435 ($dffe) from module system (D = $0\ShrSet_reg_3[0:0], Q = \ShrSet_reg_3).
+Adding EN signal on $auto$ff.cc:262:slice$3432 ($dffe) from module system (D = $0\ExGntd_reg[0:0], Q = \ExGntd_reg).
+Adding EN signal on $auto$ff.cc:262:slice$3429 ($dffe) from module system (D = $0\CurCmd_reg[2:0], Q = \CurCmd_reg).
+Adding EN signal on $auto$ff.cc:262:slice$3426 ($dffe) from module system (D = $0\CurPtr_reg[1:0], Q = \CurPtr_reg).
+Adding EN signal on $auto$ff.cc:262:slice$3423 ($dffe) from module system (D = $0\MemData_reg[1:0], Q = \MemData_reg).
+Adding EN signal on $auto$ff.cc:262:slice$3420 ($dffe) from module system (D = $0\AuxData_reg[1:0], Q = \AuxData_reg).
+
+11.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 1106 unused cells and 1156 unused wires.
+<suppressed ~1588 debug messages>
+
+11.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~1318 debug messages>
+
+11.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+11.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~41 debug messages>
+
+11.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+11.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~3537 debug messages>
+Removed a total of 1179 cells.
+
+11.14. Executing OPT_SHARE pass.
+
+11.15. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $auto$ff.cc:262:slice$6156 ($dffe) from module system (D = $procmux$2966_Y, Q = \Chan3_reg_3_Cmd, rval = 3'000).
+Adding SRST signal on $auto$ff.cc:262:slice$6968 ($dffe) from module system (D = $procmux$2840_Y, Q = \ExGntd_reg, rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$6891 ($dffe) from module system (D = $procmux$2858_Y, Q = \ShrSet_reg_3, rval = 1'0).
+
+11.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 5 unused cells and 1306 unused wires.
+<suppressed ~6 debug messages>
+
+11.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+
+11.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+11.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~41 debug messages>
+
+11.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+11.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+11.22. Executing OPT_SHARE pass.
+
+11.23. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $auto$ff.cc:262:slice$7377 ($sdffce) from module system (D = $auto$rtlil.cc:3138:Anyseq$3616 [1:0], Q = \Chan3_reg_3_Cmd [1:0], rval = 2'00).
+Adding SRST signal on $auto$ff.cc:262:slice$7296 ($dffe) from module system (D = \_GEN_314, Q = \AuxData_reg, rval = 2'10).
+Adding SRST signal on $auto$ff.cc:262:slice$7124 ($dffe) from module system (D = \_GEN_807 [1], Q = \CurPtr_reg [1], rval = 1'1).
+Adding SRST signal on $auto$ff.cc:262:slice$7124 ($dffe) from module system (D = \_GEN_852 [0], Q = \CurPtr_reg [0], rval = 1'1).
+Adding SRST signal on $auto$ff.cc:262:slice$7043 ($dffe) from module system (D = $auto$rtlil.cc:3138:Anyseq$3638 [2], Q = \CurCmd_reg [2], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$7043 ($dffe) from module system (D = \_GEN_761 [0], Q = \CurCmd_reg [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$7043 ($dffe) from module system (D = \_GEN_1031 [1], Q = \CurCmd_reg [1], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$6814 ($dffe) from module system (D = \_GEN_1253, Q = \ShrSet_reg_2, rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$6737 ($dffe) from module system (D = \_GEN_1207, Q = \ShrSet_reg_1, rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$6571 ($dffe) from module system (D = \_GEN_890, Q = \InvSet_reg_3, rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$6490 ($dffe) from module system (D = \_GEN_889, Q = \InvSet_reg_2, rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$6409 ($dffe) from module system (D = \_GEN_888, Q = \InvSet_reg_1, rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$5988 ($dffe) from module system (D = $auto$rtlil.cc:3138:Anyseq$3612 [1:0], Q = \Chan3_reg_2_Cmd [1:0], rval = 2'00).
+Adding SRST signal on $auto$ff.cc:262:slice$5988 ($dffe) from module system (D = \_GEN_1648 [2], Q = \Chan3_reg_2_Cmd [2], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$5820 ($dffe) from module system (D = $auto$rtlil.cc:3138:Anyseq$3608 [1:0], Q = \Chan3_reg_1_Cmd [1:0], rval = 2'00).
+Adding SRST signal on $auto$ff.cc:262:slice$5820 ($dffe) from module system (D = \_GEN_1601 [2], Q = \Chan3_reg_1_Cmd [2], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$5484 ($dffe) from module system (D = \_GEN_1147 [0], Q = \Chan2_reg_3_Cmd [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$5484 ($dffe) from module system (D = \_GEN_1282 [2:1], Q = \Chan2_reg_3_Cmd [2:1], rval = 2'00).
+Adding SRST signal on $auto$ff.cc:262:slice$5318 ($dffe) from module system (D = \_GEN_1100 [0], Q = \Chan2_reg_2_Cmd [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$5318 ($dffe) from module system (D = \_GEN_1235 [2:1], Q = \Chan2_reg_2_Cmd [2:1], rval = 2'00).
+Adding SRST signal on $auto$ff.cc:262:slice$5152 ($dffe) from module system (D = \_GEN_1053 [0], Q = \Chan2_reg_1_Cmd [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$5152 ($dffe) from module system (D = \_GEN_1188 [2:1], Q = \Chan2_reg_1_Cmd [2:1], rval = 2'00).
+Adding SRST signal on $auto$ff.cc:262:slice$4816 ($dffe) from module system (D = $auto$rtlil.cc:3138:Anyseq$3584 [2], Q = \Chan1_reg_3_Cmd [2], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$4816 ($dffe) from module system (D = \_GEN_464 [0], Q = \Chan1_reg_3_Cmd [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$4816 ($dffe) from module system (D = \_GEN_599 [1], Q = \Chan1_reg_3_Cmd [1], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$4650 ($dffe) from module system (D = $auto$rtlil.cc:3138:Anyseq$3580 [2], Q = \Chan1_reg_2_Cmd [2], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$4650 ($dffe) from module system (D = \_GEN_417 [0], Q = \Chan1_reg_2_Cmd [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$4650 ($dffe) from module system (D = \_GEN_552 [1], Q = \Chan1_reg_2_Cmd [1], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$4484 ($dffe) from module system (D = $auto$rtlil.cc:3138:Anyseq$3576 [2], Q = \Chan1_reg_1_Cmd [2], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$4484 ($dffe) from module system (D = \_GEN_370 [0], Q = \Chan1_reg_1_Cmd [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$4484 ($dffe) from module system (D = \_GEN_505 [1], Q = \Chan1_reg_1_Cmd [1], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$4148 ($dffe) from module system (D = \_GEN_1401 [0], Q = \Cache_reg_3_State [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$4148 ($dffe) from module system (D = \_GEN_1536 [1], Q = \Cache_reg_3_State [1], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$3982 ($dffe) from module system (D = \_GEN_1354 [0], Q = \Cache_reg_2_State [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$3982 ($dffe) from module system (D = \_GEN_1489 [1], Q = \Cache_reg_2_State [1], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$3816 ($dffe) from module system (D = \_GEN_1307 [0], Q = \Cache_reg_1_State [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:262:slice$3816 ($dffe) from module system (D = \_GEN_1442 [1], Q = \Cache_reg_1_State [1], rval = 1'0).
+
+11.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 33 unused cells and 206 unused wires.
+<suppressed ~234 debug messages>
+
+11.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+
+11.26. Rerunning OPT passes. (Maybe there is more to do..)
+
+11.27. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \system..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~52 debug messages>
+
+11.28. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \system.
+Performed a total of 0 changes.
+
+11.29. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+11.30. Executing OPT_SHARE pass.
+
+11.31. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.32. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+
+11.33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+
+11.34. Finished OPT passes. (There is nothing left to do.)
+
+12. Executing TECHMAP pass (map to technology primitives).
+
+12.1. Executing Verilog-2005 frontend: /Developer/github/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/Developer/github/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+12.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $sdffce.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $dff.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $sdff.
+No more expansions possible.
+<suppressed ~611 debug messages>
+
+13. Executing OPT pass (performing simple optimizations).
+
+13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module system.
+<suppressed ~2410 debug messages>
+
+13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\system'.
+<suppressed ~6924 debug messages>
+Removed a total of 2308 cells.
+
+13.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 51 unused cells and 772 unused wires.
+<suppressed ~52 debug messages>
+
+13.5. Finished fast OPT passes.
+
+14. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+15. Executing ABC pass (technology mapping using ABC).
+
+15.1. Extracting gate netlist of module `\system' to `<abc-temp-dir>/input.blif'..
+Extracted 1671 gates and 1824 wires to a netlist network with 151 inputs and 79 outputs.
+
+15.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 5 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+15.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:     1830
+ABC RESULTS:               NOT cells:      831
+ABC RESULTS:        internal signals:     1594
+ABC RESULTS:           input signals:      151
+ABC RESULTS:          output signals:       79
+Removing temp directory.
+
+16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Removed 0 unused cells and 1877 unused wires.
+<suppressed ~821 debug messages>
+
+17. Printing statistics.
+
+=== system ===
+
+   Number of wires:              10643
+   Number of wire bits:          19135
+   Number of public wires:        7913
+   Number of public wire bits:   16405
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2793
+     $_AND_                       1830
+     $_DFF_P_                       78
+     $_NOT_                        831
+     $anyseq                        42
+     $assert                        10
+     $assume                         1
+     $initstate                      1
+
+18. Executing AIGER backend.
+
+End of script. Logfile hash: bce359e4d3, CPU: user 1.87s system 0.03s, MEM: 43.35 MB peak
+Yosys 0.16+63 (git sha1 11e75bc27, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 28% 9x opt_clean (0 sec), 21% 8x opt_expr (0 sec), ...

@@ -1,0 +1,637 @@
+[
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/c++  -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu++11 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/btorimc.dir/btoribv.cc.o -c /home/ubuntu/avr/avr-master/deps/boolector/src/btoribv.cc",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btoribv.cc"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/c++  -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu++11 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/btorimc.dir/btorimc.cc.o -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorimc.cc",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorimc.cc"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/btoruntrace.dir/btoruntrace.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btoruntrace.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btoruntrace.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/btormbt.dir/btormbt.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btormbt.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btormbt.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/btormc.dir/btormcmain.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btormcmain.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btormcmain.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector-bin.dir/boolectormain.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/boolectormain.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/boolectormain.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector-bin.dir/btormain.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btormain.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btormain.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/aigprop.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/aigprop.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/aigprop.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/boolector.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/boolector.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/boolector.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/boolectormc.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/boolectormc.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/boolectormc.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorabort.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorabort.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorabort.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btoraig.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btoraig.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btoraig.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btoraigvec.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btoraigvec.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btoraigvec.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorass.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorass.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorass.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorbeta.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorbeta.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorbeta.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorbv.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorbv.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorbv.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorchkclone.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorchkclone.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorchkclone.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorchkmodel.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorchkmodel.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorchkmodel.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorchkfailed.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorchkfailed.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorchkfailed.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorclone.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorclone.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorclone.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorcore.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorcore.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorcore.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btordbg.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btordbg.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btordbg.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btordcr.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btordcr.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btordcr.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorexp.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorexp.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorexp.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorlsutils.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorlsutils.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorlsutils.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btormc.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btormc.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btormc.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btormodel.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btormodel.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btormodel.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btormsg.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btormsg.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btormsg.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btornode.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btornode.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btornode.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btoropt.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btoropt.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btoropt.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorparse.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorparse.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorparse.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorprintmodel.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorprintmodel.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorprintmodel.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorproputils.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorproputils.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorproputils.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorrewrite.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorrewrite.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorrewrite.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorrwcache.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorrwcache.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorrwcache.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorsat.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorsat.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorsat.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorslsutils.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorslsutils.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorslsutils.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorslvaigprop.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorslvaigprop.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorslvaigprop.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorslvfun.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorslvfun.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorslvfun.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorslvprop.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorslvprop.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorslvprop.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorslvquant.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorslvquant.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorslvquant.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorslvsls.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorslvsls.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorslvsls.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorsort.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorsort.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorsort.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorsubst.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorsubst.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorsubst.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btorsynth.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btorsynth.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btorsynth.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/btortrapi.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/btortrapi.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/btortrapi.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/dumper/btordumpaig.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/dumper/btordumpaig.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/dumper/btordumpaig.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/dumper/btordumpbtor.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/dumper/btordumpbtor.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/dumper/btordumpbtor.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/dumper/btordumpsmt.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/dumper/btordumpsmt.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/dumper/btordumpsmt.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/parser/btorbtor.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/parser/btorbtor.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/parser/btorbtor.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/parser/btorbtor2.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/parser/btorbtor2.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/parser/btorbtor2.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/parser/btorsmt.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/parser/btorsmt.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/parser/btorsmt.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/parser/btorsmt2.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/parser/btorsmt2.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/parser/btorsmt2.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorpputils.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorpputils.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorpputils.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorack.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorack.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorack.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorder.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorder.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorder.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorelimapplies.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorelimapplies.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorelimapplies.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorelimslices.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorelimslices.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorelimslices.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorembed.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorembed.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorembed.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorextract.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorextract.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorextract.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btormerge.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btormerge.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btormerge.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorminiscope.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorminiscope.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorminiscope.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btornormadd.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btornormadd.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btornormadd.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btornormquant.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btornormquant.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btornormquant.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorpreprocess.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorpreprocess.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorpreprocess.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorskel.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorskel.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorskel.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorskolemize.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorskolemize.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorskolemize.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorunconstrained.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorunconstrained.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorunconstrained.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/preprocess/btorvarsubst.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorvarsubst.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/preprocess/btorvarsubst.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/sat/btorcadical.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/sat/btorcadical.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/sat/btorcadical.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/c++  -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu++11 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/sat/btorcms.cc.o -c /home/ubuntu/avr/avr-master/deps/boolector/src/sat/btorcms.cc",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/sat/btorcms.cc"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/sat/btorlgl.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/sat/btorlgl.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/sat/btorlgl.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/c++  -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu++11 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/sat/btorminisat.cc.o -c /home/ubuntu/avr/avr-master/deps/boolector/src/sat/btorminisat.cc",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/sat/btorminisat.cc"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/sat/btorpicosat.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/sat/btorpicosat.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/sat/btorpicosat.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/utils/boolectornodemap.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/utils/boolectornodemap.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/utils/boolectornodemap.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/utils/btoraigmap.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/utils/btoraigmap.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/utils/btoraigmap.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/utils/btorhashint.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/utils/btorhashint.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/utils/btorhashint.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/utils/btorhashptr.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/utils/btorhashptr.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/utils/btorhashptr.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/utils/btormem.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/utils/btormem.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/utils/btormem.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/utils/btornodeiter.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/utils/btornodeiter.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/utils/btornodeiter.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/utils/btornodemap.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/utils/btornodemap.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/utils/btornodemap.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/utils/btoroptparse.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/utils/btoroptparse.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/utils/btoroptparse.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/utils/btorpartgen.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/utils/btorpartgen.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/utils/btorpartgen.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/utils/btorrng.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/utils/btorrng.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/utils/btorrng.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/utils/btorunionfind.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/utils/btorunionfind.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/utils/btorunionfind.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/src",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src -I/home/ubuntu/avr/avr-master/deps/boolector/deps/install/include   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/boolector.dir/utils/btorutil.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/src/utils/btorutil.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/src/utils/btorutil.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/bubblesort.dir/bubblesort/bubblesort.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/bubblesort/bubblesort.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/bubblesort/bubblesort.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/bv2.dir/bv/bv2.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/bv/bv2.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/bv/bv2.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/theorems.dir/boundsprop/theorems.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/theorems.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/theorems.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/theorems.dir/boundsprop/minor.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minor.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minor.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/theorems.dir/boundsprop/minand.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minand.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minand.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/theorems.dir/boundsprop/maxor.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxor.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxor.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/theorems.dir/boundsprop/maxand.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxand.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxand.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/theorems.dir/boundsprop/minxor.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minxor.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minxor.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/theorems.dir/boundsprop/maxxor.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxxor.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxxor.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/c++  -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu++11 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/exception.dir/exception.cpp.o -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/exception.cpp",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/exception.cpp"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/maxand.dir/boundsprop/maxand.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxand.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxand.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/maxand.dir/boundsprop/maxandmain.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxandmain.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxandmain.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/memcpy.dir/memcpy/memcpy.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/memcpy/memcpy.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/memcpy/memcpy.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/binarysearch.dir/binarysearch/binarysearch.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/binarysearch/binarysearch.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/binarysearch/binarysearch.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/array1.dir/array/array1.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/array/array1.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/array/array1.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/array3.dir/array/array3.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/array/array3.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/array/array3.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/minand.dir/boundsprop/minand.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minand.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minand.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/minand.dir/boundsprop/minandmain.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minandmain.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minandmain.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/linearsearch.dir/linearsearch/linearsearch.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/linearsearch/linearsearch.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/linearsearch/linearsearch.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/bv1.dir/bv/bv1.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/bv/bv1.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/bv/bv1.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/minor.dir/boundsprop/minor.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minor.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minor.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/minor.dir/boundsprop/minormain.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minormain.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minormain.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/doublereversearray.dir/doublereversearray/doublereversearray.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/doublereversearray/doublereversearray.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/doublereversearray/doublereversearray.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/ispowerof2.dir/ispowerof2/ispowerof2.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/ispowerof2/ispowerof2.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/ispowerof2/ispowerof2.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/matrixmultass.dir/matrixmultass/matrixmultass.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/matrixmultass/matrixmultass.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/matrixmultass/matrixmultass.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/matrixmultcomm.dir/matrixmultcomm/matrixmultcomm.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/matrixmultcomm/matrixmultcomm.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/matrixmultcomm/matrixmultcomm.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/maxor.dir/boundsprop/maxor.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxor.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxor.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/maxor.dir/boundsprop/maxormain.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxormain.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxormain.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/bubblesortmem.dir/bubblesortmem/bubblesortmem.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/bubblesortmem/bubblesortmem.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/bubblesortmem/bubblesortmem.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/max.dir/max/max.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/max/max.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/max/max.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/minxor.dir/boundsprop/minxor.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minxor.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minxor.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/minxor.dir/boundsprop/minxormain.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minxormain.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/minxormain.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/array2.dir/array/array2.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/array/array2.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/array/array2.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/nextpowerof2.dir/nextpowerof2/nextpowerof2.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/nextpowerof2/nextpowerof2.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/nextpowerof2/nextpowerof2.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/maxxor.dir/boundsprop/maxxor.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxxor.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxxor.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/maxxor.dir/boundsprop/maxxormain.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxxormain.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/boundsprop/maxxormain.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/selectionsort.dir/selectionsort/selectionsort.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/selectionsort/selectionsort.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/selectionsort/selectionsort.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/selectionsortmem.dir/selectionsortmem/selectionsortmem.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/selectionsortmem/selectionsortmem.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/selectionsortmem/selectionsortmem.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/sudoku.dir/sudoku/sudoku.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/sudoku/sudoku.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/sudoku/sudoku.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/swapmem.dir/swapmem/swapmem.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/swapmem/swapmem.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/swapmem/swapmem.c"
+},
+{
+  "directory": "/home/ubuntu/avr/avr-master/deps/boolector/build/examples/api/c",
+  "command": "/usr/bin/cc -DBTOR_HAVE_PTHREADS -DBTOR_HAVE_SIGNALS -DBTOR_USE_CADICAL -DNBTORLOG -DNDEBUG -I/home/ubuntu/avr/avr-master/deps/boolector/src -I/home/ubuntu/avr/avr-master/deps/boolector/build/src   -std=gnu99 -W -Wall -Wextra -Wredundant-decls -O3 -O3 -DNDEBUG   -o CMakeFiles/quickstart.dir/quickstart.c.o   -c /home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/quickstart.c",
+  "file": "/home/ubuntu/avr/avr-master/deps/boolector/examples/api/c/quickstart.c"
+}
+]

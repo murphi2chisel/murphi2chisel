@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2023-03-22T13:24:33" hostname="7e0e41b48a07" package="v" id="0" name="default" tests="1" errors="0" failures="0" time="0" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="default" time="0">
+</testcase>
+<system-out>SBY 13:24:33 [v] Removing directory '/document/f322/murphi2chisel/mutualv1/v'.
+SBY 13:24:33 [v] Copy '/document/f322/murphi2chisel/mutualv1/protocol.sv' to '/document/f322/murphi2chisel/mutualv1/v/src/protocol.sv'.
+SBY 13:24:33 [v] engine_0: abc pdr
+SBY 13:24:33 [v] base: starting process &quot;cd v/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 13:24:33 [v] base: finished (returncode=0)
+SBY 13:24:33 [v] aig: starting process &quot;cd v/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY 13:24:33 [v] aig: finished (returncode=0)
+SBY 13:24:33 [v] engine_0: starting process &quot;cd v; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr; write_cex -a engine_0/trace.aiw'&quot;
+SBY 13:24:33 [v] engine_0: ABC command line: &quot;read_aiger model/design_aiger.aig; fold; strash; pdr; write_cex -a engine_0/trace.aiw&quot;.
+SBY 13:24:33 [v] engine_0: Warning: The last output is interpreted as a constraint.
+SBY 13:24:33 [v] engine_0: Invariant F[3] : 7 clauses with 9 flops (out of 11) (cex = 0, ave = 5.00)
+SBY 13:24:33 [v] engine_0: Verification of invariant with 7 clauses was successful.  Time =     0.00 sec
+SBY 13:24:33 [v] engine_0: Property proved.  Time =     0.02 sec
+SBY 13:24:33 [v] engine_0: Counter-example is not available.
+SBY 13:24:33 [v] engine_0: finished (returncode=0)
+SBY 13:24:33 [v] engine_0: Status returned by engine: PASS
+SBY 13:24:33 [v] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 13:24:33 [v] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 13:24:33 [v] summary: engine_0 (abc pdr) returned PASS
+SBY 13:24:33 [v] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

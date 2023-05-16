@@ -1,0 +1,1220 @@
+(benchmark) bar
+
+(#2)		!((((_i1_io_en_a == 6'd2) || (_i1_io_en_a != 6'd2)) && b$11758 && (_s76_id205 || !(_s76_id205)) && _s76_id205))
+	(id)	5973
+	(#UF )	0
+	(#UFt)	0
+	(#K  )	1
+	(#reg)	1
+	(#inp)	1
+	(#ite)	0
+	(#CF )	7
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd3) && _s76_id205))
+	(id)	5986
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#4)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd4) && _s76_id205))
+	(id)	5994
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#5)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd5) && _s76_id205))
+	(id)	6002
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#6)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd6) && _s76_id205))
+	(id)	6010
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#7)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd7) && _s76_id205))
+	(id)	6018
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#8)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd8) && _s76_id205))
+	(id)	6026
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#9)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd9) && _s76_id205))
+	(id)	6034
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#10)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd10) && _s76_id205))
+	(id)	6042
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#11)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd11) && _s76_id205))
+	(id)	6050
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#12)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd12) && _s76_id205))
+	(id)	6058
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#13)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd13) && _s76_id205))
+	(id)	6066
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#14)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd14) && _s76_id205))
+	(id)	6074
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#15)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd15) && _s76_id205))
+	(id)	6082
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#16)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd16) && _s76_id205))
+	(id)	6090
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#17)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd17) && _s76_id205))
+	(id)	6098
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#18)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd18) && _s76_id205))
+	(id)	6106
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#19)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd19) && _s76_id205))
+	(id)	6114
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#20)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd20) && _s76_id205))
+	(id)	6122
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#21)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd21) && _s76_id205))
+	(id)	6130
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#22)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd22) && _s76_id205))
+	(id)	6138
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#23)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd23) && _s76_id205))
+	(id)	6146
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#24)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd24) && _s76_id205))
+	(id)	6154
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#25)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd25) && _s76_id205))
+	(id)	6162
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#26)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd26) && _s76_id205))
+	(id)	6170
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#27)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd27) && _s76_id205))
+	(id)	6178
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#28)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd28) && _s76_id205))
+	(id)	6186
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#29)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd29) && _s76_id205))
+	(id)	6194
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#30)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd30) && _s76_id205))
+	(id)	6202
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#31)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd31) && _s76_id205))
+	(id)	6210
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#32)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd32) && _s76_id205))
+	(id)	6218
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#33)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd33) && _s76_id205))
+	(id)	6226
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#34)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd34) && _s76_id205))
+	(id)	6234
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#35)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd35) && _s76_id205))
+	(id)	6242
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#36)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd36) && _s76_id205))
+	(id)	6250
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#37)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd37) && _s76_id205))
+	(id)	6258
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#38)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd38) && _s76_id205))
+	(id)	6269
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#39)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd39) && _s76_id205))
+	(id)	6280
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#40)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd40) && _s76_id205))
+	(id)	6288
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#41)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd41) && _s76_id205))
+	(id)	6296
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#42)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd42) && _s76_id205))
+	(id)	6307
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#43)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd43) && _s76_id205))
+	(id)	6318
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#44)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd44) && _s76_id205))
+	(id)	6326
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#45)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd45) && _s76_id205))
+	(id)	6334
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#46)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd46) && _s76_id205))
+	(id)	6345
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#47)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd47) && _s76_id205))
+	(id)	6356
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#48)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd48) && _s76_id205))
+	(id)	6364
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#49)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd49) && _s76_id205))
+	(id)	6372
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#50)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd50) && _s76_id205))
+	(id)	6380
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#51)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd51) && _s76_id205))
+	(id)	6388
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#52)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd52) && _s76_id205))
+	(id)	6396
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#53)		!(((((b$203 || b$208) && (b$203$next || b$208$next)) && !(_s76_id205$next)) && (_i1_io_en_a == 6'd53) && _s76_id205))
+	(id)	6404
+	(#UF )	2
+	(#UFt)	1
+	      	ReductionOr_1_6	#2
+	(#K  )	1
+	(#reg)	2
+	(#inp)	4
+	(#ite)	0
+	(#CF )	13
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#54)		!((ReductionOr_1_2(_s4_Cache_reg_1_State$next) && !(ReductionOr_1_6(_i1_io_en_a)) && (_s4_Cache_reg_1_State$next == _s4_Cache_reg_1_State$next_rhs)))
+	(id)	6550
+	(#UF )	3
+	(#UFt)	3
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_3	#1
+	      	ReductionOr_1_6	#1
+	(#K  )	59
+	(#reg)	4
+	(#inp)	1
+	(#ite)	62
+	(#CF )	125
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#55)		!((ReductionOr_1_2(_s6_Cache_reg_2_State$next) && (_i1_io_en_a == 6'd1) && (_s6_Cache_reg_2_State$next == _s6_Cache_reg_2_State$next_rhs)))
+	(id)	6718
+	(#UF )	3
+	(#UFt)	3
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_3	#1
+	      	ReductionOr_1_6	#1
+	(#K  )	59
+	(#reg)	4
+	(#inp)	1
+	(#ite)	62
+	(#CF )	124
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#56)		!((((_s6_Cache_reg_2_State == _s4_Cache_reg_1_State) || (_s6_Cache_reg_2_State != _s4_Cache_reg_1_State)) && (_s6_Cache_reg_2_State == _s4_Cache_reg_1_State) && ((_s6_Cache_reg_2_State == 2'd0) || (_s6_Cache_reg_2_State != 2'd0)) && (_s6_Cache_reg_2_State == 2'd0) && ((_i1_io_en_a == 6'd38) || (_i1_io_en_a != 6'd38)) && b$13936 && ReductionOr_1_2(_s6_Cache_reg_2_State$next) && (_s6_Cache_reg_2_State$next == _s6_Cache_reg_2_State$next_rhs)))
+	(id)	9408
+	(#UF )	3
+	(#UFt)	3
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_3	#1
+	      	ReductionOr_1_6	#1
+	(#K  )	59
+	(#reg)	5
+	(#inp)	1
+	(#ite)	62
+	(#CF )	132
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#57)		!(((_s10_Cache_reg_4_State == 2'd0) && ReductionOr_1_2(_s10_Cache_reg_4_State)))
+	(id)	9889
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#58)		!(((_s10_Cache_reg_4_State$next == 2'd0) && ReductionOr_1_2(_s10_Cache_reg_4_State$next)))
+	(id)	9891
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#59)		!(((_s4_Cache_reg_1_State == 2'd0) && ReductionOr_1_2(_s4_Cache_reg_1_State)))
+	(id)	9939
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#60)		!(((_s4_Cache_reg_1_State$next == 2'd0) && ReductionOr_1_2(_s4_Cache_reg_1_State$next)))
+	(id)	9941
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#61)		!(((_s29_Chan2_reg_4_Cmd != 3'd0) && !(ReductionOr_1_3(_s29_Chan2_reg_4_Cmd))))
+	(id)	20533
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#62)		!(((_s29_Chan2_reg_4_Cmd$next != 3'd0) && !(ReductionOr_1_3(_s29_Chan2_reg_4_Cmd$next))))
+	(id)	20535
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#63)		!(((_s25_Chan2_reg_2_Cmd == 3'd6) && !(ReductionOr_1_3(_s25_Chan2_reg_2_Cmd))))
+	(id)	20686
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#64)		!(((_s25_Chan2_reg_2_Cmd$next == 3'd6) && !(ReductionOr_1_3(_s25_Chan2_reg_2_Cmd$next))))
+	(id)	20688
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#65)		!(((_s23_Chan2_reg_1_Cmd == 3'd6) && !(ReductionOr_1_3(_s23_Chan2_reg_1_Cmd))))
+	(id)	20920
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#66)		!(((_s23_Chan2_reg_1_Cmd$next == 3'd6) && !(ReductionOr_1_3(_s23_Chan2_reg_1_Cmd$next))))
+	(id)	20922
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#67)		!(((_s27_Chan2_reg_3_Cmd == 3'd6) && !(ReductionOr_1_3(_s27_Chan2_reg_3_Cmd))))
+	(id)	21103
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#68)		!(((_s27_Chan2_reg_3_Cmd$next == 3'd6) && !(ReductionOr_1_3(_s27_Chan2_reg_3_Cmd$next))))
+	(id)	21105
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#69)		!(((_s27_Chan2_reg_3_Cmd != 3'd0) && !(ReductionOr_1_3(_s27_Chan2_reg_3_Cmd))))
+	(id)	22319
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#70)		!(((_s27_Chan2_reg_3_Cmd$next != 3'd0) && !(ReductionOr_1_3(_s27_Chan2_reg_3_Cmd$next))))
+	(id)	22321
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#71)		!(((_s23_Chan2_reg_1_Cmd != 3'd0) && !(ReductionOr_1_3(_s23_Chan2_reg_1_Cmd))))
+	(id)	23102
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#72)		!(((_s23_Chan2_reg_1_Cmd$next != 3'd0) && !(ReductionOr_1_3(_s23_Chan2_reg_1_Cmd$next))))
+	(id)	23104
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#73)		!(((_s8_Cache_reg_3_State == 2'd0) && ReductionOr_1_2(_s8_Cache_reg_3_State)))
+	(id)	30551
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#74)		!(((_s8_Cache_reg_3_State$next == 2'd0) && ReductionOr_1_2(_s8_Cache_reg_3_State$next)))
+	(id)	30553
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#75)		!(((_s6_Cache_reg_2_State == 2'd0) && ReductionOr_1_2(_s6_Cache_reg_2_State)))
+	(id)	32043
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#76)		!(((_s6_Cache_reg_2_State$next == 2'd0) && ReductionOr_1_2(_s6_Cache_reg_2_State$next)))
+	(id)	32045
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#77)		!(((_s25_Chan2_reg_2_Cmd != 3'd0) && !(ReductionOr_1_3(_s25_Chan2_reg_2_Cmd))))
+	(id)	37495
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#78)		!(((_s25_Chan2_reg_2_Cmd$next != 3'd0) && !(ReductionOr_1_3(_s25_Chan2_reg_2_Cmd$next))))
+	(id)	37497
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#79)		!(((_s41_CurCmd_reg != 3'd0) && !(ReductionOr_1_3(_s41_CurCmd_reg))))
+	(id)	79351
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#80)		!(((_s41_CurCmd_reg$next != 3'd0) && !(ReductionOr_1_3(_s41_CurCmd_reg$next))))
+	(id)	79353
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_3	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	4
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+
+(local equalities) #0
+
+(learned predicates) #5
+            _s76_id205
+            (_i1_io_en_a == 6'd38)
+            (_i1_io_en_a == 6'd2)
+            (_s6_Cache_reg_2_State == _s4_Cache_reg_1_State)
+            (_s6_Cache_reg_2_State == 2'd0)
+
+(learned constants)  #3
+            6'd38
+            6'd2
+            2'd0
+
+(learned signals)    #4
+            _s76_id205
+            _i1_io_en_a
+            _s6_Cache_reg_2_State
+            _s4_Cache_reg_1_State
+
+(learned UFs)        #0
+
+(#sim. iterations) 2
+(#ref. iterations) 67
+(#refs) 79
+(#assump. lemmas)  2
+(#lemmas)          81

@@ -1,0 +1,5 @@
+vwn: ilang_frontend.h:192: std::string yos::IlangFrontend::get_clock_name(std::string): Assertion `type_it != m_hash.end()' failed.
+	(abstraction: sa+uf)
+reach: avr_util.h:196: bool access_file(F&, std::string, bool) [with F = std::basic_ifstream<char>; std::string = std::__cxx11::basic_string<char>]: Assertion `0' failed.
+Could not access file: /home/czh/murphi2chisel/src/external/avr-master/czh2/work_bar/data/wn.dump
+

@@ -1,0 +1,5 @@
+start
+State 10 {'n[1]': 'C', 'n[2]': 'E', 'x': 'true'} is checked 
+State 11 {'n[1]': 'E', 'n[2]': 'C', 'x': 'true'} is checked 
+State 12 {'n[1]': 'C', 'n[2]': 'C', 'x': 'false'} is checked 
+State 13 {'n[1]': 'E', 'n[2]': 'E', 'x': 'false'} is checked 

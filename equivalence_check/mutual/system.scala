@@ -44,5 +44,13 @@ x_reg := rules(i).io.x_out
     }
     return v(right - left)
   }
-assert((!((n_reg(1)===C)&&((n_reg(2)===E)&&(x_reg===true.B)))))
+  def exists(left: Int, right: Int, f: Int => Bool): Bool = {
+    val v = Wire(Vec(right - left + 1, Bool()))
+    v(0) := f(left)
+    for (i <- left until right) {
+      v(i - left + 1) := v(i - left) | f(i + 1)
+    }
+    return v(right - left)
+  }
+assert((!((n_reg(1)===E)&&((n_reg(2)===E)&&(x_reg===false.B)))))
 }

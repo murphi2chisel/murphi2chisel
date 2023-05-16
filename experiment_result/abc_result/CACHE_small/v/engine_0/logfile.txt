@@ -1,0 +1,3 @@
+ABC command line: "read_aiger model/design_aiger.aig; fold; strash; pdr; write_cex -a engine_0/trace.aiw".
+Warning: The last output is interpreted as a constraint.
+Output 1 of miter "model/design_aiger" was asserted in frame 10.  Time =     0.01 sec

@@ -5,9 +5,15 @@ import psutil
 # transform of if else body lalr generate
 
 from threading import Timer
+class czh():
+    mem = 0
+    def __init__(self) -> None:
+        pass
 
 def printmem():
-    print(psutil.virtual_memory())
+    x = (psutil.virtual_memory().used/(1024*1024))
+    czh.mem = max(czh.mem,x)
+    # print(czh.mem)
 
 class RepeatingTimer(Timer): 
    def run(self):

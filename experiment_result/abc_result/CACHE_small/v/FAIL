@@ -1,0 +1,4 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:03 (3)
+Elapsed process time [H:MM:SS (secs)]: 0:00:03 (3)
+engine_0 (abc pdr) returned FAIL
+counterexample trace: v/engine_0/trace.vcd

@@ -1,0 +1,602 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module system.
+Found 0 SCCs in module Try_9.
+Found 0 SCCs in module Try_8.
+Found 0 SCCs in module Try_7.
+Found 0 SCCs in module Try_6.
+Found 0 SCCs in module Try_5.
+Found 0 SCCs in module Try_4.
+Found 0 SCCs in module Try_3.
+Found 0 SCCs in module Try_2.
+Found 0 SCCs in module Try_15.
+Found 0 SCCs in module Try_14.
+Found 0 SCCs in module Try_13.
+Found 0 SCCs in module Try_12.
+Found 0 SCCs in module Try_11.
+Found 0 SCCs in module Try_10.
+Found 0 SCCs in module Try_1.
+Found 0 SCCs in module Try.
+Found 0 SCCs in module Init.
+Found 0 SCCs in module Idle_9.
+Found 0 SCCs in module Idle_8.
+Found 0 SCCs in module Idle_7.
+Found 0 SCCs in module Idle_6.
+Found 0 SCCs in module Idle_5.
+Found 0 SCCs in module Idle_4.
+Found 0 SCCs in module Idle_3.
+Found 0 SCCs in module Idle_2.
+Found 0 SCCs in module Idle_15.
+Found 0 SCCs in module Idle_14.
+Found 0 SCCs in module Idle_13.
+Found 0 SCCs in module Idle_12.
+Found 0 SCCs in module Idle_11.
+Found 0 SCCs in module Idle_10.
+Found 0 SCCs in module Idle_1.
+Found 0 SCCs in module Idle.
+Found 0 SCCs in module Exit_9.
+Found 0 SCCs in module Exit_8.
+Found 0 SCCs in module Exit_7.
+Found 0 SCCs in module Exit_6.
+Found 0 SCCs in module Exit_5.
+Found 0 SCCs in module Exit_4.
+Found 0 SCCs in module Exit_3.
+Found 0 SCCs in module Exit_2.
+Found 0 SCCs in module Exit_15.
+Found 0 SCCs in module Exit_14.
+Found 0 SCCs in module Exit_13.
+Found 0 SCCs in module Exit_12.
+Found 0 SCCs in module Exit_11.
+Found 0 SCCs in module Exit_10.
+Found 0 SCCs in module Exit_1.
+Found 0 SCCs in module Exit.
+Found 0 SCCs in module Crit_9.
+Found 0 SCCs in module Crit_8.
+Found 0 SCCs in module Crit_7.
+Found 0 SCCs in module Crit_6.
+Found 0 SCCs in module Crit_5.
+Found 0 SCCs in module Crit_4.
+Found 0 SCCs in module Crit_3.
+Found 0 SCCs in module Crit_2.
+Found 0 SCCs in module Crit_15.
+Found 0 SCCs in module Crit_14.
+Found 0 SCCs in module Crit_13.
+Found 0 SCCs in module Crit_12.
+Found 0 SCCs in module Crit_11.
+Found 0 SCCs in module Crit_10.
+Found 0 SCCs in module Crit_1.
+Found 0 SCCs in module Crit.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \system..
+Finding unused cells or wires in module \Try_9..
+Finding unused cells or wires in module \Try_8..
+Finding unused cells or wires in module \Try_7..
+Finding unused cells or wires in module \Try_6..
+Finding unused cells or wires in module \Try_5..
+Finding unused cells or wires in module \Try_4..
+Finding unused cells or wires in module \Try_3..
+Finding unused cells or wires in module \Try_2..
+Finding unused cells or wires in module \Try_15..
+Finding unused cells or wires in module \Try_14..
+Finding unused cells or wires in module \Try_13..
+Finding unused cells or wires in module \Try_12..
+Finding unused cells or wires in module \Try_11..
+Finding unused cells or wires in module \Try_10..
+Finding unused cells or wires in module \Try_1..
+Finding unused cells or wires in module \Try..
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \Idle_9..
+Finding unused cells or wires in module \Idle_8..
+Finding unused cells or wires in module \Idle_7..
+Finding unused cells or wires in module \Idle_6..
+Finding unused cells or wires in module \Idle_5..
+Finding unused cells or wires in module \Idle_4..
+Finding unused cells or wires in module \Idle_3..
+Finding unused cells or wires in module \Idle_2..
+Finding unused cells or wires in module \Idle_15..
+Finding unused cells or wires in module \Idle_14..
+Finding unused cells or wires in module \Idle_13..
+Finding unused cells or wires in module \Idle_12..
+Finding unused cells or wires in module \Idle_11..
+Finding unused cells or wires in module \Idle_10..
+Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Idle..
+Finding unused cells or wires in module \Exit_9..
+Finding unused cells or wires in module \Exit_8..
+Finding unused cells or wires in module \Exit_7..
+Finding unused cells or wires in module \Exit_6..
+Finding unused cells or wires in module \Exit_5..
+Finding unused cells or wires in module \Exit_4..
+Finding unused cells or wires in module \Exit_3..
+Finding unused cells or wires in module \Exit_2..
+Finding unused cells or wires in module \Exit_15..
+Finding unused cells or wires in module \Exit_14..
+Finding unused cells or wires in module \Exit_13..
+Finding unused cells or wires in module \Exit_12..
+Finding unused cells or wires in module \Exit_11..
+Finding unused cells or wires in module \Exit_10..
+Finding unused cells or wires in module \Exit_1..
+Finding unused cells or wires in module \Exit..
+Finding unused cells or wires in module \Crit_9..
+Finding unused cells or wires in module \Crit_8..
+Finding unused cells or wires in module \Crit_7..
+Finding unused cells or wires in module \Crit_6..
+Finding unused cells or wires in module \Crit_5..
+Finding unused cells or wires in module \Crit_4..
+Finding unused cells or wires in module \Crit_3..
+Finding unused cells or wires in module \Crit_2..
+Finding unused cells or wires in module \Crit_15..
+Finding unused cells or wires in module \Crit_14..
+Finding unused cells or wires in module \Crit_13..
+Finding unused cells or wires in module \Crit_12..
+Finding unused cells or wires in module \Crit_11..
+Finding unused cells or wires in module \Crit_10..
+Finding unused cells or wires in module \Crit_1..
+Finding unused cells or wires in module \Crit..
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Crit..
+Finding unused cells or wires in module \Crit_1..
+Finding unused cells or wires in module \Crit_10..
+Finding unused cells or wires in module \Crit_11..
+Finding unused cells or wires in module \Crit_12..
+Finding unused cells or wires in module \Crit_13..
+Finding unused cells or wires in module \Crit_14..
+Finding unused cells or wires in module \Crit_15..
+Finding unused cells or wires in module \Crit_2..
+Finding unused cells or wires in module \Crit_3..
+Finding unused cells or wires in module \Crit_4..
+Finding unused cells or wires in module \Crit_5..
+Finding unused cells or wires in module \Crit_6..
+Finding unused cells or wires in module \Crit_7..
+Finding unused cells or wires in module \Crit_8..
+Finding unused cells or wires in module \Crit_9..
+Finding unused cells or wires in module \Exit..
+Finding unused cells or wires in module \Exit_1..
+Finding unused cells or wires in module \Exit_10..
+Finding unused cells or wires in module \Exit_11..
+Finding unused cells or wires in module \Exit_12..
+Finding unused cells or wires in module \Exit_13..
+Finding unused cells or wires in module \Exit_14..
+Finding unused cells or wires in module \Exit_15..
+Finding unused cells or wires in module \Exit_2..
+Finding unused cells or wires in module \Exit_3..
+Finding unused cells or wires in module \Exit_4..
+Finding unused cells or wires in module \Exit_5..
+Finding unused cells or wires in module \Exit_6..
+Finding unused cells or wires in module \Exit_7..
+Finding unused cells or wires in module \Exit_8..
+Finding unused cells or wires in module \Exit_9..
+Finding unused cells or wires in module \Idle..
+Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Idle_10..
+Finding unused cells or wires in module \Idle_11..
+Finding unused cells or wires in module \Idle_12..
+Finding unused cells or wires in module \Idle_13..
+Finding unused cells or wires in module \Idle_14..
+Finding unused cells or wires in module \Idle_15..
+Finding unused cells or wires in module \Idle_2..
+Finding unused cells or wires in module \Idle_3..
+Finding unused cells or wires in module \Idle_4..
+Finding unused cells or wires in module \Idle_5..
+Finding unused cells or wires in module \Idle_6..
+Finding unused cells or wires in module \Idle_7..
+Finding unused cells or wires in module \Idle_8..
+Finding unused cells or wires in module \Idle_9..
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \Try..
+Finding unused cells or wires in module \Try_1..
+Finding unused cells or wires in module \Try_10..
+Finding unused cells or wires in module \Try_11..
+Finding unused cells or wires in module \Try_12..
+Finding unused cells or wires in module \Try_13..
+Finding unused cells or wires in module \Try_14..
+Finding unused cells or wires in module \Try_15..
+Finding unused cells or wires in module \Try_2..
+Finding unused cells or wires in module \Try_3..
+Finding unused cells or wires in module \Try_4..
+Finding unused cells or wires in module \Try_5..
+Finding unused cells or wires in module \Try_6..
+Finding unused cells or wires in module \Try_7..
+Finding unused cells or wires in module \Try_8..
+Finding unused cells or wires in module \Try_9..
+Finding unused cells or wires in module \system..
+Removed 1 unused cells and 1 unused wires.
+<suppressed ~2 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module Crit...
+Checking module Crit_1...
+Checking module Crit_10...
+Checking module Crit_11...
+Checking module Crit_12...
+Checking module Crit_13...
+Checking module Crit_14...
+Checking module Crit_15...
+Checking module Crit_2...
+Checking module Crit_3...
+Checking module Crit_4...
+Checking module Crit_5...
+Checking module Crit_6...
+Checking module Crit_7...
+Checking module Crit_8...
+Checking module Crit_9...
+Checking module Exit...
+Checking module Exit_1...
+Checking module Exit_10...
+Checking module Exit_11...
+Checking module Exit_12...
+Checking module Exit_13...
+Checking module Exit_14...
+Checking module Exit_15...
+Checking module Exit_2...
+Checking module Exit_3...
+Checking module Exit_4...
+Checking module Exit_5...
+Checking module Exit_6...
+Checking module Exit_7...
+Checking module Exit_8...
+Checking module Exit_9...
+Checking module Idle...
+Checking module Idle_1...
+Checking module Idle_10...
+Checking module Idle_11...
+Checking module Idle_12...
+Checking module Idle_13...
+Checking module Idle_14...
+Checking module Idle_15...
+Checking module Idle_2...
+Checking module Idle_3...
+Checking module Idle_4...
+Checking module Idle_5...
+Checking module Idle_6...
+Checking module Idle_7...
+Checking module Idle_8...
+Checking module Idle_9...
+Checking module Init...
+Checking module Try...
+Checking module Try_1...
+Checking module Try_10...
+Checking module Try_11...
+Checking module Try_12...
+Checking module Try_13...
+Checking module Try_14...
+Checking module Try_15...
+Checking module Try_2...
+Checking module Try_3...
+Checking module Try_4...
+Checking module Try_5...
+Checking module Try_6...
+Checking module Try_7...
+Checking module Try_8...
+Checking module Try_9...
+Checking module system...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Crit.
+Optimizing module Crit_1.
+Optimizing module Crit_10.
+Optimizing module Crit_11.
+Optimizing module Crit_12.
+Optimizing module Crit_13.
+Optimizing module Crit_14.
+Optimizing module Crit_15.
+Optimizing module Crit_2.
+Optimizing module Crit_3.
+Optimizing module Crit_4.
+Optimizing module Crit_5.
+Optimizing module Crit_6.
+Optimizing module Crit_7.
+Optimizing module Crit_8.
+Optimizing module Crit_9.
+Optimizing module Exit.
+Optimizing module Exit_1.
+Optimizing module Exit_10.
+Optimizing module Exit_11.
+Optimizing module Exit_12.
+Optimizing module Exit_13.
+Optimizing module Exit_14.
+Optimizing module Exit_15.
+Optimizing module Exit_2.
+Optimizing module Exit_3.
+Optimizing module Exit_4.
+Optimizing module Exit_5.
+Optimizing module Exit_6.
+Optimizing module Exit_7.
+Optimizing module Exit_8.
+Optimizing module Exit_9.
+Optimizing module Idle.
+Optimizing module Idle_1.
+Optimizing module Idle_10.
+Optimizing module Idle_11.
+Optimizing module Idle_12.
+Optimizing module Idle_13.
+Optimizing module Idle_14.
+Optimizing module Idle_15.
+Optimizing module Idle_2.
+Optimizing module Idle_3.
+Optimizing module Idle_4.
+Optimizing module Idle_5.
+Optimizing module Idle_6.
+Optimizing module Idle_7.
+Optimizing module Idle_8.
+Optimizing module Idle_9.
+Optimizing module Init.
+Optimizing module Try.
+Optimizing module Try_1.
+Optimizing module Try_10.
+Optimizing module Try_11.
+Optimizing module Try_12.
+Optimizing module Try_13.
+Optimizing module Try_14.
+Optimizing module Try_15.
+Optimizing module Try_2.
+Optimizing module Try_3.
+Optimizing module Try_4.
+Optimizing module Try_5.
+Optimizing module Try_6.
+Optimizing module Try_7.
+Optimizing module Try_8.
+Optimizing module Try_9.
+Optimizing module system.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\Crit'.
+Finding identical cells in module `\Crit_1'.
+Finding identical cells in module `\Crit_10'.
+Finding identical cells in module `\Crit_11'.
+Finding identical cells in module `\Crit_12'.
+Finding identical cells in module `\Crit_13'.
+Finding identical cells in module `\Crit_14'.
+Finding identical cells in module `\Crit_15'.
+Finding identical cells in module `\Crit_2'.
+Finding identical cells in module `\Crit_3'.
+Finding identical cells in module `\Crit_4'.
+Finding identical cells in module `\Crit_5'.
+Finding identical cells in module `\Crit_6'.
+Finding identical cells in module `\Crit_7'.
+Finding identical cells in module `\Crit_8'.
+Finding identical cells in module `\Crit_9'.
+Finding identical cells in module `\Exit'.
+Finding identical cells in module `\Exit_1'.
+Finding identical cells in module `\Exit_10'.
+Finding identical cells in module `\Exit_11'.
+Finding identical cells in module `\Exit_12'.
+Finding identical cells in module `\Exit_13'.
+Finding identical cells in module `\Exit_14'.
+Finding identical cells in module `\Exit_15'.
+Finding identical cells in module `\Exit_2'.
+Finding identical cells in module `\Exit_3'.
+Finding identical cells in module `\Exit_4'.
+Finding identical cells in module `\Exit_5'.
+Finding identical cells in module `\Exit_6'.
+Finding identical cells in module `\Exit_7'.
+Finding identical cells in module `\Exit_8'.
+Finding identical cells in module `\Exit_9'.
+Finding identical cells in module `\Idle'.
+Finding identical cells in module `\Idle_1'.
+Finding identical cells in module `\Idle_10'.
+Finding identical cells in module `\Idle_11'.
+Finding identical cells in module `\Idle_12'.
+Finding identical cells in module `\Idle_13'.
+Finding identical cells in module `\Idle_14'.
+Finding identical cells in module `\Idle_15'.
+Finding identical cells in module `\Idle_2'.
+Finding identical cells in module `\Idle_3'.
+Finding identical cells in module `\Idle_4'.
+Finding identical cells in module `\Idle_5'.
+Finding identical cells in module `\Idle_6'.
+Finding identical cells in module `\Idle_7'.
+Finding identical cells in module `\Idle_8'.
+Finding identical cells in module `\Idle_9'.
+Finding identical cells in module `\Init'.
+Finding identical cells in module `\Try'.
+Finding identical cells in module `\Try_1'.
+Finding identical cells in module `\Try_10'.
+Finding identical cells in module `\Try_11'.
+Finding identical cells in module `\Try_12'.
+Finding identical cells in module `\Try_13'.
+Finding identical cells in module `\Try_14'.
+Finding identical cells in module `\Try_15'.
+Finding identical cells in module `\Try_2'.
+Finding identical cells in module `\Try_3'.
+Finding identical cells in module `\Try_4'.
+Finding identical cells in module `\Try_5'.
+Finding identical cells in module `\Try_6'.
+Finding identical cells in module `\Try_7'.
+Finding identical cells in module `\Try_8'.
+Finding identical cells in module `\Try_9'.
+Finding identical cells in module `\system'.
+Removed a total of 0 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Crit..
+Finding unused cells or wires in module \Crit_1..
+Finding unused cells or wires in module \Crit_10..
+Finding unused cells or wires in module \Crit_11..
+Finding unused cells or wires in module \Crit_12..
+Finding unused cells or wires in module \Crit_13..
+Finding unused cells or wires in module \Crit_14..
+Finding unused cells or wires in module \Crit_15..
+Finding unused cells or wires in module \Crit_2..
+Finding unused cells or wires in module \Crit_3..
+Finding unused cells or wires in module \Crit_4..
+Finding unused cells or wires in module \Crit_5..
+Finding unused cells or wires in module \Crit_6..
+Finding unused cells or wires in module \Crit_7..
+Finding unused cells or wires in module \Crit_8..
+Finding unused cells or wires in module \Crit_9..
+Finding unused cells or wires in module \Exit..
+Finding unused cells or wires in module \Exit_1..
+Finding unused cells or wires in module \Exit_10..
+Finding unused cells or wires in module \Exit_11..
+Finding unused cells or wires in module \Exit_12..
+Finding unused cells or wires in module \Exit_13..
+Finding unused cells or wires in module \Exit_14..
+Finding unused cells or wires in module \Exit_15..
+Finding unused cells or wires in module \Exit_2..
+Finding unused cells or wires in module \Exit_3..
+Finding unused cells or wires in module \Exit_4..
+Finding unused cells or wires in module \Exit_5..
+Finding unused cells or wires in module \Exit_6..
+Finding unused cells or wires in module \Exit_7..
+Finding unused cells or wires in module \Exit_8..
+Finding unused cells or wires in module \Exit_9..
+Finding unused cells or wires in module \Idle..
+Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Idle_10..
+Finding unused cells or wires in module \Idle_11..
+Finding unused cells or wires in module \Idle_12..
+Finding unused cells or wires in module \Idle_13..
+Finding unused cells or wires in module \Idle_14..
+Finding unused cells or wires in module \Idle_15..
+Finding unused cells or wires in module \Idle_2..
+Finding unused cells or wires in module \Idle_3..
+Finding unused cells or wires in module \Idle_4..
+Finding unused cells or wires in module \Idle_5..
+Finding unused cells or wires in module \Idle_6..
+Finding unused cells or wires in module \Idle_7..
+Finding unused cells or wires in module \Idle_8..
+Finding unused cells or wires in module \Idle_9..
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \Try..
+Finding unused cells or wires in module \Try_1..
+Finding unused cells or wires in module \Try_10..
+Finding unused cells or wires in module \Try_11..
+Finding unused cells or wires in module \Try_12..
+Finding unused cells or wires in module \Try_13..
+Finding unused cells or wires in module \Try_14..
+Finding unused cells or wires in module \Try_15..
+Finding unused cells or wires in module \Try_2..
+Finding unused cells or wires in module \Try_3..
+Finding unused cells or wires in module \Try_4..
+Finding unused cells or wires in module \Try_5..
+Finding unused cells or wires in module \Try_6..
+Finding unused cells or wires in module \Try_7..
+Finding unused cells or wires in module \Try_8..
+Finding unused cells or wires in module \Try_9..
+Finding unused cells or wires in module \system..
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \Crit..
+Finding unused cells or wires in module \Crit_1..
+Finding unused cells or wires in module \Crit_10..
+Finding unused cells or wires in module \Crit_11..
+Finding unused cells or wires in module \Crit_12..
+Finding unused cells or wires in module \Crit_13..
+Finding unused cells or wires in module \Crit_14..
+Finding unused cells or wires in module \Crit_15..
+Finding unused cells or wires in module \Crit_2..
+Finding unused cells or wires in module \Crit_3..
+Finding unused cells or wires in module \Crit_4..
+Finding unused cells or wires in module \Crit_5..
+Finding unused cells or wires in module \Crit_6..
+Finding unused cells or wires in module \Crit_7..
+Finding unused cells or wires in module \Crit_8..
+Finding unused cells or wires in module \Crit_9..
+Finding unused cells or wires in module \Exit..
+Finding unused cells or wires in module \Exit_1..
+Finding unused cells or wires in module \Exit_10..
+Finding unused cells or wires in module \Exit_11..
+Finding unused cells or wires in module \Exit_12..
+Finding unused cells or wires in module \Exit_13..
+Finding unused cells or wires in module \Exit_14..
+Finding unused cells or wires in module \Exit_15..
+Finding unused cells or wires in module \Exit_2..
+Finding unused cells or wires in module \Exit_3..
+Finding unused cells or wires in module \Exit_4..
+Finding unused cells or wires in module \Exit_5..
+Finding unused cells or wires in module \Exit_6..
+Finding unused cells or wires in module \Exit_7..
+Finding unused cells or wires in module \Exit_8..
+Finding unused cells or wires in module \Exit_9..
+Finding unused cells or wires in module \Idle..
+Finding unused cells or wires in module \Idle_1..
+Finding unused cells or wires in module \Idle_10..
+Finding unused cells or wires in module \Idle_11..
+Finding unused cells or wires in module \Idle_12..
+Finding unused cells or wires in module \Idle_13..
+Finding unused cells or wires in module \Idle_14..
+Finding unused cells or wires in module \Idle_15..
+Finding unused cells or wires in module \Idle_2..
+Finding unused cells or wires in module \Idle_3..
+Finding unused cells or wires in module \Idle_4..
+Finding unused cells or wires in module \Idle_5..
+Finding unused cells or wires in module \Idle_6..
+Finding unused cells or wires in module \Idle_7..
+Finding unused cells or wires in module \Idle_8..
+Finding unused cells or wires in module \Idle_9..
+Finding unused cells or wires in module \Init..
+Finding unused cells or wires in module \Try..
+Finding unused cells or wires in module \Try_1..
+Finding unused cells or wires in module \Try_10..
+Finding unused cells or wires in module \Try_11..
+Finding unused cells or wires in module \Try_12..
+Finding unused cells or wires in module \Try_13..
+Finding unused cells or wires in module \Try_14..
+Finding unused cells or wires in module \Try_15..
+Finding unused cells or wires in module \Try_2..
+Finding unused cells or wires in module \Try_3..
+Finding unused cells or wires in module \Try_4..
+Finding unused cells or wires in module \Try_5..
+Finding unused cells or wires in module \Try_6..
+Finding unused cells or wires in module \Try_7..
+Finding unused cells or wires in module \Try_8..
+Finding unused cells or wires in module \Try_9..
+Finding unused cells or wires in module \system..
+Removed 0 unused cells and 497 unused wires.
+<suppressed ~1 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: 8fde356ab6, CPU: user 0.29s system 0.00s, MEM: 28.32 MB peak
+Yosys 0.26+53 (git sha1 8216b23fb, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 26% 4x opt_clean (0 sec), 11% 1x check (0 sec), ...
